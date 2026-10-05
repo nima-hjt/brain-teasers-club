@@ -1,0 +1,432 @@
+[
+ {
+  "q": "If 3 cats catch 3 mice in 3 minutes, how many cats catch 100 mice in 100 minutes?",
+  "a": "3",
+  "wrong": [
+   "100",
+   "33",
+   "300"
+  ],
+  "why": "Each cat catches 1 mouse every 3 minutes, so in 100 minutes one cat catches about 33. Three cats catch 100."
+ },
+ {
+  "q": "A bat and a ball cost $1.10. The bat costs $1 more than the ball. What does the ball cost?",
+  "a": "5 cents",
+  "wrong": [
+   "10 cents",
+   "1 cent",
+   "15 cents"
+  ],
+  "why": "If the ball is x, the bat is x + $1. Together 2x + $1 = $1.10, so x = 5 cents. (Most people say 10.)"
+ },
+ {
+  "q": "Lily pads double daily and cover a lake in 48 days. When did they cover half?",
+  "a": "Day 47",
+  "wrong": [
+   "Day 24",
+   "Day 46",
+   "Day 12"
+  ],
+  "why": "The patch doubles every day, so the day before it was full it was exactly half full."
+ },
+ {
+  "q": "How many months have 28 days?",
+  "a": "All 12",
+  "wrong": [
+   "1",
+   "2",
+   "11"
+  ],
+  "why": "Every month has at least 28 days. February just has nothing more."
+ },
+ {
+  "q": "A farmer has 17 sheep. All but 9 run away. How many are left?",
+  "a": "9",
+  "wrong": [
+   "8",
+   "17",
+   "0"
+  ],
+  "why": "'All but 9 run away' means 9 stay."
+ },
+ {
+  "q": "You overtake the runner in 2nd place. What place are you in now?",
+  "a": "2nd",
+  "wrong": [
+   "1st",
+   "3rd",
+   "Depends"
+  ],
+  "why": "You take the place of the runner you passed. The leader is still ahead of you."
+ },
+ {
+  "q": "How many times can you subtract 10 from 100?",
+  "a": "Once",
+  "wrong": [
+   "10 times",
+   "9 times",
+   "100 times"
+  ],
+  "why": "After you subtract 10 once, you have 90, not 100."
+ },
+ {
+  "q": "Divide 30 by half and add 10. What do you get?",
+  "a": "70",
+  "wrong": [
+   "25",
+   "20",
+   "40"
+  ],
+  "why": "Dividing by a half doubles: 30 ÷ ½ = 60. Then + 10 = 70."
+ },
+ {
+  "q": "A clock takes 5 seconds to strike 6. How long to strike 12?",
+  "a": "11 seconds",
+  "wrong": [
+   "10 seconds",
+   "12 seconds",
+   "6 seconds"
+  ],
+  "why": "6 strikes have 5 gaps between them, so each gap is 1 second. 12 strikes have 11 gaps."
+ },
+ {
+  "q": "Which is bigger: 2¹⁰ or 10³?",
+  "a": "2¹⁰",
+  "wrong": [
+   "10³",
+   "They're equal",
+   "Can't tell"
+  ],
+  "why": "2¹⁰ = 1,024 and 10³ = 1,000."
+ },
+ {
+  "q": "What is 15% of 80?",
+  "a": "12",
+  "wrong": [
+   "15",
+   "8",
+   "10"
+  ],
+  "why": "10% of 80 is 8, 5% is 4, together 12."
+ },
+ {
+  "q": "A shirt is $20 after a 20% discount. What was the original price?",
+  "a": "$25",
+  "wrong": [
+   "$24",
+   "$22",
+   "$26"
+  ],
+  "why": "$20 is 80% of the original. $20 ÷ 0.8 = $25."
+ },
+ {
+  "q": "Two coins add to 30 cents. One of them is not a nickel. What are they?",
+  "a": "A quarter and a nickel",
+  "wrong": [
+   "Two dimes and a dime",
+   "Three dimes",
+   "A quarter and five pennies"
+  ],
+  "why": "One of them is not a nickel. The other one is."
+ },
+ {
+  "q": "A rope ladder hangs off a boat, rungs 1 foot apart, 3 rungs in water. Tide rises 2 feet. Rungs underwater?",
+  "a": "3",
+  "wrong": [
+   "5",
+   "4",
+   "1"
+  ],
+  "why": "The boat floats, so it rises with the tide and the ladder rises with it. Still 3 rungs under."
+ },
+ {
+  "q": "What is half of 2 plus 2?",
+  "a": "3",
+  "wrong": [
+   "2",
+   "4",
+   "1"
+  ],
+  "why": "Each cat catches 1 mouse every 3 minutes, so in 100 minutes one cat catches about 33. Three cats catch 100."
+ },
+ {
+  "q": "What's heavier: a kilo of feathers or a kilo of steel?",
+  "a": "Same",
+  "wrong": [
+   "Steel",
+   "Feathers",
+   "Depends on size"
+  ],
+  "why": "A kilo is a kilo. Size and material don't change the weight."
+ },
+ {
+  "q": "Next in the sequence: 1, 1, 2, 3, 5, 8, ?",
+  "a": "13",
+  "wrong": [
+   "11",
+   "12",
+   "16"
+  ],
+  "why": "Fibonacci: each number is the sum of the two before it. 5 + 8 = 13."
+ },
+ {
+  "q": "Next in the sequence: 2, 6, 12, 20, 30, ?",
+  "a": "42",
+  "wrong": [
+   "40",
+   "36",
+   "44"
+  ],
+  "why": "Differences grow by 2: +4, +6, +8, +10, then +12. 30 + 12 = 42. (Also n × (n+1).)"
+ },
+ {
+  "q": "Next in the sequence: 1, 4, 9, 16, 25, ?",
+  "a": "36",
+  "wrong": [
+   "30",
+   "35",
+   "49"
+  ],
+  "why": "Square numbers: 1², 2², 3², 4², 5², then 6² = 36."
+ },
+ {
+  "q": "Next in the sequence: 3, 6, 12, 24, ?",
+  "a": "48",
+  "wrong": [
+   "36",
+   "30",
+   "42"
+  ],
+  "why": "Each number doubles. 24 × 2 = 48."
+ },
+ {
+  "q": "Next in the sequence: 1, 2, 4, 7, 11, ?",
+  "a": "16",
+  "wrong": [
+   "15",
+   "14",
+   "18"
+  ],
+  "why": "Differences grow by 1: +1, +2, +3, +4, then +5. 11 + 5 = 16."
+ },
+ {
+  "q": "Next in the sequence: 100, 50, 25, 12.5, ?",
+  "a": "6.25",
+  "wrong": [
+   "6",
+   "5",
+   "7.5"
+  ],
+  "why": "Each number is half the previous one. 12.5 ÷ 2 = 6.25."
+ },
+ {
+  "q": "What letter comes next: J, F, M, A, M, J, ?",
+  "a": "J",
+  "wrong": [
+   "A",
+   "S",
+   "M"
+  ],
+  "why": "First letters of the months: January, February, March, April, May, June, July."
+ },
+ {
+  "q": "What letter comes next: O, T, T, F, F, S, S, ?",
+  "a": "E",
+  "wrong": [
+   "N",
+   "T",
+   "O"
+  ],
+  "why": "First letters of the numbers: One, Two, Three, Four, Five, Six, Seven, Eight."
+ },
+ {
+  "q": "What letter comes next: M, T, W, T, F, ?",
+  "a": "S",
+  "wrong": [
+   "M",
+   "W",
+   "T"
+  ],
+  "why": "Days of the week: Monday to Friday, then Saturday."
+ },
+ {
+  "q": "Which number doesn't belong: 2, 3, 5, 7, 9, 11?",
+  "a": "9",
+  "wrong": [
+   "2",
+   "7",
+   "11"
+  ],
+  "why": "'All but 9 run away' means 9 stay."
+ },
+ {
+  "q": "How many birthdays does the average person have?",
+  "a": "1",
+  "wrong": [
+   "75",
+   "80",
+   "Depends"
+  ],
+  "why": "You are born once. Every other year is a birthday party, not a birth."
+ },
+ {
+  "q": "5 machines make 5 widgets in 5 minutes. How long for 100 machines to make 100 widgets?",
+  "a": "5 minutes",
+  "wrong": [
+   "100 minutes",
+   "20 minutes",
+   "1 minute"
+  ],
+  "why": "Each machine makes 1 widget in 5 minutes, so 100 machines make 100 widgets in 5 minutes."
+ },
+ {
+  "q": "How many days are in a leap year?",
+  "a": "366",
+  "wrong": [
+   "365",
+   "364",
+   "360"
+  ],
+  "why": "A leap year adds 29 February."
+ },
+ {
+  "q": "If yesterday was two days before Friday, what day is tomorrow?",
+  "a": "Friday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Wednesday"
+  ],
+  "why": "Two days before Friday is Wednesday. If yesterday was Wednesday, today is Thursday and tomorrow is Friday."
+ },
+ {
+  "q": "A train leaves at 9:40 and takes 85 minutes. When does it arrive?",
+  "a": "11:05",
+  "wrong": [
+   "10:55",
+   "11:15",
+   "10:65"
+  ],
+  "why": "9:40 + 60 min = 10:40, + 25 min = 11:05."
+ },
+ {
+  "q": "What is 7 × 8 − 6?",
+  "a": "50",
+  "wrong": [
+   "48",
+   "56",
+   "42"
+  ],
+  "why": "Multiply first: 7 × 8 = 56, then 56 − 6 = 50."
+ },
+ {
+  "q": "Which is largest: 0.9, 0.85, 0.099, 0.9001?",
+  "a": "0.9001",
+  "wrong": [
+   "0.9",
+   "0.85",
+   "0.099"
+  ],
+  "why": "Line up the decimals: 0.9001 is just over 0.9, and 0.099 is under 0.1."
+ },
+ {
+  "q": "I'm an odd number. Take away one letter and I become even. What am I?",
+  "a": "Seven",
+  "wrong": [
+   "Nine",
+   "Three",
+   "Five"
+  ],
+  "why": "Remove the S and SEVEN becomes EVEN."
+ },
+ {
+  "q": "Three people buy a pizza for $30 and split it evenly. Each pays?",
+  "a": "$10",
+  "wrong": [
+   "$15",
+   "$12",
+   "$9"
+  ],
+  "why": "$30 ÷ 3 = $10 each."
+ },
+ {
+  "q": "If a doctor gives you 3 pills and says take one every 30 minutes, how long do they last?",
+  "a": "1 hour",
+  "wrong": [
+   "90 minutes",
+   "2 hours",
+   "30 minutes"
+  ],
+  "why": "Take one now, one after 30 minutes, the last after 60 minutes. The gaps add to 1 hour."
+ },
+ {
+  "q": "What is 12 squared minus 100?",
+  "a": "44",
+  "wrong": [
+   "144",
+   "24",
+   "40"
+  ],
+  "why": "12² = 144, and 144 − 100 = 44."
+ },
+ {
+  "q": "Which weighs more: 1,000 grams or 1 kilogram?",
+  "a": "Same",
+  "wrong": [
+   "1,000 grams",
+   "1 kilogram",
+   "Depends"
+  ],
+  "why": "A kilo is a kilo. Size and material don't change the weight."
+ },
+ {
+  "q": "A square has a perimeter of 36. What is its area?",
+  "a": "81",
+  "wrong": [
+   "36",
+   "72",
+   "9"
+  ],
+  "why": "Perimeter 36 ÷ 4 sides = 9 per side. Area 9 × 9 = 81."
+ },
+ {
+  "q": "How many seconds are in 2.5 minutes?",
+  "a": "150",
+  "wrong": [
+   "120",
+   "250",
+   "180"
+  ],
+  "why": "2.5 × 60 = 150."
+ },
+ {
+  "q": "The day before yesterday was Monday. What is the day after tomorrow?",
+  "a": "Friday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Wednesday"
+  ],
+  "why": "If the day before yesterday was Monday, today is Wednesday, so the day after tomorrow is Friday."
+ },
+ {
+  "q": "Dad is 4× his son's age. In 20 years he'll be 2×. How old is the son now?",
+  "a": "10",
+  "wrong": [
+   "5",
+   "15",
+   "20"
+  ],
+  "why": "Son s, dad 4s. In 20 years: 4s + 20 = 2(s + 20) → 2s = 20 → s = 10."
+ },
+ {
+  "q": "If it takes 8 men 10 hours to build a wall, how long for 4 men (same pace)?",
+  "a": "20 hours",
+  "wrong": [
+   "5 hours",
+   "10 hours",
+   "40 hours"
+  ],
+  "why": "Half the workers take twice as long."
+ }
+]

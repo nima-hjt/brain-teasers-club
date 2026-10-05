@@ -1,0 +1,574 @@
+[
+ {
+  "q": "🚢🧊💔",
+  "a": "Titanic",
+  "cat": "Movie",
+  "wrong": [
+   "Frozen",
+   "Jaws",
+   "Moana"
+  ],
+  "why": "Ship + iceberg + heartbreak."
+ },
+ {
+  "q": "🦖🏞️",
+  "a": "Jurassic Park",
+  "cat": "Movie",
+  "wrong": [
+   "King Kong",
+   "Godzilla",
+   "Avatar"
+  ],
+  "why": "Dinosaur + park."
+ },
+ {
+  "q": "🧙‍♂️⚡",
+  "a": "Harry Potter",
+  "cat": "Movie",
+  "wrong": [
+   "Lord of the Rings",
+   "Thor",
+   "Doctor Strange"
+  ],
+  "why": "Wizard + lightning scar."
+ },
+ {
+  "q": "👻🚫",
+  "a": "Ghostbusters",
+  "cat": "Movie",
+  "wrong": [
+   "Casper",
+   "Beetlejuice",
+   "Coco"
+  ],
+  "why": "Ghost + 'no' sign."
+ },
+ {
+  "q": "🏠🎈",
+  "a": "Up",
+  "cat": "Movie",
+  "wrong": [
+   "Home Alone",
+   "Monster House",
+   "Balloon Boy"
+  ],
+  "why": "House carried by balloons."
+ },
+ {
+  "q": "🤖❤️🌱",
+  "a": "WALL-E",
+  "cat": "Movie",
+  "wrong": [
+   "Big Hero 6",
+   "The Iron Giant",
+   "Robots"
+  ],
+  "why": "A robot who loves a little plant."
+ },
+ {
+  "q": "🐀👨‍🍳",
+  "a": "Ratatouille",
+  "cat": "Movie",
+  "wrong": [
+   "Stuart Little",
+   "Chef",
+   "Flushed Away"
+  ],
+  "why": "A rat who is a chef."
+ },
+ {
+  "q": "🍫🏭",
+  "a": "Charlie and the Chocolate Factory",
+  "cat": "Movie",
+  "wrong": [
+   "Wonka Wars",
+   "Candy Land",
+   "Sweet Tooth"
+  ],
+  "why": "Chocolate + factory."
+ },
+ {
+  "q": "🧠🎢😢",
+  "a": "Inside Out",
+  "cat": "Movie",
+  "wrong": [
+   "Soul",
+   "Coco",
+   "Elemental"
+  ],
+  "why": "Emotions as a roller-coaster in your head."
+ },
+ {
+  "q": "🐼🥋",
+  "a": "Kung Fu Panda",
+  "cat": "Movie",
+  "wrong": [
+   "Mulan",
+   "Karate Kid",
+   "Turning Red"
+  ],
+  "why": "Panda + martial arts."
+ },
+ {
+  "q": "🦍🗽",
+  "a": "King Kong",
+  "cat": "Movie",
+  "wrong": [
+   "Planet of the Apes",
+   "Godzilla",
+   "Tarzan"
+  ],
+  "why": "Giant gorilla + New York."
+ },
+ {
+  "q": "🐟🔍",
+  "a": "Finding Nemo",
+  "cat": "Movie",
+  "wrong": [
+   "Shark Tale",
+   "Luca",
+   "The Little Mermaid"
+  ],
+  "why": "Fish + searching."
+ },
+ {
+  "q": "🦁👑",
+  "a": "The Lion King",
+  "cat": "Movie",
+  "wrong": [
+   "Madagascar",
+   "Zootopia",
+   "Tarzan"
+  ],
+  "why": "Lion + crown."
+ },
+ {
+  "q": "❄️👸",
+  "a": "Frozen",
+  "cat": "Movie",
+  "wrong": [
+   "Tangled",
+   "Snow White",
+   "Brave"
+  ],
+  "why": "Snowflake + princess."
+ },
+ {
+  "q": "🦇👨",
+  "a": "Batman",
+  "cat": "Movie",
+  "wrong": [
+   "Dracula",
+   "Birdman",
+   "Hawkman"
+  ],
+  "why": "Bat + man."
+ },
+ {
+  "q": "🕷️👨",
+  "a": "Spider-Man",
+  "cat": "Movie",
+  "wrong": [
+   "Ant-Man",
+   "Venom",
+   "The Fly"
+  ],
+  "why": "Spider + man."
+ },
+ {
+  "q": "👩‍🚀🥔🔴",
+  "a": "The Martian",
+  "cat": "Movie",
+  "wrong": [
+   "Gravity",
+   "Interstellar",
+   "Red Planet"
+  ],
+  "why": "An astronaut growing potatoes on the red planet."
+ },
+ {
+  "q": "🦈🏖️",
+  "a": "Jaws",
+  "cat": "Movie",
+  "wrong": [
+   "The Meg",
+   "Finding Dory",
+   "Baywatch"
+  ],
+  "why": "Shark at the beach."
+ },
+ {
+  "q": "🧸🍯",
+  "a": "Winnie the Pooh",
+  "cat": "Character",
+  "wrong": [
+   "Paddington",
+   "Yogi Bear",
+   "Baloo"
+  ],
+  "why": "A bear who loves honey."
+ },
+ {
+  "q": "🌧️🐱🐶",
+  "a": "Raining cats and dogs",
+  "cat": "Saying",
+  "wrong": [
+   "Fighting like cats and dogs",
+   "Pet shop",
+   "Puppy love"
+  ],
+  "why": "Rain + cat + dog: heavy rain."
+ },
+ {
+  "q": "🍰🚶",
+  "a": "Piece of cake",
+  "cat": "Saying",
+  "wrong": [
+   "Birthday walk",
+   "Cake walk race",
+   "Sweet tooth"
+  ],
+  "why": "Cake + walk = cakewalk, something easy."
+ },
+ {
+  "q": "🥶🦃",
+  "a": "Cold turkey",
+  "cat": "Saying",
+  "wrong": [
+   "Frozen dinner",
+   "Thanksgiving",
+   "Chicken out"
+  ],
+  "why": "Cold + turkey: quitting all at once."
+ },
+ {
+  "q": "🧠⛈️",
+  "a": "Brainstorm",
+  "cat": "Word",
+  "wrong": [
+   "Headache",
+   "Mind blown",
+   "Thunderstruck"
+  ],
+  "why": "Brain + storm."
+ },
+ {
+  "q": "🐘🛋️",
+  "a": "Elephant in the room",
+  "cat": "Saying",
+  "wrong": [
+   "Big furniture",
+   "Jumbo sale",
+   "Heavy lifting"
+  ],
+  "why": "Elephant + sofa (a room): the obvious problem nobody mentions."
+ },
+ {
+  "q": "🫗🫘",
+  "a": "Spill the beans",
+  "cat": "Saying",
+  "wrong": [
+   "Coffee break",
+   "Bean counter",
+   "Full of beans"
+  ],
+  "why": "Pouring + beans: revealing a secret."
+ },
+ {
+  "q": "✋🐎",
+  "a": "Hold your horses",
+  "cat": "Saying",
+  "wrong": [
+   "Stop the race",
+   "High five",
+   "Horsing around"
+  ],
+  "why": "Hand (stop) + horse: slow down."
+ },
+ {
+  "q": "😢🐺",
+  "a": "Cry wolf",
+  "cat": "Saying",
+  "wrong": [
+   "Lone wolf",
+   "Sad dog",
+   "Wolf pack"
+  ],
+  "why": "Crying + wolf: raising a false alarm."
+ },
+ {
+  "q": "🛋️🥔",
+  "a": "Couch potato",
+  "cat": "Saying",
+  "wrong": [
+   "Mashed potato",
+   "Lazy Sunday",
+   "Hot potato"
+  ],
+  "why": "Couch + potato: someone who never gets up."
+ },
+ {
+  "q": "🌙🦉",
+  "a": "Night owl",
+  "cat": "Saying",
+  "wrong": [
+   "Owl moon",
+   "Late show",
+   "Dark bird"
+  ],
+  "why": "Moon + owl: a late sleeper."
+ },
+ {
+  "q": "🌅🐦",
+  "a": "Early bird",
+  "cat": "Saying",
+  "wrong": [
+   "Sunrise walk",
+   "Bird watching",
+   "Morning song"
+  ],
+  "why": "Sunrise + bird."
+ },
+ {
+  "q": "📚🐛",
+  "a": "Bookworm",
+  "cat": "Word",
+  "wrong": [
+   "Library pest",
+   "Page turner",
+   "Study bug"
+  ],
+  "why": "Books + worm."
+ },
+ {
+  "q": "🧈🤲",
+  "a": "Butterfingers",
+  "cat": "Word",
+  "wrong": [
+   "Toast",
+   "Greasy hands",
+   "Bread spread"
+  ],
+  "why": "Butter + hands: someone who drops things."
+ },
+ {
+  "q": "👁️🍬",
+  "a": "Eye candy",
+  "cat": "Saying",
+  "wrong": [
+   "Sweet dreams",
+   "Sugar rush",
+   "Eye drops"
+  ],
+  "why": "Eye + candy."
+ },
+ {
+  "q": "🧠🧼",
+  "a": "Brainwash",
+  "cat": "Word",
+  "wrong": [
+   "Clean mind",
+   "Headwash",
+   "Soap opera"
+  ],
+  "why": "Brain + soap."
+ },
+ {
+  "q": "☀️🔥",
+  "a": "Sunburn",
+  "cat": "Word",
+  "wrong": [
+   "Heatwave",
+   "Wildfire",
+   "Firestar"
+  ],
+  "why": "Sun + fire."
+ },
+ {
+  "q": "⭐🐟",
+  "a": "Starfish",
+  "cat": "Word",
+  "wrong": [
+   "Goldfish",
+   "Sea star",
+   "Fish star"
+  ],
+  "why": "Star + fish."
+ },
+ {
+  "q": "🔥🐶",
+  "a": "Hot dog",
+  "cat": "Word",
+  "wrong": [
+   "Fire dog",
+   "Warm puppy",
+   "Dog days"
+  ],
+  "why": "Fire (hot) + dog."
+ },
+ {
+  "q": "🌲🍎",
+  "a": "Pineapple",
+  "cat": "Word",
+  "wrong": [
+   "Tree fruit",
+   "Apple tree",
+   "Forest apple"
+  ],
+  "why": "Pine tree + apple."
+ },
+ {
+  "q": "🥚🌱",
+  "a": "Eggplant",
+  "cat": "Word",
+  "wrong": [
+   "Egg garden",
+   "Spring egg",
+   "Seedling"
+  ],
+  "why": "Egg + plant."
+ },
+ {
+  "q": "🍯🌙",
+  "a": "Honeymoon",
+  "cat": "Word",
+  "wrong": [
+   "Harvest moon",
+   "Sweet night",
+   "Bee moon"
+  ],
+  "why": "Honey + moon."
+ },
+ {
+  "q": "🔥🦊",
+  "a": "Firefox",
+  "cat": "Thing",
+  "wrong": [
+   "Red Fox",
+   "Hot Fox",
+   "Foxfire"
+  ],
+  "why": "Fire + fox, the browser."
+ },
+ {
+  "q": "🌧️🎀",
+  "a": "Rainbow",
+  "cat": "Word",
+  "wrong": [
+   "Rain gift",
+   "Wet ribbon",
+   "Storm bow"
+  ],
+  "why": "Rain + bow (ribbon)."
+ },
+ {
+  "q": "🐱🐟",
+  "a": "Catfish",
+  "cat": "Word",
+  "wrong": [
+   "Cat food",
+   "Fishcat",
+   "Tuna"
+  ],
+  "why": "Cat + fish."
+ },
+ {
+  "q": "🧊🏔️",
+  "a": "Iceberg",
+  "cat": "Word",
+  "wrong": [
+   "Snow mountain",
+   "Ice peak",
+   "Glacier"
+  ],
+  "why": "Ice + mountain."
+ },
+ {
+  "q": "🍎🥧",
+  "a": "Apple pie",
+  "cat": "Thing",
+  "wrong": [
+   "Fruit cake",
+   "Apple tart",
+   "Cherry pie"
+  ],
+  "why": "Apple + pie."
+ },
+ {
+  "q": "🌙🚶",
+  "a": "Moonwalk",
+  "cat": "Word",
+  "wrong": [
+   "Night stroll",
+   "Space walk",
+   "Moon landing"
+  ],
+  "why": "Moon + walking."
+ },
+ {
+  "q": "💥🦵",
+  "a": "Break a leg",
+  "cat": "Saying",
+  "wrong": [
+   "Kick off",
+   "Leg day",
+   "Hit the road"
+  ],
+  "why": "Explosion (break) + leg: good luck!"
+ },
+ {
+  "q": "1️⃣🔵🌙",
+  "a": "Once in a blue moon",
+  "cat": "Saying",
+  "wrong": [
+   "Blue Monday",
+   "First moon",
+   "One night only"
+  ],
+  "why": "One + blue + moon: very rarely."
+ },
+ {
+  "q": "⬇️🌦️",
+  "a": "Under the weather",
+  "cat": "Saying",
+  "wrong": [
+   "Rain check",
+   "Low pressure",
+   "Cloudy day"
+  ],
+  "why": "Down arrow + weather: feeling unwell."
+ },
+ {
+  "q": "🐝🍃",
+  "a": "Believe",
+  "cat": "Word",
+  "wrong": [
+   "Bee leaf",
+   "Honey tree",
+   "Nature"
+  ],
+  "why": "Bee + leaf = be-lieve."
+ },
+ {
+  "q": "🚪🔔",
+  "a": "Doorbell",
+  "cat": "Word",
+  "wrong": [
+   "Door alarm",
+   "Front door",
+   "Ring road"
+  ],
+  "why": "Door + bell."
+ },
+ {
+  "q": "🐎🪶",
+  "a": "Horsefeathers",
+  "cat": "Word",
+  "wrong": [
+   "Pegasus",
+   "Feather duster",
+   "Horse hair"
+  ],
+  "why": "Horse + feather: an old word for nonsense."
+ }
+]

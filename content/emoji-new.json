@@ -1,0 +1,1652 @@
+[
+ {
+  "q": "🤠🚀",
+  "a": "Toy Story",
+  "cat": "Movie",
+  "wrong": [
+   "Space Cowboys",
+   "Cars",
+   "Rango"
+  ],
+  "why": "Cowboy + rocket: Woody and Buzz."
+ },
+ {
+  "q": "🧅🐴👸",
+  "a": "Shrek",
+  "cat": "Movie",
+  "wrong": [
+   "Tangled",
+   "Enchanted",
+   "Hoodwinked"
+  ],
+  "why": "Ogre layers like an onion + donkey + princess."
+ },
+ {
+  "q": "🏠👦😱",
+  "a": "Home Alone",
+  "cat": "Movie",
+  "wrong": [
+   "Kindergarten Cop",
+   "Problem Child",
+   "Baby's Day Out"
+  ],
+  "why": "House + kid + screaming face."
+ },
+ {
+  "q": "🕶️💊",
+  "a": "The Matrix",
+  "cat": "Movie",
+  "wrong": [
+   "Inception",
+   "Blade Runner",
+   "Tron"
+  ],
+  "why": "Dark shades + the pill you choose."
+ },
+ {
+  "q": "⭐⚔️",
+  "a": "Star Wars",
+  "cat": "Movie",
+  "wrong": [
+   "Excalibur",
+   "Highlander",
+   "Conan the Barbarian"
+  ],
+  "why": "Stars + (light)swords."
+ },
+ {
+  "q": "🚗⏰⚡",
+  "a": "Back to the Future",
+  "cat": "Movie",
+  "wrong": [
+   "Time Bandits",
+   "Groundhog Day",
+   "Bill and Ted"
+  ],
+  "why": "Time-travelling car + clock + lightning bolt."
+ },
+ {
+  "q": "🏃🦐🪶",
+  "a": "Forrest Gump",
+  "cat": "Movie",
+  "wrong": [
+   "Rain Man",
+   "Big Fish",
+   "Rudy"
+  ],
+  "why": "Running + shrimp + the floating feather."
+ },
+ {
+  "q": "⚔️🏛️🦁",
+  "a": "Gladiator",
+  "cat": "Movie",
+  "wrong": [
+   "Braveheart",
+   "Kingdom of Heaven",
+   "The Last Samurai"
+  ],
+  "why": "Swords + Roman arena + lions."
+ },
+ {
+  "q": "👹🚪🏢",
+  "a": "Monsters, Inc.",
+  "cat": "Movie",
+  "wrong": [
+   "Hotel Transylvania",
+   "Gremlins",
+   "Monsters vs. Aliens"
+  ],
+  "why": "Monsters + closet doors + a company."
+ },
+ {
+  "q": "🧜‍♀️🦀🎶",
+  "a": "The Little Mermaid",
+  "cat": "Movie",
+  "wrong": [
+   "Splash",
+   "Aquamarine",
+   "Ponyo"
+  ],
+  "why": "Mermaid + singing crab (Sebastian) + songs."
+ },
+ {
+  "q": "🌹🕰️👸",
+  "a": "Beauty and the Beast",
+  "cat": "Movie",
+  "wrong": [
+   "Tangled",
+   "Maleficent",
+   "Ever After"
+  ],
+  "why": "Enchanted rose + clock (Cogsworth) + princess."
+ },
+ {
+  "q": "🧞🪔🐒",
+  "a": "Aladdin",
+  "cat": "Movie",
+  "wrong": [
+   "Hercules",
+   "Sinbad",
+   "The Prince of Egypt"
+  ],
+  "why": "Genie + magic lamp + monkey (Abu)."
+ },
+ {
+  "q": "👠🎃🕛",
+  "a": "Cinderella",
+  "cat": "Movie",
+  "wrong": [
+   "Rapunzel",
+   "Matilda",
+   "Pocahontas"
+  ],
+  "why": "Glass slipper + pumpkin coach + midnight."
+ },
+ {
+  "q": "😴👸🐉",
+  "a": "Sleeping Beauty",
+  "cat": "Movie",
+  "wrong": [
+   "Sleepy Hollow",
+   "Alice in Wonderland",
+   "Sleepless in Seattle"
+  ],
+  "why": "Sleeping princess + dragon."
+ },
+ {
+  "q": "👸🍎7️⃣",
+  "a": "Snow White",
+  "cat": "Movie",
+  "wrong": [
+   "Se7en",
+   "Ocean's Eleven",
+   "The Magnificent Seven"
+  ],
+  "why": "Princess + poisoned apple + seven dwarfs."
+ },
+ {
+  "q": "🏴‍☠️🌴🌊",
+  "a": "Pirates of the Caribbean",
+  "cat": "Movie",
+  "wrong": [
+   "Hook",
+   "Waterworld",
+   "Master and Commander"
+  ],
+  "why": "Pirate flag + palms + sea."
+ },
+ {
+  "q": "🎲🦁🌴",
+  "a": "Jumanji",
+  "cat": "Movie",
+  "wrong": [
+   "Zathura",
+   "Tarzan",
+   "Anaconda"
+  ],
+  "why": "Board game dice + jungle animals."
+ },
+ {
+  "q": "🔴🟢🦑",
+  "a": "Squid Game",
+  "cat": "Movie",
+  "wrong": [
+   "Black Mirror",
+   "Money Heist",
+   "Stranger Things"
+  ],
+  "why": "Red light, green light + squid."
+ },
+ {
+  "q": "🚿🔪🎻",
+  "a": "Psycho",
+  "cat": "Movie",
+  "wrong": [
+   "Scream",
+   "Halloween",
+   "Misery"
+  ],
+  "why": "Shower + knife + screeching violins."
+ },
+ {
+  "q": "👽📞🏠",
+  "a": "E.T.",
+  "cat": "Movie",
+  "wrong": [
+   "Close Encounters",
+   "Super 8",
+   "Paul"
+  ],
+  "why": "Alien + phone + home."
+ },
+ {
+  "q": "🕴️🕶️👽",
+  "a": "Men in Black",
+  "cat": "Movie",
+  "wrong": [
+   "Mars Attacks",
+   "Independence Day",
+   "Galaxy Quest"
+  ],
+  "why": "Black suit + shades + aliens."
+ },
+ {
+  "q": "🐴🛏️🔫",
+  "a": "The Godfather",
+  "cat": "Movie",
+  "wrong": [
+   "Goodfellas",
+   "Scarface",
+   "Casino"
+  ],
+  "why": "Horse head in the bed + mob gun."
+ },
+ {
+  "q": "🌪️👠🦁",
+  "a": "The Wizard of Oz",
+  "cat": "Movie",
+  "wrong": [
+   "Alice in Wonderland",
+   "The Chronicles of Narnia",
+   "Mary Poppins"
+  ],
+  "why": "Tornado + ruby slippers + Cowardly Lion."
+ },
+ {
+  "q": "🤖🔫⏳",
+  "a": "The Terminator",
+  "cat": "Movie",
+  "wrong": [
+   "RoboCop",
+   "Blade Runner",
+   "I, Robot"
+  ],
+  "why": "Robot + gun + time."
+ },
+ {
+  "q": "🔵👽🌳",
+  "a": "Avatar",
+  "cat": "Movie",
+  "wrong": [
+   "Dune",
+   "Tron",
+   "Prometheus"
+  ],
+  "why": "Blue aliens + giant glowing tree."
+ },
+ {
+  "q": "💍🌋🧝",
+  "a": "The Lord of the Rings",
+  "cat": "Movie",
+  "wrong": [
+   "Clash of the Titans",
+   "Dune",
+   "Eragon"
+  ],
+  "why": "One ring + Mount Doom + elf."
+ },
+ {
+  "q": "🏹🔥🐦",
+  "a": "The Hunger Games",
+  "cat": "Movie",
+  "wrong": [
+   "Divergent",
+   "The Maze Runner",
+   "Ender's Game"
+  ],
+  "why": "Bow + Girl on Fire + mockingjay."
+ },
+ {
+  "q": "💛🥽🍌",
+  "a": "Minions",
+  "cat": "Movie",
+  "wrong": [
+   "The Smurfs",
+   "Trolls",
+   "Sing"
+  ],
+  "why": "Yellow + goggles + bananas."
+ },
+ {
+  "q": "💀🎸🌼",
+  "a": "Coco",
+  "cat": "Movie",
+  "wrong": [
+   "Encanto",
+   "Soul",
+   "Brave"
+  ],
+  "why": "Skeletons + guitar + marigolds."
+ },
+ {
+  "q": "🌊🐓🏝️",
+  "a": "Moana",
+  "cat": "Movie",
+  "wrong": [
+   "Brave",
+   "Pocahontas",
+   "Mulan"
+  ],
+  "why": "Ocean + silly rooster (Heihei) + island."
+ },
+ {
+  "q": "🦁🦓🚢",
+  "a": "Madagascar",
+  "cat": "Movie",
+  "wrong": [
+   "Zootopia",
+   "Happy Feet",
+   "Sing"
+  ],
+  "why": "Zoo animals + a ship."
+ },
+ {
+  "q": "🧊🐘🌰",
+  "a": "Ice Age",
+  "cat": "Movie",
+  "wrong": [
+   "Happy Feet",
+   "The Croods",
+   "Rio"
+  ],
+  "why": "Ice + mammoth + the chasing acorn."
+ },
+ {
+  "q": "🐒🪐",
+  "a": "Planet of the Apes",
+  "cat": "Movie",
+  "wrong": [
+   "Congo",
+   "Mighty Joe Young",
+   "Altered States"
+  ],
+  "why": "Apes + planet."
+ },
+ {
+  "q": "🐉🗡️👑",
+  "a": "Game of Thrones",
+  "cat": "Movie",
+  "wrong": [
+   "Vikings",
+   "The Witcher",
+   "House of Cards"
+  ],
+  "why": "Dragon + sword + crown."
+ },
+ {
+  "q": "🐶🍝❤️",
+  "a": "Lady and the Tramp",
+  "cat": "Movie",
+  "wrong": [
+   "Beethoven",
+   "Oliver and Company",
+   "Marley and Me"
+  ],
+  "why": "Dogs + shared spaghetti + romance."
+ },
+ {
+  "q": "2️⃣🐦🎯",
+  "a": "Kill two birds with one stone",
+  "cat": "Saying",
+  "wrong": [
+   "A bird in the hand",
+   "Birds of a feather",
+   "Free as a bird"
+  ],
+  "why": "Two birds, one hit."
+ },
+ {
+  "q": "🧊🔨",
+  "a": "Break the ice",
+  "cat": "Saying",
+  "wrong": [
+   "Cold as ice",
+   "Skating on thin ice",
+   "Hammer it home"
+  ],
+  "why": "Smash the ice to start the conversation."
+ },
+ {
+  "q": "🦷🔫",
+  "a": "Bite the bullet",
+  "cat": "Saying",
+  "wrong": [
+   "Shoot the breeze",
+   "Jump the gun",
+   "Face the music"
+  ],
+  "why": "Teeth + bullet."
+ },
+ {
+  "q": "🐱🛍️🏃",
+  "a": "Let the cat out of the bag",
+  "cat": "Saying",
+  "wrong": [
+   "Curiosity killed the cat",
+   "Cat got your tongue",
+   "Fat cat"
+  ],
+  "why": "Cat escapes the bag."
+ },
+ {
+  "q": "🐶🌳❌",
+  "a": "Barking up the wrong tree",
+  "cat": "Saying",
+  "wrong": [
+   "Dog days of summer",
+   "Leave no stone unturned",
+   "Man's best friend"
+  ],
+  "why": "Dog barks at the wrong tree."
+ },
+ {
+  "q": "🐂🍵💥",
+  "a": "Bull in a china shop",
+  "cat": "Saying",
+  "wrong": [
+   "Take the bull by the horns",
+   "Raising the bar",
+   "Cow in the clover"
+  ],
+  "why": "Bull + crockery + smashing."
+ },
+ {
+  "q": "🦋🤢😰",
+  "a": "Butterflies in your stomach",
+  "cat": "Saying",
+  "wrong": [
+   "Ants in your pants",
+   "Frog in your throat",
+   "Cold feet"
+  ],
+  "why": "Nervous, queasy feeling."
+ },
+ {
+  "q": "🐜👖",
+  "a": "Ants in your pants",
+  "cat": "Saying",
+  "wrong": [
+   "Bee in your bonnet",
+   "Bugs in the system",
+   "Spiders on the ceiling"
+  ],
+  "why": "Ants + trousers = can't sit still."
+ },
+ {
+  "q": "🐸🗣️",
+  "a": "Frog in your throat",
+  "cat": "Saying",
+  "wrong": [
+   "Cat got your tongue",
+   "Lump in your throat",
+   "Bird in the hand"
+  ],
+  "why": "Frog + voice."
+ },
+ {
+  "q": "🐱👅❓",
+  "a": "Cat got your tongue",
+  "cat": "Saying",
+  "wrong": [
+   "Frog in your throat",
+   "Bite your tongue",
+   "Slip of the tongue"
+  ],
+  "why": "Cat + tongue + a question."
+ },
+ {
+  "q": "🦁🍰",
+  "a": "Lion's share",
+  "cat": "Saying",
+  "wrong": [
+   "Piece of cake",
+   "Heart of a lion",
+   "Bear market"
+  ],
+  "why": "The lion takes the biggest portion."
+ },
+ {
+  "q": "💵🐄",
+  "a": "Cash cow",
+  "cat": "Saying",
+  "wrong": [
+   "Fat cat",
+   "Golden goose",
+   "Holy cow"
+  ],
+  "why": "Money + cow: a steady earner."
+ },
+ {
+  "q": "⬛🐑",
+  "a": "Black sheep",
+  "cat": "Saying",
+  "wrong": [
+   "Wolf in sheep's clothing",
+   "Lost sheep",
+   "Dark horse"
+  ],
+  "why": "Dark sheep of the family."
+ },
+ {
+  "q": "😴🐶🚫",
+  "a": "Let sleeping dogs lie",
+  "cat": "Saying",
+  "wrong": [
+   "Sick as a dog",
+   "Dog tired",
+   "Dog days"
+  ],
+  "why": "Don't wake the sleeping dog."
+ },
+ {
+  "q": "🔢🐔🥚",
+  "a": "Don't count your chickens",
+  "cat": "Saying",
+  "wrong": [
+   "Chicken out",
+   "Egg on your face",
+   "Cooped up"
+  ],
+  "why": "Counting chickens/eggs too early."
+ },
+ {
+  "q": "🥚🧺☝️",
+  "a": "Eggs in one basket",
+  "cat": "Saying",
+  "wrong": [
+   "Walking on eggshells",
+   "Egg on your face",
+   "Nest egg"
+  ],
+  "why": "All eggs in a single basket."
+ },
+ {
+  "q": "🎾🏟️👉",
+  "a": "The ball is in your court",
+  "cat": "Saying",
+  "wrong": [
+   "Game on",
+   "Play it by ear",
+   "Throw in the towel"
+  ],
+  "why": "Ball + court + pointing to you."
+ },
+ {
+  "q": "🔥🕛🛢️",
+  "a": "Burn the midnight oil",
+  "cat": "Saying",
+  "wrong": [
+   "Fuel the fire",
+   "Play with fire",
+   "Strike while the iron is hot"
+  ],
+  "why": "Fire + midnight + oil lamp: working late."
+ },
+ {
+  "q": "🤏🦵😂",
+  "a": "Pull someone's leg",
+  "cat": "Saying",
+  "wrong": [
+   "Break a leg",
+   "Cost an arm and a leg",
+   "Shake a leg"
+  ],
+  "why": "Tug a leg as a joke."
+ },
+ {
+  "q": "📏👍",
+  "a": "Rule of thumb",
+  "cat": "Saying",
+  "wrong": [
+   "Green thumb",
+   "Thumbs up",
+   "Sore thumb"
+  ],
+  "why": "Ruler + thumb."
+ },
+ {
+  "q": "🔙1️⃣🔲",
+  "a": "Back to square one",
+  "cat": "Saying",
+  "wrong": [
+   "Back to the drawing board",
+   "Back against the wall",
+   "Back to basics"
+  ],
+  "why": "Return to the first square."
+ },
+ {
+  "q": "🔄🌿👊",
+  "a": "Beat around the bush",
+  "cat": "Saying",
+  "wrong": [
+   "Burn the candle at both ends",
+   "Cut to the chase",
+   "Dig a hole"
+  ],
+  "why": "Circle the bush, hit it, never get to the point."
+ },
+ {
+  "q": "☁️9️⃣",
+  "a": "On cloud nine",
+  "cat": "Saying",
+  "wrong": [
+   "Under the weather",
+   "Head in the clouds",
+   "Seventh heaven"
+  ],
+  "why": "Cloud + the number nine."
+ },
+ {
+  "q": "✂️📐",
+  "a": "Cut corners",
+  "cat": "Saying",
+  "wrong": [
+   "Cut and run",
+   "Cut the mustard",
+   "Square deal"
+  ],
+  "why": "Snip the corners to save effort."
+ },
+ {
+  "q": "😭🥛💦",
+  "a": "Cry over spilled milk",
+  "cat": "Saying",
+  "wrong": [
+   "Milk it for all it's worth",
+   "Land of milk and honey",
+   "Tears in the rain"
+  ],
+  "why": "Crying + spilled milk."
+ },
+ {
+  "q": "💀🚪👔",
+  "a": "Skeleton in the closet",
+  "cat": "Saying",
+  "wrong": [
+   "Bone to pick",
+   "Dead as a doornail",
+   "Scared stiff"
+  ],
+  "why": "Skeleton + closet door."
+ },
+ {
+  "q": "🚶🥚💥",
+  "a": "Walking on eggshells",
+  "cat": "Saying",
+  "wrong": [
+   "Walk on air",
+   "Egg on your face",
+   "Walk the plank"
+  ],
+  "why": "Walk carefully or the eggs break."
+ },
+ {
+  "q": "🔨🔩🎯",
+  "a": "Hit the nail on the head",
+  "cat": "Saying",
+  "wrong": [
+   "Hit the jackpot",
+   "Hit the road",
+   "Hit the books"
+  ],
+  "why": "Hammer + nail + bullseye."
+ },
+ {
+  "q": "👊🛏️",
+  "a": "Hit the sack",
+  "cat": "Saying",
+  "wrong": [
+   "Hit the road",
+   "Hit the roof",
+   "Hit the wall"
+  ],
+  "why": "Punch + bed."
+ },
+ {
+  "q": "🥧😌",
+  "a": "Easy as pie",
+  "cat": "Saying",
+  "wrong": [
+   "Piece of cake",
+   "Cherry on top",
+   "Nice and easy"
+  ],
+  "why": "Pie + relaxed face."
+ },
+ {
+  "q": "🍒🔝",
+  "a": "Cherry on top",
+  "cat": "Saying",
+  "wrong": [
+   "Pick of the bunch",
+   "Low-hanging fruit",
+   "Top of the pops"
+  ],
+  "why": "Cherry + top."
+ },
+ {
+  "q": "🟢😒",
+  "a": "Green with envy",
+  "cat": "Saying",
+  "wrong": [
+   "Feeling blue",
+   "Seeing red",
+   "In the pink"
+  ],
+  "why": "Green + jealous face."
+ },
+ {
+  "q": "🚩🔴",
+  "a": "Red flag",
+  "cat": "Saying",
+  "wrong": [
+   "Red herring",
+   "Red tape",
+   "White flag"
+  ],
+  "why": "A warning flag."
+ },
+ {
+  "q": "☁️🥈",
+  "a": "Silver lining",
+  "cat": "Saying",
+  "wrong": [
+   "Cloud nine",
+   "Every cloud",
+   "Silver spoon"
+  ],
+  "why": "Cloud + silver edge."
+ },
+ {
+  "q": "🥶🦶",
+  "a": "Cold feet",
+  "cat": "Saying",
+  "wrong": [
+   "Cold shoulder",
+   "Cold turkey",
+   "Itchy feet"
+  ],
+  "why": "Chilly feet = getting nervous."
+ },
+ {
+  "q": "❄️👨",
+  "a": "Snowman",
+  "cat": "Word",
+  "wrong": [
+   "Iceman",
+   "Frostbite",
+   "Snowball"
+  ],
+  "why": "Snow + man."
+ },
+ {
+  "q": "☀️🌼",
+  "a": "Sunflower",
+  "cat": "Word",
+  "wrong": [
+   "Wildflower",
+   "Daisy chain",
+   "Moonflower"
+  ],
+  "why": "Sun + flower."
+ },
+ {
+  "q": "🦶⚽",
+  "a": "Football",
+  "cat": "Word",
+  "wrong": [
+   "Footprint",
+   "Handball",
+   "Foot soldier"
+  ],
+  "why": "Foot + ball."
+ },
+ {
+  "q": "🦷🧹",
+  "a": "Toothbrush",
+  "cat": "Word",
+  "wrong": [
+   "Toothpaste",
+   "Hairbrush",
+   "Mouthwash"
+  ],
+  "why": "Tooth + brush."
+ },
+ {
+  "q": "🌧️🧥",
+  "a": "Raincoat",
+  "cat": "Word",
+  "wrong": [
+   "Overcoat",
+   "Raindrop",
+   "Waterproof"
+  ],
+  "why": "Rain + coat."
+ },
+ {
+  "q": "🌙💡",
+  "a": "Moonlight",
+  "cat": "Word",
+  "wrong": [
+   "Moonbeam",
+   "Starlight",
+   "Daylight"
+  ],
+  "why": "Moon + light."
+ },
+ {
+  "q": "🔵🐦",
+  "a": "Bluebird",
+  "cat": "Word",
+  "wrong": [
+   "Blackbird",
+   "Bluebell",
+   "Lovebird"
+  ],
+  "why": "Blue + bird."
+ },
+ {
+  "q": "🔥🧱",
+  "a": "Firewall",
+  "cat": "Word",
+  "wrong": [
+   "Fireplace",
+   "Firefly",
+   "Brickwork"
+  ],
+  "why": "Fire + wall."
+ },
+ {
+  "q": "🍳🍰",
+  "a": "Pancake",
+  "cat": "Word",
+  "wrong": [
+   "Cupcake",
+   "Frying pan",
+   "Fry-up"
+  ],
+  "why": "Pan + cake."
+ },
+ {
+  "q": "🧀🍰",
+  "a": "Cheesecake",
+  "cat": "Word",
+  "wrong": [
+   "Shortcake",
+   "Cheeseboard",
+   "Cheddar"
+  ],
+  "why": "Cheese + cake."
+ },
+ {
+  "q": "🌊🐴",
+  "a": "Seahorse",
+  "cat": "Word",
+  "wrong": [
+   "Sea lion",
+   "Racehorse",
+   "Sea monster"
+  ],
+  "why": "Sea + horse."
+ },
+ {
+  "q": "🛏️🚪",
+  "a": "Bedroom",
+  "cat": "Word",
+  "wrong": [
+   "Bedtime",
+   "Bedspread",
+   "Doorstep"
+  ],
+  "why": "Bed + room (door)."
+ },
+ {
+  "q": "🏖️🏰",
+  "a": "Sandcastle",
+  "cat": "Word",
+  "wrong": [
+   "Sandbank",
+   "Sandstorm",
+   "Beach hut"
+  ],
+  "why": "Sand + castle."
+ },
+ {
+  "q": "🔑🎹",
+  "a": "Keyboard",
+  "cat": "Word",
+  "wrong": [
+   "Keypad",
+   "Pianoforte",
+   "Keyring"
+  ],
+  "why": "Key + board of keys."
+ },
+ {
+  "q": "💡🏠",
+  "a": "Lighthouse",
+  "cat": "Word",
+  "wrong": [
+   "Lightbulb",
+   "Lamp post",
+   "Light year"
+  ],
+  "why": "Light + house."
+ },
+ {
+  "q": "💨⚓",
+  "a": "Airport",
+  "cat": "Word",
+  "wrong": [
+   "Seaport",
+   "Airbag",
+   "Airline"
+  ],
+  "why": "Air + port."
+ },
+ {
+  "q": "☁️🏢",
+  "a": "Skyscraper",
+  "cat": "Word",
+  "wrong": [
+   "Cloudburst",
+   "Penthouse",
+   "Highrise"
+  ],
+  "why": "Sky + scraping building."
+ },
+ {
+  "q": "👁️⚽",
+  "a": "Eyeball",
+  "cat": "Word",
+  "wrong": [
+   "Eyelash",
+   "Eyebrow",
+   "Eyewitness"
+  ],
+  "why": "Eye + ball."
+ },
+ {
+  "q": "🤚👜",
+  "a": "Handbag",
+  "cat": "Word",
+  "wrong": [
+   "Handshake",
+   "Briefcase",
+   "Backpack"
+  ],
+  "why": "Hand + bag."
+ },
+ {
+  "q": "🥇🐟",
+  "a": "Goldfish",
+  "cat": "Word",
+  "wrong": [
+   "Catfish",
+   "Swordfish",
+   "Goldmine"
+  ],
+  "why": "Gold + fish."
+ },
+ {
+  "q": "🔵🦷",
+  "a": "Bluetooth",
+  "cat": "Word",
+  "wrong": [
+   "Blueprint",
+   "Wi-Fi",
+   "Blue whale"
+  ],
+  "why": "Blue + tooth."
+ },
+ {
+  "q": "🐄👦",
+  "a": "Cowboy",
+  "cat": "Word",
+  "wrong": [
+   "Cowgirl",
+   "Bullfighter",
+   "Farmhand"
+  ],
+  "why": "Cow + boy."
+ },
+ {
+  "q": "👩🐛",
+  "a": "Ladybug",
+  "cat": "Word",
+  "wrong": [
+   "Ladybird",
+   "Firefly",
+   "Bumblebee"
+  ],
+  "why": "Lady + bug."
+ },
+ {
+  "q": "☀️👓",
+  "a": "Sunglasses",
+  "cat": "Word",
+  "wrong": [
+   "Sunscreen",
+   "Spectacles",
+   "Sunburst"
+  ],
+  "why": "Sun + glasses."
+ },
+ {
+  "q": "⬇️🏙️",
+  "a": "Downtown",
+  "cat": "Word",
+  "wrong": [
+   "Uptown",
+   "Downhill",
+   "Midtown"
+  ],
+  "why": "Down + town."
+ },
+ {
+  "q": "🌞💭",
+  "a": "Daydream",
+  "cat": "Word",
+  "wrong": [
+   "Sunrise",
+   "Wishful thinking",
+   "Daybreak"
+  ],
+  "why": "Day + dream."
+ },
+ {
+  "q": "🌙🐴",
+  "a": "Nightmare",
+  "cat": "Word",
+  "wrong": [
+   "Midnight",
+   "Night terror",
+   "Sleepwalk"
+  ],
+  "why": "Night + mare (horse)."
+ },
+ {
+  "q": "🎂📅",
+  "a": "Birthday",
+  "cat": "Word",
+  "wrong": [
+   "Anniversary",
+   "Holiday",
+   "Cake walk"
+  ],
+  "why": "Birth (cake) + day (calendar)."
+ },
+ {
+  "q": "🟢🏠",
+  "a": "Greenhouse",
+  "cat": "Word",
+  "wrong": [
+   "Greenland",
+   "Glasshouse",
+   "Green room"
+  ],
+  "why": "Green + house."
+ },
+ {
+  "q": "💧🍉",
+  "a": "Watermelon",
+  "cat": "Word",
+  "wrong": [
+   "Waterfall",
+   "Honeydew",
+   "Water bottle"
+  ],
+  "why": "Water + melon."
+ },
+ {
+  "q": "🌊🐚",
+  "a": "Seashell",
+  "cat": "Word",
+  "wrong": [
+   "Seaweed",
+   "Seashore",
+   "Conch"
+  ],
+  "why": "Sea + shell."
+ },
+ {
+  "q": "🍬❤️",
+  "a": "Sweetheart",
+  "cat": "Word",
+  "wrong": [
+   "Sweet tooth",
+   "Heartbeat",
+   "Candy cane"
+  ],
+  "why": "Sweet + heart."
+ },
+ {
+  "q": "✉️📦",
+  "a": "Mailbox",
+  "cat": "Word",
+  "wrong": [
+   "Postcard",
+   "Inbox",
+   "Mailman"
+  ],
+  "why": "Mail + box."
+ },
+ {
+  "q": "💥🌽",
+  "a": "Popcorn",
+  "cat": "Word",
+  "wrong": [
+   "Cornflakes",
+   "Corn dog",
+   "Cornfield"
+  ],
+  "why": "Pop + corn."
+ },
+ {
+  "q": "🥚🐚",
+  "a": "Eggshell",
+  "cat": "Word",
+  "wrong": [
+   "Eggcup",
+   "Nutshell",
+   "Egg yolk"
+  ],
+  "why": "Egg + shell."
+ },
+ {
+  "q": "🥐🎨🌃",
+  "a": "Paris",
+  "cat": "Place",
+  "wrong": [
+   "Rome",
+   "Vienna",
+   "Brussels"
+  ],
+  "why": "Croissant + art + city of lights."
+ },
+ {
+  "q": "🍕🏛️🛵",
+  "a": "Rome",
+  "cat": "Place",
+  "wrong": [
+   "Venice",
+   "Naples",
+   "Madrid"
+  ],
+  "why": "Pizza + ancient ruins + scooters."
+ },
+ {
+  "q": "🎰🎲🌴",
+  "a": "Las Vegas",
+  "cat": "Place",
+  "wrong": [
+   "Monte Carlo",
+   "Atlantic City",
+   "Miami"
+  ],
+  "why": "Slots + dice + palms."
+ },
+ {
+  "q": "🎬⭐✨",
+  "a": "Hollywood",
+  "cat": "Place",
+  "wrong": [
+   "Broadway",
+   "Burbank",
+   "Beverly Hills"
+  ],
+  "why": "Film + stars + glamour."
+ },
+ {
+  "q": "🐫🔺🏜️",
+  "a": "Egypt",
+  "cat": "Place",
+  "wrong": [
+   "Morocco",
+   "Jordan",
+   "Iraq"
+  ],
+  "why": "Camel + pyramid + desert."
+ },
+ {
+  "q": "🌷🚲🧀",
+  "a": "Netherlands",
+  "cat": "Place",
+  "wrong": [
+   "Belgium",
+   "Denmark",
+   "Germany"
+  ],
+  "why": "Tulips + bikes + cheese."
+ },
+ {
+  "q": "🏔️⌚🍫",
+  "a": "Switzerland",
+  "cat": "Place",
+  "wrong": [
+   "Austria",
+   "Norway",
+   "Nepal"
+  ],
+  "why": "Alps + watches + chocolate."
+ },
+ {
+  "q": "🦘🏄🐨",
+  "a": "Australia",
+  "cat": "Place",
+  "wrong": [
+   "New Zealand",
+   "South Africa",
+   "Fiji"
+  ],
+  "why": "Kangaroo + surfing + koala."
+ },
+ {
+  "q": "🍎🗽🚕",
+  "a": "New York",
+  "cat": "Place",
+  "wrong": [
+   "Chicago",
+   "Boston",
+   "Washington"
+  ],
+  "why": "Big Apple + Statue of Liberty + taxi."
+ },
+ {
+  "q": "🚣💧🎭",
+  "a": "Venice",
+  "cat": "Place",
+  "wrong": [
+   "Amsterdam",
+   "Bruges",
+   "Florence"
+  ],
+  "why": "Gondola + water + carnival mask."
+ },
+ {
+  "q": "🗼🍣🚄",
+  "a": "Tokyo",
+  "cat": "Place",
+  "wrong": [
+   "Seoul",
+   "Bangkok",
+   "Shanghai"
+  ],
+  "why": "Tower + sushi + bullet train."
+ },
+ {
+  "q": "🎡☂️🚌",
+  "a": "London",
+  "cat": "Place",
+  "wrong": [
+   "Dublin",
+   "Edinburgh",
+   "Manchester"
+  ],
+  "why": "Big wheel + umbrella + red bus."
+ },
+ {
+  "q": "🧊🌋",
+  "a": "Iceland",
+  "cat": "Place",
+  "wrong": [
+   "Greenland",
+   "Finland",
+   "Alaska"
+  ],
+  "why": "Ice + volcano."
+ },
+ {
+  "q": "🌮🌵🎺",
+  "a": "Mexico",
+  "cat": "Place",
+  "wrong": [
+   "Spain",
+   "Peru",
+   "Cuba"
+  ],
+  "why": "Tacos + cactus + mariachi trumpet."
+ },
+ {
+  "q": "🍛🐅🕌",
+  "a": "India",
+  "cat": "Place",
+  "wrong": [
+   "Thailand",
+   "Indonesia",
+   "Bangladesh"
+  ],
+  "why": "Curry + tiger + mosque/palace."
+ },
+ {
+  "q": "🐟🍚🥢",
+  "a": "Sushi",
+  "cat": "Food",
+  "wrong": [
+   "Risotto",
+   "Paella",
+   "Dumplings"
+  ],
+  "why": "Fish + rice + chopsticks."
+ },
+ {
+  "q": "🍝🍖⚽",
+  "a": "Spaghetti and meatballs",
+  "cat": "Food",
+  "wrong": [
+   "Chicken parmesan",
+   "Lasagna",
+   "Fettuccine Alfredo"
+  ],
+  "why": "Pasta + meat + balls."
+ },
+ {
+  "q": "🐟🍟",
+  "a": "Fish and chips",
+  "cat": "Food",
+  "wrong": [
+   "Surf and turf",
+   "Bangers and mash",
+   "Steak frites"
+  ],
+  "why": "Fish + fries."
+ },
+ {
+  "q": "🥜🧈🍇",
+  "a": "Peanut butter and jelly",
+  "cat": "Food",
+  "wrong": [
+   "Cheese and crackers",
+   "Ham and eggs",
+   "Bread and butter"
+  ],
+  "why": "Peanut + spread + grape jelly."
+ },
+ {
+  "q": "🥓🥚",
+  "a": "Bacon and eggs",
+  "cat": "Food",
+  "wrong": [
+   "Ham and cheese",
+   "Sausage and beans",
+   "Steak and eggs"
+  ],
+  "why": "Bacon + eggs."
+ },
+ {
+  "q": "🔥🍫",
+  "a": "Hot chocolate",
+  "cat": "Food",
+  "wrong": [
+   "Chocolate milk",
+   "Spiced mocha",
+   "Hot toddy"
+  ],
+  "why": "Hot + chocolate."
+ },
+ {
+  "q": "🥛🍦🥤",
+  "a": "Milkshake",
+  "cat": "Food",
+  "wrong": [
+   "Smoothie",
+   "Latte",
+   "Eggnog"
+  ],
+  "why": "Milk + ice cream + a cup."
+ },
+ {
+  "q": "🥖🍞🍳",
+  "a": "French toast",
+  "cat": "Food",
+  "wrong": [
+   "Garlic bread",
+   "Eggs Benedict",
+   "Croissant"
+  ],
+  "why": "French loaf + bread + egg."
+ },
+ {
+  "q": "🍌✂️🍦",
+  "a": "Banana split",
+  "cat": "Food",
+  "wrong": [
+   "Banana bread",
+   "Ice cream sandwich",
+   "Fruit salad"
+  ],
+  "why": "Banana + cut + ice cream."
+ },
+ {
+  "q": "🐔🥣",
+  "a": "Chicken soup",
+  "cat": "Food",
+  "wrong": [
+   "Tomato soup",
+   "Miso soup",
+   "Beef stew"
+  ],
+  "why": "Chicken + bowl."
+ },
+ {
+  "q": "🥔🔨",
+  "a": "Mashed potatoes",
+  "cat": "Food",
+  "wrong": [
+   "French fries",
+   "Baked potato",
+   "Hash browns"
+  ],
+  "why": "Potato + smash."
+ },
+ {
+  "q": "🖥️🧀",
+  "a": "Mac and cheese",
+  "cat": "Food",
+  "wrong": [
+   "Cheese toastie",
+   "Fondue",
+   "Lasagna"
+  ],
+  "why": "Mac + cheese."
+ },
+ {
+  "q": "🏡🧀",
+  "a": "Cottage cheese",
+  "cat": "Food",
+  "wrong": [
+   "Cream cheese",
+   "Goat cheese",
+   "String cheese"
+  ],
+  "why": "House + cheese."
+ },
+ {
+  "q": "🍬🥔",
+  "a": "Sweet potato",
+  "cat": "Food",
+  "wrong": [
+   "Tater tot",
+   "Couch potato",
+   "Jacket potato"
+  ],
+  "why": "Sweet + potato."
+ },
+ {
+  "q": "☁️🍬",
+  "a": "Cotton candy",
+  "cat": "Food",
+  "wrong": [
+   "Rock candy",
+   "Candy cane",
+   "Gumball"
+  ],
+  "why": "Fluffy cloud + candy."
+ },
+ {
+  "q": "🔍🎻🎩",
+  "a": "Sherlock Holmes",
+  "cat": "Character",
+  "wrong": [
+   "Hercule Poirot",
+   "Inspector Gadget",
+   "Dr. Watson"
+  ],
+  "why": "Magnifying glass + violin + deerstalker hat."
+ },
+ {
+  "q": "🐭🧤⚫",
+  "a": "Mickey Mouse",
+  "cat": "Character",
+  "wrong": [
+   "Mighty Mouse",
+   "Stuart Little",
+   "Minnie Mouse"
+  ],
+  "why": "Mouse + white gloves + black ears."
+ },
+ {
+  "q": "🍪👾🔵",
+  "a": "Cookie Monster",
+  "cat": "Character",
+  "wrong": [
+   "Elmo",
+   "Grover",
+   "Sully"
+  ],
+  "why": "Cookies + monster + blue."
+ },
+ {
+  "q": "🧛🏰🦇",
+  "a": "Dracula",
+  "cat": "Character",
+  "wrong": [
+   "Frankenstein",
+   "Wolfman",
+   "Van Helsing"
+  ],
+  "why": "Vampire + castle + bats."
+ },
+ {
+  "q": "🏹🌲🧢",
+  "a": "Robin Hood",
+  "cat": "Character",
+  "wrong": [
+   "William Tell",
+   "Peter Pan",
+   "Zorro"
+  ],
+  "why": "Bow + forest + feathered cap."
+ },
+ {
+  "q": "🍄🐢🔧",
+  "a": "Mario",
+  "cat": "Character",
+  "wrong": [
+   "Sonic",
+   "Donkey Kong",
+   "Link"
+  ],
+  "why": "Mushroom + turtle shell + plumber's wrench."
+ },
+ {
+  "q": "🐷🏦💰",
+  "a": "Piggy bank",
+  "cat": "Thing",
+  "wrong": [
+   "Money tree",
+   "Cash register",
+   "Treasure chest"
+  ],
+  "why": "Pig + bank + coins."
+ },
+ {
+  "q": "👴🕰️",
+  "a": "Grandfather clock",
+  "cat": "Thing",
+  "wrong": [
+   "Cuckoo clock",
+   "Alarm clock",
+   "Sundial"
+  ],
+  "why": "Old man + clock."
+ },
+ {
+  "q": "⏰💣",
+  "a": "Time bomb",
+  "cat": "Thing",
+  "wrong": [
+   "Atom bomb",
+   "Water balloon",
+   "Alarm clock"
+  ],
+  "why": "Timer + bomb."
+ },
+ {
+  "q": "🗺️❌🏴‍☠️",
+  "a": "Treasure map",
+  "cat": "Thing",
+  "wrong": [
+   "Pirate ship",
+   "Message in a bottle",
+   "Buried gold"
+  ],
+  "why": "Map + X marks the spot + pirates."
+ },
+ {
+  "q": "🌠⛲",
+  "a": "Wishing well",
+  "cat": "Thing",
+  "wrong": [
+   "Water fountain",
+   "Shooting star",
+   "Magic lamp"
+  ],
+  "why": "Wishes + well."
+ },
+ {
+  "q": "💛🌊🚢",
+  "a": "Yellow Submarine",
+  "cat": "Song",
+  "wrong": [
+   "Blue Suede Shoes",
+   "Green Onions",
+   "Black Magic Woman"
+  ],
+  "why": "Yellow + underwater boat."
+ },
+ {
+  "q": "🏨🌴☀️",
+  "a": "Hotel California",
+  "cat": "Song",
+  "wrong": [
+   "Margaritaville",
+   "Surfin' USA",
+   "Kokomo"
+  ],
+  "why": "Hotel + palms + sunshine."
+ },
+ {
+  "q": "💃👑",
+  "a": "Dancing Queen",
+  "cat": "Song",
+  "wrong": [
+   "Super Trouper",
+   "Mamma Mia",
+   "Take a Chance"
+  ],
+  "why": "Dancer + crown."
+ },
+ {
+  "q": "🟣🌧️",
+  "a": "Purple Rain",
+  "cat": "Song",
+  "wrong": [
+   "Blue Moon",
+   "Pink Cadillac",
+   "Black Velvet"
+  ],
+  "why": "Purple + rain."
+ }
+]

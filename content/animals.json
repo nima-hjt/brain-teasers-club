@@ -1,0 +1,2092 @@
+[
+ {
+  "q": "Which land animal is pregnant the longest, at about 22 months?",
+  "a": "Elephant",
+  "wrong": [
+   "Rhinoceros",
+   "Giraffe",
+   "Hippopotamus"
+  ],
+  "why": "An elephant carries its calf for roughly 22 months, nearly two years.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which non-primate has fingerprints so human-like they could confuse detectives?",
+  "a": "Koala",
+  "wrong": [
+   "Sloth",
+   "Raccoon",
+   "Otter"
+  ],
+  "why": "Koalas evolved ridged fingertip patterns remarkably similar to human prints.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "How many neck vertebrae does a giraffe have?",
+  "a": "Seven",
+  "wrong": [
+   "Fourteen",
+   "Nine",
+   "Twenty"
+  ],
+  "why": "Same as a human; each giraffe neck vertebra can be about 25 cm (10 in) long.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Where does a sea otter keep its favourite tool rock?",
+  "a": "Under its foreleg",
+  "wrong": [
+   "In its cheeks",
+   "On its back",
+   "In its tail"
+  ],
+  "why": "Sea otters store a rock in a loose skin pouch under the foreleg to crack shellfish.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Besides the platypus, which mammal lays eggs?",
+  "a": "Echidna",
+  "wrong": [
+   "Armadillo",
+   "Pangolin",
+   "Aardvark"
+  ],
+  "why": "Echidnas and the platypus are the only living egg-laying mammals (monotremes).",
+  "cat": "Mammals"
+ },
+ {
+  "q": "What colour is the fluid hippos secrete that helps protect their skin?",
+  "a": "Reddish-orange",
+  "wrong": [
+   "Blue",
+   "Green",
+   "Yellow"
+  ],
+  "why": "Nicknamed 'blood sweat', it is neither blood nor sweat and acts as a sunscreen.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "About what fraction of all mammal species are bats?",
+  "a": "About one in five",
+  "wrong": [
+   "About one in fifty",
+   "About one in three",
+   "About one in ten"
+  ],
+  "why": "With over 1,400 species, bats make up roughly 20% of mammals.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "How many compartments does a cow's stomach have?",
+  "a": "Four",
+  "wrong": [
+   "Two",
+   "Three",
+   "Five"
+  ],
+  "why": "The rumen, reticulum, omasum and abomasum let cows digest tough grass.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "What colour is a polar bear's skin?",
+  "a": "Black",
+  "wrong": [
+   "White",
+   "Pink",
+   "Grey"
+  ],
+  "why": "Black skin absorbs heat; the fur is actually translucent, not white.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which tiny rodent can live over 30 years, remarkable for its size?",
+  "a": "Naked mole-rat",
+  "wrong": [
+   "Hamster",
+   "Dormouse",
+   "Chipmunk"
+  ],
+  "why": "One captive naked mole-rat lived at least 32 years.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "About how long is a giraffe's tongue?",
+  "a": "About 50 cm",
+  "wrong": [
+   "About 15 cm",
+   "About 90 cm",
+   "About 25 cm"
+  ],
+  "why": "It is dark purple-black and roughly 45-53 cm (18-21 in) long, handy for stripping thorny leaves.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which big cat cannot roar?",
+  "a": "Cheetah",
+  "wrong": [
+   "Leopard",
+   "Jaguar",
+   "Tiger"
+  ],
+  "why": "Cheetahs chirp and purr instead; their voice box lacks the roaring structure.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "How many hours a day does a giant panda spend eating?",
+  "a": "12 to 14 hours",
+  "wrong": [
+   "2 to 4 hours",
+   "5 to 7 hours",
+   "20 to 22 hours"
+  ],
+  "why": "Bamboo is low in nutrition, so pandas spend about 12-14 hours a day eating.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which of these animals physically cannot vomit?",
+  "a": "Horse",
+  "wrong": [
+   "Dog",
+   "Cat",
+   "Pig"
+  ],
+  "why": "A strong valve at the stomach entrance blocks anything coming back up.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "In Afrikaans, what does 'aardvark' literally mean?",
+  "a": "Earth pig",
+  "wrong": [
+   "Mud rat",
+   "Night digger",
+   "Ant king"
+  ],
+  "why": "Early Dutch settlers in South Africa named it for its burrowing and pig-like snout.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "If you shaved a tiger, what would you find?",
+  "a": "Striped skin",
+  "wrong": [
+   "Spotted skin",
+   "Plain pink skin",
+   "Plain black skin"
+  ],
+  "why": "A tiger's stripes are in its skin as well as its fur.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which part of a dog is unique to each dog, like a human fingerprint?",
+  "a": "Nose print",
+  "wrong": [
+   "Tail shape",
+   "Ear colour",
+   "Paw size"
+  ],
+  "why": "The ridge pattern on a dog's nose is individual to each animal.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Why are beaver incisors orange?",
+  "a": "Iron in the enamel",
+  "wrong": [
+   "Tree sap stains",
+   "Sun bleaching",
+   "Bark tannins"
+  ],
+  "why": "Iron in the enamel makes the teeth tougher and gives the orange colour.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "A newborn kangaroo is about the size of what?",
+  "a": "A jellybean",
+  "wrong": [
+   "A mouse",
+   "A banana",
+   "A tennis ball"
+  ],
+  "why": "It is only about 2 cm long and crawls into the pouch on its own.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which mammal is the only one wholly covered in scales?",
+  "a": "Pangolin",
+  "wrong": [
+   "Armadillo",
+   "Porcupine",
+   "Echidna"
+  ],
+  "why": "Pangolin scales are made of keratin, the same material as human fingernails.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "About how far can a skunk's spray reach?",
+  "a": "About 3 to 4 m",
+  "wrong": [
+   "About 30 cm",
+   "About 15 m",
+   "About 30 m"
+  ],
+  "why": "The spray can reach roughly 3-4 m (10-12 ft); the smell travels much further.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "What changes colour in reindeer between summer and winter?",
+  "a": "Their eyes",
+  "wrong": [
+   "Their hooves",
+   "Their antlers",
+   "Their tongues"
+  ],
+  "why": "Reindeer eyes shift from golden in summer to blue in winter.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which deer species has antlers on both males and females?",
+  "a": "Reindeer",
+  "wrong": [
+   "Elk",
+   "Moose",
+   "Red deer"
+  ],
+  "why": "Reindeer (caribou) are the only deer where females regularly grow antlers.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "About how many hours a day does a lion rest?",
+  "a": "16 to 20 hours",
+  "wrong": [
+   "6 to 8 hours",
+   "10 to 12 hours",
+   "22 to 23 hours"
+  ],
+  "why": "Lions save energy for short bursts of hunting, mostly at dusk and night.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which striped-legged forest animal is the giraffe's only living relative?",
+  "a": "Okapi",
+  "wrong": [
+   "Bongo",
+   "Tapir",
+   "Zebra"
+  ],
+  "why": "The okapi of the Congo has zebra-like leg stripes but is a giraffid.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "In spotted hyena clans, who is in charge?",
+  "a": "The females",
+  "wrong": [
+   "The strongest male",
+   "The oldest male",
+   "Rotating leaders"
+  ],
+  "why": "Females are larger and dominant; even low-ranking females outrank immigrant males.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "What does a camel's hump store?",
+  "a": "Fat",
+  "wrong": [
+   "Water",
+   "Air",
+   "Milk"
+  ],
+  "why": "A hump holds tens of kilograms of fat that can be used as energy.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "A newborn giraffe drops about how far when it is born?",
+  "a": "About 1.5 to 2 m",
+  "wrong": [
+   "About 20 cm",
+   "About 50 cm",
+   "About 4 m"
+  ],
+  "why": "Mothers give birth standing up, so calves drop more than 1.5 m (5 ft) to the ground.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "What are rhino horns made of?",
+  "a": "Keratin",
+  "wrong": [
+   "Bone",
+   "Ivory",
+   "Calcium"
+  ],
+  "why": "Same protein as hair and fingernails; there is no bone core.",
+  "cat": "Mammals"
+ },
+ {
+  "q": "Which land animal has the largest eyes, about 5 cm across?",
+  "a": "Ostrich",
+  "wrong": [
+   "Horse",
+   "Giraffe",
+   "Elephant"
+  ],
+  "why": "An ostrich's eye is about 5 cm across, bigger than its brain.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Owls can turn their heads by up to about how many degrees?",
+  "a": "About 270 degrees",
+  "wrong": [
+   "About 180 degrees",
+   "About 360 degrees",
+   "About 90 degrees"
+  ],
+  "why": "Owls have 14 neck vertebrae (humans have 7) plus blood-vessel adaptations; their eyes are fixed, so they turn the head instead.",
+  "cat": "Birds"
+ },
+ {
+  "q": "What gift do some male penguins give to court a mate?",
+  "a": "A pebble",
+  "wrong": [
+   "A fish",
+   "A feather",
+   "A seashell"
+  ],
+  "why": "Adelie and gentoo males present stones used to build the nest.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird has the longest wingspan, up to about 3.5 m?",
+  "a": "Wandering albatross",
+  "wrong": [
+   "Andean condor",
+   "Harpy eagle",
+   "Bald eagle"
+  ],
+  "why": "The record wingspan, 3.63 m, belonged to a wandering albatross; it can glide for hours over the ocean.",
+  "cat": "Birds"
+ },
+ {
+  "q": "What makes flamingos pink?",
+  "a": "Pigments in their food",
+  "wrong": [
+   "Sunburn",
+   "Mineral water",
+   "Their genes alone"
+  ],
+  "why": "Carotenoids in algae and small crustaceans colour their feathers.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird is the fastest runner, reaching about 70 km/h?",
+  "a": "Ostrich",
+  "wrong": [
+   "Emu",
+   "Cassowary",
+   "Roadrunner"
+  ],
+  "why": "It can sprint at about 70 km/h and keep up around 50 km/h.",
+  "cat": "Birds"
+ },
+ {
+  "q": "How fast can a peregrine falcon dive?",
+  "a": "Over 300 km/h",
+  "wrong": [
+   "About 120 km/h",
+   "About 180 km/h",
+   "About 220 km/h"
+  ],
+  "why": "Guinness lists about 320 km/h in a hunting dive; one trained falcon was clocked near 390 km/h.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird has been shown to recognise individual human faces?",
+  "a": "Crow",
+  "wrong": [
+   "Robin",
+   "Sparrow",
+   "Starling"
+  ],
+  "why": "Crows remember people who threatened them and can pass this on to others.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Where are a kiwi's nostrils?",
+  "a": "At the tip of its beak",
+  "wrong": [
+   "Between its eyes",
+   "On top of its head",
+   "Under its throat"
+  ],
+  "why": "Kiwis sniff out worms in the soil, unique among birds.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Pigeons feed their chicks something called what?",
+  "a": "Crop milk",
+  "wrong": [
+   "Egg paste",
+   "Nectar mash",
+   "Seed butter"
+  ],
+  "why": "Both parents make a nutritious secretion in the crop lining.",
+  "cat": "Birds"
+ },
+ {
+  "q": "A woodpecker's long tongue wraps around what?",
+  "a": "Its skull",
+  "wrong": [
+   "Its tail",
+   "Its wing",
+   "Its leg"
+  ],
+  "why": "In many woodpeckers the bones supporting the tongue loop around the back of the skull.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which flightless bird has a dagger-like claw about 12 cm long?",
+  "a": "Cassowary",
+  "wrong": [
+   "Emu",
+   "Rhea",
+   "Kiwi"
+  ],
+  "why": "The inner toe claw of a cassowary can reach about 12 cm.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird can stay airborne for about ten months without landing?",
+  "a": "Common swift",
+  "wrong": [
+   "Albatross",
+   "Barn swallow",
+   "Frigatebird"
+  ],
+  "why": "Tracked swifts stayed airborne for almost all of their roughly ten-month non-breeding period; some never landed at all.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird migrates from the Arctic to Antarctica and back each year?",
+  "a": "Arctic tern",
+  "wrong": [
+   "Bar-tailed godwit",
+   "Snow goose",
+   "Swallow"
+  ],
+  "why": "Tracking found an average round trip of about 71,000 km, the longest known annual migration.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird builds the largest nest of any North American bird?",
+  "a": "Bald eagle",
+  "wrong": [
+   "Osprey",
+   "Golden eagle",
+   "Great blue heron"
+  ],
+  "why": "The record bald eagle nest, in Florida, was 2.9 m wide, 6 m deep and estimated at over 2 tonnes.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which flightless parrot is the heaviest parrot in the world?",
+  "a": "Kakapo",
+  "wrong": [
+   "Kea",
+   "Macaw",
+   "Cockatoo"
+  ],
+  "why": "It weighs up to about 4 kg and is active at night.",
+  "cat": "Birds"
+ },
+ {
+  "q": "How fast can a hummingbird's heart beat per minute?",
+  "a": "Over 1,000 beats",
+  "wrong": [
+   "About 300 beats",
+   "About 500 beats",
+   "About 700 beats"
+  ],
+  "why": "A blue-throated hummingbird's heart has been measured at about 1,260 beats per minute.",
+  "cat": "Birds"
+ },
+ {
+  "q": "In emperor penguins, who incubates the egg through the Antarctic winter?",
+  "a": "The male",
+  "wrong": [
+   "The female",
+   "Both, in shifts",
+   "The whole colony"
+  ],
+  "why": "He balances it on his feet for about two months without eating.",
+  "cat": "Birds"
+ },
+ {
+  "q": "In 2007, T. rex collagen was found to be most similar to which animal's?",
+  "a": "Chicken",
+  "wrong": [
+   "Crocodile",
+   "Lizard",
+   "Frog"
+  ],
+  "why": "Proteins from a T. rex bone were closest to those of chickens.",
+  "cat": "Birds"
+ },
+ {
+  "q": "A group of owls is called a what?",
+  "a": "Parliament",
+  "wrong": [
+   "Murder",
+   "Gaggle",
+   "Charm"
+  ],
+  "why": "The collective noun nods to the owl's wise reputation.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird famously makes hooked tools from twigs and leaves?",
+  "a": "New Caledonian crow",
+  "wrong": [
+   "Raven",
+   "Magpie",
+   "Jay"
+  ],
+  "why": "Wild individuals craft hooked tools to extract insects from wood.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Besides eating, what does a toucan's huge beak help it do?",
+  "a": "Regulate body heat",
+  "wrong": [
+   "Store water",
+   "Detect magnetism",
+   "Amplify its call"
+  ],
+  "why": "Blood flow through the beak lets it shed excess heat, like a radiator.",
+  "cat": "Birds"
+ },
+ {
+  "q": "What does a common cuckoo chick do soon after hatching?",
+  "a": "Shoves the host eggs out",
+  "wrong": [
+   "Eats the host chicks",
+   "Sings to its mother",
+   "Hides under a wing"
+  ],
+  "why": "The blind hatchling heaves the host's eggs out of the nest.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which bird's chicks have claws on their wings for climbing?",
+  "a": "Hoatzin",
+  "wrong": [
+   "Kiwi",
+   "Roadrunner",
+   "Ptarmigan"
+  ],
+  "why": "Young hoatzins use wing claws to scramble through branches and lose them as adults.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Many birds can see which type of light that humans cannot?",
+  "a": "Ultraviolet",
+  "wrong": [
+   "Infrared",
+   "Gamma",
+   "Radio"
+  ],
+  "why": "UV vision helps birds spot fruit, mates and insects.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which Australian bird can mimic camera shutters and chainsaws?",
+  "a": "Lyrebird",
+  "wrong": [
+   "Cockatoo",
+   "Kookaburra",
+   "Bowerbird"
+  ],
+  "why": "Superb lyrebirds copy sounds from their surroundings, including man-made noises.",
+  "cat": "Birds"
+ },
+ {
+  "q": "Which seabird has been recorded sleeping while flying?",
+  "a": "Great frigatebird",
+  "wrong": [
+   "Puffin",
+   "Gull",
+   "Tern"
+  ],
+  "why": "Frigatebirds nap in brief bursts mid-flight, sleeping far less than on land.",
+  "cat": "Birds"
+ },
+ {
+  "q": "How many hearts does an octopus have?",
+  "a": "Three",
+  "wrong": [
+   "Two",
+   "Four",
+   "Eight"
+  ],
+  "why": "Two pump blood through the gills and one serves the rest of the body.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "In seahorses, who carries the babies until they are born?",
+  "a": "The father",
+  "wrong": [
+   "The mother",
+   "Both in turn",
+   "Neither; eggs drift free"
+  ],
+  "why": "The female deposits eggs in the male's brood pouch, where he gives birth.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Jellyfish have existed for roughly how long?",
+  "a": "Over 500 million years",
+  "wrong": [
+   "About 5 million years",
+   "About 50 million years",
+   "About 100 million years"
+  ],
+  "why": "They predate dinosaurs, and even trees, by hundreds of millions of years.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which jellyfish can revert to a juvenile stage and is called 'immortal'?",
+  "a": "Turritopsis dohrnii",
+  "wrong": [
+   "Moon jelly",
+   "Box jellyfish",
+   "Lion's mane"
+  ],
+  "why": "It can transform its cells back to the polyp stage, restarting its life cycle.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "A narwhal's 'tusk' is actually what?",
+  "a": "An enlarged tooth",
+  "wrong": [
+   "A horn",
+   "A bone spike",
+   "A fused fin ray"
+  ],
+  "why": "It is a spiralled tooth that can grow over 2 m long.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which of these has existed the longest on Earth?",
+  "a": "Sharks",
+  "wrong": [
+   "Trees",
+   "Dinosaurs",
+   "Flowering plants"
+  ],
+  "why": "Sharks date back over 400 million years; the first trees came later.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "A shark's skeleton is made of what?",
+  "a": "Cartilage",
+  "wrong": [
+   "Bone",
+   "Chitin",
+   "Keratin"
+  ],
+  "why": "It is the same flexible tissue found in your nose and ears.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Some sharks shed about how many teeth in a lifetime?",
+  "a": "Tens of thousands",
+  "wrong": [
+   "About 300",
+   "About 1,500",
+   "Over a million"
+  ],
+  "why": "Some sharks shed around 35,000 teeth, constantly replacing them from rows behind.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which tiny crustacean can punch hard enough to crack aquarium glass?",
+  "a": "Mantis shrimp",
+  "wrong": [
+   "Lobster",
+   "Crab",
+   "Krill"
+  ],
+  "why": "Its club strikes with the acceleration of a small-calibre bullet.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "The electric eel is not a true eel. What is it?",
+  "a": "A knifefish",
+  "wrong": [
+   "A moray",
+   "A conger",
+   "A lamprey"
+  ],
+  "why": "It can discharge more than 600 volts to stun prey.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which fish holds the egg record, with about 300 million in one female?",
+  "a": "Sunfish",
+  "wrong": [
+   "Cod",
+   "Whale shark",
+   "Salmon"
+  ],
+  "why": "Guinness lists a female sunfish carrying about 300 million eggs; it may have been a bump-head sunfish rather than the common ocean sunfish.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Some sea cucumbers breathe by pumping water through what?",
+  "a": "Their anus",
+  "wrong": [
+   "Their mouth",
+   "Gill slits",
+   "Their tube feet"
+  ],
+  "why": "Water enters the rear and flows into internal 'respiratory trees'.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "What does a sea star pump through its body to work its tube feet?",
+  "a": "Seawater",
+  "wrong": [
+   "Green sap",
+   "Mucus",
+   "Oil"
+  ],
+  "why": "Its water vascular system pumps seawater to operate hundreds of tube feet.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Where are most of an octopus's neurons?",
+  "a": "In its arms",
+  "wrong": [
+   "In its head",
+   "In its mantle",
+   "In its eyes"
+  ],
+  "why": "About two-thirds of its roughly 500 million neurons are in its arms and body.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "About how wide is a giant squid's eye, among the largest of any animal?",
+  "a": "About 25 cm",
+  "wrong": [
+   "About 5 cm",
+   "About 10 cm",
+   "About 60 cm"
+  ],
+  "why": "Giant squid eyes can be about 27 cm across, helping it see in deep, dark water.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "How do dolphins sleep without drowning?",
+  "a": "One brain half at a time",
+  "wrong": [
+   "Holding breath for hours",
+   "Hanging on kelp",
+   "They never sleep"
+  ],
+  "why": "One hemisphere rests while the other keeps them surfacing to breathe.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "What do bottlenose dolphins use to 'name' each other?",
+  "a": "Signature whistles",
+  "wrong": [
+   "Tail slaps",
+   "Body scents",
+   "Unique colours"
+  ],
+  "why": "Each dolphin develops its own whistle, and others copy it to call that individual.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which mammal holds the deep-dive record, nearly 3,000 m?",
+  "a": "Cuvier's beaked whale",
+  "wrong": [
+   "Sperm whale",
+   "Elephant seal",
+   "Blue whale"
+  ],
+  "why": "One tagged individual reached about 2,992 m.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Biologically, what is an orca?",
+  "a": "A dolphin",
+  "wrong": [
+   "A baleen whale",
+   "A porpoise",
+   "A large seal"
+  ],
+  "why": "Orcas are the largest members of the dolphin family.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which reef fish produces sand by eating coral and excreting it?",
+  "a": "Parrotfish",
+  "wrong": [
+   "Wrasse",
+   "Angelfish",
+   "Surgeonfish"
+  ],
+  "why": "Parrotfish bite off chunks of coral while feeding on algae and grind it into fine sand that they excrete.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "What hunting trick do humpback whales use with bubbles?",
+  "a": "Bubble nets",
+  "wrong": [
+   "Bubble shields",
+   "Bubble bombs",
+   "Bubble ladders"
+  ],
+  "why": "They blow a spiral of bubbles to corral fish into a tight ball.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which sea turtle is the deepest diver, reaching over 1,000 m?",
+  "a": "Leatherback",
+  "wrong": [
+   "Green",
+   "Loggerhead",
+   "Hawksbill"
+  ],
+  "why": "A leatherback has been recorded at around 1,280 m.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "In some deep-sea anglerfish, what do tiny males do to females?",
+  "a": "Permanently fuse to her",
+  "wrong": [
+   "Hunt for her",
+   "Build her a nest",
+   "Guard her eggs"
+  ],
+  "why": "The male's body merges with the female, who then supplies his blood.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "Which small reef fish appears to pass the mirror self-recognition test?",
+  "a": "Cleaner wrasse",
+  "wrong": [
+   "Goldfish",
+   "Clownfish",
+   "Guppy"
+  ],
+  "why": "Researchers reported wrasses trying to remove marks seen only in a mirror.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "In what position have sperm whales been seen napping?",
+  "a": "Vertically",
+  "wrong": [
+   "Upside down",
+   "On the seabed",
+   "Belly up"
+  ],
+  "why": "Groups drift motionless, tail down, for about 10 to 15 minutes.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "How does a sea star feed on a clam?",
+  "a": "Pushes its stomach out",
+  "wrong": [
+   "Crushes it with spines",
+   "Drills it with a tooth",
+   "Sucks out the meat"
+  ],
+  "why": "It everts its stomach through the clam's tiny gap and digests it outside.",
+  "cat": "Ocean"
+ },
+ {
+  "q": "How much honey does one worker bee make in her lifetime?",
+  "a": "1/12 of a teaspoon",
+  "wrong": [
+   "A teaspoon",
+   "A tablespoon",
+   "A cup"
+  ],
+  "why": "It takes the lifetime work of many bees to fill a single jar.",
+  "cat": "Insects"
+ },
+ {
+  "q": "What does a honeybee's waggle dance communicate?",
+  "a": "Where flowers are",
+  "wrong": [
+   "Danger nearby",
+   "The queen's location",
+   "Hive temperature"
+  ],
+  "why": "The angle shows direction relative to the sun; duration shows distance.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Dragonflies catch about what share of the prey they pursue?",
+  "a": "About 95%",
+  "wrong": [
+   "About 50%",
+   "About 25%",
+   "About 70%"
+  ],
+  "why": "Studies report dragonflies catching up to 95% of the prey they chase.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A headless cockroach can survive for about how long?",
+  "a": "About a week",
+  "wrong": [
+   "A few minutes",
+   "One hour",
+   "Two months"
+  ],
+  "why": "It breathes through body spiracles and eventually dies of thirst.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Which mosquitoes bite people?",
+  "a": "Only females",
+  "wrong": [
+   "Only males",
+   "Both equally",
+   "Only young ones"
+  ],
+  "why": "Females need blood protein to develop their eggs.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Butterflies taste with which body part?",
+  "a": "Their feet",
+  "wrong": [
+   "Their antennae",
+   "Their wings",
+   "Their proboscis only"
+  ],
+  "why": "Taste receptors on their feet tell them if a leaf is good for laying eggs.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Periodical cicadas emerge on a cycle of how many years?",
+  "a": "13 or 17",
+  "wrong": [
+   "7 or 9",
+   "5 or 10",
+   "11 or 21"
+  ],
+  "why": "They spend those years underground as nymphs, then emerge in the millions.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Adult mayflies live for about how long?",
+  "a": "Hours to a few days",
+  "wrong": [
+   "About a week",
+   "Roughly a month",
+   "Around a year"
+  ],
+  "why": "Adults have no functional mouthparts and cannot feed; some live only a few hours.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A bombardier beetle defends itself by spraying what?",
+  "a": "Near-boiling toxic spray",
+  "wrong": [
+   "Sticky silk",
+   "Paralysing venom bite",
+   "Stinking oil from legs"
+  ],
+  "why": "Two chemicals mix in a chamber, reaching close to 100 degrees C.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Which insect navigates using the Milky Way?",
+  "a": "Dung beetle",
+  "wrong": [
+   "Moth",
+   "Firefly",
+   "Cricket"
+  ],
+  "why": "A 2013 study showed dung beetles roll straight under a starry sky.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A honeybee's wings beat about how many times per second?",
+  "a": "About 230",
+  "wrong": [
+   "About 20",
+   "About 60",
+   "About 1,000"
+  ],
+  "why": "That rapid beat produces the characteristic buzz.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A ladybird defends itself by releasing foul-tasting fluid from where?",
+  "a": "Its leg joints",
+  "wrong": [
+   "Its antennae",
+   "Its wing tips",
+   "Its mouth"
+  ],
+  "why": "This 'reflex bleeding' smells and tastes bad to predators.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Which insect group holds the length record, over 60 cm with legs?",
+  "a": "Stick insects",
+  "wrong": [
+   "Beetles",
+   "Mantises",
+   "Dragonflies"
+  ],
+  "why": "A Chinese stick insect measured 62.4 cm with legs outstretched, beating the previous record holder, Chan's megastick.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A single silkworm cocoon is made from one thread about how long?",
+  "a": "Up to about 900 m",
+  "wrong": [
+   "About 1 metre",
+   "About 10 metres",
+   "About 10 kilometres"
+  ],
+  "why": "A silkworm spins one continuous filament that can be up to about 900 m long.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Which insect pollinates figs, completing its life cycle inside them?",
+  "a": "Fig wasp",
+  "wrong": [
+   "Honeybee",
+   "Fruit fly",
+   "Hoverfly"
+  ],
+  "why": "Many fig species rely on their own specific wasp species.",
+  "cat": "Insects"
+ },
+ {
+  "q": "What do leafcutter ants do with the leaves they carry?",
+  "a": "Feed a fungus garden",
+  "wrong": [
+   "Eat them",
+   "Build nests",
+   "Make paper"
+  ],
+  "why": "The ants farm fungus on the chewed leaves and eat the fungus.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A dragonfly's compound eyes have about how many lenses?",
+  "a": "About 30,000",
+  "wrong": [
+   "About 300",
+   "About 3,000",
+   "About 3 million"
+  ],
+  "why": "Each eye has up to roughly 30,000 facets.",
+  "cat": "Insects"
+ },
+ {
+  "q": "What is insect 'blood' called?",
+  "a": "Hemolymph",
+  "wrong": [
+   "Chitin",
+   "Plasma",
+   "Nectar"
+  ],
+  "why": "In most insects it carries little oxygen; air tubes called tracheae deliver oxygen instead.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Counting a snowy tree cricket's chirps can estimate what?",
+  "a": "Air temperature",
+  "wrong": [
+   "Its age",
+   "Time of day",
+   "Humidity"
+  ],
+  "why": "Dolbear's rule: chirps in 15 seconds plus 40 gives roughly the temperature in Fahrenheit.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Where are a cricket's ears?",
+  "a": "On its front legs",
+  "wrong": [
+   "On its antennae",
+   "On its head",
+   "On its back wings"
+  ],
+  "why": "Crickets hear with small membranes on their front legs.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Which animals were the first sent into space, in 1947?",
+  "a": "Fruit flies",
+  "wrong": [
+   "Mice",
+   "Dogs",
+   "Monkeys"
+  ],
+  "why": "US scientists flew them on a captured V-2 rocket to study radiation.",
+  "cat": "Insects"
+ },
+ {
+  "q": "The UN says a 1 km2 locust swarm eats as much daily as how many people?",
+  "a": "About 35,000",
+  "wrong": [
+   "About 350",
+   "About 3,500",
+   "About 350,000"
+  ],
+  "why": "Swarms can contain tens of millions of insects.",
+  "cat": "Insects"
+ },
+ {
+  "q": "What lets a water strider walk on water?",
+  "a": "Water-repellent hairs",
+  "wrong": [
+   "Hollow feet",
+   "Tiny air balloons",
+   "Webbed toes"
+  ],
+  "why": "Waxy hairs and surface tension keep its legs from breaking the surface.",
+  "cat": "Insects"
+ },
+ {
+  "q": "Monarch caterpillars become toxic to predators by eating what?",
+  "a": "Milkweed",
+  "wrong": [
+   "Nettles",
+   "Clover",
+   "Dandelion"
+  ],
+  "why": "Toxins from milkweed stay in the butterfly into adulthood.",
+  "cat": "Insects"
+ },
+ {
+  "q": "How many eyes does a honeybee have?",
+  "a": "Five",
+  "wrong": [
+   "Two",
+   "Four",
+   "Six"
+  ],
+  "why": "Two large compound eyes plus three simple eyes on top of the head.",
+  "cat": "Insects"
+ },
+ {
+  "q": "How do insects breathe?",
+  "a": "Through body spiracles",
+  "wrong": [
+   "Through lungs",
+   "Through gills",
+   "Through antennae"
+  ],
+  "why": "Tiny holes lead to tubes that carry air directly to tissues.",
+  "cat": "Insects"
+ },
+ {
+  "q": "In true flies, the hind wings have evolved into what?",
+  "a": "Halteres",
+  "wrong": [
+   "Antennae",
+   "Spinnerets",
+   "Elytra"
+  ],
+  "why": "These tiny balance organs act like gyroscopes during flight.",
+  "cat": "Insects"
+ },
+ {
+  "q": "A chameleon's tongue can reach about how many times its body length?",
+  "a": "About twice",
+  "wrong": [
+   "Half",
+   "The same",
+   "About 10 times"
+  ],
+  "why": "Studies found small chameleons can shoot the tongue up to about 2.5 times body length in a fraction of a second.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which large lizard has laid fertile eggs without a male?",
+  "a": "Komodo dragon",
+  "wrong": [
+   "Green iguana",
+   "Gila monster",
+   "Bearded dragon"
+  ],
+  "why": "Zoo females have produced hatchlings by parthenogenesis.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What decides the sex of baby alligators?",
+  "a": "Nest temperature",
+  "wrong": [
+   "Egg size",
+   "Mother's diet",
+   "Moon phase"
+  ],
+  "why": "Warmer or cooler nests produce different sexes.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Sea turtles find their birth beaches partly using what?",
+  "a": "Earth's magnetic field",
+  "wrong": [
+   "Starlight only",
+   "Ocean salinity",
+   "Bird calls"
+  ],
+  "why": "Hatchlings imprint on the magnetic signature of their home coast.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Jonathan of St Helena, hatched around 1832, is what kind of animal?",
+  "a": "A giant tortoise",
+  "wrong": [
+   "A parrot",
+   "A crocodile",
+   "A Galapagos iguana"
+  ],
+  "why": "Guinness lists Jonathan, a Seychelles giant tortoise, as the oldest known chelonian ever.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Why do snakes flick their tongues?",
+  "a": "To pick up scent",
+  "wrong": [
+   "To cool off",
+   "To hear vibrations",
+   "To clean their eyes"
+  ],
+  "why": "The tongue carries chemicals to an organ in the roof of the mouth.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What covers a snake's eyes instead of eyelids?",
+  "a": "A clear scale",
+  "wrong": [
+   "Tear film only",
+   "A thick skin fold",
+   "Tiny eyelashes"
+  ],
+  "why": "This 'spectacle' is shed along with the skin.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which snake is the longest in the world?",
+  "a": "Reticulated python",
+  "wrong": [
+   "Green anaconda",
+   "King cobra",
+   "Black mamba"
+  ],
+  "why": "Reticulated pythons can exceed 6 m.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What does the king cobra mainly eat?",
+  "a": "Other snakes",
+  "wrong": [
+   "Rodents",
+   "Birds",
+   "Frogs"
+  ],
+  "why": "Its scientific name Ophiophagus means 'snake eater'.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What are rattlesnake rattles made of?",
+  "a": "Keratin",
+  "wrong": [
+   "Bone",
+   "Cartilage",
+   "Shed teeth"
+  ],
+  "why": "The rattle is made of loosely linked keratin segments, like fingernails.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What force lets geckos cling to walls?",
+  "a": "Van der Waals forces",
+  "wrong": [
+   "Suction",
+   "Sticky glue",
+   "Microscopic hooks"
+  ],
+  "why": "Millions of tiny foot hairs create weak molecular attractions; some research suggests electrostatic effects also help.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "What is it called when a lizard drops its tail to escape?",
+  "a": "Autotomy",
+  "wrong": [
+   "Ecdysis",
+   "Metamorphosis",
+   "Aestivation"
+  ],
+  "why": "The detached tail keeps wriggling to distract the predator.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which lizard can run across water for several metres?",
+  "a": "Common basilisk",
+  "wrong": [
+   "Anole",
+   "Iguana",
+   "Gecko"
+  ],
+  "why": "It is nicknamed the 'Jesus Christ lizard' for the trick.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which lizard can squirt blood from its eyes?",
+  "a": "Texas horned lizard",
+  "wrong": [
+   "Bearded dragon",
+   "Gila monster",
+   "Chameleon"
+  ],
+  "why": "Several horned lizard species can squirt an aimed stream of blood more than a metre to deter predators.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "A turtle's shell is fused to its what?",
+  "a": "Spine and ribs",
+  "wrong": [
+   "Skull only",
+   "Legs",
+   "Tail bones"
+  ],
+  "why": "A turtle cannot leave its shell; it is part of the skeleton.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "With its mouth closed, which reptile shows its lower teeth?",
+  "a": "Crocodile",
+  "wrong": [
+   "Alligator",
+   "Caiman",
+   "Tuatara"
+  ],
+  "why": "Its lower fourth tooth fits into a groove visible on the outside of the snout.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which reptile, last of its order, lives only in New Zealand?",
+  "a": "Tuatara",
+  "wrong": [
+   "Gecko",
+   "Skink",
+   "Iguana"
+  ],
+  "why": "Its lineage dates back to the age of dinosaurs.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Chameleons can see about how much of their surroundings?",
+  "a": "Nearly 360 degrees",
+  "wrong": [
+   "About 90 degrees",
+   "About 180 degrees",
+   "About 270 degrees"
+  ],
+  "why": "Each eye moves independently.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which land snake has the most toxic venom, by mouse tests?",
+  "a": "Inland taipan",
+  "wrong": [
+   "Black mamba",
+   "King cobra",
+   "Saw-scaled viper"
+  ],
+  "why": "Its venom has the lowest lethal dose in mouse tests of any land snake.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "A diabetes drug, exenatide, was developed from which lizard's saliva?",
+  "a": "Gila monster",
+  "wrong": [
+   "Komodo dragon",
+   "Chameleon",
+   "Monitor lizard"
+  ],
+  "why": "Its saliva contains a hormone that regulates blood sugar.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which sense do a rattlesnake's heat pits provide?",
+  "a": "Infrared detection",
+  "wrong": [
+   "Ultraviolet vision",
+   "Echolocation",
+   "Magnetism"
+  ],
+  "why": "Pits sense body heat from warm prey even in darkness.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "How do Southeast Asian Draco lizards glide?",
+  "a": "Rib-supported skin flaps",
+  "wrong": [
+   "Flapping tiny wings",
+   "Inflated throat sacs",
+   "Webbed toes"
+  ],
+  "why": "Elongated ribs unfold into wing-like membranes.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "How does a marine iguana get rid of excess salt?",
+  "a": "Sneezes it out",
+  "wrong": [
+   "Sweats it",
+   "Sheds it in skin",
+   "Drinks fresh water"
+  ],
+  "why": "Special glands near its nose excrete salty fluid.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "How does a female Burmese python warm her eggs?",
+  "a": "Shivers around them",
+  "wrong": [
+   "Sits in the sun",
+   "Buries them",
+   "Uses rotting leaves"
+  ],
+  "why": "Muscle shivering raises the temperature of the clutch.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "How do 'flying snakes' stay aloft?",
+  "a": "Flatten their bodies",
+  "wrong": [
+   "Flap their scales",
+   "Inflate their lungs",
+   "Spin like a propeller"
+  ],
+  "why": "They flatten into a wide shape and undulate.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which body part helps some turtles breathe underwater?",
+  "a": "Their cloaca",
+  "wrong": [
+   "Their tongue",
+   "Their feet",
+   "Their shell pores"
+  ],
+  "why": "Fitzroy River turtles absorb oxygen through the cloaca.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Chameleons mainly change colour for what?",
+  "a": "Communication and heat",
+  "wrong": [
+   "Hiding on leaves only",
+   "Scaring insects",
+   "Hunting fish"
+  ],
+  "why": "Colour changes signal mood and help regulate temperature.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "How does Australia's thorny devil lizard collect water?",
+  "a": "Skin channels to mouth",
+  "wrong": [
+   "Lapping dew with tongue",
+   "Sipping from pools",
+   "Licking rocks"
+  ],
+  "why": "Tiny grooves in its skin funnel moisture to its mouth.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "Which giant snake gives birth to live young instead of laying eggs?",
+  "a": "Green anaconda",
+  "wrong": [
+   "Reticulated python",
+   "King cobra",
+   "Burmese python"
+  ],
+  "why": "Females give birth in water to dozens of young.",
+  "cat": "Reptiles"
+ },
+ {
+  "q": "A cheetah's top speed is closest to which figure?",
+  "a": "About 100 km/h",
+  "wrong": [
+   "About 65 km/h",
+   "About 130 km/h",
+   "About 160 km/h"
+  ],
+  "why": "The fastest timed cheetah, Sarah, reached about 98 km/h (61 mph) in 2012.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which North American animal can hold about 88 km/h and keep going far longer than a cheetah?",
+  "a": "Pronghorn",
+  "wrong": [
+   "Mule deer",
+   "Bison",
+   "Coyote"
+  ],
+  "why": "Pronghorn can hold about 88 km/h (55 mph) for half a mile and near 72 km/h (45 mph) over much longer distances.",
+  "cat": "Records"
+ },
+ {
+  "q": "A blue whale can weigh about as much as how many African elephants?",
+  "a": "About 25",
+  "wrong": [
+   "About 5",
+   "About 10",
+   "About 100"
+  ],
+  "why": "Blue whales average around 160 tonnes (the heaviest recorded was about 190 tonnes), versus around 6 tonnes for a large African elephant.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which vertebrate may live around 400 years?",
+  "a": "Greenland shark",
+  "wrong": [
+   "Bowhead whale",
+   "Giant tortoise",
+   "Koi carp"
+  ],
+  "why": "Eye-lens radiocarbon dating estimated the oldest shark studied at about 392 years, and at least 272.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the smallest bird in the world, about 6 cm long?",
+  "a": "Bee hummingbird",
+  "wrong": [
+   "Goldcrest",
+   "Zebra finch",
+   "Wren"
+  ],
+  "why": "Males weigh about 1.6 grams; it lives only in Cuba.",
+  "cat": "Records"
+ },
+ {
+  "q": "'Ming', found in 2006, was dated at 507 years old. What was it?",
+  "a": "An ocean quahog clam",
+  "wrong": [
+   "A Greenland shark",
+   "A giant tortoise",
+   "A bowhead whale"
+  ],
+  "why": "Counting growth rings in its shell revealed the age.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which land mammal makes the longest overland migration?",
+  "a": "Caribou",
+  "wrong": [
+   "Wildebeest",
+   "Elephant",
+   "Bison"
+  ],
+  "why": "Some caribou herds make round-trip migrations of more than 1,200 km a year.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the largest living land carnivore?",
+  "a": "Polar bear",
+  "wrong": [
+   "Siberian tiger",
+   "Lion",
+   "Grizzly bear"
+  ],
+  "why": "Adult males typically weigh 400-600 kg.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the largest living rodent?",
+  "a": "Capybara",
+  "wrong": [
+   "Beaver",
+   "Porcupine",
+   "Nutria"
+  ],
+  "why": "The largest capybaras weigh around 66 kg.",
+  "cat": "Records"
+ },
+ {
+  "q": "An ostrich egg equals about how many chicken eggs?",
+  "a": "About 24",
+  "wrong": [
+   "About 6",
+   "About 12",
+   "About 50"
+  ],
+  "why": "It weighs about 1.4-1.5 kg, the largest egg of any living bird.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which bird dives deepest, over 500 m?",
+  "a": "Emperor penguin",
+  "wrong": [
+   "King penguin",
+   "Cormorant",
+   "Puffin"
+  ],
+  "why": "An emperor penguin dive of 564 m is the deepest accurately measured for any bird.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which animal has the largest brain of any, about 8 to 9 kg?",
+  "a": "Sperm whale",
+  "wrong": [
+   "Blue whale",
+   "Elephant",
+   "Orca"
+  ],
+  "why": "Guinness puts it at around 9 kg, about six times a human's.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which animal holds the record for most legs, over 1,300?",
+  "a": "A millipede",
+  "wrong": [
+   "A centipede",
+   "A woodlouse",
+   "A caterpillar"
+  ],
+  "why": "Eumillipes persephone has 1,306 legs.",
+  "cat": "Records"
+ },
+ {
+  "q": "The largest living reptile can exceed 6 m. Which is it?",
+  "a": "Saltwater crocodile",
+  "wrong": [
+   "Nile crocodile",
+   "Komodo dragon",
+   "Green anaconda"
+  ],
+  "why": "Big males can weigh over a tonne.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which bird holds the altitude record, hit by a plane at about 11,300 m?",
+  "a": "Ruppell's vulture",
+  "wrong": [
+   "Bar-headed goose",
+   "Andean condor",
+   "Lammergeier"
+  ],
+  "why": "The collision happened over Ivory Coast in 1973.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the world's heaviest spider?",
+  "a": "Goliath birdeater",
+  "wrong": [
+   "Giant huntsman",
+   "Brazilian wandering",
+   "Funnel-web"
+  ],
+  "why": "It can weigh up to about 175 g, with a leg span up to about 30 cm.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which mammal can live over 200 years?",
+  "a": "Bowhead whale",
+  "wrong": [
+   "Blue whale",
+   "Elephant",
+   "Sperm whale"
+  ],
+  "why": "Eye-lens chemistry suggested one bowhead was about 211 years old; old harpoon points found in others pointed to ages over 100.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which animal has the strongest bite force ever measured?",
+  "a": "Saltwater crocodile",
+  "wrong": [
+   "Hippopotamus",
+   "Tiger",
+   "Spotted hyena"
+  ],
+  "why": "A 2012 study measured about 16,460 newtons, the greatest bite force directly measured in a living animal.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the largest living primate?",
+  "a": "Eastern gorilla",
+  "wrong": [
+   "Western gorilla",
+   "Orangutan",
+   "Chimpanzee"
+  ],
+  "why": "Male eastern lowland gorillas can weigh up to about 210 kg.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the heaviest known invertebrate?",
+  "a": "Colossal squid",
+  "wrong": [
+   "Giant squid",
+   "Lion's mane jellyfish",
+   "Giant Pacific octopus"
+  ],
+  "why": "One specimen caught in 2007 weighed about 495 kg.",
+  "cat": "Records"
+ },
+ {
+  "q": "A blue whale calf gains about how much weight a day?",
+  "a": "About 90 kg",
+  "wrong": [
+   "About 5 kg",
+   "About 20 kg",
+   "About 300 kg"
+  ],
+  "why": "Calves gain around 90 kg a day in their first year, living only on mother's milk.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which mammal has had the largest recorded litter, over 30 young?",
+  "a": "Tailless tenrec",
+  "wrong": [
+   "Rabbit",
+   "Rat",
+   "Pig"
+  ],
+  "why": "Guinness records a wild litter of 31.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which is the heaviest snake?",
+  "a": "Green anaconda",
+  "wrong": [
+   "Reticulated python",
+   "Burmese python",
+   "King cobra"
+  ],
+  "why": "The heaviest reliably weighed specimen was about 97.5 kg; claims of far heavier ones are unverified.",
+  "cat": "Records"
+ },
+ {
+  "q": "The largest amphibian ever recorded, about 1.8 m long, was what kind of animal?",
+  "a": "A Chinese giant salamander",
+  "wrong": [
+   "A Goliath frog",
+   "A cane toad",
+   "A hellbender"
+  ],
+  "why": "The 1.8 m record specimen is now thought to belong to the South China giant salamander, recognised as a separate species in 2019.",
+  "cat": "Records"
+ },
+ {
+  "q": "Which lizard is the heaviest in the world?",
+  "a": "Komodo dragon",
+  "wrong": [
+   "Perentie",
+   "Nile monitor",
+   "Green iguana"
+  ],
+  "why": "Large wild adults weigh around 70 kg.",
+  "cat": "Records"
+ },
+ {
+  "q": "What shape are wombat droppings?",
+  "a": "Cube",
+  "wrong": [
+   "Sphere",
+   "Cylinder",
+   "Pyramid"
+  ],
+  "why": "Their intestines shape them into cubes, so they stay put on rocks and logs.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What colour is an octopus's blood?",
+  "a": "Blue",
+  "wrong": [
+   "Green",
+   "Clear",
+   "Purple"
+  ],
+  "why": "It uses copper-based hemocyanin rather than iron-based hemoglobin.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What do frogs pull down to help push food down their throat?",
+  "a": "Their eyeballs",
+  "wrong": [
+   "Their toes",
+   "Their ribs",
+   "Their tongue tip"
+  ],
+  "why": "Retracting the eyes presses food toward the throat.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A garden snail can have roughly how many tiny teeth?",
+  "a": "Over 10,000",
+  "wrong": [
+   "About 100",
+   "About 500",
+   "About 2,000"
+  ],
+  "why": "The average garden snail has around 14,000 microscopic teeth on a ribbon-like tongue called a radula.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Why do some storks and vultures excrete on their own legs?",
+  "a": "To cool off",
+  "wrong": [
+   "To mark territory",
+   "To warn rivals",
+   "To attract flies"
+  ],
+  "why": "Evaporation cools the blood flowing through the legs.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A hagfish defends itself by releasing what?",
+  "a": "Huge amounts of slime",
+  "wrong": [
+   "Ink",
+   "Electricity",
+   "Bubbles"
+  ],
+  "why": "The slime can clog the gills of a predator.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Which taste can cats not detect?",
+  "a": "Sweetness",
+  "wrong": [
+   "Salt",
+   "Bitterness",
+   "Sourness"
+  ],
+  "why": "Cats lack a functional sweet-taste receptor.",
+  "cat": "Weird"
+ },
+ {
+  "q": "How often does a sloth typically descend to the ground to poop?",
+  "a": "About once a week",
+  "wrong": [
+   "Every day",
+   "Once a month",
+   "Never"
+  ],
+  "why": "Three-toed sloths climb down roughly once a week to poop at the base of a tree.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What do male platypuses have on their hind legs that females lack?",
+  "a": "Venomous spurs",
+  "wrong": [
+   "Extra toes",
+   "Sharp claws",
+   "Glowing fur"
+  ],
+  "why": "The venom causes severe pain in humans.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Which salamander can regrow limbs, its spinal cord and parts of its brain?",
+  "a": "Axolotl",
+  "wrong": [
+   "Fire salamander",
+   "Hellbender",
+   "Mudpuppy"
+  ],
+  "why": "Scientists study it to understand regeneration.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Scientists have located penguin colonies from space by spotting what?",
+  "a": "Their poop stains",
+  "wrong": [
+   "Their heat glow",
+   "Their footprints",
+   "Their noise"
+  ],
+  "why": "Guano stains the ice a visible reddish-brown in satellite images.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What is a baby echidna or platypus called?",
+  "a": "Puggle",
+  "wrong": [
+   "Joey",
+   "Cub",
+   "Kit"
+  ],
+  "why": "Both are monotremes and hatch from leathery eggs.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Rabbits re-eat special soft droppings called what?",
+  "a": "Cecotropes",
+  "wrong": [
+   "Pellets",
+   "Boluses",
+   "Guano"
+  ],
+  "why": "This lets them extract nutrients missed the first time.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What do rats make when tickled, according to researchers?",
+  "a": "Ultrasonic chirps",
+  "wrong": [
+   "Low growls",
+   "Whistles",
+   "Squeaks of pain"
+  ],
+  "why": "Researchers likened the chirps to rat laughter.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What do zebra stripes best help deter, according to studies?",
+  "a": "Biting flies",
+  "wrong": [
+   "Lions",
+   "Heat",
+   "Hyenas"
+  ],
+  "why": "Horseflies struggle to land on striped surfaces.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Vampire bats will share blood meals with whom?",
+  "a": "Hungry roostmates",
+  "wrong": [
+   "Nearby birds",
+   "Their prey's calves",
+   "The next colony"
+  ],
+  "why": "They regurgitate blood to feed starving roostmates, even unrelated ones.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Which tiny animal has survived the vacuum of open space?",
+  "a": "Tardigrade",
+  "wrong": [
+   "Flea",
+   "Dust mite",
+   "Water flea"
+  ],
+  "why": "Tardigrades survived exposure on a 2007 European mission.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Which North American frog survives with much of its body frozen solid?",
+  "a": "Wood frog",
+  "wrong": [
+   "Bullfrog",
+   "Green frog",
+   "Tree frog"
+  ],
+  "why": "Up to around 65% of its body water can freeze.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Koalas sleep about how many hours a day?",
+  "a": "18 to 22 hours",
+  "wrong": [
+   "6 to 8 hours",
+   "10 to 12 hours",
+   "14 to 15 hours"
+  ],
+  "why": "Eucalyptus leaves give little energy, so koalas conserve it.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Which stinging insect do elephants avoid so much that farmers guard crops with hives?",
+  "a": "Honeybees",
+  "wrong": [
+   "Wasps",
+   "Fire ants",
+   "Hornets"
+  ],
+  "why": "Elephants flee the sound of angry bees.",
+  "cat": "Weird"
+ },
+ {
+  "q": "How do flamingos position their heads to feed?",
+  "a": "Upside down",
+  "wrong": [
+   "Sideways",
+   "Tilted back",
+   "Underwater"
+  ],
+  "why": "They filter food from water with their beaks turned upside down.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A fungus called Ophiocordyceps forces infected ants to do what?",
+  "a": "Bite a leaf and die",
+  "wrong": [
+   "Abandon the nest",
+   "Build a bigger nest",
+   "Attack their queen"
+  ],
+  "why": "The fungus then grows from the ant's body.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A group of flamingos is called a what?",
+  "a": "Flamboyance",
+  "wrong": [
+   "Blush",
+   "Mingle",
+   "Gaggle"
+  ],
+  "why": "A fitting name for such colourful birds.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A group of ravens is poetically called what?",
+  "a": "An unkindness",
+  "wrong": [
+   "A charm",
+   "A murmuration",
+   "A gaggle"
+  ],
+  "why": "Unkindness is a traditional collective noun for ravens.",
+  "cat": "Weird"
+ },
+ {
+  "q": "What shape are the pupils of goats and sheep?",
+  "a": "Horizontal rectangles",
+  "wrong": [
+   "Round",
+   "Vertical slits",
+   "Heart-shaped"
+  ],
+  "why": "They give a wide view to spot predators.",
+  "cat": "Weird"
+ },
+ {
+  "q": "Hippos spend hours in water but cannot do what?",
+  "a": "Swim",
+  "wrong": [
+   "Hold their breath",
+   "Run on land",
+   "See underwater"
+  ],
+  "why": "Too dense to float, they push off the bottom and bounce along.",
+  "cat": "Weird"
+ },
+ {
+  "q": "A pistol shrimp stuns prey by snapping its claw to create what?",
+  "a": "A collapsing bubble",
+  "wrong": [
+   "A jet of ink",
+   "An electric pulse",
+   "A cloud of venom"
+  ],
+  "why": "The bubble's collapse makes a loud shockwave.",
+  "cat": "Weird"
+ }
+]

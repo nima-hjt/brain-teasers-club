@@ -1,0 +1,1302 @@
+[
+ {
+  "q": "Complete the series: 3, 8, 15, 24, 35, ?",
+  "a": "48",
+  "wrong": [
+   "46",
+   "47",
+   "50"
+  ],
+  "why": "Each term is a square minus 1 (2²−1, 3²−1, ... 6²−1), so next is 7²−1 = 48."
+ },
+ {
+  "q": "What comes next: 1, 8, 27, 64, ?",
+  "a": "125",
+  "wrong": [
+   "100",
+   "216",
+   "128"
+  ],
+  "why": "These are cubes: 1³, 2³, 3³, 4³, so next is 5³ = 125."
+ },
+ {
+  "q": "Continue: 2, 3, 5, 8, 12, 17, ?",
+  "a": "23",
+  "wrong": [
+   "22",
+   "24",
+   "25"
+  ],
+  "why": "The gaps grow by 1: +1, +2, +3, +4, +5, then +6 gives 23."
+ },
+ {
+  "q": "Find the next number: 5, 10, 8, 16, 14, 28, ?",
+  "a": "26",
+  "wrong": [
+   "24",
+   "30",
+   "56"
+  ],
+  "why": "The rule alternates ×2 and −2. After 28 comes −2, giving 26."
+ },
+ {
+  "q": "Complete the series: 81, 27, 9, 3, ?",
+  "a": "1",
+  "wrong": [
+   "0",
+   "2",
+   "6"
+  ],
+  "why": "Each term is divided by 3, so 3 ÷ 3 = 1."
+ },
+ {
+  "q": "Continue: 1, 3, 7, 15, 31, ?",
+  "a": "63",
+  "wrong": [
+   "62",
+   "61",
+   "65"
+  ],
+  "why": "Double and add 1: 31 × 2 + 1 = 63."
+ },
+ {
+  "q": "What comes next: 2, 4, 8, 14, 22, ?",
+  "a": "32",
+  "wrong": [
+   "30",
+   "34",
+   "36"
+  ],
+  "why": "The gaps rise by 2: +2, +4, +6, +8, then +10 gives 32."
+ },
+ {
+  "q": "Find the next number: 4, 9, 19, 39, ?",
+  "a": "79",
+  "wrong": [
+   "78",
+   "77",
+   "59"
+  ],
+  "why": "Double and add 1: 39 × 2 + 1 = 79."
+ },
+ {
+  "q": "Next up: 1, 2, 6, 24, 120, ?",
+  "a": "720",
+  "wrong": [
+   "240",
+   "480",
+   "600"
+  ],
+  "why": "Multiply by 1, 2, 3, 4, 5 in turn, so next is 120 × 6 = 720 (factorials)."
+ },
+ {
+  "q": "Complete the series: 0, 1, 3, 6, 10, 15, ?",
+  "a": "21",
+  "wrong": [
+   "20",
+   "22",
+   "25"
+  ],
+  "why": "Gaps are 1, 2, 3, 4, 5, so next gap is 6: 15 + 6 = 21."
+ },
+ {
+  "q": "Continue: 2, 3, 5, 7, 11, 13, ?",
+  "a": "17",
+  "wrong": [
+   "15",
+   "19",
+   "21"
+  ],
+  "why": "These are the prime numbers. After 13 the next prime is 17 (15 = 3 × 5)."
+ },
+ {
+  "q": "What comes next: 1, 4, 10, 22, 46, ?",
+  "a": "94",
+  "wrong": [
+   "92",
+   "90",
+   "96"
+  ],
+  "why": "Double and add 2: 46 × 2 + 2 = 94."
+ },
+ {
+  "q": "Find the next number: 3, 5, 9, 17, 33, ?",
+  "a": "65",
+  "wrong": [
+   "63",
+   "64",
+   "66"
+  ],
+  "why": "The gaps double: 2, 4, 8, 16, then 32. 33 + 32 = 65."
+ },
+ {
+  "q": "Complete the series: 10, 9, 7, 4, 0, ?",
+  "a": "−5",
+  "wrong": [
+   "−4",
+   "−6",
+   "5"
+  ],
+  "why": "The drops grow: −1, −2, −3, −4, then −5, so 0 − 5 = −5."
+ },
+ {
+  "q": "Continue: 2, 5, 11, 23, 47, ?",
+  "a": "95",
+  "wrong": [
+   "94",
+   "96",
+   "93"
+  ],
+  "why": "Double and add 1: 47 × 2 + 1 = 95."
+ },
+ {
+  "q": "What comes next: 6, 11, 21, 41, ?",
+  "a": "81",
+  "wrong": [
+   "82",
+   "71",
+   "61"
+  ],
+  "why": "Double and subtract 1: 41 × 2 − 1 = 81."
+ },
+ {
+  "q": "Find the next number: 1, 5, 14, 30, 55, ?",
+  "a": "91",
+  "wrong": [
+   "85",
+   "89",
+   "90"
+  ],
+  "why": "The gaps are square numbers: 4, 9, 16, 25, then 36. 55 + 36 = 91."
+ },
+ {
+  "q": "Complete the series: 5, 6, 8, 11, 15, 20, ?",
+  "a": "26",
+  "wrong": [
+   "25",
+   "27",
+   "28"
+  ],
+  "why": "Gaps go +1, +2, +3, +4, +5, then +6: 20 + 6 = 26."
+ },
+ {
+  "q": "Continue: 100, 99, 97, 94, 90, ?",
+  "a": "85",
+  "wrong": [
+   "84",
+   "86",
+   "80"
+  ],
+  "why": "The drops grow by 1: −1, −2, −3, −4, then −5 gives 85."
+ },
+ {
+  "q": "What comes next: 1, 2, 5, 10, 17, 26, ?",
+  "a": "37",
+  "wrong": [
+   "35",
+   "36",
+   "38"
+  ],
+  "why": "Each term is a square plus 1 (0²+1, 1²+1, ... 5²+1), so next is 6²+1 = 37."
+ },
+ {
+  "q": "Find the next number: 1, 1, 2, 4, 7, 13, 24, ?",
+  "a": "44",
+  "wrong": [
+   "37",
+   "41",
+   "48"
+  ],
+  "why": "Each term is the sum of the previous three: 7 + 13 + 24 = 44."
+ },
+ {
+  "q": "Continue: 8, 12, 18, 27, ?",
+  "a": "40.5",
+  "wrong": [
+   "36",
+   "39",
+   "45"
+  ],
+  "why": "Each term is the last × 1.5. 27 × 1.5 = 40.5."
+ },
+ {
+  "q": "Complete the series: 21, 20, 18, 15, 11, ?",
+  "a": "6",
+  "wrong": [
+   "5",
+   "7",
+   "8"
+  ],
+  "why": "The drops grow: −1, −2, −3, −4, then −5. 11 − 5 = 6."
+ },
+ {
+  "q": "What comes next: 2, 1, 4, 3, 6, 5, ?",
+  "a": "8",
+  "wrong": [
+   "7",
+   "9",
+   "10"
+  ],
+  "why": "It is pairs counting up by 2, each written big then small: (2,1), (4,3), (6,5), (8,7)."
+ },
+ {
+  "q": "Find the next number: 1, 3, 2, 4, 3, 5, 4, ?",
+  "a": "6",
+  "wrong": [
+   "5",
+   "3",
+   "7"
+  ],
+  "why": "The pattern alternates +2 and −1. After 4 comes +2, giving 6."
+ },
+ {
+  "q": "Complete the series: 2, 4, 3, 9, 4, 16, 5, ?",
+  "a": "25",
+  "wrong": [
+   "20",
+   "10",
+   "36"
+  ],
+  "why": "Two interleaved lists: 2, 3, 4, 5 and the squares 4, 9, 16, 25."
+ },
+ {
+  "q": "Continue: 5, 4, 8, 7, 14, 13, ?",
+  "a": "26",
+  "wrong": [
+   "25",
+   "12",
+   "27"
+  ],
+  "why": "The rule alternates −1 and ×2. After 13 comes ×2 = 26."
+ },
+ {
+  "q": "Next digit: 3, 1, 4, 1, 5, 9, 2, ?",
+  "a": "6",
+  "wrong": [
+   "7",
+   "5",
+   "3"
+  ],
+  "why": "These are the digits of pi: 3.1415926..."
+ },
+ {
+  "q": "Which letter comes next: A, C, F, J, O, ?",
+  "a": "U",
+  "wrong": [
+   "T",
+   "V",
+   "S"
+  ],
+  "why": "The gaps grow: +2, +3, +4, +5, then +6. O is the 15th letter; 21st is U."
+ },
+ {
+  "q": "Which letter completes it: Z, X, U, Q, ?",
+  "a": "L",
+  "wrong": [
+   "M",
+   "N",
+   "K"
+  ],
+  "why": "Counting backward with growing steps: −2, −3, −4, then −5. Q is 17th; 12th is L."
+ },
+ {
+  "q": "Continue the letters: A, D, H, M, S, ?",
+  "a": "Z",
+  "wrong": [
+   "Y",
+   "X",
+   "V"
+  ],
+  "why": "Steps grow: +3, +4, +5, +6, then +7. S is 19th; 26th is Z."
+ },
+ {
+  "q": "What comes next: M, V, E, M, J, S, U, ?",
+  "a": "N",
+  "wrong": [
+   "P",
+   "M",
+   "S"
+  ],
+  "why": "These are the first letters of the planets from the Sun: ... Saturn, Uranus, Neptune."
+ },
+ {
+  "q": "Which pair comes next: AZ, BY, CX, ?",
+  "a": "DW",
+  "wrong": [
+   "DX",
+   "EW",
+   "DV"
+  ],
+  "why": "The first letter moves forward and the second moves backward: D and W."
+ },
+ {
+  "q": "Next in the letters: Z, A, Y, B, X, ?",
+  "a": "C",
+  "wrong": [
+   "D",
+   "W",
+   "V"
+  ],
+  "why": "Two interleaved lists: Z, Y, X backward and A, B, C forward."
+ },
+ {
+  "q": "Complete the pattern: A1, B4, C9, D16, ?",
+  "a": "E25",
+  "wrong": [
+   "E20",
+   "E32",
+   "D25"
+  ],
+  "why": "Letters go up in order and numbers are squares: 5² = 25."
+ },
+ {
+  "q": "A $80 jacket is marked up 25%, then discounted 25%. Final price?",
+  "a": "$75",
+  "wrong": [
+   "$80",
+   "$100",
+   "$70"
+  ],
+  "why": "$80 × 1.25 = $100, then 25% off $100 is $75. The percentages apply to different bases."
+ },
+ {
+  "q": "A price rises 10%, then falls 10%. Net change?",
+  "a": "1% drop",
+  "wrong": [
+   "No change",
+   "10% drop",
+   "1% rise"
+  ],
+  "why": "1.10 × 0.90 = 0.99, so the price ends 1% lower."
+ },
+ {
+  "q": "What is 20% of 50% of 300?",
+  "a": "30",
+  "wrong": [
+   "60",
+   "150",
+   "15"
+  ],
+  "why": "50% of 300 is 150, and 20% of 150 is 30."
+ },
+ {
+  "q": "What is 6 + 6 ÷ 6 + 6 × 6?",
+  "a": "43",
+  "wrong": [
+   "48",
+   "78",
+   "42"
+  ],
+  "why": "Multiplication and division first: 6 + 1 + 36 = 43."
+ },
+ {
+  "q": "A film starts at 7:50 pm and runs 2 h 25 min. It ends at?",
+  "a": "10:15 pm",
+  "wrong": [
+   "10:25 pm",
+   "10:05 pm",
+   "9:55 pm"
+  ],
+  "why": "7:50 + 2 h = 9:50, and 25 more minutes makes 10:15 pm."
+ },
+ {
+  "q": "How many minutes from 3:45 pm to 6:20 pm?",
+  "a": "155",
+  "wrong": [
+   "135",
+   "145",
+   "165"
+  ],
+  "why": "3:45 to 6:00 is 135 minutes, plus 20 more is 155."
+ },
+ {
+  "q": "Take 40% off a price, then another 10% off. Total discount?",
+  "a": "46%",
+  "wrong": [
+   "50%",
+   "54%",
+   "45%"
+  ],
+  "why": "0.60 × 0.90 = 0.54 remains, so the total discount is 46%."
+ },
+ {
+  "q": "What is 25% of 25% of 400?",
+  "a": "25",
+  "wrong": [
+   "50",
+   "100",
+   "16"
+  ],
+  "why": "25% of 400 is 100, and 25% of 100 is 25."
+ },
+ {
+  "q": "If 8% of a number is 24, what is the number?",
+  "a": "300",
+  "wrong": [
+   "192",
+   "200",
+   "240"
+  ],
+  "why": "24 ÷ 0.08 = 300. Check: 8% of 300 = 24."
+ },
+ {
+  "q": "A $60 bill gets a 15% tip and is split 3 ways. Each pays?",
+  "a": "$23",
+  "wrong": [
+   "$20",
+   "$21",
+   "$26"
+  ],
+  "why": "$60 × 1.15 = $69, and $69 ÷ 3 = $23."
+ },
+ {
+  "q": "Two $40 items, the second at half price. Total cost?",
+  "a": "$60",
+  "wrong": [
+   "$80",
+   "$70",
+   "$40"
+  ],
+  "why": "$40 + $20 = $60."
+ },
+ {
+  "q": "A car drives 30 min at 60 km/h, then 30 min at 40 km/h. Average speed?",
+  "a": "50 km/h",
+  "wrong": [
+   "48 km/h",
+   "45 km/h",
+   "55 km/h"
+  ],
+  "why": "Equal times, so the average is the mean: (60 + 40) ÷ 2 = 50."
+ },
+ {
+  "q": "You drive 60 km out at 30 km/h and back at 60 km/h. Average speed?",
+  "a": "40 km/h",
+  "wrong": [
+   "45 km/h",
+   "50 km/h",
+   "35 km/h"
+  ],
+  "why": "Out takes 2 h and back takes 1 h: 120 km in 3 h is 40 km/h."
+ },
+ {
+  "q": "What is 1000 + 40 + 1000 + 30 + 1000 + 20 + 1000 + 10?",
+  "a": "4100",
+  "wrong": [
+   "5000",
+   "4000",
+   "4010"
+  ],
+  "why": "Four thousands make 4000, and 40 + 30 + 20 + 10 = 100."
+ },
+ {
+  "q": "What is 50% more than 50% of 80?",
+  "a": "60",
+  "wrong": [
+   "120",
+   "80",
+   "65"
+  ],
+  "why": "50% of 80 is 40, and 40 + half of 40 = 60."
+ },
+ {
+  "q": "How many times is the digit 9 written from 1 to 100?",
+  "a": "20",
+  "wrong": [
+   "10",
+   "19",
+   "11"
+  ],
+  "why": "Ones place: 9, 19, ... 99 is 10 times. Tens place: 90 to 99 is 10 more."
+ },
+ {
+  "q": "What is 100 − 10 × 5 + 20 ÷ 4?",
+  "a": "55",
+  "wrong": [
+   "450",
+   "60",
+   "17.5"
+  ],
+  "why": "Multiply and divide first: 100 − 50 + 5 = 55."
+ },
+ {
+  "q": "A tank that is 1/4 full takes 30 L to reach 1/2 full. Capacity?",
+  "a": "120 L",
+  "wrong": [
+   "60 L",
+   "90 L",
+   "150 L"
+  ],
+  "why": "30 L is 1/4 of the tank, so the capacity is 4 × 30 = 120 L."
+ },
+ {
+  "q": "What is 3/4 of 3/4 of 64?",
+  "a": "36",
+  "wrong": [
+   "48",
+   "24",
+   "27"
+  ],
+  "why": "3/4 of 64 is 48, and 3/4 of 48 is 36."
+ },
+ {
+  "q": "3 h 50 min plus 2 h 20 min equals?",
+  "a": "6 h 10 min",
+  "wrong": [
+   "5 h 10 min",
+   "6 h 20 min",
+   "6 h 30 min"
+  ],
+  "why": "50 + 20 = 70 minutes, which is 1 h 10 min. 3 + 2 + 1 = 6 h, so 6 h 10 min."
+ },
+ {
+  "q": "What is 0.2 × 0.3?",
+  "a": "0.06",
+  "wrong": [
+   "0.6",
+   "0.5",
+   "0.006"
+  ],
+  "why": "2 × 3 = 6, and two decimal places in total gives 0.06."
+ },
+ {
+  "q": "Which is greater: 40% of 50 or 50% of 40?",
+  "a": "Equal",
+  "wrong": [
+   "40% of 50",
+   "50% of 40",
+   "Can't tell"
+  ],
+  "why": "Both equal 20. Percent of a number is symmetric: a% of b = b% of a."
+ },
+ {
+  "q": "A stock falls 50%, then rises 50%. Compared to the start it is?",
+  "a": "25% lower",
+  "wrong": [
+   "The same",
+   "25% higher",
+   "50% lower"
+  ],
+  "why": "100 → 50 → 75, which is 25% below the start."
+ },
+ {
+  "q": "Three back-to-back 30-minute tasks start at 11:45 am. They end at?",
+  "a": "1:15 pm",
+  "wrong": [
+   "1:30 pm",
+   "1:05 pm",
+   "1:45 pm"
+  ],
+  "why": "3 × 30 = 90 minutes. 11:45 + 90 min = 1:15 pm."
+ },
+ {
+  "q": "What is 1/2 ÷ 1/4?",
+  "a": "2",
+  "wrong": [
+   "1/8",
+   "1",
+   "4"
+  ],
+  "why": "Dividing by 1/4 means multiplying by 4: 1/2 × 4 = 2."
+ },
+ {
+  "q": "What is 15 × 15 − 14 × 16?",
+  "a": "1",
+  "wrong": [
+   "0",
+   "2",
+   "29"
+  ],
+  "why": "225 − 224 = 1. In general n² − (n−1)(n+1) = 1."
+ },
+ {
+  "q": "A $100 phone is 20% off, then $10 off. Final price?",
+  "a": "$70",
+  "wrong": [
+   "$72",
+   "$60",
+   "$80"
+  ],
+  "why": "20% off gives $80, then $10 off gives $70."
+ },
+ {
+  "q": "What gets wetter the more it dries?",
+  "a": "A towel",
+  "wrong": [
+   "A sponge",
+   "Rain",
+   "Soap"
+  ],
+  "why": "A towel dries you and so gets wetter itself."
+ },
+ {
+  "q": "What has hands but cannot clap?",
+  "a": "A clock",
+  "wrong": [
+   "A statue",
+   "A robot",
+   "A compass"
+  ],
+  "why": "A clock has hour and minute hands but cannot clap."
+ },
+ {
+  "q": "What goes up when the rain comes down?",
+  "a": "An umbrella",
+  "wrong": [
+   "A flood",
+   "Mud",
+   "A puddle"
+  ],
+  "why": "An umbrella is raised as the rain falls."
+ },
+ {
+  "q": "A man pushes his car to a hotel and loses his fortune. Why?",
+  "a": "Monopoly",
+  "wrong": [
+   "Gambling",
+   "Fraud",
+   "Theft"
+  ],
+  "why": "He is playing the board game: the car token lands on a hotel property."
+ },
+ {
+  "q": "What can you break without ever touching it?",
+  "a": "A promise",
+  "wrong": [
+   "A window",
+   "A bone",
+   "A mirror"
+  ],
+  "why": "Promises are broken by what you do or fail to do, not by touch."
+ },
+ {
+  "q": "What can travel around the world while staying in a corner?",
+  "a": "A stamp",
+  "wrong": [
+   "A map",
+   "A satellite",
+   "A shadow"
+  ],
+  "why": "A postage stamp sits in the corner of an envelope while it travels."
+ },
+ {
+  "q": "What has one eye but cannot see?",
+  "a": "A needle",
+  "wrong": [
+   "A potato",
+   "A coin",
+   "A key"
+  ],
+  "why": "A sewing needle has a single eye (the hole for thread). A potato has many."
+ },
+ {
+  "q": "How many animals of each kind did Moses take on the ark?",
+  "a": "None",
+  "wrong": [
+   "Two",
+   "Seven",
+   "One pair"
+  ],
+  "why": "It was Noah, not Moses, who built the ark."
+ },
+ {
+  "q": "A plane crashes on the US-Canada border. Where are survivors buried?",
+  "a": "Nowhere",
+  "wrong": [
+   "In the US",
+   "In Canada",
+   "On the border"
+  ],
+  "why": "Survivors are alive, so they are not buried."
+ },
+ {
+  "q": "You enter a dark room with a candle, a lamp and a fireplace, and one match. What first?",
+  "a": "The match",
+  "wrong": [
+   "The candle",
+   "The lamp",
+   "The fireplace"
+  ],
+  "why": "Nothing else lights until the match itself is lit."
+ },
+ {
+  "q": "Mary's father has five daughters: Nana, Nene, Nini, Nono and ...?",
+  "a": "Mary",
+  "wrong": [
+   "Nunu",
+   "Nina",
+   "Nuna"
+  ],
+  "why": "The fifth daughter is Mary, named at the start of the question."
+ },
+ {
+  "q": "A rooster lays an egg on a roof's peak. Which way does it roll?",
+  "a": "Neither",
+  "wrong": [
+   "Left",
+   "Right",
+   "Down the front"
+  ],
+  "why": "Roosters do not lay eggs."
+ },
+ {
+  "q": "If a red house is made of red bricks, what is a greenhouse made of?",
+  "a": "Glass",
+  "wrong": [
+   "Green bricks",
+   "Wood",
+   "Plastic"
+  ],
+  "why": "A greenhouse is a glass building for growing plants."
+ },
+ {
+  "q": "I speak without a mouth and hear without ears. What am I?",
+  "a": "An echo",
+  "wrong": [
+   "A phone",
+   "A shadow",
+   "A ghost"
+  ],
+  "why": "An echo repeats sound with no mouth or ears."
+ },
+ {
+  "q": "What 5-letter word becomes shorter when you add two letters to it?",
+  "a": "Short",
+  "wrong": [
+   "Small",
+   "Brief",
+   "Tiny"
+  ],
+  "why": "Short + er = shorter."
+ },
+ {
+  "q": "'I have no siblings, but that man's father is my father's son.' Who is in the portrait?",
+  "a": "His son",
+  "wrong": [
+   "Himself",
+   "His father",
+   "His nephew"
+  ],
+  "why": "'My father's son' with no siblings is the speaker himself, so the portrait man's father is him. It is his son."
+ },
+ {
+  "q": "How can you drop a raw egg onto a concrete floor without cracking it?",
+  "a": "Floors don't crack",
+  "wrong": [
+   "Drop it slowly",
+   "Wrap it",
+   "Catch it"
+  ],
+  "why": "The egg will break, but the concrete floor will not crack."
+ },
+ {
+  "q": "What occurs once in a minute, twice in a moment, never in a thousand years?",
+  "a": "The letter M",
+  "wrong": [
+   "The letter N",
+   "The letter T",
+   "The letter E"
+  ],
+  "why": "M appears once in 'minute', twice in 'moment', and not in 'a thousand years'."
+ },
+ {
+  "q": "Two fathers and two sons go fishing and catch 3 fish, one each. How many people?",
+  "a": "Three",
+  "wrong": [
+   "Four",
+   "Two",
+   "Five"
+  ],
+  "why": "A grandfather, his son, and his grandson: the middle one is both father and son."
+ },
+ {
+  "q": "A doctor says the boy is his brother, but the doctor is not his brother. How?",
+  "a": "She is his sister",
+  "wrong": [
+   "Half-brother",
+   "Twin",
+   "Step-brother"
+  ],
+  "why": "The doctor is the boy's sister."
+ },
+ {
+  "q": "The more of me you take, the more you leave behind. What am I?",
+  "a": "Footsteps",
+  "wrong": [
+   "Photos",
+   "Money",
+   "Breaths"
+  ],
+  "why": "Every step you take leaves another footstep behind."
+ },
+ {
+  "q": "What can you hold in your left hand but never in your right?",
+  "a": "Your right hand",
+  "wrong": [
+   "A coin",
+   "A pen",
+   "A phone"
+  ],
+  "why": "You can hold anything in either hand, except the right hand itself."
+ },
+ {
+  "q": "Unscramble this country: AINDI",
+  "a": "India",
+  "wrong": [
+   "Nepal",
+   "Chile",
+   "Japan"
+  ],
+  "why": "A-I-N-D-I rearranged is INDIA."
+ },
+ {
+  "q": "Unscramble this animal: GRTIE",
+  "a": "Tiger",
+  "wrong": [
+   "Eagle",
+   "Zebra",
+   "Camel"
+  ],
+  "why": "G-R-T-I-E rearranged is TIGER."
+ },
+ {
+  "q": "Unscramble this city: RAISP",
+  "a": "Paris",
+  "wrong": [
+   "Milan",
+   "Seoul",
+   "Lima"
+  ],
+  "why": "R-A-I-S-P rearranged is PARIS."
+ },
+ {
+  "q": "Unscramble this sport: ENTNIS",
+  "a": "Tennis",
+  "wrong": [
+   "Hockey",
+   "Cricket",
+   "Boxing"
+  ],
+  "why": "E-N-T-N-I-S rearranged is TENNIS."
+ },
+ {
+  "q": "Unscramble this instrument: NIPOA",
+  "a": "Piano",
+  "wrong": [
+   "Banjo",
+   "Flute",
+   "Organ"
+  ],
+  "why": "N-I-P-O-A rearranged is PIANO."
+ },
+ {
+  "q": "Unscramble this vegetable: TRACRO",
+  "a": "Carrot",
+  "wrong": [
+   "Turnip",
+   "Radish",
+   "Celery"
+  ],
+  "why": "T-R-A-C-R-O rearranged is CARROT."
+ },
+ {
+  "q": "Unscramble this planet: TUNPEEN",
+  "a": "Neptune",
+  "wrong": [
+   "Saturn",
+   "Mercury",
+   "Uranus"
+  ],
+  "why": "T-U-N-P-E-E-N rearranged is NEPTUNE."
+ },
+ {
+  "q": "Unscramble this metal: NIRO",
+  "a": "Iron",
+  "wrong": [
+   "Lead",
+   "Zinc",
+   "Gold"
+  ],
+  "why": "N-I-R-O rearranged is IRON."
+ },
+ {
+  "q": "Odd one out: Whale, Dolphin, Shark, Seal",
+  "a": "Shark",
+  "wrong": [
+   "Whale",
+   "Dolphin",
+   "Seal"
+  ],
+  "why": "A shark is a fish; the others are mammals."
+ },
+ {
+  "q": "Odd one out: Spider, Ant, Beetle, Bee",
+  "a": "Spider",
+  "wrong": [
+   "Ant",
+   "Beetle",
+   "Bee"
+  ],
+  "why": "Spiders have eight legs and are arachnids; the rest are six-legged insects."
+ },
+ {
+  "q": "Odd one out: Venus, Mars, Moon, Jupiter",
+  "a": "Moon",
+  "wrong": [
+   "Venus",
+   "Mars",
+   "Jupiter"
+  ],
+  "why": "The Moon is a satellite, not a planet."
+ },
+ {
+  "q": "Odd one out: Mercury, Iron, Copper, Granite",
+  "a": "Granite",
+  "wrong": [
+   "Mercury",
+   "Iron",
+   "Copper"
+  ],
+  "why": "Granite is a rock; the others are metals."
+ },
+ {
+  "q": "Odd one out: Level, Radar, Civic, Planet",
+  "a": "Planet",
+  "wrong": [
+   "Level",
+   "Radar",
+   "Civic"
+  ],
+  "why": "Planet does not read the same backward; the others are palindromes."
+ },
+ {
+  "q": "Which English word has three consecutive pairs of double letters?",
+  "a": "Bookkeeper",
+  "wrong": [
+   "Committee",
+   "Mississippi",
+   "Assessment"
+  ],
+  "why": "B-oo-kk-ee-per has oo, kk and ee in a row."
+ },
+ {
+  "q": "Which number name has its letters in alphabetical order?",
+  "a": "Forty",
+  "wrong": [
+   "Four",
+   "Ten",
+   "Six"
+  ],
+  "why": "F-O-R-T-Y runs alphabetically. 'Four' fails because U comes after R."
+ },
+ {
+  "q": "Shift each letter of HAL one place forward in the alphabet. Result?",
+  "a": "IBM",
+  "wrong": [
+   "IBN",
+   "HBM",
+   "GZK"
+  ],
+  "why": "H→I, A→B, L→M gives IBM."
+ },
+ {
+  "q": "If A=1, B=2, C=3 and so on, what is the value of DEAD?",
+  "a": "14",
+  "wrong": [
+   "13",
+   "15",
+   "16"
+  ],
+  "why": "D=4, E=5, A=1, D=4: 4 + 5 + 1 + 4 = 14."
+ },
+ {
+  "q": "How many times does the letter S appear in MISSISSIPPI?",
+  "a": "4",
+  "wrong": [
+   "3",
+   "5",
+   "2"
+  ],
+  "why": "M-I-S-S-I-S-S-I-P-P-I has four S's."
+ },
+ {
+  "q": "Anna is twice Ben's age. In 6 years she will be 1.5 times his age. Ben is?",
+  "a": "6",
+  "wrong": [
+   "3",
+   "9",
+   "12"
+  ],
+  "why": "Now Anna 12, Ben 6. In 6 years: 18 and 12, and 18 = 1.5 × 12."
+ },
+ {
+  "q": "Today is Wednesday. What day is it 100 days from now?",
+  "a": "Friday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Monday"
+  ],
+  "why": "100 = 14 weeks + 2 days, so Wednesday + 2 = Friday."
+ },
+ {
+  "q": "Today is Monday. What day was it 10 days ago?",
+  "a": "Friday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Tuesday"
+  ],
+  "why": "10 days = 1 week + 3 days. Monday − 3 days is Friday."
+ },
+ {
+  "q": "Three days from now is Tuesday. What day was it two days ago?",
+  "a": "Thursday",
+  "wrong": [
+   "Friday",
+   "Wednesday",
+   "Monday"
+  ],
+  "why": "Today is Saturday, so two days ago was Thursday."
+ },
+ {
+  "q": "One tap fills a bucket in 6 minutes, another in 3. Both together?",
+  "a": "2 minutes",
+  "wrong": [
+   "4.5 minutes",
+   "3 minutes",
+   "9 minutes"
+  ],
+  "why": "Rates add: 1/6 + 1/3 = 1/2 bucket per minute, so 2 minutes."
+ },
+ {
+  "q": "Two painters take 6 hours to paint a room. How long for three painters?",
+  "a": "4 hours",
+  "wrong": [
+   "2 hours",
+   "3 hours",
+   "9 hours"
+  ],
+  "why": "The job is 12 painter-hours. 12 ÷ 3 = 4 hours."
+ },
+ {
+  "q": "A snail climbs 3 m by day and slips 2 m at night. On which day does it exit a 10 m wall?",
+  "a": "Day 8",
+  "wrong": [
+   "Day 10",
+   "Day 7",
+   "Day 9"
+  ],
+  "why": "After 7 days it is at 7 m. On day 8 it climbs 3 m to the top before slipping."
+ },
+ {
+  "q": "A father is 30 years older than his son. In 5 years he is 4× his age. Son's age now?",
+  "a": "5",
+  "wrong": [
+   "10",
+   "6",
+   "15"
+  ],
+  "why": "Now 5 and 35. In 5 years: 10 and 40, and 40 = 4 × 10."
+ },
+ {
+  "q": "What is the angle between the clock hands at 3:15?",
+  "a": "7.5 degrees",
+  "wrong": [
+   "0 degrees",
+   "15 degrees",
+   "30 degrees"
+  ],
+  "why": "The minute hand is at 90°. The hour hand is a quarter past the 3, at 97.5°. The gap is 7.5°."
+ },
+ {
+  "q": "Tom has 3 sisters, and each sister has exactly 1 brother. How many children?",
+  "a": "4",
+  "wrong": [
+   "5",
+   "6",
+   "7"
+  ],
+  "why": "The one brother is Tom, so 3 sisters + Tom = 4."
+ },
+ {
+  "q": "Mia has 6 more coins than Joe. Together they have 36. Joe has?",
+  "a": "15",
+  "wrong": [
+   "18",
+   "21",
+   "12"
+  ],
+  "why": "Joe 15, Mia 21: 15 + 21 = 36 and the gap is 6."
+ },
+ {
+  "q": "A watch loses 6 minutes each hour. Set right at noon, it shows what at 3 pm?",
+  "a": "2:42 pm",
+  "wrong": [
+   "2:18 pm",
+   "3:18 pm",
+   "2:36 pm"
+  ],
+  "why": "It loses 3 × 6 = 18 minutes in 3 hours, so 3:00 − 0:18 = 2:42."
+ },
+ {
+  "q": "In 2 years Eve will be twice the age she was 4 years ago. Her age now?",
+  "a": "10",
+  "wrong": [
+   "8",
+   "12",
+   "14"
+  ],
+  "why": "Now 10: in 2 years she is 12, and 4 years ago she was 6, and 12 = 2 × 6."
+ },
+ {
+  "q": "It is Monday 10 am. What day and time will it be 53 hours later?",
+  "a": "Wed 3 pm",
+  "wrong": [
+   "Wed 5 pm",
+   "Thu 3 pm",
+   "Wed 3 am"
+  ],
+  "why": "48 hours later is Wednesday 10 am, and 5 more hours is 3 pm."
+ },
+ {
+  "q": "A rectangle is twice as long as it is wide, with perimeter 60. Its area?",
+  "a": "200",
+  "wrong": [
+   "100",
+   "150",
+   "225"
+  ],
+  "why": "Width 10, length 20: perimeter 60 and area 200."
+ },
+ {
+  "q": "Six people each shake hands once with every other person. Handshakes?",
+  "a": "15",
+  "wrong": [
+   "30",
+   "36",
+   "12"
+  ],
+  "why": "6 × 5 ÷ 2 = 15, since each handshake is counted twice."
+ },
+ {
+  "q": "Which is larger: 3^4 or 4^3?",
+  "a": "3^4",
+  "wrong": [
+   "4^3",
+   "Equal",
+   "Can't tell"
+  ],
+  "why": "3^4 = 81 and 4^3 = 64."
+ },
+ {
+  "q": "Which is largest: 5/8, 0.6, 62%, 3/5?",
+  "a": "5/8",
+  "wrong": [
+   "0.6",
+   "62%",
+   "3/5"
+  ],
+  "why": "As decimals: 0.625, 0.6, 0.62, 0.6. So 5/8 is largest."
+ },
+ {
+  "q": "Odd one out: 16, 25, 36, 48, 49",
+  "a": "48",
+  "wrong": [
+   "16",
+   "25",
+   "49"
+  ],
+  "why": "The others are perfect squares; 48 is not."
+ },
+ {
+  "q": "Which does not belong: 8, 27, 64, 100, 125",
+  "a": "100",
+  "wrong": [
+   "8",
+   "64",
+   "125"
+  ],
+  "why": "The others are cubes (2³, 3³, 4³, 5³); 100 is not."
+ },
+ {
+  "q": "Which does not belong: 14, 21, 35, 49, 52",
+  "a": "52",
+  "wrong": [
+   "14",
+   "35",
+   "49"
+  ],
+  "why": "The others are multiples of 7; 52 is not."
+ },
+ {
+  "q": "Odd one out: 123, 321, 213, 132, 124",
+  "a": "124",
+  "wrong": [
+   "123",
+   "321",
+   "132"
+  ],
+  "why": "The others use the digits 1, 2, 3 and have digit sum 6. 124 has digit sum 7."
+ },
+ {
+  "q": "Which is bigger: 7 × 9 or 8 × 8?",
+  "a": "8 × 8",
+  "wrong": [
+   "7 × 9",
+   "Equal",
+   "Can't tell"
+  ],
+  "why": "7 × 9 = 63 and 8 × 8 = 64."
+ },
+ {
+  "q": "Which is bigger: 99 × 101 or 100 × 100?",
+  "a": "100 × 100",
+  "wrong": [
+   "99 × 101",
+   "Equal",
+   "Can't tell"
+  ],
+  "why": "99 × 101 = 10,000 − 1 = 9,999; 100 × 100 = 10,000."
+ },
+ {
+  "q": "Which is bigger: 2/3 of 45 or 3/4 of 44?",
+  "a": "3/4 of 44",
+  "wrong": [
+   "2/3 of 45",
+   "Equal",
+   "Can't tell"
+  ],
+  "why": "2/3 of 45 is 30 and 3/4 of 44 is 33."
+ },
+ {
+  "q": "Which is largest: 2^8, 3^5, 5^3, 11^2?",
+  "a": "2^8",
+  "wrong": [
+   "3^5",
+   "5^3",
+   "11^2"
+  ],
+  "why": "They are 256, 243, 125 and 121."
+ },
+ {
+  "q": "Which fraction is smallest: 3/4, 5/8, 7/12, 2/3?",
+  "a": "7/12",
+  "wrong": [
+   "5/8",
+   "2/3",
+   "3/4"
+  ],
+  "why": "As decimals: 0.75, 0.625, 0.583, 0.667. So 7/12 is smallest."
+ },
+ {
+  "q": "Which of these is not prime: 51, 53, 59, 61?",
+  "a": "51",
+  "wrong": [
+   "53",
+   "59",
+   "61"
+  ],
+  "why": "51 = 3 × 17. The rest are prime."
+ }
+]
