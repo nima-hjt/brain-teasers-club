@@ -264,15 +264,15 @@
   "why": "Elephant + sofa (a room): the obvious problem nobody mentions."
  },
  {
-  "q": "🫗🫘",
-  "a": "Spill the beans",
+  "q": "🍰✋😋",
+  "a": "Have your cake and eat it",
   "cat": "Saying",
   "wrong": [
-   "Coffee break",
-   "Bean counter",
-   "Full of beans"
+   "Icing on the cake",
+   "Easy as pie",
+   "Sweet tooth"
   ],
-  "why": "Pouring + beans: revealing a secret."
+  "why": "Hold the cake and eat it too: wanting two things that cannot both happen."
  },
  {
   "q": "✋🐎",
@@ -561,14 +561,14 @@
   "why": "Door + bell."
  },
  {
-  "q": "🐎🪶",
-  "a": "Horsefeathers",
+  "q": "🐎💪",
+  "a": "Horsepower",
   "cat": "Word",
   "wrong": [
-   "Pegasus",
-   "Feather duster",
-   "Horse hair"
+   "Horseplay",
+   "Workhorse",
+   "Stallion"
   ],
-  "why": "Horse + feather: an old word for nonsense."
+  "why": "Horse + power."
  }
 ]
