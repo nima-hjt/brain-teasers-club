@@ -280,14 +280,14 @@
   "why": "Each machine makes 1 widget in 5 minutes, so 100 machines make 100 widgets in 5 minutes."
  },
  {
-  "q": "How many days are in a leap year?",
-  "a": "366",
+  "q": "February 1, 2028 is a Tuesday. What day is March 1, 2028?",
+  "a": "Wednesday",
   "wrong": [
-   "365",
-   "364",
-   "360"
+   "Tuesday",
+   "Thursday",
+   "Monday"
   ],
-  "why": "A leap year adds 29 February."
+  "why": "2028 is a leap year, so February has 29 days: 4 weeks and 1 day after Tuesday is Wednesday."
  },
  {
   "q": "If yesterday was two days before Friday, what day is tomorrow?",
@@ -340,14 +340,14 @@
   "why": "Remove the S and SEVEN becomes EVEN."
  },
  {
-  "q": "Three people buy a pizza for $30 and split it evenly. Each pays?",
-  "a": "$10",
+  "q": "Three friends share a $30 pizza. Two of them pay $15 each. How much should the third give each of them?",
+  "a": "$5",
   "wrong": [
-   "$15",
-   "$12",
-   "$9"
+   "$10",
+   "$7.50",
+   "$15"
   ],
-  "why": "$30 ÷ 3 = $10 each."
+  "why": "A fair share is $10, so each payer is $5 over. The third friend gives each of them $5."
  },
  {
   "q": "If a doctor gives you 3 pills and says take one every 30 minutes, how long do they last?",
@@ -360,14 +360,14 @@
   "why": "Take one now, one after 30 minutes, the last after 60 minutes. The gaps add to 1 hour."
  },
  {
-  "q": "What is 12 squared minus 100?",
-  "a": "44",
+  "q": "What is 999 × 7?",
+  "a": "6993",
   "wrong": [
-   "144",
-   "24",
-   "40"
+   "6939",
+   "7993",
+   "6973"
   ],
-  "why": "12² = 144, and 144 − 100 = 44."
+  "why": "1000 × 7 = 7000, minus 7 = 6993."
  },
  {
   "q": "Which weighs more: 1,000 grams or 1 kilogram?",

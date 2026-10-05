@@ -770,59 +770,59 @@
   "why": "Chilly feet = getting nervous."
  },
  {
-  "q": "❄️👨",
-  "a": "Snowman",
-  "cat": "Word",
-  "wrong": [
-   "Iceman",
-   "Frostbite",
-   "Snowball"
-  ],
-  "why": "Snow + man."
- },
- {
-  "q": "☀️🌼",
-  "a": "Sunflower",
-  "cat": "Word",
-  "wrong": [
-   "Wildflower",
-   "Daisy chain",
-   "Moonflower"
-  ],
-  "why": "Sun + flower."
- },
- {
-  "q": "🦶⚽",
-  "a": "Football",
+  "q": "🦶📝",
+  "a": "Footnote",
   "cat": "Word",
   "wrong": [
    "Footprint",
-   "Handball",
-   "Foot soldier"
+   "Footstep",
+   "Notebook"
   ],
-  "why": "Foot + ball."
+  "why": "Foot + note."
  },
  {
-  "q": "🦷🧹",
-  "a": "Toothbrush",
+  "q": "🌊🦁",
+  "a": "Sea lion",
   "cat": "Word",
   "wrong": [
-   "Toothpaste",
-   "Hairbrush",
-   "Mouthwash"
+   "Walrus",
+   "Sea otter",
+   "Lionfish"
   ],
-  "why": "Tooth + brush."
+  "why": "Sea + lion."
  },
  {
-  "q": "🌧️🧥",
-  "a": "Raincoat",
+  "q": "✋✍️",
+  "a": "Handwriting",
   "cat": "Word",
   "wrong": [
-   "Overcoat",
-   "Raindrop",
-   "Waterproof"
+   "Handshake",
+   "Signature",
+   "Autograph"
   ],
-  "why": "Rain + coat."
+  "why": "Hand + writing."
+ },
+ {
+  "q": "👂💍",
+  "a": "Earring",
+  "cat": "Word",
+  "wrong": [
+   "Earphone",
+   "Wedding ring",
+   "Earmuff"
+  ],
+  "why": "Ear + ring."
+ },
+ {
+  "q": "🐴👞",
+  "a": "Horseshoe",
+  "cat": "Word",
+  "wrong": [
+   "Horseback",
+   "Saddle",
+   "Bootcamp"
+  ],
+  "why": "Horse + shoe."
  },
  {
   "q": "🌙💡",
@@ -1342,15 +1342,15 @@
   "why": "Pasta + meat + balls."
  },
  {
-  "q": "🐟🍟",
-  "a": "Fish and chips",
+  "q": "🍎🍬",
+  "a": "Candy apple",
   "cat": "Food",
   "wrong": [
-   "Surf and turf",
-   "Bangers and mash",
-   "Steak frites"
+   "Apple crumble",
+   "Caramel corn",
+   "Apple turnover"
   ],
-  "why": "Fish + fries."
+  "why": "Apple + candy."
  },
  {
   "q": "🥜🧈🍇",
@@ -1364,26 +1364,26 @@
   "why": "Peanut + spread + grape jelly."
  },
  {
-  "q": "🥓🥚",
-  "a": "Bacon and eggs",
+  "q": "🦆🍊",
+  "a": "Duck à l'orange",
   "cat": "Food",
   "wrong": [
-   "Ham and cheese",
-   "Sausage and beans",
-   "Steak and eggs"
+   "Peking duck",
+   "Orange chicken",
+   "Duck soup"
   ],
-  "why": "Bacon + eggs."
+  "why": "Duck + orange."
  },
  {
-  "q": "🔥🍫",
-  "a": "Hot chocolate",
+  "q": "☀️⬆️🍳",
+  "a": "Sunny side up",
   "cat": "Food",
   "wrong": [
-   "Chocolate milk",
-   "Spiced mocha",
-   "Hot toddy"
+   "Scrambled eggs",
+   "Eggs Benedict",
+   "Over easy"
   ],
-  "why": "Hot + chocolate."
+  "why": "Sunny + side up + fried egg."
  },
  {
   "q": "🥛🍦🥤",
@@ -1419,15 +1419,15 @@
   "why": "Banana + cut + ice cream."
  },
  {
-  "q": "🐔🥣",
-  "a": "Chicken soup",
+  "q": "🥗👑🏛️",
+  "a": "Caesar salad",
   "cat": "Food",
   "wrong": [
-   "Tomato soup",
-   "Miso soup",
-   "Beef stew"
+   "Greek salad",
+   "Cobb salad",
+   "Garden salad"
   ],
-  "why": "Chicken + bowl."
+  "why": "Salad + emperor (crown) + Rome."
  },
  {
   "q": "🥔🔨",
@@ -1639,14 +1639,14 @@
   "why": "Dancer + crown."
  },
  {
-  "q": "🟣🌧️",
-  "a": "Purple Rain",
+  "q": "👩☁️💎",
+  "a": "Lucy in the Sky with Diamonds",
   "cat": "Song",
   "wrong": [
-   "Blue Moon",
-   "Pink Cadillac",
-   "Black Velvet"
+   "Diamonds Are Forever",
+   "Shine On You Crazy Diamond",
+   "Sky Full of Stars"
   ],
-  "why": "Purple + rain."
+  "why": "A woman in the sky with diamonds: the Beatles song."
  }
 ]

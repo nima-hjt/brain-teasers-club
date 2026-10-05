@@ -154,26 +154,26 @@
   "why": "Snowflake + princess."
  },
  {
-  "q": "🦇👨",
-  "a": "Batman",
+  "q": "🤫🐑",
+  "a": "The Silence of the Lambs",
   "cat": "Movie",
   "wrong": [
-   "Dracula",
-   "Birdman",
-   "Hawkman"
+   "Shaun the Sheep",
+   "Babe",
+   "Black Sheep"
   ],
-  "why": "Bat + man."
+  "why": "Shh (silence) + lamb."
  },
  {
-  "q": "🕷️👨",
-  "a": "Spider-Man",
+  "q": "🏝️🏐",
+  "a": "Cast Away",
   "cat": "Movie",
   "wrong": [
-   "Ant-Man",
-   "Venom",
-   "The Fly"
+   "The Beach",
+   "Life of Pi",
+   "Swiss Family Robinson"
   ],
-  "why": "Spider + man."
+  "why": "Stranded on an island with a volleyball named Wilson."
  },
  {
   "q": "👩‍🚀🥔🔴",
