@@ -440,20 +440,40 @@ function seedFromString(k){let h=2166136261;for(const c of k){h^=c.charCodeAt(0)
 const LVL_AT={odd:2,emoji:5,logic:5,facts:5},ADDED_AT={odd:3,emoji:6,logic:6,facts:6};
 // Puzzles per level in a 10-puzzle round, for each difficulty. The round runs from easier to harder.
 const LEVEL_MIX={easy:[7,3,0],normal:[3,5,2],hard:[1,5,4],impossible:[0,3,7]};
-// Unseeded rounds deal from a shuffled deck per type and level kept in localStorage, so a player sees every
-// puzzle of that kind before any repeats. New puzzles are shuffled into the remaining deck. Seeded rounds skip it.
-function deckPick(key,ids,n){
-  let d=null;try{d=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
-  if(!d||!Array.isArray(d.left))d={max:-1,left:[]};
-  const have=new Set(ids);d.left=d.left.filter(i=>have.has(i));
-  for(const i of ids)if(i>d.max)d.left.splice(Math.floor(Math.random()*(d.left.length+1)),0,i);
-  d.max=Math.max(d.max,...ids);
-  const out=[];
-  while(out.length<n&&out.length<ids.length){if(!d.left.length)d.left=shuffle(ids.filter(i=>!out.includes(i)),Math.random);out.push(d.left.shift())}
-  try{localStorage.setItem(key,JSON.stringify(d))}catch(e){}
+// No-repeat picking. Each puzzle is keyed by type letter + bank index ("l12"); banks are append-only, so keys are stable.
+// Order of preference for every mode except the Daily and Challenge links:
+//   1. puzzles this device has never shown and that weren't in a recent Daily,
+//   2. puzzles from recent Dailies (a new visitor may never have played them),
+//   3. puzzles already shown here, oldest first.
+// Today's Daily puzzles are never used anywhere else today. A short level borrows from its neighbour before
+// repeating. Hard and Impossible never borrow from level 1, and Easy never borrows from level 3.
+const BANKS={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};
+const neighbours=(l,rd)=>l===1?[1,2]:l===3?[3,2]:rd==="easy"?[2,1]:rd==="normal"?[2,3,1]:[2,3];
+const qkey=(t,i)=>t[0]+i;
+function loadSeen(){try{const s=JSON.parse(localStorage.getItem("btc-seen")||"null");if(s&&s.m)return s}catch(e){}return{n:0,m:{}}}
+function markSeen(list){const s=loadSeen();for(const q of list){const i=BANKS[q.type].indexOf(q.data);if(i>=0)s.m[qkey(q.type,i)]=++s.n}
+  try{localStorage.setItem("btc-seen",JSON.stringify(s))}catch(e){}}
+try{Object.keys(localStorage).filter(k=>k.startsWith("btc-deck")).forEach(k=>localStorage.removeItem(k))}catch(e){} // old deck format
+function dayKey(back){const d=new Date();d.setDate(d.getDate()-back);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
+const dailyMemo={};
+function dailyKeys(day){ // the same draw the Daily makes for that date
+  if(dailyMemo[day])return dailyMemo[day];
+  const rnd=mulberry32(seedFromString(day)),out=new Set();
+  ["odd","emoji","logic","facts"].forEach((t,i)=>{const b=BANKS[t];
+    shuffle([...b.keys()].filter(j=>!b[j][ADDED_AT[t]]||b[j][ADDED_AT[t]]<=day),rnd).slice(0,[3,3,2,2][i]).forEach(j=>out.add(qkey(t,j)))});
+  return dailyMemo[day]=out;
+}
+function pastDailyKeys(){const s=new Set();for(let k=1;k<=60;k++)dailyKeys(dayKey(k)).forEach(x=>s.add(x));return s}
+function pickFresh(t,l,n,used,rnd,ctx,rd){
+  const b=BANKS[t],out=[];
+  const pool=(ll,tier)=>{let ids=[...b.keys()].filter(i=>b[i][LVL_AT[t]]===ll&&!used.has(i)&&!ctx.today.has(qkey(t,i)));
+    const tierOf=i=>ctx.seen[qkey(t,i)]?3:ctx.past.has(qkey(t,i))?2:1;ids=ids.filter(i=>tierOf(i)===tier);
+    return tier===3?ids.sort((a,c)=>ctx.seen[qkey(t,a)]-ctx.seen[qkey(t,c)]):shuffle(ids,rnd)};
+  const [own,...nb]=neighbours(l,rd);
+  const steps=[[own,1],[own,2],...nb.map(x=>[x,1]),...nb.map(x=>[x,2]),[own,3],...nb.map(x=>[x,3])];
+  for(const [ll,tier] of steps){if(out.length>=n)break;for(const i of pool(ll,tier)){if(out.length>=n)break;used.add(i);out.push(i)}}
   return out;
 }
-try{for(const t of ["odd","emoji","logic","facts"])localStorage.removeItem("btc-deck-"+t)}catch(e){} // old single-deck format
 function buildRound(mode,seed,rd,typesOverride){
   const rnd = seed!=null ? mulberry32(seed) : Math.random;
   let list=[];
@@ -475,15 +495,17 @@ function buildRound(mode,seed,rd,typesOverride){
     if(types.length>1)slotTypes=shuffle(slotTypes,rnd);
     const want={};slotTypes.forEach((t,i)=>{const k=t+levels[i];want[k]=(want[k]||0)+1});
     const got={};
+    // Challenge links must give every phone the same puzzles, so they use a plain seeded draw.
+    const ctx=mode==="challenge"?null:{seen:loadSeen().m,today:dailyKeys(todayKey()),past:pastDailyKeys()};
     for(const t of types){
       const bank=banks[t];const used=new Set();
       for(const l of [3,2,1]){const n=want[t+l]||0;if(!n)continue;
-        // nearest levels fill in if a level runs short
-        const order=l===3?[3,2,1]:l===2?[2,3,1]:[1,2,3];got[t+l]=[];
-        for(const ll of order){const need=n-got[t+l].length;if(need<=0)break;
-          const ids=[...bank.keys()].filter(i=>bank[i][LVL_AT[t]]===ll&&!used.has(i));
-          const ch=seed!=null?shuffle(ids,rnd).slice(0,need):deckPick("btc-deck2-"+t+ll,ids,need);
-          ch.forEach(i=>{used.add(i);got[t+l].push(bank[i])})}}
+        let ids;
+        if(ctx)ids=pickFresh(t,l,n,used,rnd,ctx,rd||diff);
+        else{ids=[];for(const ll of neighbours(l,rd||diff).concat([1,2,3])){if(ids.length>=n)break;
+          shuffle([...bank.keys()].filter(i=>bank[i][LVL_AT[t]]===ll&&!used.has(i)),rnd).slice(0,n-ids.length).forEach(i=>{used.add(i);ids.push(i)})}}
+        got[t+l]=ids.map(i=>bank[i]);
+      }
     }
     list=slotTypes.map((t,i)=>({type:t,data:got[t+levels[i]].shift()})).filter(q=>q.data);
   }
@@ -681,6 +703,7 @@ function startRound(mode,seed,d,typesOverride,prebuilt){
   const rd=d||(mode==="daily"?"normal":diff);   // the Daily is always Normal; a challenge uses its code's difficulty
   const id=++roundId;
   S={id,mode,diff:rd,day:todayKey(),list:prebuilt||buildRound(mode,seed,rd,mode==="challenge"&&chal?chal.types:typesOverride),i:0,score:0,streak:0,bestStreak:0,correct:0,lives:DIFF[rd].lives,locked:false,log:[]};
+  if(mode==="pass"&&pass&&!prebuilt)pass.list=S.list.map(q=>({...q})); // player 2 gets the exact same puzzles
   if(mode==="daily")try{localStorage.setItem("btc-daily-progress",JSON.stringify({day:S.day,score:0,correct:0,i:0}))}catch(e){}
   $("score").textContent="0";$("streak").textContent="×1.0";
   $("lives").innerHTML="<i></i>".repeat(S.lives);
@@ -699,6 +722,7 @@ function nextPuzzle(){
   if(S.i>=S.list.length||S.lives<=0){return endRound()}
   const q=S.list[S.i];S.locked=false;
   const who=S.mode==="pass"?pass.names[pass.turn]+" · ":S.mode==="live"&&live&&live.room?"Set "+setCode(live.room.settings)+" · ":"";
+  markSeen([q]);
   $("qLabel").textContent=who+"Puzzle "+(S.i+1)+" of "+S.list.length+" · "+(q.type==="odd"?"Tap the odd one":q.type==="logic"?"Think fast":q.data[2]);
   $("feedback").textContent="";$("feedback").className="feedback";
   const body=$("qBody");body.innerHTML="";body.className="pop";
@@ -877,6 +901,7 @@ function duelNext(){
   if(duel.i>=duel.list.length)return endRound();
   const q=duel.list[duel.i];
   duel.cur={p:[null,null],winner:null,done:false,t0:Date.now()};
+  markSeen([q]);
   $("dlabel").textContent="Puzzle "+(duel.i+1)+" of "+duel.list.length+" · "+(q.type==="odd"?"odd one out":q.type==="logic"?"logic":q.data[2]);
   [0,1].forEach(k=>{
     const h=$(k===0?"half1":"half2");h.className="half"+(k===0?" flip":"");h.innerHTML="";
@@ -1143,7 +1168,7 @@ document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{let t=customTypes()
 $("startCustom").onclick=()=>startRound(soloMode());
 $("customBack").onclick=()=>show("home");
 $("friendsBack").onclick=()=>show("home");
-$("handoffGo").onclick=()=>startRound("pass",pass.seed);
+$("handoffGo").onclick=()=>startRound("pass",pass.seed,null,null,pass.list.map(q=>({...q})));
 $("handoffCancel").onclick=()=>{S=null;show("home")};
 $("chBack").onclick=()=>{history.replaceState(null,"",location.pathname+location.search);show(chal&&chal.fromLink?"home":"friends")};
 $("chPlay").onclick=()=>startRound("challenge",chal.seed,chal.diff);
