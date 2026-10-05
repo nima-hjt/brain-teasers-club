@@ -10,6 +10,9 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - `build.py` — validates content (4 distinct options, no duplicate questions, strings only), writes `dist/`
   (game, about, facts, privacy, 404, manifest, sw.js, sitemap, icons from `assets/`). Bump the cache name in sw.js
   (`btc-vN`) when shipping changes players must pick up immediately.
+- YouTube tracking links: `build.py` also writes `dist/btc.html` and `dist/wildfacts.html` (copies of the game) so
+  brainteasersclub.app/btc and /wildfacts show as separate paths in Web Analytics. Shares use `shareBase()`,
+  which strips those paths, the query and the hash.
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
 

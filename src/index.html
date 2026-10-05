@@ -714,6 +714,10 @@ function answer(ok,btn,q,timeout){
   const id=S.id;nextT=setTimeout(()=>{if(S&&S.id===id)nextPuzzle()},ok?700:1400);
 }
 
+// Link used in shares: drops the hash, any query and the YouTube tracking paths (/btc, /wildfacts),
+// so friends who open a shared link are not counted as YouTube visitors.
+function shareBase(){const u=new URL(location.href);u.hash="";u.search="";u.pathname=u.pathname.replace(/\/(btc|wildfacts)(\.html)?$/,"/");return u.href}
+
 function endRound(){
   clearInterval(timer);
   // Pass & Play: after player 1, hand the phone over
@@ -723,7 +727,7 @@ function endRound(){
     $("handoffWho").textContent=pass.names[1];
     show("handoff");return;
   }
-  const baseUrl=location.href.split("#")[0];
+  const baseUrl=shareBase();
   const dl=DIFF[S.diff||diff].label;
   const two=S.mode==="pass"||S.mode==="duel"||S.mode==="live";
   let dailyNote="";
@@ -909,7 +913,7 @@ async function liveCreate(){
     const seed=Math.floor(Math.random()*2**31);
     await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:customTypes(),ver:BANK_VER,round:packRound(buildRound("live",seed,diff,customTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
   }catch(e){liveErr("Couldn't reach the match server. Check your connection and try again.");return}
-  const link=location.href.split("#")[0]+"#L"+code;
+  const link=shareBase()+"#L"+code;
   liveStatus("Waiting for your friend to join…");
   $("liveShare").hidden=false;$("liveShareRow").hidden=false;
   $("liveShare").textContent="Play me live on Brain Teasers Club! Room "+code+": "+link;
@@ -1017,7 +1021,7 @@ function liveResults(){
   const dl=DIFF[live.room.settings.diff||"normal"].label;
   const mine=live.myDone.line||emojiLine(S.log,S.list.length),theirs=live.theirDone.line||"";
   $("emojiLine").innerHTML='<div class="eml"><span>'+esc(live.me)+'</span>'+mine+'</div>'+(theirs?'<div class="eml"><span>'+esc(live.them)+'</span>'+theirs+'</div>':'');
-  $("shareText").textContent=live.me+" "+a+" vs "+live.them+" "+b+" on Brain Teasers Club Live Match ("+dl+").\n"+live.me+": "+mine+(theirs?"\n"+live.them+": "+theirs:"")+"\nPlay: "+location.href.split("#")[0];
+  $("shareText").textContent=live.me+" "+a+" vs "+live.them+" "+b+" on Brain Teasers Club Live Match ("+dl+").\n"+live.me+": "+mine+(theirs?"\n"+live.them+": "+theirs:"")+"\nPlay: "+shareBase();
   $("againBtn").textContent="Rematch";$("againBtn").disabled=false;delete $("againBtn").dataset.asked;
   const open=!$("review").hidden;buildReview();if(open){$("review").hidden=false;$("reviewBtn").textContent="Hide the puzzles"}
   (a>=b?SFX.win:SFX.lose)();
@@ -1050,7 +1054,7 @@ function chalCode(){return chal.code+DIFF_LETTER[chal.diff]+(chal.types.length==
 function openChallenge(code,fromLink,d,types){
   d=d||diff;types=types||customTypes();
   chal={code,seed:seedFromString("challenge:"+code),fromLink,diff:d,types};
-  const link=location.href.split("#")[0]+"#"+chalCode();
+  const link=shareBase()+"#"+chalCode();
   $("chEyebrow").textContent=fromLink?"Challenge accepted":"Challenge a friend";
   $("chTitle").textContent=fromLink?"A friend challenged you":"Your challenge code";
   const names={odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",facts:"Animal Facts"};const tl=types.length===4?"all puzzle types":types.map(x=>names[x]).join(" + ");
@@ -1119,7 +1123,7 @@ function showDailyDone(d){
   $("resMode").textContent="Daily Challenge · "+todayKey();$("vs").hidden=true;$("statGrid").hidden=false;
   $("finalScore").textContent=d.score||0;$("rank").textContent="You've done today's Daily. New puzzles at midnight. 🔥 "+currentStreak()+"-day streak";
   $("rCorrect").textContent=(d.correct||0)+"/10";$("rStreak").textContent="–";$("rBest").textContent=loadBest()["daily-"+todayKey()]||d.score||0;
-  $("shareText").textContent="Brain Teasers Club Daily "+todayKey()+" · "+(d.score||0)+" pts · "+(d.correct||0)+"/10\n🔥 "+currentStreak()+"-day streak · "+location.href.split("#")[0];
+  $("shareText").textContent="Brain Teasers Club Daily "+todayKey()+" · "+(d.score||0)+" pts · "+(d.correct||0)+"/10\n🔥 "+currentStreak()+"-day streak · "+shareBase();
   $("emojiLine").hidden=true;$("xpRes").hidden=true;$("levelUp").hidden=true;
   $("againBtn").textContent="Play a Random Mix";S={mode:"daily",list:[],log:[],score:d.score||0,correct:d.correct||0,i:10};
   $("review").hidden=true;$("review").innerHTML="";$("reviewBtn").hidden=true;show("results");
