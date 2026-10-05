@@ -480,6 +480,12 @@ function seenList(){const m=loadSeen().m;return Object.keys(m).sort((a,b)=>m[a]-
 function mergedSeen(otherList){const mine=loadSeen().m,out={};const ks=Object.keys(mine).sort((a,b)=>mine[a]-mine[b]);
   ks.forEach((k,i)=>out[k]=(i+1)/(ks.length+1));const theirs=(otherList||"").split(",").filter(Boolean);
   theirs.forEach((k,i)=>{const v=(i+1)/(theirs.length+1);out[k]=k in out?Math.min(out[k],v):v});return out}
+// Size odd-one-out cells so the whole grid fits both the width and the height left on screen (no scrolling
+// mid-puzzle on short phones); the emoji scale with the cell.
+function fitGrid(g,cols,rows){const go=()=>{const gap=parseFloat(g.style.gap)||8,w=g.parentElement.clientWidth,top=g.getBoundingClientRect().top+scrollY;
+  const avail=Math.max(160,innerHeight-top-14);let cell=Math.min((w-gap*(cols-1))/cols,(avail-gap*(rows-1))/rows,74);cell=Math.max(cell,24);
+  g.style.width=(cell*cols+gap*(cols-1))+"px";g.style.margin="0 auto";g.style.setProperty("--cellfs",(cell*.6).toFixed(1)+"px")};
+  go();requestAnimationFrame(go)}
 function buildRound(mode,seed,rd,typesOverride,seenOverride){
   const rnd = seed!=null ? mulberry32(seed) : Math.random;
   let list=[];
@@ -517,7 +523,6 @@ function buildRound(mode,seed,rd,typesOverride,seenOverride){
   }
   // odd-one-out grids get bigger as the round goes on
   let sizes=DIFF[rd||diff].grids;
-  if(window.innerWidth<360)sizes=sizes.map(([c,r])=>c>6?[6,Math.ceil(c*r/6)]:[c,r]);
   list.forEach((q,i)=>{
     if(q.type==="odd"){
       const [c,r]=sizes[Math.min(4,Math.floor(i/2))];
@@ -734,9 +739,9 @@ function nextPuzzle(){
   const body=$("qBody");body.innerHTML="";body.className="pop";
   if(q.type==="odd"){
     const g=document.createElement("div");g.className="grid";g.style.gridTemplateColumns=`repeat(${q.cols},minmax(0,1fr))`;
-    g.style.gap=q.cols>=6?"5px":"8px";g.style.setProperty("--cellfs",q.cols>=7?"clamp(1rem,4.6vw,1.5rem)":q.cols>=6?"clamp(1.1rem,5.4vw,1.7rem)":"clamp(1.4rem,7vw,2.1rem)");
+    g.style.gap=q.cols>=6?"5px":"8px";
     for(let k=0;k<q.count;k++){const b=document.createElement("button");b.className="cell";b.textContent=k===q.oddIndex?q.data[1]:q.data[0];b.setAttribute("aria-label",b.textContent+" "+(k+1));b.onclick=()=>answer(k===q.oddIndex,b,q);g.appendChild(b)}
-    body.appendChild(g);
+    body.appendChild(g);fitGrid(g,q.cols,q.count/q.cols);
   } else {
     const p=document.createElement("div");p.className=q.type==="emoji"?"emoji-prompt":"prompt";p.textContent=q.data[0];body.appendChild(p);
     const ch=document.createElement("div");ch.className="choices";
