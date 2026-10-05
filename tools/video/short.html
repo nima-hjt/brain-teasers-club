@@ -1,0 +1,88 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Short</title>
+<script src="https://cdn.jsdelivr.net/npm/mp4-muxer@5/build/mp4-muxer.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Noto+Color+Emoji&display=block">
+<style>html,body{margin:0;background:#111;height:100%}canvas{height:100vh;display:block;margin:0 auto}</style></head><body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<script>
+// Generic Brain Teasers Short (1080x1920) driven by shorts.json: kind = emoji | riddle | odd. Frame-exact MP4 export.
+const NAME=new URLSearchParams(location.search).get('s');let C,D={};const VOICE='voice_'+NAME+'/';
+const W=1080,H=1920,F='"Poppins",sans-serif',E='"Noto Color Emoji"';let COUNT=3,INTRO=0,END=0,PLUG=0,TOTAL=0;const SEG=[];
+function plan(){COUNT=C.count;INTRO=D.intro+.3;let t=INTRO;C.items.forEach((_,i)=>{const say=D['l'+(i+1)],ans=D['a'+(i+1)];const s=t,cd=s+Math.max(say,.9)+.15,rv=cd+COUNT,e=rv+Math.max(1.8,ans+.7);SEG.push({s,cd,rv,e});t=e});END=D.end+.45;PLUG=D.plug+.6;TOTAL=t+END+PLUG}
+const cv=document.getElementById('c');let x=cv.getContext('2d');
+const cl=v=>Math.max(0,Math.min(1,v)),ease=t=>1-Math.pow(1-cl(t),3);const pop=t=>{t=cl(t);return t<1?ease(t)*(1+.18*Math.sin(t*Math.PI)):1};
+let s0=7;const rnd=()=>(s0=(s0*16807)%2147483647)/2147483647;
+const sq=Array.from({length:22},()=>({x:rnd()*W,y:rnd()*H,z:40+rnd()*90,r:rnd()*6,v:8+rnd()*18,o:.05+rnd()*.07}));
+const conf=Array.from({length:70},()=>({a:rnd()*Math.PI*2,v:500+rnd()*900,c:['#ffc93c','#22c55e','#ff4d6d','#3b9cff','#a855f7','#fff'][Math.floor(rnd()*6)],s:10+rnd()*14,r:rnd()*6}));
+const HUES=[['#141a4a','#2d6fb3'],['#1b1446','#5b3fb8'],['#0f2a44','#1f8a9c'],['#2a1446','#b03f7a'],['#3a1010','#c2552d']];
+function rr(X,Y,w,h,r){x.beginPath();x.roundRect(X,Y,w,h,r)}
+function text(t,X,Y,size,color,weight=800,font=F){x.font=`${weight} ${size}px ${font}`;x.fillStyle=color;x.textAlign='center';x.textBaseline='middle';x.fillText(t,X,Y)}
+function stroked(t,X,Y,size,color){x.font=`900 ${size}px ${F}`;x.textAlign='center';x.textBaseline='middle';x.lineWidth=size*.14;x.strokeStyle='rgba(0,0,0,.55)';x.lineJoin='round';x.strokeText(t,X,Y);x.fillStyle=color;x.fillText(t,X,Y)}
+function fit(t,max,size,w=900){x.font=`${w} ${size}px ${F}`;while(x.measureText(t).width>max&&size>24){size-=3;x.font=`${w} ${size}px ${F}`}return size}
+function wrap(t,max,size){x.font=`800 ${size}px ${F}`;const words=t.split(' '),lines=[];let cur='';for(const w of words){const tr=cur?cur+' '+w:w;if(x.measureText(tr).width>max&&cur){lines.push(cur);cur=w}else cur=tr}lines.push(cur);return lines}
+function bg(t,level){const [a,b]=HUES[Math.max(0,level)%HUES.length];const g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,a);g.addColorStop(1,b);x.fillStyle=g;x.fillRect(0,0,W,H);
+  for(const q of sq){x.save();x.translate(q.x,(q.y-t*q.v+H*2)%(H+200)-100);x.rotate(q.r+t*.15);x.fillStyle=`rgba(255,255,255,${q.o})`;rr(-q.z/2,-q.z/2,q.z,q.z,12);x.fill();x.restore()}text('BRAIN TEASERS',W/2,110,40,'#ffc93c',800)}
+function pill(label,Y,bgc,fg,size=44,padX=40){x.font=`900 ${size}px ${F}`;const w=x.measureText(label).width+padX*2,h=size*1.75;rr(W/2-w/2,Y-h/2,w,h,h/2);x.fillStyle=bgc;x.fill();text(label,W/2,Y+2,size,fg,900)}
+function dots(t){const n=C.items.length;for(let i=0;i<n;i++){const X=W/2+(i-(n-1)/2)*96,Y=200,g=SEG[i];const done=t>=g.rv,cur=t>=g.s&&t<g.e;x.beginPath();x.arc(X,Y,cur?30:26,0,Math.PI*2);x.fillStyle=done?'#22c55e':cur?'#ffc93c':'rgba(255,255,255,.25)';x.fill();
+  if(done){const k=pop((t-g.rv)*3);x.save();x.translate(X,Y);x.scale(k,k);text('✓',0,3,34,'#fff',900);x.restore()}else text(String(i+1),X,Y+2,28,cur?'#1b1b3a':'#fff',800)}}
+function caption(str,t0,t){if(t<t0||t>t0+2.6)return;const a=Math.min(cl((t-t0)*6),cl((t0+2.6-t)*4));x.globalAlpha=a;const size=fit(str,880,54,800);x.font=`800 ${size}px ${F}`;const w=x.measureText(str).width+70;rr(W/2-w/2,1700,w,96,48);x.fillStyle='rgba(0,0,0,.45)';x.fill();text(str,W/2,1750,size,'#fff',800);x.globalAlpha=1}
+function ring(left,X=W/2,Y=1420,R=100){const urgent=left<=1;const sc=urgent?1+.06*Math.sin(left*Math.PI*8):1;x.save();x.translate(X,Y);x.scale(sc,sc);x.beginPath();x.arc(0,0,R,0,Math.PI*2);x.fillStyle=urgent?'#ffe4e4':'#fff';x.fill();x.lineWidth=R*.18;x.strokeStyle=urgent?'#ff3b3b':'#22c55e';
+  x.beginPath();x.arc(0,0,R*.93,-Math.PI/2,-Math.PI/2+Math.PI*2*(left/COUNT));x.stroke();text(String(Math.max(1,Math.ceil(left))),0,R*.04,R*1.04,'#1b1b3a',900);x.restore()}
+function confetti(r,cx,cy){if(r>1.6)return;for(const p of conf){const X=cx+Math.cos(p.a)*p.v*r,Y=cy+Math.sin(p.a)*p.v*r+900*r*r;x.save();x.globalAlpha=cl(1.6-r);x.translate(X,Y);x.rotate(p.r+r*8);x.fillStyle=p.c;x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2);x.restore()}}
+function card(X,Y,w,h,k){x.save();x.translate(X,Y);const s=pop(k*3.2);x.scale(s,s);x.shadowColor='rgba(0,0,0,.3)';x.shadowBlur=50;x.shadowOffsetY=16;rr(-w/2,-h/2,w,h,52);x.fillStyle='#fff';x.fill();x.restore()}
+function answerPill(label,Y,r){const sc=pop(r*3.5);x.save();x.translate(W/2,Y);x.scale(sc,sc);const size=fit(label,860,68);x.font=`900 ${size}px ${F}`;const w=Math.min(980,x.measureText(label).width+130);rr(-w/2,-76,w,152,76);x.fillStyle='#22c55e';x.fill();text(label,0,4,size,'#fff',900);x.restore()}
+// ---- per-kind puzzle drawing ----
+function drawEmoji(it,g,t,k){card(W/2,880,940,480,k);const parts=[...new Intl.Segmenter().segment(it.q)].map(p=>p.segment),gap=Math.min(295,820/parts.length),size=Math.min(215,gap*.75);
+  parts.forEach((e,i)=>{const p=pop((k-.25-i*.22)*3.4);if(p<=0)return;x.save();x.translate(W/2+(i-(parts.length-1)/2)*gap,890);x.scale(p,p);text(e,0,0,size,'#000',400,E);x.restore()});
+  if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t);else{const r=t-g.rv;confetti(r,W/2,880);answerPill(it.a,1400,r)}}
+function drawRiddle(it,g,t,k){card(W/2,680,960,480,k);const lines=wrap(it.q,840,62);const lh=80,y0=680-(lines.length-1)*lh/2;x.globalAlpha=cl(k*4);lines.forEach((l,i)=>text(l,W/2,y0+i*lh,62,'#1b1b3a',800));x.globalAlpha=1;
+  const rv=t>=g.rv;it.opts.forEach((o,i)=>{const p=pop((k-.4-i*.12)*3.4);if(p<=0)return;const Y=1040+i*136,ok=o===it.a;x.save();x.translate(W/2,Y);x.scale(p,p);rr(-430,-56,860,112,30);
+    x.fillStyle=rv?(ok?'#22c55e':'rgba(255,255,255,.35)'):'rgba(255,255,255,.92)';x.fill();text(String.fromCharCode(65+i),-370,2,44,rv&&ok?'#fff':'#5b3fb8',900);text(o,20,2,fit(o,640,50,800),rv&&ok?'#fff':'#1b1b3a',800);x.restore()});
+  if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t,W/2,1600,80);else{const r=t-g.rv;confetti(r,W/2,1040+it.opts.indexOf(it.a)*136)}}
+function drawOdd(it,g,t,k){const TXT=!!(it.text||C.text),cw=960,ch=960,CY=915;card(W/2,CY,cw,ch,k);const pad=40,cell=Math.min((cw-pad*2)/it.cols,(ch-pad*2)/it.rows),gx=W/2-cell*it.cols/2,gy=CY-cell*it.rows/2;
+  const fs=TXT?Math.min(cell*.62,fit(it.odd.length>it.common.length?it.odd:it.common,cell*.86,cell*.62,800)):cell*.68,font=TXT?F:E;const p=pop((k-.2)*3);
+  x.save();x.translate(W/2,CY);x.scale(p,p);x.translate(-W/2,-CY);
+  for(let i=0;i<it.cols*it.rows;i++){const cx=gx+(i%it.cols+.5)*cell,cy=gy+(Math.floor(i/it.cols)+.5)*cell;const odd=i===it.pos;const dim=t>=g.rv&&!odd;x.globalAlpha=dim?.25:1;text(odd?it.odd:it.common,cx,cy+(TXT?2:4),fs,'#1b1b3a',TXT?800:400,font)}
+  x.globalAlpha=1;x.restore();
+  if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t,W/2,1555,90);else{const r=t-g.rv;const cx=gx+(it.pos%it.cols+.5)*cell,cy=gy+(Math.floor(it.pos/it.cols)+.5)*cell;const rad=cell*.62*(1+.25*(1-ease(r*3)));
+    x.lineWidth=10;x.strokeStyle='#ff3b3b';x.beginPath();x.arc(cx,cy,rad,0,Math.PI*2);x.stroke();confetti(r,cx,cy);answerPill(it.a,1555,r)}}
+function frame(t){
+  let level=-1;for(let i=0;i<SEG.length;i++)if(t>=SEG[i].s)level=i;if(t>=SEG.at(-1).e)level=SEG.length;
+  let shake=0;for(const g of SEG){const r=t-g.rv;if(r>=0&&r<.25)shake=14*(1-r/.25)*Math.sin(r*90)}
+  x.save();x.translate(shake,0);bg(t,level);
+  if(t<INTRO){stroked(C.title[0],W/2,480,118,'#fff');x.font=`900 118px ${F}`;const w2=x.measureText(C.title[1]).width;stroked(C.title[1],W/2-80,620,118,'#ffc93c');text(C.titleEmoji,W/2-80+w2/2+100,615,120,'#000',400,E);
+    C.introEmoji.forEach((e,i)=>{const p=pop((t-.15-i*.12)*3);if(p<=0)return;const n=C.introEmoji.length,X=W/2+(i-(n-1)/2)*190,Y=980+Math.sin(t*4+i)*16;x.save();x.translate(X,Y);x.scale(p,p);text(e,0,0,150,'#000',400,E);x.restore()});
+    pill(C.pill,1330,'#ffc93c','#1b1b3a',44);caption(C.items.length===3&&C.kind==='odd'?'Can your eyes beat the clock?':'Can you get them all?',0,t)}
+  else if(level<SEG.length){const i=level,g=SEG[i],it=C.items[i],k=t-g.s;dots(t);pill(C.kind==='riddle'?`RIDDLE ${i+1}/${C.items.length}`:`LEVEL ${i+1}/${C.items.length}`,300,'#ffc93c','#1b1b3a',42);stroked(C.label,W/2,385,60,'#fff');
+    if(C.kind==='emoji')drawEmoji(it,g,t,k);else if(C.kind==='riddle')drawRiddle(it,g,t,k);else drawOdd(it,g,t,k);caption(it.cap,g.s,t)}
+  else{const u=t-SEG.at(-1).e;dots(t);const n=C.items.length;
+    if(u<END){stroked(C.kind==='odd'?'HOW MANY':'HOW MANY',W/2,620,112,'#fff');stroked(C.kind==='odd'?'DID YOU FIND?':'DID YOU GET?',W/2,750,112,'#ffc93c');
+      const cols=['#ff6b4a','#ffb020','#22c55e','#3b9cff','#a855f7'];for(let i=0;i<n;i++){const X=W/2+(i-(n-1)/2)*180,s=pop((u-.25-i*.1)*3);if(s<=0)continue;x.save();x.translate(X,1000);x.scale(s,s);x.beginPath();x.arc(0,0,74,0,Math.PI*2);x.fillStyle=cols[i+(5-n)];x.fill();text(`${i+1}/${n}`,0,3,44,'#fff',800);x.restore()}
+      text('Comment your score',W/2-50,1190,56,'#fff',800);text('👇',W/2+330,1190,62,'#000',400,E);const s=1+Math.sin(u*7)*.05;x.save();x.translate(W/2,1380);x.scale(s,s);x.translate(-W/2,-1380);pill('FOLLOW',1380,'#ff3b3b','#fff',74,74);x.restore();caption('Comment your score!',SEG.at(-1).e,t)}
+    else{const v=u-END;x.globalAlpha=ease(v*3);stroked('WANT MORE?',W/2,540,96,'#ffc93c');stroked('1,200+',W/2,690,150,'#fff');stroked('FREE PUZZLES',W/2,830,96,'#fff');text('daily challenge · play with friends',W/2,935,48,'#dbe6ff',600);
+      const s=pop(v*2);x.save();x.translate(W/2,1140);x.scale(s,s);rr(-480,-115,960,230,44);x.fillStyle='#fff';x.fill();text('🧠',-380,4,124,'#000',400,E);text('brainteasersclub.app',70,6,fit('brainteasersclub.app',700,72),'#1b1b3a',900);x.restore();text('link in description',W/2,1350,46,'#dbe6ff',600);x.globalAlpha=1}}
+  x.restore()}
+// ---- sound ----
+let ac,dest,OFF=false;const BUF={};const OUT=g=>{g.connect(dest);if(!OFF)g.connect(ac.destination)};
+function tone(f,at,d,type='sine',v=.25,f2){const o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.setValueAtTime(f,at);if(f2)o.frequency.exponentialRampToValueAtTime(f2,at+d);g.gain.setValueAtTime(0,at);g.gain.linearRampToValueAtTime(v,at+.01);g.gain.exponentialRampToValueAtTime(.001,at+d);o.connect(g);OUT(g);o.start(at);o.stop(at+d+.05)}
+function noise(at,d,v,f){const b=ac.createBuffer(1,Math.ceil(ac.sampleRate*d),ac.sampleRate),c=b.getChannelData(0);for(let i=0;i<c.length;i++)c[i]=(Math.random()*2-1)*(1-i/c.length);const s=ac.createBufferSource(),bp=ac.createBiquadFilter(),g=ac.createGain();s.buffer=b;bp.type='bandpass';bp.frequency.setValueAtTime(f,at);bp.frequency.exponentialRampToValueAtTime(f*4,at+d);g.gain.value=v;s.connect(bp);bp.connect(g);OUT(g);s.start(at)}
+function say(n,at){const s=ac.createBufferSource(),g=ac.createGain();s.buffer=BUF[n];g.gain.value=1.2;s.connect(g);OUT(g);s.start(at)}
+function schedule(t0){const beat=60/118;for(let b=0;b*beat<TOTAL-.4;b++){const at=t0+b*beat;tone(b%2?98:62,at,.2,'sine',.12,40);if(b%2)noise(at,.05,.05,6000)}
+  const arp=[523,659,784,988,784,659];for(let b=0;b*beat/2<TOTAL-.4;b++)tone(arp[b%6]/2,t0+b*beat/2,.18,'triangle',.02);noise(t0,.5,.25,400);say('intro',t0+.12);
+  SEG.forEach((g,i)=>{const at=t0+g.s;noise(at,.3,.18,500);say('l'+(i+1),at+.05);tone(600,at+.25,.1,'triangle',.08,900);
+    for(let k=0;k<COUNT;k++)tone(k===COUNT-1?1200:950,t0+g.cd+k,.07,'square',k===COUNT-1?.08:.055);tone(988,t0+g.rv,.12,'square',.09);tone(1319,t0+g.rv+.08,.32,'square',.09);noise(t0+g.rv,.35,.12,2000);say('a'+(i+1),t0+g.rv+.22)});
+  const e=t0+SEG.at(-1).e;[392,523,659,784,1047].forEach((f,i)=>tone(f,e+i*.09,.3,'square',.05));say('end',e+.15);say('plug',e+END+.15)}
+async function fontsReady(){await document.fonts.load('900 80px Poppins');await document.fonts.load('800 80px Poppins');const em=JSON.stringify(C).match(/\p{Extended_Pictographic}/gu)||[];await document.fonts.load('100px "Noto Color Emoji"',em.join('')+'🧠👇')}
+async function exportMp4(){await fontsReady();const FPS=30,SR=48000,N=Math.ceil(TOTAL*FPS);OFF=true;ac=new OfflineAudioContext(2,Math.ceil((TOTAL+.2)*SR),SR);dest=ac.destination;
+  for(const n of Object.keys(D))BUF[n]=await ac.decodeAudioData(await (await fetch(VOICE+n+'.wav')).arrayBuffer());schedule(0);const audio=await ac.startRendering();
+  let pk=0;for(let c=0;c<2;c++){const d=audio.getChannelData(c);for(let i=0;i<d.length;i++)pk=Math.max(pk,Math.abs(d[i]))}const gain=pk>.95?.95/pk:1;if(gain!==1)for(let c=0;c<2;c++){const d=audio.getChannelData(c);for(let i=0;i<d.length;i++)d[i]*=gain}
+  const {Muxer,ArrayBufferTarget}=Mp4Muxer;const target=new ArrayBufferTarget();const mux=new Muxer({target,fastStart:'in-memory',video:{codec:'avc',width:W,height:H,frameRate:FPS},audio:{codec:'aac',numberOfChannels:2,sampleRate:SR}});
+  const ve=new VideoEncoder({output:(c,m)=>mux.addVideoChunk(c,m),error:e=>{throw e}});ve.configure({codec:'avc1.640028',width:W,height:H,bitrate:10e6,framerate:FPS,latencyMode:'quality'});
+  for(let f=0;f<N;f++){frame(f/FPS);const vf=new VideoFrame(cv,{timestamp:Math.round(f*1e6/FPS),duration:Math.round(1e6/FPS)});ve.encode(vf,{keyFrame:f%60===0});vf.close();window.__prog=f/N;if(ve.encodeQueueSize>20)await new Promise(r=>ve.addEventListener('dequeue',r,{once:true}))}
+  await ve.flush();const ae=new AudioEncoder({output:(c,m)=>mux.addAudioChunk(c,m),error:e=>{throw e}});ae.configure({codec:'mp4a.40.2',sampleRate:SR,numberOfChannels:2,bitrate:192000});
+  const L=audio.getChannelData(0),R=audio.getChannelData(1),STEP=1024*20,total=Math.min(L.length,Math.round(N/FPS*SR));for(let i=0;i<total;i+=STEP){const n=Math.min(STEP,total-i),pl=new Float32Array(n*2);pl.set(L.subarray(i,i+n),0);pl.set(R.subarray(i,i+n),n);const ad=new AudioData({format:'f32-planar',sampleRate:SR,numberOfFrames:n,numberOfChannels:2,timestamp:Math.round(i*1e6/SR),data:pl});ae.encode(ad);ad.close()}
+  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/short_'+NAME+'.mp4',{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
+async function sheet(){await fontsReady();const ts=[1.4,...SEG.flatMap(g=>[g.cd+1,g.rv+.7])];ts.push(SEG.at(-1).e+1.5,TOTAL-1);const cols=4,cw=270,ch=480,s=document.createElement('canvas');s.width=cw*cols;s.height=ch*Math.ceil(ts.length/cols);const g=s.getContext('2d');
+  ts.forEach((t,i)=>{frame(t);g.drawImage(cv,(i%cols)*cw,Math.floor(i/cols)*ch,cw,ch)});const b=await new Promise(r=>s.toBlob(r,'image/jpeg',.85));return (await fetch('/out/sheet_'+NAME+'.jpg',{method:'PUT',body:b})).status}
+window.ready=fetch('shorts.json').then(r=>r.json()).then(j=>{C=j[NAME]}).then(()=>fetch(VOICE+'durations.json')).then(r=>r.json()).then(d=>{D=d;plan()}).then(fontsReady).then(()=>{frame(0);return TOTAL});
+window.exportMp4=exportMp4;window.sheet=sheet;window.preview=t=>{frame(t);return TOTAL};
+</script></body></html>

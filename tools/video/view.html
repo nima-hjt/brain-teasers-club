@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#111">
+<video id="v" muted playsinline preload="auto" style="height:700px;display:block"></video>
+<script>
+const v=document.getElementById('v');
+// at(src, t): show the exact frame at time t (waits for the frame to be painted)
+window.at=async(src,t)=>{
+  if(v.dataset.src!==src){v.dataset.src=src;v.src=URL.createObjectURL(await (await fetch(src)).blob());await Promise.race([new Promise(r=>v.onloadeddata=r),new Promise(r=>setTimeout(r,3000))])}
+  v.currentTime=t;await Promise.race([new Promise(r=>v.onseeked=r),new Promise(r=>setTimeout(r,2000))]);
+  await new Promise(r=>v.requestVideoFrameCallback?(v.requestVideoFrameCallback(()=>r()),setTimeout(r,800)):setTimeout(r,300));
+  await new Promise(r=>setTimeout(r,150));
+  return {t:v.currentTime.toFixed(1),dur:v.duration.toFixed(1),w:v.videoWidth,h:v.videoHeight};
+};
+</script>

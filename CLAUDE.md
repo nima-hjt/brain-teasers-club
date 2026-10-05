@@ -21,6 +21,7 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - No-repeat order: unseeded rounds (Play Solo) deal from shuffled decks per type and level in localStorage
   (`btc-deck2-<type><lvl>`, `deckPick`); new puzzles are shuffled into the remaining deck. Adding puzzles changes the
   Live Match bank version (both players need the same build) and the puzzles behind old Challenge codes.
+- `tools/video/` — YouTube/Instagram video maker (see "Videos" below).
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
 
@@ -53,3 +54,17 @@ To test with two separate histories, load the host from 127.0.0.1 and the guest 
 Build, then load `dist/index.html` in Playwright at 390px wide: play a round in each mode, check no console errors and
 no horizontal scroll. For Live Match, run tools/mockdb.js and drive two browser contexts through create → join →
 ready → play → results → rematch → disconnect.
+
+## Videos (YouTube channels Brain Teasers + Wild Facts, Instagram, Facebook)
+- Owner's schedule: one Short daily at 6 pm, one long 16:9 video (~3 min) every 4 days at 12 pm. Not made for kids, no age
+  restriction. Tracking links: /btc (Brain Teasers YouTube), /wildfacts, /fb, /ig (Instagram bio only).
+- Finished videos go in `Downloads\brain-teasers-club-repo\Brain Teasers\` (named by posting date).
+- ALWAYS update `Brain Teasers\Posting Plan - Brain Teasers.docx` after making videos: add each video's file name, scheduled
+  date/time, YouTube title, description (with chapters for long videos), tags, pinned comment, Instagram caption and
+  Facebook text; text only, no images. Generator: `tools/video/make_plan.py` (edit VIDEOS, re-run).
+- Making videos: `python tools/video/serve.py` (port 8768, PUT /out/<file>), narration with
+  `tools/video/say_cfg.py <name> af_heart` (Kokoro, offline; model files in `.new/tts/`, not in git), then open
+  `short.html?s=<name>` (configs in `shorts.json`, kinds emoji | riddle | odd) or `long.html` in the browser and run
+  `exportMp4()`. Export is frame-exact (WebCodecs + mp4-muxer); never record in real time (it drifts out of sync).
+- Before export: no invented statistics in titles or narration, puzzles not in the next two weeks' Dailies, no clue
+  with two valid answers; check a frame sheet (`sheet()`) and the audio sync.

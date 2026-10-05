@@ -4,3 +4,5 @@ __pycache__/
 node_modules/
 .new/
 levels-review.html
+tools/video/out/
+tools/video/voice*/
