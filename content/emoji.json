@@ -8,7 +8,8 @@
    "Jaws",
    "Moana"
   ],
-  "why": "Ship + iceberg + heartbreak."
+  "why": "Ship + iceberg + heartbreak.",
+  "lvl": 1
  },
  {
   "q": "🦖🏞️",
@@ -19,7 +20,8 @@
    "Godzilla",
    "Avatar"
   ],
-  "why": "Dinosaur + park."
+  "why": "Dinosaur + park.",
+  "lvl": 1
  },
  {
   "q": "🧙‍♂️⚡",
@@ -30,7 +32,8 @@
    "Thor",
    "Doctor Strange"
   ],
-  "why": "Wizard + lightning scar."
+  "why": "Wizard + lightning scar.",
+  "lvl": 1
  },
  {
   "q": "👻🚫",
@@ -41,7 +44,8 @@
    "Beetlejuice",
    "Coco"
   ],
-  "why": "Ghost + 'no' sign."
+  "why": "Ghost + 'no' sign.",
+  "lvl": 1
  },
  {
   "q": "🏠🎈",
@@ -52,7 +56,8 @@
    "Monster House",
    "Balloon Boy"
   ],
-  "why": "House carried by balloons."
+  "why": "House carried by balloons.",
+  "lvl": 1
  },
  {
   "q": "🤖❤️🌱",
@@ -63,7 +68,8 @@
    "The Iron Giant",
    "Robots"
   ],
-  "why": "A robot who loves a little plant."
+  "why": "A robot who loves a little plant.",
+  "lvl": 2
  },
  {
   "q": "🐀👨‍🍳",
@@ -74,7 +80,8 @@
    "Chef",
    "Flushed Away"
   ],
-  "why": "A rat who is a chef."
+  "why": "A rat who is a chef.",
+  "lvl": 1
  },
  {
   "q": "🍫🏭",
@@ -85,7 +92,8 @@
    "Candy Land",
    "Sweet Tooth"
   ],
-  "why": "Chocolate + factory."
+  "why": "Chocolate + factory.",
+  "lvl": 1
  },
  {
   "q": "🧠🎢😢",
@@ -96,7 +104,8 @@
    "Coco",
    "Elemental"
   ],
-  "why": "Emotions as a roller-coaster in your head."
+  "why": "Emotions as a roller-coaster in your head.",
+  "lvl": 2
  },
  {
   "q": "🐼🥋",
@@ -107,7 +116,8 @@
    "Karate Kid",
    "Turning Red"
   ],
-  "why": "Panda + martial arts."
+  "why": "Panda + martial arts.",
+  "lvl": 1
  },
  {
   "q": "🦍🗽",
@@ -118,7 +128,8 @@
    "Godzilla",
    "Tarzan"
   ],
-  "why": "Giant gorilla + New York."
+  "why": "Giant gorilla + New York.",
+  "lvl": 3
  },
  {
   "q": "🐟🔍",
@@ -129,7 +140,8 @@
    "Luca",
    "The Little Mermaid"
   ],
-  "why": "Fish + searching."
+  "why": "Fish + searching.",
+  "lvl": 1
  },
  {
   "q": "🦁👑",
@@ -140,7 +152,8 @@
    "Zootopia",
    "Tarzan"
   ],
-  "why": "Lion + crown."
+  "why": "Lion + crown.",
+  "lvl": 1
  },
  {
   "q": "❄️👸",
@@ -151,7 +164,8 @@
    "Snow White",
    "Brave"
   ],
-  "why": "Snowflake + princess."
+  "why": "Snowflake + princess.",
+  "lvl": 1
  },
  {
   "q": "🤫🐑",
@@ -162,7 +176,8 @@
    "Babe",
    "Black Sheep"
   ],
-  "why": "Shh (silence) + lamb."
+  "why": "Shh (silence) + lamb.",
+  "lvl": 2
  },
  {
   "q": "🏝️🏐",
@@ -173,7 +188,8 @@
    "Life of Pi",
    "Swiss Family Robinson"
   ],
-  "why": "Stranded on an island with a volleyball named Wilson."
+  "why": "Stranded on an island with a volleyball named Wilson.",
+  "lvl": 2
  },
  {
   "q": "👩‍🚀🥔🔴",
@@ -184,7 +200,8 @@
    "Interstellar",
    "Red Planet"
   ],
-  "why": "An astronaut growing potatoes on the red planet."
+  "why": "An astronaut growing potatoes on the red planet.",
+  "lvl": 3
  },
  {
   "q": "🦈🏖️",
@@ -195,7 +212,8 @@
    "Finding Dory",
    "Baywatch"
   ],
-  "why": "Shark at the beach."
+  "why": "Shark at the beach.",
+  "lvl": 2
  },
  {
   "q": "🧸🍯",
@@ -206,7 +224,8 @@
    "Yogi Bear",
    "Baloo"
   ],
-  "why": "A bear who loves honey."
+  "why": "A bear who loves honey.",
+  "lvl": 2
  },
  {
   "q": "🌧️🐱🐶",
@@ -217,18 +236,20 @@
    "Pet shop",
    "Puppy love"
   ],
-  "why": "Rain + cat + dog: heavy rain."
+  "why": "Rain + cat + dog: heavy rain.",
+  "lvl": 1
  },
  {
   "q": "🍰🚶",
   "a": "Cakewalk",
   "cat": "Saying",
   "wrong": [
-   "Piece of cake",
    "Birthday party",
-   "Sweet tooth"
+   "Sweet tooth",
+   "Cake pop"
   ],
-  "why": "Cake + walk = cakewalk, meaning something very easy."
+  "why": "Cake + walk = cakewalk, meaning something very easy.",
+  "lvl": 3
  },
  {
   "q": "🥶🦃",
@@ -239,7 +260,8 @@
    "Thanksgiving",
    "Chicken out"
   ],
-  "why": "Cold + turkey: quitting all at once."
+  "why": "Cold + turkey: quitting all at once.",
+  "lvl": 3
  },
  {
   "q": "🧠⛈️",
@@ -250,7 +272,8 @@
    "Mind blown",
    "Thunderstruck"
   ],
-  "why": "Brain + storm."
+  "why": "Brain + storm.",
+  "lvl": 2
  },
  {
   "q": "🐘🛋️",
@@ -261,7 +284,8 @@
    "Jumbo sale",
    "Heavy lifting"
   ],
-  "why": "Elephant + sofa (a room): the obvious problem nobody mentions."
+  "why": "Elephant + sofa (a room): the obvious problem nobody mentions.",
+  "lvl": 2
  },
  {
   "q": "🍰✋😋",
@@ -272,7 +296,8 @@
    "Easy as pie",
    "Sweet tooth"
   ],
-  "why": "Hold the cake and eat it too: wanting two things that cannot both happen."
+  "why": "Hold the cake and eat it too: wanting two things that cannot both happen.",
+  "lvl": 3
  },
  {
   "q": "✋🐎",
@@ -283,7 +308,8 @@
    "High five",
    "Horsing around"
   ],
-  "why": "Hand (stop) + horse: slow down."
+  "why": "Hand (stop) + horse: slow down.",
+  "lvl": 2
  },
  {
   "q": "😢🐺",
@@ -294,7 +320,8 @@
    "Sad dog",
    "Wolf pack"
   ],
-  "why": "Crying + wolf: raising a false alarm."
+  "why": "Crying + wolf: raising a false alarm.",
+  "lvl": 2
  },
  {
   "q": "🛋️🥔",
@@ -305,7 +332,8 @@
    "Lazy Sunday",
    "Hot potato"
   ],
-  "why": "Couch + potato: someone who never gets up."
+  "why": "Couch + potato: someone who never gets up.",
+  "lvl": 1
  },
  {
   "q": "🌙🦉",
@@ -316,7 +344,8 @@
    "Late show",
    "Dark bird"
   ],
-  "why": "Moon + owl: a late sleeper."
+  "why": "Moon + owl: a late sleeper.",
+  "lvl": 1
  },
  {
   "q": "🌅🐦",
@@ -327,7 +356,8 @@
    "Bird watching",
    "Morning song"
   ],
-  "why": "Sunrise + bird."
+  "why": "Sunrise + bird.",
+  "lvl": 1
  },
  {
   "q": "📚🐛",
@@ -338,7 +368,8 @@
    "Page turner",
    "Study bug"
   ],
-  "why": "Books + worm."
+  "why": "Books + worm.",
+  "lvl": 1
  },
  {
   "q": "🧈🤲",
@@ -349,7 +380,8 @@
    "Greasy hands",
    "Bread spread"
   ],
-  "why": "Butter + hands: someone who drops things."
+  "why": "Butter + hands: someone who drops things.",
+  "lvl": 2
  },
  {
   "q": "👁️🍬",
@@ -360,7 +392,8 @@
    "Sugar rush",
    "Eye drops"
   ],
-  "why": "Eye + candy."
+  "why": "Eye + candy.",
+  "lvl": 2
  },
  {
   "q": "🧠🧼",
@@ -371,7 +404,8 @@
    "Headwash",
    "Soap opera"
   ],
-  "why": "Brain + soap."
+  "why": "Brain + soap.",
+  "lvl": 1
  },
  {
   "q": "☀️🔥",
@@ -382,7 +416,8 @@
    "Wildfire",
    "Firestar"
   ],
-  "why": "Sun + fire."
+  "why": "Sun + fire.",
+  "lvl": 2
  },
  {
   "q": "⭐🐟",
@@ -393,7 +428,8 @@
    "Swordfish",
    "Fish star"
   ],
-  "why": "Star + fish."
+  "why": "Star + fish.",
+  "lvl": 1
  },
  {
   "q": "🔥🐶",
@@ -404,7 +440,8 @@
    "Warm puppy",
    "Dog days"
   ],
-  "why": "Fire (hot) + dog."
+  "why": "Fire (hot) + dog.",
+  "lvl": 1
  },
  {
   "q": "🌲🍎",
@@ -415,7 +452,8 @@
    "Apple tree",
    "Forest apple"
   ],
-  "why": "Pine tree + apple."
+  "why": "Pine tree + apple.",
+  "lvl": 3
  },
  {
   "q": "🥚🌱",
@@ -426,7 +464,8 @@
    "Spring egg",
    "Seedling"
   ],
-  "why": "Egg + plant."
+  "why": "Egg + plant.",
+  "lvl": 2
  },
  {
   "q": "🍯🌙",
@@ -437,7 +476,8 @@
    "Sweet night",
    "Bee moon"
   ],
-  "why": "Honey + moon."
+  "why": "Honey + moon.",
+  "lvl": 2
  },
  {
   "q": "🔥🦊",
@@ -448,7 +488,8 @@
    "Hot Fox",
    "Foxfire"
   ],
-  "why": "Fire + fox, the browser."
+  "why": "Fire + fox, the browser.",
+  "lvl": 3
  },
  {
   "q": "🌧️🎀",
@@ -459,7 +500,8 @@
    "Wet ribbon",
    "Storm bow"
   ],
-  "why": "Rain + bow (ribbon)."
+  "why": "Rain + bow (ribbon).",
+  "lvl": 3
  },
  {
   "q": "🐱🐟",
@@ -470,7 +512,8 @@
    "Fishcat",
    "Tuna"
   ],
-  "why": "Cat + fish."
+  "why": "Cat + fish.",
+  "lvl": 1
  },
  {
   "q": "🧊🏔️",
@@ -481,7 +524,8 @@
    "Ice peak",
    "Glacier"
   ],
-  "why": "Ice + mountain."
+  "why": "Ice + mountain.",
+  "lvl": 2
  },
  {
   "q": "🍎🥧",
@@ -492,7 +536,8 @@
    "Apple tart",
    "Cherry pie"
   ],
-  "why": "Apple + pie."
+  "why": "Apple + pie.",
+  "lvl": 2
  },
  {
   "q": "🌙🚶",
@@ -503,7 +548,8 @@
    "Space walk",
    "Moon landing"
   ],
-  "why": "Moon + walking."
+  "why": "Moon + walking.",
+  "lvl": 3
  },
  {
   "q": "💥🦵",
@@ -514,7 +560,8 @@
    "Leg day",
    "Hit the road"
   ],
-  "why": "Explosion (break) + leg: good luck!"
+  "why": "Explosion (break) + leg: good luck!",
+  "lvl": 2
  },
  {
   "q": "1️⃣🔵🌙",
@@ -525,7 +572,8 @@
    "First moon",
    "One night only"
   ],
-  "why": "One + blue + moon: very rarely."
+  "why": "One + blue + moon: very rarely.",
+  "lvl": 2
  },
  {
   "q": "⬇️🌦️",
@@ -536,7 +584,8 @@
    "Low pressure",
    "Cloudy day"
   ],
-  "why": "Down arrow + weather: feeling unwell."
+  "why": "Down arrow + weather: feeling unwell.",
+  "lvl": 3
  },
  {
   "q": "🐝🍃",
@@ -547,7 +596,8 @@
    "Honey tree",
    "Nature"
   ],
-  "why": "Bee + leaf = be-lieve."
+  "why": "Bee + leaf = be-lieve.",
+  "lvl": 3
  },
  {
   "q": "🚪🔔",
@@ -558,7 +608,8 @@
    "Front door",
    "Ring road"
   ],
-  "why": "Door + bell."
+  "why": "Door + bell.",
+  "lvl": 1
  },
  {
   "q": "🐎💪",
@@ -569,6 +620,7 @@
    "Workhorse",
    "Stallion"
   ],
-  "why": "Horse + power."
+  "why": "Horse + power.",
+  "lvl": 3
  }
 ]

@@ -1,230 +1,287 @@
 [
 {
 "common": "😀",
-"odd": "😃"
+"odd": "😃",
+"lvl": 3
 },
 {
 "common": "😄",
-"odd": "😆"
+"odd": "😆",
+"lvl": 2
 },
 {
 "common": "😊",
-"odd": "☺️"
+"odd": "☺️",
+"lvl": 3
 },
 {
 "common": "🙂",
-"odd": "😊"
+"odd": "😊",
+"lvl": 2
 },
 {
 "common": "😁",
-"odd": "😄"
+"odd": "😄",
+"lvl": 2
 },
 {
 "common": "😢",
-"odd": "😥"
+"odd": "😥",
+"lvl": 3
 },
 {
 "common": "😉",
-"odd": "😊"
+"odd": "😊",
+"lvl": 2
 },
 {
 "common": "🐑",
-"odd": "🐏"
+"odd": "🐏",
+"lvl": 2
 },
 {
 "common": "🐂",
-"odd": "🐃"
+"odd": "🐃",
+"lvl": 1
 },
 {
 "common": "🐄",
-"odd": "🐂"
+"odd": "🐂",
+"lvl": 1
 },
 {
 "common": "🐓",
-"odd": "🐔"
+"odd": "🐔",
+"lvl": 1
 },
 {
 "common": "🐭",
-"odd": "🐹"
+"odd": "🐹",
+"lvl": 1
 },
 {
 "common": "😺",
-"odd": "😸"
+"odd": "😸",
+"lvl": 3
 },
 {
 "common": "🐒",
-"odd": "🐵"
+"odd": "🐵",
+"lvl": 1
 },
 {
 "common": "🌕",
-"odd": "🌝"
+"odd": "🌝",
+"lvl": 2
 },
 {
 "common": "🌑",
-"odd": "🌚"
+"odd": "🌚",
+"lvl": 2
 },
 {
 "common": "⭐",
-"odd": "🌟"
+"odd": "🌟",
+"lvl": 2
 },
 {
 "common": "☀️",
-"odd": "🌞"
+"odd": "🌞",
+"lvl": 2
 },
 {
 "common": "🌙",
-"odd": "🌛"
+"odd": "🌛",
+"lvl": 2
 },
 {
 "common": "🥎",
-"odd": "🎾"
+"odd": "🎾",
+"lvl": 2
 },
 {
 "common": "🍈",
-"odd": "🍏"
+"odd": "🍏",
+"lvl": 1
 },
 {
 "common": "🏠",
-"odd": "🏡"
+"odd": "🏡",
+"lvl": 2
 },
 {
 "common": "🔒",
-"odd": "🔓"
+"odd": "🔓",
+"lvl": 2
 },
 {
 "common": "🔑",
-"odd": "🗝️"
+"odd": "🗝️",
+"lvl": 1
 },
 {
 "common": "⏰",
-"odd": "⏲️"
+"odd": "⏲️",
+"lvl": 1
 },
 {
 "common": "🧅",
-"odd": "🧄"
+"odd": "🧄",
+"lvl": 1
 },
 {
 "common": "🍞",
-"odd": "🥖"
+"odd": "🥖",
+"lvl": 1
 },
 {
 "common": "🚕",
-"odd": "🚖"
+"odd": "🚖",
+"lvl": 2
 },
 {
 "common": "🥯",
-"odd": "🍩"
+"odd": "🍩",
+"lvl": 1
 },
 {
 "common": "🫐",
-"odd": "🍇"
+"odd": "🍇",
+"lvl": 1
 },
 {
 "common": "🍬",
-"odd": "🍥"
+"odd": "🍥",
+"lvl": 1
 },
 {
 "common": "🧢",
-"odd": "👒"
+"odd": "👒",
+"lvl": 1
 },
 {
 "common": "😟",
-"odd": "😕"
+"odd": "😕",
+"lvl": 3
 },
 {
 "common": "🦆",
-"odd": "🐥"
+"odd": "🐥",
+"lvl": 1
 },
 {
 "common": "🐢",
-"odd": "🦎"
+"odd": "🦎",
+"lvl": 1
 },
 {
 "common": "🌒",
-"odd": "🌘"
+"odd": "🌘",
+"lvl": 3
 },
 {
 "common": "😐",
-"odd": "😶"
+"odd": "😶",
+"lvl": 2
 },
 {
 "common": "🚗",
-"odd": "🚙"
+"odd": "🚙",
+"lvl": 1
 },
 {
 "common": "🚌",
-"odd": "🚎"
+"odd": "🚎",
+"lvl": 2
 },
 {
 "common": "🚌",
-"odd": "🚍"
+"odd": "🚍",
+"lvl": 2
 },
 {
 "common": "✈️",
-"odd": "🛩️"
+"odd": "🛩️",
+"lvl": 2
 },
 {
 "common": "⛵",
-"odd": "🚤"
+"odd": "🚤",
+"lvl": 1
 },
 {
 "common": "📱",
-"odd": "📲"
+"odd": "📲",
+"lvl": 2
 },
 {
 "common": "💻",
-"odd": "🖥️"
+"odd": "🖥️",
+"lvl": 2
 },
 {
 "common": "📁",
-"odd": "📂"
+"odd": "📂",
+"lvl": 2
 },
 {
 "common": "👞",
-"odd": "👟"
+"odd": "👟",
+"lvl": 1
 },
 {
 "common": "😞",
-"odd": "😔"
+"odd": "😔",
+"lvl": 3
 },
 {
 "common": "💍",
-"odd": "💎"
+"odd": "💎",
+"lvl": 1
 },
 {
 "common": "🔔",
-"odd": "🔕"
+"odd": "🔕",
+"lvl": 2
 },
 {
 "common": "📪",
-"odd": "📫"
+"odd": "📫",
+"lvl": 2
 },
 {
 "common": "📬",
-"odd": "📭"
+"odd": "📭",
+"lvl": 2
 },
 {
 "common": "🖐️",
-"odd": "✋"
+"odd": "✋",
+"lvl": 3
 },
 {
 "common": "📄",
-"odd": "📃"
+"odd": "📃",
+"lvl": 3
 },
 {
 "common": "🔴",
-"odd": "🟠"
+"odd": "🟠",
+"lvl": 1
 },
 {
 "common": "🟩",
-"odd": "🟢"
+"odd": "🟢",
+"lvl": 1
 },
 {
 "common": "▪️",
-"odd": "◾"
+"odd": "◾",
+"lvl": 3
 },
 {
 "common": "⬛",
-"odd": "◼️"
+"odd": "◼️",
+"lvl": 3
 }
 ]

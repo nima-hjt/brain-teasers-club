@@ -7,7 +7,8 @@
    "33",
    "300"
   ],
-  "why": "Each cat catches 1 mouse every 3 minutes, so in 100 minutes one cat catches about 33. Three cats catch 100."
+  "why": "Each cat catches 1 mouse every 3 minutes, so in 100 minutes one cat catches about 33. Three cats catch 100.",
+  "lvl": 2
  },
  {
   "q": "A bat and a ball cost $1.10. The bat costs $1 more than the ball. What does the ball cost?",
@@ -17,7 +18,8 @@
    "1 cent",
    "15 cents"
   ],
-  "why": "If the ball is x, the bat is x + $1. Together 2x + $1 = $1.10, so x = 5 cents. (Most people say 10.)"
+  "why": "If the ball is x, the bat is x + $1. Together 2x + $1 = $1.10, so x = 5 cents. (Most people say 10.)",
+  "lvl": 2
  },
  {
   "q": "Lily pads double daily and cover a lake in 48 days. When did they cover half?",
@@ -27,7 +29,8 @@
    "Day 46",
    "Day 12"
   ],
-  "why": "The patch doubles every day, so the day before it was full it was exactly half full."
+  "why": "The patch doubles every day, so the day before it was full it was exactly half full.",
+  "lvl": 2
  },
  {
   "q": "How many months have 28 days?",
@@ -37,7 +40,8 @@
    "2",
    "11"
   ],
-  "why": "Every month has at least 28 days. February just has nothing more."
+  "why": "Every month has at least 28 days. February just has nothing more.",
+  "lvl": 1
  },
  {
   "q": "A farmer has 17 sheep. All but 9 run away. How many are left?",
@@ -47,7 +51,8 @@
    "17",
    "0"
   ],
-  "why": "'All but 9 run away' means 9 stay."
+  "why": "'All but 9 run away' means 9 stay.",
+  "lvl": 1
  },
  {
   "q": "You overtake the runner in 2nd place. What place are you in now?",
@@ -57,7 +62,8 @@
    "3rd",
    "Depends"
   ],
-  "why": "You take the place of the runner you passed. The leader is still ahead of you."
+  "why": "You take the place of the runner you passed. The leader is still ahead of you.",
+  "lvl": 1
  },
  {
   "q": "How many times can you subtract 10 from 100?",
@@ -67,7 +73,8 @@
    "9 times",
    "100 times"
   ],
-  "why": "After you subtract 10 once, you have 90, not 100."
+  "why": "After you subtract 10 once, you have 90, not 100.",
+  "lvl": 2
  },
  {
   "q": "Divide 30 by half and add 10. What do you get?",
@@ -77,7 +84,8 @@
    "20",
    "40"
   ],
-  "why": "Dividing by a half doubles: 30 ÷ ½ = 60. Then + 10 = 70."
+  "why": "Dividing by a half doubles: 30 ÷ ½ = 60. Then + 10 = 70.",
+  "lvl": 2
  },
  {
   "q": "A clock takes 5 seconds to strike 6. How long to strike 12?",
@@ -87,7 +95,8 @@
    "12 seconds",
    "6 seconds"
   ],
-  "why": "6 strikes have 5 gaps between them, so each gap is 1 second. 12 strikes have 11 gaps."
+  "why": "6 strikes have 5 gaps between them, so each gap is 1 second. 12 strikes have 11 gaps.",
+  "lvl": 3
  },
  {
   "q": "Which is bigger: 2¹⁰ or 10³?",
@@ -97,7 +106,8 @@
    "They're equal",
    "Can't tell"
   ],
-  "why": "2¹⁰ = 1,024 and 10³ = 1,000."
+  "why": "2¹⁰ = 1,024 and 10³ = 1,000.",
+  "lvl": 2
  },
  {
   "q": "What is 15% of 80?",
@@ -107,7 +117,8 @@
    "8",
    "10"
   ],
-  "why": "10% of 80 is 8, 5% is 4, together 12."
+  "why": "10% of 80 is 8, 5% is 4, together 12.",
+  "lvl": 1
  },
  {
   "q": "A shirt is $20 after a 20% discount. What was the original price?",
@@ -117,7 +128,8 @@
    "$22",
    "$26"
   ],
-  "why": "$20 is 80% of the original. $20 ÷ 0.8 = $25."
+  "why": "$20 is 80% of the original. $20 ÷ 0.8 = $25.",
+  "lvl": 2
  },
  {
   "q": "Two coins add to 30 cents. One of them is not a nickel. What are they?",
@@ -127,7 +139,8 @@
    "Three dimes",
    "A quarter and five pennies"
   ],
-  "why": "One of them is not a nickel. The other one is."
+  "why": "One of them is not a nickel. The other one is.",
+  "lvl": 3
  },
  {
   "q": "A rope ladder hangs off a boat, rungs 1 foot apart, 3 rungs in water. Tide rises 2 feet. Rungs underwater?",
@@ -137,7 +150,8 @@
    "4",
    "1"
   ],
-  "why": "The boat floats, so it rises with the tide and the ladder rises with it. Still 3 rungs under."
+  "why": "The boat floats, so it rises with the tide and the ladder rises with it. Still 3 rungs under.",
+  "lvl": 2
  },
  {
   "q": "What is half of 2, plus 2?",
@@ -147,7 +161,8 @@
    "4",
    "1"
   ],
-  "why": "Half of 2 is 1, then add 2: 1 + 2 = 3."
+  "why": "Half of 2 is 1, then add 2: 1 + 2 = 3.",
+  "lvl": 1
  },
  {
   "q": "What's heavier: a kilo of feathers or a kilo of steel?",
@@ -157,7 +172,8 @@
    "Feathers",
    "Depends on size"
   ],
-  "why": "A kilo is a kilo. Size and material don't change the weight."
+  "why": "A kilo is a kilo. Size and material don't change the weight.",
+  "lvl": 1
  },
  {
   "q": "Next in the sequence: 1, 1, 2, 3, 5, 8, ?",
@@ -167,7 +183,8 @@
    "12",
    "16"
   ],
-  "why": "Fibonacci: each number is the sum of the two before it. 5 + 8 = 13."
+  "why": "Fibonacci: each number is the sum of the two before it. 5 + 8 = 13.",
+  "lvl": 1
  },
  {
   "q": "Next in the sequence: 2, 6, 12, 20, 30, ?",
@@ -177,7 +194,8 @@
    "36",
    "44"
   ],
-  "why": "Differences grow by 2: +4, +6, +8, +10, then +12. 30 + 12 = 42. (Also n × (n+1).)"
+  "why": "Differences grow by 2: +4, +6, +8, +10, then +12. 30 + 12 = 42. (Also n × (n+1).)",
+  "lvl": 2
  },
  {
   "q": "Next in the sequence: 1, 4, 9, 16, 25, ?",
@@ -187,7 +205,8 @@
    "35",
    "49"
   ],
-  "why": "Square numbers: 1², 2², 3², 4², 5², then 6² = 36."
+  "why": "Square numbers: 1², 2², 3², 4², 5², then 6² = 36.",
+  "lvl": 1
  },
  {
   "q": "Next in the sequence: 3, 6, 12, 24, ?",
@@ -197,7 +216,8 @@
    "30",
    "42"
   ],
-  "why": "Each number doubles. 24 × 2 = 48."
+  "why": "Each number doubles. 24 × 2 = 48.",
+  "lvl": 1
  },
  {
   "q": "Next in the sequence: 1, 2, 4, 7, 11, ?",
@@ -207,7 +227,8 @@
    "14",
    "18"
   ],
-  "why": "Differences grow by 1: +1, +2, +3, +4, then +5. 11 + 5 = 16."
+  "why": "Differences grow by 1: +1, +2, +3, +4, then +5. 11 + 5 = 16.",
+  "lvl": 1
  },
  {
   "q": "Next in the sequence: 100, 50, 25, 12.5, ?",
@@ -217,7 +238,8 @@
    "5",
    "7.5"
   ],
-  "why": "Each number is half the previous one. 12.5 ÷ 2 = 6.25."
+  "why": "Each number is half the previous one. 12.5 ÷ 2 = 6.25.",
+  "lvl": 1
  },
  {
   "q": "What letter comes next: J, F, M, A, M, J, ?",
@@ -227,7 +249,8 @@
    "S",
    "M"
   ],
-  "why": "First letters of the months: January, February, March, April, May, June, July."
+  "why": "First letters of the months: January, February, March, April, May, June, July.",
+  "lvl": 2
  },
  {
   "q": "What letter comes next: O, T, T, F, F, S, S, ?",
@@ -237,7 +260,8 @@
    "T",
    "O"
   ],
-  "why": "First letters of the numbers: One, Two, Three, Four, Five, Six, Seven, Eight."
+  "why": "First letters of the numbers: One, Two, Three, Four, Five, Six, Seven, Eight.",
+  "lvl": 3
  },
  {
   "q": "What letter comes next: M, T, W, T, F, ?",
@@ -247,7 +271,8 @@
    "W",
    "T"
   ],
-  "why": "Days of the week: Monday to Friday, then Saturday."
+  "why": "Days of the week: Monday to Friday, then Saturday.",
+  "lvl": 1
  },
  {
   "q": "Which number doesn't belong: 2, 3, 5, 7, 9, 11?",
@@ -257,7 +282,8 @@
    "7",
    "11"
   ],
-  "why": "All the others are prime numbers. 9 is 3 × 3."
+  "why": "All the others are prime numbers. 9 is 3 × 3.",
+  "lvl": 1
  },
  {
   "q": "How many birthdays does the average person have?",
@@ -267,7 +293,8 @@
    "80",
    "Depends"
   ],
-  "why": "You are born once. Every other year is a birthday party, not a birth."
+  "why": "You are born once. Every other year is a birthday party, not a birth.",
+  "lvl": 2
  },
  {
   "q": "5 machines make 5 widgets in 5 minutes. How long for 100 machines to make 100 widgets?",
@@ -277,7 +304,8 @@
    "20 minutes",
    "1 minute"
   ],
-  "why": "Each machine makes 1 widget in 5 minutes, so 100 machines make 100 widgets in 5 minutes."
+  "why": "Each machine makes 1 widget in 5 minutes, so 100 machines make 100 widgets in 5 minutes.",
+  "lvl": 2
  },
  {
   "q": "February 1, 2028 is a Tuesday. What day is March 1, 2028?",
@@ -287,7 +315,8 @@
    "Thursday",
    "Monday"
   ],
-  "why": "2028 is a leap year, so February has 29 days: 4 weeks and 1 day after Tuesday is Wednesday."
+  "why": "2028 is a leap year, so February has 29 days: 4 weeks and 1 day after Tuesday is Wednesday.",
+  "lvl": 3
  },
  {
   "q": "If yesterday was two days before Friday, what day is tomorrow?",
@@ -297,7 +326,8 @@
    "Saturday",
    "Wednesday"
   ],
-  "why": "Two days before Friday is Wednesday. If yesterday was Wednesday, today is Thursday and tomorrow is Friday."
+  "why": "Two days before Friday is Wednesday. If yesterday was Wednesday, today is Thursday and tomorrow is Friday.",
+  "lvl": 2
  },
  {
   "q": "A train leaves at 9:40 and takes 85 minutes. When does it arrive?",
@@ -307,7 +337,8 @@
    "11:15",
    "10:65"
   ],
-  "why": "9:40 + 60 min = 10:40, + 25 min = 11:05."
+  "why": "9:40 + 60 min = 10:40, + 25 min = 11:05.",
+  "lvl": 2
  },
  {
   "q": "What is 7 × 8 − 6?",
@@ -317,7 +348,8 @@
    "56",
    "42"
   ],
-  "why": "Multiply first: 7 × 8 = 56, then 56 − 6 = 50."
+  "why": "Multiply first: 7 × 8 = 56, then 56 − 6 = 50.",
+  "lvl": 1
  },
  {
   "q": "Which is largest: 0.9, 0.85, 0.099, 0.9001?",
@@ -327,7 +359,8 @@
    "0.85",
    "0.099"
   ],
-  "why": "Line up the decimals: 0.9001 is just over 0.9, and 0.099 is under 0.1."
+  "why": "Line up the decimals: 0.9001 is just over 0.9, and 0.099 is under 0.1.",
+  "lvl": 1
  },
  {
   "q": "I'm an odd number. Take away one letter and I become even. What am I?",
@@ -337,7 +370,8 @@
    "Three",
    "Five"
   ],
-  "why": "Remove the S and SEVEN becomes EVEN."
+  "why": "Remove the S and SEVEN becomes EVEN.",
+  "lvl": 2
  },
  {
   "q": "Three friends share a $30 pizza. Two of them pay $15 each. How much should the third give each of them?",
@@ -347,7 +381,8 @@
    "$7.50",
    "$15"
   ],
-  "why": "A fair share is $10, so each payer is $5 over. The third friend gives each of them $5."
+  "why": "A fair share is $10, so each payer is $5 over. The third friend gives each of them $5.",
+  "lvl": 2
  },
  {
   "q": "If a doctor gives you 3 pills and says take one every 30 minutes, how long do they last?",
@@ -357,7 +392,8 @@
    "2 hours",
    "30 minutes"
   ],
-  "why": "Take one now, one after 30 minutes, the last after 60 minutes. The gaps add to 1 hour."
+  "why": "Take one now, one after 30 minutes, the last after 60 minutes. The gaps add to 1 hour.",
+  "lvl": 2
  },
  {
   "q": "What is 999 × 7?",
@@ -367,7 +403,8 @@
    "7993",
    "6973"
   ],
-  "why": "1000 × 7 = 7000, minus 7 = 6993."
+  "why": "1000 × 7 = 7000, minus 7 = 6993.",
+  "lvl": 2
  },
  {
   "q": "Which weighs more: 1,000 grams or 1 kilogram?",
@@ -377,7 +414,8 @@
    "1 kilogram",
    "Depends"
   ],
-  "why": "1 kilogram is exactly 1,000 grams, so they weigh the same."
+  "why": "1 kilogram is exactly 1,000 grams, so they weigh the same.",
+  "lvl": 1
  },
  {
   "q": "A square has a perimeter of 36. What is its area?",
@@ -387,7 +425,8 @@
    "72",
    "9"
   ],
-  "why": "Perimeter 36 ÷ 4 sides = 9 per side. Area 9 × 9 = 81."
+  "why": "Perimeter 36 ÷ 4 sides = 9 per side. Area 9 × 9 = 81.",
+  "lvl": 1
  },
  {
   "q": "How many seconds are in 2.5 minutes?",
@@ -397,7 +436,8 @@
    "250",
    "180"
   ],
-  "why": "2.5 × 60 = 150."
+  "why": "2.5 × 60 = 150.",
+  "lvl": 1
  },
  {
   "q": "The day before yesterday was Monday. What is the day after tomorrow?",
@@ -407,7 +447,8 @@
    "Saturday",
    "Wednesday"
   ],
-  "why": "If the day before yesterday was Monday, today is Wednesday, so the day after tomorrow is Friday."
+  "why": "If the day before yesterday was Monday, today is Wednesday, so the day after tomorrow is Friday.",
+  "lvl": 2
  },
  {
   "q": "Dad is 4× his son's age. In 20 years he'll be 2×. How old is the son now?",
@@ -417,7 +458,8 @@
    "15",
    "20"
   ],
-  "why": "Son s, dad 4s. In 20 years: 4s + 20 = 2(s + 20) → 2s = 20 → s = 10."
+  "why": "Son s, dad 4s. In 20 years: 4s + 20 = 2(s + 20) → 2s = 20 → s = 10.",
+  "lvl": 3
  },
  {
   "q": "If it takes 8 men 10 hours to build a wall, how long for 4 men (same pace)?",
@@ -427,6 +469,7 @@
    "10 hours",
    "40 hours"
   ],
-  "why": "Half the workers take twice as long."
+  "why": "Half the workers take twice as long.",
+  "lvl": 1
  }
 ]
