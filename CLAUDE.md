@@ -13,6 +13,9 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - YouTube tracking links: `build.py` also writes `dist/btc.html` and `dist/wildfacts.html` (copies of the game) so
   brainteasersclub.app/btc and /wildfacts show as separate paths in Web Analytics. Shares use `shareBase()`,
   which strips those paths, the query and the hash.
+- No-repeat order: unseeded rounds (Play Solo) deal from a per-type shuffled deck in localStorage (`btc-deck-<type>`,
+  `deckPick` in src/index.html). Adding or removing puzzles changes that day's Daily, resets players' decks for that
+  type and changes the Live Match bank version, so ship those after midnight; fixing a puzzle in place does none of that.
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
 

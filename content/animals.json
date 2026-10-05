@@ -106,7 +106,7 @@
    "Dormouse",
    "Chipmunk"
   ],
-  "why": "One captive naked mole-rat lived at least 32 years.",
+  "why": "Naked mole-rats have lived more than 30 years in captivity, far longer than other rodents their size.",
   "cat": "Mammals"
  },
  {
@@ -594,14 +594,14 @@
   "cat": "Birds"
  },
  {
-  "q": "Which Australian bird can mimic camera shutters and chainsaws?",
+  "q": "Which Australian bird is famous for mimicking other birds and even man-made sounds?",
   "a": "Lyrebird",
   "wrong": [
    "Cockatoo",
    "Kookaburra",
    "Bowerbird"
   ],
-  "why": "Superb lyrebirds copy sounds from their surroundings, including man-made noises.",
+  "why": "Superb lyrebirds copy the sounds around them. Captive lyrebirds have been recorded imitating camera shutters and chainsaws.",
   "cat": "Birds"
  },
  {
@@ -1200,7 +1200,7 @@
  },
  {
   "q": "A chameleon's tongue can reach about how many times its body length?",
-  "a": "About twice",
+  "a": "Up to about 2.5 times",
   "wrong": [
    "Half",
    "The same",
@@ -1600,7 +1600,7 @@
   "wrong": [
    "Siberian tiger",
    "Lion",
-   "Grizzly bear"
+   "American black bear"
   ],
   "why": "Adult males typically weigh 400-600 kg.",
   "cat": "Records"
@@ -1745,18 +1745,18 @@
    "About 20 kg",
    "About 300 kg"
   ],
-  "why": "Calves gain around 90 kg a day in their first year, living only on mother's milk.",
+  "why": "Calves gain around 90 kg a day while nursing, living only on their mother's milk.",
   "cat": "Records"
  },
  {
-  "q": "Which mammal has had the largest recorded litter, over 30 young?",
+  "q": "Which wild mammal has had the largest recorded litter, over 30 young?",
   "a": "Tailless tenrec",
   "wrong": [
    "Rabbit",
    "Rat",
-   "Pig"
+   "Hamster"
   ],
-  "why": "Guinness records a wild litter of 31.",
+  "why": "Guinness World Records lists a litter of 31 from a wild tailless tenrec.",
   "cat": "Records"
  },
  {
@@ -1914,14 +1914,14 @@
   "cat": "Weird"
  },
  {
-  "q": "What is a baby echidna or platypus called?",
+  "q": "What is a baby echidna called?",
   "a": "Puggle",
   "wrong": [
    "Joey",
    "Cub",
    "Kit"
   ],
-  "why": "Both are monotremes and hatch from leathery eggs.",
+  "why": "Echidnas are monotremes: they hatch from a leathery egg, and the young puggle grows in its mother's pouch.",
   "cat": "Weird"
  },
  {

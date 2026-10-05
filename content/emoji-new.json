@@ -189,7 +189,7 @@
  {
   "q": "🔴🟢🦑",
   "a": "Squid Game",
-  "cat": "Movie",
+  "cat": "TV show",
   "wrong": [
    "Black Mirror",
    "Money Heist",
@@ -365,7 +365,7 @@
  {
   "q": "🐉🗡️👑",
   "a": "Game of Thrones",
-  "cat": "Movie",
+  "cat": "TV show",
   "wrong": [
    "Vikings",
    "The Witcher",
@@ -851,7 +851,7 @@
   "a": "Firewall",
   "cat": "Word",
   "wrong": [
-   "Fireplace",
+   "Fire drill",
    "Firefly",
    "Brickwork"
   ],
@@ -952,7 +952,7 @@
   "wrong": [
    "Cloudburst",
    "Penthouse",
-   "Highrise"
+   "Cloud storage"
   ],
   "why": "Sky + scraping building."
  },
@@ -1016,7 +1016,7 @@
   "a": "Ladybug",
   "cat": "Word",
   "wrong": [
-   "Ladybird",
+   "Caterpillar",
    "Firefly",
    "Bumblebee"
   ],

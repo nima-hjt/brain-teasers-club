@@ -221,14 +221,14 @@
  },
  {
   "q": "🍰🚶",
-  "a": "Piece of cake",
+  "a": "Cakewalk",
   "cat": "Saying",
   "wrong": [
-   "Birthday walk",
-   "Cake walk race",
+   "Piece of cake",
+   "Birthday party",
    "Sweet tooth"
   ],
-  "why": "Cake + walk = cakewalk, something easy."
+  "why": "Cake + walk = cakewalk, meaning something very easy."
  },
  {
   "q": "🥶🦃",
@@ -390,7 +390,7 @@
   "cat": "Word",
   "wrong": [
    "Goldfish",
-   "Sea star",
+   "Swordfish",
    "Fish star"
   ],
   "why": "Star + fish."

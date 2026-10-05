@@ -436,15 +436,25 @@ try{if(DIFF[localStorage.getItem("btc-diff")])diff=localStorage.getItem("btc-dif
 
 /* ---------- ROUND BUILDER ---------- */
 function seedFromString(k){let h=2166136261;for(const c of k){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+// Unseeded rounds deal from a per-type shuffled deck kept in localStorage, so a player sees every puzzle of a
+// type before any repeats. The deck resets if the bank size changes. Seeded rounds (Daily, Challenge, Live) skip it.
+function deckPick(t,bank,n){
+  const key="btc-deck-"+t;let d=null;try{d=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
+  if(!d||d.n!==bank.length||!Array.isArray(d.left))d={n:bank.length,left:[]};
+  const out=[];
+  while(out.length<n){if(!d.left.length)d.left=shuffle([...bank.keys()].filter(i=>!out.includes(i)),Math.random);out.push(d.left.shift())}
+  try{localStorage.setItem(key,JSON.stringify(d))}catch(e){}
+  return out.map(i=>bank[i]);
+}
 function buildRound(mode,seed,rd,typesOverride){
   const rnd = seed!=null ? mulberry32(seed) : Math.random;
-  const pick=(bank,n)=>shuffle(bank,rnd).slice(0,n);
+  const pick=(bank,n,t)=>seed!=null?shuffle(bank,rnd).slice(0,n):deckPick(t,bank,n);
   let list=[];
   const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};
   const ALL=["odd","emoji","logic","facts"];
   const types=banks[mode]?[mode]:mode==="daily"?ALL:(typesOverride||customTypes());
   const per=Math.floor(10/types.length);const extra=10-per*types.length;
-  types.forEach((t,i)=>{const n=per+(i<extra?1:0);list.push(...pick(banks[t],n).map(p=>({type:t,data:p})))});
+  types.forEach((t,i)=>{const n=per+(i<extra?1:0);list.push(...pick(banks[t],n,t).map(p=>({type:t,data:p})))});
   if(types.length>1)list=shuffle(list,rnd);
   // odd-one-out grids get bigger as the round goes on
   let sizes=DIFF[rd||diff].grids;

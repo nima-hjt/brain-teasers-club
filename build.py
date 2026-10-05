@@ -76,7 +76,7 @@ open('dist/about.html','w').write(skeleton('About · Brain Teasers Club',about,e
 privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated {today}</small></p>
 <p>Brain Teasers Club ("the game", "we") is a browser game. This page explains what information is handled when you play.</p>
 <h2>What we store on your device</h2>
-<p>The game saves your settings and progress (chosen difficulty, sound on or off, best scores, daily streak, XP and level, custom-mix selection, and whether today's Daily Challenge has been played) in your browser's local storage. This data stays on your device, is never sent to us, and is deleted if you clear your browser data. Player names typed for two-player modes are used only on screen during that round.</p>
+<p>The game saves your settings and progress (chosen difficulty, sound on or off, best scores, daily streak, XP and level, custom-mix selection, which puzzles you have already seen so they don't repeat, and whether today's Daily Challenge has been played) in your browser's local storage. This data stays on your device, is never sent to us, and is deleted if you clear your browser data. Player names typed for two-player modes are used only on screen during that round.</p>
 <h2>What we do not collect</h2>
 <p>We do not have user accounts, and we do not collect names, email addresses, or any personal information. The game has no server of its own.</p>
 <h2>Advertising</h2>
@@ -104,7 +104,7 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v4";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v5";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;

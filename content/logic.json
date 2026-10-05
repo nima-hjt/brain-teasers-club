@@ -140,14 +140,14 @@
   "why": "The boat floats, so it rises with the tide and the ladder rises with it. Still 3 rungs under."
  },
  {
-  "q": "What is half of 2 plus 2?",
+  "q": "What is half of 2, plus 2?",
   "a": "3",
   "wrong": [
    "2",
    "4",
    "1"
   ],
-  "why": "Each cat catches 1 mouse every 3 minutes, so in 100 minutes one cat catches about 33. Three cats catch 100."
+  "why": "Half of 2 is 1, then add 2: 1 + 2 = 3."
  },
  {
   "q": "What's heavier: a kilo of feathers or a kilo of steel?",
@@ -257,7 +257,7 @@
    "7",
    "11"
   ],
-  "why": "'All but 9 run away' means 9 stay."
+  "why": "All the others are prime numbers. 9 is 3 × 3."
  },
  {
   "q": "How many birthdays does the average person have?",
@@ -377,7 +377,7 @@
    "1 kilogram",
    "Depends"
   ],
-  "why": "A kilo is a kilo. Size and material don't change the weight."
+  "why": "1 kilogram is exactly 1,000 grams, so they weigh the same."
  },
  {
   "q": "A square has a perimeter of 36. What is its area?",
