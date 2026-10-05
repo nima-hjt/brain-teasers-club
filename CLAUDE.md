@@ -39,6 +39,9 @@ plain REST + EventSource (no SDK). Rooms live at `rooms/CODE` (4 chars). The hos
 (`settings.round`) and a bank version (`settings.ver`); guests play that list, never re-derive it. Patch events from
 Firebase use multi-path keys like `"host/rematch": null` — apply them per key, null deletes.
 Database rules (set in the Firebase console) only allow writes under rooms/{4-char code}.
+Each player writes `seen` (their seen-puzzle keys, oldest first) on Ready and on Rematch; when both are ready the
+host picks the round with `buildRound(..., mergedSeen(them.seen))`, so it avoids both players' histories.
+To test with two separate histories, load the host from 127.0.0.1 and the guest from localhost (separate storage).
 
 ## Not done yet
 - AdSense: set `ADSENSE_CLIENT` / `ADSENSE_SLOT` in src/index.html after approval; add the verification snippet.

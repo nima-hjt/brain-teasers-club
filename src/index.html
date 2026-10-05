@@ -474,7 +474,13 @@ function pickFresh(t,l,n,used,rnd,ctx,rd){
   for(const [ll,tier] of steps){if(out.length>=n)break;for(const i of pool(ll,tier)){if(out.length>=n)break;used.add(i);out.push(i)}}
   return out;
 }
-function buildRound(mode,seed,rd,typesOverride){
+// Seen history as a compact list, oldest first, for sharing with a Live Match opponent (puzzle keys only).
+function seenList(){const m=loadSeen().m;return Object.keys(m).sort((a,b)=>m[a]-m[b]).join(",")}
+// Merge this device's history with an opponent's list, ranking both oldest→newest on a 0..1 scale.
+function mergedSeen(otherList){const mine=loadSeen().m,out={};const ks=Object.keys(mine).sort((a,b)=>mine[a]-mine[b]);
+  ks.forEach((k,i)=>out[k]=(i+1)/(ks.length+1));const theirs=(otherList||"").split(",").filter(Boolean);
+  theirs.forEach((k,i)=>{const v=(i+1)/(theirs.length+1);out[k]=k in out?Math.min(out[k],v):v});return out}
+function buildRound(mode,seed,rd,typesOverride,seenOverride){
   const rnd = seed!=null ? mulberry32(seed) : Math.random;
   let list=[];
   const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};
@@ -496,7 +502,7 @@ function buildRound(mode,seed,rd,typesOverride){
     const want={};slotTypes.forEach((t,i)=>{const k=t+levels[i];want[k]=(want[k]||0)+1});
     const got={};
     // Challenge links must give every phone the same puzzles, so they use a plain seeded draw.
-    const ctx=mode==="challenge"?null:{seen:loadSeen().m,today:dailyKeys(todayKey()),past:pastDailyKeys()};
+    const ctx=mode==="challenge"?null:{seen:seenOverride||loadSeen().m,today:dailyKeys(todayKey()),past:pastDailyKeys()};
     for(const t of types){
       const bank=banks[t];const used=new Set();
       for(const l of [3,2,1]){const n=want[t+l]||0;if(!n)continue;
@@ -1036,7 +1042,8 @@ function reconcile(){
     $("liveSettings").textContent=liveSettingsText();
     $("liveReady").hidden=!!me.ready;
     liveStatus(me.ready&&them.ready?"Starting…":me.ready?"Waiting for "+live.them+"…":live.them+" is here. Tap ready when you are.");
-    if(live.role==="host"&&me.ready&&them.ready&&!r.startAt){dbWrite(live.code,{startAt:Date.now()+3500}).catch(()=>{})}
+    if(live.role==="host"&&me.ready&&them.ready&&!r.startAt&&!live.picking){live.picking=true;const st=r.settings;const seed=Math.floor(Math.random()*2**31);
+      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500}).catch(()=>{live.picking=false})}
   }
   // start (both sides) — guard against re-running the same startAt
   if(r.startAt&&r.startAt!==live.startAt&&me.ready&&them.ready){live.startAt=r.startAt;startCountdown(r.startAt)}
@@ -1047,7 +1054,7 @@ function reconcile(){
     // rematch: host issues a new start when both asked
     if(live.role==="host"&&me.rematch&&them.rematch&&live.myDone&&live.theirDone&&r.startAt===live.startAt){
       const seed=Math.floor(Math.random()*2**31);const st=live.room.settings;
-      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types)),startAt:Date.now()+3500,"host/prog":null,"host/done":null,"host/rematch":null,"guest/prog":null,"guest/done":null,"guest/rematch":null}).catch(()=>{});
+      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500,"host/prog":null,"host/done":null,"host/rematch":null,"guest/prog":null,"guest/done":null,"guest/rematch":null}).catch(()=>{});
     }
     if(them.rematch&&!me.rematch&&live.myDone&&live.theirDone&&!$("againBtn").dataset.asked){$("againBtn").dataset.asked="1";$("againBtn").textContent="🔔 "+live.them+" wants a rematch! Tap to accept";$("againBtn").classList.add("pop");SFX.point()}
   }
@@ -1096,11 +1103,11 @@ function liveRecord(name,r){let all={};try{all=JSON.parse(localStorage.getItem("
 function requestRematch(){
   if(!live||live.gone){liveErr("Your opponent has left.");liveReset();liveUI("start");show("live");return}
   $("againBtn").textContent="Waiting for "+live.them+"…";$("againBtn").disabled=true;
-  dbWrite(live.code+"/"+live.role,{rematch:true}).catch(()=>{});
+  dbWrite(live.code+"/"+live.role,{rematch:true,seen:seenList()}).catch(()=>{});
 }
 $("liveCreate").onclick=liveCreate;
 $("liveJoin").onclick=()=>{const v=$("liveInput").value.trim().toUpperCase();if(/^[A-Z2-9]{4}$/.test(v))liveJoin(v);else liveErr("Room codes are 4 letters or digits.")};
-$("liveReady").onclick=()=>{$("liveReady").hidden=true;dbWrite(live.code+"/"+live.role,{ready:true}).catch(()=>{})};
+$("liveReady").onclick=()=>{$("liveReady").hidden=true;dbWrite(live.code+"/"+live.role,{ready:true,seen:seenList()}).catch(()=>{})};
 $("liveCopy").onclick=()=>copyText($("liveShare").textContent,$("liveCopy"),"Copy invite");
 $("liveBack").onclick=()=>{liveReset();liveUI("start");show("friends")};
 try{$("liveName").value=localStorage.getItem("btc-name")||""}catch(e){}
