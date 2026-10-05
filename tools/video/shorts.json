@@ -306,7 +306,7 @@
   "pill": "3 LEVELS · 6 SECONDS EACH",
   "introEmoji": [
    "🍎",
-   "🐁",
+   "😃",
    "🕐"
   ],
   "items": [
@@ -320,8 +320,8 @@
     "a": "FOUND IT!"
    },
    {
-    "common": "🐁",
-    "odd": "🐀",
+    "common": "😃",
+    "odd": "😄",
     "cols": 6,
     "rows": 7,
     "pos": 33,
@@ -347,6 +347,479 @@
    "l3": "Level three. Almost impossible.",
    "a3": "One thirty, not one o'clock!",
    "end": "How many did you find? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "odd3": {
+  "kind": "odd",
+  "count": 6,
+  "label": "FIND THE ODD ONE OUT",
+  "title": [
+   "FIND THE",
+   "ODD ONE"
+  ],
+  "titleEmoji": "👀",
+  "pill": "3 LEVELS · 6 SECONDS EACH",
+  "introEmoji": [
+   "😐",
+   "😮",
+   "⌛"
+  ],
+  "items": [
+   {
+    "common": "😐",
+    "odd": "😑",
+    "cols": 5,
+    "rows": 6,
+    "pos": 22,
+    "cap": "Level one",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "😮",
+    "odd": "😯",
+    "cols": 6,
+    "rows": 7,
+    "pos": 15,
+    "cap": "Level two: harder",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "⌛",
+    "odd": "⏳",
+    "cols": 7,
+    "rows": 8,
+    "pos": 38,
+    "cap": "Level three: almost impossible",
+    "a": "FOUND IT!"
+   }
+  ],
+  "lines": {
+   "intro": "Find the odd one out! Three levels. Six seconds each.",
+   "l1": "Level one.",
+   "a1": "There it is!",
+   "l2": "Level two. Harder.",
+   "a2": "Got it?",
+   "l3": "Level three. Almost impossible.",
+   "a3": "Sand at the top, not the bottom!",
+   "end": "How many did you find? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "fairy": {
+  "kind": "emoji",
+  "count": 3,
+  "label": "GUESS THE FAIRY TALE",
+  "title": [
+   "GUESS THE",
+   "FAIRY TALE"
+  ],
+  "titleEmoji": "🏰",
+  "pill": "5 TALES · 3 SECONDS EACH",
+  "introEmoji": [
+   "🍎",
+   "👠",
+   "🐺",
+   "🐷",
+   "🫘"
+  ],
+  "items": [
+   {
+    "q": "🍎👸🪞",
+    "a": "SNOW WHITE",
+    "cap": "Number one"
+   },
+   {
+    "q": "👠🎃🕛",
+    "a": "CINDERELLA",
+    "cap": "Number two"
+   },
+   {
+    "q": "🐺👵🧺",
+    "a": "LITTLE RED RIDING HOOD",
+    "cap": "Number three"
+   },
+   {
+    "q": "🐷🐷🐷🐺",
+    "a": "THE THREE LITTLE PIGS",
+    "cap": "This one's tricky!"
+   },
+   {
+    "q": "🫘🌱🏰",
+    "a": "JACK AND THE BEANSTALK",
+    "cap": "Last one: the hardest"
+   }
+  ],
+  "lines": {
+   "intro": "Can you guess all five fairy tales from just emoji?",
+   "l1": "Number one.",
+   "a1": "Snow White!",
+   "l2": "Number two.",
+   "a2": "Cinderella!",
+   "l3": "Number three.",
+   "a3": "Little Red Riding Hood!",
+   "l4": "Number four. This one's tricky!",
+   "a4": "The Three Little Pigs!",
+   "l5": "Last one! This is the hardest.",
+   "a5": "Jack and the Beanstalk!",
+   "end": "How many did you get? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "riddles2": {
+  "kind": "riddle",
+  "count": 6,
+  "label": "QUICK RIDDLE",
+  "title": [
+   "3 RIDDLES",
+   "30 SECONDS"
+  ],
+  "titleEmoji": "🧩",
+  "pill": "6 SECONDS EACH · NO PEEKING",
+  "introEmoji": [
+   "🎹",
+   "🤧",
+   "🪙"
+  ],
+  "items": [
+   {
+    "q": "What has keys but can't open locks?",
+    "a": "A piano",
+    "opts": [
+     "A map",
+     "A piano",
+     "A car",
+     "A door"
+    ],
+    "cap": "Riddle one"
+   },
+   {
+    "q": "What can you catch but not throw?",
+    "a": "A cold",
+    "opts": [
+     "A ball",
+     "A cold",
+     "A frisbee",
+     "A stick"
+    ],
+    "cap": "Riddle two"
+   },
+   {
+    "q": "What has a head and a tail, but no body?",
+    "a": "A coin",
+    "opts": [
+     "A snake",
+     "A coin",
+     "A cat",
+     "A fish"
+    ],
+    "cap": "Last one: the hardest"
+   }
+  ],
+  "lines": {
+   "intro": "Three riddles. Six seconds each. Can you solve them all?",
+   "l1": "Riddle one.",
+   "a1": "A piano!",
+   "l2": "Riddle two.",
+   "a2": "A cold!",
+   "l3": "Last one. This is the hardest.",
+   "a3": "A coin! Heads or tails.",
+   "end": "How many did you get? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "odd4": {
+  "kind": "odd",
+  "count": 6,
+  "label": "FIND THE ODD ONE OUT",
+  "title": [
+   "FIND THE",
+   "ODD ONE"
+  ],
+  "titleEmoji": "👀",
+  "pill": "3 LEVELS · 6 SECONDS EACH",
+  "introEmoji": [
+   "🌲",
+   "😗",
+   "🕗"
+  ],
+  "items": [
+   {
+    "common": "🌲",
+    "odd": "🌳",
+    "cols": 5,
+    "rows": 6,
+    "pos": 8,
+    "cap": "Level one",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "😗",
+    "odd": "😙",
+    "cols": 6,
+    "rows": 7,
+    "pos": 30,
+    "cap": "Level two: harder",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "🕗",
+    "odd": "🕣",
+    "cols": 7,
+    "rows": 8,
+    "pos": 49,
+    "cap": "Level three: almost impossible",
+    "a": "FOUND IT!"
+   }
+  ],
+  "lines": {
+   "intro": "Find the odd one out! Three levels. Six seconds each.",
+   "l1": "Level one.",
+   "a1": "There it is!",
+   "l2": "Level two. Harder.",
+   "a2": "Got it?",
+   "l3": "Level three. Almost impossible.",
+   "a3": "Eight thirty, not eight o'clock!",
+   "end": "How many did you find? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "movies2": {
+  "kind": "emoji",
+  "count": 3,
+  "label": "GUESS THE MOVIE",
+  "title": [
+   "GUESS THE",
+   "CARTOON"
+  ],
+  "titleEmoji": "🎬",
+  "pill": "5 MOVIES · 3 SECONDS EACH",
+  "introEmoji": [
+   "🦁",
+   "🧸",
+   "🧜",
+   "🌹",
+   "🧞"
+  ],
+  "items": [
+   {
+    "q": "🦁👑",
+    "a": "THE LION KING",
+    "cap": "Number one"
+   },
+   {
+    "q": "🧸🤠🚀",
+    "a": "TOY STORY",
+    "cap": "Number two"
+   },
+   {
+    "q": "🧜‍♀️🐠🦀",
+    "a": "THE LITTLE MERMAID",
+    "cap": "Number three"
+   },
+   {
+    "q": "🌹👹",
+    "a": "BEAUTY AND THE BEAST",
+    "cap": "This one's tricky!"
+   },
+   {
+    "q": "🧞‍♂️🪔🐒",
+    "a": "ALADDIN",
+    "cap": "Last one: the hardest"
+   }
+  ],
+  "lines": {
+   "intro": "Can you guess all five animated movies from just emoji?",
+   "l1": "Number one.",
+   "a1": "The Lion King!",
+   "l2": "Number two.",
+   "a2": "Toy Story!",
+   "l3": "Number three.",
+   "a3": "The Little Mermaid!",
+   "l4": "Number four. This one's tricky!",
+   "a4": "Beauty and the Beast!",
+   "l5": "Last one! This is the hardest.",
+   "a5": "Aladdin!",
+   "end": "How many did you get? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "oddletters2": {
+  "kind": "odd",
+  "count": 6,
+  "label": "FIND THE ODD ONE OUT",
+  "title": [
+   "FIND THE",
+   "ODD ONE"
+  ],
+  "titleEmoji": "🔤",
+  "pill": "3 LEVELS · 6 SECONDS EACH",
+  "introEmoji": [
+   "🔍",
+   "👀",
+   "⏱️"
+  ],
+  "items": [
+   {
+    "common": "E",
+    "odd": "F",
+    "cols": 5,
+    "rows": 6,
+    "pos": 17,
+    "cap": "Level one",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "69",
+    "odd": "96",
+    "cols": 5,
+    "rows": 7,
+    "pos": 23,
+    "cap": "Level two: harder",
+    "a": "FOUND IT!"
+   },
+   {
+    "common": "8",
+    "odd": "B",
+    "cols": 6,
+    "rows": 8,
+    "pos": 40,
+    "cap": "Level three: almost impossible",
+    "a": "FOUND IT!"
+   }
+  ],
+  "lines": {
+   "intro": "Can your eyes find the odd one? Three levels. Six seconds each.",
+   "l1": "Level one.",
+   "a1": "There it is!",
+   "l2": "Level two. Harder.",
+   "a2": "Got it?",
+   "l3": "Level three. Almost impossible.",
+   "a3": "B, not eight!",
+   "end": "How many did you find? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  },
+  "text": true
+ },
+ "halloween": {
+  "kind": "emoji",
+  "count": 3,
+  "label": "GUESS THE WORD",
+  "title": [
+   "GUESS THE",
+   "HALLOWEEN WORD"
+  ],
+  "titleEmoji": "🎃",
+  "pill": "5 WORDS · 3 SECONDS EACH",
+  "introEmoji": [
+   "🍬",
+   "🏚",
+   "🃏",
+   "🌕",
+   "🎃"
+  ],
+  "items": [
+   {
+    "q": "🍬🌽",
+    "a": "CANDY CORN",
+    "cap": "Number one"
+   },
+   {
+    "q": "🏚️👻",
+    "a": "HAUNTED HOUSE",
+    "cap": "Number two"
+   },
+   {
+    "q": "🃏🍬",
+    "a": "TRICK OR TREAT",
+    "cap": "Number three"
+   },
+   {
+    "q": "🌕🐺",
+    "a": "WEREWOLF",
+    "cap": "This one's tricky!"
+   },
+   {
+    "q": "🎃🏮",
+    "a": "JACK-O'-LANTERN",
+    "cap": "Last one: the hardest"
+   }
+  ],
+  "lines": {
+   "intro": "Halloween is coming! Can you guess all five spooky words from just emoji?",
+   "l1": "Number one.",
+   "a1": "Candy corn!",
+   "l2": "Number two.",
+   "a2": "Haunted house!",
+   "l3": "Number three.",
+   "a3": "Trick or treat!",
+   "l4": "Number four. This one's tricky!",
+   "a4": "Werewolf!",
+   "l5": "Last one! This is the hardest.",
+   "a5": "Jack-o'-lantern!",
+   "end": "How many did you get? Comment your score, and follow for more!",
+   "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
+  }
+ },
+ "riddles3": {
+  "kind": "riddle",
+  "count": 6,
+  "label": "QUICK RIDDLE",
+  "title": [
+   "3 RIDDLES",
+   "30 SECONDS"
+  ],
+  "titleEmoji": "🧩",
+  "pill": "6 SECONDS EACH · NO PEEKING",
+  "introEmoji": [
+   "🪡",
+   "🎂",
+   "🪮"
+  ],
+  "items": [
+   {
+    "q": "What has an eye but cannot see?",
+    "a": "A needle",
+    "opts": [
+     "A needle",
+     "A cat",
+     "A fish",
+     "A bird"
+    ],
+    "cap": "Riddle one"
+   },
+   {
+    "q": "What goes up but never comes down?",
+    "a": "Your age",
+    "opts": [
+     "A balloon",
+     "Your age",
+     "A ball",
+     "A kite"
+    ],
+    "cap": "Riddle two"
+   },
+   {
+    "q": "What has many teeth but can't bite?",
+    "a": "A comb",
+    "opts": [
+     "A shark",
+     "A comb",
+     "A dog",
+     "A crocodile"
+    ],
+    "cap": "Last one: the hardest"
+   }
+  ],
+  "lines": {
+   "intro": "Three riddles. Six seconds each. Can you solve them all?",
+   "l1": "Riddle one.",
+   "a1": "A needle!",
+   "l2": "Riddle two.",
+   "a2": "Your age!",
+   "l3": "Last one. This is the hardest.",
+   "a3": "A comb!",
+   "end": "How many did you get? Comment your score, and follow for more!",
    "plug": "Over twelve hundred free brain teasers, at brain teasers club dot app."
   }
  }

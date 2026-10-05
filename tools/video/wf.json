@@ -1,0 +1,556 @@
+{
+ "ocean3": {
+  "kind": "quiz",
+  "theme": "ocean",
+  "label": "OCEAN QUIZ",
+  "sub": [
+   "CAN YOU",
+   "GET 3/3?"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Ocean quiz! Three questions. Can you get all three?",
+  "items": [
+   {
+    "q": "What is the largest fish in the sea?",
+    "o": [
+     "Great white shark",
+     "Whale shark",
+     "Blue whale"
+    ],
+    "a": 1,
+    "f": "Blue whales aren't fish!",
+    "say": "Whale shark! The blue whale is bigger, but it's a mammal, not a fish."
+   },
+   {
+    "q": "How do dolphins sleep?",
+    "o": [
+     "Both eyes closed",
+     "One eye open",
+     "Upside down"
+    ],
+    "a": 1,
+    "f": "Half the brain stays awake!",
+    "say": "One eye open! Half of their brain stays awake."
+   },
+   {
+    "q": "What is a baby whale called?",
+    "o": [
+     "A pup",
+     "A calf",
+     "A kit"
+    ],
+    "a": 1,
+    "f": "Just like a baby cow!",
+    "say": "A calf! Just like a baby cow."
+   }
+  ]
+ },
+ "birds5": {
+  "kind": "quiz",
+  "theme": "green",
+  "label": "BIRD QUIZ",
+  "sub": [
+   "3 SECONDS",
+   "EACH!"
+  ],
+  "secs": 3,
+  "read": false,
+  "intro": "Bird quiz! Five questions, three seconds each. Go!",
+  "items": [
+   {
+    "q": "Which bird can fly backwards?",
+    "o": [
+     "Hummingbird",
+     "Eagle",
+     "Pigeon"
+    ],
+    "a": 0,
+    "f": "It can hover in place too!",
+    "say": "Hummingbird!"
+   },
+   {
+    "q": "Which bird lays the biggest egg?",
+    "o": [
+     "Eagle",
+     "Ostrich",
+     "Emu"
+    ],
+    "a": 1,
+    "f": "Biggest egg of any living bird!",
+    "say": "Ostrich!"
+   },
+   {
+    "q": "Which bird can turn its head the furthest?",
+    "o": [
+     "Owl",
+     "Parrot",
+     "Crow"
+    ],
+    "a": 0,
+    "f": "Up to 270 degrees!",
+    "say": "Owl! Up to two hundred seventy degrees."
+   },
+   {
+    "q": "Which bird has the widest wingspan?",
+    "o": [
+     "Bald eagle",
+     "Wandering albatross",
+     "Condor"
+    ],
+    "a": 1,
+    "f": "Up to 3.5 meters wide!",
+    "say": "The wandering albatross!"
+   },
+   {
+    "q": "Which bird can sleep while flying?",
+    "o": [
+     "Frigatebird",
+     "Pelican",
+     "Seagull"
+    ],
+    "a": 0,
+    "f": "A few seconds at a time!",
+    "say": "The frigatebird! It naps in short bursts, mid-air."
+   }
+  ]
+ },
+ "bugs": {
+  "kind": "facts",
+  "theme": "green",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 BUG FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three bug facts that sound fake, but are true.",
+  "items": [
+   {
+    "t": "Ants don't have lungs",
+    "big": "NO LUNGS",
+    "small": "they breathe through tiny holes",
+    "say": "Number one. Ants don't have lungs. Air flows into their bodies through tiny holes along their sides."
+   },
+   {
+    "t": "A cockroach can live without its head",
+    "big": "ABOUT 1 WEEK",
+    "small": "until it gets too thirsty",
+    "say": "Number two. A cockroach can live for about a week without its head. It finally dies because it can't drink water."
+   },
+   {
+    "t": "Dragonflies are super hunters",
+    "big": "95%",
+    "small": "up to 95% of hunts succeed",
+    "say": "Number three. Dragonflies catch their prey in up to ninety five percent of their hunts. That beats lions and sharks."
+   }
+  ]
+ },
+ "food3": {
+  "kind": "quiz",
+  "theme": "orange",
+  "label": "FOOD QUIZ",
+  "sub": [
+   "QUESTION 3",
+   "IS TRICKY"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Food quiz! Three questions. The last one is the trickiest.",
+  "items": [
+   {
+    "q": "Which of these is a berry?",
+    "o": [
+     "Strawberry",
+     "Banana",
+     "Raspberry"
+    ],
+    "a": 1,
+    "f": "Strawberries aren't true berries!",
+    "say": "Banana! Scientists call it a berry. Strawberries and raspberries are not true berries."
+   },
+   {
+    "q": "Where were potatoes first grown?",
+    "o": [
+     "Ireland",
+     "South America",
+     "India"
+    ],
+    "a": 1,
+    "f": "In the Andes mountains!",
+    "say": "South America! They were first grown in the Andes mountains."
+   },
+   {
+    "q": "Which food can stay good for centuries if sealed?",
+    "o": [
+     "Honey",
+     "Bread",
+     "Cheese"
+    ],
+    "a": 0,
+    "f": "Found in ancient Egyptian tombs!",
+    "say": "Honey! Pots of honey were found in ancient Egyptian tombs."
+   }
+  ]
+ },
+ "geo5": {
+  "kind": "quiz",
+  "theme": "green",
+  "label": "WORLD QUIZ",
+  "sub": [
+   "3 SECONDS",
+   "EACH!"
+  ],
+  "secs": 3,
+  "read": false,
+  "intro": "World quiz! Five questions, three seconds each. Go!",
+  "items": [
+   {
+    "q": "What is the largest ocean?",
+    "o": [
+     "Atlantic",
+     "Pacific",
+     "Indian"
+    ],
+    "a": 1,
+    "f": "Bigger than all land combined!",
+    "say": "The Pacific!"
+   },
+   {
+    "q": "Which continent has the most countries?",
+    "o": [
+     "Asia",
+     "Africa",
+     "Europe"
+    ],
+    "a": 1,
+    "f": "54 countries!",
+    "say": "Africa! Fifty four countries."
+   },
+   {
+    "q": "Which country has the most people?",
+    "o": [
+     "China",
+     "India",
+     "USA"
+    ],
+    "a": 1,
+    "f": "It passed China in 2023!",
+    "say": "India!"
+   },
+   {
+    "q": "What is the smallest country in the world?",
+    "o": [
+     "Monaco",
+     "Vatican City",
+     "Malta"
+    ],
+    "a": 1,
+    "f": "Smaller than many parks!",
+    "say": "Vatican City!"
+   },
+   {
+    "q": "What is the largest desert on Earth?",
+    "o": [
+     "Sahara",
+     "Antarctica",
+     "Gobi"
+    ],
+    "a": 1,
+    "f": "A desert = very little rain or snow!",
+    "say": "Antarctica! A desert is any place with very little rain or snow."
+   }
+  ]
+ },
+ "animals2": {
+  "kind": "facts",
+  "theme": "purple",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 ANIMAL FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three more animal facts that sound fake, but are true.",
+  "items": [
+   {
+    "t": "Koalas have fingerprints",
+    "big": "LIKE OURS",
+    "small": "even under a microscope",
+    "say": "Number one. Koalas have fingerprints, and they look almost exactly like human fingerprints, even under a microscope."
+   },
+   {
+    "t": "Elephants can't jump",
+    "big": "NEVER",
+    "small": "all four feet off the ground",
+    "say": "Number two. Elephants can't jump. Even when they run, at least one foot stays on the ground."
+   },
+   {
+    "t": "Hippos make their own sunscreen",
+    "big": "RED 'SWEAT'",
+    "small": "not real sweat, but a sunscreen",
+    "say": "Number three. Hippos make their own sunscreen. Their skin oozes a reddish liquid that protects them from the sun."
+   }
+  ]
+ },
+ "kids2": {
+  "kind": "quiz",
+  "theme": "purple",
+  "label": "ANIMAL QUIZ",
+  "sub": [
+   "KIDS VS PARENTS:",
+   "WHO GETS 3/3?"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Kids versus parents! Three animal questions. Who gets all three?",
+  "items": [
+   {
+    "q": "What do pandas eat most?",
+    "o": [
+     "Bamboo",
+     "Fish",
+     "Berries"
+    ],
+    "a": 0,
+    "f": "They eat for 10+ hours a day!",
+    "say": "Bamboo! They spend more than ten hours a day eating."
+   },
+   {
+    "q": "Which big cat can't roar?",
+    "o": [
+     "Lion",
+     "Cheetah",
+     "Tiger"
+    ],
+    "a": 1,
+    "f": "It purrs and chirps instead!",
+    "say": "The cheetah! It purrs and chirps instead."
+   },
+   {
+    "q": "Which of these is NOT a bear?",
+    "o": [
+     "Koala",
+     "Polar bear",
+     "Panda"
+    ],
+    "a": 0,
+    "f": "It's a marsupial!",
+    "say": "The koala! It's a marsupial, like a kangaroo."
+   }
+  ]
+ },
+ "dino5": {
+  "kind": "quiz",
+  "theme": "orange",
+  "label": "DINO QUIZ",
+  "sub": [
+   "3 SECONDS",
+   "EACH!"
+  ],
+  "secs": 3,
+  "read": false,
+  "intro": "Dinosaur quiz! Five questions, three seconds each. Go!",
+  "items": [
+   {
+    "q": "Which dinosaur had three horns?",
+    "o": [
+     "Triceratops",
+     "Stegosaurus",
+     "T. rex"
+    ],
+    "a": 0,
+    "f": "Its name means three-horned face!",
+    "say": "Triceratops!"
+   },
+   {
+    "q": "Which dinosaur had plates on its back?",
+    "o": [
+     "Velociraptor",
+     "Stegosaurus",
+     "Brachiosaurus"
+    ],
+    "a": 1,
+    "f": "Big bony plates!",
+    "say": "Stegosaurus!"
+   },
+   {
+    "q": "What does the word dinosaur mean?",
+    "o": [
+     "Terrible lizard",
+     "Giant beast",
+     "Old dragon"
+    ],
+    "a": 0,
+    "f": "From ancient Greek!",
+    "say": "Terrible lizard!"
+   },
+   {
+    "q": "What wiped out most dinosaurs?",
+    "o": [
+     "A volcano",
+     "An asteroid",
+     "An ice age"
+    ],
+    "a": 1,
+    "f": "About 66 million years ago!",
+    "say": "An asteroid!"
+   },
+   {
+    "q": "Which animals alive today are dinosaurs?",
+    "o": [
+     "Lizards",
+     "Birds",
+     "Crocodiles"
+    ],
+    "a": 1,
+    "f": "Birds evolved from dinosaurs!",
+    "say": "Birds! Scientists count birds as living dinosaurs."
+   }
+  ]
+ },
+ "oceanfacts": {
+  "kind": "facts",
+  "theme": "ocean",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 OCEAN FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three ocean facts that sound fake, but are true.",
+  "items": [
+   {
+    "t": "Some sharks glow in the dark",
+    "big": "GLOW",
+    "small": "lanternsharks make their own light",
+    "say": "Number one. Some sharks glow in the dark. Lanternsharks make their own light, deep in the ocean."
+   },
+   {
+    "t": "Sea otters have the densest fur",
+    "big": "UP TO 1 MILLION",
+    "small": "hairs per square inch",
+    "say": "Number two. Sea otters have the densest fur of any animal. Up to a million hairs per square inch."
+   },
+   {
+    "t": "The ocean makes half our oxygen",
+    "big": "HALF",
+    "small": "at least half of Earth's oxygen",
+    "say": "Number three. At least half of the oxygen on Earth is made in the ocean, by tiny drifting algae and bacteria called plankton."
+   }
+  ]
+ },
+ "science3": {
+  "kind": "quiz",
+  "theme": "teal",
+  "label": "SCIENCE QUIZ",
+  "sub": [
+   "CAN YOU",
+   "GET 3/3?"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Science quiz! Three questions. The last one surprises everyone.",
+  "items": [
+   {
+    "q": "What is the center of an atom called?",
+    "o": [
+     "Nucleus",
+     "Core",
+     "Shell"
+    ],
+    "a": 0,
+    "f": "Protons and neutrons live there!",
+    "say": "The nucleus!"
+   },
+   {
+    "q": "Which is faster?",
+    "o": [
+     "Sound",
+     "Light",
+     "They're equal"
+    ],
+    "a": 1,
+    "f": "Nearly a million times faster!",
+    "say": "Light! It's nearly a million times faster than sound."
+   },
+   {
+    "q": "What color is a sunset on Mars?",
+    "o": [
+     "Red",
+     "Blue",
+     "Green"
+    ],
+    "a": 1,
+    "f": "Mars dust makes sunsets blue!",
+    "say": "Blue! Dust on Mars makes its sunsets look blue."
+   }
+  ]
+ },
+ "babies5": {
+  "kind": "quiz",
+  "theme": "purple",
+  "label": "BABY ANIMALS",
+  "sub": [
+   "3 SECONDS",
+   "EACH!"
+  ],
+  "secs": 3,
+  "read": false,
+  "intro": "Baby animal quiz! Five questions, three seconds each. Go!",
+  "items": [
+   {
+    "q": "What is a baby kangaroo called?",
+    "o": [
+     "Joey",
+     "Cub",
+     "Pup"
+    ],
+    "a": 0,
+    "f": "It grows in a pouch!",
+    "say": "A joey!"
+   },
+   {
+    "q": "What is a baby horse called?",
+    "o": [
+     "Calf",
+     "Foal",
+     "Kid"
+    ],
+    "a": 1,
+    "f": "It can stand within hours!",
+    "say": "A foal!"
+   },
+   {
+    "q": "What is a baby frog called?",
+    "o": [
+     "Tadpole",
+     "Cub",
+     "Chick"
+    ],
+    "a": 0,
+    "f": "It starts life with a tail!",
+    "say": "A tadpole!"
+   },
+   {
+    "q": "What is a baby swan called?",
+    "o": [
+     "Gosling",
+     "Cygnet",
+     "Duckling"
+    ],
+    "a": 1,
+    "f": "A gosling is a baby goose!",
+    "say": "A cygnet!"
+   },
+   {
+    "q": "What is a baby hedgehog called?",
+    "o": [
+     "Hoglet",
+     "Piglet",
+     "Kitten"
+    ],
+    "a": 0,
+    "f": "Cutest name ever!",
+    "say": "A hoglet!"
+   }
+  ]
+ }
+}

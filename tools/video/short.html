@@ -49,7 +49,7 @@ function frame(t){
   let level=-1;for(let i=0;i<SEG.length;i++)if(t>=SEG[i].s)level=i;if(t>=SEG.at(-1).e)level=SEG.length;
   let shake=0;for(const g of SEG){const r=t-g.rv;if(r>=0&&r<.25)shake=14*(1-r/.25)*Math.sin(r*90)}
   x.save();x.translate(shake,0);bg(t,level);
-  if(t<INTRO){stroked(C.title[0],W/2,480,118,'#fff');x.font=`900 118px ${F}`;const w2=x.measureText(C.title[1]).width;stroked(C.title[1],W/2-80,620,118,'#ffc93c');text(C.titleEmoji,W/2-80+w2/2+100,615,120,'#000',400,E);
+  if(t<INTRO){const ts=Math.min(118,fit(C.title[1],W-300,118));stroked(C.title[0],W/2,480,118,'#fff');x.font=`900 ${ts}px ${F}`;const w2=x.measureText(C.title[1]).width;stroked(C.title[1],W/2-80,620,ts,'#ffc93c');text(C.titleEmoji,W/2-80+w2/2+40+ts*.5,615,ts*1.02,'#000',400,E);
     C.introEmoji.forEach((e,i)=>{const p=pop((t-.15-i*.12)*3);if(p<=0)return;const n=C.introEmoji.length,X=W/2+(i-(n-1)/2)*190,Y=980+Math.sin(t*4+i)*16;x.save();x.translate(X,Y);x.scale(p,p);text(e,0,0,150,'#000',400,E);x.restore()});
     pill(C.pill,1330,'#ffc93c','#1b1b3a',44);caption(C.items.length===3&&C.kind==='odd'?'Can your eyes beat the clock?':'Can you get them all?',0,t)}
   else if(level<SEG.length){const i=level,g=SEG[i],it=C.items[i],k=t-g.s;dots(t);pill(C.kind==='riddle'?`RIDDLE ${i+1}/${C.items.length}`:`LEVEL ${i+1}/${C.items.length}`,300,'#ffc93c','#1b1b3a',42);stroked(C.label,W/2,385,60,'#fff');

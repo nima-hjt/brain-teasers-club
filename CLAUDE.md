@@ -58,10 +58,17 @@ ready → play → results → rematch → disconnect.
 ## Videos (YouTube channels Brain Teasers + Wild Facts, Instagram, Facebook)
 - Owner's schedule: one Short daily at 6 pm, one long 16:9 video (~3 min) every 4 days at 12 pm. Not made for kids, no age
   restriction. Tracking links: /btc (Brain Teasers YouTube), /wildfacts, /fb, /ig (Instagram bio only).
-- Finished videos go in `Downloads\brain-teasers-club-repo\Brain Teasers\` (named by posting date).
-- ALWAYS update `Brain Teasers\Posting Plan - Brain Teasers.docx` after making videos: add each video's file name, scheduled
-  date/time, YouTube title, description (with chapters for long videos), tags, pinned comment, Instagram caption and
-  Facebook text; text only, no images. Generator: `tools/video/make_plan.py` (edit VIDEOS, re-run).
+- Finished videos go in `Downloads\brain-teasers-club-repo\Brain Teasers\` or `...\Wild Facts\` (named "Oct N - ..."). Never mix
+  the two channels.
+- ALWAYS update the posting plans after making videos: `Brain Teasers\Posting Plan - Brain Teasers.docx` and
+  `Wild Facts\Posting Plan - Wild Facts.docx`, both from `tools/video/make_plans.py` (BT / WF lists; long-video chapter
+  times in chapters.json). One self-contained section per upload in YouTube Studio order (file, title, description,
+  thumbnail, playlist, audience, tags, category, related video or end screen, schedule, pinned comment, Instagram and
+  Facebook text). Text only. Remove a video's entry once it is uploaded.
+- Wild Facts videos: `wf.html?f=wf.json&s=<name>` (Shorts: kind quiz | facts, octopus mascot) and
+  `wf.html?f=wf_long.json&s=<name>` (12-question 16:9 quiz); narration `say_wf.py <file.json> <name>` (voice af_bella).
+  Every fact is checked against reliable sources before export (a sailfish myth once had to be pulled).
+- Brain Teasers "Guess 20 X by Emoji" long videos: `gen_long.py <key>` writes `<key>.html` + narration from animals.html.
 - Making videos: `python tools/video/serve.py` (port 8768, PUT /out/<file>), narration with
   `tools/video/say_cfg.py <name> af_heart` (Kokoro, offline; model files in `.new/tts/`, not in git), then open
   `short.html?s=<name>` (configs in `shorts.json`, kinds emoji | riddle | odd) or `long.html` in the browser and run

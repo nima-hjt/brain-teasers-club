@@ -1,0 +1,422 @@
+{
+ "ocean12": {
+  "theme": "ocean",
+  "label": "OCEAN QUIZ",
+  "sub": "12 QUESTIONS",
+  "intro": "Ocean quiz! Twelve questions about the sea. Keep score, and see how many you get!",
+  "items": [
+   {
+    "q": "Which sea creature can reverse its age?",
+    "o": [
+     "Jellyfish",
+     "Starfish",
+     "Coral"
+    ],
+    "a": 0,
+    "f": "The immortal jellyfish!",
+    "say": "The jellyfish! One tiny kind can turn itself young again."
+   },
+   {
+    "q": "How long can a Greenland shark live?",
+    "o": [
+     "50 years",
+     "100 years",
+     "About 400 years"
+    ],
+    "a": 2,
+    "f": "Longest-lived known vertebrate!",
+    "say": "About four hundred years! No other animal with a backbone is known to live longer."
+   },
+   {
+    "q": "What is a group of fish called?",
+    "o": [
+     "A herd",
+     "A school",
+     "A flock"
+    ],
+    "a": 1,
+    "f": "Swimming together keeps them safe!",
+    "say": "A school!"
+   },
+   {
+    "q": "What is the deepest point in the ocean?",
+    "o": [
+     "Grand Canyon",
+     "Mariana Trench",
+     "Great Barrier Reef"
+    ],
+    "a": 1,
+    "f": "Almost 11 km deep!",
+    "say": "The Mariana Trench! Almost eleven kilometers deep."
+   },
+   {
+    "q": "What is the largest coral reef in the world?",
+    "o": [
+     "Red Sea Reef",
+     "Great Barrier Reef",
+     "Belize Reef"
+    ],
+    "a": 1,
+    "f": "You can see it from space!",
+    "say": "The Great Barrier Reef! You can even see it from space."
+   },
+   {
+    "q": "What do blue whales mostly eat?",
+    "o": [
+     "Fish",
+     "Krill",
+     "Seals"
+    ],
+    "a": 1,
+    "f": "Tonnes of krill every day!",
+    "say": "Krill! Tiny shrimp-like animals. They eat tonnes of it every day."
+   },
+   {
+    "q": "How many limbs does a squid have?",
+    "o": [
+     "Six",
+     "Eight",
+     "Ten"
+    ],
+    "a": 2,
+    "f": "8 arms + 2 long tentacles!",
+    "say": "Ten! Eight arms, plus two long tentacles."
+   },
+   {
+    "q": "Which fish can puff up like a balloon?",
+    "o": [
+     "Clownfish",
+     "Pufferfish",
+     "Tuna"
+    ],
+    "a": 1,
+    "f": "Most are very poisonous to eat!",
+    "say": "The pufferfish! And most are very poisonous to eat."
+   },
+   {
+    "q": "In seahorses, which parent carries the babies?",
+    "o": [
+     "The mother",
+     "The father",
+     "Both"
+    ],
+    "a": 1,
+    "f": "The dads give birth!",
+    "say": "The father! Seahorse dads give birth."
+   },
+   {
+    "q": "What is the largest sea turtle?",
+    "o": [
+     "Green turtle",
+     "Leatherback",
+     "Loggerhead"
+    ],
+    "a": 1,
+    "f": "Some weigh over 600 kg!",
+    "say": "The leatherback! Some weigh more than six hundred kilograms."
+   },
+   {
+    "q": "How much of Earth is covered by ocean?",
+    "o": [
+     "About 50%",
+     "About 70%",
+     "About 90%"
+    ],
+    "a": 1,
+    "f": "And most of it is unexplored!",
+    "say": "About seventy percent! And most of it is still unexplored."
+   },
+   {
+    "q": "How do most starfish eat?",
+    "o": [
+     "Suck food like a straw",
+     "Pushes its stomach out",
+     "Uses sharp teeth"
+    ],
+    "a": 1,
+    "f": "It digests food outside its body!",
+    "say": "It pushes its stomach out of its body, and digests its food outside!"
+   }
+  ]
+ },
+ "space12": {
+  "theme": "space",
+  "label": "SPACE QUIZ",
+  "sub": "12 QUESTIONS",
+  "intro": "Space quiz! Twelve questions about planets and stars. Keep score, and see how many you get!",
+  "items": [
+   {
+    "q": "How many planets are in our solar system?",
+    "o": [
+     "Seven",
+     "Eight",
+     "Nine"
+    ],
+    "a": 1,
+    "f": "Pluto became a dwarf planet in 2006!",
+    "say": "Eight! Pluto became a dwarf planet in two thousand six."
+   },
+   {
+    "q": "What is the closest star to Earth?",
+    "o": [
+     "Polaris",
+     "The Sun",
+     "Sirius"
+    ],
+    "a": 1,
+    "f": "The Sun is a star!",
+    "say": "The Sun! It's a star too."
+   },
+   {
+    "q": "Which planet has the most known moons?",
+    "o": [
+     "Jupiter",
+     "Saturn",
+     "Neptune"
+    ],
+    "a": 1,
+    "f": "More than 270 moons!",
+    "say": "Saturn! More than two hundred seventy moons."
+   },
+   {
+    "q": "Which planet is the hottest?",
+    "o": [
+     "Mercury",
+     "Venus",
+     "Mars"
+    ],
+    "a": 1,
+    "f": "Even hotter than Mercury!",
+    "say": "Venus! Its thick clouds trap the heat."
+   },
+   {
+    "q": "Which planet is called the Red Planet?",
+    "o": [
+     "Mars",
+     "Jupiter",
+     "Venus"
+    ],
+    "a": 0,
+    "f": "Its dust is full of rust!",
+    "say": "Mars! Its dust is full of rust."
+   },
+   {
+    "q": "Which planet spins on its side?",
+    "o": [
+     "Saturn",
+     "Uranus",
+     "Neptune"
+    ],
+    "a": 1,
+    "f": "Tilted almost 98 degrees!",
+    "say": "Uranus! It's tilted almost ninety eight degrees."
+   },
+   {
+    "q": "What is a shooting star really?",
+    "o": [
+     "A falling star",
+     "A space rock",
+     "A lightning flash"
+    ],
+    "a": 1,
+    "f": "Burning up in our air!",
+    "say": "A space rock, burning up in our air!"
+   },
+   {
+    "q": "What is the Milky Way?",
+    "o": [
+     "A galaxy",
+     "A star",
+     "A planet"
+    ],
+    "a": 0,
+    "f": "Our home galaxy!",
+    "say": "A galaxy! Our home galaxy."
+   },
+   {
+    "q": "Who first walked on the Moon?",
+    "o": [
+     "Buzz Aldrin",
+     "Neil Armstrong",
+     "Yuri Gagarin"
+    ],
+    "a": 1,
+    "f": "In 1969!",
+    "say": "Neil Armstrong, in nineteen sixty nine!"
+   },
+   {
+    "q": "Which planet has the Great Red Spot?",
+    "o": [
+     "Jupiter",
+     "Mars",
+     "Saturn"
+    ],
+    "a": 0,
+    "f": "A storm bigger than Earth!",
+    "say": "Jupiter! It's a storm bigger than Earth."
+   },
+   {
+    "q": "Which planet is farthest from the Sun?",
+    "o": [
+     "Uranus",
+     "Neptune",
+     "Pluto"
+    ],
+    "a": 1,
+    "f": "One year there = 165 Earth years!",
+    "say": "Neptune! One year there lasts a hundred sixty five Earth years."
+   },
+   {
+    "q": "What is the Sun mostly made of?",
+    "o": [
+     "Fire",
+     "Hydrogen",
+     "Iron"
+    ],
+    "a": 1,
+    "f": "Not fire at all!",
+    "say": "Hydrogen! It's not fire at all."
+   }
+  ]
+ },
+ "body12": {
+  "theme": "body",
+  "label": "HUMAN BODY QUIZ",
+  "sub": "12 QUESTIONS",
+  "intro": "Human body quiz! Twelve questions about you. Keep score, and see how many you get!",
+  "items": [
+   {
+    "q": "What is the largest organ of your body?",
+    "o": [
+     "Heart",
+     "Skin",
+     "Liver"
+    ],
+    "a": 1,
+    "f": "Up to 2 square meters of it!",
+    "say": "Your skin! Up to two square meters of it."
+   },
+   {
+    "q": "Where is the smallest bone in your body?",
+    "o": [
+     "Toe",
+     "Ear",
+     "Nose"
+    ],
+    "a": 1,
+    "f": "Smaller than a grain of rice!",
+    "say": "In your ear! It's smaller than a grain of rice."
+   },
+   {
+    "q": "How many teeth in a full adult set?",
+    "o": [
+     "28",
+     "32",
+     "36"
+    ],
+    "a": 1,
+    "f": "Including 4 wisdom teeth!",
+    "say": "Thirty two, including four wisdom teeth."
+   },
+   {
+    "q": "How many chambers does your heart have?",
+    "o": [
+     "Two",
+     "Four",
+     "Six"
+    ],
+    "a": 1,
+    "f": "Two on each side!",
+    "say": "Four! Two on each side."
+   },
+   {
+    "q": "Where is your longest bone?",
+    "o": [
+     "Arm",
+     "Leg",
+     "Back"
+    ],
+    "a": 1,
+    "f": "The thigh bone, the femur!",
+    "say": "In your leg! The thigh bone, called the femur."
+   },
+   {
+    "q": "What color is the blood inside your veins?",
+    "o": [
+     "Blue",
+     "Red",
+     "Purple"
+    ],
+    "a": 1,
+    "f": "Never blue, just darker red!",
+    "say": "Red! It's never blue, just a darker red."
+   },
+   {
+    "q": "What do your kidneys do?",
+    "o": [
+     "Filter blood",
+     "Pump air",
+     "Digest food"
+    ],
+    "a": 0,
+    "f": "About 150 liters a day!",
+    "say": "They filter your blood. About a hundred fifty liters a day!"
+   },
+   {
+    "q": "Which lung is smaller?",
+    "o": [
+     "Left",
+     "Right",
+     "Same size"
+    ],
+    "a": 0,
+    "f": "It makes room for your heart!",
+    "say": "The left one! It makes room for your heart."
+   },
+   {
+    "q": "Which part of your eye controls how much light gets in?",
+    "o": [
+     "Pupil",
+     "Iris",
+     "Lens"
+    ],
+    "a": 1,
+    "f": "The colored part!",
+    "say": "The iris! The colored part. The pupil is just the opening."
+   },
+   {
+    "q": "Which vitamin does your skin make from sunlight?",
+    "o": [
+     "Vitamin A",
+     "Vitamin C",
+     "Vitamin D"
+    ],
+    "a": 2,
+    "f": "Good for your bones!",
+    "say": "Vitamin D! It helps keep your bones strong."
+   },
+   {
+    "q": "Which blood type can be given to almost anyone?",
+    "o": [
+     "A positive",
+     "AB positive",
+     "O negative"
+    ],
+    "a": 2,
+    "f": "The universal donor!",
+    "say": "O negative! The universal donor."
+   },
+   {
+    "q": "Which organ can grow back after part is removed?",
+    "o": [
+     "Liver",
+     "Heart",
+     "Brain"
+    ],
+    "a": 0,
+    "f": "It can regrow to full size!",
+    "say": "The liver! It can grow back to full size."
+   }
+  ]
+ }
+}
