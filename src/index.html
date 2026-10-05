@@ -869,7 +869,11 @@ function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s}:null
 function buildReview(){
   const box=$("review");box.innerHTML="";box.hidden=true;$("reviewBtn").textContent="Review the puzzles";
   const two=S.mode==="pass";
+  // Only puzzles this player actually reached are reviewed; the rest stay unseen so they can come up fresh later.
+  const reached=i=>two?!!(pass.log1&&pass.log1[i]||S.log[i]):S.mode==="duel"?!!(duel&&duel.log[i]):!!S.log[i];
+  let hiddenCount=0;
   S.list.forEach((q,i)=>{
+    if(!reached(i)){hiddenCount++;return}
     const d=document.createElement("div");d.className="rv";
     let qh,ah;
     if(q.type==="odd"){
@@ -884,6 +888,8 @@ function buildReview(){
     d.innerHTML='<div class="n">'+(i+1)+'</div><div>'+qh+ah+'</div>';
     box.appendChild(d);
   });
+  if(hiddenCount){const n=document.createElement("p");n.className="muted";n.style.cssText="text-align:center;font-size:.9rem;margin:10px 0 0";
+    n.textContent=hiddenCount+(hiddenCount===1?" puzzle you didn't reach is":" puzzles you didn't reach are")+" kept hidden, so you can still play "+(hiddenCount===1?"it":"them")+" fresh later.";box.appendChild(n)}
 }
 $("reviewBtn").onclick=()=>{const r=$("review");r.hidden=!r.hidden;$("reviewBtn").textContent=r.hidden?"Review the puzzles":"Hide the puzzles";if(!r.hidden)r.scrollIntoView({behavior:"smooth",block:"start"})};
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}

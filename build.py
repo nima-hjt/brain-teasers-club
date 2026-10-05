@@ -110,7 +110,7 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v12";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v13";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;
