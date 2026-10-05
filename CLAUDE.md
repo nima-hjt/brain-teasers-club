@@ -31,7 +31,8 @@ Database rules (set in the Firebase console) only allow writes under rooms/{4-ch
 
 ## Not done yet
 - AdSense: set `ADSENSE_CLIENT` / `ADSENSE_SLOT` in src/index.html after approval; add the verification snippet.
-- Cloudflare Web Analytics beacon token (owner to provide).
+- Cloudflare Web Analytics: enable in the Pages project (Metrics → Web Analytics); Cloudflare injects the beacon
+  automatically, so there is no token in the code. The privacy page already describes it.
 - Tablet/laptop layout is a centred phone column (acceptable for now).
 
 ## Testing before pushing

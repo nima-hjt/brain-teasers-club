@@ -80,6 +80,8 @@ privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated
 <p>We use Google AdSense to show advertisements. Google and its partners may use cookies and similar technologies to serve ads based on your prior visits to this or other websites, and to measure ad performance. You can opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads">Google Ads Settings</a>, and learn how Google uses information from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Where required by law, you will be asked for consent before personalised ads are shown.</p>
 <h2>Hosting and logs</h2>
 <p>The site is served by a hosting provider that may record standard technical logs (such as IP address, browser type and pages requested) for security and performance. We do not use this data to identify you.</p>
+<h2>Analytics</h2>
+<p>We use Cloudflare Web Analytics to count visits and to see which pages are read and which websites (such as YouTube or a search engine) people arrive from. It does not use cookies or store anything on your device, and it does not identify individual visitors. See <a href="https://www.cloudflare.com/web-analytics/">Cloudflare Web Analytics</a> for details.</p>
 <h2>Children</h2>
 <p>The game is intended for a general audience and does not knowingly collect personal information from children.</p>
 <h2>Changes</h2>
