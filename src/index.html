@@ -456,11 +456,21 @@ function markSeen(list){const s=loadSeen();for(const q of list){const i=BANKS[q.
 try{Object.keys(localStorage).filter(k=>k.startsWith("btc-deck")).forEach(k=>localStorage.removeItem(k))}catch(e){} // old deck format
 function dayKey(back){const d=new Date();d.setDate(d.getDate()-back);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")}
 const dailyMemo={};
+// From DAILY_V2 on, a Daily never repeats a puzzle from the 30 Dailies before it (the old seeding let nearby dates
+// draw the same puzzles). Earlier dates keep the old draw so a Daily already played never changes.
+const DAILY_V2="2026-10-07";
+function shiftDay(day,k){const [y,m,d]=day.split("-").map(Number),t=new Date(y,m-1,d+k);return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")}
 function dailyKeys(day){ // the same draw the Daily makes for that date
   if(dailyMemo[day])return dailyMemo[day];
-  const rnd=mulberry32(seedFromString(day)),out=new Set();
+  const v2=day>=DAILY_V2,avoid=new Set();
+  if(v2){if(day>DAILY_V2&&!dailyMemo[shiftDay(day,-1)])for(let d=DAILY_V2;d<day;d=shiftDay(d,1))dailyKeys(d); // fill earlier days first, oldest to newest
+    for(let k=1;k<=30;k++)dailyKeys(shiftDay(day,-k)).forEach(x=>avoid.add(x))}
+  let h=seedFromString(day);if(v2){h=Math.imul(h^h>>>16,0x45d9f3b);h=Math.imul(h^h>>>16,0x45d9f3b);h=(h^h>>>16)>>>0}
+  const rnd=mulberry32(h),out=new Set();
   ["odd","emoji","logic","facts"].forEach((t,i)=>{const b=BANKS[t];
-    shuffle([...b.keys()].filter(j=>!b[j][ADDED_AT[t]]||b[j][ADDED_AT[t]]<=day),rnd).slice(0,[3,3,2,2][i]).forEach(j=>out.add(qkey(t,j)))});
+    let ids=shuffle([...b.keys()].filter(j=>!b[j][ADDED_AT[t]]||b[j][ADDED_AT[t]]<=day),rnd);
+    if(v2){const fresh=ids.filter(j=>!avoid.has(qkey(t,j)));if(fresh.length>=[3,3,2,2][i])ids=fresh}
+    ids.slice(0,[3,3,2,2][i]).forEach(j=>out.add(qkey(t,j)))});
   return dailyMemo[day]=out;
 }
 function pastDailyKeys(){const s=new Set();for(let k=1;k<=60;k++)dailyKeys(dayKey(k)).forEach(x=>s.add(x));return s}
@@ -498,7 +508,8 @@ function buildRound(mode,seed,rd,typesOverride,seenOverride){
     // The Daily ignores levels and skips puzzles whose "added" date is after today, so shipping new puzzles
     // (dated a day or two ahead) never changes a Daily someone is already playing.
     const day=todayKey();
-    types.forEach((t,i)=>{const bank=banks[t].filter(x=>!x[ADDED_AT[t]]||x[ADDED_AT[t]]<=day);list.push(...shuffle(bank,rnd).slice(0,counts[i]).map(p=>({type:t,data:p})))});
+    if(day>=DAILY_V2)list=[...dailyKeys(day)].map(k=>{const t=ALL.find(a=>a[0]===k[0]);return{type:t,data:banks[t][+k.slice(1)]}});
+    else types.forEach((t,i)=>{const bank=banks[t].filter(x=>!x[ADDED_AT[t]]||x[ADDED_AT[t]]<=day);list.push(...shuffle(bank,rnd).slice(0,counts[i]).map(p=>({type:t,data:p})))});
     list=shuffle(list,rnd);
   } else {
     // Slots: levels in rising order from the difficulty's mix, each given a puzzle type.
@@ -1162,15 +1173,18 @@ function readHash(){
 
 /* ---------- WIRING ---------- */
 document.querySelectorAll(".diffSeg button").forEach(b=>b.onclick=()=>{setDiff(b.dataset.diff);SFX.diff(b.dataset.diff)});
+// Building a round and starting the sound takes a moment on slow phones, so let the tap paint first (keeps INP low).
+let starting=false;
+function startSoon(...a){if(starting)return;starting=true;const go=()=>{if(!starting)return;starting=false;startRound(...a)};requestAnimationFrame(()=>setTimeout(go,0));setTimeout(go,150)}
 document.querySelectorAll(".mode,.hero").forEach(b=>b.onclick=()=>{
   const m=b.dataset.mode;
-  if(m==="daily"){const d=dailyDone();if(d){showDailyDone(d);return}return startRound("daily",daySeed())}
+  if(m==="daily"){const d=dailyDone();if(d){showDailyDone(d);return}return startSoon("daily",daySeed())}
   if(m==="solo")return show("custom");
   if(m==="live"){liveReset();liveUI("start");$("liveHint").textContent="One of you creates a room and sends the link or code. The other joins. You both play the same 10 puzzles at the same time and watch each other's score live.";return show("live")}
   if(m==="friends")return show("friends");
   if(m==="pass"||m==="duel"){twoMode=m;$("namesEyebrow").textContent=MODE_NAMES[m];$("namesHint").textContent=m==="pass"?"Player 1 goes first. Then hand the phone over and Player 2 gets the exact same puzzles.":"Lay the phone flat between you. Player 1 sits at the bottom, Player 2 across the table sees their half the right way up. First correct tap wins the point; a wrong tap locks you out of that puzzle.";return show("names")}
   if(m==="challenge")return openChallenge(newCode(),false);
-  startRound(m);
+  startSoon(m);
 });
 $("startPass").onclick=()=>{
   const names=[$("name1").value.trim()||"Player 1",$("name2").value.trim()||"Player 2"];
