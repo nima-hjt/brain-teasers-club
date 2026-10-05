@@ -65,6 +65,9 @@ about=f'''<main class="doc">{nav}<h1>About Brain Teasers Club</h1>
 <h2>Accuracy</h2>
 <p>Every animal fact in the game was checked against reference sources such as National Geographic, the Smithsonian, Guinness World Records and NOAA before publication, and we do not use invented statistics. If you spot a mistake, tell us in the comments of any Brain Teasers Club video.</p>
 <p><a href="privacy.html">Privacy policy</a> · <a href="facts.html">Animal facts</a></p></main>'''
+notfound=f'''<main class="doc">{nav}<h1>Page not found</h1>
+<p>That page doesn't exist. <a href="./">Go back to the game</a>.</p></main>'''
+open('dist/404.html','w').write(skeleton('Not found · Brain Teasers Club',notfound,extra_head=head_extra))
 open('dist/about.html','w').write(skeleton('About · Brain Teasers Club',about,extra_head=head_extra))
 
 privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated {today}</small></p>
@@ -96,7 +99,7 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v2";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v3";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;
