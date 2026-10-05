@@ -2162,5 +2162,889 @@
   "why": "A late rabbit with a watch, and the Mad Hatter's tea party",
   "lvl": 3,
   "added": "2026-10-07"
+ },
+ {
+  "q": "😈👠👗",
+  "a": "The Devil Wears Prada",
+  "cat": "Movie",
+  "wrong": [
+   "Rocky",
+   "Gravity",
+   "Speed"
+  ],
+  "why": "A devil in designer heels and clothes: The Devil Wears Prada.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐘👂✈️",
+  "a": "Dumbo",
+  "cat": "Movie",
+  "wrong": [
+   "Bambi",
+   "Fantasia",
+   "Pocahontas"
+  ],
+  "why": "The elephant who flies with his giant ears is Dumbo.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👱‍♀️🏰🍳",
+  "a": "Tangled",
+  "cat": "Movie",
+  "wrong": [
+   "Brave",
+   "Mulan",
+   "Bambi"
+  ],
+  "why": "Rapunzel's long blonde hair, her tower and her trusty frying pan: Tangled.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👨‍👩‍👧‍👦🦸",
+  "a": "The Incredibles",
+  "cat": "Movie",
+  "wrong": [
+   "Coco",
+   "Brave",
+   "Ratatouille"
+  ],
+  "why": "A whole family of superheroes: The Incredibles.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🏎️⚡🏁",
+  "a": "Cars",
+  "cat": "Movie",
+  "wrong": [
+   "Rocky",
+   "Grease",
+   "Up"
+  ],
+  "why": "Lightning McQueen, the race car with a lightning bolt, stars in Cars.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🎈🤡🌧️",
+  "a": "It",
+  "cat": "Movie",
+  "wrong": [
+   "Alien",
+   "Scream",
+   "Rocky"
+  ],
+  "why": "Pennywise the clown with his red balloon, seen in the rainy opening, is from It.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐉👧⚔️🏮",
+  "a": "Mulan",
+  "cat": "Movie",
+  "wrong": [
+   "Bambi",
+   "Tangled",
+   "Moana"
+  ],
+  "why": "A Chinese girl warrior with a sword and her little dragon Mushu: Mulan.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👑👵💂",
+  "a": "The Crown",
+  "cat": "TV show",
+  "wrong": [
+   "Friends",
+   "Lost",
+   "Seinfeld"
+  ],
+  "why": "The life of Britain's Queen: The Crown.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧟🧟🚶",
+  "a": "The Walking Dead",
+  "cat": "TV show",
+  "wrong": [
+   "Seinfeld",
+   "Frasier",
+   "Glee"
+  ],
+  "why": "Zombies on the move: The Walking Dead.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👫👫☕🛋️",
+  "a": "Friends",
+  "cat": "TV show",
+  "wrong": [
+   "Lost",
+   "Dexter",
+   "House"
+  ],
+  "why": "A group of pals on the couch at the Central Perk coffee shop: Friends.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🏢📄😐",
+  "a": "The Office",
+  "cat": "TV show",
+  "wrong": [
+   "Lost",
+   "Glee",
+   "Bones"
+  ],
+  "why": "A paper company and deadpan looks to the camera: The Office.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🟨👨‍👩‍👧‍👦🍩",
+  "a": "The Simpsons",
+  "cat": "TV show",
+  "wrong": [
+   "Seinfeld",
+   "Lost",
+   "Dexter"
+  ],
+  "why": "A yellow family and Homer's donuts: The Simpsons.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧽🍍🌊",
+  "a": "SpongeBob SquarePants",
+  "cat": "TV show",
+  "wrong": [
+   "Peppa Pig",
+   "The Smurfs",
+   "Scooby-Doo"
+  ],
+  "why": "A sponge who lives in a pineapple under the sea: SpongeBob SquarePants.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐟🐟🐟🌊",
+  "a": "Plenty of fish in the sea",
+  "cat": "Saying",
+  "wrong": [
+   "Practice makes perfect",
+   "Better late than never",
+   "Haste makes waste"
+  ],
+  "why": "Lots of fish in the ocean: there are plenty of other people to date.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⏰💰",
+  "a": "Time is money",
+  "cat": "Saying",
+  "wrong": [
+   "Love is blind",
+   "Knowledge is power",
+   "Less is more"
+  ],
+  "why": "Clock equals cash: time is money.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍎📅👨‍⚕️🚫",
+  "a": "An apple a day",
+  "cat": "Saying",
+  "wrong": [
+   "Curiosity killed the cat",
+   "Home sweet home",
+   "Time flies"
+  ],
+  "why": "An apple a day keeps the doctor away.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💨➡️🔥",
+  "a": "No smoke without fire",
+  "cat": "Saying",
+  "wrong": [
+   "Every dog has its day",
+   "Seeing is believing",
+   "Out of sight, out of mind"
+  ],
+  "why": "Where there's smoke, there's fire: rumors usually have some truth.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐷✈️",
+  "a": "When pigs fly",
+  "cat": "Saying",
+  "wrong": [
+   "Spill the beans",
+   "Hit the road",
+   "Bite your tongue"
+  ],
+  "why": "A flying pig means something that will never happen: when pigs fly.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍋🍋➡️🥤",
+  "a": "When life gives you lemons",
+  "cat": "Saying",
+  "wrong": [
+   "No pain, no gain",
+   "Easy come, easy go",
+   "Look before you leap"
+  ],
+  "why": "Lemons turned into a drink: when life gives you lemons, make lemonade.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🤫🥇",
+  "a": "Silence is golden",
+  "cat": "Saying",
+  "wrong": [
+   "Speak of the devil",
+   "Cross your fingers",
+   "Head over heels"
+  ],
+  "why": "Shh plus gold: silence is golden.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧈✈️",
+  "a": "Butterfly",
+  "cat": "Word",
+  "wrong": [
+   "Sunflower",
+   "Breakfast",
+   "Cupcake"
+  ],
+  "why": "Butter + fly = butterfly.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐱🚶",
+  "a": "Catwalk",
+  "cat": "Word",
+  "wrong": [
+   "Doghouse",
+   "Rainbow",
+   "Teapot"
+  ],
+  "why": "Cat + walk = catwalk, the fashion runway.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🦶🖨️",
+  "a": "Footprint",
+  "cat": "Word",
+  "wrong": [
+   "Earring",
+   "Toothpaste",
+   "Armchair"
+  ],
+  "why": "Foot + print = footprint.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💧🍂",
+  "a": "Waterfall",
+  "cat": "Word",
+  "wrong": [
+   "Firework",
+   "Snowball",
+   "Sunrise"
+  ],
+  "why": "Water + fall (autumn leaf) = waterfall.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👻✍️",
+  "a": "Ghostwriter",
+  "cat": "Word",
+  "wrong": [
+   "Moonlight",
+   "Firefly",
+   "Teacup"
+  ],
+  "why": "Ghost + writer = ghostwriter.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧱📄",
+  "a": "Wallpaper",
+  "cat": "Word",
+  "wrong": [
+   "Doorknob",
+   "Bathtub",
+   "Pillowcase"
+  ],
+  "why": "Wall + paper = wallpaper.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🆕📄",
+  "a": "Newspaper",
+  "cat": "Word",
+  "wrong": [
+   "Fireplace",
+   "Snowman",
+   "Toothbrush"
+  ],
+  "why": "New + paper = newspaper.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍁🏒🐻",
+  "a": "Canada",
+  "cat": "Place",
+  "wrong": [
+   "Brazil",
+   "Egypt",
+   "Italy"
+  ],
+  "why": "Maple leaf, ice hockey and bears: Canada.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐼🥟🏮",
+  "a": "China",
+  "cat": "Place",
+  "wrong": [
+   "Brazil",
+   "France",
+   "Kenya"
+  ],
+  "why": "Pandas, dumplings and red lanterns: China.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🌉🚋🌫️",
+  "a": "San Francisco",
+  "cat": "Place",
+  "wrong": [
+   "Miami",
+   "Las Vegas",
+   "Dallas"
+  ],
+  "why": "The Golden Gate Bridge, cable cars and famous fog: San Francisco.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍀🍺🎻",
+  "a": "Ireland",
+  "cat": "Place",
+  "wrong": [
+   "Spain",
+   "Egypt",
+   "Japan"
+  ],
+  "why": "Shamrock, a pint and fiddle music: Ireland.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐂💃🥘",
+  "a": "Spain",
+  "cat": "Place",
+  "wrong": [
+   "Sweden",
+   "Japan",
+   "Canada"
+  ],
+  "why": "Bulls, flamenco dancing and paella: Spain.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🌋🌺🏄",
+  "a": "Hawaii",
+  "cat": "Place",
+  "wrong": [
+   "Alaska",
+   "Texas",
+   "Sweden"
+  ],
+  "why": "Volcanoes, hibiscus flowers and surfing: Hawaii.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🗿🏝️",
+  "a": "Easter Island",
+  "cat": "Place",
+  "wrong": [
+   "Mount Everest",
+   "Grand Canyon",
+   "Sahara Desert"
+  ],
+  "why": "The giant stone moai heads stand on Easter Island.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🦀🍰",
+  "a": "Crab cake",
+  "cat": "Food",
+  "wrong": [
+   "Onion soup",
+   "Pork chops",
+   "Meatloaf"
+  ],
+  "why": "Crab + cake = crab cake.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧅💍",
+  "a": "Onion rings",
+  "cat": "Food",
+  "wrong": [
+   "French fries",
+   "Hash browns",
+   "Fish fingers"
+  ],
+  "why": "Onion + rings = onion rings.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "😈🥚",
+  "a": "Deviled eggs",
+  "cat": "Food",
+  "wrong": [
+   "Pork ribs",
+   "Corn bread",
+   "Fish tacos"
+  ],
+  "why": "Devil + eggs = deviled eggs.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍕🍍",
+  "a": "Hawaiian pizza",
+  "cat": "Food",
+  "wrong": [
+   "Lasagna",
+   "Garlic bread",
+   "Calzone"
+  ],
+  "why": "Pizza topped with pineapple is Hawaiian pizza.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🥔🧀🍁",
+  "a": "Poutine",
+  "cat": "Food",
+  "wrong": [
+   "Paella",
+   "Pad Thai",
+   "Goulash"
+  ],
+  "why": "Fries with cheese curds, from Canada: poutine.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍦🥪",
+  "a": "Ice cream sandwich",
+  "cat": "Food",
+  "wrong": [
+   "Apple crumble",
+   "Fruit salad",
+   "Rice pudding"
+  ],
+  "why": "Ice cream + sandwich = ice cream sandwich.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍫🍰🌋",
+  "a": "Lava cake",
+  "cat": "Food",
+  "wrong": [
+   "Carrot cake",
+   "Fruitcake",
+   "Cupcake"
+  ],
+  "why": "A chocolate cake with a molten centre that flows like a volcano: lava cake.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💚🦹🎄",
+  "a": "The Grinch",
+  "cat": "Character",
+  "wrong": [
+   "Garfield",
+   "Snoopy",
+   "Elmo"
+  ],
+  "why": "The green villain who stole Christmas: the Grinch.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐻🧥🍊",
+  "a": "Paddington Bear",
+  "cat": "Character",
+  "wrong": [
+   "Garfield",
+   "Kermit the Frog",
+   "Bugs Bunny"
+  ],
+  "why": "A bear in a duffle coat who loves orange marmalade: Paddington.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⚡🔨",
+  "a": "Thor",
+  "cat": "Character",
+  "wrong": [
+   "Hulk",
+   "Wolverine",
+   "Aquaman"
+  ],
+  "why": "The god of thunder with his hammer: Thor.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💪🥬⚓",
+  "a": "Popeye",
+  "cat": "Character",
+  "wrong": [
+   "Garfield",
+   "Mr. Bean",
+   "Homer Simpson"
+  ],
+  "why": "The sailor who gets strong from spinach: Popeye.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🟡⚡🐭",
+  "a": "Pikachu",
+  "cat": "Character",
+  "wrong": [
+   "Snoopy",
+   "Kermit the Frog",
+   "Sonic"
+  ],
+  "why": "A yellow electric mouse: Pikachu.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🦌🔴👃",
+  "a": "Rudolph",
+  "cat": "Character",
+  "wrong": [
+   "Frosty",
+   "Olaf",
+   "Garfield"
+  ],
+  "why": "The reindeer with the shiny red nose: Rudolph.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧚🔔",
+  "a": "Tinker Bell",
+  "cat": "Character",
+  "wrong": [
+   "Ariel",
+   "Pocahontas",
+   "Elsa"
+  ],
+  "why": "Fairy + bell = Tinker Bell.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "☔💃🎤",
+  "a": "Singin' in the Rain",
+  "cat": "Song",
+  "wrong": [
+   "Yesterday",
+   "Imagine",
+   "Hey Jude"
+  ],
+  "why": "Singing and dancing with an umbrella in the rain: Singin' in the Rain.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⬜🎄",
+  "a": "White Christmas",
+  "cat": "Song",
+  "wrong": [
+   "Imagine",
+   "Hello",
+   "Thriller"
+  ],
+  "why": "White + Christmas tree = White Christmas.",
+  "lvl": 1,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🔥💍",
+  "a": "Ring of Fire",
+  "cat": "Song",
+  "wrong": [
+   "Hey Jude",
+   "Let It Be",
+   "Respect"
+  ],
+  "why": "A ring made of fire: Johnny Cash's Ring of Fire.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🏆🙌🎤",
+  "a": "We Are the Champions",
+  "cat": "Song",
+  "wrong": [
+   "Yesterday",
+   "Hello",
+   "Thriller"
+  ],
+  "why": "A trophy and a victory cheer: Queen's We Are the Champions.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👁️🐅",
+  "a": "Eye of the Tiger",
+  "cat": "Song",
+  "wrong": [
+   "Imagine",
+   "Respect",
+   "Let It Be"
+  ],
+  "why": "Eye + tiger = Eye of the Tiger, the Rocky III anthem.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💔🏨",
+  "a": "Heartbreak Hotel",
+  "cat": "Song",
+  "wrong": [
+   "Jailhouse Rock",
+   "Hound Dog",
+   "Blue Suede Shoes"
+  ],
+  "why": "Broken heart + hotel = Elvis's Heartbreak Hotel.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧊🧊👶",
+  "a": "Ice Ice Baby",
+  "cat": "Song",
+  "wrong": [
+   "Thriller",
+   "Vogue",
+   "Wonderwall"
+  ],
+  "why": "Ice, ice, baby: Vanilla Ice's hit.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐷🕷️🕸️",
+  "a": "Charlotte's Web",
+  "cat": "Book",
+  "wrong": [
+   "Matilda",
+   "Peter Pan",
+   "Heidi"
+  ],
+  "why": "A pig saved by a spider who writes in her web: Charlotte's Web.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐛🍎🍐🍓",
+  "a": "The Very Hungry Caterpillar",
+  "cat": "Book",
+  "wrong": [
+   "Matilda",
+   "Heidi",
+   "Black Beauty"
+  ],
+  "why": "A caterpillar eating through one fruit after another: The Very Hungry Caterpillar.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐷👑🚜",
+  "a": "Animal Farm",
+  "cat": "Book",
+  "wrong": [
+   "Dracula",
+   "Emma",
+   "Dune"
+  ],
+  "why": "Pigs take power on a farm: Orwell's Animal Farm.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🌍🎈8️⃣0️⃣",
+  "a": "Around the World in 80 Days",
+  "cat": "Book",
+  "wrong": [
+   "Treasure Island",
+   "Little Women",
+   "Dracula"
+  ],
+  "why": "Circling the globe, famously by balloon in the films, in 80 days.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🎩🐱",
+  "a": "The Cat in the Hat",
+  "cat": "Book",
+  "wrong": [
+   "Matilda",
+   "Heidi",
+   "Dune"
+  ],
+  "why": "Dr. Seuss's cat wearing a tall hat: The Cat in the Hat.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⚔️🕊️",
+  "a": "War and Peace",
+  "cat": "Book",
+  "wrong": [
+   "Little Women",
+   "Great Expectations",
+   "Jane Eyre"
+  ],
+  "why": "Swords for war, a dove for peace: Tolstoy's War and Peace.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🏝️👣👨",
+  "a": "Robinson Crusoe",
+  "cat": "Book",
+  "wrong": [
+   "Oliver Twist",
+   "Black Beauty",
+   "Little Women"
+  ],
+  "why": "A castaway on an island who finds a footprint in the sand: Robinson Crusoe.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "✋⌚",
+  "a": "Stopwatch",
+  "cat": "Thing",
+  "wrong": [
+   "Teapot",
+   "Ladder",
+   "Umbrella"
+  ],
+  "why": "Stop + watch = stopwatch.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "☀️🕐",
+  "a": "Sundial",
+  "cat": "Thing",
+  "wrong": [
+   "Compass",
+   "Telescope",
+   "Lantern"
+  ],
+  "why": "Telling the time with the sun: a sundial.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🔥🎈🧺",
+  "a": "Hot air balloon",
+  "cat": "Thing",
+  "wrong": [
+   "Skateboard",
+   "Canoe",
+   "Kite"
+  ],
+  "why": "A flame heating a balloon with a basket below: hot air balloon.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🥚⏳",
+  "a": "Egg timer",
+  "cat": "Thing",
+  "wrong": [
+   "Toaster",
+   "Kettle",
+   "Blender"
+  ],
+  "why": "Egg + timer = egg timer.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "❄️🔮",
+  "a": "Snow globe",
+  "cat": "Thing",
+  "wrong": [
+   "Lava lamp",
+   "Wind chime",
+   "Music box"
+  ],
+  "why": "Snow inside a glass ball: a snow globe.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🏰🦘",
+  "a": "Bouncy castle",
+  "cat": "Thing",
+  "wrong": [
+   "Treehouse",
+   "Slide",
+   "Swing set"
+  ],
+  "why": "A castle you bounce on like a kangaroo: bouncy castle.",
+  "lvl": 2,
+  "added": "2026-10-07"
  }
 ]

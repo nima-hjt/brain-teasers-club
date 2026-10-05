@@ -1788,5 +1788,1025 @@
   "why": "Egg yolks are yellow, so neither sentence is true.",
   "lvl": 3,
   "added": "2026-10-07"
+ },
+ {
+  "q": "A log is cut into 4 pieces. Each cut takes 3 minutes. How long does it take in total?",
+  "a": "9 minutes",
+  "wrong": [
+   "12 minutes",
+   "6 minutes",
+   "15 minutes"
+  ],
+  "why": "4 pieces need only 3 cuts: 3 × 3 = 9.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A 10 m fence has a post every 2 m, with posts at both ends. How many posts?",
+  "a": "6",
+  "wrong": [
+   "5",
+   "4",
+   "7"
+  ],
+  "why": "10 ÷ 2 = 5 gaps, and there is one more post than gaps.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "You read pages 14 to 27 of a book, both included. How many pages did you read?",
+  "a": "14",
+  "wrong": [
+   "13",
+   "15",
+   "12"
+  ],
+  "why": "27 − 14 = 13, plus 1 because both ends count.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "12 coins, all nickels or dimes, total exactly $1. How many dimes?",
+  "a": "8",
+  "wrong": [
+   "6",
+   "4",
+   "10"
+  ],
+  "why": "8 dimes (80¢) + 4 nickels (20¢) = 12 coins, $1.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "One inch is 2.54 cm. How many centimetres are in one foot?",
+  "a": "30.48",
+  "wrong": [
+   "25.4",
+   "30",
+   "32.4"
+  ],
+  "why": "12 × 2.54 = 30.48.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many square centimetres are in one square metre?",
+  "a": "10,000",
+  "wrong": [
+   "100",
+   "1,000",
+   "1,000,000"
+  ],
+  "why": "100 cm × 100 cm = 10,000 cm².",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A die shows 1, 2 and 3 on its three visible faces. What do the three hidden faces add up to?",
+  "a": "15",
+  "wrong": [
+   "12",
+   "18",
+   "14"
+  ],
+  "why": "All six faces total 21; 21 − 6 = 15.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many edges does a cube have?",
+  "a": "12",
+  "wrong": [
+   "8",
+   "6",
+   "24"
+  ],
+  "why": "4 on top, 4 on the bottom and 4 upright ones.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many faces does a triangular prism have?",
+  "a": "5",
+  "wrong": [
+   "6",
+   "4",
+   "9"
+  ],
+  "why": "2 triangular ends plus 3 rectangular sides.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Draw both diagonals in a square. How many triangles of any size can you see?",
+  "a": "8",
+  "wrong": [
+   "4",
+   "6",
+   "10"
+  ],
+  "why": "4 small triangles, plus 4 halves each made of 2 small ones.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Flip two fair coins. What is the chance both land heads?",
+  "a": "1/4",
+  "wrong": [
+   "1/2",
+   "1/3",
+   "2/3"
+  ],
+  "why": "1/2 × 1/2 = 1/4 (HH out of HH, HT, TH, TT).",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A fair coin lands heads 5 times in a row. Chance the next flip is heads?",
+  "a": "1/2",
+  "wrong": [
+   "1/32",
+   "1/64",
+   "Less than 1/2"
+  ],
+  "why": "Coins have no memory; each flip is still 1/2.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Roll one die. What is the chance of getting a number greater than 4?",
+  "a": "1/3",
+  "wrong": [
+   "1/2",
+   "2/3",
+   "1/6"
+  ],
+  "why": "Only 5 and 6 work: 2 out of 6.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Roll two dice. Which total is the most likely?",
+  "a": "7",
+  "wrong": [
+   "6",
+   "12",
+   "8"
+  ],
+  "why": "7 can be made 6 ways, more than any other total.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Draw one card from a 52-card deck. Chance it's a face card (J, Q or K)?",
+  "a": "3/13",
+  "wrong": [
+   "1/4",
+   "1/13",
+   "4/13"
+  ],
+  "why": "12 face cards out of 52 = 3/13.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A bag has 3 red and 2 blue balls. Take out two at random. Chance both are red?",
+  "a": "3/10",
+  "wrong": [
+   "9/25",
+   "1/2",
+   "2/5"
+  ],
+  "why": "3/5 × 2/4 = 6/20 = 3/10.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The 3rd of a month is a Friday. What day is the 24th?",
+  "a": "Friday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Sunday"
+  ],
+  "why": "The 24th is 21 days later, exactly 3 weeks.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What date is exactly 3 weeks after March 25?",
+  "a": "April 15",
+  "wrong": [
+   "April 14",
+   "April 16",
+   "April 18"
+  ],
+  "why": "March 25 + 21 days: 6 days to March 31, then 15 more.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many days are in January, February and March of a non-leap year?",
+  "a": "90",
+  "wrong": [
+   "91",
+   "92",
+   "89"
+  ],
+  "why": "31 + 28 + 31 = 90.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which of these years was a leap year?",
+  "a": "2000",
+  "wrong": [
+   "1900",
+   "1800",
+   "2100"
+  ],
+  "why": "Century years are leap years only if divisible by 400.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "You buy a goat for $6, sell it for $8, buy it back for $10 and sell it for $12. Your profit?",
+  "a": "$4",
+  "wrong": [
+   "$2",
+   "$0",
+   "$6"
+  ],
+  "why": "You made $2 on each of the two deals.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which deal is cheaper per apple: 3 for $2 or 5 for $3?",
+  "a": "5 for $3",
+  "wrong": [
+   "3 for $2",
+   "They're the same",
+   "Can't tell"
+  ],
+  "why": "60¢ an apple versus about 67¢ an apple.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which of these is divisible by 9?",
+  "a": "5,832",
+  "wrong": [
+   "4,321",
+   "6,124",
+   "7,203"
+  ],
+  "why": "Its digits add to 18, a multiple of 9.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many prime numbers are there between 20 and 40?",
+  "a": "4",
+  "wrong": [
+   "3",
+   "5",
+   "6"
+  ],
+  "why": "23, 29, 31 and 37.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is the sum of all the whole numbers from 1 to 20?",
+  "a": "210",
+  "wrong": [
+   "200",
+   "220",
+   "190"
+  ],
+  "why": "20 × 21 ÷ 2 = 210.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which of these is a perfect square?",
+  "a": "196",
+  "wrong": [
+   "206",
+   "216",
+   "226"
+  ],
+  "why": "14 × 14 = 196. (216 is a cube, 6³.)",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is the last digit of 9 to the power 99?",
+  "a": "9",
+  "wrong": [
+   "1",
+   "3",
+   "7"
+  ],
+  "why": "Odd powers of 9 end in 9; even powers end in 1.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which word is spelled wrong in every dictionary?",
+  "a": "Wrong",
+  "wrong": [
+   "Misspelled",
+   "Dictionary",
+   "None"
+  ],
+  "why": "The word 'wrong' is always spelled W-R-O-N-G.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many letters of the alphabet come after T?",
+  "a": "6",
+  "wrong": [
+   "5",
+   "7",
+   "8"
+  ],
+  "why": "U, V, W, X, Y and Z.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Rearrange the letters of LEMNO. You get a kind of…",
+  "a": "Fruit",
+  "wrong": [
+   "Country",
+   "Animal",
+   "Colour"
+  ],
+  "why": "LEMNO unscrambles to LEMON (or MELON).",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What starts with E, ends with E, and usually contains only one letter?",
+  "a": "An envelope",
+  "wrong": [
+   "An eye",
+   "An eclipse",
+   "An eagle"
+  ],
+  "why": "It holds one letter, as in a piece of mail.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which word contains all five vowels A, E, I, O, U?",
+  "a": "Facetious",
+  "wrong": [
+   "Delicious",
+   "Ambitious",
+   "Generous"
+  ],
+  "why": "F-A-C-E-T-I-O-U-S has each vowel once.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which day of the week has the most letters in its name?",
+  "a": "Wednesday",
+  "wrong": [
+   "Thursday",
+   "Saturday",
+   "Tuesday"
+  ],
+  "why": "Wednesday has 9 letters; Thursday and Saturday have 8.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which month has the most letters in its name?",
+  "a": "September",
+  "wrong": [
+   "November",
+   "December",
+   "February"
+  ],
+  "why": "September has 9 letters; the others have 8.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is the 13th letter of the alphabet?",
+  "a": "M",
+  "wrong": [
+   "N",
+   "L",
+   "O"
+  ],
+  "why": "A-M is the first half of the 26 letters.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A woman shoots her husband, holds him underwater, then hangs him up. Later they dine out. How?",
+  "a": "She's a photographer",
+  "wrong": [
+   "It was a dream",
+   "He's a stuntman",
+   "She's a magician"
+  ],
+  "why": "She shot a photo, developed it in liquid and hung it to dry.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is so fragile that just saying its name breaks it?",
+  "a": "Silence",
+  "wrong": [
+   "Glass",
+   "A promise",
+   "A secret"
+  ],
+  "why": "Speaking the word breaks the silence.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A father and son crash. The surgeon says 'I can't operate, he's my son!' Who is the surgeon?",
+  "a": "His mother",
+  "wrong": [
+   "His stepfather",
+   "His uncle",
+   "A liar"
+  ],
+  "why": "The surgeon is a woman: the boy's mum.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which word sounds the same even after you remove four of its five letters?",
+  "a": "Queue",
+  "wrong": [
+   "Eight",
+   "Write",
+   "Aisle"
+  ],
+  "why": "Q-ueue: the letter Q sounds just like 'queue'.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "If you have it, you want to share it. If you share it, you no longer have it. What is it?",
+  "a": "A secret",
+  "wrong": [
+   "Money",
+   "Love",
+   "A joke"
+  ],
+  "why": "Once told, it isn't a secret any more.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A cowboy rides into town on Friday, stays three days, and leaves on Friday. How?",
+  "a": "His horse is Friday",
+  "wrong": [
+   "He stayed 3 weeks",
+   "Time zones",
+   "He left a week later"
+  ],
+  "why": "Friday is the horse's name, not the day.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What gets bigger the more you take away from it?",
+  "a": "A hole",
+  "wrong": [
+   "A debt",
+   "A shadow",
+   "A pile"
+  ],
+  "why": "Dig more out and the hole grows.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Before Mount Everest was discovered, what was the world's tallest mountain?",
+  "a": "Mount Everest",
+  "wrong": [
+   "K2",
+   "Kangchenjunga",
+   "Mont Blanc"
+  ],
+  "why": "It was still the tallest, just not yet measured.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How far can a dog run into a forest?",
+  "a": "Halfway",
+  "wrong": [
+   "All the way",
+   "Until it's tired",
+   "One mile"
+  ],
+  "why": "After halfway it is running out of the forest.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "In a one-storey house where everything is pink, what colour are the stairs?",
+  "a": "There are none",
+  "wrong": [
+   "Pink",
+   "White",
+   "Red"
+  ],
+  "why": "A one-storey house has no stairs.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Can a man legally marry his widow's sister?",
+  "a": "No, he's dead",
+  "wrong": [
+   "Yes",
+   "Only abroad",
+   "Only after a year"
+  ],
+  "why": "If he has a widow, he has died.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A bowl holds six apples. You take away four. How many apples do you have?",
+  "a": "4",
+  "wrong": [
+   "2",
+   "6",
+   "10"
+  ],
+  "why": "You have the four you took.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "An electric train heads north while the wind blows south. Which way does its smoke go?",
+  "a": "No smoke",
+  "wrong": [
+   "South",
+   "North",
+   "Straight up"
+  ],
+  "why": "Electric trains don't make smoke.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Box A says 'Gold isn't here.' B says 'Gold isn't here.' C says 'It's in B.' Only one is true. Gold is in?",
+  "a": "Box A",
+  "wrong": [
+   "Box B",
+   "Box C",
+   "Can't tell"
+  ],
+  "why": "Only gold in A leaves exactly one true sign (B's).",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "All bloops are razzies and all razzies are lazzies. Are all bloops lazzies?",
+  "a": "Yes",
+  "wrong": [
+   "No",
+   "Only some",
+   "Can't tell"
+  ],
+  "why": "Bloops sit inside razzies, which sit inside lazzies.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "All roses are flowers. Some flowers fade quickly. So do some roses fade quickly?",
+  "a": "Can't tell",
+  "wrong": [
+   "Yes",
+   "No",
+   "All of them do"
+  ],
+  "why": "The quick-fading flowers might not include any roses.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Jo finishes ahead of Kim but behind Lu. Max beats Lu. Who came last?",
+  "a": "Kim",
+  "wrong": [
+   "Jo",
+   "Lu",
+   "Max"
+  ],
+  "why": "Order: Max, Lu, Jo, Kim.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Knights always tell the truth; knaves always lie. Who could say 'I am a knave'?",
+  "a": "Nobody",
+  "wrong": [
+   "A knight",
+   "A knave",
+   "Either one"
+  ],
+  "why": "A knight would be lying; a knave would be telling the truth.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Who is your mother's brother's only sister?",
+  "a": "Your mother",
+  "wrong": [
+   "Your aunt",
+   "Your cousin",
+   "Your grandmother"
+  ],
+  "why": "Your uncle's only sister must be your mum.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A is B's brother. B is C's sister. C is D's father. What is A to D?",
+  "a": "Uncle",
+  "wrong": [
+   "Father",
+   "Brother",
+   "Grandfather"
+  ],
+  "why": "A is a brother of D's father.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many minutes are in one week?",
+  "a": "10,080",
+  "wrong": [
+   "8,640",
+   "1,440",
+   "10,800"
+  ],
+  "why": "60 × 24 × 7 = 10,080.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many hours are in the month of March?",
+  "a": "744",
+  "wrong": [
+   "720",
+   "732",
+   "768"
+  ],
+  "why": "31 days × 24 hours = 744.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A leap year is how many weeks long?",
+  "a": "52 weeks 2 days",
+  "wrong": [
+   "52 weeks 1 day",
+   "53 weeks",
+   "52 weeks exactly"
+  ],
+  "why": "366 = 52 × 7 + 2.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "You take a pill every other day, starting on the 1st. On what date is your 8th pill?",
+  "a": "The 15th",
+  "wrong": [
+   "The 16th",
+   "The 17th",
+   "The 8th"
+  ],
+  "why": "Pills on 1, 3, 5, 7, 9, 11, 13, 15.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many times a day do a clock's hour and minute hands overlap?",
+  "a": "22",
+  "wrong": [
+   "24",
+   "12",
+   "23"
+  ],
+  "why": "11 times every 12 hours; there's no overlap between 11 and 1.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What letter comes next: B, E, H, K, ?",
+  "a": "N",
+  "wrong": [
+   "M",
+   "O",
+   "L"
+  ],
+  "why": "Each letter jumps 3 places: K + 3 = N.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What comes next: 31, 28, 31, 30, 31, ?",
+  "a": "30",
+  "wrong": [
+   "31",
+   "28",
+   "29"
+  ],
+  "why": "Days in each month: June has 30.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What comes next: 6, 3, 10, 5, 16, 8, ?",
+  "a": "4",
+  "wrong": [
+   "24",
+   "2",
+   "17"
+  ],
+  "why": "Halve even numbers; triple odd ones and add 1.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many whole numbers have exactly three digits?",
+  "a": "900",
+  "wrong": [
+   "999",
+   "1,000",
+   "899"
+  ],
+  "why": "100 to 999 inclusive: 999 − 100 + 1 = 900.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Sam is 3 times as old as Pat. Together they are 48. How old is Sam?",
+  "a": "36",
+  "wrong": [
+   "32",
+   "16",
+   "12"
+  ],
+  "why": "Pat is 48 ÷ 4 = 12, so Sam is 36.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Three siblings are born 2 years apart. Their ages add up to 33. How old is the oldest?",
+  "a": "13",
+  "wrong": [
+   "11",
+   "15",
+   "12"
+  ],
+  "why": "The middle one is 33 ÷ 3 = 11; oldest is 13.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A price rises from $40 to $50. What is the percentage increase?",
+  "a": "25%",
+  "wrong": [
+   "20%",
+   "10%",
+   "50%"
+  ],
+  "why": "The $10 rise is measured against the $40 start.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A class has 25 pupils and 60% are girls. How many boys are there?",
+  "a": "10",
+  "wrong": [
+   "15",
+   "40",
+   "12"
+  ],
+  "why": "40% of 25 = 10.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A taxi charges $3 plus $2 per km. You pay $19. How far did you go?",
+  "a": "8 km",
+  "wrong": [
+   "9.5 km",
+   "9 km",
+   "7 km"
+  ],
+  "why": "($19 − $3) ÷ $2 = 8.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "You have $20 and save $5 every week. After how many weeks will you have $100?",
+  "a": "16",
+  "wrong": [
+   "20",
+   "15",
+   "17"
+  ],
+  "why": "You need $80 more: 80 ÷ 5 = 16.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Using 1¢, 5¢, 10¢ and 25¢ coins, what's the fewest coins that make 68¢?",
+  "a": "7",
+  "wrong": [
+   "6",
+   "8",
+   "5"
+  ],
+  "why": "25 + 25 + 10 + 5 + 1 + 1 + 1.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A loaf costs $3. A cake costs as much as 4 loaves. What do 2 cakes and 3 loaves cost?",
+  "a": "$33",
+  "wrong": [
+   "$27",
+   "$30",
+   "$36"
+  ],
+  "why": "2 × $12 + 3 × $3 = $24 + $9.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which distance is the longest?",
+  "a": "1 mile",
+  "wrong": [
+   "1.5 km",
+   "1,700 yards",
+   "5,000 feet"
+  ],
+  "why": "A mile is about 1,609 m; the others are all under 1,560 m.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "At which temperature do the Celsius and Fahrenheit scales read the same?",
+  "a": "−40°",
+  "wrong": [
+   "0°",
+   "32°",
+   "100°"
+  ],
+  "why": "−40 × 9/5 + 32 = −40.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A recipe needs 3/4 cup of flour for 6 people. How much for 8 people?",
+  "a": "1 cup",
+  "wrong": [
+   "1 1/4 cups",
+   "7/8 cup",
+   "1 1/2 cups"
+  ],
+  "why": "1/8 cup per person × 8 = 1 cup.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "On a 1:50,000 map, two towns are 4 cm apart. How far apart are they really?",
+  "a": "2 km",
+  "wrong": [
+   "20 km",
+   "200 m",
+   "5 km"
+  ],
+  "why": "4 × 50,000 = 200,000 cm = 2 km.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is 50 cm + 300 mm + 0.2 m?",
+  "a": "1 m",
+  "wrong": [
+   "80 cm",
+   "530 mm",
+   "3.5 m"
+  ],
+  "why": "50 cm + 30 cm + 20 cm = 100 cm.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many rectangles of any size are in a row of 3 squares?",
+  "a": "6",
+  "wrong": [
+   "3",
+   "4",
+   "5"
+  ],
+  "why": "3 singles, 2 doubles and 1 triple.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Cutting straight down, with no stacking, what's the most pieces 3 straight cuts can make of a pizza?",
+  "a": "7",
+  "wrong": [
+   "6",
+   "8",
+   "9"
+  ],
+  "why": "Each new cut crosses all earlier ones: 1 + 1 + 2 + 3 = 7.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Face north. Turn right, turn right again, then turn left. Which way do you face?",
+  "a": "East",
+  "wrong": [
+   "West",
+   "South",
+   "North"
+  ],
+  "why": "North → East → South → East.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A cube's edges are all doubled in length. Its volume becomes…",
+  "a": "8 times bigger",
+  "wrong": [
+   "2 times bigger",
+   "4 times bigger",
+   "6 times bigger"
+  ],
+  "why": "2 × 2 × 2 = 8.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do the interior angles of a hexagon add up to?",
+  "a": "720°",
+  "wrong": [
+   "540°",
+   "1,080°",
+   "360°"
+  ],
+  "why": "(6 − 2) × 180° = 720°.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which word looks exactly the same in a mirror held beside it?",
+  "a": "WOW",
+  "wrong": [
+   "DAD",
+   "BOB",
+   "NOON"
+  ],
+  "why": "W and O are symmetric left-to-right; D, B and N are not.",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is MCMXC in Roman numerals?",
+  "a": "1990",
+  "wrong": [
+   "2190",
+   "1910",
+   "1890"
+  ],
+  "why": "M (1000) + CM (900) + XC (90).",
+  "lvl": 2,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many 3-cent stamps are in a dozen?",
+  "a": "12",
+  "wrong": [
+   "4",
+   "36",
+   "3"
+  ],
+  "why": "A dozen of anything is 12.",
+  "lvl": 2,
+  "added": "2026-10-07"
  }
 ]

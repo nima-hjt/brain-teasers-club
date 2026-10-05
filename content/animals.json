@@ -2698,5 +2698,1125 @@
   "lvl": 3,
   "src": "https://pratt.duke.edu/news/glassfrogs-hide-red-blood-cells-their-liver-become-transparent/",
   "added": "2026-10-07"
+ },
+ {
+  "q": "Nine-banded armadillos usually give birth to what?",
+  "a": "Identical quadruplets",
+  "wrong": [
+   "A single pup",
+   "Non-identical twins",
+   "Litters of about ten"
+  ],
+  "why": "One fertilised egg splits into four genetically identical embryos.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://carnegiemnh.org/armadillo-identical-quadruplets-every-time/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What gives some sloths' fur a greenish tint?",
+  "a": "Algae growing in it",
+  "wrong": [
+   "Green skin underneath",
+   "Leaf juice they rub on",
+   "Chlorophyll in the hair"
+  ],
+  "why": "Algae grow in grooves in sloth hair, helping camouflage them in the canopy.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/node/6968",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A tarsier's eyes are so big that each one is larger than its what?",
+  "a": "Brain",
+  "wrong": [
+   "Whole head",
+   "Whole body",
+   "Tail"
+  ],
+  "why": "Each eye is about 16 mm across, bigger than the tarsier's brain.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://tumblr.amnh.org/post/187859074444/did-you-know-that-each-of-the-philippine-tarsiers/amp",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How does an aye-aye find grubs hidden inside wood?",
+  "a": "Taps and listens",
+  "wrong": [
+   "Echolocation clicks",
+   "Smells through bark",
+   "Senses their heat"
+  ],
+  "why": "It taps with its thin middle finger and listens to the echoes in the wood.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://www.edgeofexistence.org/mammals/species_info.php?id=16",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which ape has the longest gap between babies, about 7 to 9 years?",
+  "a": "Orangutan",
+  "wrong": [
+   "Chimpanzee",
+   "Gorilla",
+   "Bonobo"
+  ],
+  "why": "Orangutans have the longest interbirth interval of any great ape.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://ielc.libguides.com/sdzg/factsheets/orangutans/reproduction",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A giant anteater can flick its tongue up to about how often?",
+  "a": "150 times a minute",
+  "wrong": [
+   "10 times a minute",
+   "30 times a minute",
+   "1,000 times a minute"
+  ],
+  "why": "It must eat fast because the ants fight back with painful stings.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/mammals/facts/giant-anteater",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How does a platypus find prey with its eyes, ears and nose shut?",
+  "a": "Senses electric fields",
+  "wrong": [
+   "Echolocation",
+   "Heat sensing",
+   "Tasting the water"
+  ],
+  "why": "Its bill has about 40,000 electroreceptors that detect prey's muscle signals.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://www.amnh.org/explore/news-blogs/platypus-electroreception-hunting",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Elephants are thought to sense distant rumbles in the ground with what?",
+  "a": "Their feet",
+  "wrong": [
+   "Their tusks",
+   "Their tails",
+   "Their ears on the soil"
+  ],
+  "why": "Stanford research found seismic rumbles travel through the ground to receptors in their feet.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://news.stanford.edu/pr/01/elephants37.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The giant panda is a bear. What is the red panda?",
+  "a": "In a family of its own",
+  "wrong": [
+   "A small bear",
+   "A kind of fox",
+   "A kind of cat"
+  ],
+  "why": "Red pandas belong to their own family, Ailuridae, and are not close to giant pandas.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://www.discoverwildlife.com/animal-facts/mammals/red-panda-vs-giant-panda",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Male satin bowerbirds decorate their bowers mostly with which colour?",
+  "a": "Blue",
+  "wrong": [
+   "Red",
+   "White",
+   "Yellow"
+  ],
+  "why": "They collect blue feathers, flowers and even blue bottle tops and pegs.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://australian.museum/learn/animals/birds/satin-bowerbird/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "When nesting, many female hornbills do what?",
+  "a": "Seal themselves in a tree",
+  "wrong": [
+   "Nest on floating weeds",
+   "Lay eggs in a burrow",
+   "Leave eggs to the male"
+  ],
+  "why": "She plasters the tree-hole shut and the male passes food through a narrow slit.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.nparks.gov.sg/docs/default-source/resources/singapore-and-its-biodiversity/oriental-pied-hornbill-connect-dots-singapore-biodiversity-worksheet.pdf",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which songbird impales its prey on thorns or barbed wire?",
+  "a": "Shrike",
+  "wrong": [
+   "Wren",
+   "Robin",
+   "Starling"
+  ],
+  "why": "Its feet are too weak to hold prey, so it skewers it to tear it apart.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/animals/loggerhead-shrike",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Threatened in their burrow, young burrowing owls imitate what?",
+  "a": "A rattlesnake",
+  "wrong": [
+   "A barking dog",
+   "A hawk's scream",
+   "A buzzing bee"
+  ],
+  "why": "Their hissing call mimics a rattlesnake's rattle and scares predators off.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/birds/facts/burrowing-owl",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What happens to an Atlantic puffin's bright bill after breeding?",
+  "a": "Its outer plates shed",
+  "wrong": [
+   "It turns blue",
+   "It grows longer",
+   "It never changes"
+  ],
+  "why": "The colourful keratin plates slough off, leaving a smaller, duller bill.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.audubon.org/news/art-seduction-some-birds-exotic-breeding-attire-goes-beyond-flashy-feathers",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which New Zealand bird is the world's only alpine parrot?",
+  "a": "Kea",
+  "wrong": [
+   "Kakapo",
+   "Kaka",
+   "Kiwi"
+  ],
+  "why": "Kea live in the mountains of New Zealand's South Island.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://blog.doc.govt.nz/2014/09/17/photo-of-the-week-kea/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Why is one barn owl ear opening higher than the other?",
+  "a": "To pinpoint sounds",
+  "wrong": [
+   "To hear underwater",
+   "To balance in flight",
+   "To hear only one side"
+  ],
+  "why": "The offset ears let it judge whether a sound is above or below.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.owlpages.com/owls/articles.php?a=6",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which pelican catches fish by plunge-diving from the air?",
+  "a": "Brown pelican",
+  "wrong": [
+   "American white pelican",
+   "Great white pelican",
+   "Dalmatian pelican"
+  ],
+  "why": "Brown pelicans dive headfirst into the sea and scoop fish into their pouch.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.audubon.org/news/how-brown-pelicans-dive-after-fish-without-breaking-their-necks",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Unlike most birds, turkey vultures find carrion partly by what?",
+  "a": "Smell",
+  "wrong": [
+   "Echolocation",
+   "Infrared vision",
+   "Hearing flies"
+  ],
+  "why": "Turkey vultures have an unusually keen sense of smell as well as sharp eyes.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://insider.si.edu/2013/11/study-shows-turkey-vulture-doubly-blessed-with-acute-vision-and-sense-of-smell/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the world's northernmost penguin, living at the equator?",
+  "a": "Galapagos penguin",
+  "wrong": [
+   "Emperor penguin",
+   "King penguin",
+   "Little penguin"
+  ],
+  "why": "It lives only in the Galapagos, sometimes ranging north of the equator.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://www.birdlife.org/news/2017/04/11/the-penguin-that-paddles-in-paradise/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What covers a leatherback turtle's back instead of a hard shell?",
+  "a": "Rubbery, leathery skin",
+  "wrong": [
+   "Thick fur",
+   "Hard bony plates",
+   "Overlapping scales"
+  ],
+  "why": "It is the only sea turtle without scales and a hard shell; small bones lie under oily skin.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://www.fisheries.noaa.gov/species/leatherback-turtle",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The green sea turtle is named for the colour of what?",
+  "a": "Its body fat",
+  "wrong": [
+   "Its shell",
+   "Its eyes",
+   "Its eggs"
+  ],
+  "why": "Its fat and cartilage turn greenish from a diet of seagrass and algae.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://oceanservice.noaa.gov/facts/green-turtle.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The black mamba is named for the colour of which part?",
+  "a": "The inside of its mouth",
+  "wrong": [
+   "Its scales",
+   "Its eyes",
+   "Its venom"
+  ],
+  "why": "Its skin is olive to grey; it shows its blue-black mouth when threatened.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/reptiles/facts/black-mamba",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which venomous snake has the longest fangs, up to about 5 cm?",
+  "a": "Gaboon viper",
+  "wrong": [
+   "King cobra",
+   "Black mamba",
+   "Inland taipan"
+  ],
+  "why": "Gaboon vipers have fangs up to about 2 inches long.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.discoverwildlife.com/animal-facts/longest-fangs",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the longest venomous snake species?",
+  "a": "King cobra",
+  "wrong": [
+   "Black mamba",
+   "Gaboon viper",
+   "Eastern brown snake"
+  ],
+  "why": "King cobras can grow to more than 5 m long.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/70265-longest-venomous-snake",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A crocodile's closest living relatives are which animals?",
+  "a": "Birds",
+  "wrong": [
+   "Lizards",
+   "Turtles",
+   "Snakes"
+  ],
+  "why": "Crocodilians and birds are the only surviving archosaurs.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://news.ucsc.edu/2014/12/crocodile-genomes/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A Galapagos tortoise can go up to about how long without food or water?",
+  "a": "About a year",
+  "wrong": [
+   "About a week",
+   "About a month",
+   "About ten years"
+  ],
+  "why": "A slow metabolism and stored water let it survive long dry spells.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/reptiles/facts/galapagos-tortoise",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Many geckos cannot blink. How do they clean their eyes?",
+  "a": "They lick them",
+  "wrong": [
+   "They rub them on rocks",
+   "They cry salty tears",
+   "They shed eye scales daily"
+  ],
+  "why": "A clear scale covers each eye, and geckos wipe it with their tongue.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/animals/tokay-gecko",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Poison dart frogs raised in zoos are usually harmless. Why?",
+  "a": "Their toxins come from diet",
+  "wrong": [
+   "Zoos remove their glands",
+   "Captivity makes them calm",
+   "Poison forms only at night"
+  ],
+  "why": "Wild frogs get toxins from insects they eat; zoo food has none.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/center-species-survival/news/after-insect-detox-can-once-poisonous-frogs-get-their-spice-back",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Baby Surinam toads hatch out of what?",
+  "a": "Pockets in mum's back",
+  "wrong": [
+   "Mum's mouth",
+   "A floating foam nest",
+   "Dad's vocal sac"
+  ],
+  "why": "Eggs sink into the female's back skin and emerge as tiny toads.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/amphibians/s/surinam-toad/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Where did the now-extinct gastric-brooding frog raise its young?",
+  "a": "In its stomach",
+  "wrong": [
+   "In its vocal sac",
+   "On its back",
+   "In a mud nest"
+  ],
+  "why": "The female swallowed her eggs and later gave birth to froglets through her mouth.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.environment.gov.au/cgi-bin/sprat/public/publicspecies.pl?taxon_id=1909",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The blind cave salamander called the olm can live over how long?",
+  "a": "100 years",
+  "wrong": [
+   "10 years",
+   "25 years",
+   "500 years"
+  ],
+  "why": "A slow, low-energy life in caves gives it a record amphibian lifespan.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/science/article/the-olm-the-blind-cave-salamander-that-lives-to-100",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the largest frog in the world?",
+  "a": "Goliath frog",
+  "wrong": [
+   "American bullfrog",
+   "Cane toad",
+   "African bullfrog"
+  ],
+  "why": "The record goliath frog from Cameroon weighed about 3.7 kg.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/71035-largest-frog",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Eastern North American monarchs fly south to spend winter in which country?",
+  "a": "Mexico",
+  "wrong": [
+   "Brazil",
+   "Cuba",
+   "Canada"
+  ],
+  "why": "Almost all of them roost in oyamel fir forests in central Mexico's mountains.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.fws.gov/story/partnering-conserve-monarchs-across-north-america",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Where are a grasshopper's ears?",
+  "a": "On its abdomen",
+  "wrong": [
+   "On its antennae",
+   "Behind its eyes",
+   "On its wings"
+  ],
+  "why": "Its eardrum-like tympanal organs sit on the first abdominal segment.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.britannica.com/science/tympanal-organ",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which honeybees cannot sting at all?",
+  "a": "Drones (males)",
+  "wrong": [
+   "Workers",
+   "Queens",
+   "Guard bees"
+  ],
+  "why": "A stinger is a modified egg-laying tube, which males do not have.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://ccfruitandnuts.ucanr.edu/node/154982",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Why can't an adult atlas moth eat?",
+  "a": "It has no working mouth",
+  "wrong": [
+   "Its tongue is too long",
+   "It only drinks at night",
+   "Its wings block its head"
+  ],
+  "why": "Adults live off fat stored as caterpillars and survive only about a week.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.floridamuseum.ufl.edu/exhibits/blog/butterfly-moment-atlas-moth",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do honeypot ants store food for their colony?",
+  "a": "In swollen living ants",
+  "wrong": [
+   "In wax cells",
+   "In buried seed piles",
+   "In leaf parcels"
+  ],
+  "why": "Workers called repletes are filled until their abdomens swell like grapes.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://sdzwildlifeexplorers.org/node/528",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do some ants get from the aphids they guard?",
+  "a": "Sugary honeydew",
+  "wrong": [
+   "Silk for nests",
+   "Warmth in winter",
+   "Eggs to eat"
+  ],
+  "why": "Ants 'milk' aphids for honeydew and protect them from predators.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://bygl.osu.edu/taxonomy/term/2225",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "At peak season, a honeybee queen can lay up to about how many eggs a day?",
+  "a": "About 2,000",
+  "wrong": [
+   "About 20",
+   "About 200",
+   "About 200,000"
+  ],
+  "why": "The queen is the hive's only egg-layer, so she lays at a huge rate.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://extension.msstate.edu/newsletters/bugs-eye-view/2018/honey-bee-queen-vol-4-no-9",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do some Namib Desert beetles get a drink?",
+  "a": "Catch fog on their backs",
+  "wrong": [
+   "Dig for groundwater",
+   "Drink cactus sap",
+   "Suck dew from spiders"
+  ],
+  "why": "They lean into the morning fog so droplets collect and roll to their mouths.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784302/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do army ants build their nightly nests out of?",
+  "a": "Their own bodies",
+  "wrong": [
+   "Chewed wood",
+   "Mud and saliva",
+   "Silk threads"
+  ],
+  "why": "Hundreds of thousands of workers link legs to form a living nest called a bivouac.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.amentsoc.org/insects/glossary/terms/bivouac",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What gas in our breath helps mosquitoes find us from a distance?",
+  "a": "Carbon dioxide",
+  "wrong": [
+   "Oxygen",
+   "Nitrogen",
+   "Helium"
+  ],
+  "why": "Mosquitoes follow CO2 plumes upwind, then use skin odours and heat up close.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7898149/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is unusual about the glasswing butterfly's wings?",
+  "a": "They are see-through",
+  "wrong": [
+   "They glow at night",
+   "They are mirror-bright",
+   "They can fold like fans"
+  ],
+  "why": "Clear patches lack coloured scales, making the butterfly hard for predators to spot.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.floridamuseum.ufl.edu/exhibits/butterflies/glasswing/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do bumblebees warm up enough to fly on cold days?",
+  "a": "Shiver flight muscles",
+  "wrong": [
+   "Bask on dark rocks",
+   "Huddle in flowers",
+   "Rub their legs"
+  ],
+  "why": "Shivering heats the thorax to the roughly 30 C needed for flight.",
+  "cat": "Insects",
+  "lvl": 2,
+  "src": "https://www.fs.usda.gov/wildflowers/pollinators/pollinator-of-the-month/bombus_polaris.shtml",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "In humpback whales, which ones sing the long, complex songs?",
+  "a": "Males",
+  "wrong": [
+   "Females",
+   "Calves",
+   "Every adult"
+  ],
+  "why": "Only males sing the structured songs, mostly in breeding areas.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www2.gbrmpa.gov.au/news/whale-love-songs-echo-along-australias-humpback-highway",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Horseshoe crabs are more closely related to which animals than to crabs?",
+  "a": "Spiders and scorpions",
+  "wrong": [
+   "Lobsters and shrimp",
+   "Snails and clams",
+   "Sea stars"
+  ],
+  "why": "Despite the name they are not crustaceans; they are closer to arachnids.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://oceanservice.noaa.gov/facts/horseshoe-crab.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "After a moray eel bites prey, what pulls it into its throat?",
+  "a": "A second set of jaws",
+  "wrong": [
+   "Its tongue",
+   "Suction from its gills",
+   "Hooks on its lips"
+  ],
+  "why": "Pharyngeal jaws shoot forward from its throat to grab and drag prey down.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.smithsonianmag.com/smart-news/extra-set-hidden-jaws-drags-food-down-eels-throat-180978049/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Besides gripping, what can an octopus's suckers do?",
+  "a": "Taste what they touch",
+  "wrong": [
+   "See light and colour",
+   "Hear sounds",
+   "Squirt ink"
+  ],
+  "why": "Sensors in the suckers let the arms taste and identify prey by touch.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://news.harvard.edu/gazette/story/2020/10/octopus-suction-cups-hold-its-taste-and-touch-sensors/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A flying fish can glide above the waves for up to about how far?",
+  "a": "About 200 m",
+  "wrong": [
+   "About 2 m",
+   "About 20 m",
+   "About 2 km"
+  ],
+  "why": "Wing-like fins let it glide up to about 655 feet in one go.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/animals/fish/facts/flying-fish",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Unlike most whales, a beluga can do what?",
+  "a": "Turn its head",
+  "wrong": [
+   "Breathe underwater",
+   "Walk on ice",
+   "Sleep on land"
+  ],
+  "why": "Its neck vertebrae are not fused, so it can move its head side to side.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.thecanadianencyclopedia.ca/en/article/beluga-whale/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do walruses climb out of the water onto ice?",
+  "a": "Pull up with their tusks",
+  "wrong": [
+   "Leap out like seals",
+   "Ride up on waves",
+   "Use their tails"
+  ],
+  "why": "Their genus name Odobenus means 'tooth-walker'.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.pbs.org/wnet/nature/blog/walrus-fact-sheet",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Swordfish hunting in cold, deep water warm which body parts?",
+  "a": "Eyes and brain",
+  "wrong": [
+   "Fins and tail",
+   "Heart and gills",
+   "Sword and jaw"
+  ],
+  "why": "A heater organ beside the eyes keeps them 10 to 15 C above the water.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://news.uq.edu.au/2005-01-11-warm-eyes-give-deep-sea-predators-super-vision",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What helps clownfish live among stinging anemone tentacles?",
+  "a": "A coat of mucus",
+  "wrong": [
+   "Thick armoured scales",
+   "They swim too fast",
+   "They hold their breath"
+  ],
+  "why": "A special mucus layer keeps the anemone from stinging them.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/clownfish",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What does a hammerhead shark's wide head help it do?",
+  "a": "Scan for prey's electricity",
+  "wrong": [
+   "Ram open clams",
+   "Steer like a rudder only",
+   "Store extra oxygen"
+  ],
+  "why": "It spreads electrical sensors wide to find stingrays buried in sand.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://australian.museum/learn/animals/fishes/great-hammerhead-sphyrna-mokarran/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What shape are a cuttlefish's pupils?",
+  "a": "W-shaped",
+  "wrong": [
+   "Round",
+   "Star-shaped",
+   "Square"
+  ],
+  "why": "The W shape may help them see widely and control light.",
+  "cat": "Ocean",
+  "lvl": 2,
+  "src": "https://www.pbs.org/wnet/nature/blog/cuttlefish-fact-sheet/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the largest member of the deer family?",
+  "a": "Moose",
+  "wrong": [
+   "Red deer",
+   "Reindeer",
+   "White-tailed deer"
+  ],
+  "why": "Big Alaskan bulls can weigh about 600 kg and stand 2 m at the shoulder.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.britannica.com/animal/moose-mammal",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the largest fish in the world?",
+  "a": "Whale shark",
+  "wrong": [
+   "Great white shark",
+   "Basking shark",
+   "Ocean sunfish"
+  ],
+  "why": "Whale sharks are commonly about 12 m long; the biggest recorded was 18.8 m.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.nhm.ac.uk/discover/whale-sharks-worlds-biggest-shark.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the world's largest butterfly, with wings over 28 cm across?",
+  "a": "Queen Alexandra's birdwing",
+  "wrong": [
+   "Monarch",
+   "Blue morpho",
+   "Atlas moth"
+  ],
+  "why": "Females of this Papua New Guinea butterfly can top 28 cm in wingspan.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/largest-butterfly",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which jellyfish can have tentacles about 30 m long?",
+  "a": "Lion's mane jellyfish",
+  "wrong": [
+   "Moon jellyfish",
+   "Box jellyfish",
+   "Upside-down jellyfish"
+  ],
+  "why": "Its tentacles can stretch about as long as a blue whale.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://scripps.ucsd.edu/news/voyager-what-biggest-jellyfish",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the largest antelope in the world?",
+  "a": "Eland",
+  "wrong": [
+   "Gemsbok",
+   "Wildebeest",
+   "Greater kudu"
+  ],
+  "why": "Elands can weigh about 600 to 1,000 kg.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.awf.org/wildlife-conservation/eland",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The world's smallest primate, about 30 g, is a type of what?",
+  "a": "Mouse lemur",
+  "wrong": [
+   "Marmoset",
+   "Tarsier",
+   "Bushbaby"
+  ],
+  "why": "Madame Berthe's mouse lemur of Madagascar averages about 30 g.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/70419-smallest-primate-smallest-nocturnal-primate",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the most venomous fish in the world?",
+  "a": "Stonefish",
+  "wrong": [
+   "Lionfish",
+   "Pufferfish",
+   "Piranha"
+  ],
+  "why": "Venom-loaded spines on its back can deliver a deadly dose.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/69441-most-venomous-fish",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which animal makes the loudest sound, clicks up to about 236 dB?",
+  "a": "Sperm whale",
+  "wrong": [
+   "Blue whale",
+   "Howler monkey",
+   "Elephant"
+  ],
+  "why": "Sperm whales use these powerful clicks to echolocate prey in the deep.",
+  "cat": "Records",
+  "lvl": 2,
+  "src": "https://www.guinnessworldrecords.com/world-records/70669-loudest-animal-sound",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which body part does a platypus lack that most mammals have?",
+  "a": "A stomach",
+  "wrong": [
+   "A heart",
+   "Lungs",
+   "A liver"
+  ],
+  "why": "Its gullet joins straight to its intestines; it has no acid-making stomach.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/science/article/a-genetic-gastric-bypass",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Before a koala joey eats leaves, it eats 'pap'. What is pap?",
+  "a": "A special mum's poo",
+  "wrong": [
+   "Chewed bark",
+   "Pouch milk curds",
+   "Eucalyptus flowers"
+  ],
+  "why": "Pap carries gut microbes the joey needs to digest eucalyptus.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.australiangeographic.com.au/news/2022/07/pap-not-poop-the-gift-a-mother-koala-gives-her-joey",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A tongue-eating louse destroys a fish's tongue, then does what?",
+  "a": "Acts as its new tongue",
+  "wrong": [
+   "Eats its brain",
+   "Swims away",
+   "Lays eggs in its gills"
+  ],
+  "why": "It is the first known parasite to functionally replace a host's organ.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.smithsonianmag.com/science-nature/tongues-they-do-more-than-just-lick-167104125/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "When attacked, some sea cucumbers do what?",
+  "a": "Expel their insides",
+  "wrong": [
+   "Explode with ink",
+   "Grow sharp spines",
+   "Mimic a sea snake"
+  ],
+  "why": "They eject internal organs to distract predators, then regrow them.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/warty-sea-cucumber",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Where are a sea star's eyes?",
+  "a": "At the tip of each arm",
+  "wrong": [
+   "On its underside",
+   "In its centre",
+   "It has no eyes"
+  ],
+  "why": "Simple eyes on each arm tip help many sea stars find their way home.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.nationalgeographic.com/science/article/140107-starfish-sea-star-eyes-coral-reef-ocean-animal-science",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Why is the hoatzin nicknamed the 'stinkbird'?",
+  "a": "Leaves ferment in its gut",
+  "wrong": [
+   "It sprays like a skunk",
+   "It nests in dung",
+   "It eats rotting fish"
+  ],
+  "why": "Like a cow, it ferments leaves in its foregut, giving it a manure-like smell.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.worldlandtrust.org/news-and-stories/meet-the-amazons-smelliest-bird/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do kangaroo rats get water in the desert?",
+  "a": "From the seeds they eat",
+  "wrong": [
+   "Licking dew off cacti",
+   "Drinking from puddles",
+   "Absorbing it via skin"
+  ],
+  "why": "They can live without ever drinking, using water made from digesting seeds.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://www.desertmuseum.org/kids/oz/long-fact-sheets/krat.php",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How does a pufferfish puff itself up?",
+  "a": "Gulps water into its stomach",
+  "wrong": [
+   "Fills its swim bladder",
+   "Holds its breath",
+   "Grows extra fat"
+  ],
+  "why": "Its stretchy stomach can balloon the fish to several times its size.",
+  "cat": "Weird",
+  "lvl": 2,
+  "src": "https://ocean.si.edu/ocean-life/fish/pufferfishes-and-their-relatives",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What colour is the front part of a giraffe's tongue?",
+  "a": "Blue-black",
+  "wrong": [
+   "Bright pink",
+   "Yellow",
+   "Pale white"
+  ],
+  "why": "The dark colour may protect it from sunburn while feeding.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://giraffeconservation.org/facts-about-giraffe/how-long-is-a-giraffes-tongue-what-color-is-it/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which way does a wombat's pouch open?",
+  "a": "Backwards, to her rear",
+  "wrong": [
+   "Forwards, to her head",
+   "Sideways",
+   "Upward to her back"
+  ],
+  "why": "A rear-facing pouch keeps dirt out when the mother digs.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://www.environment.nsw.gov.au/topics/animals-and-plants/native-animals/native-animal-facts/land-mammals/wombats",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do sea otters often wrap around themselves to avoid drifting?",
+  "a": "Kelp",
+  "wrong": [
+   "Fishing nets",
+   "Their own tail",
+   "Driftwood"
+  ],
+  "why": "A kelp wrap anchors them while they rest; mothers wrap pups too.",
+  "cat": "Mammals",
+  "lvl": 2,
+  "src": "https://oceantoday.noaa.gov/seaotterkelphumans/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What colour are freshly laid emu eggs?",
+  "a": "Dark green",
+  "wrong": [
+   "Pure white",
+   "Pale blue",
+   "Speckled brown"
+  ],
+  "why": "The shiny eggs look a lot like avocados.",
+  "cat": "Birds",
+  "lvl": 2,
+  "src": "https://australian.museum/learn/animals/birds/emu/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How does an alligator snapping turtle lure fish into its mouth?",
+  "a": "A worm-like tongue lure",
+  "wrong": [
+   "A glowing shell",
+   "Bubbles from its nose",
+   "Scent from its claws"
+  ],
+  "why": "It lies still, mouth open, wiggling a red worm-shaped bit on its tongue.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/animals/alligator-snapping-turtle",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How can a snake swallow prey wider than its head?",
+  "a": "Its jaws are stretchy",
+  "wrong": [
+   "It dislocates its jaw",
+   "It crushes the skull",
+   "It has no ribs"
+  ],
+  "why": "The two halves of its lower jaw are joined by elastic ligament, not bone.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://www.nhm.ac.uk/discover/snakes-senses-stretchy-jaws-deadly-venom.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What lets a box turtle shut its shell almost completely?",
+  "a": "A hinge in its lower shell",
+  "wrong": [
+   "A sticky skin flap",
+   "A spring-loaded tail",
+   "Doors on its legs"
+  ],
+  "why": "Its hinged plastron closes front and back to seal in head and legs.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/animals/eastern-box-turtle",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What does the tuatara have on top of its head?",
+  "a": "A light-sensing 'third eye'",
+  "wrong": [
+   "A venom gland",
+   "A heat-sensing pit",
+   "A hidden ear"
+  ],
+  "why": "The parietal eye is not used for seeing but may sense day and season.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://animals.sandiegozoo.org/animals/tuatara",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A Komodo dragon can eat up to about how much of its weight in one meal?",
+  "a": "About 80%",
+  "wrong": [
+   "About 5%",
+   "About 20%",
+   "About 300%"
+  ],
+  "why": "Its stomach expands easily and it gulps large chunks of meat.",
+  "cat": "Reptiles",
+  "lvl": 2,
+  "src": "https://nationalzoo.si.edu/animals/komodo-dragon",
+  "added": "2026-10-07"
  }
 ]
