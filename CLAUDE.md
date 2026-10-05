@@ -10,8 +10,8 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - `build.py` — validates content (4 distinct options, no duplicate questions, strings only), writes `dist/`
   (game, about, facts, privacy, 404, manifest, sw.js, sitemap, icons from `assets/`). Bump the cache name in sw.js
   (`btc-vN`) when shipping changes players must pick up immediately.
-- YouTube tracking links: `build.py` also writes `dist/btc.html` and `dist/wildfacts.html` (copies of the game) so
-  brainteasersclub.app/btc and /wildfacts show as separate paths in Web Analytics. Shares use `shareBase()`,
+- Tracking links: `build.py` also writes `dist/btc.html`, `wildfacts.html` (YouTube), `fb.html` and `ig.html` (copies of
+  the game) so each source shows as its own path in Web Analytics. Shares use `shareBase()`,
   which strips those paths, the query and the hash.
 - Levels: every puzzle has `lvl` 1-3 (quick / needs a moment / tricky). `LEVEL_MIX` in src/index.html sets puzzles
   per level for a 10-puzzle round (easy 7/3/0, normal 3/5/2, hard 1/5/4, impossible 0/3/7) and rounds run easy → hard.

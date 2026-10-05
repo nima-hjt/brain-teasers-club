@@ -785,9 +785,9 @@ function answer(ok,btn,q,timeout){
   const id=S.id;nextT=setTimeout(()=>{if(S&&S.id===id)nextPuzzle()},ok?700:1400);
 }
 
-// Link used in shares: drops the hash, any query and the YouTube tracking paths (/btc, /wildfacts),
+// Link used in shares: drops the hash, any query and the tracking paths (/btc, /wildfacts, /fb, /ig),
 // so friends who open a shared link are not counted as YouTube visitors.
-function shareBase(){const u=new URL(location.href);u.hash="";u.search="";u.pathname=u.pathname.replace(/\/(btc|wildfacts)(\.html)?$/,"/");return u.href}
+function shareBase(){const u=new URL(location.href);u.hash="";u.search="";u.pathname=u.pathname.replace(/\/(btc|wildfacts|fb|ig)(\.html)?$/,"/");return u.href}
 
 function endRound(){
   clearInterval(timer);
