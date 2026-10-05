@@ -2278,5 +2278,425 @@
   "why": "The bubble's collapse makes a loud shockwave.",
   "cat": "Weird",
   "lvl": 2
+ },
+ {
+  "q": "A star-nosed mole can find and eat a morsel in as little as about how long?",
+  "a": "About 0.12 seconds",
+  "wrong": [
+   "About 1.2 seconds",
+   "About 3 seconds",
+   "About 10 seconds"
+  ],
+  "why": "Guinness rates it the fastest-eating mammal: a 2005 study timed food handling as fast as 120 milliseconds.",
+  "cat": "Mammals",
+  "lvl": 3,
+  "src": "https://www.guinnessworldrecords.com/world-records/fastest-eater-mammals",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Gene studies show the hippo's closest living relatives are which animals?",
+  "a": "Whales and dolphins",
+  "wrong": [
+   "Pigs",
+   "Rhinos",
+   "Elephants"
+  ],
+  "why": "DNA evidence places hippos as the closest living relatives of cetaceans, not pigs as once thought.",
+  "cat": "Mammals",
+  "lvl": 3,
+  "src": "https://science.psu.edu/news/gene-study-shows-whales-are-kin-hippos",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which animal has the densest fur, up to about a million hairs per square inch?",
+  "a": "Sea otter",
+  "wrong": [
+   "Polar bear",
+   "Musk ox",
+   "Arctic fox"
+  ],
+  "why": "Sea otters have no blubber and rely on fur of up to about a million hairs per square inch to stay warm.",
+  "cat": "Mammals",
+  "lvl": 3,
+  "src": "https://www.guinnessworldrecords.com/world-records/77983-densest-fur",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which small furry mammal is one of the elephant's closest living relatives?",
+  "a": "Rock hyrax",
+  "wrong": [
+   "Wombat",
+   "Guinea pig",
+   "Marmot"
+  ],
+  "why": "Despite looking like a rodent, the rock hyrax shares toe, tooth and skull features with elephants.",
+  "cat": "Mammals",
+  "lvl": 3,
+  "src": "https://www.smithsonianmag.com/science-nature/what-in-the-world-is-a-rock-hyrax-89077364/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which bird can enter a hibernation-like state lasting weeks?",
+  "a": "Common poorwill",
+  "wrong": [
+   "Snowy owl",
+   "Rock ptarmigan",
+   "Barn swallow"
+  ],
+  "why": "The poorwill can stay in deep torpor for weeks, longer than any other bird known.",
+  "cat": "Birds",
+  "lvl": 3,
+  "src": "https://www.audubon.org/news/some-birds-enter-hibernation-state-called-torpor-survive-winters-chill",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which bird uses echolocation clicks to fly through pitch-dark caves?",
+  "a": "Oilbird",
+  "wrong": [
+   "Barn owl",
+   "Kakapo",
+   "Nightjar"
+  ],
+  "why": "Oilbirds roost in caves and navigate the dark with bursts of clicks that humans can hear.",
+  "cat": "Birds",
+  "lvl": 3,
+  "src": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5451837/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which New Guinea songbird carries poison in its feathers and skin?",
+  "a": "Hooded pitohui",
+  "wrong": [
+   "Bird of paradise",
+   "Kookaburra",
+   "Lyrebird"
+  ],
+  "why": "The hooded pitohui holds batrachotoxins, likely from the beetles it eats, the same poison as some dart frogs.",
+  "cat": "Birds",
+  "lvl": 3,
+  "src": "https://www.mcgill.ca/oss/article/did-you-know/pitohui-bird-contains-deadly-batrachotoxin",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which bird eats mainly bones rather than meat?",
+  "a": "Bearded vulture",
+  "wrong": [
+   "Griffon vulture",
+   "Golden eagle",
+   "Marabou stork"
+  ],
+  "why": "Bearded vultures live mostly on bones, dropping big ones onto rocks to crack them.",
+  "cat": "Birds",
+  "lvl": 3,
+  "src": "https://www.audubon.org/magazine/bone-eating-bearded-vulture-reclaiming-europes-skies",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A kiwi's egg can weigh up to about what share of the mother's weight?",
+  "a": "About 20%",
+  "wrong": [
+   "About 2%",
+   "About 5%",
+   "About 50%"
+  ],
+  "why": "One kiwi egg can reach about 20 percent of the female's weight, huge for a bird.",
+  "cat": "Birds",
+  "lvl": 3,
+  "src": "https://animals.sandiegozoo.org/animals/kiwi",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The gharial is named after a bump on males' snouts. What does it resemble?",
+  "a": "A clay pot",
+  "wrong": [
+   "A bell",
+   "A drum",
+   "A lotus bud"
+  ],
+  "why": "Males grow a bulbous 'ghara', named after the Indian pot it resembles.",
+  "cat": "Reptiles",
+  "lvl": 3,
+  "src": "https://nationalzoo.si.edu/animals/gharial",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Besides the USA, which country is home to a wild alligator species?",
+  "a": "China",
+  "wrong": [
+   "Brazil",
+   "India",
+   "Australia"
+  ],
+  "why": "There are only two alligator species: the American alligator and the critically endangered Chinese alligator.",
+  "cat": "Reptiles",
+  "lvl": 3,
+  "src": "https://stlzoo.org/animals/reptiles/alligators-crocodile/chinese-alligator",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The male nano-chameleon, maybe the tiniest reptile, has a body about how long?",
+  "a": "About 13.5 mm",
+  "wrong": [
+   "About 4 mm",
+   "About 40 mm",
+   "About 90 mm"
+  ],
+  "why": "Found in Madagascar in 2021, the male's body is about 13.5 mm, small enough to sit on a fingertip.",
+  "cat": "Reptiles",
+  "lvl": 3,
+  "src": "https://www.nationalgeographic.com/animals/article/tiny-chameleon-smallest-reptile-discovered-madagascar",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Flip a hognose snake that is playing dead onto its belly. What does it do?",
+  "a": "Rolls onto its back again",
+  "wrong": [
+   "Bites straight away",
+   "Flees at top speed",
+   "Sheds its skin"
+  ],
+  "why": "The 'dead' snake rolls back over, the only sign that it is really still alive.",
+  "cat": "Reptiles",
+  "lvl": 3,
+  "src": "https://dnr.sc.gov/wildlife/snakes/snakes8.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do Cyprian honeybees kill a hornet that attacks their hive?",
+  "a": "Pile on and suffocate it",
+  "wrong": [
+   "Sting it to death",
+   "Seal it in wax",
+   "Spray it with acid"
+  ],
+  "why": "A ball of bees piles on, blocking the hornet's breathing holes and heating it to about 46 C; suffocation does most of the work.",
+  "cat": "Insects",
+  "lvl": 3,
+  "src": "https://www.nationalgeographic.com/science/article/mobs-of-honeybees-suffocate-hornets-to-death",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Where is a praying mantis's single ear?",
+  "a": "In the middle of its chest",
+  "wrong": [
+   "On top of its head",
+   "On its front legs",
+   "At its abdomen tip"
+  ],
+  "why": "Most mantises have one ear deep in the centre of the thorax, the only animals known to have just one ear.",
+  "cat": "Insects",
+  "lvl": 3,
+  "src": "https://www.nwf.org/Magazines/National-Wildlife/2010/How-the-Praying-Mantis-Hears",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "When their nest floods, how do fire ant colonies survive?",
+  "a": "Link into floating rafts",
+  "wrong": [
+   "Seal the nest with mud",
+   "Burrow deeper",
+   "Fly to high ground"
+  ],
+  "why": "Fire ants grip each other's legs and jaws to form waterproof living rafts that can float for weeks.",
+  "cat": "Insects",
+  "lvl": 3,
+  "src": "https://nationalgeographic.com/science/article/fire-ants-assemble-into-living-waterproof-rafts",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which insect's sting tops Schmidt's pain index at 4.0+?",
+  "a": "Bullet ant",
+  "wrong": [
+   "Honeybee",
+   "Red fire ant",
+   "Yellowjacket"
+  ],
+  "why": "Guinness lists the bullet ant's sting as the most painful, rated 4.0+ by entomologist Justin Schmidt.",
+  "cat": "Insects",
+  "lvl": 3,
+  "src": "https://www.guinnessworldrecords.com/world-records/113025-most-painful-insect-sting",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do male white-spotted pufferfish build on the seafloor to woo females?",
+  "a": "Sand circles ~2 m wide",
+  "wrong": [
+   "Bubble nests",
+   "Coral towers",
+   "Seaweed bowers"
+  ],
+  "why": "Males sculpt patterned sand circles with their fins; females lay eggs in the centre.",
+  "cat": "Ocean",
+  "lvl": 3,
+  "src": "https://resou.osaka-u.ac.jp/en/research/2018/20180830_1",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "In a clownfish group, what happens if the breeding female dies?",
+  "a": "Largest male turns female",
+  "wrong": [
+   "The group disbands",
+   "All males stop breeding",
+   "They leave the anemone"
+  ],
+  "why": "Clownfish can change sex: the largest remaining member becomes the new female.",
+  "cat": "Ocean",
+  "lvl": 3,
+  "src": "https://www.britannica.com/animal/common-clown-fish",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many eyes does a box jellyfish have?",
+  "a": "24",
+  "wrong": [
+   "2",
+   "8",
+   "60"
+  ],
+  "why": "Box jellyfish have 24 eyes of four kinds, including camera-type eyes with lenses.",
+  "cat": "Ocean",
+  "lvl": 3,
+  "src": "https://www.sciencedaily.com/releases/2011/04/110428123938.htm",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which deep-sea fish has a see-through head that its eyes rotate inside?",
+  "a": "Barreleye",
+  "wrong": [
+   "Anglerfish",
+   "Gulper eel",
+   "Viperfish"
+  ],
+  "why": "The barreleye's tubular eyes turn within a transparent fluid-filled shield to look up or forward.",
+  "cat": "Ocean",
+  "lvl": 3,
+  "src": "https://www.mbari.org/news/news_releases/2009/barreleye/barreleye.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do many parrotfish wrap themselves in to sleep at night?",
+  "a": "A mucus cocoon",
+  "wrong": [
+   "Seaweed",
+   "Sand",
+   "Sponge pieces"
+  ],
+  "why": "They blow a mucus cocoon from their mouths that helps keep blood-sucking parasites away.",
+  "cat": "Ocean",
+  "lvl": 3,
+  "src": "https://www.nationalgeographic.com/science/article/parrotfish-sleep-in-a-mosquito-net-made-of-mucus",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A bar-tailed godwit set the nonstop bird flight record. About how far?",
+  "a": "About 13,560 km",
+  "wrong": [
+   "About 3,500 km",
+   "About 7,000 km",
+   "About 25,000 km"
+  ],
+  "why": "In 2022 a juvenile godwit flew from Alaska to Tasmania in about 11 days without stopping.",
+  "cat": "Records",
+  "lvl": 3,
+  "src": "https://www.guinnessworldrecords.com/world-records/86385-longest-non-stop%20-migration%20-by-a-bird",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is the smallest land mammal, weighing only about 2 g?",
+  "a": "Etruscan shrew",
+  "wrong": [
+   "Harvest mouse",
+   "Pygmy marmoset",
+   "Hazel dormouse"
+  ],
+  "why": "Guinness lists this thumb-sized shrew, about 1.5 to 2.6 g, as the smallest mammal on land.",
+  "cat": "Records",
+  "lvl": 3,
+  "src": "https://www.guinnessworldrecords.com/world-records/80867-smallest-mammal-on-land",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The strongest insect, a dung beetle, can pull about how many times its weight?",
+  "a": "Over 1,100 times",
+  "wrong": [
+   "About 50 times",
+   "About 200 times",
+   "About 10,000 times"
+  ],
+  "why": "The strongest Onthophagus taurus beetle tested pulled 1,141 times its own body weight.",
+  "cat": "Records",
+  "lvl": 3,
+  "src": "https://qmul.ac.uk/sbbs/news/items/super-bug-worlds-strongest-insect-revealed-by-dr-rob-knell.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "The deepest fish ever filmed, a snailfish in 2022, was at about what depth?",
+  "a": "About 8,300 m",
+  "wrong": [
+   "About 3,000 m",
+   "About 5,500 m",
+   "About 10,900 m"
+  ],
+  "why": "A snailfish was filmed at 8,336 m in a trench off Japan, the deepest fish on record.",
+  "cat": "Records",
+  "lvl": 3,
+  "src": "https://nhm.ac.uk/discover/news/2023/april/deepest-ever-fish-filmed-depth-8336-metres.html",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "For its size, the loudest animal known is a tiny what?",
+  "a": "Water boatman",
+  "wrong": [
+   "Cicada",
+   "Tree frog",
+   "Bumblebee"
+  ],
+  "why": "The tiny water boatman Micronecta scholtzi sings at up to about 99 decibels to attract mates.",
+  "cat": "Weird",
+  "lvl": 3,
+  "src": "https://sciencedaily.com/releases/2011/07/110701121519.htm",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What does the sea slug Elysia chlorotica steal from the algae it eats?",
+  "a": "Chloroplasts",
+  "wrong": [
+   "Venom cells",
+   "Camouflage pigment",
+   "Spores"
+  ],
+  "why": "It keeps the algae's chloroplasts and can live for months on photosynthesis, like a plant.",
+  "cat": "Weird",
+  "lvl": 3,
+  "src": "https://www.smithsonianmag.com/smart-news/green-sea-slug-steals-photosynthesizing-power-algae-it-eats-180954147/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What do Osedax 'zombie worms' feed on?",
+  "a": "Bones of dead whales",
+  "wrong": [
+   "Coral polyps",
+   "Volcanic vent gas",
+   "Shark skin"
+  ],
+  "why": "With no mouth or stomach, they root into whale bones and digest fats with help from bacteria.",
+  "cat": "Weird",
+  "lvl": 3,
+  "src": "https://www.mbari.org/whale-carcass-yields-bone-devouring-worms/",
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How do glassfrogs become more see-through while they sleep?",
+  "a": "Hide blood cells in liver",
+  "wrong": [
+   "Drain water from skin",
+   "Stop their hearts",
+   "Shed pigment cells"
+  ],
+  "why": "Sleeping glassfrogs pack nearly 90% of their red blood cells into the liver, then release them at night.",
+  "cat": "Weird",
+  "lvl": 3,
+  "src": "https://pratt.duke.edu/news/glassfrogs-hide-red-blood-cells-their-liver-become-transparent/",
+  "added": "2026-10-07"
  }
 ]

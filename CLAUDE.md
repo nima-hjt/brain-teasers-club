@@ -13,9 +13,14 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - YouTube tracking links: `build.py` also writes `dist/btc.html` and `dist/wildfacts.html` (copies of the game) so
   brainteasersclub.app/btc and /wildfacts show as separate paths in Web Analytics. Shares use `shareBase()`,
   which strips those paths, the query and the hash.
-- No-repeat order: unseeded rounds (Play Solo) deal from a per-type shuffled deck in localStorage (`btc-deck-<type>`,
-  `deckPick` in src/index.html). Adding or removing puzzles changes that day's Daily, resets players' decks for that
-  type and changes the Live Match bank version, so ship those after midnight; fixing a puzzle in place does none of that.
+- Levels: every puzzle has `lvl` 1-3 (quick / needs a moment / tricky). `LEVEL_MIX` in src/index.html sets puzzles
+  per level for a 10-puzzle round (easy 7/3/0, normal 3/5/2, hard 1/5/4, impossible 0/3/7) and rounds run easy → hard.
+  The Daily ignores levels.
+- New puzzles: append them (never delete or reorder; fix in place instead) and give each `"added": "YYYY-MM-DD"` at
+  least two days ahead. The Daily skips puzzles added after its date, so shipping never changes a Daily in progress.
+- No-repeat order: unseeded rounds (Play Solo) deal from shuffled decks per type and level in localStorage
+  (`btc-deck2-<type><lvl>`, `deckPick`); new puzzles are shuffled into the remaining deck. Adding puzzles changes the
+  Live Match bank version (both players need the same build) and the puzzles behind old Challenge codes.
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
 

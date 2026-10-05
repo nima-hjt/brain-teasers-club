@@ -1428,5 +1428,365 @@
   ],
   "why": "51 = 3 × 17. The rest are prime.",
   "lvl": 2
+ },
+ {
+  "q": "3 cards: red/red, white/white, red/white. You draw one and see a red side. Chance the other side is red?",
+  "a": "2/3",
+  "wrong": [
+   "1/2",
+   "1/3",
+   "3/4"
+  ],
+  "why": "There are 3 red faces you could be seeing; 2 of them belong to the red/red card.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Roll two dice. What is the chance that at least one shows a six?",
+  "a": "11/36",
+  "wrong": [
+   "1/3",
+   "1/6",
+   "10/36"
+  ],
+  "why": "No six on either die is 25/36, so at least one six is 1 − 25/36 = 11/36.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A drawer holds 10 black and 10 white socks. In the dark, how many must you take to be sure of 2 black?",
+  "a": "12",
+  "wrong": [
+   "3",
+   "11",
+   "4"
+  ],
+  "why": "Worst case you pull all 10 white first, then 2 more must both be black: 12.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is 1 + 3 + 5 + 7 + … + 39?",
+  "a": "400",
+  "wrong": [
+   "390",
+   "420",
+   "380"
+  ],
+  "why": "That's the first 20 odd numbers, and the first n odd numbers add to n², so 20² = 400.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is 1/2 + 1/6 + 1/12 + 1/20 + 1/30?",
+  "a": "5/6",
+  "wrong": [
+   "4/5",
+   "7/8",
+   "1"
+  ],
+  "why": "Each term is 1/n − 1/(n+1), so the sum collapses to 1 − 1/6 = 5/6.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "How many zeros are at the end of 1 × 2 × 3 × … × 30?",
+  "a": "7",
+  "wrong": [
+   "6",
+   "3",
+   "8"
+  ],
+  "why": "Count factors of 5: 30 has six multiples of 5, and 25 adds one extra, so 7.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A says 'B lies.' B says 'C lies.' C says 'A and B both lie.' Who tells the truth?",
+  "a": "Only B",
+  "wrong": [
+   "Only A",
+   "Only C",
+   "A and C"
+  ],
+  "why": "If C were truthful, A lies, so B is truthful, a contradiction. So C lies, B is truthful and A lies.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Boxes labelled Apples, Oranges and Mixed are ALL mislabelled. Take one fruit from which box to fix every label?",
+  "a": "Mixed",
+  "wrong": [
+   "Apples",
+   "Oranges",
+   "Any box works"
+  ],
+  "why": "The 'Mixed' box holds one fruit only, so one pick names it, and the other two labels then follow.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A two-digit number's digits add to 10. Reversed, it is 36 bigger. What is it?",
+  "a": "37",
+  "wrong": [
+   "73",
+   "46",
+   "28"
+  ],
+  "why": "Reversing changes it by 9 × (digit gap), so the gap is 4. Digits 3 and 7: 73 − 37 = 36.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Forward I'm heavy, but backward I'm not. What am I?",
+  "a": "Ton",
+  "wrong": [
+   "Lead",
+   "Weight",
+   "Stone"
+  ],
+  "why": "TON spelled backward is NOT.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which word can be typed using only the top letter row (QWERTYUIOP) of a keyboard?",
+  "a": "Typewriter",
+  "wrong": [
+   "Printer",
+   "Keyboard",
+   "Computer"
+  ],
+  "why": "T, Y, P, E, W, R and I are all top-row letters. Printer needs N, Keyboard needs K, Computer needs C.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which letter is 10 places after the letter that is 5 places before P?",
+  "a": "U",
+  "wrong": [
+   "T",
+   "V",
+   "S"
+  ],
+  "why": "5 before P is K (11th letter). 10 after K is the 21st letter, U.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Unscramble CIFAIPC. It names a famous…",
+  "a": "Ocean",
+  "wrong": [
+   "City",
+   "Country",
+   "Animal"
+  ],
+  "why": "CIFAIPC rearranges to PACIFIC.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Drop the first letter of each. Which one does NOT leave a real word: Blame, Stone, Chair, Plant?",
+  "a": "Plant",
+  "wrong": [
+   "Blame",
+   "Stone",
+   "Chair"
+  ],
+  "why": "Blame→lame, Stone→tone, Chair→hair, but Plant→lant isn't a word.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A die shows 1 on top and 2 facing you. You tip it over once, away from you. What's on top now?",
+  "a": "2",
+  "wrong": [
+   "6",
+   "5",
+   "3"
+  ],
+  "why": "Tipping away sends the top face to the back and brings the front face (2) up to the top.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Three dice are stacked; the top face shows 5. What do the 5 hidden faces (between and below) add up to?",
+  "a": "16",
+  "wrong": [
+   "14",
+   "21",
+   "19"
+  ],
+  "why": "Opposite faces sum to 7: the lower two dice hide 7 + 7, and the top die's bottom is 7 − 5 = 2. Total 16.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A painted 4×4×4 cube is cut into 64 small cubes. How many have no paint at all?",
+  "a": "8",
+  "wrong": [
+   "4",
+   "16",
+   "27"
+  ],
+  "why": "The unpainted cubes form the 2×2×2 core inside: 8.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Fold a sheet in half 3 times, punch one hole through all layers, then unfold. How many holes?",
+  "a": "8",
+  "wrong": [
+   "6",
+   "3",
+   "16"
+  ],
+  "why": "Each fold doubles the layers: 2 × 2 × 2 = 8 layers, so 8 holes.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "In a mirror, a clock with no numbers appears to read 2:20. What time is it really?",
+  "a": "9:40",
+  "wrong": [
+   "10:40",
+   "2:40",
+   "9:20"
+  ],
+  "why": "A mirror time and the real time add to 12:00, and 12:00 − 2:20 = 9:40.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "In a non-leap year, January 1 is a Monday. What day is December 31?",
+  "a": "Monday",
+  "wrong": [
+   "Sunday",
+   "Tuesday",
+   "Saturday"
+  ],
+  "why": "Dec 31 is 364 days after Jan 1, exactly 52 weeks, so it's also a Monday.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What is the most Friday-the-13ths that can happen in one calendar year?",
+  "a": "3",
+  "wrong": [
+   "2",
+   "4",
+   "1"
+  ],
+  "why": "Months starting on the same weekday cluster at most 3 to a year, e.g. Feb, Mar and Nov in 2026.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A ball dropped from 16 m bounces back to half its height each time. Distance traveled when it lands the 4th time?",
+  "a": "44 m",
+  "wrong": [
+   "30 m",
+   "46 m",
+   "32 m"
+  ],
+  "why": "16 down, then 8 up and 8 down, 4 up and 4 down, 2 up and 2 down: 16 + 16 + 8 + 4 = 44.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "A 100 m train at 10 m/s goes through a 200 m tunnel. How long from entering to fully out?",
+  "a": "30 seconds",
+  "wrong": [
+   "20 seconds",
+   "10 seconds",
+   "25 seconds"
+  ],
+  "why": "The front must travel the tunnel plus its own length: 300 m ÷ 10 m/s = 30 s.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "9 identical-looking coins; one is heavier. Fewest balance-scale weighings to be sure which?",
+  "a": "2",
+  "wrong": [
+   "3",
+   "4",
+   "1"
+  ],
+  "why": "Weigh 3 vs 3 to find the heavy group of 3, then 1 vs 1 from that group.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "100 closed doors. On pass k you toggle every k-th door, for k = 1 to 100. How many end up open?",
+  "a": "10",
+  "wrong": [
+   "50",
+   "0",
+   "25"
+  ],
+  "why": "Only perfect squares have an odd number of divisors, so doors 1, 4, 9, …, 100 stay open: 10.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "100 players enter a knockout tournament (byes allowed). How many matches to crown a winner?",
+  "a": "99",
+  "wrong": [
+   "50",
+   "100",
+   "64"
+  ],
+  "why": "Each match knocks out exactly one player, and 99 must be knocked out.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "When I was 6, my sister was half my age. Now I'm 70. How old is my sister?",
+  "a": "67",
+  "wrong": [
+   "35",
+   "64",
+   "73"
+  ],
+  "why": "She was 3 when I was 6, so she's always 3 years younger: 67.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "100 kg of melons are 99% water. They dry until they're 98% water. What do they weigh now?",
+  "a": "50 kg",
+  "wrong": [
+   "98 kg",
+   "99 kg",
+   "90 kg"
+  ],
+  "why": "The 1 kg of solids is now 2% of the total, so the total is 50 kg.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "What comes next: 8, 5, 4, 9, 1, 7, 6, ?",
+  "a": "3",
+  "wrong": [
+   "2",
+   "0",
+   "12"
+  ],
+  "why": "The digits are in alphabetical order of their names: eight, five, four, nine, one, seven, six, three.",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "Which is correct: 'egg yolks is white' or 'egg yolks are white'?",
+  "a": "Neither",
+  "wrong": [
+   "'are white'",
+   "'is white'",
+   "Both"
+  ],
+  "why": "Egg yolks are yellow, so neither sentence is true.",
+  "lvl": 3,
+  "added": "2026-10-07"
  }
 ]

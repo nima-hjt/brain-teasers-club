@@ -124,7 +124,7 @@
   "a": "King Kong",
   "cat": "Movie",
   "wrong": [
-   "Planet of the Apes",
+   "The Jungle Book",
    "Godzilla",
    "Tarzan"
   ],
@@ -198,7 +198,7 @@
   "wrong": [
    "Gravity",
    "Interstellar",
-   "Red Planet"
+   "Apollo 13"
   ],
   "why": "An astronaut growing potatoes on the red planet.",
   "lvl": 3
@@ -484,9 +484,9 @@
   "a": "Firefox",
   "cat": "Thing",
   "wrong": [
-   "Red Fox",
-   "Hot Fox",
-   "Foxfire"
+   "Chrome",
+   "Safari",
+   "Opera"
   ],
   "why": "Fire + fox, the browser.",
   "lvl": 3

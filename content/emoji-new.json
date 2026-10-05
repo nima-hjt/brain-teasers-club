@@ -4,7 +4,7 @@
   "a": "Toy Story",
   "cat": "Movie",
   "wrong": [
-   "Space Cowboys",
+   "Finding Dory",
    "Cars",
    "Rango"
   ],
@@ -821,7 +821,7 @@
   "cat": "Saying",
   "wrong": [
    "Cloud nine",
-   "Every cloud",
+   "Golden hour",
    "Silver spoon"
   ],
   "why": "Cloud + silver edge.",
@@ -1798,5 +1798,369 @@
   ],
   "why": "A woman in the sky with diamonds: the Beatles song.",
   "lvl": 3
+ },
+ {
+  "q": "💤🌀🏙️",
+  "a": "Inception",
+  "cat": "Movie",
+  "wrong": [
+   "Gravity",
+   "Interstellar",
+   "Avatar"
+  ],
+  "why": "Dreams inside dreams, where whole cities fold and spin",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⏰🔁📅",
+  "a": "Groundhog Day",
+  "cat": "Movie",
+  "wrong": [
+   "Inception",
+   "Gravity",
+   "Big"
+  ],
+  "why": "The alarm goes off and the same day repeats again and again",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "📺👨🎥🚪",
+  "a": "The Truman Show",
+  "cat": "Movie",
+  "wrong": [
+   "Home Alone",
+   "The Mask",
+   "Big"
+  ],
+  "why": "A man whose whole life is a secret TV show, until he finds the exit door",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👨‍🏫🧪💵🚐",
+  "a": "Breaking Bad",
+  "cat": "TV show",
+  "wrong": [
+   "The Office",
+   "Doctor Who",
+   "The Simpsons"
+  ],
+  "why": "A chemistry teacher makes illegal money cooking in an RV",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "✈️🏝️🔢",
+  "a": "Lost",
+  "cat": "TV show",
+  "wrong": [
+   "Breaking Bad",
+   "The Crown",
+   "Friends"
+  ],
+  "why": "Plane crash survivors on a mysterious island haunted by numbers",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🚲🔦👾🧇",
+  "a": "Stranger Things",
+  "cat": "TV show",
+  "wrong": [
+   "Doctor Who",
+   "The Simpsons",
+   "Friends"
+  ],
+  "why": "Kids on bikes with flashlights hunt a monster; Eleven loves waffles",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐴🦷🎁",
+  "a": "Look a gift horse in the mouth",
+  "cat": "Saying",
+  "wrong": [
+   "Curiosity killed the cat",
+   "When pigs fly",
+   "Every dog has its day"
+  ],
+  "why": "Don't check a gift horse's teeth: be grateful for presents",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🍳🔥➡️🔥",
+  "a": "Out of the frying pan",
+  "cat": "Saying",
+  "wrong": [
+   "Spill the beans",
+   "In a nutshell",
+   "Piece of cake"
+  ],
+  "why": "Out of the frying pan, into the fire: from bad to worse",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐦✋2️⃣🌳",
+  "a": "A bird in the hand",
+  "cat": "Saying",
+  "wrong": [
+   "Every cloud has a silver lining",
+   "When pigs fly",
+   "Actions speak louder than words"
+  ],
+  "why": "A bird in the hand is worth two in the bush",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🔥🌉",
+  "a": "Burn your bridges",
+  "cat": "Saying",
+  "wrong": [
+   "Break the ice",
+   "Spill the beans",
+   "Hit the road"
+  ],
+  "why": "Setting fire to a bridge means you can never go back",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🚗🐶",
+  "a": "Carpet",
+  "cat": "Word",
+  "wrong": [
+   "Carrot",
+   "Carton",
+   "Market"
+  ],
+  "why": "Car + pet = carpet",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🌊👦",
+  "a": "Season",
+  "cat": "Word",
+  "wrong": [
+   "Reason",
+   "Session",
+   "Salmon"
+  ],
+  "why": "Sea + son = season",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐂💤",
+  "a": "Bulldozer",
+  "cat": "Word",
+  "wrong": [
+   "Excavator",
+   "Forklift",
+   "Steamroller"
+  ],
+  "why": "Bull + dozer (a sleeper) = bulldozer",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐶💊",
+  "a": "Pupil",
+  "cat": "Word",
+  "wrong": [
+   "Pencil",
+   "Purple",
+   "Puzzle"
+  ],
+  "why": "Pup + pill = pupil",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💃🎉🏖️⛰️",
+  "a": "Rio de Janeiro",
+  "cat": "Place",
+  "wrong": [
+   "Madrid",
+   "Moscow",
+   "Toronto"
+  ],
+  "why": "Carnival dancing, Copacabana beach and Sugarloaf Mountain",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🧱🐉🏯",
+  "a": "Great Wall of China",
+  "cat": "Place",
+  "wrong": [
+   "Taj Mahal",
+   "Stonehenge",
+   "Machu Picchu"
+  ],
+  "why": "A huge wall in the land of dragons and pagodas",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🦕🏞️🔍",
+  "a": "Loch Ness",
+  "cat": "Place",
+  "wrong": [
+   "Lake Geneva",
+   "Lake Victoria",
+   "Dead Sea"
+  ],
+  "why": "The Scottish lake where people search for a dinosaur-like monster",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐷🐷🛏️",
+  "a": "Pigs in a blanket",
+  "cat": "Food",
+  "wrong": [
+   "Spring roll",
+   "Fish and chips",
+   "Shepherd's pie"
+  ],
+  "why": "Little sausages (pigs) wrapped in pastry (a blanket)",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🔮🍪",
+  "a": "Fortune cookie",
+  "cat": "Food",
+  "wrong": [
+   "Dim sum",
+   "Egg tart",
+   "Dumplings"
+  ],
+  "why": "A crystal ball tells your fortune, and the cookie hides one inside",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐃🍗🔥",
+  "a": "Buffalo wings",
+  "cat": "Food",
+  "wrong": [
+   "Pork ribs",
+   "Fish tacos",
+   "Lamb kebab"
+  ],
+  "why": "Buffalo + spicy chicken pieces = Buffalo wings",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🤥👃🌳",
+  "a": "Pinocchio",
+  "cat": "Character",
+  "wrong": [
+   "Peter Pan",
+   "Tinker Bell",
+   "Pippi Longstocking"
+  ],
+  "why": "A wooden puppet whose nose grows when he lies",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🥚🧱💥",
+  "a": "Humpty Dumpty",
+  "cat": "Character",
+  "wrong": [
+   "Little Miss Muffet",
+   "Jack Frost",
+   "Peter Rabbit"
+  ],
+  "why": "The egg who sat on a wall and had a great fall",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐊⏰🤚",
+  "a": "Captain Hook",
+  "cat": "Character",
+  "wrong": [
+   "Tarzan",
+   "Mowgli",
+   "Popeye"
+  ],
+  "why": "A ticking crocodile ate his hand, so he wears a hook",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "👃🧒👻",
+  "a": "Smells Like Teen Spirit",
+  "cat": "Song",
+  "wrong": [
+   "Billie Jean",
+   "Wonderwall",
+   "Imagine"
+  ],
+  "why": "Smells + teen + spirit: Nirvana's big hit",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "⚡🧟‍♂️🔬",
+  "a": "Frankenstein",
+  "cat": "Book",
+  "wrong": [
+   "Dracula",
+   "The Invisible Man",
+   "Treasure Island"
+  ],
+  "why": "A scientist uses lightning to bring a creature to life",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐋🦵⚓",
+  "a": "Moby-Dick",
+  "cat": "Book",
+  "wrong": [
+   "Pride and Prejudice",
+   "Dracula",
+   "Little Women"
+  ],
+  "why": "A sea captain who lost his leg hunts the great white whale",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "💑☠️🧪",
+  "a": "Romeo and Juliet",
+  "cat": "Book",
+  "wrong": [
+   "A Christmas Carol",
+   "The Odyssey",
+   "Treasure Island"
+  ],
+  "why": "Young lovers whose story ends with poison",
+  "lvl": 3,
+  "added": "2026-10-07"
+ },
+ {
+  "q": "🐇⏰🎩🍵",
+  "a": "Alice in Wonderland",
+  "cat": "Book",
+  "wrong": [
+   "Peter Pan",
+   "The Wizard of Oz",
+   "Matilda"
+  ],
+  "why": "A late rabbit with a watch, and the Mad Hatter's tea party",
+  "lvl": 3,
+  "added": "2026-10-07"
  }
 ]

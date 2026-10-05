@@ -436,26 +436,57 @@ try{if(DIFF[localStorage.getItem("btc-diff")])diff=localStorage.getItem("btc-dif
 
 /* ---------- ROUND BUILDER ---------- */
 function seedFromString(k){let h=2166136261;for(const c of k){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
-// Unseeded rounds deal from a per-type shuffled deck kept in localStorage, so a player sees every puzzle of a
-// type before any repeats. The deck resets if the bank size changes. Seeded rounds (Daily, Challenge, Live) skip it.
-function deckPick(t,bank,n){
-  const key="btc-deck-"+t;let d=null;try{d=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
-  if(!d||d.n!==bank.length||!Array.isArray(d.left))d={n:bank.length,left:[]};
+// Bank rows carry a level (1 quick, 2 needs a moment, 3 tricky) and the date a puzzle was added.
+const LVL_AT={odd:2,emoji:5,logic:5,facts:5},ADDED_AT={odd:3,emoji:6,logic:6,facts:6};
+// Puzzles per level in a 10-puzzle round, for each difficulty. The round runs from easier to harder.
+const LEVEL_MIX={easy:[7,3,0],normal:[3,5,2],hard:[1,5,4],impossible:[0,3,7]};
+// Unseeded rounds deal from a shuffled deck per type and level kept in localStorage, so a player sees every
+// puzzle of that kind before any repeats. New puzzles are shuffled into the remaining deck. Seeded rounds skip it.
+function deckPick(key,ids,n){
+  let d=null;try{d=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
+  if(!d||!Array.isArray(d.left))d={max:-1,left:[]};
+  const have=new Set(ids);d.left=d.left.filter(i=>have.has(i));
+  for(const i of ids)if(i>d.max)d.left.splice(Math.floor(Math.random()*(d.left.length+1)),0,i);
+  d.max=Math.max(d.max,...ids);
   const out=[];
-  while(out.length<n){if(!d.left.length)d.left=shuffle([...bank.keys()].filter(i=>!out.includes(i)),Math.random);out.push(d.left.shift())}
+  while(out.length<n&&out.length<ids.length){if(!d.left.length)d.left=shuffle(ids.filter(i=>!out.includes(i)),Math.random);out.push(d.left.shift())}
   try{localStorage.setItem(key,JSON.stringify(d))}catch(e){}
-  return out.map(i=>bank[i]);
+  return out;
 }
+try{for(const t of ["odd","emoji","logic","facts"])localStorage.removeItem("btc-deck-"+t)}catch(e){} // old single-deck format
 function buildRound(mode,seed,rd,typesOverride){
   const rnd = seed!=null ? mulberry32(seed) : Math.random;
-  const pick=(bank,n,t)=>seed!=null?shuffle(bank,rnd).slice(0,n):deckPick(t,bank,n);
   let list=[];
   const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};
   const ALL=["odd","emoji","logic","facts"];
   const types=banks[mode]?[mode]:mode==="daily"?ALL:(typesOverride||customTypes());
   const per=Math.floor(10/types.length);const extra=10-per*types.length;
-  types.forEach((t,i)=>{const n=per+(i<extra?1:0);list.push(...pick(banks[t],n,t).map(p=>({type:t,data:p})))});
-  if(types.length>1)list=shuffle(list,rnd);
+  const counts=types.map((t,i)=>per+(i<extra?1:0));
+  if(mode==="daily"){
+    // The Daily ignores levels and skips puzzles whose "added" date is after today, so shipping new puzzles
+    // (dated a day or two ahead) never changes a Daily someone is already playing.
+    const day=todayKey();
+    types.forEach((t,i)=>{const bank=banks[t].filter(x=>!x[ADDED_AT[t]]||x[ADDED_AT[t]]<=day);list.push(...shuffle(bank,rnd).slice(0,counts[i]).map(p=>({type:t,data:p})))});
+    list=shuffle(list,rnd);
+  } else {
+    // Slots: levels in rising order from the difficulty's mix, each given a puzzle type.
+    const levels=[];LEVEL_MIX[rd||diff].forEach((c,k)=>{for(let j=0;j<c;j++)levels.push(k+1)});
+    let slotTypes=[];types.forEach((t,i)=>{for(let j=0;j<counts[i];j++)slotTypes.push(t)});
+    if(types.length>1)slotTypes=shuffle(slotTypes,rnd);
+    const want={};slotTypes.forEach((t,i)=>{const k=t+levels[i];want[k]=(want[k]||0)+1});
+    const got={};
+    for(const t of types){
+      const bank=banks[t];const used=new Set();
+      for(const l of [3,2,1]){const n=want[t+l]||0;if(!n)continue;
+        // nearest levels fill in if a level runs short
+        const order=l===3?[3,2,1]:l===2?[2,3,1]:[1,2,3];got[t+l]=[];
+        for(const ll of order){const need=n-got[t+l].length;if(need<=0)break;
+          const ids=[...bank.keys()].filter(i=>bank[i][LVL_AT[t]]===ll&&!used.has(i));
+          const ch=seed!=null?shuffle(ids,rnd).slice(0,need):deckPick("btc-deck2-"+t+ll,ids,need);
+          ch.forEach(i=>{used.add(i);got[t+l].push(bank[i])})}}
+    }
+    list=slotTypes.map((t,i)=>({type:t,data:got[t+levels[i]].shift()})).filter(q=>q.data);
+  }
   // odd-one-out grids get bigger as the round goes on
   let sizes=DIFF[rd||diff].grids;
   if(window.innerWidth<360)sizes=sizes.map(([c,r])=>c>6?[6,Math.ceil(c*r/6)]:[c,r]);

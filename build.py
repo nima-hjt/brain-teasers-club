@@ -4,20 +4,24 @@ odd=load('content/odd.json')+load('content/odd-new.json')
 emoji=load('content/emoji.json')+load('content/emoji-new.json')
 logic=load('content/logic.json')+load('content/logic-new.json')
 animals=load('content/animals.json')
+def lvl(it):  # difficulty level 1-3 (level-based picking in src/index.html)
+    l=it.get('lvl',2); assert l in (1,2,3),it; return l
+def added(it):  # first date (YYYY-MM-DD) the Daily may use this puzzle; '' = always
+    d=it.get('added',''); assert d=='' or (isinstance(d,str) and len(d)==10 and datetime.date.fromisoformat(d)),it; return d
 def norm(items,cat=None):
     out=[]
     for it in items:
         c=cat or it.get('cat','')
         assert it['a'] not in it['wrong'] and len(set([it['a']]+it['wrong']))==4, it
         for v in [it['q'],it['a'],c,it.get('why','')]+it['wrong']: assert isinstance(v,str),it
-        out.append([it['q'],it['a'],c,it['wrong'],it.get('why','')])
+        out.append([it['q'],it['a'],c,it['wrong'],it.get('why',''),lvl(it),added(it)])
     return out
 E=norm(emoji);L=norm(logic,'Logic');A=norm(animals)
-O=[[p['common'],p['odd']] for p in odd]
+O=[[p['common'],p['odd'],lvl(p),added(p)] for p in odd]
 for name,arr in (('emoji',E),('logic',L),('animals',A)):
     qs=[x[0] for x in arr];assert len(qs)==len(set(qs)),(name,'dup q')
 pairs=set()
-for c,o in O:
+for c,o,*_ in O:
     k=frozenset([c,o]);assert k not in pairs,('dup odd',c,o);pairs.add(k)
 bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A))
 t=open('src/index.html').read()
@@ -104,7 +108,7 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v8";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v9";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;
