@@ -37,6 +37,8 @@ os.makedirs('dist',exist_ok=True)
 def skeleton(title,body,desc=DESC,extra_head=''):
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
      '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+     # one address only: www. and the Cloudflare project address forward to the main domain (path, query and #code kept)
+     r'<script>if(/^(www\.brainteasersclub\.app|brainteasersclub-git\.pages\.dev)$/.test(location.hostname))location.replace("https://brainteasersclub.app"+location.pathname+location.search+location.hash)</script>'
      f'<title>{title}</title><meta name="description" content="{html.escape(desc)}">'
      '<meta name="theme-color" content="#141430"><link rel="icon" href="icon.svg" type="image/svg+xml">'
      '<link rel="apple-touch-icon" href="icon-180.png"><link rel="manifest" href="manifest.webmanifest">'
@@ -110,13 +112,13 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v15";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v16";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;
   e.respondWith(fetch(e.request).then(r=>{const cp=r.clone();caches.open(C).then(c=>c.put(e.request,cp));return r}).catch(()=>caches.match(e.request)))});''')
 open('dist/robots.txt','w').write(f'User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n')
-open('dist/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{SITE_URL}/{p}</loc></url>' for p in ['','about.html','facts.html','privacy.html'])+'</urlset>')
+open('dist/sitemap.xml','w').write('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{SITE_URL}/{p}</loc></url>' for p in ['','about','facts','privacy'])+'</urlset>')
 import shutil
 for f in ['icon-180.png','icon-192.png','icon-512.png','og.png']: shutil.copy('assets/'+f,'dist/'+f)
 open('dist/icon.svg','w').write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#141430"/><text x="256" y="330" font-size="300" text-anchor="middle">🧠</text><circle cx="400" cy="112" r="56" fill="#ffb347"/><text x="400" y="134" font-size="64" font-weight="700" text-anchor="middle" fill="#2a1a00" font-family="Arial,sans-serif">?</text></svg>')
