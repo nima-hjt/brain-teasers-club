@@ -64,11 +64,11 @@ about=f'''<main class="doc">{nav}<h1>About Brain Teasers Club</h1>
 <p>Brain Teasers Club is a free, fast quiz game made for the <a href="https://www.youtube.com/@BrainTeasersClub">Brain Teasers Club</a> and <a href="https://www.youtube.com/@wildfactsdaily-q3z">Wild Facts</a> YouTube channels. Ten puzzles, a ticking clock, limited lives, and a score to beat.</p>
 <h2>How to play</h2>
 <p>Pick a difficulty and a mode. Each round is ten puzzles. Answer before the timer runs out: the faster you are, the more points you score, and consecutive correct answers raise your multiplier up to 2×. Run out of lives and the round ends early.</p>
-<p><strong>Odd One Out</strong> shows a grid of identical emoji with one look-alike hiding among them; tap it. <strong>Emoji Riddles</strong> spell out a movie, saying or word in emoji; pick the answer. <strong>Quick Logic</strong> is trick questions and number patterns. <strong>Animal Facts</strong> are surprising-but-true questions about the natural world. <strong>Random Mix</strong> and <strong>Custom Mix</strong> combine them.</p>
+<p><strong>Odd One Out</strong> shows a grid of identical emoji with one look-alike hiding among them; tap it. <strong>Emoji Riddles</strong> spell out a movie, saying or word in emoji; pick the answer. <strong>Quick Logic</strong> has trick questions and number patterns. <strong>Animal Facts</strong> are surprising-but-true questions about the natural world. <strong>Random Mix</strong> and <strong>Custom Mix</strong> combine them.</p>
 <h2>Daily Challenge</h2>
 <p>Everyone in the world gets the same ten puzzles each day, always on Normal, with one attempt. Finish it to keep your streak alive. Every seventh day earns a streak freeze that covers one missed day.</p>
 <h2>Playing with friends</h2>
-<p><strong>Duel</strong> puts two players on one phone, face to face, racing for the same puzzle. <strong>Pass &amp; Play</strong> takes turns on one phone with the same ten puzzles. <strong>Challenge a Friend</strong> gives you a code and a link so two people on their own phones play the identical round and compare scores.</p>
+<p><strong>Duel</strong> puts two players on one phone, face to face, racing for the same puzzle. <strong>Pass &amp; Play</strong> lets you take turns on one phone with the same ten puzzles. <strong>Live Match</strong> puts each player on their own phone, anywhere: you play the same ten puzzles at the same time and watch each other's score live. <strong>Challenge by Link</strong> gives you a code and a link so a friend can play the identical round later and compare scores.</p>
 <h2>Difficulty</h2>
 <p>Easy gives longer timers, five lives and smaller grids (scores ×0.75). Normal is the standard round. Hard shortens timers, gives two lives and bigger grids (×1.5). Impossible is one life, very short timers and the biggest grids (×2.5).</p>
 <h2>Accuracy</h2>
@@ -86,7 +86,7 @@ privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated
 <h2>Live Match</h2>
 <p>When you play a Live Match, the name you enter, your scores for that match and a list of the puzzle numbers you have already seen are shared through our match server (Google Firebase) with the other player in that room, so the game can pick puzzles neither of you has seen. This contains no other personal information, and the room code is the only way to reach it.</p>
 <h2>What we do not collect</h2>
-<p>We do not have user accounts, and we do not collect names, email addresses, or any personal information. The game has no server of its own.</p>
+<p>We do not have user accounts, and we do not ask for email addresses or any other personal information. Names typed into the game are used only as described above. The game has no server of its own.</p>
 <h2>Advertising</h2>
 <p>We use Google AdSense to show advertisements. Google and its partners may use cookies and similar technologies to serve ads based on your prior visits to this or other websites, and to measure ad performance. You can opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads">Google Ads Settings</a>, and learn how Google uses information from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Where required by law, you will be asked for consent before personalised ads are shown.</p>
 <h2>Hosting and logs</h2>
@@ -112,7 +112,7 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v18";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v19";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;

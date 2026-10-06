@@ -47,7 +47,14 @@ p{margin:0}
 
 /* panels */
 .panel{background:var(--surface);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
-.home .mascot{font-size:3.4rem;line-height:1}
+.home .mascot{font-size:3.4rem;line-height:1;background:none;border:0;padding:0;cursor:pointer;transition:transform .15s}
+.home .mascot:hover,.home .mascot:focus-visible{transform:scale(1.08) rotate(-6deg)}
+#aboutDlg{border:0;border-radius:22px;padding:22px 20px 18px;max-width:min(420px,calc(100vw - 32px));background:var(--surface);color:var(--fg);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+#aboutDlg::backdrop{background:rgba(20,16,40,.55)}
+#aboutDlg h2{margin:.2em 0 .4em;font-family:var(--display)}
+#aboutDlg p{margin:.45em 0;line-height:1.45}
+#aboutDlg .links{display:grid;gap:8px;margin:14px 0 12px}#aboutDlg .links a{display:block;padding:10px 12px;border-radius:12px;background:var(--raised);color:inherit;text-decoration:none;font-weight:600}
+
 .modes{display:grid;gap:10px}
 .mode{display:flex;align-items:center;gap:14px;text-align:left;background:var(--raised);border:2px solid transparent;border-radius:16px;padding:14px;transition:border-color .15s,transform .1s}
 .mode:hover,.mode:focus-visible{border-color:var(--accent);outline:none}
@@ -188,6 +195,7 @@ input.name:focus{outline:none;border-color:var(--accent)}
 .share-box{background:var(--raised);border-radius:12px;padding:12px;font-size:.92rem;user-select:all;word-break:break-word;white-space:pre-line}
 a{color:var(--accent)}
 footer{text-align:center;font-size:.8rem;color:var(--muted);padding-bottom:8px}
+footer a{white-space:nowrap}
 
 .pop{animation:pop .3s ease-out}
 @keyframes pop{from{transform:scale(.85);opacity:0}to{transform:scale(1);opacity:1}}
@@ -199,10 +207,10 @@ footer{text-align:center;font-size:.8rem;color:var(--muted);padding-bottom:8px}
 <div class="app">
   <!-- HOME -->
   <section id="home" class="panel home">
-    <div class="topline"><div class="mascot">🧠</div><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on">🔊</button></div>
+    <div class="topline"><button class="mascot" id="aboutBtn" aria-label="About Brain Teasers Club" title="About">🧠</button><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on">🔊</button></div>
     <p class="eyebrow">Brain Teasers Club</p>
     <h1>How sharp are you today?</h1>
-    <p class="muted">Ten quick puzzles, a ticking clock, limited lives. Fast answers score more, streaks multiply.</p>
+    <p class="muted">Ten quick puzzles, a ticking clock and limited lives. Fast answers score more, and streaks multiply your points.</p>
     <button class="hero" data-mode="daily" id="dailyBtn">
       <span class="hero-top"><span class="eyebrow" style="color:var(--accent-ink);opacity:.8">Daily Challenge</span><span class="hero-streak">🔥 <span id="streakDays">0</span></span></span>
       <span class="hero-title">Today's 10 puzzles</span>
@@ -242,7 +250,7 @@ footer{text-align:center;font-size:.8rem;color:var(--muted);padding-bottom:8px}
     <p class="eyebrow">Play with Friends</p>
     <h2>How do you want to play?</h2>
     <div class="modes">
-      <button class="mode" data-mode="duel"><span class="ico">⚡</span><span><b>Duel</b><small>One phone between you, face to face. First correct tap wins the point</small></span></button>
+      <button class="mode" data-mode="duel"><span class="ico">⚡</span><span><b>Duel</b><small>One phone between you, face to face. First correct tap wins the point.</small></span></button>
       <button class="mode" data-mode="pass"><span class="ico">🤝</span><span><b>Pass &amp; Play</b><small>Same phone, same 10 puzzles, take turns</small></span></button>
       <button class="mode" data-mode="live"><span class="ico">📡</span><span><b>Live Match</b><small>Each on your own phone, anywhere. Same puzzles at the same time, scores update live</small></span></button>
       <button class="mode" data-mode="challenge" hidden><span class="ico">🔗</span><span><b>Challenge by Link</b><small>Each on your own phone, same puzzles, compare scores</small></span></button>
@@ -386,6 +394,12 @@ footer{text-align:center;font-size:.8rem;color:var(--muted);padding-bottom:8px}
     </div>
     <p class="muted" style="text-align:center;font-size:.9rem">Share your score and challenge a friend:</p>
     <div class="share-box" id="shareText"></div>
+    <div id="resDiffBox" hidden>
+      <p class="muted" style="text-align:center;font-size:.9rem;margin-bottom:6px">Difficulty for your next round</p>
+      <div class="seg diffSeg" role="group" aria-label="Difficulty for your next round">
+        <button data-diff="easy">Easy</button><button data-diff="normal">Normal</button><button data-diff="hard">Hard</button><button data-diff="impossible">Impossible</button>
+      </div>
+    </div>
     <div class="row">
       <button class="btn ghost" id="copyBtn">Copy score</button>
       <button class="btn" id="againBtn">Play again</button>
@@ -396,7 +410,22 @@ footer{text-align:center;font-size:.8rem;color:var(--muted);padding-bottom:8px}
     <button class="btn ghost" id="homeBtn">Choose another mode</button>
   </section>
 
-  <footer>More puzzles every day on YouTube: <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">@BrainTeasersClub</a></footer>
+  <dialog id="aboutDlg" aria-labelledby="aboutTitle">
+    <div style="font-size:2.6rem;line-height:1">🧠</div>
+    <h2 id="aboutTitle">Brain Teasers Club</h2>
+    <p>Free, quick brain teasers you can play in your browser: odd one out, emoji riddles, logic puzzles and animal facts. No app and no sign-up.</p>
+    <p>Play the <b>Daily Challenge</b> (the same 10 puzzles for everyone), practise solo at four difficulty levels, or play with friends on one phone or live on two. You won't see the same puzzle twice until you've played most of the <b id="aboutCount">1,200+</b> puzzles.</p>
+    <div class="links">
+      <a href="/about">About the game and how scoring works</a>
+      <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">▶ Brain Teasers Club on YouTube</a>
+      <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener">▶ Wild Facts on YouTube</a>
+      <a href="/facts">Animal facts and their sources</a>
+      <a href="/privacy">Privacy</a>
+    </div>
+    <button class="btn ghost" id="aboutClose">Close</button>
+  </dialog>
+
+  <footer>New videos every day on YouTube: <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">Brain Teasers Club</a> · <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener">Wild Facts</a></footer>
 </div>
 
 <script>
@@ -745,7 +774,7 @@ function nextPuzzle(){
   const q=S.list[S.i];S.locked=false;
   const who=S.mode==="pass"?pass.names[pass.turn]+" · ":S.mode==="live"&&live&&live.room?"Set "+setCode(live.room.settings)+" · ":"";
   markSeen([q]);
-  $("qLabel").textContent=who+"Puzzle "+(S.i+1)+" of "+S.list.length+" · "+(q.type==="odd"?"Tap the odd one":q.type==="logic"?"Think fast":q.data[2]);
+  $("qLabel").textContent=who+"Puzzle "+(S.i+1)+" of "+S.list.length+" · "+(q.type==="odd"?"Tap the odd one out":q.type==="logic"?"Think fast":q.data[2]);
   $("feedback").textContent="";$("feedback").className="feedback";
   const body=$("qBody");body.innerHTML="";body.className="pop";
   if(q.type==="odd"){
@@ -803,7 +832,7 @@ function answer(ok,btn,q,timeout){
 
 // Link used in shares: drops the hash, any query and the tracking paths (/btc, /wildfacts, /fb, /ig),
 // so friends who open a shared link are not counted as YouTube visitors.
-function shareBase(){const u=new URL(location.href);u.hash="";u.search="";u.pathname=u.pathname.replace(/\/(btc|wildfacts|fb|ig)(\.html)?$/,"/");return u.href}
+function shareBase(){const u=new URL(location.href);u.hash="";u.search="";if(/brainteasersclub/.test(u.hostname)){u.protocol="https:";u.hostname="brainteasersclub.app";u.port=""}u.pathname=u.pathname.replace(/\/(btc|wildfacts|fb|ig)(\.html)?$/,"/");return u.href}
 
 function endRound(){
   clearInterval(timer);
@@ -818,10 +847,11 @@ function endRound(){
   const dl=DIFF[S.diff||diff].label;
   const two=S.mode==="pass"||S.mode==="duel"||S.mode==="live";
   let dailyNote="";
-  if(S.mode==="daily"){const r=recordDaily(S.day,S.score,S.correct);dailyNote=r.isNewDay?(r.streak>1?" 🔥 "+r.streak+"-day streak!":" Streak started: come back tomorrow.")+(r.earned?" ❄️ Streak freeze earned!":""):"";renderStreak();renderDaily()}
+  if(S.mode==="daily"){const r=recordDaily(S.day,S.score,S.correct);dailyNote=r.isNewDay?(r.streak>1?" 🔥 "+r.streak+"-day streak!":" Streak started! Come back tomorrow.")+(r.earned?" ❄️ Streak freeze earned!":""):"";renderStreak();renderDaily()}
   $("emojiLine").hidden=two;$("xpRes").hidden=true;$("levelUp").hidden=true;
   if(!two){$("emojiLine").textContent=emojiLine(S.log,S.list.length);awardXp()}
   $("againBtn").textContent=S.mode==="daily"?"Play a Random Mix":"Play again";
+  $("resDiffBox").hidden=S.mode==="live"||S.mode==="challenge";setDiff(diff);
   (two?true:S.correct>=S.list.length*.5)?SFX.win():SFX.lose();
   $("vs").hidden=!two;$("statGrid").hidden=two;
   $("resMode").textContent=MODE_NAMES[S.mode]+" · "+dl+(S.mode==="daily"?" · "+todayKey():S.mode==="challenge"?" · code "+chal.code:"");
@@ -873,13 +903,13 @@ function duelVerdict(i){
   const one=(k)=>{const r=e.p[k];const nm=esc(duel.names[k])+": ";
     if(e.winner===k)return '<span class="ok">'+nm+'✓ first, '+r.secs+'s</span>';
     if(!r)return '<span class="no">'+nm+'no answer</span>';
-    return '<span class="no">'+nm+(r.ok?'✓ but second':'✗ chose '+esc(r.given))+'</span>'};
+    return '<span class="no">'+nm+(r.ok?'✓ but second':'✗ You chose '+esc(r.given))+'</span>'};
   return one(0)+one(1);
 }
 function verdict(e,who){
   if(!e)return '<span class="no">'+(who?esc(who)+": ":"")+'not reached</span>';
   if(e.ok)return '<span class="ok">'+(who?esc(who)+": ":"")+'✓ '+e.secs+'s</span>';
-  return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?'✗ time ran out':'✗ chose '+esc(e.given||"?"))+'</span>';
+  return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?'✗ Time ran out':'✗ chose '+esc(e.given||"?"))+'</span>';
 }
 function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s}:null}
 function buildReview(){
@@ -1007,7 +1037,7 @@ async function liveCreate(){
   const link=shareBase()+"#L"+code;
   liveStatus("Waiting for your friend to join…");
   $("liveShare").hidden=false;$("liveShareRow").hidden=false;
-  $("liveShare").textContent="Play me live on Brain Teasers Club! Room "+code+": "+link;
+  $("liveShare").textContent="Let's play a live match on Brain Teasers Club! Room "+code+": "+link;
   listen(code);
 }
 async function liveJoin(code){
@@ -1091,7 +1121,7 @@ function startCountdown(at){
 function liveBegin(){
   const st=live.room.settings;
   const list=st.round?unpackRound(st.round):null;
-  if(!list||list.some(q=>!q)){liveErr("Puzzle set mismatch: please both refresh the game and try again.");liveReset();liveUI("start");show("live");return}
+  if(!list||list.some(q=>!q)){liveErr("Your games have different puzzle sets. Both of you, please reload the game and try again.");liveReset();liveUI("start");show("live");return}
   startRound("live",st.seed,st.diff,st.types,list);
   $("opp").hidden=false;$("oppName").textContent=live.them;renderOpp();
 }
@@ -1212,6 +1242,9 @@ $("againBtn").onclick=()=>{
   if(S.mode==="daily")return startRound("mix");
   startRound(S.mode);
 };
+$("aboutBtn").onclick=()=>{const n=ODD.length+EMOJI.length+LOGIC.length+FACTS.length;$("aboutCount").textContent=n.toLocaleString("en-US");const d=$("aboutDlg");if(d.showModal)d.showModal();else d.setAttribute("open","")};
+$("aboutClose").onclick=()=>{const d=$("aboutDlg");if(d.close)d.close();else d.removeAttribute("open")};
+$("aboutDlg").addEventListener("click",e=>{if(e.target.id==="aboutDlg")$("aboutClose").click()});
 $("homeBtn").onclick=()=>{if(S&&S.mode==="live")liveReset();show("home")};
 function showDailyDone(d){
   // Re-opening a finished daily shows today's result instead of a replay
@@ -1220,7 +1253,7 @@ function showDailyDone(d){
   $("rCorrect").textContent=(d.correct||0)+"/10";$("rStreak").textContent="–";$("rBest").textContent=loadBest()["daily-"+todayKey()]||d.score||0;
   $("shareText").textContent="Brain Teasers Club Daily "+todayKey()+" · "+(d.score||0)+" pts · "+(d.correct||0)+"/10\n🔥 "+currentStreak()+"-day streak · "+shareBase();
   $("emojiLine").hidden=true;$("xpRes").hidden=true;$("levelUp").hidden=true;
-  $("againBtn").textContent="Play a Random Mix";S={mode:"daily",list:[],log:[],score:d.score||0,correct:d.correct||0,i:10};
+  $("resDiffBox").hidden=false;setDiff(diff);$("againBtn").textContent="Play a Random Mix";S={mode:"daily",list:[],log:[],score:d.score||0,correct:d.correct||0,i:10};
   $("review").hidden=true;$("review").innerHTML="";$("reviewBtn").hidden=true;show("results");
 }
 function copyText(txt,btn,label){
