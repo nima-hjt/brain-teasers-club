@@ -51,6 +51,12 @@ Each player writes `seen` (their seen-puzzle keys, oldest first) on Ready and on
 host picks the round with `buildRound(..., mergedSeen(them.seen))`, so it avoids both players' histories.
 To test with two separate histories, load the host from 127.0.0.1 and the guest from localhost (separate storage).
 
+## Play statistics
+Each visit to the live site writes one anonymous record to Firebase `stats/days/<YYYY-MM-DD>/<pushId>`
+({u: random device id, n: new device, s: source, l: language, d: m|d, t, a: active seconds, r: rounds, f: finished, m: modes});
+see `statStart` in src/index.html. Off on localhost/test pages and on devices opened once with `?notrack`.
+`/stats` (src/stats.html, noindex, unlinked) reads and totals them. Firebase rule: `stats` readable, `$day/$id` writable.
+
 ## Not done yet
 - AdSense: set `ADSENSE_CLIENT` / `ADSENSE_SLOT` in src/index.html after approval; add the verification snippet.
 - Cloudflare Web Analytics: enable in the Pages project (Metrics → Web Analytics); Cloudflare injects the beacon
