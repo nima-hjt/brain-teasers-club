@@ -89,6 +89,9 @@ ready → play → results → rematch → disconnect.
 - Instagram/Facebook: Reels go in `Downloads\brain-teasers-club-repo\Instagram-Facebook\` with the plan from
   `tools/video/make_social.py` (caption for Instagram, which auto-shares to Facebook, plus a Facebook comment with the /fb
   link). Reel versions skip the intro: add `&reel=1` to the short.html / wf.html URL before `exportMp4()`.
+- Hook: YouTube Shorts and Reels start on the first puzzle (no title card). Analytics showed ~70% swiping away during
+  the old 2–3 s intros. Brain Teasers: short.html `&reel=1&yt=1` for YouTube, `&reel=1` for Instagram ("link in bio");
+  Wild Facts: wf.html `&reel=1` for both.
 - No repeats: check every new video against `tools/video/posted.md` (posted + planned content for both channels, which
   also covers Instagram/Facebook Reels) and add the new video there.
 - Before export: no invented statistics in titles or narration, puzzles not in the next two weeks' Dailies, no clue
