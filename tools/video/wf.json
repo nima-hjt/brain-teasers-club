@@ -706,5 +706,35 @@
     "say": "Number three. The picture on the back of your eye is upside down. Your brain flips it the right way up."
    }
   ]
+ },
+ "cats": {
+  "kind": "facts",
+  "theme": "purple",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 CAT FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three cat facts that sound fake, but are true.",
+  "items": [
+   {
+    "t": "Cats can't taste sweet things",
+    "big": "NO SWEET",
+    "small": "they lack the sweet taste gene",
+    "say": "Number one. Cats can't taste anything sweet. They're missing the gene for sweet taste."
+   },
+   {
+    "t": "Adult cats rarely meow at each other",
+    "big": "MEOW = HUMAN",
+    "small": "they meow mostly to talk to us",
+    "say": "Number two. Grown-up cats hardly ever meow at other cats. Meowing is mostly how they talk to people."
+   },
+   {
+    "t": "Cats have a third eyelid",
+    "big": "3 EYELIDS",
+    "small": "a hidden one protects the eye",
+    "say": "Number three. Cats have a third eyelid. It's a thin, hidden layer that sweeps across to protect the eye."
+   }
+  ]
  }
 }

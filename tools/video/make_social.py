@@ -17,7 +17,7 @@ WORDS = {'emojiquiz': 'emoji quiz', 'foodquiz': 'food quiz', 'guessthefood': 'gu
          'oceanquiz': 'ocean quiz', 'animalquiz': 'animal quiz', 'animalfacts': 'animal facts', 'didyouknow': 'did you know',
          'kidsvsparents': 'kids vs parents', 'familyquiz': 'family quiz', 'birdquiz': 'bird quiz', 'spacefacts': 'space facts',
          'foodfacts': 'food facts', 'eyefacts': 'eye facts', 'humanbody': 'human body', 'worldquiz': 'world quiz',
-         'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals'}
+         'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals', 'catfacts': 'cat facts'}
 def fb_tags(tags, puzzle):
     t = [WORDS.get(x.lstrip('#'), x.lstrip('#')) for x in tags.split()]
     t += ['brain teasers', 'puzzle', 'quiz', 'trivia'] if puzzle else ['animal facts', 'quiz', 'trivia', 'fun facts']
@@ -53,7 +53,7 @@ R = [
  (15, '12:00 pm', 'Oct 15 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Trees, smiles and clocks. 6 seconds each!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (15, '6:00 pm', 'Oct 15 6pm - Kids vs Parents Animal Quiz 🐼.mp4', ['Kids vs parents, round 2 🐼 3 new animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
  (16, '12:00 pm', 'Oct 16 12pm - Guess the Cartoon Movie by Emoji 🎬.mp4', ['Guess the animated movie from the emoji 🎬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #guessthemovie #disneyquiz #brainteaser'),
- (16, '6:00 pm', 'Oct 16 6pm - Dinosaur Quiz 🦖.mp4', ['Dinosaur quiz 🦖 5 questions, 3 seconds each! The last one surprises everyone.', 'Comment your score 👇'], '#dinosaurs #dinosaurquiz #quiz #trivia'),
+ (16, '6:00 pm', 'Oct 16 6pm - 3 Cat Facts That Sound Fake 🐱.mp4', ['3 cat facts that sound fake, but are true 🐱', 'Which one surprised you most? 👇'], '#catfacts #cats #animalfacts #didyouknow'),
  (17, '12:00 pm', 'Oct 17 12pm - Find the Odd One Out 🔤.mp4', ['Find the odd one 🔤 Letters and numbers edition. Level 3 is sneaky!', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
  (17, '6:00 pm', 'Oct 17 6pm - 3 Ocean Facts That Sound Fake 🦦.mp4', ['3 ocean facts that sound fake, but are true 🦦', 'Which one surprised you most? 👇'], '#oceanfacts #didyouknow #facts #animals'),
  (18, '12:00 pm', 'Oct 18 12pm - Guess the Halloween Word by Emoji 🎃.mp4', ['Halloween is coming 🎃 Guess all 5 spooky words from the emoji!', 'Comment your score 👇'], '#halloween #emojiquiz #halloweenquiz #brainteaser'),
@@ -61,6 +61,7 @@ R = [
  (19, '12:00 pm', 'Oct 19 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
  (19, '6:00 pm', 'Oct 19 6pm - Baby Animal Names Quiz 🐣.mp4', ['What do you call these baby animals? 🐣 3 seconds each!', 'Comment your score 👇'], '#babyanimals #animalquiz #quiz #trivia'),
  (20, '6:00 pm', 'Oct 20 6pm - World Quiz 🌍.mp4', ['World quiz 🌍 5 questions, 3 seconds each! The last one surprises a lot of people.', 'Comment your score 👇'], '#geography #worldquiz #quiz #trivia'),
+ (21, '6:00 pm', 'Oct 21 6pm - Dinosaur Quiz 🦖.mp4', ['Dinosaur quiz 🦖 5 questions, 3 seconds each! The last one surprises everyone.', 'Comment your score 👇'], '#dinosaurs #dinosaurquiz #quiz #trivia'),
 ]
 
 body = []
