@@ -8,7 +8,7 @@
 const NAME=new URLSearchParams(location.search).get('s');let C,D={};const VOICE='voice_'+NAME+'/';
 const W=1080,H=1920,F='"Poppins",sans-serif',E='"Noto Color Emoji"';let COUNT=3,INTRO=0,END=0,PLUG=0,TOTAL=0;const SEG=[];
 // REEL (?reel=1): no title card; the first puzzle is already on screen at frame 0 and the voice starts at once.
-const REEL=new URLSearchParams(location.search).has('reel');
+const REEL=new URLSearchParams(location.search).has('reel'),YT=new URLSearchParams(location.search).has('yt'); // yt: no-intro version for YouTube
 function plan(){COUNT=C.count;INTRO=REEL?0:D.intro+.3;let t=INTRO;C.items.forEach((_,i)=>{const say=D['l'+(i+1)],ans=D['a'+(i+1)];const first=REEL&&i===0;const s=first?-1.3:t,sp=first?.1:s+.05,cd=Math.max(s+Math.max(say,.9)+.15,sp+say+.15),rv=cd+COUNT,e=rv+Math.max(1.8,ans+.7);SEG.push({s,sp,cd,rv,e});t=e});END=D.end+.45;PLUG=D.plug+.6;TOTAL=t+END+PLUG}
 const cv=document.getElementById('c');let x=cv.getContext('2d');
 const cl=v=>Math.max(0,Math.min(1,v)),ease=t=>1-Math.pow(1-cl(t),3);const pop=t=>{t=cl(t);return t<1?ease(t)*(1+.18*Math.sin(t*Math.PI)):1};
@@ -61,7 +61,7 @@ function frame(t){
       const cols=['#ff6b4a','#ffb020','#22c55e','#3b9cff','#a855f7'];for(let i=0;i<n;i++){const X=W/2+(i-(n-1)/2)*180,s=pop((u-.25-i*.1)*3);if(s<=0)continue;x.save();x.translate(X,1000);x.scale(s,s);x.beginPath();x.arc(0,0,74,0,Math.PI*2);x.fillStyle=cols[i+(5-n)];x.fill();text(`${i+1}/${n}`,0,3,44,'#fff',800);x.restore()}
       text('Comment your score',W/2-50,1190,56,'#fff',800);text('👇',W/2+330,1190,62,'#000',400,E);const s=1+Math.sin(u*7)*.05;x.save();x.translate(W/2,1380);x.scale(s,s);x.translate(-W/2,-1380);pill('FOLLOW',1380,'#ff3b3b','#fff',74,74);x.restore();caption('Comment your score!',SEG.at(-1).e,t)}
     else{const v=u-END;x.globalAlpha=ease(v*3);stroked('WANT MORE?',W/2,540,96,'#ffc93c');stroked('1,200+',W/2,690,150,'#fff');stroked('FREE PUZZLES',W/2,830,96,'#fff');text('daily challenge · play with friends',W/2,935,48,'#dbe6ff',600);
-      const s=pop(v*2);x.save();x.translate(W/2,1140);x.scale(s,s);rr(-480,-115,960,230,44);x.fillStyle='#fff';x.fill();text('🧠',-380,4,124,'#000',400,E);text('brainteasersclub.app',70,6,fit('brainteasersclub.app',700,72),'#1b1b3a',900);x.restore();text(REEL?'link in bio':'link in description',W/2,1350,46,'#dbe6ff',600);x.globalAlpha=1}}
+      const s=pop(v*2);x.save();x.translate(W/2,1140);x.scale(s,s);rr(-480,-115,960,230,44);x.fillStyle='#fff';x.fill();text('🧠',-380,4,124,'#000',400,E);text('brainteasersclub.app',70,6,fit('brainteasersclub.app',700,72),'#1b1b3a',900);x.restore();text(REEL&&!YT?'link in bio':'link in description',W/2,1350,46,'#dbe6ff',600);x.globalAlpha=1}}
   x.restore()}
 // ---- sound ----
 let ac,dest,OFF=false;const BUF={};const OUT=g=>{g.connect(dest);if(!OFF)g.connect(ac.destination)};
@@ -83,7 +83,7 @@ async function exportMp4(){await fontsReady();const T0=0;
   for(let f=0;f<N;f++){frame(T0+f/FPS);const vf=new VideoFrame(cv,{timestamp:Math.round(f*1e6/FPS),duration:Math.round(1e6/FPS)});ve.encode(vf,{keyFrame:f%60===0});vf.close();window.__prog=f/N;if(ve.encodeQueueSize>20)await new Promise(r=>ve.addEventListener('dequeue',r,{once:true}))}
   await ve.flush();const ae=new AudioEncoder({output:(c,m)=>mux.addAudioChunk(c,m),error:e=>{throw e}});ae.configure({codec:'mp4a.40.2',sampleRate:SR,numberOfChannels:2,bitrate:192000});
   const L=audio.getChannelData(0),R=audio.getChannelData(1),STEP=1024*20,total=Math.min(L.length-A0,Math.round(N/FPS*SR));for(let i=0;i<total;i+=STEP){const n=Math.min(STEP,total-i),pl=new Float32Array(n*2);pl.set(L.subarray(A0+i,A0+i+n),0);pl.set(R.subarray(A0+i,A0+i+n),n);const ad=new AudioData({format:'f32-planar',sampleRate:SR,numberOfFrames:n,numberOfChannels:2,timestamp:Math.round(i*1e6/SR),data:pl});ae.encode(ad);ad.close()}
-  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(REEL?'reel_':'short_')+NAME+'.mp4',{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
+  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(REEL?(YT?'ytr_':'reel_'):'short_')+NAME+'.mp4',{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
 async function sheet(){await fontsReady();const ts=[1.4,...SEG.flatMap(g=>[g.cd+1,g.rv+.7])];ts.push(SEG.at(-1).e+1.5,TOTAL-1);const cols=4,cw=270,ch=480,s=document.createElement('canvas');s.width=cw*cols;s.height=ch*Math.ceil(ts.length/cols);const g=s.getContext('2d');
   ts.forEach((t,i)=>{frame(t);g.drawImage(cv,(i%cols)*cw,Math.floor(i/cols)*ch,cw,ch)});const b=await new Promise(r=>s.toBlob(r,'image/jpeg',.85));return (await fetch('/out/sheet_'+NAME+'.jpg',{method:'PUT',body:b})).status}
 window.ready=fetch('shorts.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{C=j[NAME]}).then(()=>fetch(VOICE+'durations.json',{cache:'no-store'})).then(r=>r.json()).then(d=>{D=d;plan()}).then(fontsReady).then(()=>{frame(0);return TOTAL});
