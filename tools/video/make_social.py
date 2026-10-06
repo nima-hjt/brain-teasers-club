@@ -1,7 +1,7 @@
 # Builds "Instagram-Facebook\Posting Plan - Instagram & Facebook.docx" (plain WordprocessingML, no libraries).
 # Instagram account @wildfactsquiz auto-shares every Reel to the Facebook page, so each Reel is posted once on
 # Instagram; afterwards a comment with the clickable link is added on Facebook. Two Reels a day: Brain Teasers at
-# 12 pm, Wild Facts at 6 pm, each one day after its YouTube premiere. Never repeat a puzzle already posted on
+# 12 pm, Wild Facts at 6 pm, starting Oct 6 (Instagram runs one day ahead of the original Oct 7 start). Never repeat a puzzle already posted on
 # Instagram (see posted.md). Remove a Reel's entry once it is posted and re-run.
 import zipfile, os, datetime
 from xml.sax.saxutils import escape
@@ -9,40 +9,58 @@ from xml.sax.saxutils import escape
 ROOT = r'C:\Users\nhojjat.d3security\Downloads\brain-teasers-club-repo'
 OUT = os.path.join(ROOT, 'Instagram-Facebook', 'Posting Plan - Instagram & Facebook.docx')
 TAIL = '🧠 1,200+ free brain teasers: link in bio'
-FB_COMMENT = ['🧠 Play 1,200+ free puzzles here 👉 https://brainteasersclub.app/fb']
+FB_LINK = '🧠 Play 1,200+ free brain teasers 👉 https://brainteasersclub.app/fb'
+WORDS = {'emojiquiz': 'emoji quiz', 'foodquiz': 'food quiz', 'guessthefood': 'guess the food', 'brainteaser': 'brain teasers',
+         'brainteasers': 'brain teasers', 'oddoneout': 'odd one out', 'eyetest': 'eye test', 'riddlechallenge': 'riddle challenge',
+         'guessthesaying': 'guess the saying', 'opticalillusion': 'optical illusion', 'fairytale': 'fairy tale',
+         'guessthestory': 'guess the story', 'guessthemovie': 'guess the movie', 'disneyquiz': 'disney quiz', 'halloweenquiz': 'halloween quiz',
+         'oceanquiz': 'ocean quiz', 'animalquiz': 'animal quiz', 'animalfacts': 'animal facts', 'didyouknow': 'did you know',
+         'kidsvsparents': 'kids vs parents', 'familyquiz': 'family quiz', 'birdquiz': 'bird quiz', 'spacefacts': 'space facts',
+         'foodfacts': 'food facts', 'eyefacts': 'eye facts', 'humanbody': 'human body', 'worldquiz': 'world quiz',
+         'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals'}
+def fb_tags(tags, puzzle):
+    t = [WORDS.get(x.lstrip('#'), x.lstrip('#')) for x in tags.split()]
+    t += ['brain teasers', 'puzzle', 'quiz', 'trivia'] if puzzle else ['animal facts', 'quiz', 'trivia', 'fun facts']
+    seen = []; [seen.append(x) for x in t if x not in seen]
+    return ', '.join(seen)
+def topics(tags, puzzle):
+    if puzzle: return 'Puzzles · Games · Trivia'
+    if 'food' in tags: return 'Food · Trivia · Education'
+    if 'space' in tags or 'science' in tags or 'humanbody' in tags or 'eyefacts' in tags: return 'Science · Education · Trivia'
+    if 'geography' in tags: return 'Travel · Education · Trivia'
+    return 'Animals · Education · Trivia'
 def day(d): return datetime.date(2026, 10, d).strftime('%a %b %#d' if os.name == 'nt' else '%a %b %-d')
 
 # (day, time, file, caption lines, hashtags)
 R = [
- (7, '12:00 pm', 'Oct 7 12pm - Guess the Food by Emoji 🍔.mp4', ['Guess all 5 foods from the emoji 🍔 3 seconds each! The last one is tricky 😈', 'Comment your score 👇'], '#emojiquiz #foodquiz #guessthefood #brainteaser'),
- (7, '6:00 pm', 'Oct 7 6pm - Ocean Quiz 3 Questions 🐬.mp4', ['Ocean quiz 🐬 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#oceanquiz #animalquiz #quiz #trivia'),
- (8, '12:00 pm', 'Oct 8 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (8, '6:00 pm', 'Oct 8 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
- (9, '12:00 pm', 'Oct 9 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
- (9, '6:00 pm', 'Oct 9 6pm - Kids vs Parents Animal Quiz 🐯.mp4', ['Kids vs parents 🐯 3 animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
- (10, '12:00 pm', 'Oct 10 12pm - Guess the Saying by Emoji 💬.mp4', ['Guess all 5 sayings from the emoji 💬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #idioms #guessthesaying #brainteaser'),
- (10, '6:00 pm', 'Oct 10 6pm - Bird Quiz 🦜.mp4', ['Bird quiz 🦜 5 questions, 3 seconds each! The last one is the hardest.', 'Comment your score 👇'], '#birdquiz #animalquiz #quiz #trivia'),
- (11, '12:00 pm', 'Oct 11 12pm - Find the Odd Letter 🔤.mp4', ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
- (11, '6:00 pm', 'Oct 11 6pm - 3 Bug Facts That Sound Fake 🐜.mp4', ['3 bug facts that sound fake, but are true 🐜', 'Which one surprised you most? 👇'], '#animalfacts #insects #didyouknow #facts'),
- (12, '12:00 pm', 'Oct 12 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Fruit, faces and clocks. Level 3 takes a second look!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (12, '6:00 pm', 'Oct 12 6pm - 3 Space Facts 🌙.mp4', ['3 space facts that sound unreal 🌙', 'Which one surprised you most? 👇'], '#space #spacefacts #didyouknow #facts'),
- (13, '12:00 pm', 'Oct 13 12pm - Spot the Different Face 👀.mp4', ['Spot the different face 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (13, '6:00 pm', 'Oct 13 6pm - Food Quiz 🍯.mp4', ['Food quiz 🍯 3 questions. Question 3 is tricky!', 'Comment your score 👇'], '#foodquiz #foodfacts #quiz #trivia'),
- (14, '12:00 pm', 'Oct 14 12pm - Guess the Fairy Tale by Emoji 🏰.mp4', ['Guess all 5 fairy tales from the emoji 🏰 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #fairytale #guessthestory #brainteaser'),
- (14, '6:00 pm', 'Oct 14 6pm - 3 Eye Facts That Sound Fake 👀.mp4', ['3 facts about your eyes that sound fake, but are true 👀', 'Which one surprised you most? 👇'], '#eyefacts #humanbody #didyouknow #facts'),
- (15, '12:00 pm', 'Oct 15 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
- (15, '6:00 pm', 'Oct 15 6pm - 3 Animal Facts That Sound Fake 🦛.mp4', ['3 animal facts that sound fake, but are true 🦛', 'Which one surprised you most? 👇'], '#animalfacts #didyouknow #facts #animals'),
- (16, '12:00 pm', 'Oct 16 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Trees, smiles and clocks. 6 seconds each!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (16, '6:00 pm', 'Oct 16 6pm - Kids vs Parents Animal Quiz 🐼.mp4', ['Kids vs parents, round 2 🐼 3 new animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
- (17, '12:00 pm', 'Oct 17 12pm - Guess the Cartoon Movie by Emoji 🎬.mp4', ['Guess the animated movie from the emoji 🎬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #guessthemovie #disneyquiz #brainteaser'),
- (17, '6:00 pm', 'Oct 17 6pm - Dinosaur Quiz 🦖.mp4', ['Dinosaur quiz 🦖 5 questions, 3 seconds each! The last one surprises everyone.', 'Comment your score 👇'], '#dinosaurs #dinosaurquiz #quiz #trivia'),
- (18, '12:00 pm', 'Oct 18 12pm - Find the Odd One Out 🔤.mp4', ['Find the odd one 🔤 Letters and numbers edition. Level 3 is sneaky!', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
- (18, '6:00 pm', 'Oct 18 6pm - 3 Ocean Facts That Sound Fake 🦦.mp4', ['3 ocean facts that sound fake, but are true 🦦', 'Which one surprised you most? 👇'], '#oceanfacts #didyouknow #facts #animals'),
- (19, '12:00 pm', 'Oct 19 12pm - Guess the Halloween Word by Emoji 🎃.mp4', ['Halloween is coming 🎃 Guess all 5 spooky words from the emoji!', 'Comment your score 👇'], '#halloween #emojiquiz #halloweenquiz #brainteaser'),
- (19, '6:00 pm', 'Oct 19 6pm - Science Quiz 🔬.mp4', ['Science quiz 🔬 3 questions. The last one surprises everyone!', 'Comment your score 👇'], '#sciencequiz #science #quiz #trivia'),
- (20, '12:00 pm', 'Oct 20 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
- (20, '6:00 pm', 'Oct 20 6pm - Baby Animal Names Quiz 🐣.mp4', ['What do you call these baby animals? 🐣 3 seconds each!', 'Comment your score 👇'], '#babyanimals #animalquiz #quiz #trivia'),
- (21, '6:00 pm', 'Oct 21 6pm - World Quiz 🌍.mp4', ['World quiz 🌍 5 questions, 3 seconds each! The last one surprises a lot of people.', 'Comment your score 👇'], '#geography #worldquiz #quiz #trivia'),
+ (6, '6:00 pm', 'Oct 6 6pm - Ocean Quiz 3 Questions 🐬.mp4', ['Ocean quiz 🐬 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#oceanquiz #animalquiz #quiz #trivia'),
+ (7, '12:00 pm', 'Oct 7 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
+ (7, '6:00 pm', 'Oct 7 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
+ (8, '12:00 pm', 'Oct 8 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
+ (8, '6:00 pm', 'Oct 8 6pm - Kids vs Parents Animal Quiz 🐯.mp4', ['Kids vs parents 🐯 3 animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
+ (9, '12:00 pm', 'Oct 9 12pm - Guess the Saying by Emoji 💬.mp4', ['Guess all 5 sayings from the emoji 💬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #idioms #guessthesaying #brainteaser'),
+ (9, '6:00 pm', 'Oct 9 6pm - Bird Quiz 🦜.mp4', ['Bird quiz 🦜 5 questions, 3 seconds each! The last one is the hardest.', 'Comment your score 👇'], '#birdquiz #animalquiz #quiz #trivia'),
+ (10, '12:00 pm', 'Oct 10 12pm - Find the Odd Letter 🔤.mp4', ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
+ (10, '6:00 pm', 'Oct 10 6pm - 3 Bug Facts That Sound Fake 🐜.mp4', ['3 bug facts that sound fake, but are true 🐜', 'Which one surprised you most? 👇'], '#animalfacts #insects #didyouknow #facts'),
+ (11, '12:00 pm', 'Oct 11 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Fruit, faces and clocks. Level 3 takes a second look!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
+ (11, '6:00 pm', 'Oct 11 6pm - 3 Space Facts 🌙.mp4', ['3 space facts that sound unreal 🌙', 'Which one surprised you most? 👇'], '#space #spacefacts #didyouknow #facts'),
+ (12, '12:00 pm', 'Oct 12 12pm - Spot the Different Face 👀.mp4', ['Spot the different face 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
+ (12, '6:00 pm', 'Oct 12 6pm - Food Quiz 🍯.mp4', ['Food quiz 🍯 3 questions. Question 3 is tricky!', 'Comment your score 👇'], '#foodquiz #foodfacts #quiz #trivia'),
+ (13, '12:00 pm', 'Oct 13 12pm - Guess the Fairy Tale by Emoji 🏰.mp4', ['Guess all 5 fairy tales from the emoji 🏰 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #fairytale #guessthestory #brainteaser'),
+ (13, '6:00 pm', 'Oct 13 6pm - 3 Eye Facts That Sound Fake 👀.mp4', ['3 facts about your eyes that sound fake, but are true 👀', 'Which one surprised you most? 👇'], '#eyefacts #humanbody #didyouknow #facts'),
+ (14, '12:00 pm', 'Oct 14 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
+ (14, '6:00 pm', 'Oct 14 6pm - 3 Animal Facts That Sound Fake 🦛.mp4', ['3 animal facts that sound fake, but are true 🦛', 'Which one surprised you most? 👇'], '#animalfacts #didyouknow #facts #animals'),
+ (15, '12:00 pm', 'Oct 15 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Trees, smiles and clocks. 6 seconds each!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
+ (15, '6:00 pm', 'Oct 15 6pm - Kids vs Parents Animal Quiz 🐼.mp4', ['Kids vs parents, round 2 🐼 3 new animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
+ (16, '12:00 pm', 'Oct 16 12pm - Guess the Cartoon Movie by Emoji 🎬.mp4', ['Guess the animated movie from the emoji 🎬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #guessthemovie #disneyquiz #brainteaser'),
+ (16, '6:00 pm', 'Oct 16 6pm - Dinosaur Quiz 🦖.mp4', ['Dinosaur quiz 🦖 5 questions, 3 seconds each! The last one surprises everyone.', 'Comment your score 👇'], '#dinosaurs #dinosaurquiz #quiz #trivia'),
+ (17, '12:00 pm', 'Oct 17 12pm - Find the Odd One Out 🔤.mp4', ['Find the odd one 🔤 Letters and numbers edition. Level 3 is sneaky!', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
+ (17, '6:00 pm', 'Oct 17 6pm - 3 Ocean Facts That Sound Fake 🦦.mp4', ['3 ocean facts that sound fake, but are true 🦦', 'Which one surprised you most? 👇'], '#oceanfacts #didyouknow #facts #animals'),
+ (18, '12:00 pm', 'Oct 18 12pm - Guess the Halloween Word by Emoji 🎃.mp4', ['Halloween is coming 🎃 Guess all 5 spooky words from the emoji!', 'Comment your score 👇'], '#halloween #emojiquiz #halloweenquiz #brainteaser'),
+ (18, '6:00 pm', 'Oct 18 6pm - Science Quiz 🔬.mp4', ['Science quiz 🔬 3 questions. The last one surprises everyone!', 'Comment your score 👇'], '#sciencequiz #science #quiz #trivia'),
+ (19, '12:00 pm', 'Oct 19 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
+ (19, '6:00 pm', 'Oct 19 6pm - Baby Animal Names Quiz 🐣.mp4', ['What do you call these baby animals? 🐣 3 seconds each!', 'Comment your score 👇'], '#babyanimals #animalquiz #quiz #trivia'),
+ (20, '6:00 pm', 'Oct 20 6pm - World Quiz 🌍.mp4', ['World quiz 🌍 5 questions, 3 seconds each! The last one surprises a lot of people.', 'Comment your score 👇'], '#geography #worldquiz #quiz #trivia'),
 ]
 
 body = []
@@ -65,11 +83,12 @@ def copy(lines):
 p(run('Instagram & Facebook — Posting Plan', b=True, size=44, color='1B1B3A'), after=60)
 p(run('Post each Reel on Instagram (@wildfactsquiz); it shares to the Facebook page by itself. Then add the Facebook comment with the link. Remove a section once it is posted.', color='555566'), after=60)
 h('Every time (same steps for each Reel)')
-for s in ['1. Instagram app → + → Reel → choose the file → Next.',
-          '2. Cover: pick a frame that shows the puzzle (not a blank or end screen).',
-          '3. Paste the caption below. Make sure "Share to Facebook" is on (it stays on once set).',
-          '4. Share now at the time shown, or Advanced settings → Schedule.',
-          '5. When it appears on Facebook (a few minutes later): open the post on the Facebook page, paste the Facebook comment, then ⋯ → Pin comment.']:
+for s in ['1. business.facebook.com → Create reel. Post to: tick the Facebook page AND Instagram (@wildfactsquiz).',
+          '2. Upload the file. Cover: pick a frame that shows the puzzle (not a blank or end screen).',
+          '3. Paste the Instagram caption. Turn on "Customize post for Facebook and Instagram" and paste the Facebook caption in the Facebook tab.',
+          '4. Facebook tags: paste the tags line. Instagram topics (if offered): pick the three listed.',
+          '5. Scheduling options → Schedule → the date and time shown → Schedule.',
+          'Posting from the Instagram app instead? Use the Instagram caption, keep "Share to Facebook" on, then comment the Facebook link line on the Facebook post and pin it.']:
     p(run(s), after=50, indent=200)
 h('Schedule')
 rows = [['Date', 'Time', 'Reel']] + [[day(d), tm, f.split(' - ', 1)[1].rsplit('.', 1)[0]] for d, tm, f, c, tags in R]
@@ -82,8 +101,12 @@ for d, tm, f, cap, tags in R:
     body.append('<w:p><w:r><w:br w:type="page"/></w:r></w:p>')
     h(f'{day(d)} · {tm}')
     field('File', f)
-    label('Caption (Instagram, shared to Facebook)'); copy(cap + ['', TAIL, '', tags])
-    label('Facebook comment, then pin it'); copy(FB_COMMENT)
+    puzzle = tm.startswith('12')
+    field('Schedule', day(d) + ', 2026 · ' + tm)
+    label('Instagram caption'); copy(cap + ['', TAIL, '', tags])
+    field('Instagram topics', topics(tags, puzzle))
+    label('Facebook caption'); copy(cap + ['', FB_LINK, '', tags])
+    label('Facebook tags'); copy([fb_tags(tags, puzzle)])
 
 doc = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>' + ''.join(body) +
        '<w:sectPr><w:pgSz w:w="12240" w:h="15840"/><w:pgMar w:top="1000" w:right="1000" w:bottom="1000" w:left="1000" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr></w:body></w:document>')
