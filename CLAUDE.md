@@ -86,5 +86,7 @@ ready → play → results → rematch → disconnect.
   `tools/video/say_cfg.py <name> af_heart` (Kokoro, offline; model files in `.new/tts/`, not in git), then open
   `short.html?s=<name>` (configs in `shorts.json`, kinds emoji | riddle | odd) or `long.html` in the browser and run
   `exportMp4()`. Export is frame-exact (WebCodecs + mp4-muxer); never record in real time (it drifts out of sync).
+- No repeats: check every new video against `tools/video/posted.md` (posted + planned content for both channels, which
+  also covers Instagram/Facebook Reels) and add the new video there.
 - Before export: no invented statistics in titles or narration, puzzles not in the next two weeks' Dailies, no clue
   with two valid answers; check a frame sheet (`sheet()`) and the audio sync.

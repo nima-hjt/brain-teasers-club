@@ -306,7 +306,7 @@
   "pill": "3 LEVELS · 6 SECONDS EACH",
   "introEmoji": [
    "🍎",
-   "😃",
+   "🤔",
    "🕐"
   ],
   "items": [
@@ -320,8 +320,8 @@
     "a": "FOUND IT!"
    },
    {
-    "common": "😃",
-    "odd": "😄",
+    "common": "🤔",
+    "odd": "🤨",
     "cols": 6,
     "rows": 7,
     "pos": 33,
@@ -540,7 +540,7 @@
   "pill": "3 LEVELS · 6 SECONDS EACH",
   "introEmoji": [
    "🌲",
-   "😗",
+   "😁",
    "🕗"
   ],
   "items": [
@@ -554,8 +554,8 @@
     "a": "FOUND IT!"
    },
    {
-    "common": "😗",
-    "odd": "😙",
+    "common": "😁",
+    "odd": "😬",
     "cols": 6,
     "rows": 7,
     "pos": 30,
