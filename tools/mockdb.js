@@ -10,12 +10,13 @@ function notify(method,path,v){for(const s of subs){const r=rel(s,path);if(r===n
   s.res.write(`event: ${method==='PATCH'?'patch':'put'}\ndata: ${JSON.stringify({path:r||'/',data:v})}\n\n`)}}
 http.createServer((req,res)=>{
   const url=new URL(req.url,'http://x');const path=url.pathname.replace(/\.json$/,'').split('/').filter(Boolean);
-  res.setHeader('Access-Control-Allow-Origin','*');res.setHeader('Access-Control-Allow-Methods','GET,PUT,PATCH,OPTIONS');res.setHeader('Access-Control-Allow-Headers','*');
+  res.setHeader('Access-Control-Allow-Origin','*');res.setHeader('Access-Control-Allow-Methods','GET,PUT,PATCH,POST,OPTIONS');res.setHeader('Access-Control-Allow-Headers','*');
   if(req.method==='OPTIONS'){res.end();return}
   if(req.method==='GET'&&(req.headers.accept||'').includes('text/event-stream')){res.writeHead(200,{'Content-Type':'text/event-stream','Cache-Control':'no-cache'});const s={path,res};subs.push(s);const d=getAt(path);res.write(`event: put\ndata: ${JSON.stringify({path:'/',data:d===undefined?null:d})}\n\n`);req.on('close',()=>subs.splice(subs.indexOf(s),1));return}
   let body='';req.on('data',c=>body+=c);req.on('end',()=>{
     if(req.method==='GET'){res.end(JSON.stringify(getAt(path)??null));return}
     const v=JSON.parse(body||'null');
+    if(req.method==='POST'){const name='-M'+Date.now().toString(36)+Math.random().toString(36).slice(2,8);setAt([...path,name],v);notify('PUT',[...path,name],v);res.end(JSON.stringify({name}));return} // push
     if(req.method==='PUT')setAt(path,v);else if(req.method==='PATCH')patchAt(path,v);
     notify(req.method,path,v);res.end(JSON.stringify(v));
   });

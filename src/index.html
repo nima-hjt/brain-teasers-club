@@ -758,7 +758,7 @@ function saveBest(b){try{localStorage.setItem("btc-best",JSON.stringify(b))}catc
 function overallBest(){const b=loadBest();return Math.max(0,...Object.values(b).map(Number))}
 
 const SCREENS=["home","custom","friends","live","names","handoff","challenge","play","duelScreen","results"];
-function show(id){SCREENS.forEach(s=>$(s).hidden=s!==id);window.scrollTo(0,0);if(id==="home"&&pendingHash){pendingHash=null;readHash()}}
+function show(id){if(id==="results"&&S&&S.list&&S.list.length)statDone();SCREENS.forEach(s=>$(s).hidden=s!==id);window.scrollTo(0,0);if(id==="home"&&pendingHash){pendingHash=null;readHash()}}
 
 function setDiff(d){
   diff=d;try{localStorage.setItem("btc-diff",d)}catch(e){}
@@ -785,7 +785,7 @@ function startRound(mode,seed,d,typesOverride,prebuilt){
   if(mode==="daily")try{localStorage.setItem("btc-daily-progress",JSON.stringify({day:S.day,score:0,correct:0,i:0}))}catch(e){}
   $("score").textContent="0";$("streak").textContent="×1.0";
   $("lives").innerHTML="<i></i>".repeat(S.lives);
-  show("play");SFX.start(mode);nextPuzzle();
+  show("play");SFX.start(mode);statRound(mode);nextPuzzle();
 }
 function multiplier(){return Math.min(2,1+S.streak*0.1)}
 function updateHud(){
@@ -976,7 +976,7 @@ function startDuel(names){
   duel={names,scores:[0,0],log:[],list,i:0,diff};
   S={mode:"duel",list,i:0,score:0,correct:0,streak:0,bestStreak:0,lives:1,log:[]};
   $("dsc1").textContent="0";$("dsc2").textContent="0";
-  show("duelScreen");SFX.start("duel");duelNext();
+  show("duelScreen");SFX.start("duel");statRound("duel");duelNext();
 }
 function duelNext(){
   if($("duelScreen").hidden)return;
@@ -1190,6 +1190,31 @@ try{$("liveName").value=localStorage.getItem("btc-name")||""}catch(e){}
 $("liveName").addEventListener("change",()=>{try{localStorage.setItem("btc-name",myName())}catch(e){}});
 window.addEventListener("pagehide",()=>{if(live)liveReset()});
 
+/* ---------- PLAY STATISTICS (anonymous) ----------
+   One record per visit at stats/days/<date>/<id>: where the visit came from, language, phone or computer, rounds
+   started/finished, modes and active minutes. A random device id (no name, no cookie) lets us count people, not just
+   visits. Only the live site records; opening the site once with ?notrack stops this device for good (owner, friends). */
+const ST={id:null,rec:null,act:0,last:0,flushT:null};
+function statsOn(){try{if(new URLSearchParams(location.search).has("notrack"))localStorage.setItem("btc-notrack","1");if(localStorage.getItem("btc-notrack"))return false}catch(e){}
+  return /(^|\.)brainteasersclub\.app$|brainteasersclub-git\.pages\.dev$/.test(location.hostname)&&!window.DB_URL}
+function statSource(){const m=/^\/(btc|wildfacts|fb|ig)(\.html)?$/.exec(location.pathname);if(m)return m[1];
+  if(/^#L/.test(location.hash))return "live-invite";if(/^#[A-Z2-9]{4}/i.test(location.hash))return "challenge";
+  let h="";try{h=document.referrer?new URL(document.referrer).hostname:""}catch(e){}
+  if(!h||/brainteasersclub/.test(h))return "direct";const k=["youtube","facebook","instagram","google","bing","t.co","whatsapp","telegram","reddit","tiktok"].find(x=>h.includes(x));return k||"other"}
+function statStart(){
+  if(!statsOn())return;let uid,isNew=0;try{uid=localStorage.getItem("btc-uid");if(!uid){uid=Math.random().toString(36).slice(2,12);isNew=1;localStorage.setItem("btc-uid",uid)}}catch(e){uid="x"}
+  ST.rec={u:uid,n:isNew,s:statSource(),l:LANG,d:/Mobi|Android|iPhone|iPad/.test(navigator.userAgent)?"m":"d",t:Date.now(),a:0,r:0,f:0,m:{}};ST.last=Date.now();ST.day=todayKey();
+  fetch(DB_URL+"/stats/days/"+ST.day+".json",{method:"POST",body:JSON.stringify(ST.rec)}).then(r=>r.json()).then(j=>{ST.id=j&&j.name}).catch(()=>{});
+}
+function statTick(){if(ST.rec&&!document.hidden&&ST.last){const n=Date.now();ST.act+=Math.min(60,(n-ST.last)/1000);ST.last=n}}
+function statFlush(beacon){if(!ST.rec||!ST.id)return;statTick();ST.rec.a=Math.min(14400,Math.round(ST.act));ST.rec.l=LANG;
+  try{fetch(DB_URL+"/stats/days/"+ST.day+"/"+ST.id+".json",{method:"PATCH",body:JSON.stringify({a:ST.rec.a,r:ST.rec.r,f:ST.rec.f,m:ST.rec.m,l:ST.rec.l}),keepalive:!!beacon}).catch(()=>{})}catch(e){}}
+function statRound(mode){if(!ST.rec)return;statTick();ST.rec.r++;const k=String(mode).replace(/[^a-z]/g,"");ST.rec.m[k]=(ST.rec.m[k]||0)+1;clearTimeout(ST.flushT);ST.flushT=setTimeout(statFlush,2000)}
+function statDone(){if(!ST.rec)return;ST.rec.f++;clearTimeout(ST.flushT);ST.flushT=setTimeout(statFlush,500)}
+setInterval(statTick,15000);
+document.addEventListener("visibilitychange",()=>{if(document.hidden){statTick();statFlush(true)}else ST.last=Date.now()});
+window.addEventListener("pagehide",()=>statFlush(true));
+
 /* ---------- CHALLENGE CODES ---------- */
 // Code = 4 chars (puzzle seed) + 1 letter for difficulty, carried in the link's #anchor.
 const CODE_CHARS="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
@@ -1289,7 +1314,7 @@ function copyText(txt,btn,label){
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback)}else fallback();
 }
 $("copyBtn").onclick=()=>copyText($("shareText").textContent,$("copyBtn"),t("copyScore"));
-settleAbandonedDaily();applyLang();loadTR(LANG);
+settleAbandonedDaily();applyLang();loadTR(LANG);setTimeout(statStart,1500);
 $("langSel").onchange=()=>{LANG=$("langSel").value;try{localStorage.setItem("btc-lang",LANG)}catch(e){}loadTR(LANG).then(applyLang);applyLang()};
 document.addEventListener("visibilitychange",()=>{if(!document.hidden){renderStreak();renderDaily()}});
 $("muteBtn").onclick=()=>{setMuted(!muted);if(!muted)SFX.good()};

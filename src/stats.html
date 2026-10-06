@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Player stats · Brain Teasers Club</title>
+<style>
+:root{--bg:#f6f3ec;--card:#fff;--fg:#1d1a3a;--muted:#6a6788;--line:#e4dfd2;--acc:#b8640f;--good:#15803d}
+@media (prefers-color-scheme:dark){:root{--bg:#141430;--card:#1e1e44;--fg:#f3f0ff;--muted:#a9a6cc;--line:#3a3a74;--acc:#ffb347;--good:#4ade80}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:900px;margin:0 auto;padding:20px 16px 40px}h1{margin:0 0 4px;font-size:1.5rem}p.m{color:var(--muted);margin:0 0 16px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.bar button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:10px;padding:7px 12px;font:inherit;cursor:pointer}
+.bar button[aria-pressed=true]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:18px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px}.tile b{display:block;font-size:1.7rem;font-variant-numeric:tabular-nums}.tile span{color:var(--muted);font-size:.85rem}
+section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px;overflow-x:auto}
+h2{font-size:1.05rem;margin:0 0 8px}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:600;font-size:.85rem}
+.err{color:#be123c}
+</style></head><body><main>
+<h1>Player stats</h1>
+<p class="m">Real visits to brainteasersclub.app only (your own devices are excluded once you open <code>brainteasersclub.app/?notrack</code> on them). "Players" = different devices that started at least one round.</p>
+<div class="bar" id="range"><button data-d="1">Today</button><button data-d="7" aria-pressed="true">7 days</button><button data-d="30">30 days</button><button data-d="90">90 days</button></div>
+<div id="out"><p class="m">Loading…</p></div>
+</main>
+<script>
+const DB="https://brainteasersclub-f12c1-default-rtdb.firebaseio.com";
+const SRC={btc:"YouTube · Brain Teasers (/btc)",wildfacts:"YouTube · Wild Facts (/wildfacts)",fb:"Facebook (/fb)",ig:"Instagram (/ig)",facebook:"Facebook (other links)",instagram:"Instagram (other links)",youtube:"YouTube (other links)",google:"Google search",direct:"Direct / shared / typed",challenge:"Challenge link from a friend","live-invite":"Live Match invite",other:"Other websites"};
+const MODE={daily:"Daily",mix:"Random Mix",custom:"Custom Mix",odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",facts:"Animal Facts",pass:"Pass & Play",duel:"Duel",live:"Live Match",challenge:"Challenge"};
+const day=k=>{const d=new Date();d.setDate(d.getDate()-k);return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const mins=s=>s<60?Math.round(s)+" s":(s/60).toFixed(1)+" min";
+function table(title,head,rows){return `<section><h2>${title}</h2><table><tr>${head.map(h=>`<th>${h}</th>`).join("")}</tr>${rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("")}</table></section>`}
+async function load(n){
+  const out=document.getElementById("out");out.innerHTML='<p class="m">Loading…</p>';
+  let data;try{const r=await fetch(DB+'/stats/days.json?orderBy="$key"&startAt="'+day(n-1)+'"');if(!r.ok)throw new Error("HTTP "+r.status);data=await r.json()||{}}
+  catch(e){out.innerHTML='<p class="err">Could not read the stats ('+esc(e.message)+'). Check the "stats" rule in the Firebase console.</p>';return}
+  const recs=[];for(const [d,v] of Object.entries(data))for(const r of Object.values(v||{}))if(r&&r.u)recs.push({...r,day:d});
+  if(!recs.length){out.innerHTML='<p class="m">No visits recorded in this period yet.</p>';return}
+  const g=(key)=>{const m={};for(const r of recs){const k=key(r);(m[k]=m[k]||[]).push(r)}return m};
+  const sum=(a,f)=>a.reduce((x,r)=>x+(+f(r)||0),0),uniq=a=>new Set(a.map(r=>r.u)).size,played=a=>a.filter(r=>r.r>0);
+  const summ=a=>{const p=played(a);return [a.length,uniq(a),uniq(p),sum(a,r=>r.r),sum(a,r=>r.f),p.length?mins(sum(p,r=>r.a)/p.length):"–"]};
+  const all=summ(recs),newPeople=uniq(recs.filter(r=>r.n));
+  let h=`<div class="tiles">${[["Visits",all[0]],["Different people",all[1]],["People who played",all[2]],["New people",newPeople],["Rounds started",all[3]],["Rounds finished",all[4]],["Avg time per playing visit",all[5]]].map(([l,v])=>`<div class="tile"><b>${v}</b><span>${l}</span></div>`).join("")}</div>`;
+  const H=["","Visits","People","Played","Rounds","Finished","Avg time (players)"];
+  const by=(key,label)=>Object.entries(g(key)).map(([k,a])=>[label?label(k):esc(k),...summ(a)]).sort((x,y)=>y[1]-x[1]);
+  h+=table("Where they came from",H,by(r=>r.s,k=>esc(SRC[k]||k)));
+  const mc={};for(const r of recs)for(const [k,v] of Object.entries(r.m||{}))mc[k]=(mc[k]||0)+v;
+  h+=table("Modes played",["Mode","Rounds started"],Object.entries(mc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>[esc(MODE[k]||k),v]));
+  h+=table("Language",H,by(r=>r.l,k=>({en:"English",fa:"Persian",es:"Spanish"}[k]||esc(k))));
+  h+=table("Device",H,by(r=>r.d,k=>k==="m"?"Phone / tablet":"Computer"));
+  h+=table("By day",H,Object.entries(g(r=>r.day)).sort((a,b)=>a[0]<b[0]?1:-1).map(([k,a])=>[k,...summ(a)]));
+  out.innerHTML=h;
+}
+document.getElementById("range").onclick=e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#range button").forEach(x=>x.setAttribute("aria-pressed",x===b));load(+b.dataset.d)};
+load(7);
+</script></body></html>

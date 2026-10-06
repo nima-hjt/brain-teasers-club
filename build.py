@@ -94,6 +94,8 @@ privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated
 <p>The game saves your settings and progress (chosen difficulty, sound on or off, best scores, daily streak, XP and level, custom-mix selection, which puzzles you have already seen so they don't repeat, and whether today's Daily Challenge has been played) in your browser's local storage. This data stays on your device and is deleted if you clear your browser data. Player names typed for Duel and Pass &amp; Play are used only on screen during that round.</p>
 <h2>Live Match</h2>
 <p>When you play a Live Match, the name you enter, your scores for that match and a list of the puzzle numbers you have already seen are shared through our match server (Google Firebase) with the other player in that room, so the game can pick puzzles neither of you has seen. This contains no other personal information, and the room code is the only way to reach it.</p>
+<h2>Anonymous play statistics</h2>
+<p>To learn which puzzles and modes people enjoy, the game sends a small anonymous record to our Firebase database for each visit: where the visit came from (for example our YouTube channel or a shared link), the language, whether it is a phone or a computer, how many rounds were started and finished, which modes were played and the active playing time. It includes a random device number stored in local storage so we can count players rather than page loads. It contains no name, no account and no cookie, and we never combine it with anything else. You can turn it off for your device by opening <a href="/?notrack">brainteasersclub.app/?notrack</a> once.</p>
 <h2>What we do not collect</h2>
 <p>We do not have user accounts, and we do not ask for email addresses or any other personal information. Names typed into the game are used only as described above. The game has no server of its own.</p>
 <h2>Advertising</h2>
@@ -120,10 +122,11 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 # manifest, sw, robots, icon
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
+open('dist/stats.html','w',encoding='utf-8').write(open('src/stats.html',encoding='utf-8').read())  # owner's private stats page (noindex, unlinked)
 os.makedirs('dist/i18n',exist_ok=True)
 for f,tr in TRANS.items(): json.dump(tr,open('dist/i18n/'+f,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v22";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v23";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;
