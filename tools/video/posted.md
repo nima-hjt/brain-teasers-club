@@ -48,3 +48,10 @@ Posted / scheduled
 - Fact Shorts: body (taller in the morning, stomach lining, glow) · space (Venus day > year, Moon footprints, 8-min sunlight) ·
   animals (sharks older than trees, blue whale heart 180 kg, crocodile tongue)
 Planned (files ready): see Wild Facts\Posting Plan - Wild Facts.docx and tools/video/wf.json, wf_long.json
+
+## Instagram @wildfactsquiz (auto-shared to the Facebook page)
+Posted before Oct 6: Can Your Eyes Beat the Clock (numbers) · Guess the Country · Only 3% Find All 3 (faces) · impostor face 😈 ·
+3 animal facts (sharks older than trees…) · 3 things your body does · 5 animal questions (penguin, rabbit, goat, giraffe, lions)
+Planned Oct 7–20 (Instagram-Facebook folder, tools/video/make_social.py): 12 pm = the Brain Teasers Short from the day before
+on YouTube; 6 pm = the Wild Facts Short from the day before, except Oct 9 (Kids vs Parents, w8) since the Oct 8 animal-facts Short
+was already on Instagram. Instagram never repeats an Instagram post; repeating YouTube content there is fine.

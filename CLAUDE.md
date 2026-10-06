@@ -86,6 +86,9 @@ ready → play → results → rematch → disconnect.
   `tools/video/say_cfg.py <name> af_heart` (Kokoro, offline; model files in `.new/tts/`, not in git), then open
   `short.html?s=<name>` (configs in `shorts.json`, kinds emoji | riddle | odd) or `long.html` in the browser and run
   `exportMp4()`. Export is frame-exact (WebCodecs + mp4-muxer); never record in real time (it drifts out of sync).
+- Instagram/Facebook: Reels go in `Downloads\brain-teasers-club-repo\Instagram-Facebook\` with the plan from
+  `tools/video/make_social.py` (caption for Instagram, which auto-shares to Facebook, plus a Facebook comment with the /fb
+  link). Reel versions skip the intro: add `&reel=1` to the short.html / wf.html URL before `exportMp4()`.
 - No repeats: check every new video against `tools/video/posted.md` (posted + planned content for both channels, which
   also covers Instagram/Facebook Reels) and add the new video there.
 - Before export: no invented statistics in titles or narration, puzzles not in the next two weeks' Dailies, no clue
