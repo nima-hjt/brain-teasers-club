@@ -676,5 +676,35 @@
     "say": "Number three. The sunlight you see right now left the Sun about eight minutes ago."
    }
   ]
+ },
+ "eyes": {
+  "kind": "facts",
+  "theme": "teal",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 EYE FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three facts about your eyes that sound fake, but are true.",
+  "items": [
+   {
+    "t": "The front of your eye has no blood",
+    "big": "NO BLOOD",
+    "small": "it breathes oxygen from the air",
+    "say": "Number one. The clear front of your eye, the cornea, has no blood vessels. It takes its oxygen straight from the air."
+   },
+   {
+    "t": "Each eye has a blind spot",
+    "big": "BLIND SPOT",
+    "small": "your brain fills in the gap",
+    "say": "Number two. Each of your eyes has a blind spot, where the nerve leaves the eye. You never notice it, because your brain fills in the gap."
+   },
+   {
+    "t": "Your eyes see the world upside down",
+    "big": "UPSIDE DOWN",
+    "small": "your brain flips it back",
+    "say": "Number three. The picture on the back of your eye is upside down. Your brain flips it the right way up."
+   }
+  ]
  }
 }

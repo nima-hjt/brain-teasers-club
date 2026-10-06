@@ -29,7 +29,7 @@ R = [
  (13, '12:00 pm', 'Oct 13 12pm - Spot the Different Face 👀.mp4', ['Spot the different face 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (13, '6:00 pm', 'Oct 13 6pm - Food Quiz 🍯.mp4', ['Food quiz 🍯 3 questions. Question 3 is tricky!', 'Comment your score 👇'], '#foodquiz #foodfacts #quiz #trivia'),
  (14, '12:00 pm', 'Oct 14 12pm - Guess the Fairy Tale by Emoji 🏰.mp4', ['Guess all 5 fairy tales from the emoji 🏰 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #fairytale #guessthestory #brainteaser'),
- (14, '6:00 pm', 'Oct 14 6pm - World Quiz 🌍.mp4', ['World quiz 🌍 5 questions, 3 seconds each! The last one surprises a lot of people.', 'Comment your score 👇'], '#geography #worldquiz #quiz #trivia'),
+ (14, '6:00 pm', 'Oct 14 6pm - 3 Eye Facts That Sound Fake 👀.mp4', ['3 facts about your eyes that sound fake, but are true 👀', 'Which one surprised you most? 👇'], '#eyefacts #humanbody #didyouknow #facts'),
  (15, '12:00 pm', 'Oct 15 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
  (15, '6:00 pm', 'Oct 15 6pm - 3 Animal Facts That Sound Fake 🦛.mp4', ['3 animal facts that sound fake, but are true 🦛', 'Which one surprised you most? 👇'], '#animalfacts #didyouknow #facts #animals'),
  (16, '12:00 pm', 'Oct 16 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Trees, smiles and clocks. 6 seconds each!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
@@ -42,6 +42,7 @@ R = [
  (19, '6:00 pm', 'Oct 19 6pm - Science Quiz 🔬.mp4', ['Science quiz 🔬 3 questions. The last one surprises everyone!', 'Comment your score 👇'], '#sciencequiz #science #quiz #trivia'),
  (20, '12:00 pm', 'Oct 20 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
  (20, '6:00 pm', 'Oct 20 6pm - Baby Animal Names Quiz 🐣.mp4', ['What do you call these baby animals? 🐣 3 seconds each!', 'Comment your score 👇'], '#babyanimals #animalquiz #quiz #trivia'),
+ (21, '6:00 pm', 'Oct 21 6pm - World Quiz 🌍.mp4', ['World quiz 🌍 5 questions, 3 seconds each! The last one surprises a lot of people.', 'Comment your score 👇'], '#geography #worldquiz #quiz #trivia'),
 ]
 
 body = []

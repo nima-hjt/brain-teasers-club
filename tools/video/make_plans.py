@@ -140,7 +140,11 @@ WF = [
    '3 food questions, 5 seconds each 🍯 Did question 3 trick you? Comment your score!',
    'food quiz, food facts, quiz shorts, trivia, general knowledge, banana berry, honey, potato', '#foodquiz #foodfacts #quiz #trivia',
    ['Food quiz 🍯 3 questions. Question 3 is tricky!', 'Comment your score 👇'], related='Ocean Quiz: 12 Questions (long video)'),
- wf_short(13, 'Oct 13 - World Quiz 3 Seconds Each 🌍 #shorts.mp4', 'World Quiz: 3 Seconds Each 🌍',
+ wf_short(13, 'Oct 13 - 3 Eye Facts That Sound Fake 👀 #shorts.mp4', '3 Eye Facts That Sound Fake (But Are True) 👀',
+   'Your eye breathes air, has a blind spot and sees the world upside down 👀 Which one surprised you most?',
+   'eye facts, human body facts, did you know, facts you didn\'t know, weird facts, science facts, cornea, blind spot', '#eyefacts #humanbody #didyouknow #facts',
+   ['3 facts about your eyes that sound fake, but are true 👀', 'Which one surprised you most? 👇'], facts=True, related='Ocean Quiz: 12 Questions (long video)'),
+ wf_short(20, 'Oct 20 - World Quiz 3 Seconds Each 🌍 #shorts.mp4', 'World Quiz: 3 Seconds Each 🌍',
    '5 geography questions, 3 seconds each 🌍 The last one surprises a lot of people. Comment your score!',
    'geography quiz, world quiz, countries quiz, quiz shorts, trivia, general knowledge, oceans, deserts', '#geography #worldquiz #quiz #trivia',
    ['World quiz 🌍 5 questions, 3 seconds each!', 'The last one surprises a lot of people 👇'], related='Ocean Quiz: 12 Questions (long video)'),
@@ -208,6 +212,7 @@ WF_PLAYLISTS = [
 
 # ---------------- document builder ----------------
 def build(path, title, intro, glance, videos, done, done_title, ig_note, playlists=None):
+    videos = sorted(videos, key=lambda v: (v['d'], 0 if v['time'].startswith('12') else 1))
     body = []
     def run(t, b=False, mono=False, color=None, size=None, i=False):
         rpr = ('<w:rFonts w:ascii="Consolas" w:hAnsi="Consolas" w:cs="Consolas"/>' if mono else '') + ('<w:b/>' if b else '') + ('<w:i/>' if i else '') + \
