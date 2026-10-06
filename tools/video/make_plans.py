@@ -32,11 +32,11 @@ BT = [
  bt_short(7, 'Oct 7 - Find the Odd One Out 👀 #shorts.mp4', 'Find the Odd One Out 👀 Can Your Eyes Beat the Clock?',
    '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
-   ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], 'Odd One Out'),
+   ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], 'Odd One Out & Riddles'),
  bt_short(8, 'Oct 8 - 3 Riddles in 30 Seconds 🧩 #shorts.mp4', '3 Riddles in 30 Seconds 🧩 Can You Solve Them All?',
    '3 riddles, 6 seconds each 🧩 How many did you get? Comment your score!',
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
-   ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], 'Riddles'),
+   ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], 'Odd One Out & Riddles'),
  bt_long(9, 'Guess 20 Animals by Emoji - Easy to Hard (long, Oct 9).mp4', 'Guess 20 Animals by Emoji - thumbnail.png',
    'Guess 20 Animals by Emoji 🐾 Emoji + Emoji = Animal | Easy to Hard',
    'Two emoji make one animal 🐾 Can you guess all 20? It starts easy and gets harder every round. Keep score and comment how many you got!',
@@ -50,15 +50,15 @@ BT = [
  bt_short(10, 'Oct 10 - Find the Odd Letter 🔤 #shorts.mp4', 'Find the Odd Letter 🔤 Level 2 Fools Everyone',
    '3 levels, 6 seconds each 🔤 Did level 2 trick you? Comment below!',
    'find the odd one out, odd letter, eye test, optical illusion, visual puzzle, brain teasers, spot the difference', '#oddoneout #eyetest #findtheodd #braintest',
-   ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], 'Odd One Out'),
+   ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], 'Odd One Out & Riddles'),
  bt_short(11, 'Oct 11 - Find the Odd One Out 2 👀 #shorts.mp4', 'Find the Odd One Out 👀 Level 3 Is Almost Impossible',
    '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
-   ['3 levels, 6 seconds each 👀 Level 3 is almost impossible!', 'How many did you find? 👇'], 'Odd One Out'),
+   ['3 levels, 6 seconds each 👀 Level 3 is almost impossible!', 'How many did you find? 👇'], 'Odd One Out & Riddles'),
  bt_short(12, 'Oct 12 - Find the Odd One Out 3 👀 #shorts.mp4', 'Find the Odd One Out 👀 Only Sharp Eyes Find Level 3',
    '3 levels, 6 seconds each 👀 Faces this time! How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
-   ['Find the odd emoji 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], 'Odd One Out'),
+   ['Find the odd emoji 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], 'Odd One Out & Riddles'),
  bt_long(13, 'Oct 13 - Guess 20 Foods by Emoji - Easy to Hard (long).mp4', 'Oct 13 - Guess 20 Foods by Emoji - thumbnail.png',
    'Guess 20 Foods by Emoji 🍔 Easy to Hard | Emoji Food Quiz',
    'Can you guess all 20 foods from just emoji? 🍔 It starts easy and gets harder every round. Keep score and comment how many you got!',
@@ -71,11 +71,11 @@ BT = [
  bt_short(14, 'Oct 14 - 3 Riddles in 30 Seconds 2 🧩 #shorts.mp4', '3 Riddles in 30 Seconds 🧩 Can You Beat the Timer?',
    '3 riddles, 6 seconds each 🧩 How many did you get? Comment your score!',
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
-   ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], 'Riddles', 'Guess 20 Foods by Emoji (long video)'),
+   ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], 'Odd One Out & Riddles', 'Guess 20 Foods by Emoji (long video)'),
  bt_short(15, 'Oct 15 - Find the Odd One Out 4 👀 #shorts.mp4', 'Find the Odd One Out 👀 Level 3 Takes a Second Look',
    '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
-   ['3 levels, 6 seconds each 👀 Level 3 takes a second look!', 'How many did you find? 👇'], 'Odd One Out', 'Guess 20 Foods by Emoji (long video)'),
+   ['3 levels, 6 seconds each 👀 Level 3 takes a second look!', 'How many did you find? 👇'], 'Odd One Out & Riddles', 'Guess 20 Foods by Emoji (long video)'),
  bt_short(16, 'Oct 16 - Guess the Cartoon Movie by Emoji 🎬 #shorts.mp4', 'Guess the Cartoon Movie by Emoji 🎬 3 Seconds Each',
    'Can you guess all 5 animated movies from the emoji? 🎬 Comment your score!',
    'guess the movie by emoji, emoji quiz, disney quiz, cartoon quiz, animated movie quiz, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #guessthemovie #disneyquiz #quiz',
@@ -88,7 +88,7 @@ BT = [
  bt_short(17, 'Oct 17 - Find the Odd One Out 5 🔤 #shorts.mp4', 'Find the Odd One Out 🔤 Letters and Numbers Edition',
    '3 levels, 6 seconds each 🔤 Did level 3 trick you? Comment below!',
    'find the odd one out, odd letter, eye test, optical illusion, visual puzzle, brain teasers, spot the difference', '#oddoneout #eyetest #findtheodd #braintest',
-   ['Find the odd one 🔤 Letters and numbers edition!', 'Did level 3 get you? 👇'], 'Odd One Out', 'Guess 20 Words by Emoji (long video)'),
+   ['Find the odd one 🔤 Letters and numbers edition!', 'Did level 3 get you? 👇'], 'Odd One Out & Riddles', 'Guess 20 Words by Emoji (long video)'),
  bt_short(18, 'Oct 18 - Guess the Halloween Word by Emoji 🎃 #shorts.mp4', 'Guess the Halloween Word by Emoji 🎃 3 Seconds Each',
    'Halloween is coming 🎃 Can you guess all 5 spooky words from the emoji? Comment your score!',
    'halloween quiz, guess the word by emoji, emoji quiz, halloween emoji, emoji challenge, brain teasers, quiz shorts', '#halloween #emojiquiz #halloweenquiz #quiz',
@@ -96,7 +96,7 @@ BT = [
  bt_short(19, 'Oct 19 - 3 Riddles in 30 Seconds 3 🧩 #shorts.mp4', '3 Riddles in 30 Seconds 🧩 The Last One Is the Hardest',
    '3 riddles, 6 seconds each 🧩 How many did you get? Comment your score!',
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
-   ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Riddles', 'Guess 20 Words by Emoji (long video)'),
+   ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Odd One Out & Riddles', 'Guess 20 Words by Emoji (long video)'),
 ]
 BT_DONE = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
@@ -107,7 +107,7 @@ WF_PIN_F = ['Which fact surprised you most: 1, 2 or 3? 👇', '🐙 A wild fact 
 def wf_short(d, file, title, hook, tags, hashtags, ig, facts=False, related=None, extra=None):
     related = related or ('Animal Quiz: 12 Questions Most Adults Get Wrong (long video)' if d < 11 else 'Ocean Quiz: 12 Questions (long video)')
     return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + WF_TAIL + ['', '#shorts ' + hashtags],
-                tags=tags, playlist='Wild Facts' if facts else 'Quiz Videos', category='Education', related=related, pin=WF_PIN_F if facts else WF_PIN_Q,
+                tags=tags, playlist='Did You Know? Wild Facts' if facts else 'Quiz Videos', category='Education', related=related, pin=WF_PIN_F if facts else WF_PIN_Q,
                 ig=ig + ['', '🐙 Follow @wildfactsquiz for a new one every day', '🧠 More free quizzes: link in bio', '', hashtags], ig_time='6:00 pm', extra=extra)
 def wf_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
     chapters = [chapters] if isinstance(chapters, str) else chapters
@@ -193,8 +193,21 @@ WF_DONE = [
   ['"99% Fail Question 4 🦒 Animal Quiz"  →  "Animal Quiz: Question 4 Is Tricky 🦒 #shorts"', '"Only 1% Get 5/5 on This Animal Quiz 🐾"  →  "Animal Quiz: Can You Get 5/5? 🐾 #shorts"']),
 ]
 
+BT_PLAYLISTS = [
+ ('Playlist 1 (title, then description). Add the videos already up: Guess the Country by Emoji, Guess 20 Movies by Emoji (long), Guess the Movie by Emoji',
+  ['Emoji Quizzes', 'Guess the movie, food, animal or saying from just emoji. New quiz every day!']),
+ ('Playlist 2 (title, then description). Add the videos already up: Can Your Eyes Beat the Clock?, Only 3% Find All 3 (Odd One Out)',
+  ['Odd One Out & Riddles', 'Find the odd one out before the timer ends, and quick riddles to test your brain.']),
+]
+WF_PLAYLISTS = [
+ ('Playlist 1 (title, then description). Add: Only 1% Get 5/5, 99% Fail Question 4, Kids vs Parents, Animal Quiz: 12 Questions (long), Biggest Brain, Only Ocean Experts Get 5/5, and when they go live: General Knowledge Quiz (long), Group of Crows',
+  ['Quiz Videos', 'Animal, ocean, space and general knowledge quizzes. How many can you get?']),
+ ('Playlist 2 (title, then description). Add: 8 Animal Facts That Sound Fake (long), 3 Things Your Body Does, and when they go live: 3 Animal Facts That Sound Fake, 3 Space Facts',
+  ['Did You Know? Wild Facts', 'Short, true facts about animals, space and the human body that sound fake.']),
+]
+
 # ---------------- document builder ----------------
-def build(path, title, intro, glance, videos, done, done_title, ig_note):
+def build(path, title, intro, glance, videos, done, done_title, ig_note, playlists=None):
     body = []
     def run(t, b=False, mono=False, color=None, size=None, i=False):
         rpr = ('<w:rFonts w:ascii="Consolas" w:hAnsi="Consolas" w:cs="Consolas"/>' if mono else '') + ('<w:b/>' if b else '') + ('<w:i/>' if i else '') + \
@@ -224,6 +237,9 @@ def build(path, title, intro, glance, videos, done, done_title, ig_note):
     for line in intro: p(run(line, color='555566'), after=60)
     h('Schedule (not uploaded yet)')
     table([['Date', 'Time', 'Type', 'Title']] + [[day(v['d']), v['time'], v['kind'].replace(' (16:9)', ''), v['title'].replace(' #shorts', '')] for v in videos], [1400, 1000, 1000, 6600])
+    if playlists:
+        h('Playlists (set up once)')
+        for t, lines in playlists: label(t); copy(lines)
     if done:
         h(done_title)
         for t, lines in done: label(t); copy(lines)
@@ -238,7 +254,7 @@ def build(path, title, intro, glance, videos, done, done_title, ig_note):
         label(N('Title')); copy([v['title']])
         label(N('Description')); copy(v['desc'])
         if v.get('thumb'): field(N('Thumbnail'), v['thumb'])
-        field(N('Playlist'), v['playlist'] + '  (create it once if it does not exist yet)')
+        field(N('Playlist'), v['playlist'])
         field(N('Audience'), 'No, it\'s not made for kids  ·  Age restriction: No')
         label(N('Show more → Tags')); copy([v['tags']])
         field(N('Show more → other'), 'Altered content: No  ·  Language: English  ·  Category: ' + v['category'] + '  ·  Comments: On')
@@ -264,6 +280,8 @@ def build(path, title, intro, glance, videos, done, done_title, ig_note):
           '<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>')
     rels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'
     drels = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'
+    try: open(path, 'ab').close()
+    except PermissionError: print('LOCKED (close it in Word, then re-run):', path); return
     with zipfile.ZipFile(path, 'w', zipfile.ZIP_DEFLATED) as z:
         z.writestr('[Content_Types].xml', ct); z.writestr('_rels/.rels', rels); z.writestr('word/document.xml', doc); z.writestr('word/styles.xml', styles); z.writestr('word/_rels/document.xml.rels', drels)
     print('wrote', path, os.path.getsize(path), 'bytes,', len(videos), 'videos')
@@ -287,8 +305,8 @@ if __name__ == '__main__':
     build(os.path.join(ROOT, 'Brain Teasers', 'Posting Plan - Brain Teasers.docx'), 'Brain Teasers — Posting Plan',
           ['Each section below is one upload, in the order YouTube Studio asks for things. Copy each grey box as it is.',
            'When a video is uploaded, it can be removed from this plan (ask Claude, or delete the section).'],
-          None, BT, BT_DONE, 'Already scheduled: only the pinned comment is left', '  (Instagram/Facebook: Brain Teasers Reel at 12 pm, Wild Facts Reel at 6 pm)')
+          None, BT, BT_DONE, 'Already scheduled: only the pinned comment is left', '  (Instagram/Facebook: Brain Teasers Reel at 12 pm, Wild Facts Reel at 6 pm)', BT_PLAYLISTS)
     build(os.path.join(ROOT, 'Wild Facts', 'Posting Plan - Wild Facts.docx'), 'Wild Facts — Posting Plan',
           ['Each section below is one upload, in the order YouTube Studio asks for things. Copy each grey box as it is.',
            'When a video is uploaded, it can be removed from this plan (ask Claude, or delete the section).'],
-          None, WF, WF_DONE, 'Already uploaded: comments to post and pin, and fixes', '  (Instagram/Facebook: Wild Facts Reel at 6 pm, Brain Teasers Reel at 12 pm)')
+          None, WF, WF_DONE, 'Already uploaded: comments to post and pin, and fixes', '  (Instagram/Facebook: Wild Facts Reel at 6 pm, Brain Teasers Reel at 12 pm)', WF_PLAYLISTS)
