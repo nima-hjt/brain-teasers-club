@@ -1,5 +1,5 @@
 <title>Brain Teasers Club</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Vazirmatn:wght@400;600;700;800&display=swap">
 <style>
 /* Layout: one-screen phone-first arcade card; a top bar with timer, a centered play area, a bottom action row. */
 :root{
@@ -26,6 +26,9 @@ h1{font-size:2.4rem;font-weight:700}
 h2{font-size:1.5rem;font-weight:600}
 p{margin:0}
 .muted{color:var(--muted)}
+html[lang="fa"]{--display:"Vazirmatn","Fredoka",system-ui,sans-serif;--body:"Vazirmatn","Nunito",system-ui,sans-serif}
+html[lang="fa"] .eyebrow{letter-spacing:0}
+.langsel{background:var(--raised);color:var(--fg);border:2px solid var(--line);border-radius:12px;padding:6px 8px;font:inherit;font-size:.85rem;font-weight:700;margin-inline-start:auto;margin-inline-end:8px}
 .eyebrow{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--accent)}
 
 /* top bar */
@@ -56,7 +59,7 @@ p{margin:0}
 #aboutDlg .links{display:grid;gap:8px;margin:14px 0 12px}#aboutDlg .links a{display:block;padding:10px 12px;border-radius:12px;background:var(--raised);color:inherit;text-decoration:none;font-weight:600}
 
 .modes{display:grid;gap:10px}
-.mode{display:flex;align-items:center;gap:14px;text-align:left;background:var(--raised);border:2px solid transparent;border-radius:16px;padding:14px;transition:border-color .15s,transform .1s}
+.mode{display:flex;align-items:center;gap:14px;text-align:start;background:var(--raised);border:2px solid transparent;border-radius:16px;padding:14px;transition:border-color .15s,transform .1s}
 .mode:hover,.mode:focus-visible{border-color:var(--accent);outline:none}
 .mode:active{transform:scale(.98)}
 .mode.done{opacity:.75}.mode.done b::after{content:" ✓";color:var(--good)}
@@ -64,7 +67,7 @@ p{margin:0}
 .mode b{font-family:var(--display);font-size:1.1rem;font-weight:600;display:block}
 .mode small{color:var(--muted);display:block;font-size:.85rem}
 .best{display:flex;justify-content:space-between;font-size:.9rem;border-top:1px solid var(--line);padding-top:12px}
-.hero{display:flex;flex-direction:column;gap:6px;text-align:left;background:var(--accent);color:var(--accent-ink);border:0;border-radius:18px;padding:16px 18px;transition:transform .1s,filter .1s}
+.hero{display:flex;flex-direction:column;gap:6px;text-align:start;background:var(--accent);color:var(--accent-ink);border:0;border-radius:18px;padding:16px 18px;transition:transform .1s,filter .1s}
 .hero:hover{filter:brightness(1.05)} .hero:active{transform:scale(.985)}
 .hero-top{display:flex;justify-content:space-between;align-items:center}
 .hero-streak{font-family:var(--display);font-weight:700;font-size:1.1rem}
@@ -87,13 +90,13 @@ p{margin:0}
 .vs .p.win{outline:3px solid var(--good)}
 .vs .p span{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block}
 .vs .p small{display:block;font-size:.8rem;color:var(--muted);margin-top:4px}
-.rv .why{margin-top:6px;font-size:.88rem;color:var(--fg);opacity:.85;border-left:3px solid var(--accent);padding-left:8px}
+.rv .why{margin-top:6px;font-size:.88rem;color:var(--fg);opacity:.85;border-inline-start:3px solid var(--accent);padding-inline-start:8px}
 .vs em{font-family:var(--display);font-style:normal;font-weight:700;color:var(--muted)}
 input.name{width:100%;background:var(--raised);border:2px solid var(--line);border-radius:12px;padding:10px 12px;font:inherit;color:var(--fg)}
 input.name:focus{outline:none;border-color:var(--accent)}
 .names{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.chip{background:var(--raised);border:2px solid var(--line);border-radius:14px;padding:12px 10px;font-weight:800;font-size:.95rem;text-align:left;transition:border-color .15s,background .15s}
+.chip{background:var(--raised);border:2px solid var(--line);border-radius:14px;padding:12px 10px;font-weight:800;font-size:.95rem;text-align:start;transition:border-color .15s,background .15s}
 .chip[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 18%,var(--raised))}
 .chip:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 .topline{display:flex;justify-content:space-between;align-items:center;gap:10px}
@@ -144,7 +147,7 @@ input.name:focus{outline:none;border-color:var(--accent)}
 .xpbar i{display:block;height:100%;background:var(--accent);width:0;transition:width .6s ease-out}
 .emojiline{font-size:1.3rem;letter-spacing:.08em;text-align:center;line-height:1.3}
 .eml{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;font-size:1.1rem;letter-spacing:.06em}
-.eml span{font-family:var(--body);font-size:.85rem;font-weight:800;letter-spacing:0;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.eml span{font-family:var(--body);font-size:.85rem;font-weight:800;letter-spacing:0;text-align:end;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .levelup{text-align:center;font-family:var(--display);font-weight:700;color:var(--accent);font-size:1.1rem}
 .rv{display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start;background:var(--raised);border-radius:12px;padding:10px 12px;font-size:.92rem}
 .rv .n{font-family:var(--display);font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
@@ -166,7 +169,7 @@ input.name:focus{outline:none;border-color:var(--accent)}
 .cell.miss{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 25%,var(--raised))}
 .cell.reveal{border-color:var(--good)}
 .choices{display:grid;gap:10px}
-.choice{background:var(--raised);border:2px solid transparent;border-radius:14px;padding:14px 16px;text-align:left;font-weight:700;font-size:1.05rem;transition:border-color .1s,transform .08s}
+.choice{background:var(--raised);border:2px solid transparent;border-radius:14px;padding:14px 16px;text-align:start;font-weight:700;font-size:1.05rem;transition:border-color .1s,transform .08s}
 .choice:active{transform:scale(.98)}
 .choice.hit{border-color:var(--good);background:color-mix(in srgb,var(--good) 22%,var(--raised))}
 .choice.miss{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 22%,var(--raised))}
@@ -207,120 +210,120 @@ footer a{white-space:nowrap}
 <div class="app">
   <!-- HOME -->
   <section id="home" class="panel home">
-    <div class="topline"><button class="mascot" id="aboutBtn" aria-label="About Brain Teasers Club" title="About">🧠</button><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on">🔊</button></div>
+    <div class="topline"><button class="mascot" id="aboutBtn" aria-label="About Brain Teasers Club" title="About">🧠</button><select class="langsel" id="langSel" aria-label="Language"><option value="en">English</option><option value="fa">فارسی</option><option value="es">Español</option></select><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on">🔊</button></div>
     <p class="eyebrow">Brain Teasers Club</p>
-    <h1>How sharp are you today?</h1>
-    <p class="muted">Ten quick puzzles, a ticking clock and limited lives. Fast answers score more, and streaks multiply your points.</p>
+    <h1 data-t="h1">How sharp are you today?</h1>
+    <p class="muted" data-t="intro">Ten quick puzzles, a ticking clock and limited lives. Fast answers score more, and streaks multiply your points.</p>
     <button class="hero" data-mode="daily" id="dailyBtn">
-      <span class="hero-top"><span class="eyebrow" style="color:var(--accent-ink);opacity:.8">Daily Challenge</span><span class="hero-streak">🔥 <span id="streakDays">0</span></span></span>
-      <span class="hero-title">Today's 10 puzzles</span>
+      <span class="hero-top"><span class="eyebrow" style="color:var(--accent-ink);opacity:.8" data-t="dailyTitle">Daily Challenge</span><span class="hero-streak">🔥 <span id="streakDays">0</span></span></span>
+      <span class="hero-title" data-t="dailyBig">Today's 10 puzzles</span>
       <span class="hero-sub" id="dailyLabel">Same for everyone, one try a day</span>
     </button>
     <div class="modes">
-      <button class="mode" data-mode="solo"><span class="ico">🎯</span><span><b>Play Solo</b><small id="soloLabel">Odd one out, emoji riddles, logic, animal facts</small></span></button>
-      <button class="mode" data-mode="friends"><span class="ico">⚔️</span><span><b>Play with Friends</b><small>Live match on two phones, or duel face to face</small></span></button>
+      <button class="mode" data-mode="solo"><span class="ico">🎯</span><span><b data-t="solo">Play Solo</b><small id="soloLabel">Odd one out, emoji riddles, logic, animal facts</small></span></button>
+      <button class="mode" data-mode="friends"><span class="ico">⚔️</span><span><b data-t="friends">Play with Friends</b><small data-t="friendsSub">Live match on two phones, or duel face to face</small></span></button>
     </div>
-    <div class="best"><span class="muted">Your best score</span><b id="bestHome">0</b></div>
-    <div class="best" style="border-top:0;padding-top:0"><span class="streakchip" id="streakChip">Streak <small id="streakHint"></small></span><span class="muted" id="streakBest"></span></div>
+    <div class="best"><span class="muted" data-t="best">Your best score</span><b id="bestHome">0</b></div>
+    <div class="best" style="border-top:0;padding-top:0"><span class="streakchip" id="streakChip"><span data-t="streak">Streak</span> <small id="streakHint"></small></span><span class="muted" id="streakBest"></span></div>
     <div class="xp"><div class="row2"><b id="xpTitle">Level 1 · Rookie</b><small id="xpNext">0 / 100 XP</small></div><div class="xpbar"><i id="xpBar"></i></div><small id="freezeNote"></small></div>
   </section>
 
   <!-- SOLO -->
   <section id="custom" class="panel" hidden>
-    <p class="eyebrow">Play Solo</p>
-    <h2>Pick your puzzles</h2>
+    <p class="eyebrow" data-t="solo">Play Solo</p>
+    <h2 data-t="pickH">Pick your puzzles</h2>
     <div class="chips" id="chips">
-      <button class="chip" data-type="odd" aria-pressed="true">👀 Odd One Out</button>
-      <button class="chip" data-type="emoji" aria-pressed="true">🎬 Emoji Riddles</button>
-      <button class="chip" data-type="logic" aria-pressed="true">🧮 Quick Logic</button>
-      <button class="chip" data-type="facts" aria-pressed="true">🐾 Animal Facts</button>
+      <button class="chip" data-type="odd" aria-pressed="true">👀 <span data-t="t_odd">dd One Out</span></button>
+      <button class="chip" data-type="emoji" aria-pressed="true">🎬 <span data-t="t_emoji">moji Riddles</span></button>
+      <button class="chip" data-type="logic" aria-pressed="true">🧮 <span data-t="t_logic">uick Logic</span></button>
+      <button class="chip" data-type="facts" aria-pressed="true">🐾 <span data-t="t_facts">nimal Facts</span></button>
     </div>
     <p class="muted" id="customLabel" style="text-align:center;font-size:.9rem"></p>
-    <div class="section-title"><span>Difficulty</span></div>
+    <div class="section-title"><span data-t="difficulty">Difficulty</span></div>
     <div class="seg diffSeg" role="group" aria-label="Difficulty">
-      <button data-diff="easy">Easy</button><button data-diff="normal" aria-pressed="true">Normal</button><button data-diff="hard">Hard</button><button data-diff="impossible">Impossible</button>
+      <button data-diff="easy" data-t="d_easy">Easy</button><button data-diff="normal" aria-pressed="true" data-t="d_normal">Normal</button><button data-diff="hard" data-t="d_hard">Hard</button><button data-diff="impossible" data-t="d_impossible">Impossible</button>
     </div>
     <p class="diff-note diffNote"></p>
-    <button class="btn" id="startCustom">Start round</button>
-    <button class="btn ghost" id="customBack">Back</button>
+    <button class="btn" id="startCustom" data-t="start">Start round</button>
+    <button class="btn ghost" id="customBack" data-t="back">Back</button>
   </section>
 
   <!-- FRIENDS -->
   <section id="friends" class="panel" hidden>
-    <p class="eyebrow">Play with Friends</p>
-    <h2>How do you want to play?</h2>
+    <p class="eyebrow" data-t="friends">Play with Friends</p>
+    <h2 data-t="howPlay">How do you want to play?</h2>
     <div class="modes">
-      <button class="mode" data-mode="duel"><span class="ico">⚡</span><span><b>Duel</b><small>One phone between you, face to face. First correct tap wins the point.</small></span></button>
-      <button class="mode" data-mode="pass"><span class="ico">🤝</span><span><b>Pass &amp; Play</b><small>Same phone, same 10 puzzles, take turns</small></span></button>
-      <button class="mode" data-mode="live"><span class="ico">📡</span><span><b>Live Match</b><small>Each on your own phone, anywhere. Same puzzles at the same time, scores update live</small></span></button>
-      <button class="mode" data-mode="challenge" hidden><span class="ico">🔗</span><span><b>Challenge by Link</b><small>Each on your own phone, same puzzles, compare scores</small></span></button>
+      <button class="mode" data-mode="duel"><span class="ico">⚡</span><span><b data-t="duel">Duel</b><small data-t="duelSub">One phone between you, face to face. First correct tap wins the point.</small></span></button>
+      <button class="mode" data-mode="pass"><span class="ico">🤝</span><span><b data-t="pass">Pass &amp; Play</b><small data-t="passSub">Same phone, same 10 puzzles, take turns</small></span></button>
+      <button class="mode" data-mode="live"><span class="ico">📡</span><span><b data-t="live">Live Match</b><small data-t="liveSub">Each on your own phone, anywhere. Same puzzles at the same time, scores update live</small></span></button>
+      <button class="mode" data-mode="challenge" hidden><span class="ico">🔗</span><span><b data-t="chal">Challenge by Link</b><small data-t="chalSub">Each on your own phone, same puzzles, compare scores</small></span></button>
     </div>
-    <div class="section-title"><span>Puzzle types</span></div>
+    <div class="section-title"><span data-t="types">Puzzle types</span></div>
     <div class="chips chipsAll">
-      <button class="chip" data-type="odd" aria-pressed="true">👀 Odd One Out</button>
-      <button class="chip" data-type="emoji" aria-pressed="true">🎬 Emoji Riddles</button>
-      <button class="chip" data-type="logic" aria-pressed="true">🧮 Quick Logic</button>
-      <button class="chip" data-type="facts" aria-pressed="true">🐾 Animal Facts</button>
+      <button class="chip" data-type="odd" aria-pressed="true">👀 <span data-t="t_odd">dd One Out</span></button>
+      <button class="chip" data-type="emoji" aria-pressed="true">🎬 <span data-t="t_emoji">moji Riddles</span></button>
+      <button class="chip" data-type="logic" aria-pressed="true">🧮 <span data-t="t_logic">uick Logic</span></button>
+      <button class="chip" data-type="facts" aria-pressed="true">🐾 <span data-t="t_facts">nimal Facts</span></button>
     </div>
-    <div class="section-title"><span>Difficulty</span></div>
+    <div class="section-title"><span data-t="difficulty">Difficulty</span></div>
     <div class="seg diffSeg" role="group" aria-label="Difficulty">
-      <button data-diff="easy">Easy</button><button data-diff="normal" aria-pressed="true">Normal</button><button data-diff="hard">Hard</button><button data-diff="impossible">Impossible</button>
+      <button data-diff="easy" data-t="d_easy">Easy</button><button data-diff="normal" aria-pressed="true" data-t="d_normal">Normal</button><button data-diff="hard" data-t="d_hard">Hard</button><button data-diff="impossible" data-t="d_impossible">Impossible</button>
     </div>
     <p class="diff-note diffNote"></p>
-    <button class="btn ghost" id="friendsBack">Back</button>
+    <button class="btn ghost" id="friendsBack" data-t="back">Back</button>
   </section>
 
   <!-- LIVE MATCH -->
   <section id="live" class="panel" hidden>
-    <p class="eyebrow">Live Match</p>
+    <p class="eyebrow" data-t="live">Live Match</p>
     <h2 id="liveTitle">Play a friend on their own phone</h2>
     <p class="muted" id="liveHint">One of you creates a room and sends the link or code. The other joins. You both play the same 10 puzzles at the same time and watch each other's score live.</p>
-    <label class="muted" for="liveName" style="font-size:.85rem">Your name</label>
-    <input class="name" id="liveName" placeholder="Your name" maxlength="14" autocomplete="off">
+    <label class="muted" for="liveName" style="font-size:.85rem" data-t="yourName">Your name</label>
+    <input class="name" id="liveName" placeholder="Your name" data-tp="yourName" maxlength="14" autocomplete="off">
     <div id="liveStart">
-      <button class="btn" id="liveCreate">Create a room</button>
-      <div class="section-title" style="margin-top:14px"><span>Or join a friend's room</span></div>
+      <button class="btn" id="liveCreate" data-t="create">Create a room</button>
+      <div class="section-title" style="margin-top:14px"><span data-t="orJoin">Or join a friend's room</span></div>
       <div class="row">
-        <input class="name" id="liveInput" placeholder="Room code, e.g. K7Q2" maxlength="4" autocomplete="off" style="flex:1 1 120px;text-transform:uppercase">
-        <button class="btn ghost" id="liveJoin" style="flex:0 0 auto">Join</button>
+        <input class="name" id="liveInput" placeholder="Room code, e.g. K7Q2" data-tp="roomPh" maxlength="4" autocomplete="off" style="flex:1 1 120px;text-transform:uppercase">
+        <button class="btn ghost" id="liveJoin" style="flex:0 0 auto" data-t="join">Join</button>
       </div>
     </div>
     <div id="liveRoom" hidden>
       <div class="code" id="liveCode">----</div>
       <p class="muted" id="liveStatus" style="text-align:center">Connecting…</p>
       <div class="share-box" id="liveShare" hidden></div>
-      <div class="row" id="liveShareRow" hidden><button class="btn ghost" id="liveCopy">Copy invite</button></div>
+      <div class="row" id="liveShareRow" hidden><button class="btn ghost" id="liveCopy" data-t="copyInvite">Copy invite</button></div>
       <div class="vs" id="lobby" hidden>
-        <div class="p" id="lobbyMe"><b>You</b><span></span></div><em>VS</em><div class="p" id="lobbyThem"><b>…</b><span>waiting</span></div>
+        <div class="p" id="lobbyMe"><b data-t="you">You</b><span></span></div><em>VS</em><div class="p" id="lobbyThem"><b>…</b><span data-t="waiting">waiting</span></div>
       </div>
       <p class="muted" id="liveSettings" style="text-align:center;font-size:.85rem"></p>
-      <button class="btn" id="liveReady" hidden>I'm ready</button>
+      <button class="btn" id="liveReady" hidden data-t="ready">I'm ready</button>
     </div>
     <p class="note" id="liveErr" style="color:var(--bad);text-align:center;min-height:1.2em"></p>
-    <button class="btn ghost" id="liveBack">Back</button>
+    <button class="btn ghost" id="liveBack" data-t="back">Back</button>
   </section>
 
   <!-- NAMES (pass & play) -->
   <section id="names" class="panel" hidden>
     <p class="eyebrow" id="namesEyebrow">Pass &amp; Play</p>
-    <h2>Who's playing?</h2>
+    <h2 data-t="whoPlays">Who's playing?</h2>
     <p class="muted" id="namesHint">Player 1 goes first. Then hand the phone over and Player 2 gets the exact same puzzles.</p>
     <div class="names">
-      <input class="name" id="name1" placeholder="Player 1" maxlength="14" autocomplete="off">
-      <input class="name" id="name2" placeholder="Player 2" maxlength="14" autocomplete="off">
+      <input class="name" id="name1" placeholder="Player 1" data-tp="p1" maxlength="14" autocomplete="off">
+      <input class="name" id="name2" placeholder="Player 2" data-tp="p2" maxlength="14" autocomplete="off">
     </div>
-    <button class="btn" id="startPass">Start</button>
-    <button class="btn ghost" id="namesBack">Back</button>
+    <button class="btn" id="startPass" data-t="go">Start</button>
+    <button class="btn ghost" id="namesBack" data-t="back">Back</button>
   </section>
 
   <!-- HANDOFF (between players) -->
   <section id="handoff" class="panel handoff" hidden>
-    <p class="eyebrow">Pass the phone</p>
+    <p class="eyebrow" data-t="passPhone">Pass the phone</p>
     <p class="muted" id="handoffPrev"></p>
     <p class="who" id="handoffWho">Player 2</p>
-    <p class="muted">Same 10 puzzles. No peeking at the answers!</p>
-    <button class="btn" id="handoffGo">I'm ready</button>
-    <button class="btn ghost" id="handoffCancel">Cancel</button>
+    <p class="muted" data-t="noPeek">Same 10 puzzles. No peeking at the answers!</p>
+    <button class="btn" id="handoffGo" data-t="ready">I'm ready</button>
+    <button class="btn ghost" id="handoffCancel" data-t="cancel">Cancel</button>
   </section>
 
   <!-- CHALLENGE (create or accept) -->
@@ -334,19 +337,19 @@ footer a{white-space:nowrap}
       <button class="btn ghost" id="chCopy">Copy</button>
       <button class="btn" id="chPlay">Play my round</button>
     </div>
-    <div class="section-title"><span>Or enter a friend's code</span></div>
+    <div class="section-title"><span data-t="orCode">Or enter a friend's code</span></div>
     <div class="row">
-      <input class="name" id="chInput" placeholder="e.g. K7Q2H" maxlength="6" autocomplete="off" style="flex:1 1 120px;text-transform:uppercase">
-      <button class="btn ghost" id="chJoin" style="flex:0 0 auto">Join</button>
+      <input class="name" id="chInput" placeholder="e.g. K7Q2H" data-tp="codePh" maxlength="6" autocomplete="off" style="flex:1 1 120px;text-transform:uppercase">
+      <button class="btn ghost" id="chJoin" style="flex:0 0 auto" data-t="join">Join</button>
     </div>
-    <button class="btn ghost" id="chBack">Back</button>
+    <button class="btn ghost" id="chBack" data-t="back">Back</button>
   </section>
 
   <!-- PLAY -->
   <section id="play" hidden>
     <div class="bar">
-      <div class="stat"><b id="score">0</b><span>Score</span></div>
-      <div class="stat"><b class="streak" id="streak">×1.0</b><span>Streak</span></div>
+      <div class="stat"><b id="score">0</b><span data-t="score">Score</span></div>
+      <div class="stat"><b class="streak" id="streak">×1.0</b><span data-t="mult">Streak</span></div>
       <div class="lives" id="lives"><i></i><i></i><i></i></div>
       <button class="iconbtn" id="muteBtn2" aria-label="Toggle sound" style="width:34px;height:34px;font-size:.9rem">🔊</button>
       <div class="ring" id="ring"><svg viewBox="0 0 60 60"><circle class="track" cx="30" cy="30" r="26"/><circle class="fill" id="ringFill" cx="30" cy="30" r="26"/></svg><b id="timeLeft">15</b></div>
@@ -358,7 +361,7 @@ footer a{white-space:nowrap}
       <div id="qBody"></div>
       <div class="feedback" id="feedback" aria-live="polite"></div>
     </div>
-    <button class="btn ghost" id="quit" style="margin-top:14px">Quit round</button>
+    <button class="btn ghost" id="quit" style="margin-top:14px" data-t="quit">Quit round</button>
   </section>
 
   <!-- DUEL: both players on one phone, facing each other -->
@@ -373,7 +376,7 @@ footer a{white-space:nowrap}
     <div class="half" id="half2"></div>
   </section>
 
-  <div class="countdown" id="countdown" hidden><div class="cd-num" id="cdNum">3</div><div class="cd-sub" id="cdSub">Get ready</div></div>
+  <div class="countdown" id="countdown" hidden><div class="cd-num" id="cdNum">3</div><div class="cd-sub" id="cdSub" data-t="getReady">Get ready</div></div>
 
   <!-- RESULTS -->
   <section id="results" class="panel" hidden>
@@ -383,49 +386,49 @@ footer a{white-space:nowrap}
     <div class="emojiline" id="emojiLine" hidden></div>
     <div class="xp" id="xpRes" hidden><div class="row2"><b id="xpResTitle"></b><small id="xpResNext"></small></div><div class="xpbar"><i id="xpResBar"></i></div></div>
     <p class="levelup" id="levelUp" hidden></p>
-    <p class="muted" id="liveWait" hidden style="text-align:center">Waiting for your opponent to finish…</p>
+    <p class="muted" id="liveWait" hidden style="text-align:center" data-t="waitOpp">Waiting for your opponent to finish…</p>
     <div class="vs" id="vs" hidden>
       <div class="p" id="vsP1"><b>0</b><span>Player 1</span></div><em>VS</em><div class="p" id="vsP2"><b>0</b><span>Player 2</span></div>
     </div>
     <div class="res-grid" id="statGrid">
-      <div><b id="rCorrect">0</b><span>Correct</span></div>
-      <div><b id="rStreak">0</b><span>Best streak</span></div>
-      <div><b id="rBest">0</b><span>Your best</span></div>
+      <div><b id="rCorrect">0</b><span data-t="correct">Correct</span></div>
+      <div><b id="rStreak">0</b><span data-t="bestStreak">Best streak</span></div>
+      <div><b id="rBest">0</b><span data-t="yourBest">Your best</span></div>
     </div>
-    <p class="muted" style="text-align:center;font-size:.9rem">Share your score and challenge a friend:</p>
+    <p class="muted" style="text-align:center;font-size:.9rem" data-t="shareAsk">Share your score and challenge a friend:</p>
     <div class="share-box" id="shareText"></div>
     <div id="resDiffBox" hidden>
-      <p class="muted" style="text-align:center;font-size:.9rem;margin-bottom:6px">Difficulty for your next round</p>
+      <p class="muted" style="text-align:center;font-size:.9rem;margin-bottom:6px" data-t="nextDiff">Difficulty for your next round</p>
       <div class="seg diffSeg" role="group" aria-label="Difficulty for your next round">
-        <button data-diff="easy">Easy</button><button data-diff="normal">Normal</button><button data-diff="hard">Hard</button><button data-diff="impossible">Impossible</button>
+        <button data-diff="easy" data-t="d_easy">Easy</button><button data-diff="normal" data-t="d_normal">Normal</button><button data-diff="hard" data-t="d_hard">Hard</button><button data-diff="impossible" data-t="d_impossible">Impossible</button>
       </div>
     </div>
     <div class="row">
-      <button class="btn ghost" id="copyBtn">Copy score</button>
+      <button class="btn ghost" id="copyBtn" data-t="copyScore">Copy score</button>
       <button class="btn" id="againBtn">Play again</button>
     </div>
     <div class="adslot" id="adslot" hidden></div>
     <button class="btn ghost" id="reviewBtn">Review the puzzles</button>
     <div class="review" id="review" hidden></div>
-    <button class="btn ghost" id="homeBtn">Choose another mode</button>
+    <button class="btn ghost" id="homeBtn" data-t="otherMode">Choose another mode</button>
   </section>
 
   <dialog id="aboutDlg" aria-labelledby="aboutTitle">
     <div style="font-size:2.6rem;line-height:1">🧠</div>
     <h2 id="aboutTitle">Brain Teasers Club</h2>
-    <p>Free, quick brain teasers you can play in your browser: odd one out, emoji riddles, logic puzzles and animal facts. No app and no sign-up.</p>
-    <p>Play the <b>Daily Challenge</b> (the same 10 puzzles for everyone), practise solo at four difficulty levels, or play with friends on one phone or live on two. You won't see the same puzzle twice until you've played most of the <b id="aboutCount">1,200+</b> puzzles.</p>
+    <p data-t="aboutP1">Free, quick brain teasers you can play in your browser: odd one out, emoji riddles, logic puzzles and animal facts. No app and no sign-up.</p>
+    <p id="aboutP2">Play the Daily Challenge (the same 10 puzzles for everyone), practise solo at four difficulty levels, or play with friends on one phone or live on two. You won't see the same puzzle twice until you've played most of the 1,200+ puzzles.</p>
     <div class="links">
-      <a href="/about">About the game and how scoring works</a>
-      <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">▶ Brain Teasers Club on YouTube</a>
-      <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener">▶ Wild Facts on YouTube</a>
-      <a href="/facts">Animal facts and their sources</a>
-      <a href="/privacy">Privacy</a>
+      <a href="/about" data-t="aboutLink">About the game and how scoring works</a>
+      <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener" data-t="ytBtc">▶ Brain Teasers Club on YouTube</a>
+      <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener" data-t="ytWf">▶ Wild Facts on YouTube</a>
+      <a href="/facts" data-t="factsLink">Animal facts and their sources</a>
+      <a href="/privacy" data-t="privacy">Privacy</a>
     </div>
-    <button class="btn ghost" id="aboutClose">Close</button>
+    <button class="btn ghost" id="aboutClose" data-t="close">Close</button>
   </dialog>
 
-  <footer>New videos every day on YouTube: <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">Brain Teasers Club</a> · <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener">Wild Facts</a></footer>
+  <footer><span data-t="footer">New videos every day on YouTube:</span> <a href="https://www.youtube.com/@BrainTeasersClub" target="_blank" rel="noopener">Brain Teasers Club</a> · <a href="https://www.youtube.com/@wildfactsdaily-q3z" target="_blank" rel="noopener">Wild Facts</a></footer>
 </div>
 
 <script>
@@ -442,6 +445,8 @@ function showAd(){
 }
 if(ADSENSE_CLIENT){const sc=document.createElement("script");sc.async=true;sc.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+ADSENSE_CLIENT;sc.crossOrigin="anonymous";document.head.appendChild(sc)}
 
+/*__I18N__*/
+
 /* ---------- PUZZLE BANK ---------- */
 /*__BANK__*/
 
@@ -455,10 +460,10 @@ function daySeed(){const k=todayKey();let h=2166136261;for(const c of k){h^=c.ch
 const TIMES={odd:15,emoji:12,logic:20,facts:15};
 function explain(q){return q.type==="odd"?null:(q.data[4]||null)}
 const DIFF={
-  easy:      {label:"Easy",      time:1.5, lives:5, mult:0.75, grids:[[3,3],[3,4],[4,4],[4,4],[4,5]], note:"Longer timers, 5 lives, smaller grids. Scores ×0.75."},
-  normal:    {label:"Normal",    time:1,   lives:3, mult:1,    grids:[[3,4],[4,4],[4,5],[5,5],[5,6]], note:"The standard round: 3 lives, 12 to 20 seconds a puzzle."},
-  hard:      {label:"Hard",      time:0.65,lives:2, mult:1.5,  grids:[[4,5],[5,5],[5,6],[6,6],[6,7]], note:"Short timers, 2 lives, bigger grids. Scores ×1.5."},
-  impossible:{label:"Impossible",time:0.4, lives:1, mult:2.5,  grids:[[5,6],[6,6],[6,7],[7,7],[7,8]], note:"One life. Blink and it's over. Scores ×2.5."}
+  easy:      {time:1.5, lives:5, mult:0.75, grids:[[3,3],[3,4],[4,4],[4,4],[4,5]], note:"Longer timers, 5 lives, smaller grids. Scores ×0.75."},
+  normal:    {time:1,   lives:3, mult:1,    grids:[[3,4],[4,4],[4,5],[5,5],[5,6]], note:"The standard round: 3 lives, 12 to 20 seconds a puzzle."},
+  hard:      {time:0.65,lives:2, mult:1.5,  grids:[[4,5],[5,5],[5,6],[6,6],[6,7]], note:"Short timers, 2 lives, bigger grids. Scores ×1.5."},
+  impossible:{time:0.4, lives:1, mult:2.5,  grids:[[5,6],[6,6],[6,7],[7,7],[7,8]], note:"One life. Blink and it's over. Scores ×2.5."}
 };
 let diff="normal";
 try{if(DIFF[localStorage.getItem("btc-diff")])diff=localStorage.getItem("btc-diff")}catch(e){}
@@ -490,22 +495,24 @@ const dailyMemo={};
 const DAILY_V2="2026-10-07";
 function shiftDay(day,k){const [y,m,d]=day.split("-").map(Number),t=new Date(y,m-1,d+k);return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")}
 function dailyKeys(day){ // the same draw the Daily makes for that date
-  if(dailyMemo[day])return dailyMemo[day];
+  const mk=LANG+day;if(dailyMemo[mk])return dailyMemo[mk];
   const v2=day>=DAILY_V2,avoid=new Set();
-  if(v2){if(day>DAILY_V2&&!dailyMemo[shiftDay(day,-1)])for(let d=DAILY_V2;d<day;d=shiftDay(d,1))dailyKeys(d); // fill earlier days first, oldest to newest
+  if(v2){if(day>DAILY_V2&&!dailyMemo[LANG+shiftDay(day,-1)])for(let d=DAILY_V2;d<day;d=shiftDay(d,1))dailyKeys(d); // fill earlier days first, oldest to newest
     for(let k=1;k<=30;k++)dailyKeys(shiftDay(day,-k)).forEach(x=>avoid.add(x))}
   let h=seedFromString(day);if(v2){h=Math.imul(h^h>>>16,0x45d9f3b);h=Math.imul(h^h>>>16,0x45d9f3b);h=(h^h>>>16)>>>0}
   const rnd=mulberry32(h),out=new Set();
-  ["odd","emoji","logic","facts"].forEach((t,i)=>{const b=BANKS[t];
-    let ids=shuffle([...b.keys()].filter(j=>!b[j][ADDED_AT[t]]||b[j][ADDED_AT[t]]<=day),rnd);
-    if(v2){const fresh=ids.filter(j=>!avoid.has(qkey(t,j)));if(fresh.length>=[3,3,2,2][i])ids=fresh}
-    ids.slice(0,[3,3,2,2][i]).forEach(j=>out.add(qkey(t,j)))});
-  return dailyMemo[day]=out;
+  // English: 3 odd, 3 emoji, 2 logic, 2 facts. Other languages have no Emoji Riddles: 4 odd, 3 logic, 3 facts.
+  const DT=LANG==="en"?[["odd",3],["emoji",3],["logic",2],["facts",2]]:[["odd",4],["logic",3],["facts",3]];
+  DT.forEach(([t,cnt])=>{const b=BANKS[t];
+    let ids=shuffle([...b.keys()].filter(j=>(!b[j][ADDED_AT[t]]||b[j][ADDED_AT[t]]<=day)&&avail(t,j)),rnd);
+    if(v2){const fresh=ids.filter(j=>!avoid.has(qkey(t,j)));if(fresh.length>=cnt)ids=fresh}
+    ids.slice(0,cnt).forEach(j=>out.add(qkey(t,j)))});
+  return dailyMemo[mk]=out;
 }
 function pastDailyKeys(){const s=new Set();for(let k=1;k<=60;k++)dailyKeys(dayKey(k)).forEach(x=>s.add(x));return s}
 function pickFresh(t,l,n,used,rnd,ctx,rd){
   const b=BANKS[t],out=[];
-  const pool=(ll,tier)=>{let ids=[...b.keys()].filter(i=>b[i][LVL_AT[t]]===ll&&!used.has(i)&&!ctx.today.has(qkey(t,i)));
+  const pool=(ll,tier)=>{let ids=[...b.keys()].filter(i=>b[i][LVL_AT[t]]===ll&&!used.has(i)&&!ctx.today.has(qkey(t,i))&&avail(t,i));
     const tierOf=i=>ctx.seen[qkey(t,i)]?3:ctx.past.has(qkey(t,i))?2:1;ids=ids.filter(i=>tierOf(i)===tier);
     return tier===3?ids.sort((a,c)=>ctx.seen[qkey(t,a)]-ctx.seen[qkey(t,c)]):shuffle(ids,rnd)};
   const [own,...nb]=neighbours(l,rd);
@@ -530,14 +537,14 @@ function buildRound(mode,seed,rd,typesOverride,seenOverride){
   let list=[];
   const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};
   const ALL=["odd","emoji","logic","facts"];
-  const types=banks[mode]?[mode]:mode==="daily"?ALL:(typesOverride||customTypes());
+  const types=banks[mode]?[mode]:mode==="daily"?ALL:mode==="mix"?langTypes():(typesOverride||customTypes());
   const per=Math.floor(10/types.length);const extra=10-per*types.length;
   const counts=types.map((t,i)=>per+(i<extra?1:0));
   if(mode==="daily"){
     // The Daily ignores levels and skips puzzles whose "added" date is after today, so shipping new puzzles
     // (dated a day or two ahead) never changes a Daily someone is already playing.
     const day=todayKey();
-    if(day>=DAILY_V2)list=[...dailyKeys(day)].map(k=>{const t=ALL.find(a=>a[0]===k[0]);return{type:t,data:banks[t][+k.slice(1)]}});
+    if(day>=DAILY_V2||LANG!=="en")list=[...dailyKeys(day)].map(k=>{const t=ALL.find(a=>a[0]===k[0]);return{type:t,data:banks[t][+k.slice(1)]}});
     else types.forEach((t,i)=>{const bank=banks[t].filter(x=>!x[ADDED_AT[t]]||x[ADDED_AT[t]]<=day);list.push(...shuffle(bank,rnd).slice(0,counts[i]).map(p=>({type:t,data:p})))});
     list=shuffle(list,rnd);
   } else {
@@ -645,29 +652,29 @@ const SFX={
 function buzz(p){if(muted)return;try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
 function setMuted(m){
   muted=m;try{localStorage.setItem("btc-mute",m?"1":"0")}catch(e){}
-  ["muteBtn","muteBtn2"].forEach(id=>{const b=$(id);if(!b)return;b.textContent=m?"🔇":"🔊";b.setAttribute("aria-pressed",m?"false":"true");b.setAttribute("aria-label",m?"Sound off":"Sound on")});
+  ["muteBtn","muteBtn2"].forEach(id=>{const b=$(id);if(!b)return;b.textContent=m?"🔇":"🔊";b.setAttribute("aria-pressed",m?"false":"true");b.setAttribute("aria-label",m?t("soundOff"):t("soundOn"))});
 }
 
 /* ---------- XP + LEVELS ---------- */
-const RANKS=[[1,"Rookie"],[3,"Curious"],[5,"Sharp"],[8,"Clever"],[12,"Brainiac"],[16,"Mastermind"],[20,"Genius"],[25,"Legend"]];
+const RANKS=[1,3,5,8,12,16,20,25]; // levels where each rank (STR.ranks) starts
 const XP_PER={easy:7,normal:10,hard:15,impossible:25};
 function loadXp(){try{return Number(localStorage.getItem("btc-xp"))||0}catch(e){return 0}}
 function xpForLevel(l){return Math.round(100*Math.pow(l-1,1.6))}   // cumulative XP needed to reach level l
 function levelOf(xp){let l=1;while(xpForLevel(l+1)<=xp)l++;return l}
-function rankOf(l){let r=RANKS[0][1];RANKS.forEach(([n,t])=>{if(l>=n)r=t});return r}
+function rankOf(l){let r=0;RANKS.forEach((n,k)=>{if(l>=n)r=k});return t("ranks")[r]}
 function renderXp(prefix,xp){
   const l=levelOf(xp),lo=xpForLevel(l),hi=xpForLevel(l+1);
-  $(prefix+"Title").textContent="Level "+l+" · "+rankOf(l);
-  $(prefix+"Next").textContent=(xp-lo)+" / "+(hi-lo)+" XP to level "+(l+1);
+  $(prefix+"Title").textContent=t("level",{l,r:rankOf(l)});
+  $(prefix+"Next").textContent=t("xpTo",{a:xp-lo,b:hi-lo,n:l+1});
   $(prefix+"Bar").style.width=Math.min(100,(xp-lo)/(hi-lo)*100)+"%";
 }
 function awardXp(){
   const before=loadXp();const gained=S.correct*XP_PER[S.diff]+(S.i>=S.list.length?20:0)+(S.correct===S.list.length?30:0);
   const after=before+gained;try{localStorage.setItem("btc-xp",String(after))}catch(e){}
   const lb=levelOf(before),la=levelOf(after);
-  $("xpRes").hidden=false;renderXp("xpRes",before);$("xpResNext").textContent="+"+gained+" XP";
-  setTimeout(()=>{renderXp("xpRes",after);$("xpResNext").textContent="+"+gained+" XP · "+$("xpResNext").textContent},150);
-  $("levelUp").hidden=la<=lb;if(la>lb)$("levelUp").textContent="⬆️ Level "+la+(rankOf(la)!==rankOf(lb)?" · You're now "+rankOf(la)+"!":"!");
+  $("xpRes").hidden=false;renderXp("xpRes",before);$("xpResNext").textContent="+"+num(gained)+" XP";
+  setTimeout(()=>{renderXp("xpRes",after);$("xpResNext").textContent="+"+num(gained)+" XP · "+$("xpResNext").textContent},150);
+  $("levelUp").hidden=la<=lb;if(la>lb)$("levelUp").textContent=rankOf(la)!==rankOf(lb)?t("lvlUpRank",{l:la,r:rankOf(la)}):t("lvlUp",{l:la});
   renderXp("xp",after);
 }
 function emojiLine(log,n){let o="";for(let i=0;i<n;i++){const e=log[i];o+=!e?"⬜":e.ok?"🟩":e.timeout?"⬛":"🟥"}return o}
@@ -701,16 +708,16 @@ function settleAbandonedDaily(){
 function dailyDone(){const st=loadStreak();return st.last===todayKey()?st:null}
 function renderDaily(){
   const d=dailyDone();const b=$("dailyBtn");
-  if(d){b.classList.add("done");$("dailyLabel").textContent="Done today · "+(d.score||0)+" pts · new puzzles at midnight"}
-  else{b.classList.remove("done");$("dailyLabel").textContent="Same for everyone, always Normal, one try a day"}
+  if(d){b.classList.add("done");$("dailyLabel").textContent=t("dailyDone",{s:d.score||0})}
+  else{b.classList.remove("done");$("dailyLabel").textContent=t("dailySub")}
 }
 function renderStreak(){
   applyFreeze();
   const st=loadStreak();const cur=currentStreak();
-  $("streakDays").textContent=cur;
-  $("streakHint").textContent=st.last===todayKey()?"· done today":cur>0?(st.frozenOn===dayBefore(todayKey())?"· saved by a freeze, play today":"· play today to keep it"):"· play the Daily";
-  $("streakBest").textContent=(st.best||0)>1?"Longest: "+st.best+" days":"";
-  const f=st.freezes||0;$("freezeNote").textContent=f?"❄️ "+f+" streak freeze"+(f>1?"s":"")+" (covers a missed day)":"❄️ Earn a streak freeze every 7 days";
+  $("streakDays").textContent=num(cur);
+  $("streakHint").textContent=st.last===todayKey()?t("hintDone"):cur>0?(st.frozenOn===dayBefore(todayKey())?t("hintFrozen"):t("hintKeep")):t("hintStart");
+  $("streakBest").textContent=(st.best||0)>1?t("longest",{n:st.best}):"";
+  const f=st.freezes||0;$("freezeNote").textContent=f?(f>1?t("freezeN",{n:f}):t("freeze1")):t("freezeEarn");
 }
 
 // A round as data the other phone can rebuild exactly: bank indexes, odd cell, option order, grid shape
@@ -722,7 +729,25 @@ const BANK_VER=(ODD.length+"."+EMOJI.length+"."+LOGIC.length+"."+FACTS.length);
 
 /* ---------- STATE ---------- */
 const $=id=>document.getElementById(id);
-const MODE_NAMES={daily:"Daily Challenge",odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",mix:"Random Mix",custom:"Custom Mix",live:"Live Match",facts:"Animal Facts",pass:"Pass & Play",duel:"Duel",challenge:"Challenge"};
+function modeName(m){return t({daily:"m_daily",odd:"t_odd",emoji:"t_emoji",logic:"t_logic",mix:"m_mix",custom:"m_custom",live:"live",facts:"t_facts",pass:"pass",duel:"duel",challenge:"m_challenge"}[m]||m)}
+const dname=d=>t("d_"+(d||"normal"));
+// A puzzle in the current language. Options keep their English text as identity (answer checks, Live Match),
+// and opt() maps each to its translation; untranslated puzzles show in English.
+function loc(q){const d=q.data,all=[d[1],...d[3]];let tr=null;
+  if(LANG!=="en"&&TR[LANG]&&(q.type==="logic"||q.type==="facts"))tr=TR[LANG][q.type][BANKS[q.type].indexOf(d)]||null;
+  if(!tr)return{q:d[0],a:d[1],why:d[4]||"",opt:o=>o};
+  const la=[tr[1],...tr[2]];return{q:tr[0],a:tr[1],why:tr[3]||"",opt:o=>{const k=all.indexOf(o);return k>=0?la[k]:o}}}
+function catName(q){return q.type==="facts"?t("c_"+q.data[2]):q.data[2]}
+// Which puzzles a language can use: Odd One Out always, Emoji Riddles only in English, others when translated.
+function avail(ty,i){return LANG==="en"||ty==="odd"||(ty!=="emoji"&&!!(TR[LANG]&&TR[LANG][ty]&&TR[LANG][ty][i]))}
+function availableCount(){let n=0;for(const ty of ["odd","emoji","logic","facts"])BANKS[ty].forEach((_,i)=>{if(avail(ty,i))n++});return n}
+function applyLang(){
+  const h=document.documentElement;h.lang=LANG;h.dir=LANG==="fa"?"rtl":"ltr";
+  document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
+  document.querySelectorAll("[data-tp]").forEach(e=>e.placeholder=t(e.dataset.tp));
+  $("langSel").value=LANG;$("langSel").setAttribute("aria-label",t("language"));
+  setDiff(diff);setMuted(muted);renderStreak();renderDaily();renderCustom();renderXp("xp",loadXp());
+}
 let S=null, timer=null, tLeft=0, tTotal=0;
 let pass=null;      // {names:[a,b], seed, scores:[], turn}
 let chal=null;      // {code, seed, fromLink}
@@ -738,17 +763,19 @@ function show(id){SCREENS.forEach(s=>$(s).hidden=s!==id);window.scrollTo(0,0);if
 function setDiff(d){
   diff=d;try{localStorage.setItem("btc-diff",d)}catch(e){}
   document.querySelectorAll(".diffSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.diff===d?"true":"false"));
-  document.querySelectorAll(".diffNote").forEach(n=>n.textContent=DIFF[d].note);
+  document.querySelectorAll(".diffNote").forEach(n=>n.textContent=t("n_"+d));
 }
 
 let roundId=0,nextT=null,pendingHash=null;
-function customTypes(){const all=["odd","emoji","logic","facts"];let t=all;try{const v=JSON.parse(localStorage.getItem("btc-custom")||"null");if(Array.isArray(v)){const f=v.filter(x=>all.includes(x));if(f.length)t=f}}catch(e){}return t}
-function renderCustom(){const t=customTypes();document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",t.includes(c.dataset.type)?"true":"false"));
-  const names={odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",facts:"Animal Facts"};
-  $("customLabel").textContent=t.length===4?"All four types mixed. Untick any you don't want.":t.map(x=>names[x]).join(" + ");
-  $("soloLabel").textContent=t.length===4?"Odd one out, emoji riddles, logic, animal facts":t.map(x=>names[x]).join(", ")}
-function soloMode(){const t=customTypes();return t.length===4?"mix":t.length===1?t[0]:"custom"}
+function langTypes(){return LANG==="en"?["odd","emoji","logic","facts"]:["odd","logic","facts"]}
+function customTypes(){const all=langTypes();let t=all;try{const v=JSON.parse(localStorage.getItem("btc-custom")||"null");if(Array.isArray(v)){const f=v.filter(x=>all.includes(x));if(f.length)t=f}}catch(e){}return t}
+function renderCustom(){const ty=customTypes(),all=langTypes();document.querySelectorAll(".chip").forEach(c=>{c.hidden=!all.includes(c.dataset.type);c.setAttribute("aria-pressed",ty.includes(c.dataset.type)?"true":"false")});
+  const sep=LANG==="fa"?"، ":", ";
+  $("customLabel").textContent=ty.length===all.length?t("allTypes"):ty.map(x=>t("t_"+x)).join(" + ");
+  $("soloLabel").textContent=(ty.length===all.length?all:ty).map(x=>t("t_"+x)).join(sep)}
+function soloMode(){const ty=customTypes();return ty.length===langTypes().length?"mix":ty.length===1?ty[0]:"custom"}
 function startRound(mode,seed,d,typesOverride,prebuilt){
+  if(LANG!=="en"&&!TR[LANG]){loadTR(LANG).then(()=>startRound(mode,seed,d,typesOverride,prebuilt));return}
   $("againBtn").disabled=false;
   clearTimeout(nextT);clearInterval(timer);clearInterval(dTimer);clearTimeout(duelT);
   const rd=d||(mode==="daily"?"normal":diff);   // the Daily is always Normal; a challenge uses its code's difficulty
@@ -772,9 +799,9 @@ function nextPuzzle(){
   if($("play").hidden)return;
   if(S.i>=S.list.length||S.lives<=0){return endRound()}
   const q=S.list[S.i];S.locked=false;
-  const who=S.mode==="pass"?pass.names[pass.turn]+" · ":S.mode==="live"&&live&&live.room?"Set "+setCode(live.room.settings)+" · ":"";
+  const who=S.mode==="pass"?pass.names[pass.turn]+" · ":S.mode==="live"&&live&&live.room?t("setTag",{c:setCode(live.room.settings)}):"";
   markSeen([q]);
-  $("qLabel").textContent=who+"Puzzle "+(S.i+1)+" of "+S.list.length+" · "+(q.type==="odd"?"Tap the odd one out":q.type==="logic"?"Think fast":q.data[2]);
+  $("qLabel").textContent=who+t("puzzleOf",{i:S.i+1,n:S.list.length})+" · "+(q.type==="odd"?t("tapOdd"):q.type==="logic"?t("thinkFast"):catName(q));
   $("feedback").textContent="";$("feedback").className="feedback";
   const body=$("qBody");body.innerHTML="";body.className="pop";
   if(q.type==="odd"){
@@ -783,9 +810,9 @@ function nextPuzzle(){
     for(let k=0;k<q.count;k++){const b=document.createElement("button");b.className="cell";b.textContent=k===q.oddIndex?q.data[1]:q.data[0];b.setAttribute("aria-label",b.textContent+" "+(k+1));b.onclick=()=>answer(k===q.oddIndex,b,q);g.appendChild(b)}
     body.appendChild(g);fitGrid(g,q.cols,q.count/q.cols);
   } else {
-    const p=document.createElement("div");p.className=q.type==="emoji"?"emoji-prompt":"prompt";p.textContent=q.data[0];body.appendChild(p);
+    const L=loc(q);const p=document.createElement("div");p.className=q.type==="emoji"?"emoji-prompt":"prompt";p.textContent=L.q;p.dir="auto";body.appendChild(p);
     const ch=document.createElement("div");ch.className="choices";
-    q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.textContent=o;b.onclick=()=>answer(o===q.data[1],b,q);ch.appendChild(b)});
+    q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.dataset.v=o;b.textContent=L.opt(o);b.dir="auto";b.onclick=()=>answer(o===q.data[1],b,q);ch.appendChild(b)});
     body.appendChild(ch);
   }
   updateHud();startTimer(Math.max(4,Math.round(TIMES[q.type]*DIFF[S.diff].time)));
@@ -807,7 +834,7 @@ function drawRing(){
 
 function reveal(q){
   if(q.type==="odd"){[...$("qBody").querySelectorAll(".cell")].forEach((c,k)=>{c.disabled=true;if(k===q.oddIndex)c.classList.add("reveal")})}
-  else{[...$("qBody").querySelectorAll(".choice")].forEach(c=>{c.disabled=true;if(c.textContent===q.data[1])c.classList.add("reveal")})}
+  else{[...$("qBody").querySelectorAll(".choice")].forEach(c=>{c.disabled=true;if(c.dataset.v===q.data[1])c.classList.add("reveal")})}
 }
 function answer(ok,btn,q,timeout){
   if(S.locked)return;S.locked=true;clearInterval(timer);
@@ -816,13 +843,13 @@ function answer(ok,btn,q,timeout){
   if(ok){
     const gained=Math.round((100+Math.round(tLeft/tTotal*100))*multiplier()*DIFF[S.diff].mult);
     S.score+=gained;S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);S.correct++;
-    btn&&btn.classList.add("hit");fb.textContent="+"+gained+(S.streak>=3?"  🔥 "+S.streak+" in a row":"");fb.className="feedback good";
+    btn&&btn.classList.add("hit");fb.textContent="+"+num(gained)+(S.streak>=3?"  🔥 "+t("inRow",{n:S.streak}):"");fb.className="feedback good";
     S.streak>=3?SFX.streak():SFX.good();buzz(30);
   } else {
     S.streak=0;S.lives--;btn&&btn.classList.add("miss");$("card").classList.add("shake");setTimeout(()=>$("card").classList.remove("shake"),350);
-    fb.textContent=timeout?"Time's up!":"Not quite";fb.className="feedback bad";
+    fb.textContent=timeout?t("timeUp"):t("notQuite");fb.className="feedback bad";
     timeout?SFX.timeout():SFX.bad();buzz([60,40,60]);
-    if(q.type!=="odd")fb.textContent+=" · "+q.data[1];
+    if(q.type!=="odd")fb.textContent+=" · "+loc(q).a;
   }
   reveal(q);updateHud();S.i++;
   if(S.mode==="daily")try{localStorage.setItem("btc-daily-progress",JSON.stringify({day:S.day,score:S.score,correct:S.correct,i:S.i}))}catch(e){}
@@ -839,26 +866,26 @@ function endRound(){
   // Pass & Play: after player 1, hand the phone over
   if(S.mode==="pass"&&pass.turn===0){
     pass.scores=[S.score];pass.log1=S.log;pass.turn=1;
-    $("handoffPrev").textContent=pass.names[0]+" scored "+S.score;
+    $("handoffPrev").textContent=t("scored",{n:pass.names[0],s:S.score});
     $("handoffWho").textContent=pass.names[1];
     show("handoff");return;
   }
   const baseUrl=shareBase();
-  const dl=DIFF[S.diff||diff].label;
+  const dl=dname(S.diff||diff);
   const two=S.mode==="pass"||S.mode==="duel"||S.mode==="live";
   let dailyNote="";
-  if(S.mode==="daily"){const r=recordDaily(S.day,S.score,S.correct);dailyNote=r.isNewDay?(r.streak>1?" 🔥 "+r.streak+"-day streak!":" Streak started! Come back tomorrow.")+(r.earned?" ❄️ Streak freeze earned!":""):"";renderStreak();renderDaily()}
+  if(S.mode==="daily"){const r=recordDaily(S.day,S.score,S.correct);dailyNote=r.isNewDay?(r.streak>1?t("dayStreak",{n:r.streak}):t("streakStarted"))+(r.earned?t("freezeEarned"):""):"";renderStreak();renderDaily()}
   $("emojiLine").hidden=two;$("xpRes").hidden=true;$("levelUp").hidden=true;
   if(!two){$("emojiLine").textContent=emojiLine(S.log,S.list.length);awardXp()}
-  $("againBtn").textContent=S.mode==="daily"?"Play a Random Mix":"Play again";
+  $("againBtn").textContent=S.mode==="daily"?t("randomMix"):t("again");
   $("resDiffBox").hidden=S.mode==="live"||S.mode==="challenge";setDiff(diff);
   (two?true:S.correct>=S.list.length*.5)?SFX.win():SFX.lose();
   $("vs").hidden=!two;$("statGrid").hidden=two;
-  $("resMode").textContent=MODE_NAMES[S.mode]+" · "+dl+(S.mode==="daily"?" · "+todayKey():S.mode==="challenge"?" · code "+chal.code:"");
+  $("resMode").textContent=modeName(S.mode)+" · "+dl+(S.mode==="daily"?" · "+todayKey():S.mode==="challenge"?t("codeTag",{c:chal.code}):"");
   if(S.mode==="live"){
     $("emojiLine").hidden=false;$("emojiLine").textContent=emojiLine(S.log,S.list.length);$("xpRes").hidden=true;$("levelUp").hidden=true;$("vs").hidden=true;$("statGrid").hidden=true;
-    $("resMode").textContent="Live Match · "+dl;$("finalScore").textContent=S.score;$("rank").textContent="";
-    $("shareText").textContent="";$("againBtn").textContent="Rematch";
+    $("resMode").textContent=t("live")+" · "+dl;$("finalScore").textContent=S.score;$("rank").textContent="";
+    $("shareText").textContent="";$("againBtn").textContent=t("rematch");
     buildReview();$("reviewBtn").hidden=false;show("results");showAd();liveFinish();return;
   }
   if(two){
@@ -866,27 +893,27 @@ function endRound(){
     let a,b,c1,c2,n1,n2;
     if(S.mode==="pass"){pass.scores.push(S.score);[a,b]=pass.scores;c1=pass.log1.filter(e=>e.ok).length;n1=pass.log1.length;c2=S.correct;n2=S.i}
     else{[a,b]=duel.scores;c1=duel.log.filter(e=>e.winner===0).length;c2=duel.log.filter(e=>e.winner===1).length;n1=n2=duel.log.length}
-    showVs(names,[a,b],[c1+"/"+n1+(S.mode==="duel"?" won":" correct"),c2+"/"+n2+(S.mode==="duel"?" won":" correct")]);
-    $("finalScore").textContent=a===b?"Tie":"🏆";
-    $("rank").textContent=a===b?"Dead heat. Rematch?":(a>b?names[0]:names[1])+" wins by "+Math.abs(a-b)+" points!";
-    $("shareText").textContent=names[0]+" "+a+" vs "+names[1]+" "+b+" on Brain Teasers Club "+MODE_NAMES[S.mode]+" ("+dl+"). "+(a===b?"A tie!":(a>b?names[0]:names[1])+" wins!")+" Play: "+baseUrl;
+    const k2=S.mode==="duel"?"nWon":"nCorrect";showVs(names,[a,b],[t(k2,{c:c1,n:n1}),t(k2,{c:c2,n:n2})]);
+    $("finalScore").textContent=a===b?t("tie"):"🏆";
+    $("rank").textContent=a===b?t("deadHeat"):t("winsBy",{n:a>b?names[0]:names[1],d:Math.abs(a-b)});
+    $("shareText").textContent=t("shareTwo",{n1:names[0],a:String(a),n2:names[1],b:String(b),m:modeName(S.mode),d:dl,res:a===b?t("aTie"):t("wins",{n:a>b?names[0]:names[1]}),link:baseUrl});
   } else {
     const best=loadBest();const key=S.mode==="daily"?"daily-"+S.day:S.mode+"-"+S.diff;
     const prev=best[key]||0;const isNew=S.score>prev;if(isNew){best[key]=S.score;saveBest(best)}
     $("finalScore").textContent=S.score;
     const pct=S.correct/S.list.length;
-    $("rCorrect").textContent=S.correct+"/"+S.i;$("rStreak").textContent=S.bestStreak;$("rBest").textContent=Math.max(prev,S.score);
-    $("rank").textContent=S.lives<=0?"Out of lives! "+(pct>=.5?"Still a solid run.":"Try a warm-up round.")
-      : pct===1?"Perfect round! 🏆": pct>=.8?"Sharp as a tack." : pct>=.5?"Not bad. Can you beat it?" : "Rough one. Again?";
-    if(isNew&&prev>0)$("rank").textContent+=" New personal best!";
+    $("rCorrect").textContent=num(S.correct+"/"+S.i);$("rStreak").textContent=S.bestStreak;$("rBest").textContent=Math.max(prev,S.score);
+    $("rank").textContent=S.lives<=0?t("outOfLives")+(pct>=.5?t("solid"):t("warmup"))
+      : pct===1?t("perfect"): pct>=.8?t("sharp") : pct>=.5?t("notBad") : t("rough");
+    if(isNew&&prev>0)$("rank").textContent+=t("newBest");
     $("rank").textContent+=dailyNote;
     const line=emojiLine(S.log,S.list.length);
     if(S.mode==="challenge")
-      $("shareText").textContent="Brain Teasers Club challenge "+chalCode()+" · "+S.score+" pts ("+dl+")\n"+line+"\nSame puzzles, your turn: "+baseUrl+"#"+chalCode();
+      $("shareText").textContent=t("shareChal",{c:chalCode(),s:S.score,d:dl,line,link:baseUrl+"#"+chalCode()});
     else if(S.mode==="daily")
-      $("shareText").textContent="Brain Teasers Club Daily "+S.day+" · "+S.score+" pts\n"+line+"\n🔥 "+currentStreak()+"-day streak · "+baseUrl;
+      $("shareText").textContent=t("shareDaily",{day:S.day,s:S.score,line,n:currentStreak(),link:baseUrl});
     else
-      $("shareText").textContent="Brain Teasers Club · "+MODE_NAMES[S.mode]+" ("+dl+") · "+S.score+" pts\n"+line+"\nBeat it: "+baseUrl;
+      $("shareText").textContent=t("shareSolo",{m:modeName(S.mode),d:dl,s:S.score,line,link:baseUrl});
   }
   $("bestHome").textContent=overallBest();
   buildReview();$("reviewBtn").hidden=false;
@@ -899,21 +926,21 @@ function showVs(names,scores,subs){
   $("vsP1").classList.toggle("win",a>b);$("vsP2").classList.toggle("win",b>a);
 }
 function duelVerdict(i){
-  const e=duel.log[i];if(!e)return '<span class="no">not reached</span>';
+  const e=duel.log[i];if(!e)return '<span class="no">'+t("notReached")+'</span>';
   const one=(k)=>{const r=e.p[k];const nm=esc(duel.names[k])+": ";
-    if(e.winner===k)return '<span class="ok">'+nm+'✓ first, '+r.secs+'s</span>';
-    if(!r)return '<span class="no">'+nm+'no answer</span>';
-    return '<span class="no">'+nm+(r.ok?'✓ but second':'✗ You chose '+esc(r.given))+'</span>'};
+    if(e.winner===k)return '<span class="ok">'+nm+t("first",{s:r.secs})+'</span>';
+    if(!r)return '<span class="no">'+nm+t("noAnswer")+'</span>';
+    return '<span class="no">'+nm+(r.ok?t("butSecond"):esc(t("chose",{x:r.given})))+'</span>'};
   return one(0)+one(1);
 }
 function verdict(e,who){
-  if(!e)return '<span class="no">'+(who?esc(who)+": ":"")+'not reached</span>';
-  if(e.ok)return '<span class="ok">'+(who?esc(who)+": ":"")+'✓ '+e.secs+'s</span>';
-  return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?'✗ Time ran out':'✗ chose '+esc(e.given||"?"))+'</span>';
+  if(!e)return '<span class="no">'+(who?esc(who)+": ":"")+t("notReached")+'</span>';
+  if(e.ok)return '<span class="ok">'+(who?esc(who)+": ":"")+t("okSecs",{s:e.secs})+'</span>';
+  return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?t("ranOut"):esc(t("chose",{x:e.given||"?"})))+'</span>';
 }
 function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s}:null}
 function buildReview(){
-  const box=$("review");box.innerHTML="";box.hidden=true;$("reviewBtn").textContent="Review the puzzles";
+  const box=$("review");box.innerHTML="";box.hidden=true;$("reviewBtn").textContent=t("review");
   const two=S.mode==="pass";
   // Only puzzles this player actually reached are reviewed; the rest stay unseen so they can come up fresh later.
   const reached=i=>two?!!(pass.log1&&pass.log1[i]||S.log[i]):S.mode==="duel"?!!(duel&&duel.log[i]):!!S.log[i];
@@ -922,19 +949,19 @@ function buildReview(){
     const d=document.createElement("div");d.className="rv";
     let qh,ah;
     if(q.type==="odd"){
-      qh='<div class="pair">'+esc(q.data[0])+'<small>most</small>'+esc(q.data[1])+'<small>odd one</small></div>';
+      qh='<div class="pair">'+esc(q.data[0])+'<small>'+t("most")+'</small>'+esc(q.data[1])+'<small>'+t("oddOne")+'</small></div>';
     } else {
-      qh='<div class="q'+(q.type==="emoji"?" em":"")+'">'+esc(q.data[0])+'</div>';
+      qh='<div class="q'+(q.type==="emoji"?" em":"")+'" dir="auto">'+esc(loc(q).q)+'</div>';
     }
-    const ex=explain(q);
-    ah='<div class="a">'+(q.type!=="odd"?'<span>Answer: <b>'+esc(q.data[1])+'</b></span>':'')
+    const ex=q.type==="odd"?null:loc(q).why||null;
+    ah='<div class="a">'+(q.type!=="odd"?'<span>'+t("answer")+'<b dir="auto">'+esc(loc(q).a)+'</b></span>':'')
       +(two?verdict(pass.log1[i],pass.names[0])+verdict(S.log[i],pass.names[1]):S.mode==="duel"?duelVerdict(i):S.mode==="live"&&live&&live.theirDone&&live.theirDone.log?verdict(S.log[i],live.me)+verdict(expandLog(live.theirDone.log[i]),live.them):verdict(S.log[i]))+'</div>'
-      +(ex?'<div class="why">'+esc(ex)+'</div>':'');
+      +(ex?'<div class="why" dir="auto">'+esc(ex)+'</div>':'');
     d.innerHTML='<div class="n">'+(i+1)+'</div><div>'+qh+ah+'</div>';
     box.appendChild(d);
   });
 }
-$("reviewBtn").onclick=()=>{const r=$("review");r.hidden=!r.hidden;$("reviewBtn").textContent=r.hidden?"Review the puzzles":"Hide the puzzles";if(!r.hidden)r.scrollIntoView({behavior:"smooth",block:"start"})};
+$("reviewBtn").onclick=()=>{const r=$("review");r.hidden=!r.hidden;$("reviewBtn").textContent=r.hidden?t("review"):t("hideReview");if(!r.hidden)r.scrollIntoView({behavior:"smooth",block:"start"})};
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 
 /* ---------- DUEL ENGINE ---------- */
@@ -957,7 +984,7 @@ function duelNext(){
   const q=duel.list[duel.i];
   duel.cur={p:[null,null],winner:null,done:false,t0:Date.now()};
   markSeen([q]);
-  $("dlabel").textContent="Puzzle "+(duel.i+1)+" of "+duel.list.length+" · "+(q.type==="odd"?"odd one out":q.type==="logic"?"logic":q.data[2]);
+  $("dlabel").textContent=t("puzzleOf",{i:duel.i+1,n:duel.list.length})+" · "+(q.type==="odd"?t("tapOdd"):q.type==="logic"?t("thinkFast"):catName(q));
   [0,1].forEach(k=>{
     const h=$(k===0?"half1":"half2");h.className="half"+(k===0?" flip":"");h.innerHTML="";
     if(q.type==="odd"){
@@ -966,9 +993,9 @@ function duelNext(){
       for(let c=0;c<q.count;c++){const b=document.createElement("button");b.className="cell";b.textContent=c===q.oddIndex?q.data[1]:q.data[0];b.onclick=()=>duelAnswer(k,c===q.oddIndex,b.textContent);g.appendChild(b)}
       h.appendChild(g);
     } else {
-      const pr=document.createElement("div");pr.className="dprompt"+(q.type==="emoji"?" em":"");pr.textContent=q.data[0];h.appendChild(pr);
+      const L=loc(q);const pr=document.createElement("div");pr.className="dprompt"+(q.type==="emoji"?" em":"");pr.textContent=L.q;pr.dir="auto";h.appendChild(pr);
       const ch=document.createElement("div");ch.className="dchoices";
-      q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.textContent=o;b.onclick=()=>duelAnswer(k,o===q.data[1],o);ch.appendChild(b)});
+      q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.dataset.v=o;b.textContent=L.opt(o);b.dir="auto";b.onclick=()=>duelAnswer(k,o===q.data[1],L.opt(o));ch.appendChild(b)});
       h.appendChild(ch);
     }
   });
@@ -985,17 +1012,17 @@ function duelAnswer(k,ok,given){
     c.winner=k;const q=duel.list[duel.i];const total=TIMES[q.type]*DIFF[duel.diff].time*1.3;
     const pts=Math.round((100+Math.max(0,100-(Date.now()-c.t0)/1000/total*100))*DIFF[duel.diff].mult);
     duel.scores[k]+=pts;$(k===0?"dsc1":"dsc2").textContent=duel.scores[k];
-    veil(k,"+"+pts,"ok");const o=1-k;if(!c.p[o])veil(o,"Too slow","no");SFX.point();buzz(30);
+    veil(k,"+"+num(pts),"ok");const o=1-k;if(!c.p[o])veil(o,t("tooSlow"),"no");SFX.point();buzz(30);
     duelFinish();
   } else {
-    veil(k,"Wrong!","no");SFX.bad();buzz([60,40,60]);
+    veil(k,t("wrong"),"no");SFX.bad();buzz([60,40,60]);
     if(c.p[1-k])duelFinish(); // both wrong
   }
 }
 function duelFinish(){
   const c=duel.cur;if(c.done)return;c.done=true;clearInterval(dTimer);
-  [0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(!h.querySelector(".veil")&&c.winner===null)veil(k,"Time's up","no");h.querySelectorAll("button").forEach(b=>b.disabled=true)});
-  if(c.winner===null){const q=duel.list[duel.i];[0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(q.type==="odd")h.querySelectorAll(".cell")[q.oddIndex].classList.add("reveal");else h.querySelectorAll(".choice").forEach(b=>{if(b.textContent===q.data[1])b.classList.add("reveal")})})}
+  [0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(!h.querySelector(".veil")&&c.winner===null)veil(k,t("timeUpShort"),"no");h.querySelectorAll("button").forEach(b=>b.disabled=true)});
+  if(c.winner===null){const q=duel.list[duel.i];[0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(q.type==="odd")h.querySelectorAll(".cell")[q.oddIndex].classList.add("reveal");else h.querySelectorAll(".choice").forEach(b=>{if(b.dataset.v===q.data[1])b.classList.add("reveal")})})}
   duel.log.push({winner:c.winner,p:c.p});duel.i++;
   duelT=setTimeout(duelNext,1100);
 }
@@ -1008,7 +1035,7 @@ const other=r=>r==="host"?"guest":"host";
 async function dbGet(path){const r=await fetch(DB_URL+"/rooms/"+path+".json",{cache:"no-store"});if(!r.ok)throw new Error("db "+r.status);return r.json()}
 async function dbWrite(path,data,method){const r=await fetch(DB_URL+"/rooms/"+path+".json",{method:method||"PATCH",body:JSON.stringify(data)});if(!r.ok)throw new Error("db "+r.status);return r.json()}
 function myName(){return $("liveName").value.trim().slice(0,14)}
-function needName(){if(myName())return true;liveErr("Type your name first so your friend knows who they're playing.");$("liveName").focus();$("liveName").classList.add("shake");setTimeout(()=>$("liveName").classList.remove("shake"),350);return false}
+function needName(){if(myName())return true;liveErr(t("needName"));$("liveName").focus();$("liveName").classList.add("shake");setTimeout(()=>$("liveName").classList.remove("shake"),350);return false}
 function liveReset(){
   if(live){try{live.es&&live.es.close()}catch(e){}clearInterval(live.hbT);
     if(live.code&&live.role&&!live.leftSent){live.leftSent=true;try{navigator.sendBeacon?fetch(DB_URL+"/rooms/"+live.code+"/"+live.role+"/left.json",{method:"PUT",body:"true",keepalive:true}):0}catch(e){}}}
@@ -1016,7 +1043,7 @@ function liveReset(){
 }
 function liveUI(state){
   $("liveStart").hidden=state!=="start";$("liveRoom").hidden=state==="start";
-  $("liveTitle").textContent=state==="start"?"Play a friend on their own phone":live&&live.role==="host"?"Your room":"Joining room";
+  $("liveTitle").textContent=state==="start"?t("liveH"):live&&live.role==="host"?t("yourRoom"):t("joiningRoom");
   $("liveHint").hidden=state!=="start";
 }
 function liveStatus(t){$("liveStatus").textContent=t}
@@ -1027,37 +1054,37 @@ async function liveCreate(){
   liveErr("");liveReset();
   const code=newCode();
   live={role:"host",code,me:myName(),them:null,room:null};
-  liveUI("room");$("liveCode").textContent=code;liveStatus("Setting up the room…");roomBase();
+  liveUI("room");$("liveCode").textContent=code;liveStatus(t("settingUp"));roomBase();
   try{
-    const existing=await dbGet(code);
+    await loadTR(LANG);const existing=await dbGet(code);
     if(existing&&existing.created>Date.now()-3600000&&!(existing.host&&existing.host.left)){return liveCreate()} // code in use, pick another
     const seed=Math.floor(Math.random()*2**31);
     await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:customTypes(),ver:BANK_VER,round:packRound(buildRound("live",seed,diff,customTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
-  }catch(e){liveErr("Couldn't reach the match server. Check your connection and try again.");return}
+  }catch(e){liveErr(t("noServer"));return}
   const link=shareBase()+"#L"+code;
-  liveStatus("Waiting for your friend to join…");
+  liveStatus(t("waitFriend"));
   $("liveShare").hidden=false;$("liveShareRow").hidden=false;
-  $("liveShare").textContent="Let's play a live match on Brain Teasers Club! Room "+code+": "+link;
+  $("liveShare").textContent=t("invite",{c:code,link});
   listen(code);
 }
 async function liveJoin(code){
   if(!needName()){$("liveInput").value=code;liveUI("start");return}
   liveErr("");liveReset();
   live={role:"guest",code,me:myName(),them:null,room:null};
-  liveUI("room");$("liveCode").textContent=code;liveStatus("Connecting to the room…");roomBase();
+  liveUI("room");$("liveCode").textContent=code;liveStatus(t("connRoom"));roomBase();
   let room=null;
-  try{room=await dbGet(code)}catch(e){liveErr("Couldn't reach the match server. Check your connection and try again.");return}
-  if(!room||!room.host||room.created<Date.now()-3600000||room.host.left){liveErr("Room "+code+" doesn't exist or has closed. Check the code, or ask your friend to create a new room.");return}
-  if(room.guest&&room.guest.name&&!room.guest.left&&(room.guest.hb||0)>Date.now()-20000){liveErr("Room "+code+" already has two players.");return}
-  if(!room.settings||!room.settings.round||room.settings.ver!==BANK_VER){liveErr("You and your friend have different versions of the game. Both of you: close the game completely, reopen it, and try again.");return}
-  try{await dbWrite(code+"/guest",{name:live.me,hb:Date.now(),ready:false,left:null,done:null,prog:null,rematch:null},"PUT")}catch(e){liveErr("Couldn't join the room. Try again.");return}
+  try{room=await dbGet(code)}catch(e){liveErr(t("noServer"));return}
+  if(!room||!room.host||room.created<Date.now()-3600000||room.host.left){liveErr(t("noRoom",{c:code}));return}
+  if(room.guest&&room.guest.name&&!room.guest.left&&(room.guest.hb||0)>Date.now()-20000){liveErr(t("roomFull",{c:code}));return}
+  if(!room.settings||!room.settings.round||room.settings.ver!==BANK_VER){liveErr(t("versions"));return}
+  try{await dbWrite(code+"/guest",{name:live.me,hb:Date.now(),ready:false,left:null,done:null,prog:null,rematch:null},"PUT")}catch(e){liveErr(t("joinFail"));return}
   listen(code);
 }
 function listen(code){
   const es=new EventSource(DB_URL+"/rooms/"+code+".json");live.es=es;
   es.addEventListener("put",ev=>{const d=JSON.parse(ev.data);applyChange(d.path,d.data,false)});
   es.addEventListener("patch",ev=>{const d=JSON.parse(ev.data);applyChange(d.path,d.data,true)});
-  es.addEventListener("cancel",()=>liveErr("Lost the connection to the room."));
+  es.addEventListener("cancel",()=>liveErr(t("lostConn")));
   es.onerror=()=>{/* EventSource retries by itself */};
   live.hbT=setInterval(()=>{if(live&&live.code)dbWrite(live.code+"/"+live.role,{hb:Date.now()}).catch(()=>{});checkGone()},5000);
 }
@@ -1075,22 +1102,22 @@ function applyChange(path,data,isPatch){
   reconcile();
 }
 function setCode(st){const r=st&&st.round||[];let h=2166136261;for(const q of r){for(const c of (q.t+q.i+(q.o||"")+(q.p||"").toString())){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}}return (h>>>0).toString(16).toUpperCase().slice(-4).padStart(4,"0")}
-function liveSettingsText(){const st=live.room&&live.room.settings||{};const names={odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",facts:"Animal Facts"};const t=st.types||[];return (t.length===4?"All puzzle types":t.map(x=>names[x]).join(" + "))+" · "+DIFF[st.diff||"normal"].label+" · host's settings"}
+function liveSettingsText(){const st=live.room&&live.room.settings||{};const ty=st.types||[];return t("hostSettings",{t:ty.length>=langTypes().length&&langTypes().every(x=>ty.includes(x))?t("allPuzzleTypes"):ty.map(x=>t("t_"+x)).join(" + "),d:dname(st.diff)})}
 function reconcile(){
   const r=live.room;if(!r)return;
   const me=r[live.role]||{},them=r[other(live.role)]||{};
-  if(live.role==="guest"&&(!r.host||r.host.left)){if(!live.started){liveErr("The host closed the room.");roomBase()}else markGone();return}
+  if(live.role==="guest"&&(!r.host||r.host.left)){if(!live.started){liveErr(t("hostClosed"));roomBase()}else markGone();return}
   if(them.name&&!them.left)live.them=String(them.name).slice(0,14);
   if(them.left&&live.started)markGone();
-  if(them.left&&!live.started){liveErr((live.them||"Your friend")+" left the room.");roomBase();live.them=null;if(live.role==="host"){$("liveShare").hidden=false;$("liveShareRow").hidden=false;liveStatus("Waiting for your friend to join…")}return}
+  if(them.left&&!live.started){liveErr(t("leftRoom",{n:live.them||t("yourFriend")}));roomBase();live.them=null;if(live.role==="host"){$("liveShare").hidden=false;$("liveShareRow").hidden=false;liveStatus(t("waitFriend"))}return}
   // lobby
   if(!live.started&&live.them){
     $("lobby").hidden=false;$("liveShare").hidden=true;$("liveShareRow").hidden=true;
-    $("lobbyMe").innerHTML="<b>"+esc(live.me)+"</b><span>"+(me.ready?"✓ ready":"you")+"</span>";
-    $("lobbyThem").innerHTML="<b>"+esc(live.them)+"</b><span>"+(them.ready?"✓ ready":"joined")+"</span>";
+    $("lobbyMe").innerHTML="<b>"+esc(live.me)+"</b><span>"+(me.ready?t("readyMark"):t("youLower"))+"</span>";
+    $("lobbyThem").innerHTML="<b>"+esc(live.them)+"</b><span>"+(them.ready?t("readyMark"):t("joined"))+"</span>";
     $("liveSettings").textContent=liveSettingsText();
     $("liveReady").hidden=!!me.ready;
-    liveStatus(me.ready&&them.ready?"Starting…":me.ready?"Waiting for "+live.them+"…":live.them+" is here. Tap ready when you are.");
+    liveStatus(me.ready&&them.ready?t("starting"):me.ready?t("waitFor",{n:live.them}):t("isHere",{n:live.them}));
     if(live.role==="host"&&me.ready&&them.ready&&!r.startAt&&!live.picking){live.picking=true;const st=r.settings;const seed=Math.floor(Math.random()*2**31);
       dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500}).catch(()=>{live.picking=false})}
   }
@@ -1105,59 +1132,59 @@ function reconcile(){
       const seed=Math.floor(Math.random()*2**31);const st=live.room.settings;
       dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500,"host/prog":null,"host/done":null,"host/rematch":null,"guest/prog":null,"guest/done":null,"guest/rematch":null}).catch(()=>{});
     }
-    if(them.rematch&&!me.rematch&&live.myDone&&live.theirDone&&!$("againBtn").dataset.asked){$("againBtn").dataset.asked="1";$("againBtn").textContent="🔔 "+live.them+" wants a rematch! Tap to accept";$("againBtn").classList.add("pop");SFX.point()}
+    if(them.rematch&&!me.rematch&&live.myDone&&live.theirDone&&!$("againBtn").dataset.asked){$("againBtn").dataset.asked="1";$("againBtn").textContent=t("wantsRematch",{n:live.them});$("againBtn").classList.add("pop");SFX.point()}
   }
 }
 function checkGone(){if(!live||!live.started||live.gone)return;const them=live.room&&live.room[other(live.role)];if(them&&them.hb&&them.hb<Date.now()-25000)markGone()}
-function markGone(){if(!live||live.gone)return;live.gone=true;$("oppName").textContent=(live.them||"Opponent")+" (left)";if(live.myDone&&!live.theirDone)liveSettleGone()}
+function markGone(){if(!live||live.gone)return;live.gone=true;$("oppName").textContent=t("leftTag",{n:live.them||t("opponent")});if(live.myDone&&!live.theirDone)liveSettleGone()}
 function startCountdown(at){
   live.started=true;live.myDone=null;live.theirDone=null;live.oppState=null;live.gone=false;
-  $("againBtn").disabled=false;$("againBtn").textContent="Rematch";delete $("againBtn").dataset.asked;
+  $("againBtn").disabled=false;$("againBtn").textContent=t("rematch");delete $("againBtn").dataset.asked;
   const st=live.room&&live.room.settings||{};const setId=setCode(st);
-  $("countdown").hidden=false;$("cdSub").textContent="vs "+live.them+" · puzzle set "+setId;
-  const tick=()=>{if(!live)return;const left=at-Date.now();if(left<=0){$("countdown").hidden=true;liveBegin();return}$("cdNum").textContent=Math.max(1,Math.ceil(left/1000));setTimeout(tick,100)};
+  $("countdown").hidden=false;$("cdSub").textContent=t("vsSet",{n:live.them,id:setId});
+  const tick=()=>{if(!live)return;const left=at-Date.now();if(left<=0){$("countdown").hidden=true;liveBegin();return}$("cdNum").textContent=num(Math.max(1,Math.ceil(left/1000)));setTimeout(tick,100)};
   show("live");tick();
 }
 function liveBegin(){
   const st=live.room.settings;
   const list=st.round?unpackRound(st.round):null;
-  if(!list||list.some(q=>!q)){liveErr("Your games have different puzzle sets. Both of you, please reload the game and try again.");liveReset();liveUI("start");show("live");return}
+  if(!list||list.some(q=>!q)){liveErr(t("versions"));liveReset();liveUI("start");show("live");return}
   startRound("live",st.seed,st.diff,st.types,list);
   $("opp").hidden=false;$("oppName").textContent=live.them;renderOpp();
 }
-function renderOpp(){const o=live&&live.oppState;const n=S?S.list.length:10;$("oppScore").textContent=o?o.score:0;$("oppProg").textContent=(o?o.i:0)+"/"+n;$("oppBar").style.width=((o?o.i:0)/n*100)+"%"}
+function renderOpp(){const o=live&&live.oppState;const n=S?S.list.length:10;$("oppScore").textContent=o?o.score:0;$("oppProg").textContent=num((o?o.i:0)+"/"+n);$("oppBar").style.width=((o?o.i:0)/n*100)+"%"}
 function liveProgress(){if(S&&S.mode==="live"&&live)dbWrite(live.code+"/"+live.role,{prog:{i:S.i,score:S.score,correct:S.correct}}).catch(()=>{})}
 function liveFinish(){
   live.myDone={score:S.score,correct:S.correct,n:S.list.length,line:emojiLine(S.log,S.list.length),log:S.log.map(e=>({ok:e.ok?1:0,t:e.timeout?1:0,g:e.given||"",s:e.secs}))};
   dbWrite(live.code+"/"+live.role,{done:live.myDone}).catch(()=>{});
-  if(live.theirDone)liveResults();else if(live.gone)liveSettleGone();else{$("liveWait").textContent="Waiting for "+live.them+" to finish…";$("liveWait").hidden=false}
+  if(live.theirDone)liveResults();else if(live.gone)liveSettleGone();else{$("liveWait").textContent=t("waitFinish",{n:live.them});$("liveWait").hidden=false}
 }
-function liveSettleGone(){const o=live.oppState||{score:0,correct:0,i:0};live.theirDone={score:o.score,correct:o.correct,n:S?S.list.length:10};liveResults();$("rank").textContent+=" ("+live.them+" left before finishing)";$("againBtn").disabled=true;$("againBtn").textContent="Opponent left"}
+function liveSettleGone(){const o=live.oppState||{score:0,correct:0,i:0};live.theirDone={score:o.score,correct:o.correct,n:S?S.list.length:10};liveResults();$("rank").textContent+=t("leftEarly",{n:live.them});$("againBtn").disabled=true;$("againBtn").textContent=t("oppLeft")}
 function liveResults(){
   $("liveWait").hidden=true;const a=live.myDone.score,b=live.theirDone.score;
   $("vs").hidden=false;$("statGrid").hidden=true;
-  showVs([live.me,live.them],[a,b],[live.myDone.correct+"/"+live.myDone.n+" correct",live.theirDone.correct+"/"+live.theirDone.n+" correct"]);
-  $("finalScore").textContent=a===b?"Tie":a>b?"🏆":"😤";
-  $("rank").textContent=a===b?"Dead heat. Rematch?":a>b?"You beat "+live.them+" by "+(a-b)+" points!":live.them+" wins by "+(b-a)+" points. Rematch?";
-  const rec=liveRecord(live.them,a>b?1:a<b?-1:0);$("rank").textContent+=" · Record vs "+live.them+": "+rec.w+"–"+rec.l+(rec.d?"–"+rec.d:"");
-  const dl=DIFF[live.room.settings.diff||"normal"].label;
+  showVs([live.me,live.them],[a,b],[t("nCorrect",{c:live.myDone.correct,n:live.myDone.n}),t("nCorrect",{c:live.theirDone.correct,n:live.theirDone.n})]);
+  $("finalScore").textContent=a===b?t("tie"):a>b?"🏆":"😤";
+  $("rank").textContent=a===b?t("deadHeat"):a>b?t("youBeat",{n:live.them,d:a-b}):t("theyWin",{n:live.them,d:b-a});
+  const rec=liveRecord(live.them,a>b?1:a<b?-1:0);$("rank").textContent+=t("record",{n:live.them,r:num(rec.w+"–"+rec.l+(rec.d?"–"+rec.d:""))});
+  const dl=dname(live.room.settings.diff);
   const mine=live.myDone.line||emojiLine(S.log,S.list.length),theirs=live.theirDone.line||"";
   $("emojiLine").innerHTML='<div class="eml"><span>'+esc(live.me)+'</span>'+mine+'</div>'+(theirs?'<div class="eml"><span>'+esc(live.them)+'</span>'+theirs+'</div>':'');
-  $("shareText").textContent=live.me+" "+a+" vs "+live.them+" "+b+" on Brain Teasers Club Live Match ("+dl+").\n"+live.me+": "+mine+(theirs?"\n"+live.them+": "+theirs:"")+"\nPlay: "+shareBase();
-  $("againBtn").textContent="Rematch";$("againBtn").disabled=false;delete $("againBtn").dataset.asked;
-  const open=!$("review").hidden;buildReview();if(open){$("review").hidden=false;$("reviewBtn").textContent="Hide the puzzles"}
+  $("shareText").textContent=t("shareLive",{me:live.me,a:String(a),them:live.them,b:String(b),d:dl})+"\n"+live.me+": "+mine+(theirs?"\n"+live.them+": "+theirs:"")+"\n"+t("playLink",{link:shareBase()});
+  $("againBtn").textContent=t("rematch");$("againBtn").disabled=false;delete $("againBtn").dataset.asked;
+  const open=!$("review").hidden;buildReview();if(open){$("review").hidden=false;$("reviewBtn").textContent=t("hideReview")}
   (a>=b?SFX.win:SFX.lose)();
 }
 function liveRecord(name,r){let all={};try{all=JSON.parse(localStorage.getItem("btc-live-record")||"{}")||{}}catch(e){}const k=name.toLowerCase();const rec=all[k]||{w:0,l:0,d:0};if(r>0)rec.w++;else if(r<0)rec.l++;else rec.d++;all[k]=rec;try{localStorage.setItem("btc-live-record",JSON.stringify(all))}catch(e){}return rec}
 function requestRematch(){
-  if(!live||live.gone){liveErr("Your opponent has left.");liveReset();liveUI("start");show("live");return}
-  $("againBtn").textContent="Waiting for "+live.them+"…";$("againBtn").disabled=true;
+  if(!live||live.gone){liveErr(t("oppGone"));liveReset();liveUI("start");show("live");return}
+  $("againBtn").textContent=t("waitFor",{n:live.them});$("againBtn").disabled=true;
   dbWrite(live.code+"/"+live.role,{rematch:true,seen:seenList()}).catch(()=>{});
 }
 $("liveCreate").onclick=liveCreate;
-$("liveJoin").onclick=()=>{const v=$("liveInput").value.trim().toUpperCase();if(/^[A-Z2-9]{4}$/.test(v))liveJoin(v);else liveErr("Room codes are 4 letters or digits.")};
+$("liveJoin").onclick=()=>{const v=$("liveInput").value.trim().toUpperCase();if(/^[A-Z2-9]{4}$/.test(v))liveJoin(v);else liveErr(t("codeRule"))};
 $("liveReady").onclick=()=>{$("liveReady").hidden=true;dbWrite(live.code+"/"+live.role,{ready:true,seen:seenList()}).catch(()=>{})};
-$("liveCopy").onclick=()=>copyText($("liveShare").textContent,$("liveCopy"),"Copy invite");
+$("liveCopy").onclick=()=>copyText($("liveShare").textContent,$("liveCopy"),t("copyInvite"));
 $("liveBack").onclick=()=>{liveReset();liveUI("start");show("friends")};
 try{$("liveName").value=localStorage.getItem("btc-name")||""}catch(e){}
 $("liveName").addEventListener("change",()=>{try{localStorage.setItem("btc-name",myName())}catch(e){}});
@@ -1177,22 +1204,22 @@ function openChallenge(code,fromLink,d,types){
   d=d||diff;types=types||customTypes();
   chal={code,seed:seedFromString("challenge:"+code),fromLink,diff:d,types};
   const link=shareBase()+"#"+chalCode();
-  $("chEyebrow").textContent=fromLink?"Challenge accepted":"Challenge a friend";
-  $("chTitle").textContent=fromLink?"A friend challenged you":"Your challenge code";
-  const names={odd:"Odd One Out",emoji:"Emoji Riddles",logic:"Quick Logic",facts:"Animal Facts"};const tl=types.length===4?"all puzzle types":types.map(x=>names[x]).join(" + ");
+  $("chEyebrow").textContent=fromLink?t("chalAccepted"):t("chalA");
+  $("chTitle").textContent=fromLink?t("chalFrom"):t("chalCode");
+  const tl=types.length===4||(LANG!=="en"&&langTypes().every(x=>types.includes(x)))?t("allLower"):types.map(x=>t("t_"+x)).join(" + ");
   $("chCode").textContent=chalCode();
   $("chText").textContent=fromLink
-    ? "You'll get the exact same 10 puzzles they did ("+tl+", "+DIFF[d].label+"). Play, then compare scores."
-    : "Send this link, then both of you press Play. Same 10 puzzles ("+tl+", "+DIFF[d].label+"); highest score wins.";
-  $("chShare").textContent=fromLink?"Code "+chalCode()+" · "+DIFF[d].label+" · "+link:"Beat me on Brain Teasers Club! Code "+chalCode()+" ("+DIFF[d].label+"): "+link;
-  $("chPlay").textContent=fromLink?"Play the challenge":"Play my round";
+    ? t("chalIn",{tl,d:dname(d)})
+    : t("chalOut",{tl,d:dname(d)});
+  $("chShare").textContent=fromLink?t("chalShareIn",{c:chalCode(),d:dname(d),link}):t("chalShareOut",{c:chalCode(),d:dname(d),link});
+  $("chPlay").textContent=fromLink?t("playChal"):t("playMine");
   show("challenge");
 }
 function readHash(){
   const lm=/^#L([A-Z2-9]{4})$/i.exec(location.hash||"");
   if(lm){if(!$("play").hidden||!$("duelScreen").hidden){pendingHash=location.hash;return false}history.replaceState(null,"",location.pathname+location.search);liveReset();show("live");
     const code=lm[1].toUpperCase();$("liveInput").value=code;
-    if($("liveName").value.trim()){liveUI("room");liveJoin(code)}else{liveUI("start");$("liveHint").textContent="You've been invited to room "+code+". Type your name, then tap Join.";$("liveName").focus()}
+    if($("liveName").value.trim()){liveUI("room");liveJoin(code)}else{liveUI("start");$("liveHint").textContent=t("invited",{c:code});$("liveName").focus()}
     return true}
   const m=/^#([A-Z2-9]{4})([ENHX])?([1-9A-F])?$/i.exec(location.hash||"");
   if(!m)return false;
@@ -1210,20 +1237,20 @@ document.querySelectorAll(".mode,.hero").forEach(b=>b.onclick=()=>{
   const m=b.dataset.mode;
   if(m==="daily"){const d=dailyDone();if(d){showDailyDone(d);return}return startSoon("daily",daySeed())}
   if(m==="solo")return show("custom");
-  if(m==="live"){liveReset();liveUI("start");$("liveHint").textContent="One of you creates a room and sends the link or code. The other joins. You both play the same 10 puzzles at the same time and watch each other's score live.";return show("live")}
+  if(m==="live"){liveReset();liveUI("start");$("liveHint").textContent=t("liveHint");return show("live")}
   if(m==="friends")return show("friends");
-  if(m==="pass"||m==="duel"){twoMode=m;$("namesEyebrow").textContent=MODE_NAMES[m];$("namesHint").textContent=m==="pass"?"Player 1 goes first. Then hand the phone over and Player 2 gets the exact same puzzles.":"Lay the phone flat between you. Player 1 sits at the bottom, Player 2 across the table sees their half the right way up. First correct tap wins the point; a wrong tap locks you out of that puzzle.";return show("names")}
+  if(m==="pass"||m==="duel"){twoMode=m;$("namesEyebrow").textContent=modeName(m);$("namesHint").textContent=m==="pass"?t("passHint"):t("duelHint");return show("names")}
   if(m==="challenge")return openChallenge(newCode(),false);
   startSoon(m);
 });
 $("startPass").onclick=()=>{
-  const names=[$("name1").value.trim()||"Player 1",$("name2").value.trim()||"Player 2"];
+  const names=[$("name1").value.trim()||t("p1"),$("name2").value.trim()||t("p2")];
   if(twoMode==="duel")return startDuel(names);
-  pass={names:[$("name1").value.trim()||"Player 1",$("name2").value.trim()||"Player 2"],seed:Math.floor(Math.random()*2**31),scores:[],turn:0};
+  pass={names:names.slice(),seed:Math.floor(Math.random()*2**31),scores:[],turn:0};
   startRound("pass",pass.seed);
 };
 $("namesBack").onclick=()=>show("friends");
-document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{let t=customTypes();const k=c.dataset.type;if(t.includes(k)){if(t.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}t=t.filter(x=>x!==k)}else t.push(k);try{localStorage.setItem("btc-custom",JSON.stringify(t))}catch(e){}renderCustom();SFX.tap()});
+document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{let ty=customTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-custom",JSON.stringify(ty))}catch(e){}renderCustom();SFX.tap()});
 $("startCustom").onclick=()=>startRound(soloMode());
 $("customBack").onclick=()=>show("home");
 $("friendsBack").onclick=()=>show("home");
@@ -1232,7 +1259,7 @@ $("handoffCancel").onclick=()=>{S=null;show("home")};
 $("chBack").onclick=()=>{history.replaceState(null,"",location.pathname+location.search);show(chal&&chal.fromLink?"home":"friends")};
 $("chPlay").onclick=()=>startRound("challenge",chal.seed,chal.diff);
 $("chJoin").onclick=()=>{const v=$("chInput").value.trim().toUpperCase();const m=/^([A-Z2-9]{4})([ENHX])?([1-9A-F])?$/.exec(v);if(m){const d=Object.keys(DIFF_LETTER).find(k=>DIFF_LETTER[k]===(m[2]||"N"))||"normal";openChallenge(m[1],true,d,charToTypes(m[3]||"F"))}else{$("chInput").classList.add("shake");setTimeout(()=>$("chInput").classList.remove("shake"),350)}};
-$("chCopy").onclick=()=>copyText($("chShare").textContent,$("chCopy"),"Copy");
+$("chCopy").onclick=()=>copyText($("chShare").textContent,$("chCopy"),t("copy"));
 $("quit").onclick=()=>{clearInterval(timer);clearTimeout(nextT);if(S&&S.mode==="live"){liveReset();S=null;show("home");return}if(S&&S.mode==="daily"&&S.list.length){S.locked=true;endRound();return}S=null;show("home")};
 $("againBtn").onclick=()=>{
   if(S&&S.mode==="live")return requestRematch();
@@ -1242,27 +1269,28 @@ $("againBtn").onclick=()=>{
   if(S.mode==="daily")return startRound("mix");
   startRound(S.mode);
 };
-$("aboutBtn").onclick=()=>{const n=ODD.length+EMOJI.length+LOGIC.length+FACTS.length;$("aboutCount").textContent=n.toLocaleString("en-US");const d=$("aboutDlg");if(d.showModal)d.showModal();else d.setAttribute("open","")};
+$("aboutBtn").onclick=()=>{$("aboutP2").textContent=t("aboutP2",{n:availableCount().toLocaleString("en-US")});const d=$("aboutDlg");if(d.showModal)d.showModal();else d.setAttribute("open","")};
 $("aboutClose").onclick=()=>{const d=$("aboutDlg");if(d.close)d.close();else d.removeAttribute("open")};
 $("aboutDlg").addEventListener("click",e=>{if(e.target.id==="aboutDlg")$("aboutClose").click()});
 $("homeBtn").onclick=()=>{if(S&&S.mode==="live")liveReset();show("home")};
 function showDailyDone(d){
   // Re-opening a finished daily shows today's result instead of a replay
-  $("resMode").textContent="Daily Challenge · "+todayKey();$("vs").hidden=true;$("statGrid").hidden=false;
-  $("finalScore").textContent=d.score||0;$("rank").textContent="You've done today's Daily. New puzzles at midnight. 🔥 "+currentStreak()+"-day streak";
-  $("rCorrect").textContent=(d.correct||0)+"/10";$("rStreak").textContent="–";$("rBest").textContent=loadBest()["daily-"+todayKey()]||d.score||0;
-  $("shareText").textContent="Brain Teasers Club Daily "+todayKey()+" · "+(d.score||0)+" pts · "+(d.correct||0)+"/10\n🔥 "+currentStreak()+"-day streak · "+shareBase();
+  $("resMode").textContent=t("m_daily")+" · "+todayKey();$("vs").hidden=true;$("statGrid").hidden=false;
+  $("finalScore").textContent=d.score||0;$("rank").textContent=t("doneToday",{n:currentStreak()});
+  $("rCorrect").textContent=num((d.correct||0)+"/10");$("rStreak").textContent="–";$("rBest").textContent=loadBest()["daily-"+todayKey()]||d.score||0;
+  $("shareText").textContent=t("shareDone",{day:todayKey(),s:d.score||0,c:d.correct||0,n:currentStreak(),link:shareBase()});
   $("emojiLine").hidden=true;$("xpRes").hidden=true;$("levelUp").hidden=true;
-  $("resDiffBox").hidden=false;setDiff(diff);$("againBtn").textContent="Play a Random Mix";S={mode:"daily",list:[],log:[],score:d.score||0,correct:d.correct||0,i:10};
+  $("resDiffBox").hidden=false;setDiff(diff);$("againBtn").textContent=t("randomMix");S={mode:"daily",list:[],log:[],score:d.score||0,correct:d.correct||0,i:10};
   $("review").hidden=true;$("review").innerHTML="";$("reviewBtn").hidden=true;show("results");
 }
 function copyText(txt,btn,label){
-  const done=()=>{btn.textContent="Copied!";setTimeout(()=>btn.textContent=label,1500)};
+  const done=()=>{btn.textContent=t("copied");setTimeout(()=>btn.textContent=label,1500)};
   const fallback=()=>{const r=document.createRange();r.selectNodeContents(btn.id==="chCopy"?$("chShare"):$("shareText"));const s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand("copy");done()}catch(e){}};
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback)}else fallback();
 }
-$("copyBtn").onclick=()=>copyText($("shareText").textContent,$("copyBtn"),"Copy score");
-settleAbandonedDaily();setDiff(diff);setMuted(muted);renderStreak();renderDaily();renderCustom();renderXp("xp",loadXp());
+$("copyBtn").onclick=()=>copyText($("shareText").textContent,$("copyBtn"),t("copyScore"));
+settleAbandonedDaily();applyLang();loadTR(LANG);
+$("langSel").onchange=()=>{LANG=$("langSel").value;try{localStorage.setItem("btc-lang",LANG)}catch(e){}loadTR(LANG).then(applyLang);applyLang()};
 document.addEventListener("visibilitychange",()=>{if(!document.hidden){renderStreak();renderDaily()}});
 $("muteBtn").onclick=()=>{setMuted(!muted);if(!muted)SFX.good()};
 $("muteBtn2").onclick=()=>setMuted(!muted);

@@ -1,5 +1,5 @@
 import json,os,html,datetime
-def load(p): return json.load(open(p))
+def load(p): return json.load(open(p,encoding='utf-8'))
 odd=load('content/odd.json')+load('content/odd-new.json')
 emoji=load('content/emoji.json')+load('content/emoji-new.json')
 logic=load('content/logic.json')+load('content/logic-new.json')
@@ -25,8 +25,17 @@ for c,o,*_ in O:
     k=frozenset([c,o]);assert k not in pairs,('dup odd',c,o);pairs.add(k)
 bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A))
 t=open('src/index.html').read()
-assert '/*__BANK__*/' in t
-page=t.replace('/*__BANK__*/',bank)
+assert '/*__BANK__*/' in t and '/*__I18N__*/' in t
+page=t.replace('/*__BANK__*/',bank).replace('/*__I18N__*/',open('src/i18n.js').read())
+# Puzzle translations (content/i18n/<lang>.json, keyed by bank index) are served as dist/i18n/<lang>.json.
+TRANS={}
+for f in sorted(os.listdir('content/i18n')) if os.path.isdir('content/i18n') else []:
+    if not f.endswith('.json'): continue
+    tr=load('content/i18n/'+f)
+    for typ,bankarr in (('logic',L),('facts',A)):
+        for k,v in tr.get(typ,{}).items():
+            assert 0<=int(k)<len(bankarr) and len(v)==4 and len(v[2])==3 and len({v[1],*v[2]})==4 and all(isinstance(x,str) and x for x in [v[0],v[1],*v[2]]),(f,typ,k)
+    TRANS[f]=tr
 open('index.html','w').write(page)   # artifact version (claude.ai adds the skeleton)
 
 # ---------- standalone site for hosting ----------
@@ -111,8 +120,10 @@ open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain 
 # manifest, sw, robots, icon
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
   "icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml"},{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]},open('dist/manifest.webmanifest','w'))
+os.makedirs('dist/i18n',exist_ok=True)
+for f,tr in TRANS.items(): json.dump(tr,open('dist/i18n/'+f,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v19";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v20";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;

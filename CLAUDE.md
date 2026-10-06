@@ -21,6 +21,13 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
 - No-repeat order: unseeded rounds (Play Solo) deal from shuffled decks per type and level in localStorage
   (`btc-deck2-<type><lvl>`, `deckPick`); new puzzles are shuffled into the remaining deck. Adding puzzles changes the
   Live Match bank version (both players need the same build) and the puzzles behind old Challenge codes.
+- Languages (English, Persian, Spanish): UI text is in `src/i18n.js` (`STR`, `t("key",{vars})`, injected at
+  `/*__I18N__*/`); static HTML uses `data-t` / `data-tp`. Puzzle translations are `content/i18n/<lang>.json`
+  ({logic|facts: {bank index: [q, a, [3 wrong in English order], why]}}), served as `dist/i18n/<lang>.json` and fetched
+  on demand. Options keep their English text as identity (`loc(q).opt`), so answers, Live Match and Challenge codes work
+  across languages; untranslated puzzles fall back to English. Emoji Riddles are English-only; other languages get
+  their own Daily (4 odd, 3 logic, 3 facts). Persian is RTL with Vazirmatn and Persian digits (`num()`).
+  When adding logic/facts puzzles, translate them too (or they stay English-only for those players).
 - `tools/video/` — YouTube/Instagram video maker (see "Videos" below).
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
