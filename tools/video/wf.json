@@ -552,5 +552,129 @@
     "say": "A hoglet!"
    }
   ]
+ },
+ "kids1": {
+  "kind": "quiz",
+  "theme": "purple",
+  "label": "ANIMAL QUIZ",
+  "sub": [
+   "KIDS VS PARENTS:",
+   "WHO GETS 3/3?"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Kids versus parents! Three animal questions. Who gets all three?",
+  "items": [
+   {
+    "q": "Which animal laughs when you tickle it?",
+    "o": [
+     "Rat",
+     "Dog",
+     "Parrot"
+    ],
+    "a": 0,
+    "f": "Rats squeak with joy when tickled!",
+    "say": "The rat! Scientists found rats make happy squeaks when they're tickled."
+   },
+   {
+    "q": "Which animal has striped skin, not just striped fur?",
+    "o": [
+     "Zebra",
+     "Tiger",
+     "Cheetah"
+    ],
+    "a": 1,
+    "f": "Shave a tiger: still stripes!",
+    "say": "The tiger! Its skin is striped too, not just its fur."
+   },
+   {
+    "q": "What is the tallest animal in the world?",
+    "o": [
+     "Elephant",
+     "Giraffe",
+     "Ostrich"
+    ],
+    "a": 1,
+    "f": "Up to about 5.5 meters!",
+    "say": "The giraffe! Up to about five and a half meters tall."
+   }
+  ]
+ },
+ "groups3": {
+  "kind": "quiz",
+  "theme": "green",
+  "label": "ANIMAL GROUPS",
+  "sub": [
+   "CAN YOU",
+   "GET 3/3?"
+  ],
+  "secs": 5,
+  "read": true,
+  "intro": "Animal group names! Three questions. Can you get all three?",
+  "items": [
+   {
+    "q": "What is a group of crows famously called?",
+    "o": [
+     "A parade",
+     "A murder",
+     "A pride"
+    ],
+    "a": 1,
+    "f": "A murder of crows!",
+    "say": "A murder! A murder of crows."
+   },
+   {
+    "q": "What is a group of owls called?",
+    "o": [
+     "A parliament",
+     "A school",
+     "A pack"
+    ],
+    "a": 0,
+    "f": "A parliament of owls!",
+    "say": "A parliament! A parliament of owls."
+   },
+   {
+    "q": "What is a group of flamingos called?",
+    "o": [
+     "A herd",
+     "A gaggle",
+     "A flamboyance"
+    ],
+    "a": 2,
+    "f": "A flamboyance of flamingos!",
+    "say": "A flamboyance! The perfect name for flamingos."
+   }
+  ]
+ },
+ "space3": {
+  "kind": "facts",
+  "theme": "space",
+  "label": "WILD FACTS",
+  "sub": [
+   "3 SPACE FACTS THAT",
+   "SOUND FAKE"
+  ],
+  "intro": "Three space facts that sound fake, but are true.",
+  "items": [
+   {
+    "t": "A day on Venus is longer than its year",
+    "big": "243 DAYS",
+    "small": "to spin around once",
+    "say": "Number one. A day on Venus is longer than its year. It takes about two hundred forty three Earth days to spin around once, but only two hundred twenty five to circle the Sun."
+   },
+   {
+    "t": "Footprints on the Moon can last for ages",
+    "big": "NO WIND",
+    "small": "nothing blows them away",
+    "say": "Number two. The astronauts' footprints on the Moon could last for millions of years. There's no wind or rain to wipe them away."
+   },
+   {
+    "t": "Sunlight you see is 8 minutes old",
+    "big": "8 MINUTES",
+    "small": "from the Sun to your eyes",
+    "say": "Number three. The sunlight you see right now left the Sun about eight minutes ago."
+   }
+  ]
  }
 }

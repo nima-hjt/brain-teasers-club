@@ -7,7 +7,9 @@
 // Generic Brain Teasers Short (1080x1920) driven by shorts.json: kind = emoji | riddle | odd. Frame-exact MP4 export.
 const NAME=new URLSearchParams(location.search).get('s');let C,D={};const VOICE='voice_'+NAME+'/';
 const W=1080,H=1920,F='"Poppins",sans-serif',E='"Noto Color Emoji"';let COUNT=3,INTRO=0,END=0,PLUG=0,TOTAL=0;const SEG=[];
-function plan(){COUNT=C.count;INTRO=D.intro+.3;let t=INTRO;C.items.forEach((_,i)=>{const say=D['l'+(i+1)],ans=D['a'+(i+1)];const s=t,cd=s+Math.max(say,.9)+.15,rv=cd+COUNT,e=rv+Math.max(1.8,ans+.7);SEG.push({s,cd,rv,e});t=e});END=D.end+.45;PLUG=D.plug+.6;TOTAL=t+END+PLUG}
+// REEL (?reel=1): no title card; the first puzzle is already on screen at frame 0 and the voice starts at once.
+const REEL=new URLSearchParams(location.search).has('reel');
+function plan(){COUNT=C.count;INTRO=REEL?0:D.intro+.3;let t=INTRO;C.items.forEach((_,i)=>{const say=D['l'+(i+1)],ans=D['a'+(i+1)];const first=REEL&&i===0;const s=first?-1.3:t,sp=first?.1:s+.05,cd=Math.max(s+Math.max(say,.9)+.15,sp+say+.15),rv=cd+COUNT,e=rv+Math.max(1.8,ans+.7);SEG.push({s,sp,cd,rv,e});t=e});END=D.end+.45;PLUG=D.plug+.6;TOTAL=t+END+PLUG}
 const cv=document.getElementById('c');let x=cv.getContext('2d');
 const cl=v=>Math.max(0,Math.min(1,v)),ease=t=>1-Math.pow(1-cl(t),3);const pop=t=>{t=cl(t);return t<1?ease(t)*(1+.18*Math.sin(t*Math.PI)):1};
 let s0=7;const rnd=()=>(s0=(s0*16807)%2147483647)/2147483647;
@@ -59,7 +61,7 @@ function frame(t){
       const cols=['#ff6b4a','#ffb020','#22c55e','#3b9cff','#a855f7'];for(let i=0;i<n;i++){const X=W/2+(i-(n-1)/2)*180,s=pop((u-.25-i*.1)*3);if(s<=0)continue;x.save();x.translate(X,1000);x.scale(s,s);x.beginPath();x.arc(0,0,74,0,Math.PI*2);x.fillStyle=cols[i+(5-n)];x.fill();text(`${i+1}/${n}`,0,3,44,'#fff',800);x.restore()}
       text('Comment your score',W/2-50,1190,56,'#fff',800);text('👇',W/2+330,1190,62,'#000',400,E);const s=1+Math.sin(u*7)*.05;x.save();x.translate(W/2,1380);x.scale(s,s);x.translate(-W/2,-1380);pill('FOLLOW',1380,'#ff3b3b','#fff',74,74);x.restore();caption('Comment your score!',SEG.at(-1).e,t)}
     else{const v=u-END;x.globalAlpha=ease(v*3);stroked('WANT MORE?',W/2,540,96,'#ffc93c');stroked('1,200+',W/2,690,150,'#fff');stroked('FREE PUZZLES',W/2,830,96,'#fff');text('daily challenge · play with friends',W/2,935,48,'#dbe6ff',600);
-      const s=pop(v*2);x.save();x.translate(W/2,1140);x.scale(s,s);rr(-480,-115,960,230,44);x.fillStyle='#fff';x.fill();text('🧠',-380,4,124,'#000',400,E);text('brainteasersclub.app',70,6,fit('brainteasersclub.app',700,72),'#1b1b3a',900);x.restore();text('link in description',W/2,1350,46,'#dbe6ff',600);x.globalAlpha=1}}
+      const s=pop(v*2);x.save();x.translate(W/2,1140);x.scale(s,s);rr(-480,-115,960,230,44);x.fillStyle='#fff';x.fill();text('🧠',-380,4,124,'#000',400,E);text('brainteasersclub.app',70,6,fit('brainteasersclub.app',700,72),'#1b1b3a',900);x.restore();text(REEL?'link in bio':'link in description',W/2,1350,46,'#dbe6ff',600);x.globalAlpha=1}}
   x.restore()}
 // ---- sound ----
 let ac,dest,OFF=false;const BUF={};const OUT=g=>{g.connect(dest);if(!OFF)g.connect(ac.destination)};
@@ -67,12 +69,12 @@ function tone(f,at,d,type='sine',v=.25,f2){const o=ac.createOscillator(),g=ac.cr
 function noise(at,d,v,f){const b=ac.createBuffer(1,Math.ceil(ac.sampleRate*d),ac.sampleRate),c=b.getChannelData(0);for(let i=0;i<c.length;i++)c[i]=(Math.random()*2-1)*(1-i/c.length);const s=ac.createBufferSource(),bp=ac.createBiquadFilter(),g=ac.createGain();s.buffer=b;bp.type='bandpass';bp.frequency.setValueAtTime(f,at);bp.frequency.exponentialRampToValueAtTime(f*4,at+d);g.gain.value=v;s.connect(bp);bp.connect(g);OUT(g);s.start(at)}
 function say(n,at){const s=ac.createBufferSource(),g=ac.createGain();s.buffer=BUF[n];g.gain.value=1.2;s.connect(g);OUT(g);s.start(at)}
 function schedule(t0){const beat=60/118;for(let b=0;b*beat<TOTAL-.4;b++){const at=t0+b*beat;tone(b%2?98:62,at,.2,'sine',.12,40);if(b%2)noise(at,.05,.05,6000)}
-  const arp=[523,659,784,988,784,659];for(let b=0;b*beat/2<TOTAL-.4;b++)tone(arp[b%6]/2,t0+b*beat/2,.18,'triangle',.02);noise(t0,.5,.25,400);say('intro',t0+.12);
-  SEG.forEach((g,i)=>{const at=t0+g.s;noise(at,.3,.18,500);say('l'+(i+1),at+.05);tone(600,at+.25,.1,'triangle',.08,900);
+  const arp=[523,659,784,988,784,659];for(let b=0;b*beat/2<TOTAL-.4;b++)tone(arp[b%6]/2,t0+b*beat/2,.18,'triangle',.02);if(!REEL){noise(t0,.5,.25,400);say('intro',t0+.12)}
+  SEG.forEach((g,i)=>{const at=Math.max(0,t0+g.s);noise(at,.3,.18,500);say('l'+(i+1),t0+g.sp);tone(600,Math.max(0,t0+g.sp+.2),.1,'triangle',.08,900);
     for(let k=0;k<COUNT;k++)tone(k===COUNT-1?1200:950,t0+g.cd+k,.07,'square',k===COUNT-1?.08:.055);tone(988,t0+g.rv,.12,'square',.09);tone(1319,t0+g.rv+.08,.32,'square',.09);noise(t0+g.rv,.35,.12,2000);say('a'+(i+1),t0+g.rv+.22)});
   const e=t0+SEG.at(-1).e;[392,523,659,784,1047].forEach((f,i)=>tone(f,e+i*.09,.3,'square',.05));say('end',e+.15);say('plug',e+END+.15)}
 async function fontsReady(){await document.fonts.load('900 80px Poppins');await document.fonts.load('800 80px Poppins');const em=JSON.stringify(C).match(/\p{Extended_Pictographic}/gu)||[];await document.fonts.load('100px "Noto Color Emoji"',em.join('')+'🧠👇')}
-async function exportMp4(){await fontsReady();const T0=new URLSearchParams(location.search).has("reel")?Math.max(0,INTRO-0.25):0; // Reel version starts on the first puzzle
+async function exportMp4(){await fontsReady();const T0=0;
   const FPS=30,SR=48000,N=Math.ceil((TOTAL-T0)*FPS),A0=Math.round(T0*SR);OFF=true;ac=new OfflineAudioContext(2,Math.ceil((TOTAL+.2)*SR),SR);dest=ac.destination;
   for(const n of Object.keys(D))BUF[n]=await ac.decodeAudioData(await (await fetch(VOICE+n+'.wav')).arrayBuffer());schedule(0);const audio=await ac.startRendering();
   let pk=0;for(let c=0;c<2;c++){const d=audio.getChannelData(c);for(let i=0;i<d.length;i++)pk=Math.max(pk,Math.abs(d[i]))}const gain=pk>.95?.95/pk:1;if(gain!==1)for(let c=0;c<2;c++){const d=audio.getChannelData(c);for(let i=0;i<d.length;i++)d[i]*=gain}
@@ -81,9 +83,9 @@ async function exportMp4(){await fontsReady();const T0=new URLSearchParams(locat
   for(let f=0;f<N;f++){frame(T0+f/FPS);const vf=new VideoFrame(cv,{timestamp:Math.round(f*1e6/FPS),duration:Math.round(1e6/FPS)});ve.encode(vf,{keyFrame:f%60===0});vf.close();window.__prog=f/N;if(ve.encodeQueueSize>20)await new Promise(r=>ve.addEventListener('dequeue',r,{once:true}))}
   await ve.flush();const ae=new AudioEncoder({output:(c,m)=>mux.addAudioChunk(c,m),error:e=>{throw e}});ae.configure({codec:'mp4a.40.2',sampleRate:SR,numberOfChannels:2,bitrate:192000});
   const L=audio.getChannelData(0),R=audio.getChannelData(1),STEP=1024*20,total=Math.min(L.length-A0,Math.round(N/FPS*SR));for(let i=0;i<total;i+=STEP){const n=Math.min(STEP,total-i),pl=new Float32Array(n*2);pl.set(L.subarray(A0+i,A0+i+n),0);pl.set(R.subarray(A0+i,A0+i+n),n);const ad=new AudioData({format:'f32-planar',sampleRate:SR,numberOfFrames:n,numberOfChannels:2,timestamp:Math.round(i*1e6/SR),data:pl});ae.encode(ad);ad.close()}
-  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(T0?'reel_':'short_')+NAME+'.mp4',{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
+  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(REEL?'reel_':'short_')+NAME+'.mp4',{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
 async function sheet(){await fontsReady();const ts=[1.4,...SEG.flatMap(g=>[g.cd+1,g.rv+.7])];ts.push(SEG.at(-1).e+1.5,TOTAL-1);const cols=4,cw=270,ch=480,s=document.createElement('canvas');s.width=cw*cols;s.height=ch*Math.ceil(ts.length/cols);const g=s.getContext('2d');
   ts.forEach((t,i)=>{frame(t);g.drawImage(cv,(i%cols)*cw,Math.floor(i/cols)*ch,cw,ch)});const b=await new Promise(r=>s.toBlob(r,'image/jpeg',.85));return (await fetch('/out/sheet_'+NAME+'.jpg',{method:'PUT',body:b})).status}
-window.ready=fetch('shorts.json').then(r=>r.json()).then(j=>{C=j[NAME]}).then(()=>fetch(VOICE+'durations.json')).then(r=>r.json()).then(d=>{D=d;plan()}).then(fontsReady).then(()=>{frame(0);return TOTAL});
+window.ready=fetch('shorts.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{C=j[NAME]}).then(()=>fetch(VOICE+'durations.json',{cache:'no-store'})).then(r=>r.json()).then(d=>{D=d;plan()}).then(fontsReady).then(()=>{frame(0);return TOTAL});
 window.exportMp4=exportMp4;window.sheet=sheet;window.preview=t=>{frame(t);return TOTAL};
 </script></body></html>

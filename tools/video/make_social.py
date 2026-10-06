@@ -17,7 +17,7 @@ R = [
  (7, '12:00 pm', 'Oct 7 12pm - Guess the Food by Emoji 🍔.mp4', ['Guess all 5 foods from the emoji 🍔 3 seconds each! The last one is tricky 😈', 'Comment your score 👇'], '#emojiquiz #foodquiz #guessthefood #brainteaser'),
  (7, '6:00 pm', 'Oct 7 6pm - Ocean Quiz 3 Questions 🐬.mp4', ['Ocean quiz 🐬 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#oceanquiz #animalquiz #quiz #trivia'),
  (8, '12:00 pm', 'Oct 8 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (8, '6:00 pm', 'Oct 8 6pm - What Is a Group of Crows Called 🐦‍⬛.mp4', ['What is a group of crows called? 🐦‍⬛ Guess before the answer!', 'Did you know it? 👇'], '#animalfacts #didyouknow #crows #quiz'),
+ (8, '6:00 pm', 'Oct 8 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
  (9, '12:00 pm', 'Oct 9 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
  (9, '6:00 pm', 'Oct 9 6pm - Kids vs Parents Animal Quiz 🐯.mp4', ['Kids vs parents 🐯 3 animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
  (10, '12:00 pm', 'Oct 10 12pm - Guess the Saying by Emoji 💬.mp4', ['Guess all 5 sayings from the emoji 💬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #idioms #guessthesaying #brainteaser'),
