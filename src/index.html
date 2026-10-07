@@ -1635,7 +1635,8 @@ document.querySelectorAll(".mode,.hero").forEach(b=>b.onclick=()=>{
   if(m==="world")return show("world");
   if(m==="hangman")return startHangman();
   if(m==="live"){liveReset();liveUI("start");$("liveHint").textContent=t("liveHint");return show("live")}
-  if(m==="friends"){try{localStorage.setItem("btc-fset","classic")}catch(e){}renderFriends();return show("friends")}
+  // Play with Friends always opens on Classic puzzles, and the World Quiz picks start as Flags + Capitals + Currencies
+  if(m==="friends"){try{localStorage.setItem("btc-fset","classic");localStorage.removeItem("btc-wtypes")}catch(e){}renderFriends();return show("friends")}
   if(m==="pass"||m==="duel"||m==="hpass"||m==="cpass"){twoMode=m;$("namesEyebrow").textContent=modeName(m);$("namesHint").textContent=m==="duel"?t("duelHint"):t("passHint");return show("names")}
   if(m==="clues")return startClues();
   if(m==="challenge")return openChallenge(newCode(),false);
