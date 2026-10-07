@@ -41,7 +41,8 @@ function ring(left,total,X,Y,R){const u=left<=1;const sc=u?1+.06*Math.sin(left*M
 function confetti(r,cx,cy){if(r>1.4)return;for(let i=0;i<40;i++){const a=i*2.4,v=300+(i*97%500);const X=cx+Math.cos(a)*v*r,Y=cy+Math.sin(a)*v*r+700*r*r;x.save();x.globalAlpha=cl(1.4-r);x.translate(X,Y);x.rotate(a+r*8);x.fillStyle=['#ffd23f','#22c55e','#ff4d6d','#3b82f6','#a855f7','#fff'][i%6];x.fillRect(-8,-4,16,8);x.restore()}}
 // ---- timeline ----
 // REEL (?reel=1): no title card; the first question is already on screen at frame 0 and the voice starts at once.
-const REEL=new URLSearchParams(location.search).has('reel');
+const REEL=new URLSearchParams(location.search).has('reel'),YT=new URLSearchParams(location.search).has('yt'); // yt: YouTube copy of a no-intro video
+let PLUGS=0; // when the closing 'play the free game' card starts
 function plan(){INTRO=REEL?0:D.intro+.5;let t=INTRO;const read=C.read!==false,secs=C.secs||5,facts=C.kind==='facts';
   C.items.forEach((it,i)=>{const n=i+1;const g={i};const first=REEL&&i===0;
     if(facts){g.s=first?-1:t;g.say=first?.15:t+.5;g.e=g.say+D['f'+n]+.7;SEG.push(g);t=g.e;return}
@@ -49,7 +50,7 @@ function plan(){INTRO=REEL?0:D.intro+.5;let t=INTRO;const read=C.read!==false,se
     g.s=first?-1:t;g.q=first?.15:t+.35;let u=g.q+D['q'+n]+.25;g.o=[];
     if(read){for(let j=0;j<3;j++){g.o.push(u);u+=D[`o${n}_${j}`]+.18}}else{for(let j=0;j<3;j++)g.o.push(g.q+.25+j*.12)}
     g.cd=u+.1;g.rv=g.cd+secs;g.e=g.rv+Math.max(read?2.6:1.8,D['a'+n]+.6);g.secs=secs;SEG.push(g);t=g.e});
-  ENDS=t;TOTAL=t+D.end+(LONG?9:2.2)}
+  ENDS=t;PLUGS=t+D.end+.6;TOTAL=PLUGS+(D.plug||2)+(LONG?9:1.2)}
 // ---- drawing: quiz ----
 function quizFrame(g,t){const it=C.items[g.i],n=g.i+1,N=C.items.length,k=t-g.s,rv=t>=g.rv;
   const L=LONG?{cx:1250,cw:1120,qy:250,oy:520,og:132,ow:860,oh:104,fs:58,ofs:46,ringX:430,ringY:560,factY:190,factX:400}:{cx:W/2,cw:940,qy:480,oy:900,og:150,ow:840,oh:112,fs:62,ofs:50,ringX:W/2,ringY:1420,factY:1440,factX:W/2};
@@ -80,6 +81,10 @@ function frame(t){bg(t);let cur=-1;for(let i=0;i<SEG.length;i++)if(t>=(SEG[i].la
     if(!LONG&&C.kind==='facts')captions('intro',C.intro,.1,t);return}
   if(t<ENDS&&cur>=0){const g=SEG[cur];if(g.lastS!==undefined&&t<g.s){const k=t-g.lastS;x.save();x.translate(W/2,H/2);x.rotate(-.05);x.scale(pop(k*3),pop(k*3));rr(-330,-130,660,260,40);x.fillStyle='#ef4444';x.fill();text('LAST ONE',0,-30,96,'#fff',900);text('the hardest',0,62,52,'#ffe4e4',700);x.restore();return}
     if(C.kind==='facts')factsFrame(g,t);else{quizFrame(g,t);if(!LONG&&t<g.cd)octo(W-150,1640,.9,t,0)}return}
+  if(t>=PLUGS){const v=t-PLUGS,cx=LONG?1250:W/2,y=LONG?250:560;x.globalAlpha=ease(v*3);stroked('WANT MORE?',cx,y,LONG?84:96,'#ffd23f');stroked('1,200+',cx,y+(LONG?120:150),LONG?120:150,'#fff');stroked('FREE PUZZLES',cx,y+(LONG?230:290),LONG?84:96,'#fff');
+    text('daily challenge · play with friends',cx,y+(LONG?310:395),LONG?40:48,'#f3eaff',600);const k=pop(v*2);x.save();x.translate(cx,y+(LONG?450:590));x.scale(k,k);rr(-480,-100,960,200,44);x.fillStyle='#fff';x.fill();
+    text('brainteasersclub.app',0,6,fit('brainteasersclub.app',820,76,900),'#1d1340',900);x.restore();text(REEL&&!YT?'link in bio':'link in description',cx,y+(LONG?590:760),LONG?40:46,'#f3eaff',600);x.globalAlpha=1;
+    octo(LONG?430:W/2,LONG?640:1500,LONG?2:1.6,t,1);return}
   const u=t-ENDS,N=C.items.length;
   if(C.kind==='facts'){const s=1+Math.sin(u*6)*.04;x.save();x.translate(W/2,560);x.scale(s*pop(u*3),s*pop(u*3));rr(-260,-85,520,170,40);x.fillStyle='#ef4444';x.fill();text('FOLLOW',0,4,96,'#fff',900);x.restore();stroked('A WILD FACT',W/2,760,80,'#fff');stroked('EVERY DAY',W/2,860,80,'#ffd23f');octo(W/2,1200,2.4,t,1);captions('end','Which one surprised you most? Follow for a wild fact every day!',.15+ENDS,t);return}
   const cx=LONG?1250:W/2,y0=LONG?260:560;stroked('HOW MANY',cx,y0,LONG?110:112,'#fff');stroked('DID YOU GET?',cx,y0+(LONG?125:125),LONG?110:112,'#ffd23f');
@@ -98,7 +103,7 @@ function schedule(){const beat=60/104;const bass=[110,110,147,131];for(let b=0;b
   else SEG.forEach((g,i)=>{const n=i+1;if(g.lastS!==undefined){tone(330,g.lastS,.3,'square',.06,220);say('last',g.lastS+.1)}noise(Math.max(0,g.s),.3,.15,600);say('q'+n,g.q);
     if(C.read!==false)g.o.forEach((ot,j)=>say(`o${n}_${j}`,ot));for(let k=0;k<g.secs;k++)tone(k===g.secs-1?1150:900,g.cd+k,.06,'square',.045);
     tone(988,g.rv,.12,'square',.08);tone(1319,g.rv+.08,.3,'square',.08);noise(g.rv,.3,.1,2000);say('a'+n,g.rv+.25)});
-  [392,523,659,784,1047].forEach((f,i)=>tone(f,ENDS+i*.09,.3,'square',.045));say('end',ENDS+.15)}
+  [392,523,659,784,1047].forEach((f,i)=>tone(f,ENDS+i*.09,.3,'square',.045));say('end',ENDS+.15);say('plug',PLUGS+.15)}
 async function fontsReady(){for(const w of[600,700,800,900])await document.fonts.load(`${w} 60px Poppins`)}
 async function exportMp4(out){await fontsReady();const T0=0;
   const FPS=30,SR=48000,N=Math.ceil((TOTAL-T0)*FPS),A0=Math.round(T0*SR);ac=new OfflineAudioContext(2,Math.ceil((TOTAL+.2)*SR),SR);dest=ac.destination;
@@ -109,7 +114,7 @@ async function exportMp4(out){await fontsReady();const T0=0;
   for(let f=0;f<N;f++){frame(T0+f/FPS);const vf=new VideoFrame(cv,{timestamp:Math.round(f*1e6/FPS),duration:Math.round(1e6/FPS)});ve.encode(vf,{keyFrame:f%60===0});vf.close();window.__prog=f/N;if(ve.encodeQueueSize>20)await new Promise(r=>ve.addEventListener('dequeue',r,{once:true}))}
   await ve.flush();const ae=new AudioEncoder({output:(c,m)=>mux.addAudioChunk(c,m),error:e=>{throw e}});ae.configure({codec:'mp4a.40.2',sampleRate:SR,numberOfChannels:2,bitrate:192000});
   const Lc=audio.getChannelData(0),Rc=audio.getChannelData(1),STEP=1024*20,total=Math.min(Lc.length-A0,Math.round(N/FPS*SR));for(let i=0;i<total;i+=STEP){const n=Math.min(STEP,total-i),pl=new Float32Array(n*2);pl.set(Lc.subarray(A0+i,A0+i+n),0);pl.set(Rc.subarray(A0+i,A0+i+n),n);const ad=new AudioData({format:'f32-planar',sampleRate:SR,numberOfFrames:n,numberOfChannels:2,timestamp:Math.round(i*1e6/SR),data:pl});ae.encode(ad);ad.close()}
-  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(out||(REEL?'reel_wf_':'wf_')+NAME+'.mp4'),{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
+  await ae.flush();mux.finalize();const blob=new Blob([target.buffer],{type:'video/mp4'});const r=await fetch('/out/'+(out||(REEL?(YT?'ytr_wf_':'reel_wf_'):'wf_')+NAME+'.mp4'),{method:'PUT',body:blob});return {status:r.status,mb:(blob.size/1e6).toFixed(1),secs:(N/FPS).toFixed(1),peak:pk.toFixed(2)}}
 async function sheet(){await fontsReady();const ts=[1.2];SEG.forEach(g=>{if(g.lastS!==undefined)ts.push(g.lastS+.8);if(C.kind==='facts')ts.push(g.say+1.5);else{ts.push(g.o[2]+.3,g.cd+1,g.rv+.8)}});ts.push(ENDS+1.5,TOTAL-.5);
   const cols=LONG?4:6,cw=LONG?480:240,ch=LONG?270:427,s=document.createElement('canvas');s.width=cw*cols;s.height=ch*Math.ceil(ts.length/cols);const g=s.getContext('2d');
   ts.forEach((t,i)=>{frame(t);g.drawImage(cv,(i%cols)*cw,Math.floor(i/cols)*ch,cw,ch)});const b=await new Promise(r=>s.toBlob(r,'image/jpeg',.82));return (await fetch('/out/sheet_wf_'+NAME+'.jpg',{method:'PUT',body:b})).status}

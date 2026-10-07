@@ -18,6 +18,7 @@ else:
     n = len(c['items'])
     if n == 5: L['last'] = 'Last one. The hardest!'
     L['end'] = f'How many did you get out of {n}? Comment your score, and follow for more!'
+L['plug'] = 'Want more? Play over twelve hundred free brain teasers, at brain teasers club dot app.'
 k = Kokoro(os.path.join(MODELS, 'kokoro-v1.0.onnx'), os.path.join(MODELS, 'voices-v1.0.bin'))
 out = os.path.join(HERE, 'voice_wf_' + name); os.makedirs(out, exist_ok=True); dur = {}
 for key, text in L.items():

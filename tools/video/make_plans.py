@@ -1,3 +1,4 @@
+import struct, math
 # Builds the two posting plans (plain WordprocessingML, no external libraries):
 #   Brain Teasers\Posting Plan - Brain Teasers.docx   and   Wild Facts\Posting Plan - Wild Facts.docx
 # Each video gets one self-contained section in YouTube Studio upload order, ready to copy and paste.
@@ -290,15 +291,27 @@ if __name__ == '__main__':
         v['desc'] = out
         if v.get('endscreen') and 'CHAPTERS_' in v['endscreen']: pass
         return v
-    for lst in (BT, WF):
+    def mp4_secs(path):  # length from the mp4 header (mvhd), or None
+        try:
+            b = open(path, 'rb').read(); i = b.find(b'mvhd')
+            ts, d = struct.unpack('>II', b[i+16:i+24]) if b[i+4] == 0 else struct.unpack('>IQ', b[i+24:i+36])
+            return d / ts
+        except Exception: return None
+    mmss = lambda x: f'{int(x)//60}:{int(x)%60:02d}'
+    for lst, folder in ((BT, 'Brain Teasers'), (WF, 'Wild Facts')):
         for v in lst:
             fill(v)
-            if v.get('endscreen'): v['endscreen'] = 'Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + [c for c in v['desc'] if c.endswith('Your score')][0].split()[0] + ', run to the end.'
+            if v.get('endscreen'):
+                sc = [c for c in v['desc'] if c.endswith('Your score')][0].split()[0]
+                start = int(sc.split(':')[0]) * 60 + int(sc.split(':')[1])
+                secs = mp4_secs(os.path.join(ROOT, folder, v['file']))
+                if secs: start = max(start, math.ceil(secs - 20))  # YouTube end screens can only use the last 20 seconds
+                v['endscreen'] = 'Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + mmss(start) + ', run to the end.'
     build(os.path.join(ROOT, 'Brain Teasers', 'Posting Plan - Brain Teasers.docx'), 'Brain Teasers — Posting Plan',
           ['Each section below is one upload, in the order YouTube Studio asks for things. Copy each grey box as it is.',
            'When a video is uploaded, it can be removed from this plan (ask Claude, or delete the section).'],
-          None, BT, BT_DONE, 'Already scheduled: only the pinned comment is left', '  (Instagram/Facebook: Brain Teasers Reel at 12 pm, Wild Facts Reel at 6 pm)')
+          None, BT, BT_DONE, 'Already scheduled: only the pinned comment is left', '')
     build(os.path.join(ROOT, 'Wild Facts', 'Posting Plan - Wild Facts.docx'), 'Wild Facts — Posting Plan',
           ['Each section below is one upload, in the order YouTube Studio asks for things. Copy each grey box as it is.',
            'When a video is uploaded, it can be removed from this plan (ask Claude, or delete the section).'],
-          None, WF, WF_DONE, 'Already uploaded: comments to post and pin, and fixes', '  (Instagram/Facebook: Wild Facts Reel at 6 pm, Brain Teasers Reel at 12 pm)')
+          None, WF, WF_DONE, 'Already uploaded: comments to post and pin, and fixes', '')
