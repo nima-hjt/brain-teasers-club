@@ -214,7 +214,14 @@ input.name:focus{outline:3px solid var(--hi);outline-offset:1px}
 .hl{text-transform:uppercase;width:clamp(15px,5.4vw,26px);height:36px;border-bottom:3px solid var(--fg);display:grid;place-items:end center;font-family:var(--display);font-weight:var(--dw);font-size:clamp(1rem,4.6vw,1.35rem);line-height:1.2}
 .hl.p{border:0;width:auto;min-width:6px}.hl.lost{color:var(--bad)}
 html[lang="fa"] .hl{font-family:var(--body);text-transform:none}
-.hleft{text-align:center;color:var(--muted);font-size:.85rem;margin:0}
+.hleft{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.9rem;font-weight:700;margin:0;min-height:1.4em}
+.hleft span{display:flex;gap:5px}
+.hleft i{width:13px;height:13px;border-radius:50%;background:var(--fg);display:inline-block}
+.hleft i.used{background:transparent;border:var(--bw) solid var(--muted);opacity:.45}
+.hleft.low{color:var(--bad);font-size:1rem}
+.hleft.low i:not(.used){background:var(--bad);animation:pulse 1s ease-in-out infinite}
+.gallows.low .pt.on{stroke:var(--bad)}
+@keyframes pulse{50%{transform:scale(1.3)}}
 .kbd{display:flex;flex-wrap:wrap;justify-content:center;gap:5px}
 .key{min-width:clamp(28px,8.4vw,36px);height:42px;padding:0 4px;border-radius:9px;border:var(--bw) solid var(--line);background:var(--surface);font-weight:700;font-size:1.02rem;text-transform:uppercase}
 html[lang="fa"] .key{text-transform:none;font-size:1.1rem}
@@ -339,7 +346,7 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="iconbtn" id="muteBtn3" aria-label="Toggle sound" style="width:34px;height:34px"></button>
     </div>
     <div class="qcard" style="margin-top:14px">
-      <p class="eyebrow" id="hHint"></p>
+      <p class="prompt" id="hHint"></p>
       <svg class="gallows" viewBox="0 0 120 130" aria-hidden="true"><path d="M10 124h60M28 124V8h52v14"/>
         <circle class="pt" cx="80" cy="33" r="11"/><path class="pt" d="M80 44v34"/><path class="pt" d="M80 53l-15 13"/><path class="pt" d="M80 53l15 13"/><path class="pt" d="M80 78l-13 22"/><path class="pt" d="M80 78l13 22"/></svg>
       <div class="hword" id="hWord" aria-live="polite"></div>
@@ -1176,7 +1183,9 @@ function hangDraw(){
       g.appendChild(sp)}
     box.appendChild(g)});
   document.querySelectorAll(".gallows .pt").forEach((e,k)=>e.classList.toggle("on",k<H.miss));
-  $("hLeft").textContent=H.done?"":t("hmMisses",{n:HMAX-H.miss});
+  const left=HMAX-H.miss,low=!H.done&&left<=2,hl=$("hLeft");
+  hl.innerHTML=H.done?"":"<span>"+"<i></i>".repeat(left)+'<i class="used"></i>'.repeat(H.miss)+"</span>"+esc(t("hmMisses",{n:left}));
+  hl.classList.toggle("low",low);document.querySelector(".gallows").classList.toggle("low",low);
 }
 function hangGuess(k){
   if(!H||H.done||H.got.has(k)||!hkeys().includes(k))return;
