@@ -25,10 +25,6 @@ def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.', pin=pin)
 
 BT = [
- bt_short(6, 'Oct 6 - Guess the Food by Emoji 🍔 #shorts.mp4', 'Guess the Food by Emoji 🍔 3 Seconds Each',
-   'Can you guess all 5 foods from the emoji? 🍔 The last one is tricky. Comment your score!',
-   'guess the food by emoji, emoji quiz, food quiz, guess the food, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #foodquiz #guessthefood #quiz',
-   ['Guess all 5 foods from the emoji 🍔 3 seconds each!', 'Comment your score 👇'], 'Puzzle Videos'),
  bt_short(7, 'Oct 7 - Find the Odd One Out 👀 #shorts.mp4', 'Find the Odd One Out 👀 Can Your Eyes Beat the Clock?',
    '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
@@ -98,7 +94,8 @@ BT = [
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
    ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Puzzle Videos', 'Guess 20 Words by Emoji (long video)'),
 ]
-BT_DONE = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
+BT_DONE = []
+BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
 WF_TAIL = ['', '🐙 Follow for a new wild fact or quiz every day!', '🧠 More free quizzes and brain teasers: ' + WFL]
@@ -116,12 +113,6 @@ def wf_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.')
 CH = lambda times: ['0:00 Intro'] + [f'{t} Question {i+1}' for i, t in enumerate(times[:-1])] + [times[-1] + ' Your score']
 WF = [
- wf_short(6, 'Oct 6 - Ocean Quiz Can You Get 3 of 3 🐬 #shorts (REPLACEMENT).mp4', 'Ocean Quiz: Can You Get 3/3? 🐬',
-   '3 ocean questions, 5 seconds each 🐬 How many did you get? Comment your score!',
-   'ocean quiz, sea animals quiz, animal quiz, ocean facts, quiz shorts, trivia, general knowledge, whale shark, dolphins', '#oceanquiz #animalquiz #quiz #trivia',
-   ['Ocean quiz 🐬 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'],
-   extra=['REPLACES the scheduled Short "Question 2 Fools Everyone 🐬 Ocean Quiz". Its question 3 says sailfish are "faster than a cheetah", which is a myth.',
-          'In YouTube Studio → Content → Shorts: on that video, ⋮ → Delete forever. Then upload this file with the details below (same day and time).']),
  wf_short(9, 'Oct 9 - Bird Quiz 3 Seconds Each 🦜 #shorts.mp4', 'Bird Quiz: 3 Seconds Each 🦜',
    '5 bird questions, 3 seconds each 🦜 The last one is the hardest. Comment your score!',
    'bird quiz, animal quiz, bird facts, quiz shorts, trivia, general knowledge, hummingbird, owl, albatross', '#birdquiz #animalquiz #quiz #trivia',
@@ -190,7 +181,6 @@ WF = [
 ]
 # Already uploaded: only a comment (or a title fix) is left.
 WF_DONE = [
- ('Mon Oct 5, 6:00 pm Short (scheduled today): Only Ocean Experts Get 5/5', ['How many did you get out of 5? 🌊👇', 'Did the shark bones question get you? 🦈', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 12:00 pm long (scheduled): General Knowledge Quiz: 12 Questions', ['How many did you get out of 12? 🧠👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 6:00 pm Short (scheduled): What Is a Group of Crows Called?', ['Did you know it? 🐦‍⬛ Comment below 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Animal Facts That Sound Fake', WF_PIN_F),
@@ -271,13 +261,6 @@ def build(path, title, intro, glance, videos, done, done_title, ig_note, playlis
         if v.get('endscreen'): field(N('End screen'), v['endscreen'])
         field(N('Visibility'), 'Schedule → ' + day(v['d']) + ', 2026 · ' + v['time'])
         label(N('After it goes live: post this comment and pin it')); copy(v['pin'])
-        if v.get('ig'):
-            h('Instagram Reel + Facebook Reel', 2)
-            field('File', 'same file  ·  Post at ' + day(v['d']) + ' · ' + v['ig_time'] + ig_note)
-            label('Instagram caption'); copy(v['ig'])
-            label('Facebook text'); copy([l.replace('link in bio', FB).replace('Follow @wildfactsquiz', 'Follow the page') for l in v['ig']])
-        else:
-            p(run('Instagram / Facebook: skip (widescreen video). The Short of the same day covers Reels.', i=True, color='555566'))
     doc = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>' + ''.join(body) +
            '<w:sectPr><w:pgSz w:w="12240" w:h="15840"/><w:pgMar w:top="1000" w:right="1000" w:bottom="1000" w:left="1000" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr></w:body></w:document>')
     styles = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'

@@ -33,7 +33,6 @@ def day(d): return datetime.date(2026, 10, d).strftime('%a %b %#d' if os.name ==
 
 # (day, time, file, caption lines, hashtags)
 R = [
- (6, '6:00 pm', 'Oct 6 6pm - Ocean Quiz 3 Questions 🐬.mp4', ['Ocean quiz 🐬 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#oceanquiz #animalquiz #quiz #trivia'),
  (7, '12:00 pm', 'Oct 7 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (7, '6:00 pm', 'Oct 7 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
  (8, '12:00 pm', 'Oct 8 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
