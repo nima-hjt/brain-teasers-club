@@ -935,7 +935,7 @@ function loc(q){const d=q.data;
   if(q.type==="flags")return{q:t("flagQ"),a:wname(d[0]),why:"",opt:wname};
   if(q.type==="capitals")return{q:t("capQ",{c:wname(d[0])}),a:wcap(d[0]),why:"",opt:wcap};
   if(q.type==="currency")return{q:t("curQ",{c:wname(d[0])}),a:wcur(d[3][0]),why:"",opt:wcur};
-  if(q.type==="hgc"||q.type==="hgk")return{q:hangHint(q),a:hangWord(q),why:"",opt:x=>x};
+  if(q.type==="hgc"||q.type==="hgk")return{q:hangHint(q),a:hangWord(q)+(q.type==="hgk"?" ("+wname(d[0])+")":""),why:"",opt:x=>x};
   if(q.type==="clue")return{q:t("clQ")+" · "+t("cont_"+d[1]),a:wname(d[0]),why:"",opt:wname};
   const all=[d[1],...d[3]];let tr=null;
   if(LANG!=="en"&&TR[LANG]&&(q.type==="logic"||q.type==="facts"))tr=TR[LANG][q.type][BANKS[q.type].indexOf(d)]||null;
@@ -1208,7 +1208,8 @@ function hnorm(c){c=c.toLowerCase();if(LANG==="fa")return({"آ":"ا","أ":"ا","
   if(c==="ñ"&&LANG==="es")return c;return c.normalize("NFD").replace(/[\u0300-\u036f]/g,"")}
 const hkeys=()=>[...HKEYS[LANG]||HKEYS.en];
 const hangWord=q=>q.type==="hgc"?wname(q.data[0]):wcap(q.data[0]);
-const hangHint=q=>q.type==="hgc"?t("hmCountry",{c:t("cont_"+q.data[1])}):t("hmCapital",{c:wname(q.data[0])});
+// Category hints like classic Hangman: the kind of word and its continent, never the country it belongs to
+const hangHint=q=>t(q.type==="hgc"?"hmCountry":"hmCapital",{c:t("cont_"+q.data[1])});
 // Words whose longest part fits the phone width in every language (Live Match players may use different languages)
 const hangOK=q=>(q.type==="hgc"?q.data[3]:q.data[4]).every(n=>n.split(/[\s-]+/).every(w=>w.length<=13));
 let H=null;
