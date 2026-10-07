@@ -37,11 +37,6 @@
 "en": "Algeria",
 "fa": "الجزایر",
 "es": "Argelia"
-},
-"cap": {
-"en": "Algiers",
-"fa": "الجزیره",
-"es": "Argel"
 }
 },
 {
@@ -337,11 +332,6 @@
 "en": "Brazil",
 "fa": "برزیل",
 "es": "Brasil"
-},
-"cap": {
-"en": "Brasília",
-"fa": "برازیلیا",
-"es": "Brasilia"
 }
 },
 {
@@ -1012,11 +1002,6 @@
 "en": "Guinea-Bissau",
 "fa": "گینه بیسائو",
 "es": "Guinea-Bisáu"
-},
-"cap": {
-"en": "Bissau",
-"fa": "بیسائو",
-"es": "Bisáu"
 }
 },
 {
@@ -1202,7 +1187,7 @@
 {
 "c": "JM",
 "cont": "NA",
-"lvl": 1,
+"lvl": 2,
 "n": {
 "en": "Jamaica",
 "fa": "جامائیکا",
@@ -1637,7 +1622,7 @@
 {
 "c": "MD",
 "cont": "EU",
-"lvl": 3,
+"lvl": 2,
 "n": {
 "en": "Moldova",
 "fa": "مولداوی",
@@ -1730,7 +1715,7 @@
 },
 "cap": {
 "en": "Naypyidaw",
-"fa": "نی‌پی‌دو",
+"fa": "نایپیداو",
 "es": "Naipyidó"
 }
 },
@@ -2116,7 +2101,7 @@
 "n": {
 "en": "Saint Vincent and the Grenadines",
 "fa": "سنت وینسنت و گرنادین",
-"es": "San Vicente y Granadinas"
+"es": "San Vicente y las Granadinas"
 },
 "cap": {
 "en": "Kingstown",
@@ -2262,7 +2247,7 @@
 {
 "c": "SI",
 "cont": "EU",
-"lvl": 3,
+"lvl": 2,
 "n": {
 "en": "Slovenia",
 "fa": "اسلوونی",

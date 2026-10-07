@@ -1,4 +1,5 @@
 <title>Brain Teasers Club</title>
+<script>try{var th=localStorage.getItem("btc-theme");if(th==="light"||th==="dark")document.documentElement.dataset.theme=th}catch(e){}</script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Vazirmatn:wght@400;600;700;800&display=swap">
 <style>
 /* Design system. Two themes from one set of tokens:
@@ -118,6 +119,7 @@ html[dir="rtl"] .mode::after{content:"←"}
 .seg button{border:0;background:transparent;border-radius:9px;padding:9px 4px;font-weight:700;font-size:.9rem;color:var(--muted);transition:background .15s,color .15s}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .seg button:focus-visible{outline:3px solid var(--hi);outline-offset:-3px}
+.seg.two{grid-template-columns:1fr 1fr}
 .diff-note{font-size:.85rem;color:var(--muted);text-align:center;min-height:1.3em}
 .section-title{display:flex;align-items:center;justify-content:space-between;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--muted);margin-top:4px}
 .pill{display:inline-block;background:var(--soft);border-radius:999px;padding:3px 10px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
@@ -149,6 +151,7 @@ input.name:focus{outline:3px solid var(--hi);outline-offset:1px}
 .half{background:var(--raised);border:var(--bw) solid var(--line);border-radius:18px;padding:10px;display:flex;flex-direction:column;gap:8px;min-height:0;overflow:hidden;position:relative;transition:box-shadow .15s}
 .half.flip{transform:rotate(180deg)}
 .half.won{box-shadow:inset 0 0 0 3px var(--good)} .half.lost{box-shadow:inset 0 0 0 3px var(--bad)}
+.half .dflag{display:block;height:clamp(44px,9vh,90px);aspect-ratio:4/3;margin:0 auto;border-radius:5px;border:var(--bw) solid var(--line);object-fit:cover;flex:none}
 .half .dprompt{font-family:var(--display);font-weight:var(--dw);font-size:clamp(.95rem,3.6vw,1.15rem);text-align:center;text-wrap:balance;line-height:1.2}
 .half .dprompt.em{font-size:clamp(1.6rem,7vw,2.2rem);letter-spacing:.06em}
 .half .dchoices{display:grid;grid-template-columns:1fr 1fr;gap:6px;flex:1;min-height:0}
@@ -258,7 +261,7 @@ footer a{white-space:nowrap;color:var(--muted)}
 <div class="app">
   <!-- HOME -->
   <section id="home" class="panel home">
-    <div class="topline"><button class="logo" id="aboutBtn" aria-label="About Brain Teasers Club" title="About"><span class="lb" aria-hidden="true">B</span><span>Brain Teasers Club</span></button><select class="langsel" id="langSel" aria-label="Language"><option value="en">English</option><option value="fa">فارسی</option><option value="es">Español</option></select><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on"></button></div>
+    <div class="topline"><button class="logo" id="aboutBtn" aria-label="About Brain Teasers Club" title="About"><span class="lb" aria-hidden="true">B</span><span>Brain Teasers Club</span></button><select class="langsel" id="langSel" aria-label="Language"><option value="en">English</option><option value="fa">فارسی</option><option value="es">Español</option></select><button class="iconbtn" id="themeBtn" aria-label="Theme"></button><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on"></button></div>
     <h1 data-t="h1">How sharp are you today?</h1>
     <p class="muted" data-t="intro">Ten quick puzzles, a ticking clock and limited lives. Fast answers score more, and streaks multiply your points.</p>
     <button class="hero" data-mode="daily" id="dailyBtn">
@@ -323,6 +326,11 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="mode" data-mode="challenge" hidden><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3A4 4 0 0 0 13 5.3l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><b data-t="chal">Challenge by Link</b><small data-t="chalSub">Each on your own phone, same puzzles, compare scores</small></span></button>
     </div>
     <div class="section-title"><span data-t="types">Puzzle types</span></div>
+    <div class="seg two" id="fsetSeg" role="group"><button data-fset="classic" data-t="setClassic">Classic puzzles</button><button data-fset="world" data-t="worldTitle">World Quiz</button></div>
+    <div class="chips" id="worldChips">
+      <button class="chip wchip" data-type="flags" aria-pressed="true"><i class="dot" style="--c:var(--t4)"></i><span data-t="flags">Flags</span></button>
+      <button class="chip wchip" data-type="capitals" aria-pressed="true"><i class="dot" style="--c:var(--t1)"></i><span data-t="capitals">Capitals</span></button>
+    </div>
     <div class="chips chipsAll">
       <button class="chip" data-type="odd" aria-pressed="true"><i class="dot" style="--c:var(--t1)"></i><span data-t="t_odd">dd One Out</span></button>
       <button class="chip" data-type="emoji" aria-pressed="true"><i class="dot" style="--c:var(--t2)"></i><span data-t="t_emoji">moji Riddles</span></button>
@@ -733,6 +741,13 @@ const SFX={
 function buzz(p){if(muted)return;try{navigator.vibrate&&navigator.vibrate(p)}catch(e){}}
 const SPK='<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5v5h3.5l5 4v-13l-5 4z"/>';
 const ICON_ON=SPK+'<path d="M16 9a4.2 4.2 0 0 1 0 6M18.6 6.4a8 8 0 0 1 0 11.2"/></svg>',ICON_OFF=SPK+'<path d="m16.5 9.5 5 5m0-5-5 5"/></svg>';
+const TH_ICON={auto:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17A8.5 8.5 0 0 0 12 3.5z" fill="currentColor"/></svg>',
+  light:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></svg>',
+  dark:'<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>'};
+function themeNow(){try{const v=localStorage.getItem("btc-theme");return v==="light"||v==="dark"?v:"auto"}catch(e){return"auto"}}
+function setTheme(v){try{v==="auto"?localStorage.removeItem("btc-theme"):localStorage.setItem("btc-theme",v)}catch(e){}
+  const h=document.documentElement;if(v==="auto")delete h.dataset.theme;else h.dataset.theme=v;
+  const b=$("themeBtn");b.innerHTML=TH_ICON[v];b.title=t({auto:"themeAuto",light:"themeLight",dark:"themeDark"}[v]);b.setAttribute("aria-label",b.title)}
 function setMuted(m){
   muted=m;try{localStorage.setItem("btc-mute",m?"1":"0")}catch(e){}
   ["muteBtn","muteBtn2"].forEach(id=>{const b=$(id);if(!b)return;b.innerHTML=m?ICON_OFF:ICON_ON;b.setAttribute("aria-pressed",m?"false":"true");b.setAttribute("aria-label",m?t("soundOff"):t("soundOn"))});
@@ -804,11 +819,12 @@ function renderStreak(){
 }
 
 // A round as data the other phone can rebuild exactly: bank indexes, odd cell, option order, grid shape
-function packRound(list){return list.map(q=>{const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};const i=banks[q.type].indexOf(q.data);
+function packRound(list){return list.map(q=>{const i=BANKS[q.type].indexOf(q.data);
+  if(isWorld(q.type))return{t:q.type,i,w:q.options.slice()};
   return q.type==="odd"?{t:q.type,i,c:q.cols,n:q.count,o:q.oddIndex}:{t:q.type,i,p:q.options.map(x=>[q.data[1],...q.data[3]].indexOf(x))}})}
-function unpackRound(packed){const banks={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS};return packed.map(r=>{const data=banks[r.t][r.i];if(!data)return null;
-  const q={type:r.t,data};if(r.t==="odd"){q.cols=r.c;q.count=r.n;q.oddIndex=r.o}else{const all=[data[1],...data[3]];q.options=r.p.map(k=>all[k])}return q})}
-const BANK_VER=(ODD.length+"."+EMOJI.length+"."+LOGIC.length+"."+FACTS.length);
+function unpackRound(packed){return packed.map(r=>{const data=BANKS[r.t]&&BANKS[r.t][r.i];if(!data)return null;
+  const q={type:r.t,data};if(isWorld(r.t))q.options=(r.w||[]).slice();else if(r.t==="odd"){q.cols=r.c;q.count=r.n;q.oddIndex=r.o}else{const all=[data[1],...data[3]];q.options=r.p.map(k=>all[k])}return q})}
+const BANK_VER=(ODD.length+"."+EMOJI.length+"."+LOGIC.length+"."+FACTS.length+"."+WORLD.length);
 
 /* ---------- STATE ---------- */
 const $=id=>document.getElementById(id);
@@ -835,7 +851,7 @@ function applyLang(){
   document.querySelectorAll("[data-tp]").forEach(e=>e.placeholder=t(e.dataset.tp));
   $("langSel").value=LANG;$("langSel").setAttribute("aria-label",t("language"));
   $("flagsSub").textContent=t("flagsSub",{n:WORLD.length});$("capsSub").textContent=t("capsSub",{n:CAPS.length});
-  setDiff(diff);setMuted(muted);renderStreak();renderDaily();renderCustom();renderXp("xp",loadXp());
+  setDiff(diff);setMuted(muted);setTheme(themeNow());renderStreak();renderDaily();renderCustom();renderXp("xp",loadXp());
 }
 let S=null, timer=null, tLeft=0, tTotal=0;
 let pass=null;      // {names:[a,b], seed, scores:[], turn}
@@ -858,10 +874,20 @@ function setDiff(d){
 let roundId=0,nextT=null,pendingHash=null;
 function langTypes(){return LANG==="en"?["odd","emoji","logic","facts"]:["odd","logic","facts"]}
 function customTypes(){const all=langTypes();let t=all;try{const v=JSON.parse(localStorage.getItem("btc-custom")||"null");if(Array.isArray(v)){const f=v.filter(x=>all.includes(x));if(f.length)t=f}}catch(e){}return t}
-function renderCustom(){const ty=customTypes(),all=langTypes();document.querySelectorAll(".chip").forEach(c=>{c.hidden=!all.includes(c.dataset.type);c.setAttribute("aria-pressed",ty.includes(c.dataset.type)?"true":"false")});
+function renderCustom(){const ty=customTypes(),all=langTypes();document.querySelectorAll(".chip:not(.wchip)").forEach(c=>{c.hidden=!all.includes(c.dataset.type);c.setAttribute("aria-pressed",ty.includes(c.dataset.type)?"true":"false")});
   const sep=LANG==="fa"?"، ":", ";
   $("customLabel").textContent=ty.length===all.length?t("allTypes"):ty.map(x=>t("t_"+x)).join(" + ");
-  $("soloLabel").textContent=(ty.length===all.length?all:ty).map(x=>t("t_"+x)).join(sep)}
+  $("soloLabel").textContent=(ty.length===all.length?all:ty).map(x=>t("t_"+x)).join(sep);renderFriends()}
+// Play with Friends can use the classic puzzles (shared with the Solo picks) or the World Quiz types.
+const WORLD_TYPES=["flags","capitals"];
+function fset(){try{return localStorage.getItem("btc-fset")==="world"?"world":"classic"}catch(e){return"classic"}}
+function worldTypes(){try{const v=JSON.parse(localStorage.getItem("btc-wtypes")||"null");if(Array.isArray(v)){const f=v.filter(x=>WORLD_TYPES.includes(x));if(f.length)return f}}catch(e){}return WORLD_TYPES.slice()}
+function friendTypes(){return fset()==="world"?worldTypes():customTypes()}
+function renderFriends(){const w=fset()==="world",wt=worldTypes();
+  document.querySelectorAll("#fsetSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.fset===fset()?"true":"false"));
+  $("worldChips").hidden=!w;document.querySelector(".chipsAll").hidden=w;
+  document.querySelectorAll(".wchip").forEach(c=>c.setAttribute("aria-pressed",wt.includes(c.dataset.type)?"true":"false"))}
+const typeName=x=>isWorld(x)?t(x):t("t_"+x);
 function soloMode(){const ty=customTypes();return ty.length===langTypes().length?"mix":ty.length===1?ty[0]:"custom"}
 function startRound(mode,seed,d,typesOverride,prebuilt){
   if(LANG!=="en"&&!TR[LANG]){loadTR(LANG).then(()=>startRound(mode,seed,d,typesOverride,prebuilt));return}
@@ -1061,7 +1087,7 @@ let dTimer=null,duelT=null;
 function duelGrids(){return DIFF[diff].grids.map(([c,r],i)=>[Math.min(c,i<2?4:5),Math.min(r,i<2?3:4)])}
 function startDuel(names){
   const seed=Math.floor(Math.random()*2**31);
-  const list=buildRound("duel",seed);
+  const list=buildRound("duel",seed,null,friendTypes());
   const g=duelGrids();
   list.forEach((q,i)=>{if(q.type==="odd"){const [c,r]=g[Math.min(4,Math.floor(i/2))];q.cols=c;q.count=c*r;q.oddIndex=Math.floor(Math.random()*q.count)}});
   clearTimeout(nextT);clearInterval(timer);clearInterval(dTimer);clearTimeout(duelT);
@@ -1085,9 +1111,11 @@ function duelNext(){
       for(let c=0;c<q.count;c++){const b=document.createElement("button");b.className="cell";b.textContent=c===q.oddIndex?q.data[1]:q.data[0];b.onclick=()=>duelAnswer(k,c===q.oddIndex,b.textContent);g.appendChild(b)}
       h.appendChild(g);
     } else {
-      const L=loc(q);const pr=document.createElement("div");pr.className="dprompt"+(q.type==="emoji"?" em":"");pr.textContent=L.q;pr.dir="auto";h.appendChild(pr);
+      const L=loc(q);
+      if(isWorld(q.type)){const f=document.createElement("img");f.className="dflag";f.src=flagUrl(q.data[0]);f.alt="";h.appendChild(f)}
+      const pr=document.createElement("div");pr.className="dprompt"+(q.type==="emoji"?" em":"");pr.textContent=L.q;pr.dir="auto";h.appendChild(pr);
       const ch=document.createElement("div");ch.className="dchoices";
-      q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.dataset.v=o;b.textContent=L.opt(o);b.dir="auto";b.onclick=()=>duelAnswer(k,o===q.data[1],L.opt(o));ch.appendChild(b)});
+      q.options.forEach(o=>{const b=document.createElement("button");b.className="choice";b.dataset.v=o;b.textContent=L.opt(o);b.dir="auto";b.onclick=()=>duelAnswer(k,o===ansOf(q),L.opt(o));ch.appendChild(b)});
       h.appendChild(ch);
     }
   });
@@ -1114,7 +1142,7 @@ function duelAnswer(k,ok,given){
 function duelFinish(){
   const c=duel.cur;if(c.done)return;c.done=true;clearInterval(dTimer);
   [0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(!h.querySelector(".veil")&&c.winner===null)veil(k,t("timeUpShort"),"no");h.querySelectorAll("button").forEach(b=>b.disabled=true)});
-  if(c.winner===null){const q=duel.list[duel.i];[0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(q.type==="odd")h.querySelectorAll(".cell")[q.oddIndex].classList.add("reveal");else h.querySelectorAll(".choice").forEach(b=>{if(b.dataset.v===q.data[1])b.classList.add("reveal")})})}
+  if(c.winner===null){const q=duel.list[duel.i];[0,1].forEach(k=>{const h=$(k===0?"half1":"half2");if(q.type==="odd")h.querySelectorAll(".cell")[q.oddIndex].classList.add("reveal");else h.querySelectorAll(".choice").forEach(b=>{if(b.dataset.v===ansOf(q))b.classList.add("reveal")})})}
   duel.log.push({winner:c.winner,p:c.p});duel.i++;
   duelT=setTimeout(duelNext,1100);
 }
@@ -1151,7 +1179,7 @@ async function liveCreate(){
     await loadTR(LANG);const existing=await dbGet(code);
     if(existing&&existing.created>Date.now()-3600000&&!(existing.host&&existing.host.left)){return liveCreate()} // code in use, pick another
     const seed=Math.floor(Math.random()*2**31);
-    await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:customTypes(),ver:BANK_VER,round:packRound(buildRound("live",seed,diff,customTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
+    await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:friendTypes(),ver:BANK_VER,round:packRound(buildRound("live",seed,diff,friendTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
   }catch(e){liveErr(t("noServer"));return}
   const link=shareBase()+"#L"+code;
   liveStatus(t("waitFriend"));
@@ -1194,7 +1222,7 @@ function applyChange(path,data,isPatch){
   reconcile();
 }
 function setCode(st){const r=st&&st.round||[];let h=2166136261;for(const q of r){for(const c of (q.t+q.i+(q.o||"")+(q.p||"").toString())){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}}return (h>>>0).toString(16).toUpperCase().slice(-4).padStart(4,"0")}
-function liveSettingsText(){const st=live.room&&live.room.settings||{};const ty=st.types||[];return t("hostSettings",{t:ty.length>=langTypes().length&&langTypes().every(x=>ty.includes(x))?t("allPuzzleTypes"):ty.map(x=>t("t_"+x)).join(" + "),d:dname(st.diff)})}
+function liveSettingsText(){const st=live.room&&live.room.settings||{};const ty=st.types||[];return t("hostSettings",{t:ty.length>=langTypes().length&&langTypes().every(x=>ty.includes(x))?t("allPuzzleTypes"):ty.map(typeName).join(" + "),d:dname(st.diff)})}
 function reconcile(){
   const r=live.room;if(!r)return;
   const me=r[live.role]||{},them=r[other(live.role)]||{};
@@ -1365,10 +1393,12 @@ $("startPass").onclick=()=>{
   const names=[$("name1").value.trim()||t("p1"),$("name2").value.trim()||t("p2")];
   if(twoMode==="duel")return startDuel(names);
   pass={names:names.slice(),seed:Math.floor(Math.random()*2**31),scores:[],turn:0};
-  startRound("pass",pass.seed);
+  startRound("pass",pass.seed,null,friendTypes());
 };
 $("namesBack").onclick=()=>show("friends");
-document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{let ty=customTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-custom",JSON.stringify(ty))}catch(e){}renderCustom();SFX.tap()});
+document.querySelectorAll(".chip:not(.wchip)").forEach(c=>c.onclick=()=>{let ty=customTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-custom",JSON.stringify(ty))}catch(e){}renderCustom();SFX.tap()});
+document.querySelectorAll("#fsetSeg button").forEach(b=>b.onclick=()=>{try{localStorage.setItem("btc-fset",b.dataset.fset)}catch(e){}renderFriends();SFX.tap()});
+document.querySelectorAll(".wchip").forEach(c=>c.onclick=()=>{let ty=worldTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-wtypes",JSON.stringify(ty))}catch(e){}renderFriends();SFX.tap()});
 $("startCustom").onclick=()=>startRound(soloMode());
 $("customBack").onclick=()=>show("home");
 $("worldBack").onclick=()=>show("home");
@@ -1382,7 +1412,7 @@ $("chCopy").onclick=()=>copyText($("chShare").textContent,$("chCopy"),t("copy"))
 $("quit").onclick=()=>{clearInterval(timer);clearTimeout(nextT);if(S&&S.mode==="live"){liveReset();S=null;show("home");return}if(S&&S.mode==="daily"&&S.list.length){S.locked=true;endRound();return}S=null;show("home")};
 $("againBtn").onclick=()=>{
   if(S&&S.mode==="live")return requestRematch();
-  if(S.mode==="pass"){pass.turn=0;pass.scores=[];pass.seed=Math.floor(Math.random()*2**31);return startRound("pass",pass.seed)}
+  if(S.mode==="pass"){pass.turn=0;pass.scores=[];pass.seed=Math.floor(Math.random()*2**31);return startRound("pass",pass.seed,null,friendTypes())}
   if(S.mode==="duel")return startDuel(duel.names);
   if(S.mode==="challenge")return startRound("challenge",chal.seed,chal.diff);
   if(S.mode==="daily")return startRound("mix");
@@ -1411,6 +1441,7 @@ $("copyBtn").onclick=()=>copyText($("shareText").textContent,$("copyBtn"),t("cop
 settleAbandonedDaily();applyLang();loadTR(LANG);setTimeout(statStart,1500);
 $("langSel").onchange=()=>{LANG=$("langSel").value;try{localStorage.setItem("btc-lang",LANG)}catch(e){}loadTR(LANG).then(applyLang);applyLang()};
 document.addEventListener("visibilitychange",()=>{if(!document.hidden){renderStreak();renderDaily()}});
+$("themeBtn").onclick=()=>{setTheme({auto:"dark",dark:"light",light:"auto"}[themeNow()]);SFX.tap()};
 $("muteBtn").onclick=()=>{setMuted(!muted);if(!muted)SFX.good()};
 $("muteBtn2").onclick=()=>setMuted(!muted);
 document.addEventListener("pointerdown",()=>{ac()},{once:true,capture:true});
