@@ -37,9 +37,11 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
   are never wrong options; sources in content/currency_sources.md; Zimbabwe, Sierra Leone, Afghanistan, Bolivia left
   out). Options never repeat a text in any language. Hangman (`startHangman`): 5 country/capital names per round in the
   player's language, 6 misses, untimed; accents ignored, ñ and Persian letters have keys.
-  Country Clues (`startClues`): 5 countries, clues opened weakest first (currency, letters in the name, capital, flag),
-  6 options from the same continent; a wrong pick opens the next clue. Both word games also run as Pass & Play for two
-  (modes `hpass` / `cpass`, shown in Play with Friends when the World Quiz switch is on). The home logo is the app icon.
+  Country Clues (`startClues`): 5 countries, clues opened weakest first (currency, capital's first letter, capital,
+  flag; never anything about the name, since the 6 options are on screen), options from the same continent; a wrong
+  pick opens the next clue. In Play with Friends → World Quiz, Hangman and Country Clues are chips that exclude the
+  quiz types (`worldTypes`); they run in Pass & Play (`hpass`/`cpass`) and Live Match (`makeRound`, word lists packed
+  as {t,i}); Duel is disabled for them. Live word games show each player's own language. The home logo is the app icon.
   Play with Friends has a Classic puzzles / World Quiz switch (`fset`, `friendTypes()`); Live Match packs World Quiz
   options as they are (`w`). Data audited Oct 2026 (Egypt: Cairo kept, constitutional capital; Equatorial Guinea and
   Indonesia excluded while their capitals move).

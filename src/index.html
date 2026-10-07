@@ -93,6 +93,7 @@ svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke
 html[dir="rtl"] .mode::after{content:"←"}
 .mode:hover,.mode:focus-visible{box-shadow:var(--lift);transform:translate(-1px,-1px);outline:none}
 .mode:active{transform:translate(1px,1px);box-shadow:none}
+.mode.off{opacity:.45;cursor:default;box-shadow:none!important;transform:none!important}.mode.off::after{content:""}
 .mode.done{opacity:.75}.mode.done b::after{content:" ✓";color:var(--good)}
 .sw{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--c);color:var(--hi-ink);border:var(--bw) solid var(--line)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .sw{background:color-mix(in srgb,var(--c) 15%,transparent);color:var(--c);border-color:transparent}}
@@ -224,8 +225,10 @@ html[lang="fa"] .key{text-transform:none;font-size:1.1rem}
 .key.hit{background:var(--good-bg);border-color:var(--good)}.key.miss{background:var(--bad-bg);opacity:.55}.key:disabled{cursor:default}
 
 /* country clues */
+.chow{text-align:center;color:var(--muted);font-size:.92rem;margin:-6px 0 0}
 .clues{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.clues li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:var(--bw) solid var(--line);border-radius:12px;padding:9px 14px;min-height:50px;animation:pop .25s ease-out}
+.clues li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:var(--bw) solid var(--line);border-radius:12px;padding:9px 14px;min-height:50px}
+.clues li.new{animation:pop .25s ease-out}
 .clues li span{color:var(--muted);font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
 html[lang="fa"] .clues li span{letter-spacing:0;font-size:.85rem}
 .clues li b{font-family:var(--display);font-weight:var(--dw);font-size:1.15rem;text-align:end}
@@ -375,6 +378,7 @@ footer a{white-space:nowrap;color:var(--muted)}
     <div class="qcard" style="margin-top:14px">
       <p class="eyebrow" id="cWho" hidden></p>
       <p class="prompt" id="cQ"></p>
+      <p class="chow" id="cHow"></p>
       <ol class="clues" id="cList"></ol>
       <button class="btn ghost" id="cMore"></button>
       <div class="choices two" id="cOpts"></div>
@@ -392,8 +396,6 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="mode" data-mode="duel"><span class="sw" style="--c:var(--t1)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/></svg></span><span><b data-t="duel">Duel</b><small data-t="duelSub">One phone between you, face to face. First correct tap wins the point.</small></span></button>
       <button class="mode" data-mode="pass"><span class="sw" style="--c:var(--t3)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5h14l-3.5-3.5M20 15.5H6l3.5 3.5"/></svg></span><span><b data-t="pass">Pass &amp; Play</b><small data-t="passSub">Same phone, same 10 puzzles, take turns</small></span></button>
       <button class="mode" data-mode="live"><span class="sw" style="--c:var(--t4)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 11.5a10.5 10.5 0 0 1 15 0M7.8 14.8a6 6 0 0 1 8.4 0"/><circle cx="12" cy="18.5" r="1.3"/></svg></span><span><b data-t="live">Live Match</b><small data-t="liveSub">Each on your own phone, anywhere. Same puzzles at the same time, scores update live</small></span></button>
-      <button class="mode wonly" data-mode="hpass"><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h9M7 21V3.5h8V6"/><circle cx="15" cy="8.5" r="2.5"/><path d="M15 11v5M15 12.5l-2.5 2M15 12.5l2.5 2M15 16l-2 3M15 16l2 3"/></svg></span><span><b data-t="hangman">Hangman</b><small data-t="twoSub">Same 5 puzzles, take turns on one phone</small></span></button>
-      <button class="mode wonly" data-mode="cpass"><span class="sw" style="--c:var(--t4)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span><span><b data-t="clues">Country Clues</b><small data-t="twoSub">Same 5 puzzles, take turns on one phone</small></span></button>
       <button class="mode" data-mode="challenge" hidden><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3A4 4 0 0 0 13 5.3l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><b data-t="chal">Challenge by Link</b><small data-t="chalSub">Each on your own phone, same puzzles, compare scores</small></span></button>
     </div>
     <div class="section-title"><span data-t="types">Puzzle types</span></div>
@@ -402,6 +404,8 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="chip wchip" data-type="flags" aria-pressed="true"><i class="dot" style="--c:var(--t4)"></i><span data-t="flags">Flags</span></button>
       <button class="chip wchip" data-type="capitals" aria-pressed="true"><i class="dot" style="--c:var(--t1)"></i><span data-t="capitals">Capitals</span></button>
       <button class="chip wchip" data-type="currency" aria-pressed="true"><i class="dot" style="--c:var(--t3)"></i><span data-t="currency">Currencies</span></button>
+      <button class="chip wchip" data-type="hangman" aria-pressed="false"><i class="dot" style="--c:var(--t2)"></i><span data-t="hangman">Hangman</span></button>
+      <button class="chip wchip" data-type="clues" aria-pressed="false"><i class="dot" style="--c:var(--t4)"></i><span data-t="clues">Country Clues</span></button>
     </div>
     <div class="chips chipsAll">
       <button class="chip" data-type="odd" aria-pressed="true"><i class="dot" style="--c:var(--t1)"></i><span data-t="t_odd">dd One Out</span></button>
@@ -903,10 +907,11 @@ function renderStreak(){
 
 // A round as data the other phone can rebuild exactly: bank indexes, odd cell, option order, grid shape
 function packRound(list){return list.map(q=>{const i=BANKS[q.type].indexOf(q.data);
-  if(isWorld(q.type))return{t:q.type,i,w:q.options.slice()};
+  if(isWorld(q.type)||q.type==="clue")return{t:q.type,i,w:q.options.slice()};
+  if(q.type==="hgc"||q.type==="hgk")return{t:q.type,i};
   return q.type==="odd"?{t:q.type,i,c:q.cols,n:q.count,o:q.oddIndex}:{t:q.type,i,p:q.options.map(x=>[q.data[1],...q.data[3]].indexOf(x))}})}
 function unpackRound(packed){return packed.map(r=>{const data=BANKS[r.t]&&BANKS[r.t][r.i];if(!data)return null;
-  const q={type:r.t,data};if(isWorld(r.t))q.options=(r.w||[]).slice();else if(r.t==="odd"){q.cols=r.c;q.count=r.n;q.oddIndex=r.o}else{const all=[data[1],...data[3]];q.options=r.p.map(k=>all[k])}return q})}
+  const q={type:r.t,data};if(r.t==="hgc"||r.t==="hgk"){}else if(isWorld(r.t)||r.t==="clue")q.options=(r.w||[]).slice();else if(r.t==="odd"){q.cols=r.c;q.count=r.n;q.oddIndex=r.o}else{const all=[data[1],...data[3]];q.options=r.p.map(k=>all[k])}return q})}
 const BANK_VER=(ODD.length+"."+EMOJI.length+"."+LOGIC.length+"."+FACTS.length+"."+WORLD.length+"."+CURRENCY.length);
 
 /* ---------- STATE ---------- */
@@ -920,7 +925,7 @@ function loc(q){const d=q.data;
   if(q.type==="capitals")return{q:t("capQ",{c:wname(d[0])}),a:wcap(d[0]),why:"",opt:wcap};
   if(q.type==="currency")return{q:t("curQ",{c:wname(d[0])}),a:wcur(d[3][0]),why:"",opt:wcur};
   if(q.type==="hgc"||q.type==="hgk")return{q:hangHint(q),a:hangWord(q),why:"",opt:x=>x};
-  if(q.type==="clue")return{q:t("clQ",{c:t("cont_"+d[1])}),a:wname(d[0]),why:"",opt:wname};
+  if(q.type==="clue")return{q:t("clQ")+" · "+t("cont_"+d[1]),a:wname(d[0]),why:"",opt:wname};
   const all=[d[1],...d[3]];let tr=null;
   if(LANG!=="en"&&TR[LANG]&&(q.type==="logic"||q.type==="facts"))tr=TR[LANG][q.type][BANKS[q.type].indexOf(d)]||null;
   if(!tr)return{q:d[0],a:d[1],why:d[4]||"",opt:o=>o};
@@ -968,13 +973,25 @@ function renderCustom(){const ty=customTypes(),all=langTypes();document.querySel
 // Play with Friends can use the classic puzzles (shared with the Solo picks) or the World Quiz types.
 const WORLD_TYPES=["flags","capitals","currency"];
 function fset(){try{return localStorage.getItem("btc-fset")==="world"?"world":"classic"}catch(e){return"classic"}}
-function worldTypes(){try{const v=JSON.parse(localStorage.getItem("btc-wtypes")||"null");if(Array.isArray(v)){const f=v.filter(x=>WORLD_TYPES.includes(x));if(f.length)return f}}catch(e){}return WORLD_TYPES.slice()}
+// World picks: any of Flags / Capitals / Currencies together, or Hangman alone, or Country Clues alone.
+function worldTypes(){try{const v=JSON.parse(localStorage.getItem("btc-wtypes")||"null");if(Array.isArray(v)){
+  if(v.length===1&&["hangman","clues"].includes(v[0]))return v;const f=v.filter(x=>WORLD_TYPES.includes(x));if(f.length)return f}}catch(e){}return WORLD_TYPES.slice()}
 function friendTypes(){return fset()==="world"?worldTypes():customTypes()}
 function renderFriends(){const w=fset()==="world",wt=worldTypes();
   document.querySelectorAll("#fsetSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.fset===fset()?"true":"false"));
-  $("worldChips").hidden=!w;document.querySelectorAll(".wonly").forEach(b=>b.hidden=!w);document.querySelector(".chipsAll").hidden=w;
+  $("worldChips").hidden=!w;
+  const g=w&&friendGame(),db=document.querySelector('.mode[data-mode="duel"]');db.disabled=!!g;db.classList.toggle("off",!!g);
+  db.querySelector("small").textContent=t(g?"duelNo":"duelSub");
+  document.querySelector('.mode[data-mode="pass"] small').textContent=t(g?"twoSub":"passSub");document.querySelector(".chipsAll").hidden=w;
   document.querySelectorAll(".wchip").forEach(c=>c.setAttribute("aria-pressed",wt.includes(c.dataset.type)?"true":"false"))}
-const typeName=x=>isWorld(x)?t(x):t("t_"+x);
+const WORLD_GAMES=["hangman","clues"];
+const typeName=x=>isWorld(x)||WORLD_GAMES.includes(x)?t(x):t("t_"+x);
+// Puzzle list for a 2-player round: Hangman / Country Clues word lists, or a normal mixed round.
+function friendGame(ty){ty=ty||friendTypes();return WORLD_GAMES.includes(ty[0])?ty[0]:null}
+function makeRound(seed,rd,types,seen){const g=friendGame(types);
+  if(g==="hangman")return wordPicks(shuffle(["hgc","hgc","hgc","hgk","hgk"],Math.random),rd,hangOK,seen);
+  if(g==="clues")return wordPicks(["clue","clue","clue","clue","clue"],rd,()=>true,seen).map(q=>({...q,options:clueOptions(q.data)}));
+  return buildRound("live",seed,rd,types,seen)}
 function soloMode(){const ty=customTypes();return ty.length===langTypes().length?"mix":ty.length===1?ty[0]:"custom"}
 function startRound(mode,seed,d,typesOverride,prebuilt){
   if(LANG!=="en"&&!TR[LANG]){loadTR(LANG).then(()=>startRound(mode,seed,d,typesOverride,prebuilt));return}
@@ -1144,7 +1161,7 @@ function verdict(e,who){
   if(e.ok)return '<span class="ok">'+(who?esc(who)+": ":"")+t("okSecs",{s:e.secs})+'</span>';
   return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?t("ranOut"):esc(t("chose",{x:e.given||"?"})))+'</span>';
 }
-function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s}:null}
+function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s,hang:!!e.h,msg:e.m||""}:null}
 function buildReview(){
   const box=$("review");box.innerHTML="";box.hidden=true;$("reviewBtn").textContent=t("review");
   const two=isPass(S.mode);
@@ -1181,16 +1198,16 @@ function hnorm(c){c=c.toLowerCase();if(LANG==="fa")return({"آ":"ا","أ":"ا","
 const hkeys=()=>[...HKEYS[LANG]||HKEYS.en];
 const hangWord=q=>q.type==="hgc"?wname(q.data[0]):wcap(q.data[0]);
 const hangHint=q=>q.type==="hgc"?t("hmCountry",{c:t("cont_"+q.data[1])}):t("hmCapital",{c:wname(q.data[0])});
-// Words whose longest part fits the phone width
-const hangOK=q=>hangWord(q).split(/[\s-]+/).every(w=>w.length<=13);
+// Words whose longest part fits the phone width in every language (Live Match players may use different languages)
+const hangOK=q=>(q.type==="hgc"?q.data[3]:q.data[4]).every(n=>n.split(/[\s-]+/).every(w=>w.length<=13));
 let H=null;
-function wordPicks(kinds,rd,ok){const ctx={seen:loadSeen().m,today:new Set(),past:new Set()},used={},list=[];
+function wordPicks(kinds,rd,ok,seen){const ctx={seen:seen||loadSeen().m,today:new Set(),past:new Set()},used={},list=[];
   HMIX[rd].forEach((l,k)=>{const ty=kinds[k];used[ty]=used[ty]||new Set();for(let tries=0;tries<20;tries++){const [id]=pickFresh(ty,l,1,used[ty],Math.random,ctx,rd);if(id===undefined)break;
     const q={type:ty,data:BANKS[ty][id]};if(ok(q)){list.push(q);break}}});return list}
 function whoTag(id,mode){const el=$(id);el.textContent=isPass(mode)?pass.names[pass.turn]:"";el.hidden=!isPass(mode)}
-function startHangman(mode,prebuilt){
+function startHangman(mode,prebuilt,d){
   mode=mode||"hangman";clearTimeout(nextT);clearInterval(timer);
-  const rd=diff,list=prebuilt||wordPicks(shuffle(["hgc","hgc","hgc","hgk","hgk"],Math.random),rd,hangOK);
+  const rd=d||diff,list=prebuilt||makeRound(null,rd,["hangman"]);
   if(mode==="hpass"&&!prebuilt)pass.list=list.slice();
   whoTag("hWho",mode);
   S={id:++roundId,mode,diff:rd,day:todayKey(),list,i:0,score:0,streak:0,bestStreak:0,correct:0,lives:1,locked:false,log:[]};
@@ -1229,12 +1246,12 @@ function hangGuess(k){
       $("hFb").textContent=t("hmSolved",{p:num(pts)});$("hFb").className="feedback good";S.streak>=3?SFX.streak():SFX.good()}
     else{S.streak=0;$("hFb").textContent=t("hmLost",{w:H.w});$("hFb").className="feedback bad";SFX.timeout()}
     S.log.push({ok:won,timeout:false,hang:true,given:won?null:[...H.w].map(c=>{const n=hnorm(c);return !hkeys().includes(n)||H.got.has(n)?c:"_"}).join(""),secs});
-    S.i++;$("hScore").textContent=S.score;$("hKbd").hidden=true;
+    S.i++;$("hScore").textContent=S.score;$("hKbd").hidden=true;liveProgress();
     const nb=$("hNext");nb.textContent=S.i>=S.list.length?t("hmDone"):t("hmNext");nb.hidden=false;nb.focus({preventScroll:true})}
   hangDraw();
 }
 $("hNext").onclick=()=>hangNext();
-$("hQuit").onclick=()=>{H=null;S=null;show("home")};
+$("hQuit").onclick=()=>{if(S&&S.mode==="live")liveReset();H=null;S=null;show("home")};
 document.addEventListener("keydown",e=>{if($("hang").hidden||!H||e.ctrlKey||e.metaKey||e.altKey)return;
   if(H.done&&e.key==="Enter"){e.preventDefault();return hangNext()}if(e.key.length===1)hangGuess(hnorm(e.key))});
 
@@ -1244,15 +1261,16 @@ document.addEventListener("keydown",e=>{if($("hang").hidden||!H||e.ctrlKey||e.me
    country. Points: 100 + 75 for each clue left closed, minus 50 for each wrong pick (at least 50). All clues come
    from the checked World Quiz data. */
 const CBY={};CURRENCY.forEach(r=>CBY[r[0]]=r);
+// Clues never describe the name itself (the options are on screen, so a letter count would give it away).
 function clueList(r){const out=[];if(CBY[r[0]])out.push({k:"clCur",v:wcur(CBY[r[0]][3][0])});
-  out.push({k:"clLen",v:num([...wname(r[0])].filter(c=>hkeys().includes(hnorm(c))).length)});
-  if(r[4])out.push({k:"clCap",v:wcap(r[0])});out.push({k:"clFlag",flag:r[0]});return out}
+  if(r[4]){const c=wcap(r[0]);out.push({k:"clCapL",v:c[0].toUpperCase()});out.push({k:"clCap",v:c})}
+  out.push({k:"clFlag",flag:r[0]});return out}
 function clueOptions(r){const out=[r[0]];for(const same of [true,false])for(const x of shuffle(WORLD,Math.random)){if(out.length>=6)break;
   if((x[1]===r[1])!==same||out.includes(x[0]))continue;out.push(x[0])}return shuffle(out,Math.random)}
 let C=null;
-function startClues(mode,prebuilt){
+function startClues(mode,prebuilt,d){
   mode=mode||"clues";clearTimeout(nextT);clearInterval(timer);
-  const rd=diff,list=prebuilt||wordPicks(["clue","clue","clue","clue","clue"],rd,()=>true).map(q=>({...q,options:clueOptions(q.data)}));
+  const rd=d||diff,list=prebuilt||makeRound(null,rd,["clues"]);
   if(mode==="cpass"&&!prebuilt)pass.list=list.map(q=>({...q}));
   whoTag("cWho",mode);
   S={id:++roundId,mode,diff:rd,day:todayKey(),list,i:0,score:0,streak:0,bestStreak:0,correct:0,lives:1,locked:false,log:[]};
@@ -1261,7 +1279,7 @@ function startClues(mode,prebuilt){
 function cluesNext(){
   if(S.i>=S.list.length)return endRound();
   const q=S.list[S.i];markSeen([q]);C={q,clues:clueList(q.data),shown:1,wrong:0,done:false,t0:Date.now()};
-  $("cQ").textContent=loc(q).q;$("cProg").textContent=num((S.i+1)+"/"+S.list.length);
+  $("cQ").textContent=t("clQ");$("cHow").textContent=t("clHow",{c:t("cont_"+q.data[1])});$("cProg").textContent=num((S.i+1)+"/"+S.list.length);
   $("cFb").textContent="";$("cFb").className="feedback";$("cNext").hidden=true;
   const box=$("cOpts");box.innerHTML="";
   q.options.forEach(c=>{const b=document.createElement("button");b.className="choice";b.dataset.v=c;b.textContent=wname(c);b.dir="auto";b.onclick=()=>cluePick(c,b);box.appendChild(b)});
@@ -1269,9 +1287,10 @@ function cluesNext(){
 }
 function cluesDraw(){
   const ol=$("cList");ol.innerHTML="";
-  C.clues.slice(0,C.done?C.clues.length:C.shown).forEach(c=>{const li=document.createElement("li");const lab=document.createElement("span");lab.textContent=t(c.k);li.appendChild(lab);
+  const n=C.done?C.clues.length:C.shown;
+  C.clues.slice(0,n).forEach((c,k)=>{const li=document.createElement("li");if(k>=(C.drawn||0))li.className="new";const lab=document.createElement("span");lab.textContent=t(c.k);li.appendChild(lab);
     if(c.flag){const im=document.createElement("img");im.src=flagUrl(c.flag);im.alt="";li.appendChild(im)}else{const b=document.createElement("b");b.textContent=c.v;b.dir="auto";li.appendChild(b)}
-    ol.appendChild(li)});
+    ol.appendChild(li)});C.drawn=n;
   const left=C.clues.length-C.shown;$("cMore").hidden=C.done||left<=0;$("cMore").textContent=t("clMore")+" (−"+num(75)+")";
   C.clues.slice(C.shown).forEach(c=>{if(c.flag)new Image().src=flagUrl(c.flag)});
 }
@@ -1287,14 +1306,14 @@ function cluePick(c,b){
     if(C.shown<C.clues.length){C.shown++}
     else{C.done=true;S.streak=0;$("cFb").textContent=t("clLost",{w:wname(q.data[0])});$("cFb").className="feedback bad";SFX.timeout();
       S.log.push({ok:false,timeout:false,hang:true,msg:"clNot",secs:((Date.now()-C.t0)/1000).toFixed(1)})}}
-  if(C.done){S.i++;$("cScore").textContent=S.score;
+  if(C.done){S.i++;$("cScore").textContent=S.score;liveProgress();
     $("cOpts").querySelectorAll(".choice").forEach(x=>{x.disabled=true;if(x.dataset.v===q.data[0])x.classList.add("reveal")});
     const nb=$("cNext");nb.textContent=S.i>=S.list.length?t("hmDone"):t("clNext");nb.hidden=false;nb.focus({preventScroll:true})}
   cluesDraw();
 }
 $("cMore").onclick=clueMore;
 $("cNext").onclick=()=>cluesNext();
-$("cQuit").onclick=()=>{C=null;S=null;show("home")};
+$("cQuit").onclick=()=>{if(S&&S.mode==="live")liveReset();C=null;S=null;show("home")};
 
 /* ---------- DUEL ENGINE ---------- */
 let dTimer=null,duelT=null;
@@ -1393,7 +1412,7 @@ async function liveCreate(){
     await loadTR(LANG);const existing=await dbGet(code);
     if(existing&&existing.created>Date.now()-3600000&&!(existing.host&&existing.host.left)){return liveCreate()} // code in use, pick another
     const seed=Math.floor(Math.random()*2**31);
-    await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:friendTypes(),ver:BANK_VER,round:packRound(buildRound("live",seed,diff,friendTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
+    await dbWrite(code,{created:Date.now(),settings:{seed,diff,types:friendTypes(),ver:BANK_VER,round:packRound(makeRound(seed,diff,friendTypes()))},host:{name:live.me,hb:Date.now()}},"PUT");
   }catch(e){liveErr(t("noServer"));return}
   const link=shareBase()+"#L"+code;
   liveStatus(t("waitFriend"));
@@ -1453,7 +1472,7 @@ function reconcile(){
     $("liveReady").hidden=!!me.ready;
     liveStatus(me.ready&&them.ready?t("starting"):me.ready?t("waitFor",{n:live.them}):t("isHere",{n:live.them}));
     if(live.role==="host"&&me.ready&&them.ready&&!r.startAt&&!live.picking){live.picking=true;const st=r.settings;const seed=Math.floor(Math.random()*2**31);
-      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500}).catch(()=>{live.picking=false})}
+      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(makeRound(seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500}).catch(()=>{live.picking=false})}
   }
   // start (both sides) — guard against re-running the same startAt
   if(r.startAt&&r.startAt!==live.startAt&&me.ready&&them.ready){live.startAt=r.startAt;startCountdown(r.startAt)}
@@ -1464,7 +1483,7 @@ function reconcile(){
     // rematch: host issues a new start when both asked
     if(live.role==="host"&&me.rematch&&them.rematch&&live.myDone&&live.theirDone&&r.startAt===live.startAt){
       const seed=Math.floor(Math.random()*2**31);const st=live.room.settings;
-      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(buildRound("live",seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500,"host/prog":null,"host/done":null,"host/rematch":null,"guest/prog":null,"guest/done":null,"guest/rematch":null}).catch(()=>{});
+      dbWrite(live.code,{"settings/seed":seed,"settings/round":packRound(makeRound(seed,st.diff,st.types,mergedSeen(them.seen))),startAt:Date.now()+3500,"host/prog":null,"host/done":null,"host/rematch":null,"guest/prog":null,"guest/done":null,"guest/rematch":null}).catch(()=>{});
     }
     if(them.rematch&&!me.rematch&&live.myDone&&live.theirDone&&!$("againBtn").dataset.asked){$("againBtn").dataset.asked="1";$("againBtn").textContent=t("wantsRematch",{n:live.them});$("againBtn").classList.add("pop");SFX.point()}
   }
@@ -1483,13 +1502,16 @@ function liveBegin(){
   const st=live.room.settings;
   const list=st.round?unpackRound(st.round):null;
   if(!list||list.some(q=>!q)){liveErr(t("versions"));liveReset();liveUI("start");show("live");return}
-  startRound("live",st.seed,st.diff,st.types,list);
+  const g=friendGame(st.types||[]);
+  if(g==="hangman")startHangman("live",list,st.diff);else if(g==="clues")startClues("live",list,st.diff);else startRound("live",st.seed,st.diff,st.types,list);
+  // the opponent bar sits under the top bar of whichever screen this game uses
+  const opp=$("opp");if(g)$(g==="hangman"?"hang":"clues").querySelector(".bar").after(opp);else $("prog").parentElement.after(opp);
   $("opp").hidden=false;$("oppName").textContent=live.them;renderOpp();
 }
 function renderOpp(){const o=live&&live.oppState;const n=S?S.list.length:10;$("oppScore").textContent=o?o.score:0;$("oppProg").textContent=num((o?o.i:0)+"/"+n);$("oppBar").style.width=((o?o.i:0)/n*100)+"%"}
 function liveProgress(){if(S&&S.mode==="live"&&live)dbWrite(live.code+"/"+live.role,{prog:{i:S.i,score:S.score,correct:S.correct}}).catch(()=>{})}
 function liveFinish(){
-  live.myDone={score:S.score,correct:S.correct,n:S.list.length,line:emojiLine(S.log,S.list.length),log:S.log.map(e=>({ok:e.ok?1:0,t:e.timeout?1:0,g:e.given||"",s:e.secs}))};
+  live.myDone={score:S.score,correct:S.correct,n:S.list.length,line:emojiLine(S.log,S.list.length),log:S.log.map(e=>({ok:e.ok?1:0,t:e.timeout?1:0,g:e.given||"",s:e.secs,h:e.hang?1:0,m:e.msg||""}))};
   dbWrite(live.code+"/"+live.role,{done:live.myDone}).catch(()=>{});
   if(live.theirDone)liveResults();else if(live.gone)liveSettleGone();else{$("liveWait").textContent=t("waitFinish",{n:live.them});$("liveWait").hidden=false}
 }
@@ -1608,6 +1630,7 @@ document.querySelectorAll(".mode,.hero").forEach(b=>b.onclick=()=>{
 $("startPass").onclick=()=>{
   const names=[$("name1").value.trim()||t("p1"),$("name2").value.trim()||t("p2")];
   if(twoMode==="duel")return startDuel(names);
+  const g=fset()==="world"&&friendGame();if(twoMode==="pass"&&g)twoMode=g==="hangman"?"hpass":"cpass";
   if(twoMode==="hpass"||twoMode==="cpass"){pass={names:names.slice(),game:twoMode,scores:[],turn:0};return twoMode==="hpass"?startHangman("hpass"):startClues("cpass")}
   pass={names:names.slice(),seed:Math.floor(Math.random()*2**31),scores:[],turn:0};
   startRound("pass",pass.seed,null,friendTypes());
@@ -1615,7 +1638,9 @@ $("startPass").onclick=()=>{
 $("namesBack").onclick=()=>show("friends");
 document.querySelectorAll(".chip:not(.wchip)").forEach(c=>c.onclick=()=>{let ty=customTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-custom",JSON.stringify(ty))}catch(e){}renderCustom();SFX.tap()});
 document.querySelectorAll("#fsetSeg button").forEach(b=>b.onclick=()=>{try{localStorage.setItem("btc-fset",b.dataset.fset)}catch(e){}renderFriends();SFX.tap()});
-document.querySelectorAll(".wchip").forEach(c=>c.onclick=()=>{let ty=worldTypes();const k=c.dataset.type;if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-wtypes",JSON.stringify(ty))}catch(e){}renderFriends();SFX.tap()});
+document.querySelectorAll(".wchip").forEach(c=>c.onclick=()=>{let ty=worldTypes();const k=c.dataset.type;
+  if(WORLD_GAMES.includes(k)||WORLD_GAMES.includes(ty[0])){ty=WORLD_GAMES.includes(k)?[k]:[k];try{localStorage.setItem("btc-wtypes",JSON.stringify(ty))}catch(e){}renderFriends();SFX.tap();return}
+  if(ty.includes(k)){if(ty.length===1){c.classList.add("shake");setTimeout(()=>c.classList.remove("shake"),350);return}ty=ty.filter(x=>x!==k)}else ty.push(k);try{localStorage.setItem("btc-wtypes",JSON.stringify(ty))}catch(e){}renderFriends();SFX.tap()});
 $("startCustom").onclick=()=>startRound(soloMode());
 $("customBack").onclick=()=>show("home");
 $("worldBack").onclick=()=>show("home");
