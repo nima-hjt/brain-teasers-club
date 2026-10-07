@@ -1,0 +1,1463 @@
+{
+ "AL": {
+  "en": "Lek",
+  "fa": "لک",
+  "es": "Lek",
+  "also": [],
+  "lvl": 3
+ },
+ "DZ": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "AD": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "AO": {
+  "en": "Kwanza",
+  "fa": "کوانزا",
+  "es": "Kwanza",
+  "also": [],
+  "lvl": 3
+ },
+ "AG": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "AR": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "AM": {
+  "en": "Dram",
+  "fa": "درام",
+  "es": "Dram",
+  "also": [],
+  "lvl": 3
+ },
+ "AU": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 1
+ },
+ "AT": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "AZ": {
+  "en": "Manat",
+  "fa": "منات",
+  "es": "Manat",
+  "also": [],
+  "lvl": 3
+ },
+ "BS": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "BH": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 3
+ },
+ "BD": {
+  "en": "Taka",
+  "fa": "تاکا",
+  "es": "Taka",
+  "also": [],
+  "lvl": 2
+ },
+ "BB": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "BY": {
+  "en": "Ruble",
+  "fa": "روبل",
+  "es": "Rublo",
+  "also": [],
+  "lvl": 2
+ },
+ "BE": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "BZ": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "BJ": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "BT": {
+  "en": "Ngultrum",
+  "fa": "انگولتروم",
+  "es": "Ngultrum",
+  "also": [
+   "Rupee"
+  ],
+  "lvl": 3
+ },
+ "BA": {
+  "en": "Mark",
+  "fa": "مارک",
+  "es": "Marco",
+  "also": [],
+  "lvl": 3
+ },
+ "BW": {
+  "en": "Pula",
+  "fa": "پولا",
+  "es": "Pula",
+  "also": [],
+  "lvl": 3
+ },
+ "BR": {
+  "en": "Real",
+  "fa": "رئال",
+  "es": "Real",
+  "also": [],
+  "lvl": 2
+ },
+ "BN": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [
+   "Ringgit"
+  ],
+  "lvl": 2
+ },
+ "BG": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "BF": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "BI": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "CV": {
+  "en": "Escudo",
+  "fa": "اسکودو",
+  "es": "Escudo",
+  "also": [],
+  "lvl": 3
+ },
+ "KH": {
+  "en": "Riel",
+  "fa": "ریل",
+  "es": "Riel",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 3
+ },
+ "CM": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "CA": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 1
+ },
+ "CF": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "TD": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "CL": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "CN": {
+  "en": "Yuan",
+  "fa": "یوآن",
+  "es": "Yuan",
+  "also": [
+   "Renminbi"
+  ],
+  "lvl": 1
+ },
+ "CO": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "KM": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "CG": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "CD": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "CR": {
+  "en": "Colón",
+  "fa": "کولون",
+  "es": "Colón",
+  "also": [],
+  "lvl": 2
+ },
+ "CI": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "HR": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "CU": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 2
+ },
+ "CY": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "CZ": {
+  "en": "Koruna",
+  "fa": "کرون",
+  "es": "Corona",
+  "also": [
+   "Krona",
+   "Krone"
+  ],
+  "lvl": 2
+ },
+ "DK": {
+  "en": "Krone",
+  "fa": "کرون",
+  "es": "Corona",
+  "also": [
+   "Koruna",
+   "Krona"
+  ],
+  "lvl": 2
+ },
+ "DJ": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "DM": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "DO": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "EC": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "EG": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [],
+  "lvl": 2
+ },
+ "SV": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [
+   "Colón"
+  ],
+  "lvl": 2
+ },
+ "GQ": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "ER": {
+  "en": "Nakfa",
+  "fa": "ناکفا",
+  "es": "Nakfa",
+  "also": [],
+  "lvl": 3
+ },
+ "EE": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "SZ": {
+  "en": "Lilangeni",
+  "fa": "لیلانگنی",
+  "es": "Lilangeni",
+  "also": [
+   "Rand"
+  ],
+  "lvl": 3
+ },
+ "ET": {
+  "en": "Birr",
+  "fa": "بیر",
+  "es": "Birr",
+  "also": [],
+  "lvl": 2
+ },
+ "FJ": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "FI": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "FR": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "GA": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "GM": {
+  "en": "Dalasi",
+  "fa": "دالاسی",
+  "es": "Dalasi",
+  "also": [],
+  "lvl": 3
+ },
+ "GE": {
+  "en": "Lari",
+  "fa": "لاری",
+  "es": "Lari",
+  "also": [],
+  "lvl": 3
+ },
+ "DE": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "GH": {
+  "en": "Cedi",
+  "fa": "سدی",
+  "es": "Cedi",
+  "also": [],
+  "lvl": 2
+ },
+ "GR": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "GD": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "GT": {
+  "en": "Quetzal",
+  "fa": "کتزال",
+  "es": "Quetzal",
+  "also": [],
+  "lvl": 2
+ },
+ "GN": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "GW": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "GY": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "HT": {
+  "en": "Gourde",
+  "fa": "گورد",
+  "es": "Gourde",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 3
+ },
+ "VA": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "HN": {
+  "en": "Lempira",
+  "fa": "لمپیرا",
+  "es": "Lempira",
+  "also": [],
+  "lvl": 3
+ },
+ "HU": {
+  "en": "Forint",
+  "fa": "فورینت",
+  "es": "Forinto",
+  "also": [],
+  "lvl": 2
+ },
+ "IS": {
+  "en": "Krona",
+  "fa": "کرون",
+  "es": "Corona",
+  "also": [
+   "Koruna",
+   "Krone"
+  ],
+  "lvl": 2
+ },
+ "IN": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 1
+ },
+ "ID": {
+  "en": "Rupiah",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupee"
+  ],
+  "lvl": 2
+ },
+ "IR": {
+  "en": "Rial",
+  "fa": "ریال",
+  "es": "Rial",
+  "also": [
+   "Riyal",
+   "Toman"
+  ],
+  "lvl": 2
+ },
+ "IQ": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "IE": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "IL": {
+  "en": "Shekel",
+  "fa": "شکل",
+  "es": "Séquel",
+  "also": [],
+  "lvl": 2
+ },
+ "IT": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "JM": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "JP": {
+  "en": "Yen",
+  "fa": "ین",
+  "es": "Yen",
+  "also": [],
+  "lvl": 1
+ },
+ "JO": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "KZ": {
+  "en": "Tenge",
+  "fa": "تنگه",
+  "es": "Tenge",
+  "also": [],
+  "lvl": 2
+ },
+ "KE": {
+  "en": "Shilling",
+  "fa": "شیلینگ",
+  "es": "Chelín",
+  "also": [],
+  "lvl": 2
+ },
+ "KI": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "KP": {
+  "en": "Won",
+  "fa": "وون",
+  "es": "Won",
+  "also": [],
+  "lvl": 2
+ },
+ "KR": {
+  "en": "Won",
+  "fa": "وون",
+  "es": "Won",
+  "also": [],
+  "lvl": 1
+ },
+ "KW": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "KG": {
+  "en": "Som",
+  "fa": "سوم",
+  "es": "Som",
+  "also": [
+   "Somoni"
+  ],
+  "lvl": 3
+ },
+ "LA": {
+  "en": "Kip",
+  "fa": "کیپ",
+  "es": "Kip",
+  "also": [],
+  "lvl": 3
+ },
+ "LV": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "LB": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [
+   "Dollar",
+   "Lira"
+  ],
+  "lvl": 2
+ },
+ "LS": {
+  "en": "Loti",
+  "fa": "لوتی",
+  "es": "Loti",
+  "also": [
+   "Rand"
+  ],
+  "lvl": 3
+ },
+ "LR": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "LY": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "LI": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [],
+  "lvl": 2
+ },
+ "LT": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "LU": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "MG": {
+  "en": "Ariary",
+  "fa": "آریاری",
+  "es": "Ariary",
+  "also": [],
+  "lvl": 3
+ },
+ "MW": {
+  "en": "Kwacha",
+  "fa": "کواچا",
+  "es": "Kwacha",
+  "also": [],
+  "lvl": 3
+ },
+ "MY": {
+  "en": "Ringgit",
+  "fa": "رینگیت",
+  "es": "Ringgit",
+  "also": [],
+  "lvl": 2
+ },
+ "MV": {
+  "en": "Rufiyaa",
+  "fa": "روفیه",
+  "es": "Rufiyaa",
+  "also": [
+   "Rupee",
+   "Rupiah"
+  ],
+  "lvl": 3
+ },
+ "ML": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "MT": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "MH": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "MR": {
+  "en": "Ouguiya",
+  "fa": "اوگیه",
+  "es": "Uguiya",
+  "also": [],
+  "lvl": 3
+ },
+ "MU": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 3
+ },
+ "MX": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 1
+ },
+ "FM": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "MD": {
+  "en": "Leu",
+  "fa": "لئو",
+  "es": "Leu",
+  "also": [],
+  "lvl": 3
+ },
+ "MC": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "MN": {
+  "en": "Tugrik",
+  "fa": "توگریک",
+  "es": "Tugrik",
+  "also": [],
+  "lvl": 3
+ },
+ "ME": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "MA": {
+  "en": "Dirham",
+  "fa": "درهم",
+  "es": "Dírham",
+  "also": [],
+  "lvl": 2
+ },
+ "MZ": {
+  "en": "Metical",
+  "fa": "متیکال",
+  "es": "Metical",
+  "also": [],
+  "lvl": 3
+ },
+ "MM": {
+  "en": "Kyat",
+  "fa": "کیات",
+  "es": "Kyat",
+  "also": [],
+  "lvl": 3
+ },
+ "NA": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [
+   "Rand"
+  ],
+  "lvl": 3
+ },
+ "NR": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "NP": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 2
+ },
+ "NL": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "NZ": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 1
+ },
+ "NI": {
+  "en": "Córdoba",
+  "fa": "کوردوبا",
+  "es": "Córdoba",
+  "also": [],
+  "lvl": 3
+ },
+ "NE": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "NG": {
+  "en": "Naira",
+  "fa": "نایرا",
+  "es": "Naira",
+  "also": [],
+  "lvl": 2
+ },
+ "MK": {
+  "en": "Denar",
+  "fa": "دنار",
+  "es": "Denar",
+  "also": [
+   "Dinar"
+  ],
+  "lvl": 3
+ },
+ "NO": {
+  "en": "Krone",
+  "fa": "کرون",
+  "es": "Corona",
+  "also": [
+   "Koruna",
+   "Krona"
+  ],
+  "lvl": 2
+ },
+ "OM": {
+  "en": "Rial",
+  "fa": "ریال",
+  "es": "Rial",
+  "also": [
+   "Riyal"
+  ],
+  "lvl": 3
+ },
+ "PK": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 2
+ },
+ "PW": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "PA": {
+  "en": "Balboa",
+  "fa": "بالبوآ",
+  "es": "Balboa",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 3
+ },
+ "PG": {
+  "en": "Kina",
+  "fa": "کینا",
+  "es": "Kina",
+  "also": [],
+  "lvl": 3
+ },
+ "PY": {
+  "en": "Guaraní",
+  "fa": "گوارانی",
+  "es": "Guaraní",
+  "also": [],
+  "lvl": 2
+ },
+ "PE": {
+  "en": "Sol",
+  "fa": "سول",
+  "es": "Sol",
+  "also": [],
+  "lvl": 2
+ },
+ "PH": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "PL": {
+  "en": "Złoty",
+  "fa": "زلوتی",
+  "es": "Esloti",
+  "also": [],
+  "lvl": 2
+ },
+ "PT": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "QA": {
+  "en": "Riyal",
+  "fa": "ریال",
+  "es": "Riyal",
+  "also": [
+   "Rial"
+  ],
+  "lvl": 2
+ },
+ "RO": {
+  "en": "Leu",
+  "fa": "لئو",
+  "es": "Leu",
+  "also": [],
+  "lvl": 2
+ },
+ "RU": {
+  "en": "Ruble",
+  "fa": "روبل",
+  "es": "Rublo",
+  "also": [],
+  "lvl": 1
+ },
+ "RW": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [
+   "CFA franc"
+  ],
+  "lvl": 2
+ },
+ "KN": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "LC": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "VC": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "WS": {
+  "en": "Tala",
+  "fa": "تالا",
+  "es": "Tala",
+  "also": [],
+  "lvl": 3
+ },
+ "SM": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "ST": {
+  "en": "Dobra",
+  "fa": "دوبرا",
+  "es": "Dobra",
+  "also": [],
+  "lvl": 3
+ },
+ "SA": {
+  "en": "Riyal",
+  "fa": "ریال",
+  "es": "Riyal",
+  "also": [
+   "Rial"
+  ],
+  "lvl": 2
+ },
+ "SN": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "RS": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [
+   "Denar"
+  ],
+  "lvl": 2
+ },
+ "SC": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 3
+ },
+ "SG": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "SK": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "SI": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 2
+ },
+ "SB": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "SO": {
+  "en": "Shilling",
+  "fa": "شیلینگ",
+  "es": "Chelín",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 3
+ },
+ "ZA": {
+  "en": "Rand",
+  "fa": "راند",
+  "es": "Rand",
+  "also": [],
+  "lvl": 2
+ },
+ "SS": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [],
+  "lvl": 2
+ },
+ "ES": {
+  "en": "Euro",
+  "fa": "یورو",
+  "es": "Euro",
+  "also": [],
+  "lvl": 1
+ },
+ "LK": {
+  "en": "Rupee",
+  "fa": "روپیه",
+  "es": "Rupia",
+  "also": [
+   "Rufiyaa",
+   "Rupiah"
+  ],
+  "lvl": 2
+ },
+ "SD": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [],
+  "lvl": 2
+ },
+ "SR": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 3
+ },
+ "SE": {
+  "en": "Krona",
+  "fa": "کرون",
+  "es": "Corona",
+  "also": [
+   "Koruna",
+   "Krone"
+  ],
+  "lvl": 2
+ },
+ "CH": {
+  "en": "Franc",
+  "fa": "فرانک",
+  "es": "Franco",
+  "also": [],
+  "lvl": 1
+ },
+ "SY": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [
+   "Lira"
+  ],
+  "lvl": 2
+ },
+ "TJ": {
+  "en": "Somoni",
+  "fa": "سامانی",
+  "es": "Somoni",
+  "also": [
+   "Som"
+  ],
+  "lvl": 3
+ },
+ "TZ": {
+  "en": "Shilling",
+  "fa": "شیلینگ",
+  "es": "Chelín",
+  "also": [],
+  "lvl": 2
+ },
+ "TH": {
+  "en": "Baht",
+  "fa": "بات",
+  "es": "Baht",
+  "also": [],
+  "lvl": 2
+ },
+ "TL": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 3
+ },
+ "TG": {
+  "en": "CFA franc",
+  "fa": "فرانک سی‌اف‌آ",
+  "es": "Franco CFA",
+  "also": [
+   "Franc"
+  ],
+  "lvl": 2
+ },
+ "TO": {
+  "en": "Paʻanga",
+  "fa": "پاانگا",
+  "es": "Paʻanga",
+  "also": [],
+  "lvl": 3
+ },
+ "TT": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "TN": {
+  "en": "Dinar",
+  "fa": "دینار",
+  "es": "Dinar",
+  "also": [],
+  "lvl": 2
+ },
+ "TR": {
+  "en": "Lira",
+  "fa": "لیر",
+  "es": "Lira",
+  "also": [],
+  "lvl": 2
+ },
+ "TM": {
+  "en": "Manat",
+  "fa": "منات",
+  "es": "Manat",
+  "also": [],
+  "lvl": 3
+ },
+ "TV": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 2
+ },
+ "UG": {
+  "en": "Shilling",
+  "fa": "شیلینگ",
+  "es": "Chelín",
+  "also": [],
+  "lvl": 2
+ },
+ "UA": {
+  "en": "Hryvnia",
+  "fa": "گریونا",
+  "es": "Grivna",
+  "also": [],
+  "lvl": 2
+ },
+ "AE": {
+  "en": "Dirham",
+  "fa": "درهم",
+  "es": "Dírham",
+  "also": [],
+  "lvl": 2
+ },
+ "GB": {
+  "en": "Pound",
+  "fa": "پوند",
+  "es": "Libra",
+  "also": [],
+  "lvl": 1
+ },
+ "US": {
+  "en": "Dollar",
+  "fa": "دلار",
+  "es": "Dólar",
+  "also": [],
+  "lvl": 1
+ },
+ "UY": {
+  "en": "Peso",
+  "fa": "پزو",
+  "es": "Peso",
+  "also": [],
+  "lvl": 2
+ },
+ "UZ": {
+  "en": "Som",
+  "fa": "سوم",
+  "es": "Som",
+  "also": [
+   "Somoni"
+  ],
+  "lvl": 3
+ },
+ "VU": {
+  "en": "Vatu",
+  "fa": "واتو",
+  "es": "Vatu",
+  "also": [],
+  "lvl": 3
+ },
+ "VE": {
+  "en": "Bolívar",
+  "fa": "بولیوار",
+  "es": "Bolívar",
+  "also": [
+   "Dollar"
+  ],
+  "lvl": 2
+ },
+ "VN": {
+  "en": "Dong",
+  "fa": "دونگ",
+  "es": "Dong",
+  "also": [],
+  "lvl": 2
+ },
+ "YE": {
+  "en": "Rial",
+  "fa": "ریال",
+  "es": "Rial",
+  "also": [
+   "Riyal"
+  ],
+  "lvl": 3
+ },
+ "ZM": {
+  "en": "Kwacha",
+  "fa": "کواچا",
+  "es": "Kwacha",
+  "also": [],
+  "lvl": 3
+ }
+}

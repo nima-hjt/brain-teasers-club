@@ -35,7 +35,16 @@ for l in ('en','fa','es'):
     for k in ('n','cap'):
         v=[w[k][l] for w in W if w.get(k)];assert len(v)==len(set(v)),('dup world',k,l)
 WORLD=[[w['c'],w['cont'],w['lvl'],[w['n'][l] for l in ('en','fa','es')]]+([[w['cap'][l] for l in ('en','fa','es')]] if w.get('cap') else []) for w in W]
-bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;\nconst WORLD = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A,WORLD))
+# Currencies (World Quiz): content/currency.json keyed by ISO code {en,fa,es short name, also: other names legal there, lvl}.
+# Sources in content/currency_sources.md. Countries with no clear single currency are left out.
+CUR=load('content/currency.json');WB={w['c']:w for w in W}
+for c,v in CUR.items():
+    assert c in WB and v['lvl'] in (1,2,3) and all(isinstance(v[l],str) and v[l] for l in ('en','fa','es')) and isinstance(v['also'],list),(c,v)
+names={}
+for v in CUR.values():
+    k=v['en'];assert names.setdefault(k,(v['fa'],v['es']))==(v['fa'],v['es']),('currency name differs',k)
+CURRENCY=[[c,WB[c]['cont'],v['lvl'],[v['en'],v['fa'],v['es']],v['also']] for c,v in CUR.items()]
+bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;\nconst WORLD = %s;\nconst CURRENCY = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A,WORLD,CURRENCY))
 t=open('src/index.html').read()
 assert '/*__BANK__*/' in t and '/*__I18N__*/' in t
 page=t.replace('/*__BANK__*/',bank).replace('/*__I18N__*/',open('src/i18n.js').read())
@@ -86,7 +95,7 @@ about=f'''<main class="doc">{nav}<h1>About Brain Teasers Club</h1>
 <h2>How to play</h2>
 <p>Pick a difficulty and a mode. Each round is ten puzzles. Answer before the timer runs out: the faster you are, the more points you score, and consecutive correct answers raise your multiplier up to 2×. Run out of lives and the round ends early.</p>
 <p><strong>Odd One Out</strong> shows a grid of identical emoji with one look-alike hiding among them; tap it. <strong>Emoji Riddles</strong> spell out a movie, saying or word in emoji; pick the answer. <strong>Quick Logic</strong> has trick questions and number patterns. <strong>Animal Facts</strong> are surprising-but-true questions about the natural world. <strong>Random Mix</strong> and <strong>Custom Mix</strong> combine them.</p>
-<p>The <strong>World Quiz</strong> covers all 193 UN member states plus Vatican City: name the country from its flag, or name its capital city. Countries with a disputed or split capital, or whose capital shares the country's name, are left out of the capitals quiz.</p>
+<p>The <strong>World Quiz</strong> covers all 193 UN member states plus Vatican City: name the country from its flag, or name its capital city. Countries with a disputed, split or moving capital, or whose capital shares the country's name, are left out of the capitals quiz. There is also a <strong>Currencies</strong> quiz and <strong>Hangman</strong> with country and capital names.</p>
 <h2>Daily Challenge</h2>
 <p>Everyone in the world gets the same ten puzzles each day, always on Normal, with one attempt. Finish it to keep your streak alive. Every seventh day earns a streak freeze that covers one missed day.</p>
 <h2>Playing with friends</h2>
