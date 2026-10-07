@@ -1001,7 +1001,7 @@ const typeName=x=>isWorld(x)||WORLD_GAMES.includes(x)?t(x):t("t_"+x);
 function friendGame(ty){ty=ty||friendTypes();return WORLD_GAMES.includes(ty[0])?ty[0]:null}
 function makeRound(seed,rd,types,seen){const g=friendGame(types);
   if(g==="hangman")return wordPicks(shuffle(["hgc","hgc","hgc","hgk","hgk"],Math.random),rd,hangOK,seen);
-  if(g==="clues")return wordPicks(["clue","clue","clue","clue","clue"],rd,()=>true,seen).map(q=>({...q,options:clueOptions(q.data)}));
+  if(g==="clues")return wordPicks(["clue","clue","clue","clue","clue"],rd,q=>!!(curOf(q.data[0])||q.data[4]),seen).map(q=>({...q,options:clueOptions(q.data)}));
   return buildRound("live",seed,rd,types,seen)}
 function soloMode(){const ty=customTypes();return ty.length===langTypes().length?"mix":ty.length===1?ty[0]:"custom"}
 function startRound(mode,seed,d,typesOverride,prebuilt){
@@ -1267,17 +1267,26 @@ document.addEventListener("keydown",e=>{if($("hang").hidden||!H||e.ctrlKey||e.me
   if(H.done&&e.key==="Enter"){e.preventDefault();return hangNext()}if(e.key.length===1)hangGuess(hnorm(e.key))});
 
 /* ---------- COUNTRY CLUES (World Quiz) ----------
-   Five countries per round. Clues open one at a time, weakest first: currency, letters in the name, capital, flag.
-   Six options from the same continent. A wrong pick opens the next clue; a wrong pick with every clue open loses the
-   country. Points: 100 + 75 for each clue left closed, minus 50 for each wrong pick (at least 50). All clues come
-   from the checked World Quiz data. */
+   Five countries per round, six options from the same continent. Like other progressive-clue games, clues go from
+   vague to specific: currency and the capital's first letter come first, ordered by how many of the six options they
+   still leave open (vaguest first); then the capital, and the flag last as the most recognisable. Wrong options are
+   chosen to share the answer's currency (or capital initial) where possible, so the first clue rarely gives it away.
+   A wrong pick opens the next clue; a wrong pick with every clue open loses the country. Points: 100 + 75 for each
+   clue left closed, minus 50 for each wrong pick (at least 50). Clues never describe the name itself, since the options
+   are on screen. All clues come from the checked World Quiz data. */
 const CBY={};CURRENCY.forEach(r=>CBY[r[0]]=r);
-// Clues never describe the name itself (the options are on screen, so a letter count would give it away).
-function clueList(r){const out=[];if(CBY[r[0]])out.push({k:"clCur",v:wcur(CBY[r[0]][3][0])});
-  if(r[4]){const c=wcap(r[0]);out.push({k:"clCapL",v:c[0].toUpperCase()});out.push({k:"clCap",v:c})}
-  out.push({k:"clFlag",flag:r[0]});return out}
-function clueOptions(r){const out=[r[0]];for(const same of [true,false])for(const x of shuffle(WORLD,Math.random)){if(out.length>=6)break;
-  if((x[1]===r[1])!==same||out.includes(x[0]))continue;out.push(x[0])}return shuffle(out,Math.random)}
+const curOf=c=>CBY[c]?CBY[c][3][0]:null,capL=c=>WBY[c][4]?WBY[c][4][0][0]:null; // English, so both players share an order
+function clueList(r,opts){const c=r[0],first=[],out=[];opts=opts||[c];
+  const open=f=>opts.filter(o=>f(o)!==null&&f(o)===f(c)).length;
+  if(curOf(c))first.push({k:"clCur",v:wcur(curOf(c)),n:open(curOf)});
+  if(r[4])first.push({k:"clCapL",v:wcap(c)[0].toUpperCase(),n:open(capL)});
+  first.sort((a,b)=>b.n-a.n);out.push(...first);
+  if(r[4])out.push({k:"clCap",v:wcap(c)});
+  out.push({k:"clFlag",flag:c});return out}
+function clueOptions(r){const c=r[0],out=[c],pool=shuffle(WORLD.filter(x=>x[1]===r[1]&&x[0]!==c),Math.random),add=x=>{if(out.length<6&&!out.includes(x[0]))out.push(x[0])};
+  pool.filter(x=>curOf(c)&&curOf(x[0])===curOf(c)).slice(0,2).forEach(add);
+  if(out.length<3)pool.filter(x=>capL(c)&&capL(x[0])===capL(c)).slice(0,2).forEach(add);
+  pool.forEach(add);shuffle(WORLD,Math.random).forEach(add);return shuffle(out,Math.random)}
 let C=null;
 function startClues(mode,prebuilt,d){
   mode=mode||"clues";clearTimeout(nextT);clearInterval(timer);
@@ -1289,7 +1298,7 @@ function startClues(mode,prebuilt,d){
 }
 function cluesNext(){
   if(S.i>=S.list.length)return endRound();
-  const q=S.list[S.i];markSeen([q]);C={q,clues:clueList(q.data),shown:1,wrong:0,done:false,t0:Date.now()};
+  const q=S.list[S.i];markSeen([q]);C={q,clues:clueList(q.data,q.options),shown:1,wrong:0,done:false,t0:Date.now()};
   $("cQ").textContent=t("clQ");$("cCont").textContent=t("cont_"+q.data[1]);$("cHow").textContent=t("clHow");$("cProg").textContent=num((S.i+1)+"/"+S.list.length);
   $("cFb").textContent="";$("cFb").className="feedback";$("cNext").hidden=true;
   const box=$("cOpts");box.innerHTML="";

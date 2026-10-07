@@ -37,7 +37,8 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
   are never wrong options; sources in content/currency_sources.md; Zimbabwe, Sierra Leone, Afghanistan, Bolivia left
   out). Options never repeat a text in any language. Hangman (`startHangman`): 5 country/capital names per round in the
   player's language, 6 misses, untimed; accents ignored, ñ and Persian letters have keys.
-  Country Clues (`startClues`): 5 countries, clues opened weakest first (currency, capital's first letter, capital,
+  Country Clues (`startClues`): 5 countries, clues vague to specific (currency / capital initial ordered by how many
+  options they leave open, then capital, flag last; wrong options share the currency where possible; Bolivia skipped),
   flag; never anything about the name, since the 6 options are on screen), options from the same continent; a wrong
   pick opens the next clue. In Play with Friends → World Quiz, Hangman and Country Clues are chips that exclude the
   quiz types (`worldTypes`); they run in Pass & Play (`hpass`/`cpass`) and Live Match (`makeRound`, word lists packed
