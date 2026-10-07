@@ -55,7 +55,7 @@ svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke
 /* top bar (home) */
 .topline{display:flex;align-items:center;gap:8px}
 .logo{display:flex;align-items:center;gap:9px;background:none;border:0;padding:4px 0;font-family:var(--display);font-weight:var(--dw);font-size:1.05rem;letter-spacing:-.01em;margin-inline-end:auto;text-align:start}
-.logo .lb{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--accent);color:var(--accent-ink);font-size:1rem;flex:none}
+.logo .lb{display:block;width:32px;height:32px;border-radius:9px;flex:none}
 .logo:focus-visible{outline:3px solid var(--hi);outline-offset:3px;border-radius:10px}
 .langsel{background:var(--raised);color:var(--fg);border:var(--bw) solid var(--line);border-radius:10px;padding:6px 8px;font:inherit;font-size:.85rem;font-weight:600}
 .iconbtn{width:38px;height:38px;border-radius:10px;border:var(--bw) solid var(--line);background:var(--raised);display:grid;place-items:center;padding:0;flex:none}
@@ -223,6 +223,15 @@ html[lang="fa"] .hl{font-family:var(--body);text-transform:none}
 html[lang="fa"] .key{text-transform:none;font-size:1.1rem}
 .key.hit{background:var(--good-bg);border-color:var(--good)}.key.miss{background:var(--bad-bg);opacity:.55}.key:disabled{cursor:default}
 
+/* country clues */
+.clues{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.clues li{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);border:var(--bw) solid var(--line);border-radius:12px;padding:9px 14px;min-height:50px;animation:pop .25s ease-out}
+.clues li span{color:var(--muted);font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+html[lang="fa"] .clues li span{letter-spacing:0;font-size:.85rem}
+.clues li b{font-family:var(--display);font-weight:var(--dw);font-size:1.15rem;text-align:end}
+.clues li img{height:40px;aspect-ratio:4/3;border-radius:4px;border:1px solid var(--line);object-fit:cover}
+.choices.two{grid-template-columns:1fr 1fr}.choices.two .choice{padding:11px 12px;font-size:.95rem;text-align:center}
+
 /* play */
 .qcard{background:var(--raised);border:var(--bw) solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px}
 #qBody{display:flex;flex-direction:column;gap:14px}
@@ -278,7 +287,7 @@ footer a{white-space:nowrap;color:var(--muted)}
 <div class="app">
   <!-- HOME -->
   <section id="home" class="panel home">
-    <div class="topline"><button class="logo" id="aboutBtn" aria-label="About Brain Teasers Club" title="About"><span class="lb" aria-hidden="true">B</span><span>Brain Teasers Club</span></button><select class="langsel" id="langSel" aria-label="Language"><option value="en">English</option><option value="fa">فارسی</option><option value="es">Español</option></select><button class="iconbtn" id="themeBtn" aria-label="Theme"></button><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on"></button></div>
+    <div class="topline"><button class="logo" id="aboutBtn" aria-label="About Brain Teasers Club" title="About"><img class="lb" src="icon-192.png" alt="" width="30" height="30"><span>Brain Teasers Club</span></button><select class="langsel" id="langSel" aria-label="Language"><option value="en">English</option><option value="fa">فارسی</option><option value="es">Español</option></select><button class="iconbtn" id="themeBtn" aria-label="Theme"></button><button class="iconbtn" id="muteBtn" aria-pressed="true" aria-label="Sound on"></button></div>
     <h1 data-t="h1">How sharp are you today?</h1>
     <p class="muted" data-t="intro">Ten quick puzzles, a ticking clock and limited lives. Fast answers score more, and streaks multiply your points.</p>
     <button class="hero" data-mode="daily" id="dailyBtn">
@@ -325,6 +334,7 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="mode" data-mode="capitals"><span class="sw" style="--c:var(--t1)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5h17M6 20.5v-9M10 20.5v-9M14 20.5v-9M18 20.5v-9M3 11.5 12 5l9 6.5z"/></svg></span><span><b data-t="capitals">Capitals</b><small id="capsSub"></small></span></button>
       <button class="mode" data-mode="currency"><span class="sw" style="--c:var(--t3)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M14.8 9.2c-.6-.9-1.6-1.4-2.8-1.4-1.6 0-2.8.9-2.8 2.1 0 2.8 5.8 1.4 5.8 4.2 0 1.2-1.3 2.1-3 2.1-1.3 0-2.4-.6-3-1.5M12 6v1.8M12 16.2V18"/></svg></span><span><b data-t="currency">Currencies</b><small id="curSub"></small></span></button>
       <button class="mode" data-mode="hangman"><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h9M7 21V3.5h8V6"/><circle cx="15" cy="8.5" r="2.5"/><path d="M15 11v5M15 12.5l-2.5 2M15 12.5l2.5 2M15 16l-2 3M15 16l2 3"/></svg></span><span><b data-t="hangman">Hangman</b><small data-t="hangSub">Guess the country or capital letter by letter</small></span></button>
+      <button class="mode" data-mode="clues"><span class="sw" style="--c:var(--t4)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span><span><b data-t="clues">Country Clues</b><small data-t="cluesSub">Find the country from clues. Fewer clues, more points</small></span></button>
     </div>
     <div class="section-title"><span data-t="difficulty">Difficulty</span></div>
     <div class="seg diffSeg" role="group" aria-label="Difficulty">
@@ -342,6 +352,7 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="iconbtn" id="muteBtn3" aria-label="Toggle sound" style="width:34px;height:34px"></button>
     </div>
     <div class="qcard" style="margin-top:14px">
+      <p class="eyebrow" id="hWho" hidden></p>
       <p class="prompt" id="hHint"></p>
       <svg class="gallows" viewBox="0 0 120 130" aria-hidden="true"><path d="M10 124h60M28 124V8h52v14"/>
         <circle class="pt" cx="80" cy="33" r="11"/><path class="pt" d="M80 44v34"/><path class="pt" d="M80 53l-15 13"/><path class="pt" d="M80 53l15 13"/><path class="pt" d="M80 78l-13 22"/><path class="pt" d="M80 78l13 22"/></svg>
@@ -354,6 +365,25 @@ footer a{white-space:nowrap;color:var(--muted)}
     <button class="btn ghost" id="hQuit" style="margin-top:14px" data-t="quit">Quit round</button>
   </section>
 
+  <!-- COUNTRY CLUES -->
+  <section id="clues" hidden>
+    <div class="bar">
+      <div class="stat"><b id="cScore">0</b><span data-t="score">Score</span></div>
+      <div class="stat"><b id="cProg">1/5</b><span data-t="clCountry">Country</span></div>
+      <button class="iconbtn" id="muteBtn4" aria-label="Toggle sound" style="width:34px;height:34px"></button>
+    </div>
+    <div class="qcard" style="margin-top:14px">
+      <p class="eyebrow" id="cWho" hidden></p>
+      <p class="prompt" id="cQ"></p>
+      <ol class="clues" id="cList"></ol>
+      <button class="btn ghost" id="cMore"></button>
+      <div class="choices two" id="cOpts"></div>
+      <div class="feedback" id="cFb" aria-live="polite"></div>
+      <button class="btn" id="cNext" hidden></button>
+    </div>
+    <button class="btn ghost" id="cQuit" style="margin-top:14px" data-t="quit">Quit round</button>
+  </section>
+
   <!-- FRIENDS -->
   <section id="friends" class="panel" hidden>
     <p class="eyebrow" data-t="friends">Play with Friends</p>
@@ -362,6 +392,8 @@ footer a{white-space:nowrap;color:var(--muted)}
       <button class="mode" data-mode="duel"><span class="sw" style="--c:var(--t1)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6z"/></svg></span><span><b data-t="duel">Duel</b><small data-t="duelSub">One phone between you, face to face. First correct tap wins the point.</small></span></button>
       <button class="mode" data-mode="pass"><span class="sw" style="--c:var(--t3)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8.5h14l-3.5-3.5M20 15.5H6l3.5 3.5"/></svg></span><span><b data-t="pass">Pass &amp; Play</b><small data-t="passSub">Same phone, same 10 puzzles, take turns</small></span></button>
       <button class="mode" data-mode="live"><span class="sw" style="--c:var(--t4)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 11.5a10.5 10.5 0 0 1 15 0M7.8 14.8a6 6 0 0 1 8.4 0"/><circle cx="12" cy="18.5" r="1.3"/></svg></span><span><b data-t="live">Live Match</b><small data-t="liveSub">Each on your own phone, anywhere. Same puzzles at the same time, scores update live</small></span></button>
+      <button class="mode wonly" data-mode="hpass"><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21h9M7 21V3.5h8V6"/><circle cx="15" cy="8.5" r="2.5"/><path d="M15 11v5M15 12.5l-2.5 2M15 12.5l2.5 2M15 16l-2 3M15 16l2 3"/></svg></span><span><b data-t="hangman">Hangman</b><small data-t="twoSub">Same 5 puzzles, take turns on one phone</small></span></button>
+      <button class="mode wonly" data-mode="cpass"><span class="sw" style="--c:var(--t4)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span><span><b data-t="clues">Country Clues</b><small data-t="twoSub">Same 5 puzzles, take turns on one phone</small></span></button>
       <button class="mode" data-mode="challenge" hidden><span class="sw" style="--c:var(--t2)"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3A4 4 0 0 0 13 5.3l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><b data-t="chal">Challenge by Link</b><small data-t="chalSub">Each on your own phone, same puzzles, compare scores</small></span></button>
     </div>
     <div class="section-title"><span data-t="types">Puzzle types</span></div>
@@ -583,7 +615,7 @@ try{if(DIFF[localStorage.getItem("btc-diff")])diff=localStorage.getItem("btc-dif
 /* ---------- ROUND BUILDER ---------- */
 function seedFromString(k){let h=2166136261;for(const c of k){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
 // Bank rows carry a level (1 quick, 2 needs a moment, 3 tricky) and the date a puzzle was added.
-const LVL_AT={odd:2,emoji:5,logic:5,facts:5,flags:2,capitals:2,currency:2,hgc:2,hgk:2},ADDED_AT={odd:3,emoji:6,logic:6,facts:6};
+const LVL_AT={odd:2,emoji:5,logic:5,facts:5,flags:2,capitals:2,currency:2,hgc:2,hgk:2,clue:2},ADDED_AT={odd:3,emoji:6,logic:6,facts:6};
 // Puzzles per level in a 10-puzzle round, for each difficulty. The round runs from easier to harder.
 const LEVEL_MIX={easy:[7,3,0],normal:[3,5,2],hard:[1,5,4],impossible:[0,3,7]};
 // No-repeat picking. Each puzzle is keyed by type letter + bank index ("l12"); banks are append-only, so keys are stable.
@@ -617,9 +649,9 @@ function worldOptions(ty,r,rnd){const pool=BANKS[ty];
   for(const same of [true,false])for(const x of shuffle(pool,rnd)){if(out.length>=4)break;
     if((x[1]===r[1])!==same||out.includes(x[0]))continue;if(ty==="flags"&&out.some(c=>tooAlike(c,x[0])))continue;out.push(x[0])}
   return shuffle(out,rnd)}
-const BANKS={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS,flags:WORLD,capitals:CAPS,currency:CURRENCY,hgc:WORLD,hgk:CAPS};
+const BANKS={odd:ODD,emoji:EMOJI,logic:LOGIC,facts:FACTS,flags:WORLD,capitals:CAPS,currency:CURRENCY,hgc:WORLD,hgk:CAPS,clue:WORLD};
 const neighbours=(l,rd)=>l===1?[1,2]:l===3?[3,2]:rd==="easy"?[2,1]:rd==="normal"?[2,3,1]:[2,3];
-const QK={odd:"o",emoji:"e",logic:"l",facts:"f",flags:"F",capitals:"C",currency:"M",hgc:"N",hgk:"K"},qkey=(t,i)=>QK[t]+i;
+const QK={odd:"o",emoji:"e",logic:"l",facts:"f",flags:"F",capitals:"C",currency:"M",hgc:"N",hgk:"K",clue:"Q"},qkey=(t,i)=>QK[t]+i;
 function loadSeen(){try{const s=JSON.parse(localStorage.getItem("btc-seen")||"null");if(s&&s.m)return s}catch(e){}return{n:0,m:{}}}
 function markSeen(list){const s=loadSeen();for(const q of list){const i=BANKS[q.type].indexOf(q.data);if(i>=0)s.m[qkey(q.type,i)]=++s.n}
   try{localStorage.setItem("btc-seen",JSON.stringify(s))}catch(e){}}
@@ -801,7 +833,7 @@ function setTheme(v){const h=document.documentElement;
   const other=v==="dark"?"light":"dark",b=$("themeBtn");b.innerHTML=TH_ICON[other];b.title=t(other==="dark"?"toDark":"toLight");b.setAttribute("aria-label",b.title)}
 function setMuted(m){
   muted=m;try{localStorage.setItem("btc-mute",m?"1":"0")}catch(e){}
-  ["muteBtn","muteBtn2","muteBtn3"].forEach(id=>{const b=$(id);if(!b)return;b.innerHTML=m?ICON_OFF:ICON_ON;b.setAttribute("aria-pressed",m?"false":"true");b.setAttribute("aria-label",m?t("soundOff"):t("soundOn"))});
+  ["muteBtn","muteBtn2","muteBtn3","muteBtn4"].forEach(id=>{const b=$(id);if(!b)return;b.innerHTML=m?ICON_OFF:ICON_ON;b.setAttribute("aria-pressed",m?"false":"true");b.setAttribute("aria-label",m?t("soundOff"):t("soundOn"))});
 }
 
 /* ---------- XP + LEVELS ---------- */
@@ -879,7 +911,7 @@ const BANK_VER=(ODD.length+"."+EMOJI.length+"."+LOGIC.length+"."+FACTS.length+".
 
 /* ---------- STATE ---------- */
 const $=id=>document.getElementById(id);
-function modeName(m){return t({flags:"flags",capitals:"capitals",currency:"currency",hangman:"hangman",daily:"m_daily",odd:"t_odd",emoji:"t_emoji",logic:"t_logic",mix:"m_mix",custom:"m_custom",live:"live",facts:"t_facts",pass:"pass",duel:"duel",challenge:"m_challenge"}[m]||m)}
+function modeName(m){return t({flags:"flags",capitals:"capitals",currency:"currency",hangman:"hangman",hpass:"hangman",clues:"clues",cpass:"clues",daily:"m_daily",odd:"t_odd",emoji:"t_emoji",logic:"t_logic",mix:"m_mix",custom:"m_custom",live:"live",facts:"t_facts",pass:"pass",duel:"duel",challenge:"m_challenge"}[m]||m)}
 const dname=d=>t("d_"+(d||"normal"));
 // A puzzle in the current language. Options keep their English text as identity (answer checks, Live Match),
 // and opt() maps each to its translation; untranslated puzzles show in English.
@@ -888,6 +920,7 @@ function loc(q){const d=q.data;
   if(q.type==="capitals")return{q:t("capQ",{c:wname(d[0])}),a:wcap(d[0]),why:"",opt:wcap};
   if(q.type==="currency")return{q:t("curQ",{c:wname(d[0])}),a:wcur(d[3][0]),why:"",opt:wcur};
   if(q.type==="hgc"||q.type==="hgk")return{q:hangHint(q),a:hangWord(q),why:"",opt:x=>x};
+  if(q.type==="clue")return{q:t("clQ",{c:t("cont_"+d[1])}),a:wname(d[0]),why:"",opt:wname};
   const all=[d[1],...d[3]];let tr=null;
   if(LANG!=="en"&&TR[LANG]&&(q.type==="logic"||q.type==="facts"))tr=TR[LANG][q.type][BANKS[q.type].indexOf(d)]||null;
   if(!tr)return{q:d[0],a:d[1],why:d[4]||"",opt:o=>o};
@@ -896,7 +929,7 @@ function catName(q){return isWorld(q.type)?t(q.type):q.type==="facts"?t("c_"+q.d
 // The option value that counts as correct: country codes for the World Quiz, English answer text otherwise.
 const ansOf=q=>q.type==="currency"?q.data[3][0]:isWorld(q.type)?q.data[0]:q.data[1];
 // Which puzzles a language can use: Odd One Out always, Emoji Riddles only in English, others when translated.
-function avail(ty,i){return LANG==="en"||ty==="odd"||isWorld(ty)||ty==="hgc"||ty==="hgk"||(ty!=="emoji"&&!!(TR[LANG]&&TR[LANG][ty]&&TR[LANG][ty][i]))}
+function avail(ty,i){return LANG==="en"||ty==="odd"||isWorld(ty)||ty==="hgc"||ty==="hgk"||ty==="clue"||(ty!=="emoji"&&!!(TR[LANG]&&TR[LANG][ty]&&TR[LANG][ty][i]))}
 function availableCount(){let n=0;for(const ty of ["odd","emoji","logic","facts"])BANKS[ty].forEach((_,i)=>{if(avail(ty,i))n++});return n}
 function applyLang(){
   const h=document.documentElement;h.lang=LANG;h.dir=LANG==="fa"?"rtl":"ltr";
@@ -911,11 +944,12 @@ let pass=null;      // {names:[a,b], seed, scores:[], turn}
 let chal=null;      // {code, seed, fromLink}
 let duel=null;      // {names, scores:[a,b], log:[{winner,p:[..]}], list, i, state}
 let twoMode="pass";
+const isPass=m=>m==="pass"||m==="hpass"||m==="cpass";
 function loadBest(){try{return JSON.parse(localStorage.getItem("btc-best")||"{}")||{}}catch(e){return{}}}
 function saveBest(b){try{localStorage.setItem("btc-best",JSON.stringify(b))}catch(e){}}
 function overallBest(){const b=loadBest();return Math.max(0,...Object.values(b).map(Number))}
 
-const SCREENS=["home","world","hang","custom","friends","live","names","handoff","challenge","play","duelScreen","results"];
+const SCREENS=["home","world","hang","clues","custom","friends","live","names","handoff","challenge","play","duelScreen","results"];
 function show(id){if(id==="results"&&S&&S.list&&S.list.length)statDone();SCREENS.forEach(s=>$(s).hidden=s!==id);window.scrollTo(0,0);if(id==="home"&&pendingHash){pendingHash=null;readHash()}}
 
 function setDiff(d){
@@ -938,7 +972,7 @@ function worldTypes(){try{const v=JSON.parse(localStorage.getItem("btc-wtypes")|
 function friendTypes(){return fset()==="world"?worldTypes():customTypes()}
 function renderFriends(){const w=fset()==="world",wt=worldTypes();
   document.querySelectorAll("#fsetSeg button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.fset===fset()?"true":"false"));
-  $("worldChips").hidden=!w;document.querySelector(".chipsAll").hidden=w;
+  $("worldChips").hidden=!w;document.querySelectorAll(".wonly").forEach(b=>b.hidden=!w);document.querySelector(".chipsAll").hidden=w;
   document.querySelectorAll(".wchip").forEach(c=>c.setAttribute("aria-pressed",wt.includes(c.dataset.type)?"true":"false"))}
 const typeName=x=>isWorld(x)?t(x):t("t_"+x);
 function soloMode(){const ty=customTypes();return ty.length===langTypes().length?"mix":ty.length===1?ty[0]:"custom"}
@@ -1035,7 +1069,7 @@ function shareBase(){const u=new URL(location.href);u.hash="";u.search="";if(/br
 function endRound(){
   clearInterval(timer);
   // Pass & Play: after player 1, hand the phone over
-  if(S.mode==="pass"&&pass.turn===0){
+  if(isPass(S.mode)&&pass.turn===0){
     pass.scores=[S.score];pass.log1=S.log;pass.turn=1;
     $("handoffPrev").textContent=t("scored",{n:pass.names[0],s:S.score});
     $("handoffWho").textContent=pass.names[1];
@@ -1043,7 +1077,7 @@ function endRound(){
   }
   const baseUrl=shareBase();
   const dl=dname(S.diff||diff);
-  const two=S.mode==="pass"||S.mode==="duel"||S.mode==="live";
+  const two=isPass(S.mode)||S.mode==="duel"||S.mode==="live";
   let dailyNote="";
   if(S.mode==="daily"){const r=recordDaily(S.day,S.score,S.correct);dailyNote=r.isNewDay?(r.streak>1?t("dayStreak",{n:r.streak}):t("streakStarted"))+(r.earned?t("freezeEarned"):""):"";renderStreak();renderDaily()}
   $("emojiLine").hidden=two;$("xpRes").hidden=true;$("levelUp").hidden=true;
@@ -1060,9 +1094,9 @@ function endRound(){
     buildReview();$("reviewBtn").hidden=false;show("results");showAd();liveFinish();return;
   }
   if(two){
-    const names=S.mode==="pass"?pass.names:duel.names;
+    const names=isPass(S.mode)?pass.names:duel.names;
     let a,b,c1,c2,n1,n2;
-    if(S.mode==="pass"){pass.scores.push(S.score);[a,b]=pass.scores;c1=pass.log1.filter(e=>e.ok).length;n1=pass.log1.length;c2=S.correct;n2=S.i}
+    if(isPass(S.mode)){pass.scores.push(S.score);[a,b]=pass.scores;c1=pass.log1.filter(e=>e.ok).length;n1=pass.log1.length;c2=S.correct;n2=S.i}
     else{[a,b]=duel.scores;c1=duel.log.filter(e=>e.winner===0).length;c2=duel.log.filter(e=>e.winner===1).length;n1=n2=duel.log.length}
     const k2=S.mode==="duel"?"nWon":"nCorrect";showVs(names,[a,b],[t(k2,{c:c1,n:n1}),t(k2,{c:c2,n:n2})]);
     $("finalScore").textContent=a===b?t("tie"):"🏆";
@@ -1106,14 +1140,14 @@ function duelVerdict(i){
 }
 function verdict(e,who){
   if(!e)return '<span class="no">'+(who?esc(who)+": ":"")+t("notReached")+'</span>';
-  if(e.hang&&!e.ok)return '<span class="no">'+esc(t("hmNot",{w:e.given||""}))+'</span>';
+  if(e.hang&&!e.ok)return '<span class="no">'+esc(e.msg?t(e.msg):t("hmNot",{w:e.given||""}))+'</span>';
   if(e.ok)return '<span class="ok">'+(who?esc(who)+": ":"")+t("okSecs",{s:e.secs})+'</span>';
   return '<span class="no">'+(who?esc(who)+": ":"")+(e.timeout?t("ranOut"):esc(t("chose",{x:e.given||"?"})))+'</span>';
 }
 function expandLog(e){return e?{ok:!!e.ok,timeout:!!e.t,given:e.g,secs:e.s}:null}
 function buildReview(){
   const box=$("review");box.innerHTML="";box.hidden=true;$("reviewBtn").textContent=t("review");
-  const two=S.mode==="pass";
+  const two=isPass(S.mode);
   // Only puzzles this player actually reached are reviewed; the rest stay unseen so they can come up fresh later.
   const reached=i=>two?!!(pass.log1&&pass.log1[i]||S.log[i]):S.mode==="duel"?!!(duel&&duel.log[i]):!!S.log[i];
   S.list.forEach((q,i)=>{
@@ -1150,14 +1184,17 @@ const hangHint=q=>q.type==="hgc"?t("hmCountry",{c:t("cont_"+q.data[1])}):t("hmCa
 // Words whose longest part fits the phone width
 const hangOK=q=>hangWord(q).split(/[\s-]+/).every(w=>w.length<=13);
 let H=null;
-function startHangman(){
-  clearTimeout(nextT);clearInterval(timer);
-  const rd=diff,ctx={seen:loadSeen().m,today:new Set(),past:new Set()},used={hgc:new Set(),hgk:new Set()};
-  const kinds=shuffle(["hgc","hgc","hgc","hgk","hgk"],Math.random),list=[];
-  HMIX[rd].forEach((l,k)=>{const ty=kinds[k];for(let tries=0;tries<20;tries++){const [id]=pickFresh(ty,l,1,used[ty],Math.random,ctx,rd);if(id===undefined)break;
-    const q={type:ty,data:BANKS[ty][id]};if(hangOK(q)){list.push(q);break}}});
-  S={id:++roundId,mode:"hangman",diff:rd,day:todayKey(),list,i:0,score:0,streak:0,bestStreak:0,correct:0,lives:1,locked:false,log:[]};
-  $("hScore").textContent="0";show("hang");statRound("hangman");hangNext();
+function wordPicks(kinds,rd,ok){const ctx={seen:loadSeen().m,today:new Set(),past:new Set()},used={},list=[];
+  HMIX[rd].forEach((l,k)=>{const ty=kinds[k];used[ty]=used[ty]||new Set();for(let tries=0;tries<20;tries++){const [id]=pickFresh(ty,l,1,used[ty],Math.random,ctx,rd);if(id===undefined)break;
+    const q={type:ty,data:BANKS[ty][id]};if(ok(q)){list.push(q);break}}});return list}
+function whoTag(id,mode){const el=$(id);el.textContent=isPass(mode)?pass.names[pass.turn]:"";el.hidden=!isPass(mode)}
+function startHangman(mode,prebuilt){
+  mode=mode||"hangman";clearTimeout(nextT);clearInterval(timer);
+  const rd=diff,list=prebuilt||wordPicks(shuffle(["hgc","hgc","hgc","hgk","hgk"],Math.random),rd,hangOK);
+  if(mode==="hpass"&&!prebuilt)pass.list=list.slice();
+  whoTag("hWho",mode);
+  S={id:++roundId,mode,diff:rd,day:todayKey(),list,i:0,score:0,streak:0,bestStreak:0,correct:0,lives:1,locked:false,log:[]};
+  $("hScore").textContent="0";show("hang");statRound(mode);hangNext();
 }
 function hangNext(){
   if(S.i>=S.list.length)return endRound();
@@ -1200,6 +1237,64 @@ $("hNext").onclick=()=>hangNext();
 $("hQuit").onclick=()=>{H=null;S=null;show("home")};
 document.addEventListener("keydown",e=>{if($("hang").hidden||!H||e.ctrlKey||e.metaKey||e.altKey)return;
   if(H.done&&e.key==="Enter"){e.preventDefault();return hangNext()}if(e.key.length===1)hangGuess(hnorm(e.key))});
+
+/* ---------- COUNTRY CLUES (World Quiz) ----------
+   Five countries per round. Clues open one at a time, weakest first: currency, letters in the name, capital, flag.
+   Six options from the same continent. A wrong pick opens the next clue; a wrong pick with every clue open loses the
+   country. Points: 100 + 75 for each clue left closed, minus 50 for each wrong pick (at least 50). All clues come
+   from the checked World Quiz data. */
+const CBY={};CURRENCY.forEach(r=>CBY[r[0]]=r);
+function clueList(r){const out=[];if(CBY[r[0]])out.push({k:"clCur",v:wcur(CBY[r[0]][3][0])});
+  out.push({k:"clLen",v:num([...wname(r[0])].filter(c=>hkeys().includes(hnorm(c))).length)});
+  if(r[4])out.push({k:"clCap",v:wcap(r[0])});out.push({k:"clFlag",flag:r[0]});return out}
+function clueOptions(r){const out=[r[0]];for(const same of [true,false])for(const x of shuffle(WORLD,Math.random)){if(out.length>=6)break;
+  if((x[1]===r[1])!==same||out.includes(x[0]))continue;out.push(x[0])}return shuffle(out,Math.random)}
+let C=null;
+function startClues(mode,prebuilt){
+  mode=mode||"clues";clearTimeout(nextT);clearInterval(timer);
+  const rd=diff,list=prebuilt||wordPicks(["clue","clue","clue","clue","clue"],rd,()=>true).map(q=>({...q,options:clueOptions(q.data)}));
+  if(mode==="cpass"&&!prebuilt)pass.list=list.map(q=>({...q}));
+  whoTag("cWho",mode);
+  S={id:++roundId,mode,diff:rd,day:todayKey(),list,i:0,score:0,streak:0,bestStreak:0,correct:0,lives:1,locked:false,log:[]};
+  $("cScore").textContent="0";show("clues");statRound(mode);cluesNext();
+}
+function cluesNext(){
+  if(S.i>=S.list.length)return endRound();
+  const q=S.list[S.i];markSeen([q]);C={q,clues:clueList(q.data),shown:1,wrong:0,done:false,t0:Date.now()};
+  $("cQ").textContent=loc(q).q;$("cProg").textContent=num((S.i+1)+"/"+S.list.length);
+  $("cFb").textContent="";$("cFb").className="feedback";$("cNext").hidden=true;
+  const box=$("cOpts");box.innerHTML="";
+  q.options.forEach(c=>{const b=document.createElement("button");b.className="choice";b.dataset.v=c;b.textContent=wname(c);b.dir="auto";b.onclick=()=>cluePick(c,b);box.appendChild(b)});
+  cluesDraw();
+}
+function cluesDraw(){
+  const ol=$("cList");ol.innerHTML="";
+  C.clues.slice(0,C.done?C.clues.length:C.shown).forEach(c=>{const li=document.createElement("li");const lab=document.createElement("span");lab.textContent=t(c.k);li.appendChild(lab);
+    if(c.flag){const im=document.createElement("img");im.src=flagUrl(c.flag);im.alt="";li.appendChild(im)}else{const b=document.createElement("b");b.textContent=c.v;b.dir="auto";li.appendChild(b)}
+    ol.appendChild(li)});
+  const left=C.clues.length-C.shown;$("cMore").hidden=C.done||left<=0;$("cMore").textContent=t("clMore")+" (−"+num(75)+")";
+  C.clues.slice(C.shown).forEach(c=>{if(c.flag)new Image().src=flagUrl(c.flag)});
+}
+function clueMore(){if(!C||C.done||C.shown>=C.clues.length)return;C.shown++;SFX.tap();cluesDraw()}
+function cluePick(c,b){
+  if(!C||C.done)return;const q=C.q;
+  if(c===q.data[0]){C.done=true;b.classList.add("hit");
+    const pts=Math.round(Math.max(50,100+75*(C.clues.length-C.shown)-50*C.wrong)*DIFF[S.diff].mult);
+    S.score+=pts;S.correct++;S.streak++;S.bestStreak=Math.max(S.bestStreak,S.streak);
+    $("cFb").textContent=t("clGot",{p:num(pts)});$("cFb").className="feedback good";S.streak>=3?SFX.streak():SFX.good();
+    S.log.push({ok:true,timeout:false,hang:true,secs:((Date.now()-C.t0)/1000).toFixed(1)})}
+  else{C.wrong++;b.classList.add("miss");b.disabled=true;SFX.bad();buzz(40);
+    if(C.shown<C.clues.length){C.shown++}
+    else{C.done=true;S.streak=0;$("cFb").textContent=t("clLost",{w:wname(q.data[0])});$("cFb").className="feedback bad";SFX.timeout();
+      S.log.push({ok:false,timeout:false,hang:true,msg:"clNot",secs:((Date.now()-C.t0)/1000).toFixed(1)})}}
+  if(C.done){S.i++;$("cScore").textContent=S.score;
+    $("cOpts").querySelectorAll(".choice").forEach(x=>{x.disabled=true;if(x.dataset.v===q.data[0])x.classList.add("reveal")});
+    const nb=$("cNext");nb.textContent=S.i>=S.list.length?t("hmDone"):t("clNext");nb.hidden=false;nb.focus({preventScroll:true})}
+  cluesDraw();
+}
+$("cMore").onclick=clueMore;
+$("cNext").onclick=()=>cluesNext();
+$("cQuit").onclick=()=>{C=null;S=null;show("home")};
 
 /* ---------- DUEL ENGINE ---------- */
 let dTimer=null,duelT=null;
@@ -1505,13 +1600,15 @@ document.querySelectorAll(".mode,.hero").forEach(b=>b.onclick=()=>{
   if(m==="hangman")return startHangman();
   if(m==="live"){liveReset();liveUI("start");$("liveHint").textContent=t("liveHint");return show("live")}
   if(m==="friends")return show("friends");
-  if(m==="pass"||m==="duel"){twoMode=m;$("namesEyebrow").textContent=modeName(m);$("namesHint").textContent=m==="pass"?t("passHint"):t("duelHint");return show("names")}
+  if(m==="pass"||m==="duel"||m==="hpass"||m==="cpass"){twoMode=m;$("namesEyebrow").textContent=modeName(m);$("namesHint").textContent=m==="duel"?t("duelHint"):t("passHint");return show("names")}
+  if(m==="clues")return startClues();
   if(m==="challenge")return openChallenge(newCode(),false);
   startSoon(m);
 });
 $("startPass").onclick=()=>{
   const names=[$("name1").value.trim()||t("p1"),$("name2").value.trim()||t("p2")];
   if(twoMode==="duel")return startDuel(names);
+  if(twoMode==="hpass"||twoMode==="cpass"){pass={names:names.slice(),game:twoMode,scores:[],turn:0};return twoMode==="hpass"?startHangman("hpass"):startClues("cpass")}
   pass={names:names.slice(),seed:Math.floor(Math.random()*2**31),scores:[],turn:0};
   startRound("pass",pass.seed,null,friendTypes());
 };
@@ -1523,7 +1620,7 @@ $("startCustom").onclick=()=>startRound(soloMode());
 $("customBack").onclick=()=>show("home");
 $("worldBack").onclick=()=>show("home");
 $("friendsBack").onclick=()=>show("home");
-$("handoffGo").onclick=()=>startRound("pass",pass.seed,null,null,pass.list.map(q=>({...q})));
+$("handoffGo").onclick=()=>pass.game==="hpass"?startHangman("hpass",pass.list.slice()):pass.game==="cpass"?startClues("cpass",pass.list.map(q=>({...q}))):startRound("pass",pass.seed,null,null,pass.list.map(q=>({...q})));
 $("handoffCancel").onclick=()=>{S=null;show("home")};
 $("chBack").onclick=()=>{history.replaceState(null,"",location.pathname+location.search);show(chal&&chal.fromLink?"home":"friends")};
 $("chPlay").onclick=()=>startRound("challenge",chal.seed,chal.diff);
@@ -1537,6 +1634,8 @@ $("againBtn").onclick=()=>{
   if(S.mode==="challenge")return startRound("challenge",chal.seed,chal.diff);
   if(S.mode==="daily")return startRound("mix");
   if(S.mode==="hangman")return startHangman();
+  if(S.mode==="clues")return startClues();
+  if(S.mode==="hpass"||S.mode==="cpass"){pass.turn=0;pass.scores=[];return S.mode==="hpass"?startHangman("hpass"):startClues("cpass")}
   startRound(S.mode);
 };
 $("aboutBtn").onclick=()=>{$("aboutP2").textContent=t("aboutP2",{n:availableCount().toLocaleString("en-US")});const d=$("aboutDlg");if(d.showModal)d.showModal();else d.setAttribute("open","")};
@@ -1567,6 +1666,7 @@ matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>setThem
 $("muteBtn").onclick=()=>{setMuted(!muted);if(!muted)SFX.good()};
 $("muteBtn2").onclick=()=>setMuted(!muted);
 $("muteBtn3").onclick=()=>setMuted(!muted);
+$("muteBtn4").onclick=()=>setMuted(!muted);
 document.addEventListener("pointerdown",()=>{ac()},{once:true,capture:true});
 document.querySelectorAll(".mode,.btn,.hero").forEach(b=>b.addEventListener("click",()=>SFX.tap()));
 $("bestHome").textContent=overallBest();
