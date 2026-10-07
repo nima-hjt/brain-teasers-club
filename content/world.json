@@ -1,0 +1,2787 @@
+[
+{
+"c": "AF",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Afghanistan",
+"fa": "افغانستان",
+"es": "Afganistán"
+},
+"cap": {
+"en": "Kabul",
+"fa": "کابل",
+"es": "Kabul"
+}
+},
+{
+"c": "AL",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Albania",
+"fa": "آلبانی",
+"es": "Albania"
+},
+"cap": {
+"en": "Tirana",
+"fa": "تیرانا",
+"es": "Tirana"
+}
+},
+{
+"c": "DZ",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Algeria",
+"fa": "الجزایر",
+"es": "Argelia"
+},
+"cap": {
+"en": "Algiers",
+"fa": "الجزیره",
+"es": "Argel"
+}
+},
+{
+"c": "AD",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "Andorra",
+"fa": "آندورا",
+"es": "Andorra"
+}
+},
+{
+"c": "AO",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Angola",
+"fa": "آنگولا",
+"es": "Angola"
+},
+"cap": {
+"en": "Luanda",
+"fa": "لوآندا",
+"es": "Luanda"
+}
+},
+{
+"c": "AG",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Antigua and Barbuda",
+"fa": "آنتیگوا و باربودا",
+"es": "Antigua y Barbuda"
+},
+"cap": {
+"en": "St. John's",
+"fa": "سنت جانز",
+"es": "Saint John's"
+}
+},
+{
+"c": "AR",
+"cont": "SA",
+"lvl": 1,
+"n": {
+"en": "Argentina",
+"fa": "آرژانتین",
+"es": "Argentina"
+},
+"cap": {
+"en": "Buenos Aires",
+"fa": "بوئنوس آیرس",
+"es": "Buenos Aires"
+}
+},
+{
+"c": "AM",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Armenia",
+"fa": "ارمنستان",
+"es": "Armenia"
+},
+"cap": {
+"en": "Yerevan",
+"fa": "ایروان",
+"es": "Ereván"
+}
+},
+{
+"c": "AU",
+"cont": "OC",
+"lvl": 1,
+"n": {
+"en": "Australia",
+"fa": "استرالیا",
+"es": "Australia"
+},
+"cap": {
+"en": "Canberra",
+"fa": "کانبرا",
+"es": "Canberra"
+}
+},
+{
+"c": "AT",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Austria",
+"fa": "اتریش",
+"es": "Austria"
+},
+"cap": {
+"en": "Vienna",
+"fa": "وین",
+"es": "Viena"
+}
+},
+{
+"c": "AZ",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Azerbaijan",
+"fa": "جمهوری آذربایجان",
+"es": "Azerbaiyán"
+},
+"cap": {
+"en": "Baku",
+"fa": "باکو",
+"es": "Bakú"
+}
+},
+{
+"c": "BS",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Bahamas",
+"fa": "باهاما",
+"es": "Bahamas"
+},
+"cap": {
+"en": "Nassau",
+"fa": "ناسائو",
+"es": "Nasáu"
+}
+},
+{
+"c": "BH",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Bahrain",
+"fa": "بحرین",
+"es": "Baréin"
+},
+"cap": {
+"en": "Manama",
+"fa": "منامه",
+"es": "Manama"
+}
+},
+{
+"c": "BD",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Bangladesh",
+"fa": "بنگلادش",
+"es": "Bangladés"
+},
+"cap": {
+"en": "Dhaka",
+"fa": "داکا",
+"es": "Daca"
+}
+},
+{
+"c": "BB",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Barbados",
+"fa": "باربادوس",
+"es": "Barbados"
+},
+"cap": {
+"en": "Bridgetown",
+"fa": "بریج‌تاون",
+"es": "Bridgetown"
+}
+},
+{
+"c": "BY",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Belarus",
+"fa": "بلاروس",
+"es": "Bielorrusia"
+},
+"cap": {
+"en": "Minsk",
+"fa": "مینسک",
+"es": "Minsk"
+}
+},
+{
+"c": "BE",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Belgium",
+"fa": "بلژیک",
+"es": "Bélgica"
+},
+"cap": {
+"en": "Brussels",
+"fa": "بروکسل",
+"es": "Bruselas"
+}
+},
+{
+"c": "BZ",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Belize",
+"fa": "بلیز",
+"es": "Belice"
+},
+"cap": {
+"en": "Belmopan",
+"fa": "بلموپان",
+"es": "Belmopán"
+}
+},
+{
+"c": "BJ",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Benin",
+"fa": "بنین",
+"es": "Benín"
+}
+},
+{
+"c": "BT",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Bhutan",
+"fa": "بوتان",
+"es": "Bután"
+},
+"cap": {
+"en": "Thimphu",
+"fa": "تیمپو",
+"es": "Timbu"
+}
+},
+{
+"c": "BO",
+"cont": "SA",
+"lvl": 2,
+"n": {
+"en": "Bolivia",
+"fa": "بولیوی",
+"es": "Bolivia"
+}
+},
+{
+"c": "BA",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Bosnia and Herzegovina",
+"fa": "بوسنی و هرزگوین",
+"es": "Bosnia y Herzegovina"
+},
+"cap": {
+"en": "Sarajevo",
+"fa": "سارایوو",
+"es": "Sarajevo"
+}
+},
+{
+"c": "BW",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Botswana",
+"fa": "بوتسوانا",
+"es": "Botsuana"
+},
+"cap": {
+"en": "Gaborone",
+"fa": "گابورون",
+"es": "Gaborone"
+}
+},
+{
+"c": "BR",
+"cont": "SA",
+"lvl": 1,
+"n": {
+"en": "Brazil",
+"fa": "برزیل",
+"es": "Brasil"
+},
+"cap": {
+"en": "Brasília",
+"fa": "برازیلیا",
+"es": "Brasilia"
+}
+},
+{
+"c": "BN",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Brunei",
+"fa": "برونئی",
+"es": "Brunéi"
+},
+"cap": {
+"en": "Bandar Seri Begawan",
+"fa": "بندر سری بگاوان",
+"es": "Bandar Seri Begawan"
+}
+},
+{
+"c": "BG",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Bulgaria",
+"fa": "بلغارستان",
+"es": "Bulgaria"
+},
+"cap": {
+"en": "Sofia",
+"fa": "صوفیه",
+"es": "Sofía"
+}
+},
+{
+"c": "BF",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Burkina Faso",
+"fa": "بورکینافاسو",
+"es": "Burkina Faso"
+},
+"cap": {
+"en": "Ouagadougou",
+"fa": "واگادوگو",
+"es": "Uagadugú"
+}
+},
+{
+"c": "BI",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Burundi",
+"fa": "بوروندی",
+"es": "Burundi"
+}
+},
+{
+"c": "CV",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Cabo Verde",
+"fa": "کیپ ورد",
+"es": "Cabo Verde"
+},
+"cap": {
+"en": "Praia",
+"fa": "پرایا",
+"es": "Praia"
+}
+},
+{
+"c": "KH",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Cambodia",
+"fa": "کامبوج",
+"es": "Camboya"
+},
+"cap": {
+"en": "Phnom Penh",
+"fa": "پنوم پن",
+"es": "Nom Pen"
+}
+},
+{
+"c": "CM",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Cameroon",
+"fa": "کامرون",
+"es": "Camerún"
+},
+"cap": {
+"en": "Yaoundé",
+"fa": "یائونده",
+"es": "Yaundé"
+}
+},
+{
+"c": "CA",
+"cont": "NA",
+"lvl": 1,
+"n": {
+"en": "Canada",
+"fa": "کانادا",
+"es": "Canadá"
+},
+"cap": {
+"en": "Ottawa",
+"fa": "اتاوا",
+"es": "Ottawa"
+}
+},
+{
+"c": "CF",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Central African Republic",
+"fa": "جمهوری آفریقای مرکزی",
+"es": "República Centroafricana"
+},
+"cap": {
+"en": "Bangui",
+"fa": "بانگی",
+"es": "Bangui"
+}
+},
+{
+"c": "TD",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Chad",
+"fa": "چاد",
+"es": "Chad"
+},
+"cap": {
+"en": "N'Djamena",
+"fa": "انجامنا",
+"es": "Yamena"
+}
+},
+{
+"c": "CL",
+"cont": "SA",
+"lvl": 1,
+"n": {
+"en": "Chile",
+"fa": "شیلی",
+"es": "Chile"
+},
+"cap": {
+"en": "Santiago",
+"fa": "سانتیاگو",
+"es": "Santiago"
+}
+},
+{
+"c": "CN",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "China",
+"fa": "چین",
+"es": "China"
+},
+"cap": {
+"en": "Beijing",
+"fa": "پکن",
+"es": "Pekín"
+}
+},
+{
+"c": "CO",
+"cont": "SA",
+"lvl": 1,
+"n": {
+"en": "Colombia",
+"fa": "کلمبیا",
+"es": "Colombia"
+},
+"cap": {
+"en": "Bogotá",
+"fa": "بوگوتا",
+"es": "Bogotá"
+}
+},
+{
+"c": "KM",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Comoros",
+"fa": "کومور",
+"es": "Comoras"
+},
+"cap": {
+"en": "Moroni",
+"fa": "مورونی",
+"es": "Moroni"
+}
+},
+{
+"c": "CG",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Republic of the Congo",
+"fa": "جمهوری کنگو",
+"es": "República del Congo"
+},
+"cap": {
+"en": "Brazzaville",
+"fa": "برازاویل",
+"es": "Brazzaville"
+}
+},
+{
+"c": "CD",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "DR Congo",
+"fa": "جمهوری دموکراتیک کنگو",
+"es": "RD del Congo"
+},
+"cap": {
+"en": "Kinshasa",
+"fa": "کینشاسا",
+"es": "Kinsasa"
+}
+},
+{
+"c": "CR",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "Costa Rica",
+"fa": "کاستاریکا",
+"es": "Costa Rica"
+},
+"cap": {
+"en": "San José",
+"fa": "سن خوزه",
+"es": "San José"
+}
+},
+{
+"c": "CI",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Côte d'Ivoire",
+"fa": "ساحل عاج",
+"es": "Costa de Marfil"
+}
+},
+{
+"c": "HR",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Croatia",
+"fa": "کرواسی",
+"es": "Croacia"
+},
+"cap": {
+"en": "Zagreb",
+"fa": "زاگرب",
+"es": "Zagreb"
+}
+},
+{
+"c": "CU",
+"cont": "NA",
+"lvl": 1,
+"n": {
+"en": "Cuba",
+"fa": "کوبا",
+"es": "Cuba"
+},
+"cap": {
+"en": "Havana",
+"fa": "هاوانا",
+"es": "La Habana"
+}
+},
+{
+"c": "CY",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Cyprus",
+"fa": "قبرس",
+"es": "Chipre"
+},
+"cap": {
+"en": "Nicosia",
+"fa": "نیکوزیا",
+"es": "Nicosia"
+}
+},
+{
+"c": "CZ",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Czechia",
+"fa": "جمهوری چک",
+"es": "Chequia"
+},
+"cap": {
+"en": "Prague",
+"fa": "پراگ",
+"es": "Praga"
+}
+},
+{
+"c": "DK",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Denmark",
+"fa": "دانمارک",
+"es": "Dinamarca"
+},
+"cap": {
+"en": "Copenhagen",
+"fa": "کپنهاگ",
+"es": "Copenhague"
+}
+},
+{
+"c": "DJ",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Djibouti",
+"fa": "جیبوتی",
+"es": "Yibuti"
+}
+},
+{
+"c": "DM",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Dominica",
+"fa": "دومینیکا",
+"es": "Dominica"
+},
+"cap": {
+"en": "Roseau",
+"fa": "روزو",
+"es": "Roseau"
+}
+},
+{
+"c": "DO",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "Dominican Republic",
+"fa": "جمهوری دومینیکن",
+"es": "República Dominicana"
+},
+"cap": {
+"en": "Santo Domingo",
+"fa": "سانتو دومینگو",
+"es": "Santo Domingo"
+}
+},
+{
+"c": "EC",
+"cont": "SA",
+"lvl": 2,
+"n": {
+"en": "Ecuador",
+"fa": "اکوادور",
+"es": "Ecuador"
+},
+"cap": {
+"en": "Quito",
+"fa": "کیتو",
+"es": "Quito"
+}
+},
+{
+"c": "EG",
+"cont": "AF",
+"lvl": 1,
+"n": {
+"en": "Egypt",
+"fa": "مصر",
+"es": "Egipto"
+},
+"cap": {
+"en": "Cairo",
+"fa": "قاهره",
+"es": "El Cairo"
+}
+},
+{
+"c": "SV",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "El Salvador",
+"fa": "السالوادور",
+"es": "El Salvador"
+},
+"cap": {
+"en": "San Salvador",
+"fa": "سان سالوادور",
+"es": "San Salvador"
+}
+},
+{
+"c": "GQ",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Equatorial Guinea",
+"fa": "گینه استوایی",
+"es": "Guinea Ecuatorial"
+}
+},
+{
+"c": "ER",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Eritrea",
+"fa": "اریتره",
+"es": "Eritrea"
+},
+"cap": {
+"en": "Asmara",
+"fa": "اسمره",
+"es": "Asmara"
+}
+},
+{
+"c": "EE",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Estonia",
+"fa": "استونی",
+"es": "Estonia"
+},
+"cap": {
+"en": "Tallinn",
+"fa": "تالین",
+"es": "Tallin"
+}
+},
+{
+"c": "SZ",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Eswatini",
+"fa": "اسواتینی",
+"es": "Esuatini"
+}
+},
+{
+"c": "ET",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Ethiopia",
+"fa": "اتیوپی",
+"es": "Etiopía"
+},
+"cap": {
+"en": "Addis Ababa",
+"fa": "آدیس آبابا",
+"es": "Adís Abeba"
+}
+},
+{
+"c": "FJ",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Fiji",
+"fa": "فیجی",
+"es": "Fiyi"
+},
+"cap": {
+"en": "Suva",
+"fa": "سووا",
+"es": "Suva"
+}
+},
+{
+"c": "FI",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Finland",
+"fa": "فنلاند",
+"es": "Finlandia"
+},
+"cap": {
+"en": "Helsinki",
+"fa": "هلسینکی",
+"es": "Helsinki"
+}
+},
+{
+"c": "FR",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "France",
+"fa": "فرانسه",
+"es": "Francia"
+},
+"cap": {
+"en": "Paris",
+"fa": "پاریس",
+"es": "París"
+}
+},
+{
+"c": "GA",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Gabon",
+"fa": "گابن",
+"es": "Gabón"
+},
+"cap": {
+"en": "Libreville",
+"fa": "لیبرویل",
+"es": "Libreville"
+}
+},
+{
+"c": "GM",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Gambia",
+"fa": "گامبیا",
+"es": "Gambia"
+},
+"cap": {
+"en": "Banjul",
+"fa": "بانجول",
+"es": "Banjul"
+}
+},
+{
+"c": "GE",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Georgia",
+"fa": "گرجستان",
+"es": "Georgia"
+},
+"cap": {
+"en": "Tbilisi",
+"fa": "تفلیس",
+"es": "Tiflis"
+}
+},
+{
+"c": "DE",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Germany",
+"fa": "آلمان",
+"es": "Alemania"
+},
+"cap": {
+"en": "Berlin",
+"fa": "برلین",
+"es": "Berlín"
+}
+},
+{
+"c": "GH",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Ghana",
+"fa": "غنا",
+"es": "Ghana"
+},
+"cap": {
+"en": "Accra",
+"fa": "آکرا",
+"es": "Acra"
+}
+},
+{
+"c": "GR",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Greece",
+"fa": "یونان",
+"es": "Grecia"
+},
+"cap": {
+"en": "Athens",
+"fa": "آتن",
+"es": "Atenas"
+}
+},
+{
+"c": "GD",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Grenada",
+"fa": "گرنادا",
+"es": "Granada"
+},
+"cap": {
+"en": "St. George's",
+"fa": "سنت جورجز",
+"es": "Saint George's"
+}
+},
+{
+"c": "GT",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "Guatemala",
+"fa": "گواتمالا",
+"es": "Guatemala"
+}
+},
+{
+"c": "GN",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Guinea",
+"fa": "گینه",
+"es": "Guinea"
+},
+"cap": {
+"en": "Conakry",
+"fa": "کوناکری",
+"es": "Conakri"
+}
+},
+{
+"c": "GW",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Guinea-Bissau",
+"fa": "گینه بیسائو",
+"es": "Guinea-Bisáu"
+},
+"cap": {
+"en": "Bissau",
+"fa": "بیسائو",
+"es": "Bisáu"
+}
+},
+{
+"c": "GY",
+"cont": "SA",
+"lvl": 3,
+"n": {
+"en": "Guyana",
+"fa": "گویان",
+"es": "Guyana"
+},
+"cap": {
+"en": "Georgetown",
+"fa": "جورج‌تاون",
+"es": "Georgetown"
+}
+},
+{
+"c": "HT",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "Haiti",
+"fa": "هائیتی",
+"es": "Haití"
+},
+"cap": {
+"en": "Port-au-Prince",
+"fa": "پورتو پرنس",
+"es": "Puerto Príncipe"
+}
+},
+{
+"c": "VA",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Vatican City",
+"fa": "واتیکان",
+"es": "Vaticano"
+}
+},
+{
+"c": "HN",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Honduras",
+"fa": "هندوراس",
+"es": "Honduras"
+},
+"cap": {
+"en": "Tegucigalpa",
+"fa": "تگوسیگالپا",
+"es": "Tegucigalpa"
+}
+},
+{
+"c": "HU",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Hungary",
+"fa": "مجارستان",
+"es": "Hungría"
+},
+"cap": {
+"en": "Budapest",
+"fa": "بوداپست",
+"es": "Budapest"
+}
+},
+{
+"c": "IS",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Iceland",
+"fa": "ایسلند",
+"es": "Islandia"
+},
+"cap": {
+"en": "Reykjavík",
+"fa": "ریکیاویک",
+"es": "Reikiavik"
+}
+},
+{
+"c": "IN",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "India",
+"fa": "هند",
+"es": "India"
+},
+"cap": {
+"en": "New Delhi",
+"fa": "دهلی نو",
+"es": "Nueva Delhi"
+}
+},
+{
+"c": "ID",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Indonesia",
+"fa": "اندونزی",
+"es": "Indonesia"
+}
+},
+{
+"c": "IR",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Iran",
+"fa": "ایران",
+"es": "Irán"
+},
+"cap": {
+"en": "Tehran",
+"fa": "تهران",
+"es": "Teherán"
+}
+},
+{
+"c": "IQ",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Iraq",
+"fa": "عراق",
+"es": "Irak"
+},
+"cap": {
+"en": "Baghdad",
+"fa": "بغداد",
+"es": "Bagdad"
+}
+},
+{
+"c": "IE",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Ireland",
+"fa": "ایرلند",
+"es": "Irlanda"
+},
+"cap": {
+"en": "Dublin",
+"fa": "دوبلین",
+"es": "Dublín"
+}
+},
+{
+"c": "IL",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Israel",
+"fa": "اسرائیل",
+"es": "Israel"
+}
+},
+{
+"c": "IT",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Italy",
+"fa": "ایتالیا",
+"es": "Italia"
+},
+"cap": {
+"en": "Rome",
+"fa": "رم",
+"es": "Roma"
+}
+},
+{
+"c": "JM",
+"cont": "NA",
+"lvl": 1,
+"n": {
+"en": "Jamaica",
+"fa": "جامائیکا",
+"es": "Jamaica"
+},
+"cap": {
+"en": "Kingston",
+"fa": "کینگستون",
+"es": "Kingston"
+}
+},
+{
+"c": "JP",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Japan",
+"fa": "ژاپن",
+"es": "Japón"
+},
+"cap": {
+"en": "Tokyo",
+"fa": "توکیو",
+"es": "Tokio"
+}
+},
+{
+"c": "JO",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Jordan",
+"fa": "اردن",
+"es": "Jordania"
+},
+"cap": {
+"en": "Amman",
+"fa": "امان",
+"es": "Amán"
+}
+},
+{
+"c": "KZ",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Kazakhstan",
+"fa": "قزاقستان",
+"es": "Kazajistán"
+},
+"cap": {
+"en": "Astana",
+"fa": "آستانه",
+"es": "Astaná"
+}
+},
+{
+"c": "KE",
+"cont": "AF",
+"lvl": 1,
+"n": {
+"en": "Kenya",
+"fa": "کنیا",
+"es": "Kenia"
+},
+"cap": {
+"en": "Nairobi",
+"fa": "نایروبی",
+"es": "Nairobi"
+}
+},
+{
+"c": "KI",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Kiribati",
+"fa": "کیریباتی",
+"es": "Kiribati"
+},
+"cap": {
+"en": "South Tarawa",
+"fa": "تاراوای جنوبی",
+"es": "Tarawa Sur"
+}
+},
+{
+"c": "KP",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "North Korea",
+"fa": "کره شمالی",
+"es": "Corea del Norte"
+},
+"cap": {
+"en": "Pyongyang",
+"fa": "پیونگ‌یانگ",
+"es": "Pionyang"
+}
+},
+{
+"c": "KR",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "South Korea",
+"fa": "کره جنوبی",
+"es": "Corea del Sur"
+},
+"cap": {
+"en": "Seoul",
+"fa": "سئول",
+"es": "Seúl"
+}
+},
+{
+"c": "KW",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Kuwait",
+"fa": "کویت",
+"es": "Kuwait"
+}
+},
+{
+"c": "KG",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Kyrgyzstan",
+"fa": "قرقیزستان",
+"es": "Kirguistán"
+},
+"cap": {
+"en": "Bishkek",
+"fa": "بیشکک",
+"es": "Biskek"
+}
+},
+{
+"c": "LA",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Laos",
+"fa": "لائوس",
+"es": "Laos"
+},
+"cap": {
+"en": "Vientiane",
+"fa": "وینتیان",
+"es": "Vientián"
+}
+},
+{
+"c": "LV",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Latvia",
+"fa": "لتونی",
+"es": "Letonia"
+},
+"cap": {
+"en": "Riga",
+"fa": "ریگا",
+"es": "Riga"
+}
+},
+{
+"c": "LB",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Lebanon",
+"fa": "لبنان",
+"es": "Líbano"
+},
+"cap": {
+"en": "Beirut",
+"fa": "بیروت",
+"es": "Beirut"
+}
+},
+{
+"c": "LS",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Lesotho",
+"fa": "لسوتو",
+"es": "Lesoto"
+},
+"cap": {
+"en": "Maseru",
+"fa": "ماسرو",
+"es": "Maseru"
+}
+},
+{
+"c": "LR",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Liberia",
+"fa": "لیبریا",
+"es": "Liberia"
+},
+"cap": {
+"en": "Monrovia",
+"fa": "مونروویا",
+"es": "Monrovia"
+}
+},
+{
+"c": "LY",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Libya",
+"fa": "لیبی",
+"es": "Libia"
+},
+"cap": {
+"en": "Tripoli",
+"fa": "طرابلس",
+"es": "Trípoli"
+}
+},
+{
+"c": "LI",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "Liechtenstein",
+"fa": "لیختن‌اشتاین",
+"es": "Liechtenstein"
+},
+"cap": {
+"en": "Vaduz",
+"fa": "فادوتس",
+"es": "Vaduz"
+}
+},
+{
+"c": "LT",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Lithuania",
+"fa": "لیتوانی",
+"es": "Lituania"
+},
+"cap": {
+"en": "Vilnius",
+"fa": "ویلنیوس",
+"es": "Vilna"
+}
+},
+{
+"c": "LU",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Luxembourg",
+"fa": "لوکزامبورگ",
+"es": "Luxemburgo"
+}
+},
+{
+"c": "MG",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Madagascar",
+"fa": "ماداگاسکار",
+"es": "Madagascar"
+},
+"cap": {
+"en": "Antananarivo",
+"fa": "آنتاناناریوو",
+"es": "Antananarivo"
+}
+},
+{
+"c": "MW",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Malawi",
+"fa": "مالاوی",
+"es": "Malaui"
+},
+"cap": {
+"en": "Lilongwe",
+"fa": "لیلونگوه",
+"es": "Lilongüe"
+}
+},
+{
+"c": "MY",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Malaysia",
+"fa": "مالزی",
+"es": "Malasia"
+},
+"cap": {
+"en": "Kuala Lumpur",
+"fa": "کوالالامپور",
+"es": "Kuala Lumpur"
+}
+},
+{
+"c": "MV",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Maldives",
+"fa": "مالدیو",
+"es": "Maldivas"
+},
+"cap": {
+"en": "Malé",
+"fa": "ماله",
+"es": "Malé"
+}
+},
+{
+"c": "ML",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Mali",
+"fa": "مالی",
+"es": "Malí"
+},
+"cap": {
+"en": "Bamako",
+"fa": "باماکو",
+"es": "Bamako"
+}
+},
+{
+"c": "MT",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Malta",
+"fa": "مالت",
+"es": "Malta"
+},
+"cap": {
+"en": "Valletta",
+"fa": "والتا",
+"es": "La Valeta"
+}
+},
+{
+"c": "MH",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Marshall Islands",
+"fa": "جزایر مارشال",
+"es": "Islas Marshall"
+},
+"cap": {
+"en": "Majuro",
+"fa": "ماجورو",
+"es": "Majuro"
+}
+},
+{
+"c": "MR",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Mauritania",
+"fa": "موریتانی",
+"es": "Mauritania"
+},
+"cap": {
+"en": "Nouakchott",
+"fa": "نواکشوت",
+"es": "Nuakchot"
+}
+},
+{
+"c": "MU",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Mauritius",
+"fa": "موریس",
+"es": "Mauricio"
+},
+"cap": {
+"en": "Port Louis",
+"fa": "پورت لوئیس",
+"es": "Port Louis"
+}
+},
+{
+"c": "MX",
+"cont": "NA",
+"lvl": 1,
+"n": {
+"en": "Mexico",
+"fa": "مکزیک",
+"es": "México"
+}
+},
+{
+"c": "FM",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Micronesia",
+"fa": "میکرونزی",
+"es": "Micronesia"
+},
+"cap": {
+"en": "Palikir",
+"fa": "پالیکیر",
+"es": "Palikir"
+}
+},
+{
+"c": "MD",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "Moldova",
+"fa": "مولداوی",
+"es": "Moldavia"
+},
+"cap": {
+"en": "Chișinău",
+"fa": "کیشیناو",
+"es": "Chisináu"
+}
+},
+{
+"c": "MC",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Monaco",
+"fa": "موناکو",
+"es": "Mónaco"
+}
+},
+{
+"c": "MN",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Mongolia",
+"fa": "مغولستان",
+"es": "Mongolia"
+},
+"cap": {
+"en": "Ulaanbaatar",
+"fa": "اولان‌باتور",
+"es": "Ulán Bator"
+}
+},
+{
+"c": "ME",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "Montenegro",
+"fa": "مونته‌نگرو",
+"es": "Montenegro"
+},
+"cap": {
+"en": "Podgorica",
+"fa": "پودگوریتسا",
+"es": "Podgorica"
+}
+},
+{
+"c": "MA",
+"cont": "AF",
+"lvl": 1,
+"n": {
+"en": "Morocco",
+"fa": "مراکش",
+"es": "Marruecos"
+},
+"cap": {
+"en": "Rabat",
+"fa": "رباط",
+"es": "Rabat"
+}
+},
+{
+"c": "MZ",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Mozambique",
+"fa": "موزامبیک",
+"es": "Mozambique"
+},
+"cap": {
+"en": "Maputo",
+"fa": "ماپوتو",
+"es": "Maputo"
+}
+},
+{
+"c": "MM",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Myanmar",
+"fa": "میانمار",
+"es": "Birmania"
+},
+"cap": {
+"en": "Naypyidaw",
+"fa": "نی‌پی‌دو",
+"es": "Naipyidó"
+}
+},
+{
+"c": "NA",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Namibia",
+"fa": "نامیبیا",
+"es": "Namibia"
+},
+"cap": {
+"en": "Windhoek",
+"fa": "ویندهوک",
+"es": "Windhoek"
+}
+},
+{
+"c": "NR",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Nauru",
+"fa": "نائورو",
+"es": "Nauru"
+}
+},
+{
+"c": "NP",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Nepal",
+"fa": "نپال",
+"es": "Nepal"
+},
+"cap": {
+"en": "Kathmandu",
+"fa": "کاتماندو",
+"es": "Katmandú"
+}
+},
+{
+"c": "NL",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Netherlands",
+"fa": "هلند",
+"es": "Países Bajos"
+}
+},
+{
+"c": "NZ",
+"cont": "OC",
+"lvl": 1,
+"n": {
+"en": "New Zealand",
+"fa": "نیوزیلند",
+"es": "Nueva Zelanda"
+},
+"cap": {
+"en": "Wellington",
+"fa": "ولینگتون",
+"es": "Wellington"
+}
+},
+{
+"c": "NI",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Nicaragua",
+"fa": "نیکاراگوئه",
+"es": "Nicaragua"
+},
+"cap": {
+"en": "Managua",
+"fa": "ماناگوا",
+"es": "Managua"
+}
+},
+{
+"c": "NE",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Niger",
+"fa": "نیجر",
+"es": "Níger"
+},
+"cap": {
+"en": "Niamey",
+"fa": "نیامی",
+"es": "Niamey"
+}
+},
+{
+"c": "NG",
+"cont": "AF",
+"lvl": 1,
+"n": {
+"en": "Nigeria",
+"fa": "نیجریه",
+"es": "Nigeria"
+},
+"cap": {
+"en": "Abuja",
+"fa": "ابوجا",
+"es": "Abuya"
+}
+},
+{
+"c": "MK",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "North Macedonia",
+"fa": "مقدونیه شمالی",
+"es": "Macedonia del Norte"
+},
+"cap": {
+"en": "Skopje",
+"fa": "اسکوپیه",
+"es": "Skopie"
+}
+},
+{
+"c": "NO",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Norway",
+"fa": "نروژ",
+"es": "Noruega"
+},
+"cap": {
+"en": "Oslo",
+"fa": "اسلو",
+"es": "Oslo"
+}
+},
+{
+"c": "OM",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Oman",
+"fa": "عمان",
+"es": "Omán"
+},
+"cap": {
+"en": "Muscat",
+"fa": "مسقط",
+"es": "Mascate"
+}
+},
+{
+"c": "PK",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Pakistan",
+"fa": "پاکستان",
+"es": "Pakistán"
+},
+"cap": {
+"en": "Islamabad",
+"fa": "اسلام‌آباد",
+"es": "Islamabad"
+}
+},
+{
+"c": "PW",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Palau",
+"fa": "پالائو",
+"es": "Palaos"
+},
+"cap": {
+"en": "Ngerulmud",
+"fa": "نگرولمود",
+"es": "Ngerulmud"
+}
+},
+{
+"c": "PA",
+"cont": "NA",
+"lvl": 2,
+"n": {
+"en": "Panama",
+"fa": "پاناما",
+"es": "Panamá"
+}
+},
+{
+"c": "PG",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Papua New Guinea",
+"fa": "پاپوآ گینه نو",
+"es": "Papúa Nueva Guinea"
+},
+"cap": {
+"en": "Port Moresby",
+"fa": "پورت مورسبی",
+"es": "Port Moresby"
+}
+},
+{
+"c": "PY",
+"cont": "SA",
+"lvl": 2,
+"n": {
+"en": "Paraguay",
+"fa": "پاراگوئه",
+"es": "Paraguay"
+},
+"cap": {
+"en": "Asunción",
+"fa": "آسونسیون",
+"es": "Asunción"
+}
+},
+{
+"c": "PE",
+"cont": "SA",
+"lvl": 1,
+"n": {
+"en": "Peru",
+"fa": "پرو",
+"es": "Perú"
+},
+"cap": {
+"en": "Lima",
+"fa": "لیما",
+"es": "Lima"
+}
+},
+{
+"c": "PH",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Philippines",
+"fa": "فیلیپین",
+"es": "Filipinas"
+},
+"cap": {
+"en": "Manila",
+"fa": "مانیل",
+"es": "Manila"
+}
+},
+{
+"c": "PL",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Poland",
+"fa": "لهستان",
+"es": "Polonia"
+},
+"cap": {
+"en": "Warsaw",
+"fa": "ورشو",
+"es": "Varsovia"
+}
+},
+{
+"c": "PT",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Portugal",
+"fa": "پرتغال",
+"es": "Portugal"
+},
+"cap": {
+"en": "Lisbon",
+"fa": "لیسبون",
+"es": "Lisboa"
+}
+},
+{
+"c": "QA",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Qatar",
+"fa": "قطر",
+"es": "Catar"
+},
+"cap": {
+"en": "Doha",
+"fa": "دوحه",
+"es": "Doha"
+}
+},
+{
+"c": "RO",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Romania",
+"fa": "رومانی",
+"es": "Rumania"
+},
+"cap": {
+"en": "Bucharest",
+"fa": "بخارست",
+"es": "Bucarest"
+}
+},
+{
+"c": "RU",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Russia",
+"fa": "روسیه",
+"es": "Rusia"
+},
+"cap": {
+"en": "Moscow",
+"fa": "مسکو",
+"es": "Moscú"
+}
+},
+{
+"c": "RW",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Rwanda",
+"fa": "رواندا",
+"es": "Ruanda"
+},
+"cap": {
+"en": "Kigali",
+"fa": "کیگالی",
+"es": "Kigali"
+}
+},
+{
+"c": "KN",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Saint Kitts and Nevis",
+"fa": "سنت کیتس و نویس",
+"es": "San Cristóbal y Nieves"
+},
+"cap": {
+"en": "Basseterre",
+"fa": "باستر",
+"es": "Basseterre"
+}
+},
+{
+"c": "LC",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Saint Lucia",
+"fa": "سنت لوسیا",
+"es": "Santa Lucía"
+},
+"cap": {
+"en": "Castries",
+"fa": "کستریز",
+"es": "Castries"
+}
+},
+{
+"c": "VC",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Saint Vincent and the Grenadines",
+"fa": "سنت وینسنت و گرنادین",
+"es": "San Vicente y Granadinas"
+},
+"cap": {
+"en": "Kingstown",
+"fa": "کینگزتاون",
+"es": "Kingstown"
+}
+},
+{
+"c": "WS",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Samoa",
+"fa": "ساموآ",
+"es": "Samoa"
+},
+"cap": {
+"en": "Apia",
+"fa": "آپیا",
+"es": "Apia"
+}
+},
+{
+"c": "SM",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "San Marino",
+"fa": "سان مارینو",
+"es": "San Marino"
+}
+},
+{
+"c": "ST",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "São Tomé and Príncipe",
+"fa": "سائوتومه و پرنسیپ",
+"es": "Santo Tomé y Príncipe"
+}
+},
+{
+"c": "SA",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Saudi Arabia",
+"fa": "عربستان سعودی",
+"es": "Arabia Saudita"
+},
+"cap": {
+"en": "Riyadh",
+"fa": "ریاض",
+"es": "Riad"
+}
+},
+{
+"c": "SN",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Senegal",
+"fa": "سنگال",
+"es": "Senegal"
+},
+"cap": {
+"en": "Dakar",
+"fa": "داکار",
+"es": "Dakar"
+}
+},
+{
+"c": "RS",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Serbia",
+"fa": "صربستان",
+"es": "Serbia"
+},
+"cap": {
+"en": "Belgrade",
+"fa": "بلگراد",
+"es": "Belgrado"
+}
+},
+{
+"c": "SC",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Seychelles",
+"fa": "سیشل",
+"es": "Seychelles"
+},
+"cap": {
+"en": "Victoria",
+"fa": "ویکتوریا",
+"es": "Victoria"
+}
+},
+{
+"c": "SL",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Sierra Leone",
+"fa": "سیرالئون",
+"es": "Sierra Leona"
+},
+"cap": {
+"en": "Freetown",
+"fa": "فری‌تاون",
+"es": "Freetown"
+}
+},
+{
+"c": "SG",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Singapore",
+"fa": "سنگاپور",
+"es": "Singapur"
+}
+},
+{
+"c": "SK",
+"cont": "EU",
+"lvl": 2,
+"n": {
+"en": "Slovakia",
+"fa": "اسلواکی",
+"es": "Eslovaquia"
+},
+"cap": {
+"en": "Bratislava",
+"fa": "براتیسلاوا",
+"es": "Bratislava"
+}
+},
+{
+"c": "SI",
+"cont": "EU",
+"lvl": 3,
+"n": {
+"en": "Slovenia",
+"fa": "اسلوونی",
+"es": "Eslovenia"
+},
+"cap": {
+"en": "Ljubljana",
+"fa": "لیوبلیانا",
+"es": "Liubliana"
+}
+},
+{
+"c": "SB",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Solomon Islands",
+"fa": "جزایر سلیمان",
+"es": "Islas Salomón"
+},
+"cap": {
+"en": "Honiara",
+"fa": "هونیارا",
+"es": "Honiara"
+}
+},
+{
+"c": "SO",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Somalia",
+"fa": "سومالی",
+"es": "Somalia"
+},
+"cap": {
+"en": "Mogadishu",
+"fa": "موگادیشو",
+"es": "Mogadiscio"
+}
+},
+{
+"c": "ZA",
+"cont": "AF",
+"lvl": 1,
+"n": {
+"en": "South Africa",
+"fa": "آفریقای جنوبی",
+"es": "Sudáfrica"
+}
+},
+{
+"c": "SS",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "South Sudan",
+"fa": "سودان جنوبی",
+"es": "Sudán del Sur"
+},
+"cap": {
+"en": "Juba",
+"fa": "جوبا",
+"es": "Yuba"
+}
+},
+{
+"c": "ES",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Spain",
+"fa": "اسپانیا",
+"es": "España"
+},
+"cap": {
+"en": "Madrid",
+"fa": "مادرید",
+"es": "Madrid"
+}
+},
+{
+"c": "LK",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Sri Lanka",
+"fa": "سری‌لانکا",
+"es": "Sri Lanka"
+}
+},
+{
+"c": "SD",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Sudan",
+"fa": "سودان",
+"es": "Sudán"
+},
+"cap": {
+"en": "Khartoum",
+"fa": "خارطوم",
+"es": "Jartum"
+}
+},
+{
+"c": "SR",
+"cont": "SA",
+"lvl": 3,
+"n": {
+"en": "Suriname",
+"fa": "سورینام",
+"es": "Surinam"
+},
+"cap": {
+"en": "Paramaribo",
+"fa": "پاراماریبو",
+"es": "Paramaribo"
+}
+},
+{
+"c": "SE",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Sweden",
+"fa": "سوئد",
+"es": "Suecia"
+},
+"cap": {
+"en": "Stockholm",
+"fa": "استکهلم",
+"es": "Estocolmo"
+}
+},
+{
+"c": "CH",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Switzerland",
+"fa": "سوئیس",
+"es": "Suiza"
+},
+"cap": {
+"en": "Bern",
+"fa": "برن",
+"es": "Berna"
+}
+},
+{
+"c": "SY",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Syria",
+"fa": "سوریه",
+"es": "Siria"
+},
+"cap": {
+"en": "Damascus",
+"fa": "دمشق",
+"es": "Damasco"
+}
+},
+{
+"c": "TJ",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Tajikistan",
+"fa": "تاجیکستان",
+"es": "Tayikistán"
+},
+"cap": {
+"en": "Dushanbe",
+"fa": "دوشنبه",
+"es": "Dusambé"
+}
+},
+{
+"c": "TZ",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Tanzania",
+"fa": "تانزانیا",
+"es": "Tanzania"
+},
+"cap": {
+"en": "Dodoma",
+"fa": "دودوما",
+"es": "Dodoma"
+}
+},
+{
+"c": "TH",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Thailand",
+"fa": "تایلند",
+"es": "Tailandia"
+},
+"cap": {
+"en": "Bangkok",
+"fa": "بانکوک",
+"es": "Bangkok"
+}
+},
+{
+"c": "TL",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Timor-Leste",
+"fa": "تیمور شرقی",
+"es": "Timor Oriental"
+},
+"cap": {
+"en": "Dili",
+"fa": "دیلی",
+"es": "Dili"
+}
+},
+{
+"c": "TG",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Togo",
+"fa": "توگو",
+"es": "Togo"
+},
+"cap": {
+"en": "Lomé",
+"fa": "لومه",
+"es": "Lomé"
+}
+},
+{
+"c": "TO",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Tonga",
+"fa": "تونگا",
+"es": "Tonga"
+},
+"cap": {
+"en": "Nukuʻalofa",
+"fa": "نوکوآلوفا",
+"es": "Nukualofa"
+}
+},
+{
+"c": "TT",
+"cont": "NA",
+"lvl": 3,
+"n": {
+"en": "Trinidad and Tobago",
+"fa": "ترینیداد و توباگو",
+"es": "Trinidad y Tobago"
+},
+"cap": {
+"en": "Port of Spain",
+"fa": "پورت آو اسپین",
+"es": "Puerto España"
+}
+},
+{
+"c": "TN",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Tunisia",
+"fa": "تونس",
+"es": "Túnez"
+}
+},
+{
+"c": "TR",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Turkey",
+"fa": "ترکیه",
+"es": "Turquía"
+},
+"cap": {
+"en": "Ankara",
+"fa": "آنکارا",
+"es": "Ankara"
+}
+},
+{
+"c": "TM",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Turkmenistan",
+"fa": "ترکمنستان",
+"es": "Turkmenistán"
+},
+"cap": {
+"en": "Ashgabat",
+"fa": "عشق‌آباد",
+"es": "Asjabad"
+}
+},
+{
+"c": "TV",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Tuvalu",
+"fa": "تووالو",
+"es": "Tuvalu"
+},
+"cap": {
+"en": "Funafuti",
+"fa": "فونافوتی",
+"es": "Funafuti"
+}
+},
+{
+"c": "UG",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Uganda",
+"fa": "اوگاندا",
+"es": "Uganda"
+},
+"cap": {
+"en": "Kampala",
+"fa": "کامپالا",
+"es": "Kampala"
+}
+},
+{
+"c": "UA",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "Ukraine",
+"fa": "اوکراین",
+"es": "Ucrania"
+},
+"cap": {
+"en": "Kyiv",
+"fa": "کی‌یف",
+"es": "Kiev"
+}
+},
+{
+"c": "AE",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "United Arab Emirates",
+"fa": "امارات متحده عربی",
+"es": "Emiratos Árabes Unidos"
+},
+"cap": {
+"en": "Abu Dhabi",
+"fa": "ابوظبی",
+"es": "Abu Dabi"
+}
+},
+{
+"c": "GB",
+"cont": "EU",
+"lvl": 1,
+"n": {
+"en": "United Kingdom",
+"fa": "بریتانیا",
+"es": "Reino Unido"
+},
+"cap": {
+"en": "London",
+"fa": "لندن",
+"es": "Londres"
+}
+},
+{
+"c": "US",
+"cont": "NA",
+"lvl": 1,
+"n": {
+"en": "United States",
+"fa": "ایالات متحده",
+"es": "Estados Unidos"
+},
+"cap": {
+"en": "Washington, D.C.",
+"fa": "واشینگتن دی.سی.",
+"es": "Washington D. C."
+}
+},
+{
+"c": "UY",
+"cont": "SA",
+"lvl": 2,
+"n": {
+"en": "Uruguay",
+"fa": "اروگوئه",
+"es": "Uruguay"
+},
+"cap": {
+"en": "Montevideo",
+"fa": "مونته‌ویدئو",
+"es": "Montevideo"
+}
+},
+{
+"c": "UZ",
+"cont": "AS",
+"lvl": 3,
+"n": {
+"en": "Uzbekistan",
+"fa": "ازبکستان",
+"es": "Uzbekistán"
+},
+"cap": {
+"en": "Tashkent",
+"fa": "تاشکند",
+"es": "Taskent"
+}
+},
+{
+"c": "VU",
+"cont": "OC",
+"lvl": 3,
+"n": {
+"en": "Vanuatu",
+"fa": "وانواتو",
+"es": "Vanuatu"
+},
+"cap": {
+"en": "Port Vila",
+"fa": "پورت ویلا",
+"es": "Port Vila"
+}
+},
+{
+"c": "VE",
+"cont": "SA",
+"lvl": 2,
+"n": {
+"en": "Venezuela",
+"fa": "ونزوئلا",
+"es": "Venezuela"
+},
+"cap": {
+"en": "Caracas",
+"fa": "کاراکاس",
+"es": "Caracas"
+}
+},
+{
+"c": "VN",
+"cont": "AS",
+"lvl": 1,
+"n": {
+"en": "Vietnam",
+"fa": "ویتنام",
+"es": "Vietnam"
+},
+"cap": {
+"en": "Hanoi",
+"fa": "هانوی",
+"es": "Hanói"
+}
+},
+{
+"c": "YE",
+"cont": "AS",
+"lvl": 2,
+"n": {
+"en": "Yemen",
+"fa": "یمن",
+"es": "Yemen"
+},
+"cap": {
+"en": "Sana'a",
+"fa": "صنعا",
+"es": "Saná"
+}
+},
+{
+"c": "ZM",
+"cont": "AF",
+"lvl": 3,
+"n": {
+"en": "Zambia",
+"fa": "زامبیا",
+"es": "Zambia"
+},
+"cap": {
+"en": "Lusaka",
+"fa": "لوساکا",
+"es": "Lusaka"
+}
+},
+{
+"c": "ZW",
+"cont": "AF",
+"lvl": 2,
+"n": {
+"en": "Zimbabwe",
+"fa": "زیمبابوه",
+"es": "Zimbabue"
+},
+"cap": {
+"en": "Harare",
+"fa": "هراره",
+"es": "Harare"
+}
+}
+]

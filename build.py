@@ -23,7 +23,19 @@ for name,arr in (('emoji',E),('logic',L),('animals',A)):
 pairs=set()
 for c,o,*_ in O:
     k=frozenset([c,o]);assert k not in pairs,('dup odd',c,o);pairs.add(k)
-bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A))
+# World Quiz (flags + capitals): one row per country with its name and capital in every UI language.
+# A fixed set, so rows are not dated. Rows: [ISO code, continent, level, [en,fa,es] name, [en,fa,es] capital?].
+W=load('content/world.json')
+assert len({w['c'] for w in W})==len(W)
+for w in W:
+    assert w['lvl'] in (1,2,3) and w['cont'] in ('AF','AS','EU','NA','SA','OC'),w
+    for k in ('n','cap'):
+        if w.get(k): assert all(isinstance(w[k].get(l),str) and w[k][l] for l in ('en','fa','es')),w
+for l in ('en','fa','es'):
+    for k in ('n','cap'):
+        v=[w[k][l] for w in W if w.get(k)];assert len(v)==len(set(v)),('dup world',k,l)
+WORLD=[[w['c'],w['cont'],w['lvl'],[w['n'][l] for l in ('en','fa','es')]]+([[w['cap'][l] for l in ('en','fa','es')]] if w.get('cap') else []) for w in W]
+bank='const ODD = %s;\nconst EMOJI = %s;\nconst LOGIC = %s;\nconst FACTS = %s;\nconst WORLD = %s;'%tuple(json.dumps(x,ensure_ascii=False,separators=(',',':')) for x in (O,E,L,A,WORLD))
 t=open('src/index.html').read()
 assert '/*__BANK__*/' in t and '/*__I18N__*/' in t
 page=t.replace('/*__BANK__*/',bank).replace('/*__I18N__*/',open('src/i18n.js').read())
@@ -41,7 +53,7 @@ open('index.html','w').write(page)   # artifact version (claude.ai adds the skel
 # ---------- standalone site for hosting ----------
 SITE_NAME='Brain Teasers Club'
 SITE_URL='https://brainteasersclub.app'
-DESC='Quick brain-teaser quiz: odd one out, emoji riddles, logic and animal facts. Daily challenge, duel a friend, streaks.'
+DESC='Quick brain-teaser quiz: odd one out, emoji riddles, logic, animal facts, and flags and capitals of the world. Daily challenge, duel a friend, streaks.'
 os.makedirs('dist',exist_ok=True)
 def skeleton(title,body,desc=DESC,extra_head=''):
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
@@ -49,7 +61,7 @@ def skeleton(title,body,desc=DESC,extra_head=''):
      # one address only: www. and the Cloudflare project address forward to the main domain (path, query and #code kept)
      r'<script>if(/^(www\.brainteasersclub\.app|brainteasersclub-git\.pages\.dev)$/.test(location.hostname))location.replace("https://brainteasersclub.app"+location.pathname+location.search+location.hash)</script>'
      f'<title>{title}</title><meta name="description" content="{html.escape(desc)}">'
-     '<meta name="theme-color" content="#141430"><link rel="icon" href="icon.svg" type="image/svg+xml">'
+     '<meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)"><link rel="icon" href="icon.svg" type="image/svg+xml">'
      '<link rel="apple-touch-icon" href="icon-180.png"><link rel="manifest" href="manifest.webmanifest">'
      f'<meta property="og:title" content="{title}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:image" content="{SITE_URL}/og.png"><link rel="canonical" href="{SITE_URL}/"><meta name="twitter:card" content="summary_large_image">'
      '<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}body{margin:0}</style>'
@@ -74,6 +86,7 @@ about=f'''<main class="doc">{nav}<h1>About Brain Teasers Club</h1>
 <h2>How to play</h2>
 <p>Pick a difficulty and a mode. Each round is ten puzzles. Answer before the timer runs out: the faster you are, the more points you score, and consecutive correct answers raise your multiplier up to 2×. Run out of lives and the round ends early.</p>
 <p><strong>Odd One Out</strong> shows a grid of identical emoji with one look-alike hiding among them; tap it. <strong>Emoji Riddles</strong> spell out a movie, saying or word in emoji; pick the answer. <strong>Quick Logic</strong> has trick questions and number patterns. <strong>Animal Facts</strong> are surprising-but-true questions about the natural world. <strong>Random Mix</strong> and <strong>Custom Mix</strong> combine them.</p>
+<p>The <strong>World Quiz</strong> covers all 193 UN member states plus Vatican City: name the country from its flag, or name its capital city. Countries with a disputed or split capital, or whose capital shares the country's name, are left out of the capitals quiz.</p>
 <h2>Daily Challenge</h2>
 <p>Everyone in the world gets the same ten puzzles each day, always on Normal, with one attempt. Finish it to keep your streak alive. Every seventh day earns a streak freeze that covers one missed day.</p>
 <h2>Playing with friends</h2>
@@ -102,6 +115,7 @@ privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated
 <p>We use Google AdSense to show advertisements. Google and its partners may use cookies and similar technologies to serve ads based on your prior visits to this or other websites, and to measure ad performance. You can opt out of personalised advertising by visiting <a href="https://www.google.com/settings/ads">Google Ads Settings</a>, and learn how Google uses information from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>. Where required by law, you will be asked for consent before personalised ads are shown.</p>
 <h2>Hosting and logs</h2>
 <p>The site is served by a hosting provider that may record standard technical logs (such as IP address, browser type and pages requested) for security and performance. We do not use this data to identify you.</p>
+<p>The flag pictures in the World Quiz and the page fonts are loaded from public content networks (jsDelivr and Google Fonts). Like any website request, these receive standard technical information such as your IP address and browser type.</p>
 <h2>Analytics</h2>
 <p>We use Cloudflare Web Analytics to count visits and to see which pages are read and which websites (such as YouTube or a search engine) people arrive from. It does not use cookies or store anything on your device, and it does not identify individual visitors. See <a href="https://www.cloudflare.com/web-analytics/">Cloudflare Web Analytics</a> for details.</p>
 <h2>Children</h2>
@@ -126,7 +140,7 @@ open('dist/stats.html','w',encoding='utf-8').write(open('src/stats.html',encodin
 os.makedirs('dist/i18n',exist_ok=True)
 for f,tr in TRANS.items(): json.dump(tr,open('dist/i18n/'+f,'w',encoding='utf-8'),ensure_ascii=False,separators=(',',':'))
 open('dist/sw.js','w').write('''// Minimal offline cache: the game works without a connection once visited.
-const C="btc-v23";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
+const C="btc-v24";const FILES=["./","index.html","about.html","privacy.html","facts.html","manifest.webmanifest","icon.svg"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
 self.addEventListener("fetch",e=>{const u=new URL(e.request.url);if(u.origin!==location.origin)return;

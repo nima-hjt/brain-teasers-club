@@ -28,6 +28,14 @@ Companion to the YouTube channels Brain Teasers Club (@BrainTeasersClub) and Wil
   across languages; untranslated puzzles fall back to English. Emoji Riddles are English-only; other languages get
   their own Daily (4 odd, 3 logic, 3 facts). Persian is RTL with Vazirmatn and Persian digits (`num()`).
   When adding logic/facts puzzles, translate them too (or they stay English-only for those players).
+- World Quiz (home → World Quiz → Flags / Capitals): `content/world.json`, 193 UN members + Vatican City
+  ({c: ISO code, cont, lvl, n:{en,fa,es}, cap:{en,fa,es} or absent}). No capital question where the capital is disputed,
+  split, or shares the country's name. Injected as `WORLD`; types `flags` / `capitals` use the normal round engine
+  (levels, no-repeat keys `F<i>` / `C<i>`), options are country codes from the same continent, never two look-alike flags
+  (`LOOKALIKE`). Flags are SVGs from the flag-icons CDN on jsDelivr. Not in the Daily, Live Match or Challenge links.
+- Design system: tokens at the top of the stylesheet. Light = "Paper & Ink" (paper #f7f3ea, ink #16120d outlines, tile
+  colours yellow/pink/blue/green, Fraunces + Inter); dark mode = "Calm Night" (#0f1720, mint #3ee0b5, Space Grotesk).
+  Components use only the tokens; icons are inline line SVGs, no emoji as icons.
 - `tools/video/` — YouTube/Instagram video maker (see "Videos" below).
 - `soundboard.html` — sound audition page; the chosen set is in `SFX` in src/index.html.
 - `tools/mockdb.js` — offline emulator of Firebase RTDB REST + SSE for testing Live Match with two headless browsers.
