@@ -93,6 +93,8 @@ ready → play → results → rematch → disconnect.
 ## Videos (YouTube channels Brain Teasers + Wild Facts, Instagram, Facebook)
 - Owner's schedule: one Short daily at 6 pm, one long 16:9 video (~3 min) every 4 days at 12 pm. Not made for kids, no age
   restriction. Tracking links: /btc (Brain Teasers YouTube), /wildfacts, /fb, /ig (Instagram bio only).
+  Tracking links only where they are clickable (long-video descriptions, Facebook captions, channel profile links,
+  Instagram bio). Shorts descriptions and pinned comments are not clickable, so they show the plain brainteasersclub.app.
 - Finished videos go in `Downloads\brain-teasers-club-repo\Brain Teasers\` or `...\Wild Facts\` (named "Oct N - ..."). Never mix
   the two channels.
 - ALWAYS update the posting plans after making videos: `Brain Teasers\Posting Plan - Brain Teasers.docx` and

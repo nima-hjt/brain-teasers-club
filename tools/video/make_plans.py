@@ -14,10 +14,14 @@ def day(d): return datetime.date(2026, 10, d).strftime('%a %b %-d') if os.name !
 # ---------------- Brain Teasers ----------------
 BT_PIN = ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']
 BT_FOOT = ['', '🧠 Play 1,200+ free brain teasers (daily challenge, play with friends, no app):', BTC]
+# Links are not clickable in Shorts descriptions or comments, so Shorts show the plain, easy-to-type address.
+SITE = 'brainteasersclub.app'
+BT_FOOT_SHORT = ['', '🧠 Play 1,200+ free brain teasers at ' + SITE + ' (daily challenge, play with friends, no app)']
+BT_PIN_SHORT = ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: ' + SITE]
 def bt_short(d, file, title, hook, tags, hashtags, ig, playlist, related=None):
     related = related or ('Guess 20 Movies by Emoji (long video)' if d < 9 else 'Guess 20 Animals by Emoji (long video)')
-    return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + BT_FOOT + ['', '#shorts ' + hashtags],
-                tags=tags, playlist=playlist, category='Entertainment', related=related, pin=BT_PIN,
+    return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + BT_FOOT_SHORT + ['', '#shorts ' + hashtags],
+                tags=tags, playlist=playlist, category='Entertainment', related=related, pin=BT_PIN_SHORT,
                 ig=ig + ['', '🧠 1,200+ free brain teasers: link in bio', '', hashtags], ig_time='12:00 pm')
 def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
     chapters = [chapters] if isinstance(chapters, str) else chapters
@@ -81,18 +85,21 @@ BT = [
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
    ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Puzzle Videos', 'Guess 20 Words by Emoji (long video)'),
 ]
-BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
-           ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Riddles in 30 Seconds', ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
+BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', BT_PIN_SHORT),
+           ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Riddles in 30 Seconds', BT_PIN_SHORT)]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
 WF_TAIL = ['', '🐙 Follow for a new wild fact or quiz every day!', '🧠 More free quizzes and brain teasers: ' + WFL]
 WF_PIN_Q = ['How many did you get? Comment your score 👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']
 WF_PIN_F = ['Which fact surprised you most: 1, 2 or 3? 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']
+WF_TAIL_SHORT = ['', '🐙 Follow for a new wild fact or quiz every day!', '🧠 More free quizzes and brain teasers: ' + SITE]
+WF_PIN_Q_SHORT = ['How many did you get? Comment your score 👇', '🐙 New quiz every day. More free quizzes: ' + SITE]
+WF_PIN_F_SHORT = ['Which fact surprised you most: 1, 2 or 3? 👇', '🐙 A wild fact every day. More free quizzes: ' + SITE]
 def wf_short(d, file, title, hook, tags, hashtags, ig, facts=False, related=None, extra=None):
     related = related or ('Animal Quiz: 12 Questions Most Adults Get Wrong (long video)' if d < 11 else 'Ocean Quiz: 12 Questions (long video)')
-    return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + WF_TAIL + ['', '#shorts ' + hashtags],
-                tags=tags, playlist='Quiz Videos', category='Education', related=related, pin=WF_PIN_F if facts else WF_PIN_Q,
+    return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + WF_TAIL_SHORT + ['', '#shorts ' + hashtags],
+                tags=tags, playlist='Quiz Videos', category='Education', related=related, pin=WF_PIN_F_SHORT if facts else WF_PIN_Q_SHORT,
                 ig=ig + ['', '🐙 Follow @wildfactsquiz for a new one every day', '🧠 More free quizzes: link in bio', '', hashtags], ig_time='6:00 pm', extra=extra)
 def wf_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
     chapters = [chapters] if isinstance(chapters, str) else chapters
@@ -171,8 +178,8 @@ WF = [
 WF_DONE = [
  ('Wed Oct 7, 12:00 pm long (scheduled): General Knowledge Quiz: 12 Questions', ['How many did you get out of 12? 🧠👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 6:00 pm Short (scheduled): What Is a Group of Crows Called?', ['Did you know it? 🐦‍⬛ Comment below 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']),
- ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Animal Facts That Sound Fake', WF_PIN_F),
- ('Sun Oct 11, 6:00 pm Short (scheduled): 3 Space Facts Your Teacher Never Told You', WF_PIN_F),
+ ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Animal Facts That Sound Fake', WF_PIN_F_SHORT),
+ ('Sun Oct 11, 6:00 pm Short (scheduled): 3 Space Facts Your Teacher Never Told You', WF_PIN_F_SHORT),
  ('Sat Oct 3 long (posted): Animal Quiz: 12 Questions. Correction to post and pin (question 12: owls also have three eyelids)',
   ['Correction on question 12 🦉 Camels have three eyelids, but so do owls (and many other birds and reptiles). If you picked Owl, give yourself the point!', 'How many did you get out of 12? 👇']),
  ('Posted Shorts with made-up statistics in the title. Optional rename (Studio → Content → title):',
