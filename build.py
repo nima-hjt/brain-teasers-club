@@ -64,7 +64,9 @@ SITE_NAME='Brain Teasers Club'
 SITE_URL='https://brainteasersclub.app'
 DESC='Quick brain-teaser quiz: odd one out, emoji riddles, logic, animal facts, and flags and capitals of the world. Daily challenge, duel a friend, streaks.'
 os.makedirs('dist',exist_ok=True)
-def skeleton(title,body,desc=DESC,extra_head=''):
+# path: the page's own address for its canonical tag ('' = home page; None = no canonical, e.g. the 404 page).
+# The tracking copies (/btc, /fb, ...) keep the home page as canonical so search engines treat them as the game.
+def skeleton(title,body,desc=DESC,extra_head='',path=''):
     return ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
      '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
      # one address only: www. and the Cloudflare project address forward to the main domain (path, query and #code kept)
@@ -72,7 +74,7 @@ def skeleton(title,body,desc=DESC,extra_head=''):
      f'<title>{title}</title><meta name="description" content="{html.escape(desc)}">'
      '<meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)"><link rel="icon" href="icon.svg" type="image/svg+xml">'
      '<link rel="apple-touch-icon" href="icon-180.png"><link rel="manifest" href="manifest.webmanifest">'
-     f'<meta property="og:title" content="{title}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:image" content="{SITE_URL}/og.png"><link rel="canonical" href="{SITE_URL}/"><meta name="twitter:card" content="summary_large_image">'
+     f'<meta property="og:title" content="{title}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:image" content="{SITE_URL}/og.png">{'' if path is None else f'<link rel="canonical" href="{SITE_URL}/{path}">'}<meta name="twitter:card" content="summary_large_image">'
      '<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}body{margin:0}</style>'
      +extra_head+'</head><body>'+body+'</body></html>')
 game=page.replace('<title>Brain Teasers Club</title>','',1)
@@ -107,8 +109,8 @@ about=f'''<main class="doc">{nav}<h1>About Brain Teasers Club</h1>
 <p><a href="privacy.html">Privacy policy</a> · <a href="facts.html">Animal facts</a></p></main>'''
 notfound=f'''<main class="doc">{nav}<h1>Page not found</h1>
 <p>That page doesn't exist. <a href="./">Go back to the game</a>.</p></main>'''
-open('dist/404.html','w').write(skeleton('Not found · Brain Teasers Club',notfound,extra_head=head_extra))
-open('dist/about.html','w').write(skeleton('About · Brain Teasers Club',about,extra_head=head_extra))
+open('dist/404.html','w').write(skeleton('Not found · Brain Teasers Club',notfound,extra_head=head_extra,path=None))
+open('dist/about.html','w').write(skeleton('About · Brain Teasers Club',about,extra_head=head_extra,path='about'))
 
 privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated {today}</small></p>
 <p>Brain Teasers Club ("the game", "we") is a browser game. This page explains what information is handled when you play.</p>
@@ -133,14 +135,14 @@ privacy=f'''<main class="doc">{nav}<h1>Privacy Policy</h1><p><small>Last updated
 <p>If this policy changes, the new version will be posted here with an updated date.</p>
 <h2>Contact</h2>
 <p>Questions about this policy can be left as a comment on any <a href="https://www.youtube.com/@BrainTeasersClub">Brain Teasers Club</a> video.</p></main>'''
-open('dist/privacy.html','w').write(skeleton('Privacy Policy · Brain Teasers Club',privacy,'Privacy policy for the Brain Teasers Club quiz game.',head_extra))
+open('dist/privacy.html','w').write(skeleton('Privacy Policy · Brain Teasers Club',privacy,'Privacy policy for the Brain Teasers Club quiz game.',head_extra,path='privacy'))
 
 # facts page: 60 animal facts as readable content (why lines), without quiz framing
 import random
 rnd=random.Random(7);sample=rnd.sample(animals,60)
 items=''.join(f'<div class="fact"><b>{html.escape(f["q"])}</b><span style="color:var(--accent);font-weight:800">{html.escape(f["a"])}</span> — {html.escape(f["why"])}<br><small>{html.escape(f["cat"])}</small></div>' for f in sample if f.get('why'))
 facts=f'''<main class="doc">{nav}<h1>60 Surprising Animal Facts</h1><p>A selection of the checked facts behind the Animal Facts mode, from the <a href="https://www.youtube.com/@wildfactsdaily-q3z">Wild Facts</a> channel. Think you know them? <a href="./">Play the quiz</a>.</p>{items}<p><a href="about.html">About the game</a> · <a href="privacy.html">Privacy</a></p></main>'''
-open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain Teasers Club',facts,'Sixty checked, surprising animal facts from the Brain Teasers Club quiz.',head_extra))
+open('dist/facts.html','w').write(skeleton('60 Surprising Animal Facts · Brain Teasers Club',facts,'Sixty checked, surprising animal facts from the Brain Teasers Club quiz.',head_extra,path='facts'))
 
 # manifest, sw, robots, icon
 json.dump({"name":SITE_NAME,"short_name":"Brain Teasers","start_url":"./","display":"standalone","background_color":"#141430","theme_color":"#141430","description":DESC,
