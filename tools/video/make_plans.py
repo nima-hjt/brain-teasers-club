@@ -26,10 +26,6 @@ def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.', pin=pin)
 
 BT = [
- bt_short(7, 'Oct 7 - Find the Odd One Out 👀 #shorts.mp4', 'Find the Odd One Out 👀 Can Your Eyes Beat the Clock?',
-   '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
-   'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
-   ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], 'Puzzle Videos'),
  bt_short(8, 'Oct 8 - 3 Riddles in 30 Seconds 🧩 #shorts.mp4', '3 Riddles in 30 Seconds 🧩 Can You Solve Them All?',
    '3 riddles, 6 seconds each 🧩 How many did you get? Comment your score!',
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
@@ -95,7 +91,7 @@ BT = [
    'riddles, riddles with answers, brain teasers, riddle challenge, tricky riddles, quiz shorts, logic puzzles', '#riddles #brainteasers #riddlechallenge #quiz',
    ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Puzzle Videos', 'Guess 20 Words by Emoji (long video)'),
 ]
-BT_DONE = []
+BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
