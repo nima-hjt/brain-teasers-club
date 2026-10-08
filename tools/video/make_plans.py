@@ -13,10 +13,10 @@ def day(d): return datetime.date(2026, 10, d).strftime('%a %b %-d') if os.name !
 
 # ---------------- Brain Teasers ----------------
 BT_PIN = ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']
-BT_FOOT = ['', '🧠 Play 1,200+ free brain teasers (daily challenge, play with friends, no app):', BTC]
+BT_FOOT = ['', '🧠 Play 1,200+ free brain teasers (daily challenge, play with friends, no download needed):', BTC]
 # Links are not clickable in Shorts descriptions or comments, so Shorts show the plain, easy-to-type address.
 SITE = 'brainteasersclub.app'
-BT_FOOT_SHORT = ['', '🧠 Play 1,200+ free brain teasers at ' + SITE + ' (daily challenge, play with friends, no app)']
+BT_FOOT_SHORT = ['', '🧠 Play 1,200+ free brain teasers at ' + SITE + ' (daily challenge, play with friends, no download needed)']
 BT_PIN_SHORT = ['How many did you get? Comment your score 👇', '🧠 Play 1,200+ more free puzzles: ' + SITE]
 def bt_short(d, file, title, hook, tags, hashtags, ig, playlist, related=None):
     related = related or ('Guess 20 Movies by Emoji (long video)' if d < 9 else 'Guess 20 Animals by Emoji (long video)')
