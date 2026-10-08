@@ -35,8 +35,6 @@ def day(d): return datetime.date(2026, 10, d).strftime('%a %b %#d' if os.name ==
 R = [
  (7, '12:00 pm', 'Oct 7 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (7, '6:00 pm', 'Oct 7 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
- (8, '12:00 pm', 'Oct 8 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 No peeking!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
- (8, '6:00 pm', 'Oct 8 6pm - Kids vs Parents Animal Quiz 🐯.mp4', ['Kids vs parents 🐯 3 animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
  (9, '12:00 pm', 'Oct 9 12pm - Guess the Saying by Emoji 💬.mp4', ['Guess all 5 sayings from the emoji 💬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #idioms #guessthesaying #brainteaser'),
  (9, '6:00 pm', 'Oct 9 6pm - Bird Quiz 🦜.mp4', ['Bird quiz 🦜 5 questions, 3 seconds each! The last one is the hardest.', 'Comment your score 👇'], '#birdquiz #animalquiz #quiz #trivia'),
  (10, '12:00 pm', 'Oct 10 12pm - Find the Odd Letter 🔤.mp4', ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
