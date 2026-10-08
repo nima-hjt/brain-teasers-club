@@ -247,7 +247,7 @@ def build(path, title, intro, glance, videos, done, done_title, ig_note, playlis
         field(N('Show more → other'), 'Altered content: No  ·  Language: English  ·  Category: ' + v['category'] + '  ·  Comments: On')
         if v.get('related'): field(N('Related video (Shorts)'), v['related'])
         if v.get('endscreen'): field(N('End screen'), v['endscreen'])
-        field(N('Visibility'), 'Schedule → ' + day(v['d']) + ', 2026 · ' + v['time'])
+        field(N('Visibility'), 'Schedule → ' + day(v['d']) + ', 2026 · ' + v['time'] + ' · Time zone: (GMT-07:00) Vancouver')
         label(N('After it goes live: post this comment and pin it')); copy(v['pin'])
     doc = ('<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>' + ''.join(body) +
            '<w:sectPr><w:pgSz w:w="12240" w:h="15840"/><w:pgMar w:top="1000" w:right="1000" w:bottom="1000" w:left="1000" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr></w:body></w:document>')
