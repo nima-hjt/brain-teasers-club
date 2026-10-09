@@ -1,0 +1,162 @@
+{
+ "STARFISH": {
+  "title": "Starfish",
+  "file": "Starfish_montage.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Top left: Klaus Rassinger (Museum Wiesbaden)\nTop right: Katie Ahlfeld\nBottom rig",
+  "bytes": 407839,
+  "page": "https://commons.wikimedia.org/wiki/File:Starfish_montage.png"
+ },
+ "SEAHORSE": {
+  "title": "Seahorse",
+  "file": "Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Hans Hillewaert",
+  "bytes": 146927,
+  "page": "https://commons.wikimedia.org/wiki/File:Hippocampus_hippocampus_(on_Ascophyllum_nodosum).jpg"
+ },
+ "CATFISH": {
+  "title": "Catfish",
+  "file": "Siluriformes.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "authors of the images used: \n\nHalbsHännile\nThomsonmg2000\nGuillermo Enrique Terán",
+  "bytes": 1687816,
+  "page": "https://commons.wikimedia.org/wiki/File:Siluriformes.png"
+ },
+ "SWORDFISH": {
+  "title": "Swordfish",
+  "file": "Xiphias_gladius_Linnaeus,_1758_2599925021.jpg",
+  "license": "CC0",
+  "artist": "Naturalis Biodiversity Center",
+  "bytes": 26790,
+  "page": "https://commons.wikimedia.org/wiki/File:Xiphias_gladius_Linnaeus,_1758_2599925021.jpg"
+ },
+ "BULLFROG": {
+  "title": "American bullfrog",
+  "file": "North-American-bullfrog1.jpg",
+  "license": "CC BY-SA 2.5",
+  "artist": "Carl D. Howe",
+  "bytes": 228403,
+  "page": "https://commons.wikimedia.org/wiki/File:North-American-bullfrog1.jpg"
+ },
+ "HONEYBEE": {
+  "title": "Western honey bee",
+  "file": "Apis_mellifera_Western_honey_bee.jpg",
+  "license": "CC BY-SA 2.5",
+  "artist": "Andreas Trepte",
+  "bytes": 154205,
+  "page": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+ },
+ "LIONFISH": {
+  "title": "Red lionfish",
+  "file": "Pterois_volitans_Manado-e_edit.jpg",
+  "license": "CC BY 2.5",
+  "artist": "Photo by Jens Petersen, Edited by User:Olegiwit (cloned in part of fins) and Fir",
+  "bytes": 96519,
+  "page": "https://commons.wikimedia.org/wiki/File:Pterois_volitans_Manado-e_edit.jpg"
+ },
+ "REINDEER": {
+  "title": "Reindeer",
+  "file": "Reinbukken_på_frisk_grønt_beite._-_panoramio.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Are G Nilsen",
+  "bytes": 172436,
+  "page": "https://commons.wikimedia.org/wiki/File:Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg"
+ },
+ "SEA LION": {
+  "title": "California sea lion",
+  "file": "California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg",
+  "license": "CC BY 4.0",
+  "artist": "(c) Jonathan Eisen, some rights reserved (CC BY)",
+  "bytes": 133463,
+  "page": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg"
+ },
+ "TIGER SHARK": {
+  "title": "Tiger shark",
+  "file": "Tiger_shark.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Albert kok",
+  "bytes": 115873,
+  "page": "https://commons.wikimedia.org/wiki/File:Tiger_shark.jpg"
+ },
+ "HAMMERHEAD SHARK": {
+  "title": "Great hammerhead",
+  "file": "Great_hammerhead2.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Albert kok",
+  "bytes": 60238,
+  "page": "https://commons.wikimedia.org/wiki/File:Great_hammerhead2.jpg"
+ },
+ "KING CRAB": {
+  "title": "Red king crab",
+  "file": "Spider_crab.jpg",
+  "license": "Public domain",
+  "artist": "Dr. Roger Mann, VIMS",
+  "bytes": 102852,
+  "page": "https://commons.wikimedia.org/wiki/File:Spider_crab.jpg"
+ },
+ "BLUE WHALE": {
+  "title": "Blue whale",
+  "file": "Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
+  "license": "Public domain",
+  "artist": "NOAA Photo Library",
+  "bytes": 123264,
+  "page": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
+ },
+ "DOGFISH": {
+  "title": "Spiny dogfish",
+  "file": "Squalus_acanthias_stellwagen.jpg",
+  "license": "Public domain",
+  "artist": "Doug Costa, NOAA/SBNMS",
+  "bytes": 112134,
+  "page": "https://commons.wikimedia.org/wiki/File:Squalus_acanthias_stellwagen.jpg"
+ },
+ "KANGAROO RAT": {
+  "title": "Kangaroo rat",
+  "file": "Kangaroo-rat.jpg",
+  "license": "Public domain",
+  "artist": "",
+  "bytes": 65924,
+  "page": "https://commons.wikimedia.org/wiki/File:Kangaroo-rat.jpg"
+ },
+ "SEA COW": {
+  "title": "West Indian manatee",
+  "file": "Manatee_with_calf.PD_-_colour_corrected.jpg",
+  "license": "Public domain",
+  "artist": "Galen Rathbun",
+  "bytes": 131922,
+  "page": "https://commons.wikimedia.org/wiki/File:Manatee_with_calf.PD_-_colour_corrected.jpg"
+ },
+ "ZEBRAFISH": {
+  "title": "Zebrafish",
+  "file": "Zebrafisch.jpg",
+  "license": "Copyrighted free use",
+  "artist": "Azul",
+  "bytes": 100649,
+  "page": "https://commons.wikimedia.org/wiki/File:Zebrafisch.jpg"
+ },
+ "GHOST CRAB": {
+  "title": "Ghost crab",
+  "file": "Ocypode-ceratophthalma-horned-ghost-crab-krabi-thailand.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Rushenb",
+  "bytes": 100582,
+  "page": "https://commons.wikimedia.org/wiki/File:Ocypode-ceratophthalma-horned-ghost-crab-krabi-thailand.jpg"
+ },
+ "FROGFISH": {
+  "title": "Frogfish",
+  "file": "Antennarius_striatus_(8492976355).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Christian Gloor from Wakatobi Dive Resort, Indonesia",
+  "bytes": 178703,
+  "page": "https://commons.wikimedia.org/wiki/File:Antennarius_striatus_(8492976355).jpg"
+ },
+ "DEER MOUSE": {
+  "title": "Deer mouse",
+  "file": "Deer_Mouse_(Peromyscus_maniculatus)_(9310532204).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "Seney Natural History Association",
+  "bytes": 163371,
+  "page": "https://commons.wikimedia.org/wiki/File:Deer_Mouse_(Peromyscus_maniculatus)_(9310532204).jpg"
+ }
+}

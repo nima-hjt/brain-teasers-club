@@ -23,11 +23,21 @@ def bt_short(d, file, title, hook, tags, hashtags, ig, playlist, related=None):
     return dict(d=d, time='6:00 pm', kind='Short', file=file, title=title + ' #shorts', desc=[hook] + BT_FOOT_SHORT + ['', '#shorts ' + hashtags],
                 tags=tags, playlist=playlist, category='Entertainment', related=related, pin=BT_PIN_SHORT,
                 ig=ig + ['', '🧠 1,200+ free brain teasers: link in bio', '', hashtags], ig_time='12:00 pm')
-def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
+def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin, credits=()):
     chapters = [chapters] if isinstance(chapters, str) else chapters
     return dict(d=d, time='12:00 pm', kind='Long video (16:9)', file=file, thumb=thumb, title=title,
-                desc=[hook, ''] + chapters + BT_FOOT + ['', hashtags], tags=tags, playlist='Puzzle Videos', category='Entertainment',
+                desc=[hook, ''] + chapters + BT_FOOT + ([''] + list(credits) if credits else []) + ['', hashtags], tags=tags, playlist='Puzzle Videos', category='Entertainment',
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.', pin=pin)
+
+# Animal photos in the Oct 9 long video (Wikimedia Commons; sources in .new/vid/animals_img/sources.json)
+ANIMAL_CREDITS = ['📷 Animal photos from Wikimedia Commons:',
+  'Starfish: Katie Ahlfeld (CC BY-SA 4.0) · Seahorse: Hans Hillewaert (CC BY-SA 4.0) · Catfish: HalbsHännile, Thomsonmg2000, Guillermo Enrique Terán (CC BY-SA 4.0) · '
+  'Swordfish: Naturalis Biodiversity Center (CC0) · Bullfrog: Carl D. Howe (CC BY-SA 2.5) · Honey bee: Andreas Trepte (CC BY-SA 2.5) · '
+  'Lionfish: Jens Petersen (CC BY 2.5) · Reindeer: Are G Nilsen (CC BY-SA 3.0) · Sea lion: Jonathan Eisen (CC BY 4.0) · '
+  'Tiger shark, hammerhead shark: Albert kok (CC BY-SA 3.0 / 4.0) · King crab: Roger Mann, VIMS (public domain) · '
+  'Blue whale: NOAA (public domain) · Dogfish: Doug Costa, NOAA (public domain) · Kangaroo rat: public domain · '
+  'Manatee: Galen Rathbun (public domain) · Zebrafish: Azul (free use) · Ghost crab: Rushenb (CC BY-SA 3.0) · '
+  'Frogfish: Christian Gloor (CC BY 2.0) · Deer mouse: Seney Natural History Association (CC BY-SA 2.0)']
 
 BT = [
  bt_long(9, 'Guess 20 Animals by Emoji - Easy to Hard (long, Oct 9).mp4', 'Guess 20 Animals by Emoji - thumbnail.png',
@@ -35,7 +45,7 @@ BT = [
    'Two emoji make one animal 🐾 Can you guess all 20? It starts easy and gets harder every round. Keep score and comment how many you got!',
    ['0:00 Intro', '0:07 Round 1: Easy', '1:04 Round 2: Medium', '2:02 Round 3: Hard', '2:53 Your score'],
    'emoji quiz, guess the animal, animal quiz, emoji challenge, brain teasers, animal riddles, quiz, trivia', '#emojiquiz #animalquiz #guesstheanimal',
-   ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
+   ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'], ANIMAL_CREDITS),
  bt_short(9, 'Oct 9 - Guess the Saying by Emoji 💬 #shorts.mp4', 'Guess the Saying by Emoji 💬 3 Seconds Each',
    'Can you guess all 5 sayings from the emoji? 💬 Comment your score!',
    'guess the saying by emoji, emoji quiz, idioms quiz, english idioms, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #idioms #guessthesaying #quiz',
