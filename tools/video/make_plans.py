@@ -40,12 +40,6 @@ ANIMAL_CREDITS = ['📷 Animal photos from Wikimedia Commons:',
   'Frogfish: Christian Gloor (CC BY 2.0) · Deer mouse: Seney Natural History Association (CC BY-SA 2.0)']
 
 BT = [
- bt_long(9, 'Guess 20 Animals by Emoji - Easy to Hard (long, Oct 9).mp4', 'Guess 20 Animals by Emoji - thumbnail.png',
-   'Guess 20 Animals by Emoji 🐾 Emoji + Emoji = Animal | Easy to Hard',
-   'Two emoji make one animal 🐾 Can you guess all 20? It starts easy and gets harder every round. Keep score and comment how many you got!',
-   ['0:00 Intro', '0:07 Round 1: Easy', '1:04 Round 2: Medium', '2:02 Round 3: Hard', '2:53 Your score'],
-   'emoji quiz, guess the animal, animal quiz, emoji challenge, brain teasers, animal riddles, quiz, trivia', '#emojiquiz #animalquiz #guesstheanimal',
-   ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'], ANIMAL_CREDITS),
  bt_short(9, 'Oct 9 - Guess the Saying by Emoji 💬 #shorts.mp4', 'Guess the Saying by Emoji 💬 3 Seconds Each',
    'Can you guess all 5 sayings from the emoji? 💬 Comment your score!',
    'guess the saying by emoji, emoji quiz, idioms quiz, english idioms, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #idioms #guessthesaying #quiz',
@@ -102,7 +96,8 @@ BT = [
    ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Puzzle Videos', 'Guess 20 Words by Emoji (long video)'),
 ]
 BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', BT_PIN_SHORT),
-           ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Riddles in 30 Seconds', BT_PIN_SHORT)]
+           ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Riddles in 30 Seconds', BT_PIN_SHORT),
+           ('Fri Oct 9, 12:00 pm long (scheduled): Guess 20 Animals by Emoji', ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
@@ -124,10 +119,6 @@ def wf_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.')
 CH = lambda times: ['0:00 Intro'] + [f'{t} Question {i+1}' for i, t in enumerate(times[:-1])] + [times[-1] + ' Your score']
 WF = [
- wf_short(9, 'Oct 9 - Bird Quiz 3 Seconds Each 🦜 #shorts.mp4', 'Bird Quiz: 3 Seconds Each 🦜',
-   '5 bird questions, 3 seconds each 🦜 The last one is the hardest. Comment your score!',
-   'bird quiz, animal quiz, bird facts, quiz shorts, trivia, general knowledge, hummingbird, owl, albatross', '#birdquiz #animalquiz #quiz #trivia',
-   ['Bird quiz 🦜 5 questions, 3 seconds each!', 'The last one is the hardest. Comment your score 👇']),
  wf_short(10, 'Oct 10 - 3 Bug Facts That Sound Fake 🐜 #shorts.mp4', '3 Bug Facts That Sound Fake (But Are True) 🐜',
    'Ants have no lungs, a headless cockroach, and the best hunter in the insect world 🐜 Which one surprised you most?',
    'bug facts, insect facts, animal facts, facts you didn\'t know, did you know, weird facts, ants, cockroach, dragonfly', '#animalfacts #insects #didyouknow #facts',
@@ -195,6 +186,7 @@ WF_DONE = [
  ('Wed Oct 7, 12:00 pm long (scheduled): General Knowledge Quiz: 12 Questions', ['How many did you get out of 12? 🧠👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 6:00 pm Short (scheduled): What Is a Group of Crows Called?', ['Did you know it? 🐦‍⬛ Comment below 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Animal Facts That Sound Fake', WF_PIN_F_SHORT),
+ ('Fri Oct 9, 6:00 pm Short (scheduled): Bird Quiz: 3 Seconds Each', WF_PIN_Q_SHORT),
  ('Sun Oct 11, 6:00 pm Short (scheduled): 3 Space Facts Your Teacher Never Told You', WF_PIN_F_SHORT),
  ('Sat Oct 3 long (posted): Animal Quiz: 12 Questions. Correction to post and pin (question 12: owls also have three eyelids)',
   ['Correction on question 12 🦉 Camels have three eyelids, but so do owls (and many other birds and reptiles). If you picked Owl, give yourself the point!', 'How many did you get out of 12? 👇']),
