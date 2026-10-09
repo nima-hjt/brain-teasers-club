@@ -275,11 +275,12 @@
    {
     "common": "dbdb",
     "odd": "dbbd",
-    "cols": 4,
-    "rows": 9,
-    "pos": 29,
+    "cols": 3,
+    "rows": 7,
+    "pos": 15,
     "cap": "Level three: almost impossible",
-    "a": "FOUND IT!"
+    "a": "FOUND IT!",
+    "wide": true
    }
   ],
   "lines": {

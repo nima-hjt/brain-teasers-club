@@ -40,13 +40,13 @@ function drawRiddle(it,g,t,k){card(W/2,680,960,480,k);const lines=wrap(it.q,840,
   const rv=t>=g.rv;it.opts.forEach((o,i)=>{const p=pop((k-.4-i*.12)*3.4);if(p<=0)return;const Y=1040+i*136,ok=o===it.a;x.save();x.translate(W/2,Y);x.scale(p,p);rr(-430,-56,860,112,30);
     x.fillStyle=rv?(ok?'#22c55e':'rgba(255,255,255,.35)'):'rgba(255,255,255,.92)';x.fill();text(String.fromCharCode(65+i),-370,2,44,rv&&ok?'#fff':'#5b3fb8',900);text(o,20,2,fit(o,640,50,800),rv&&ok?'#fff':'#1b1b3a',800);x.restore()});
   if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t,W/2,1600,80);else{const r=t-g.rv;confetti(r,W/2,1040+it.opts.indexOf(it.a)*136)}}
-function drawOdd(it,g,t,k){const TXT=!!(it.text||C.text),cw=960,ch=960,CY=915;card(W/2,CY,cw,ch,k);const pad=40,cell=Math.min((cw-pad*2)/it.cols,(ch-pad*2)/it.rows),gx=W/2-cell*it.cols/2,gy=CY-cell*it.rows/2;
-  const fs=TXT?Math.min(cell*.62,fit(it.odd.length>it.common.length?it.odd:it.common,cell*.86,cell*.62,800)):cell*.68,font=TXT?F:E;const p=pop((k-.2)*3);
+function drawOdd(it,g,t,k){const TXT=!!(it.text||C.text),cw=960,ch=960,CY=915;card(W/2,CY,cw,ch,k);const pad=40,cell=Math.min((cw-pad*2)/it.cols,(ch-pad*2)/it.rows),cX=it.wide?(cw-pad*2)/it.cols:cell,cY=it.wide?(ch-pad*2)/it.rows:cell,gx=W/2-cX*it.cols/2,gy=CY-cY*it.rows/2;
+  const fs=TXT?Math.min(cY*.62,fit(it.odd.length>it.common.length?it.odd:it.common,cX*.86,cY*.62,800)):cell*.68,font=TXT?F:E;const p=pop((k-.2)*3);
   x.save();x.translate(W/2,CY);x.scale(p,p);x.translate(-W/2,-CY);
-  for(let i=0;i<it.cols*it.rows;i++){const cx=gx+(i%it.cols+.5)*cell,cy=gy+(Math.floor(i/it.cols)+.5)*cell;const odd=i===it.pos;const dim=t>=g.rv&&!odd;x.globalAlpha=dim?.25:1;text(odd?it.odd:it.common,cx,cy+(TXT?2:4),fs,'#1b1b3a',TXT?800:400,font)}
+  for(let i=0;i<it.cols*it.rows;i++){const cx=gx+(i%it.cols+.5)*cX,cy=gy+(Math.floor(i/it.cols)+.5)*cY;const odd=i===it.pos;const dim=t>=g.rv&&!odd;x.globalAlpha=dim?.25:1;text(odd?it.odd:it.common,cx,cy+(TXT?2:4),fs,'#1b1b3a',TXT?800:400,font)}
   x.globalAlpha=1;x.restore();
-  if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t,W/2,1555,90);else{const r=t-g.rv;const cx=gx+(it.pos%it.cols+.5)*cell,cy=gy+(Math.floor(it.pos/it.cols)+.5)*cell;const rad=cell*.62*(1+.25*(1-ease(r*3)));
-    x.lineWidth=10;x.strokeStyle='#ff3b3b';x.beginPath();x.arc(cx,cy,rad,0,Math.PI*2);x.stroke();confetti(r,cx,cy);answerPill(it.a,1555,r)}}
+  if(t<g.rv)ring(t<g.cd?COUNT:g.rv-t,W/2,1555,90);else{const r=t-g.rv;const cx=gx+(it.pos%it.cols+.5)*cX,cy=gy+(Math.floor(it.pos/it.cols)+.5)*cY;const rad=cell*.62*(1+.25*(1-ease(r*3)));
+    x.lineWidth=10;x.strokeStyle='#ff3b3b';x.beginPath();if(it.wide){x.font=`800 ${fs}px ${F}`;const rw=Math.max(rad,x.measureText(it.odd).width*.62*(1+.25*(1-ease(r*3))));x.ellipse(cx,cy,rw,Math.min(rad,cY*.6),0,0,Math.PI*2)}else x.arc(cx,cy,rad,0,Math.PI*2);x.stroke();confetti(r,cx,cy);answerPill(it.a,1555,r)}}
 function frame(t){
   let level=-1;for(let i=0;i<SEG.length;i++)if(t>=SEG[i].s)level=i;if(t>=SEG.at(-1).e)level=SEG.length;
   let shake=0;for(const g of SEG){const r=t-g.rv;if(r>=0&&r<.25)shake=14*(1-r/.25)*Math.sin(r*90)}
