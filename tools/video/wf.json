@@ -116,32 +116,49 @@
   ]
  },
  "bugs": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "green",
-  "label": "WILD FACTS",
+  "label": "BUG QUIZ",
   "sub": [
-   "3 BUG FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three bug facts that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Bug quiz! Three questions. Can you get all three?",
   "items": [
    {
-    "t": "Ants don't have lungs",
-    "big": "NO LUNGS",
-    "small": "they breathe through tiny holes",
-    "say": "Number one. Ants don't have lungs. Air flows into their bodies through tiny holes along their sides."
+    "q": "How do ants breathe?",
+    "o": [
+     "Tiny lungs",
+     "Through their mouth",
+     "Tiny holes in their sides"
+    ],
+    "a": 2,
+    "f": "Ants don't have lungs!",
+    "say": "Tiny holes in their sides! Ants don't have lungs."
    },
    {
-    "t": "A cockroach can live without its head",
-    "big": "ABOUT 1 WEEK",
-    "small": "until it gets too thirsty",
-    "say": "Number two. A cockroach can live for about a week without its head. It finally dies because it can't drink water."
+    "q": "How long can a cockroach live without its head?",
+    "o": [
+     "About an hour",
+     "About a week",
+     "About a year"
+    ],
+    "a": 1,
+    "f": "It dies because it can't drink",
+    "say": "About a week! It finally dies because it can't drink water."
    },
    {
-    "t": "Dragonflies are super hunters",
-    "big": "95%",
-    "small": "up to 95% of hunts succeed",
-    "say": "Number three. Dragonflies catch their prey in up to ninety five percent of their hunts. That beats lions and sharks."
+    "q": "Which hunter catches its prey most often?",
+    "o": [
+     "Dragonfly",
+     "Lion",
+     "Shark"
+    ],
+    "a": 0,
+    "f": "Up to 95% of its hunts succeed",
+    "say": "The dragonfly! Up to ninety five percent of its hunts succeed."
    }
   ]
  },
@@ -262,32 +279,49 @@
   ]
  },
  "animals2": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "purple",
-  "label": "WILD FACTS",
+  "label": "ANIMAL QUIZ",
   "sub": [
-   "3 ANIMAL FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three more animal facts that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Animal quiz! Three questions. Can you get all three?",
   "items": [
    {
-    "t": "Koalas have fingerprints",
-    "big": "LIKE OURS",
-    "small": "even under a microscope",
-    "say": "Number one. Koalas have fingerprints, and they look almost exactly like human fingerprints, even under a microscope."
+    "q": "Which animal has fingerprints almost like ours?",
+    "o": [
+     "Dog",
+     "Koala",
+     "Cat"
+    ],
+    "a": 1,
+    "f": "Even under a microscope!",
+    "say": "Koala! Their fingerprints look almost exactly like ours, even under a microscope."
    },
    {
-    "t": "Elephants can't jump",
-    "big": "NEVER",
-    "small": "all four feet off the ground",
-    "say": "Number two. Elephants can't jump. Even when they run, at least one foot stays on the ground."
+    "q": "Which animal can't jump?",
+    "o": [
+     "Kangaroo",
+     "Elephant",
+     "Horse"
+    ],
+    "a": 1,
+    "f": "One foot always stays on the ground",
+    "say": "Elephant! Even when it runs, at least one foot stays on the ground."
    },
    {
-    "t": "Hippos make their own sunscreen",
-    "big": "RED 'SWEAT'",
-    "small": "not real sweat, but a sunscreen",
-    "say": "Number three. Hippos make their own sunscreen. Their skin oozes a reddish liquid that protects them from the sun."
+    "q": "What does a hippo's red 'sweat' do?",
+    "o": [
+     "Works like sunscreen",
+     "Makes it smell",
+     "Helps it swim"
+    ],
+    "a": 0,
+    "f": "It's not real sweat",
+    "say": "It works like sunscreen! Hippo skin oozes a reddish liquid that protects it from the sun."
    }
   ]
  },
@@ -408,32 +442,49 @@
   ]
  },
  "oceanfacts": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "ocean",
-  "label": "WILD FACTS",
+  "label": "OCEAN QUIZ",
   "sub": [
-   "3 OCEAN FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three ocean facts that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Ocean quiz, round two! Three questions. Can you get all three?",
   "items": [
    {
-    "t": "Some sharks glow in the dark",
-    "big": "GLOW",
-    "small": "lanternsharks make their own light",
-    "say": "Number one. Some sharks glow in the dark. Lanternsharks make their own light, deep in the ocean."
+    "q": "Which shark can glow in the dark?",
+    "o": [
+     "Great white",
+     "Lanternshark",
+     "Hammerhead"
+    ],
+    "a": 1,
+    "f": "It makes its own light",
+    "say": "Lanternshark! It makes its own light, deep in the ocean."
    },
    {
-    "t": "Sea otters have the densest fur",
-    "big": "UP TO 1 MILLION",
-    "small": "hairs per square inch",
-    "say": "Number two. Sea otters have the densest fur of any animal. Up to a million hairs per square inch."
+    "q": "Which animal has the densest fur?",
+    "o": [
+     "Polar bear",
+     "Sea otter",
+     "Arctic fox"
+    ],
+    "a": 1,
+    "f": "Up to a million hairs per square inch",
+    "say": "Sea otter! Up to a million hairs per square inch."
    },
    {
-    "t": "The ocean makes half our oxygen",
-    "big": "HALF",
-    "small": "at least half of Earth's oxygen",
-    "say": "Number three. At least half of the oxygen on Earth is made in the ocean, by tiny drifting algae and bacteria called plankton."
+    "q": "How much of Earth's oxygen is made in the ocean?",
+    "o": [
+     "Almost none",
+     "About a tenth",
+     "At least half"
+    ],
+    "a": 2,
+    "f": "Made by tiny drifting plankton",
+    "say": "At least half! Tiny drifting plankton make it."
    }
   ]
  },
@@ -648,92 +699,143 @@
   ]
  },
  "space3": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "space",
-  "label": "WILD FACTS",
+  "label": "SPACE QUIZ",
   "sub": [
-   "3 SPACE FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three space facts that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Space quiz! Three questions. Can you get all three?",
   "items": [
    {
-    "t": "A day on Venus is longer than its year",
-    "big": "243 DAYS",
-    "small": "to spin around once",
-    "say": "Number one. A day on Venus is longer than its year. It takes about two hundred forty three Earth days to spin around once, but only two hundred twenty five to circle the Sun."
+    "q": "Which is longer on Venus?",
+    "o": [
+     "A day",
+     "A year",
+     "They're the same"
+    ],
+    "a": 0,
+    "f": "A day there is 243 Earth days",
+    "say": "A day! Venus takes about two hundred forty three Earth days to spin once, but only two hundred twenty five to circle the Sun."
    },
    {
-    "t": "Footprints on the Moon can last for ages",
-    "big": "NO WIND",
-    "small": "nothing blows them away",
-    "say": "Number two. The astronauts' footprints on the Moon could last for millions of years. There's no wind or rain to wipe them away."
+    "q": "How long could footprints on the Moon last?",
+    "o": [
+     "A few days",
+     "About 100 years",
+     "Millions of years"
+    ],
+    "a": 2,
+    "f": "No wind or rain to wipe them away",
+    "say": "Millions of years! There's no wind or rain to wipe them away."
    },
    {
-    "t": "Sunlight you see is 8 minutes old",
-    "big": "8 MINUTES",
-    "small": "from the Sun to your eyes",
-    "say": "Number three. The sunlight you see right now left the Sun about eight minutes ago."
+    "q": "How old is the sunlight you see?",
+    "o": [
+     "Brand new",
+     "About 8 minutes",
+     "About 8 years"
+    ],
+    "a": 1,
+    "f": "It left the Sun 8 minutes ago",
+    "say": "About eight minutes! That's how long it takes to get here from the Sun."
    }
   ]
  },
  "eyes": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "teal",
-  "label": "WILD FACTS",
+  "label": "EYE QUIZ",
   "sub": [
-   "3 EYE FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three facts about your eyes that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Eye quiz! Three questions about your own eyes. Can you get all three?",
   "items": [
    {
-    "t": "The front of your eye has no blood",
-    "big": "NO BLOOD",
-    "small": "it breathes oxygen from the air",
-    "say": "Number one. The clear front of your eye, the cornea, has no blood vessels. It takes its oxygen straight from the air."
+    "q": "Where does the clear front of your eye get its oxygen?",
+    "o": [
+     "Blood vessels",
+     "Straight from the air",
+     "From your brain"
+    ],
+    "a": 1,
+    "f": "The cornea has no blood vessels",
+    "say": "Straight from the air! The clear front of your eye, the cornea, has no blood vessels."
    },
    {
-    "t": "Each eye has a blind spot",
-    "big": "BLIND SPOT",
-    "small": "your brain fills in the gap",
-    "say": "Number two. Each of your eyes has a blind spot, where the nerve leaves the eye. You never notice it, because your brain fills in the gap."
+    "q": "Why don't you notice your eye's blind spot?",
+    "o": [
+     "There isn't one",
+     "Your brain fills the gap",
+     "You blink it away"
+    ],
+    "a": 1,
+    "f": "It's where the nerve leaves the eye",
+    "say": "Your brain fills in the gap! Each eye has a blind spot where the nerve leaves it."
    },
    {
-    "t": "Your eyes see the world upside down",
-    "big": "UPSIDE DOWN",
-    "small": "your brain flips it back",
-    "say": "Number three. The picture on the back of your eye is upside down. Your brain flips it the right way up."
+    "q": "How is the picture on the back of your eye?",
+    "o": [
+     "Upside down",
+     "Black and white",
+     "Sideways"
+    ],
+    "a": 0,
+    "f": "Your brain flips it back",
+    "say": "Upside down! Your brain flips it the right way up."
    }
   ]
  },
  "cats": {
-  "kind": "facts",
+  "kind": "quiz",
   "theme": "purple",
-  "label": "WILD FACTS",
+  "label": "CAT QUIZ",
   "sub": [
-   "3 CAT FACTS THAT",
-   "SOUND FAKE"
+   "CAN YOU",
+   "GET 3/3?"
   ],
-  "intro": "Three cat facts that sound fake, but are true.",
+  "secs": 5,
+  "read": true,
+  "intro": "Cat quiz! Three questions. Can you get all three?",
   "items": [
    {
-    "t": "Cats can't taste sweet things",
-    "big": "NO SWEET",
-    "small": "they lack the sweet taste gene",
-    "say": "Number one. Cats can't taste anything sweet. They're missing the gene for sweet taste."
+    "q": "Which taste can't cats taste?",
+    "o": [
+     "Salty",
+     "Sweet",
+     "Sour"
+    ],
+    "a": 1,
+    "f": "They lack the sweet taste gene",
+    "say": "Sweet! Cats are missing the gene for sweet taste."
    },
    {
-    "t": "Adult cats rarely meow at each other",
-    "big": "MEOW = HUMAN",
-    "small": "they meow mostly to talk to us",
-    "say": "Number two. Grown-up cats hardly ever meow at other cats. Meowing is mostly how they talk to people."
+    "q": "Who do adult cats meow at the most?",
+    "o": [
+     "Other cats",
+     "People",
+     "Dogs"
+    ],
+    "a": 1,
+    "f": "Meowing is mostly for us",
+    "say": "People! Grown-up cats hardly ever meow at other cats."
    },
    {
-    "t": "Cats have a third eyelid",
-    "big": "3 EYELIDS",
-    "small": "a hidden one protects the eye",
-    "say": "Number three. Cats have a third eyelid. It's a thin, hidden layer that sweeps across to protect the eye."
+    "q": "How many eyelids does each cat eye have?",
+    "o": [
+     "One",
+     "Two",
+     "Three"
+    ],
+    "a": 2,
+    "f": "A hidden one protects the eye",
+    "say": "Three! A thin, hidden third eyelid sweeps across to protect the eye."
    }
   ]
  }

@@ -17,7 +17,7 @@ WORDS = {'emojiquiz': 'emoji quiz', 'foodquiz': 'food quiz', 'guessthefood': 'gu
          'oceanquiz': 'ocean quiz', 'animalquiz': 'animal quiz', 'animalfacts': 'animal facts', 'didyouknow': 'did you know',
          'kidsvsparents': 'kids vs parents', 'familyquiz': 'family quiz', 'birdquiz': 'bird quiz', 'spacefacts': 'space facts',
          'foodfacts': 'food facts', 'eyefacts': 'eye facts', 'humanbody': 'human body', 'worldquiz': 'world quiz',
-         'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals', 'catfacts': 'cat facts'}
+         'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals', 'catfacts': 'cat facts', 'bugquiz': 'bug quiz', 'spacequiz': 'space quiz', 'catquiz': 'cat quiz'}
 def fb_tags(tags, puzzle):
     t = [WORDS.get(x.lstrip('#'), x.lstrip('#')) for x in tags.split()]
     t += ['brain teasers', 'puzzle', 'quiz', 'trivia'] if puzzle else ['animal facts', 'quiz', 'trivia', 'fun facts']
@@ -36,21 +36,21 @@ R = [
  (7, '12:00 pm', 'Oct 7 12pm - Find the Odd One Out 👀.mp4', ['Can your eyes beat the clock? 👀 3 levels, 6 seconds each. Level 3 is the tricky one.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (7, '6:00 pm', 'Oct 7 6pm - Animal Group Names Quiz 🦉.mp4', ['Animal group names 🦉 3 questions. Can you get 3/3?', 'Comment your score 👇'], '#animalfacts #didyouknow #animals #quiz'),
  (10, '12:00 pm', 'Oct 10 12pm - Find the Odd Letter 🔤.mp4', ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
- (10, '6:00 pm', 'Oct 10 6pm - 3 Bug Facts That Sound Fake 🐜.mp4', ['3 bug facts that sound fake, but are true 🐜', 'Which one surprised you most? 👇'], '#animalfacts #insects #didyouknow #facts'),
+ (10, '6:00 pm', 'Oct 10 6pm - Bug Quiz 🐜.mp4', ['Bug quiz 🐜 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#bugquiz #insects #animalquiz #quiz'),
  (11, '12:00 pm', 'Oct 11 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Fruit, faces and clocks. Level 3 takes a second look!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
- (11, '6:00 pm', 'Oct 11 6pm - 3 Space Facts 🌙.mp4', ['3 space facts that sound unreal 🌙', 'Which one surprised you most? 👇'], '#space #spacefacts #didyouknow #facts'),
+ (11, '6:00 pm', 'Oct 11 6pm - Space Quiz 🌙.mp4', ['Space quiz 🌙 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#spacequiz #space #quiz #trivia'),
  (12, '12:00 pm', 'Oct 12 12pm - Spot the Different Face 👀.mp4', ['Spot the different face 👀 3 levels, 6 seconds each.', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (12, '6:00 pm', 'Oct 12 6pm - Food Quiz 🍯.mp4', ['Food quiz 🍯 3 questions. Question 3 is tricky!', 'Comment your score 👇'], '#foodquiz #foodfacts #quiz #trivia'),
  (13, '12:00 pm', 'Oct 13 12pm - Guess the Fairy Tale by Emoji 🏰.mp4', ['Guess all 5 fairy tales from the emoji 🏰 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #fairytale #guessthestory #brainteaser'),
- (13, '6:00 pm', 'Oct 13 6pm - 3 Eye Facts That Sound Fake 👀.mp4', ['3 facts about your eyes that sound fake, but are true 👀', 'Which one surprised you most? 👇'], '#eyefacts #humanbody #didyouknow #facts'),
+ (13, '6:00 pm', 'Oct 13 6pm - Eye Quiz 👀.mp4', ['Eye quiz 👀 3 questions about your own eyes. Can you get 3/3?', 'Comment your score 👇'], '#eyefacts #humanbody #quiz #trivia'),
  (14, '12:00 pm', 'Oct 14 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 Can you beat the timer?', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),
- (14, '6:00 pm', 'Oct 14 6pm - 3 Animal Facts That Sound Fake 🦛.mp4', ['3 animal facts that sound fake, but are true 🦛', 'Which one surprised you most? 👇'], '#animalfacts #didyouknow #facts #animals'),
+ (14, '6:00 pm', 'Oct 14 6pm - Animal Quiz 🦛.mp4', ['Animal quiz 🦛 Koalas, elephants and hippos. Can you get 3/3?', 'Comment your score 👇'], '#animalquiz #animalfacts #quiz #trivia'),
  (15, '12:00 pm', 'Oct 15 12pm - Find the Odd One Out 👀.mp4', ['Find the odd one out 👀 Trees, smiles and clocks. 6 seconds each!', 'How many did you find? 👇'], '#oddoneout #eyetest #puzzle #brainteaser'),
  (15, '6:00 pm', 'Oct 15 6pm - Kids vs Parents Animal Quiz 🐼.mp4', ['Kids vs parents, round 2 🐼 3 new animal questions. Who gets 3/3?', 'Tell us who won 👇'], '#kidsvsparents #animalquiz #familyquiz #quiz'),
  (16, '12:00 pm', 'Oct 16 12pm - Guess the Cartoon Movie by Emoji 🎬.mp4', ['Guess the animated movie from the emoji 🎬 3 seconds each!', 'Comment your score 👇'], '#emojiquiz #guessthemovie #disneyquiz #brainteaser'),
- (16, '6:00 pm', 'Oct 16 6pm - 3 Cat Facts That Sound Fake 🐱.mp4', ['3 cat facts that sound fake, but are true 🐱', 'Which one surprised you most? 👇'], '#catfacts #cats #animalfacts #didyouknow'),
+ (16, '6:00 pm', 'Oct 16 6pm - Cat Quiz 🐱.mp4', ['Cat quiz 🐱 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#catquiz #cats #animalquiz #quiz'),
  (17, '12:00 pm', 'Oct 17 12pm - Find the Odd One Out 🔤.mp4', ['Find the odd one 🔤 Letters and numbers edition. Level 3 is sneaky!', 'Did it get you? 👇'], '#oddoneout #eyetest #opticalillusion #brainteaser'),
- (17, '6:00 pm', 'Oct 17 6pm - 3 Ocean Facts That Sound Fake 🦦.mp4', ['3 ocean facts that sound fake, but are true 🦦', 'Which one surprised you most? 👇'], '#oceanfacts #didyouknow #facts #animals'),
+ (17, '6:00 pm', 'Oct 17 6pm - Ocean Quiz Round 2 🦦.mp4', ['Ocean quiz, round 2 🦦 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], '#oceanquiz #animalquiz #quiz #trivia'),
  (18, '12:00 pm', 'Oct 18 12pm - Guess the Halloween Word by Emoji 🎃.mp4', ['Halloween is coming 🎃 Guess all 5 spooky words from the emoji!', 'Comment your score 👇'], '#halloween #emojiquiz #halloweenquiz #brainteaser'),
  (18, '6:00 pm', 'Oct 18 6pm - Science Quiz 🔬.mp4', ['Science quiz 🔬 3 questions. The last one surprises everyone!', 'Comment your score 👇'], '#sciencequiz #science #quiz #trivia'),
  (19, '12:00 pm', 'Oct 19 12pm - 3 Riddles in 30 Seconds 🧩.mp4', ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], '#riddles #brainteasers #riddlechallenge #quiz'),

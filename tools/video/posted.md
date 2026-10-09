@@ -47,7 +47,12 @@ Posted / scheduled
   sloth 40 min breath · butterflies taste with feet · cows best friends
 - Fact Shorts: body (taller in the morning, stomach lining, glow) · space (Venus day > year, Moon footprints, 8-min sunlight) ·
   animals (sharks older than trees, blue whale heart 180 kg, crocodile tongue)
-Planned: Oct 16 cat facts (no sweet taste, meow mostly to humans, third eyelid; viewer request), Dinosaur Quiz moved to Oct 21. Oct 13 eye facts (cornea has no blood, blind spot, upside-down image; viewer request), World Quiz moved to Oct 20.
+Planned (changed Oct 8 from "3 facts" Shorts to 3-question quizzes, same facts): Oct 10 bug quiz (ants breathe through holes,
+headless cockroach ~1 week, dragonfly up to 95% of hunts) · Oct 11 space quiz (Venus day > year, Moon footprints, 8-min sunlight;
+replaces the scheduled space-facts Short) · Oct 13 eye quiz (cornea gets oxygen from air, blind spot, upside-down image; viewer
+request) · Oct 14 animal quiz (koala fingerprints, elephants can't jump, hippo sunscreen) · Oct 16 cat quiz (no sweet taste, meow
+mostly to humans, third eyelid; viewer request) · Oct 17 ocean quiz round 2 (lanternshark glows, sea otter fur, ocean oxygen).
+Dinosaur Quiz moved to Oct 21, World Quiz to Oct 20.
 Planned (files ready): see Wild Facts\Posting Plan - Wild Facts.docx and tools/video/wf.json, wf_long.json
 
 ## Instagram @wildfactsquiz (auto-shared to the Facebook page)
