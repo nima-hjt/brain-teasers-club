@@ -30,6 +30,12 @@ def bt_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.', pin=pin)
 
 BT = [
+ bt_long(9, 'Guess 20 Animals by Emoji - Easy to Hard (long, Oct 9).mp4', 'Guess 20 Animals by Emoji - thumbnail.png',
+   'Guess 20 Animals by Emoji 🐾 Emoji + Emoji = Animal | Easy to Hard',
+   'Two emoji make one animal 🐾 Can you guess all 20? It starts easy and gets harder every round. Keep score and comment how many you got!',
+   ['0:00 Intro', '0:07 Round 1: Easy', '1:04 Round 2: Medium', '2:02 Round 3: Hard', '2:53 Your score'],
+   'emoji quiz, guess the animal, animal quiz, emoji challenge, brain teasers, animal riddles, quiz, trivia', '#emojiquiz #animalquiz #guesstheanimal',
+   ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
  bt_short(9, 'Oct 9 - Guess the Saying by Emoji 💬 #shorts.mp4', 'Guess the Saying by Emoji 💬 3 Seconds Each',
    'Can you guess all 5 sayings from the emoji? 💬 Comment your score!',
    'guess the saying by emoji, emoji quiz, idioms quiz, english idioms, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #idioms #guessthesaying #quiz',
