@@ -332,9 +332,9 @@
    {
     "common": "🕐",
     "odd": "🕜",
-    "cols": 7,
-    "rows": 8,
-    "pos": 45,
+    "cols": 6,
+    "rows": 7,
+    "pos": 31,
     "cap": "Level three: almost impossible",
     "a": "FOUND IT!"
    }
@@ -388,9 +388,9 @@
    {
     "common": "⌛",
     "odd": "⏳",
-    "cols": 7,
-    "rows": 8,
-    "pos": 38,
+    "cols": 6,
+    "rows": 7,
+    "pos": 22,
     "cap": "Level three: almost impossible",
     "a": "FOUND IT!"
    }
@@ -566,9 +566,9 @@
    {
     "common": "🕗",
     "odd": "🕣",
-    "cols": 7,
-    "rows": 8,
-    "pos": 49,
+    "cols": 6,
+    "rows": 7,
+    "pos": 40,
     "cap": "Level three: almost impossible",
     "a": "FOUND IT!"
    }
@@ -682,9 +682,9 @@
    {
     "common": "8",
     "odd": "B",
-    "cols": 6,
-    "rows": 8,
-    "pos": 40,
+    "cols": 5,
+    "rows": 7,
+    "pos": 26,
     "cap": "Level three: almost impossible",
     "a": "FOUND IT!"
    }

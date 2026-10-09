@@ -118,5 +118,8 @@ ready → play → results → rematch → disconnect.
   Wild Facts: wf.html `&reel=1` for both.
 - No repeats: check every new video against `tools/video/posted.md` (posted + planned content for both channels, which
   also covers Instagram/Facebook Reels) and add the new video there.
+- Wild Facts Shorts/Reels are quizzes (wf.json `kind: quiz`, 3 questions, 5 s, read aloud), not "3 facts" videos: quizzes get
+  far more engaged views. Odd-one-out grids must be readable on a phone: emoji grids at most 6x7, text items ~80 px or more
+  (`"wide": true` for multi-letter text), odd item off-center.
 - Before export: no invented statistics in titles or narration, puzzles not in the next two weeks' Dailies, no clue
   with two valid answers; check a frame sheet (`sheet()`) and the audio sync.
