@@ -40,10 +40,6 @@ ANIMAL_CREDITS = ['📷 Animal photos from Wikimedia Commons:',
   'Frogfish: Christian Gloor (CC BY 2.0) · Deer mouse: Seney Natural History Association (CC BY-SA 2.0)']
 
 BT = [
- bt_short(9, 'Oct 9 - Guess the Saying by Emoji 💬 #shorts.mp4', 'Guess the Saying by Emoji 💬 3 Seconds Each',
-   'Can you guess all 5 sayings from the emoji? 💬 Comment your score!',
-   'guess the saying by emoji, emoji quiz, idioms quiz, english idioms, emoji challenge, brain teasers, quiz shorts', '#emojiquiz #idioms #guessthesaying #quiz',
-   ['Can you guess all 5 sayings from the emoji? 💬 3 seconds each!', 'Comment your score 👇'], 'Puzzle Videos'),
  bt_short(10, 'Oct 10 - Find the Odd Letter 🔤 #shorts.mp4', 'Find the Odd Letter 🔤 Level 2 Fools Everyone',
    '3 levels, 6 seconds each 🔤 Did level 2 trick you? Comment below!',
    'find the odd one out, odd letter, eye test, optical illusion, visual puzzle, brain teasers, spot the difference', '#oddoneout #eyetest #findtheodd #braintest',
@@ -97,7 +93,8 @@ BT = [
 ]
 BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', BT_PIN_SHORT),
            ('Thu Oct 8, 6:00 pm Short (scheduled): 3 Riddles in 30 Seconds', BT_PIN_SHORT),
-           ('Fri Oct 9, 12:00 pm long (scheduled): Guess 20 Animals by Emoji', ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
+           ('Fri Oct 9, 12:00 pm long (scheduled): Guess 20 Animals by Emoji', ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
+           ('Fri Oct 9, 6:00 pm Short (scheduled): Guess the Saying by Emoji', BT_PIN_SHORT)]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
