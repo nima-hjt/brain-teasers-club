@@ -21,7 +21,7 @@ else:
 L['plug'] = 'Want more? Play over twelve hundred free brain teasers, at brain teasers club dot app.'
 k = Kokoro(os.path.join(MODELS, 'kokoro-v1.0.onnx'), os.path.join(MODELS, 'voices-v1.0.bin'))
 out = os.path.join(HERE, 'voice_wf_' + name); os.makedirs(out, exist_ok=True); dur = {}
-GAP = 1.0  # seconds between the option letter and its text (Nima: "A" ... "Hummingbird")
+GAP = 0.5  # seconds between the option letter and its text (Nima: "A" ... "Hummingbird")
 lang = 'en-gb' if voice.startswith('b') else 'en-us'
 for key, text in L.items():
     if isinstance(text, tuple):
