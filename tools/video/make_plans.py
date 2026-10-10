@@ -88,8 +88,6 @@ BT = [
    ['3 riddles, 6 seconds each 🧩 The last one is the hardest!', 'How many did you solve? 👇'], 'Puzzle Videos', 'Guess 20 Words by Emoji (long video)'),
 ]
 BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', BT_PIN_SHORT),
-           ('Fri Oct 9, 12:00 pm long (scheduled): Guess 20 Animals by Emoji', ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
-           ('Fri Oct 9, 6:00 pm Short (scheduled): Guess the Saying by Emoji', BT_PIN_SHORT),
            ('Sat Oct 10, 6:00 pm Short (scheduled): Find the Odd Letter', BT_PIN_SHORT)]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
@@ -174,7 +172,6 @@ WF = [
 WF_DONE = [
  ('Wed Oct 7, 12:00 pm long (scheduled): General Knowledge Quiz: 12 Questions', ['How many did you get out of 12? 🧠👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 6:00 pm Short (scheduled): What Is a Group of Crows Called?', ['Did you know it? 🐦‍⬛ Comment below 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']),
- ('Fri Oct 9, 6:00 pm Short (scheduled): Bird Quiz: 3 Seconds Each', WF_PIN_Q_SHORT),
  ('Sat Oct 10, 6:00 pm Short (scheduled): Bug Quiz', WF_PIN_Q_SHORT),
  ('Sun Oct 11, 6:00 pm Short (scheduled): Space Quiz (the old "3 Space Facts" Short is Private; delete it whenever you like)', WF_PIN_Q_SHORT),
  ('Sat Oct 3 long (posted): Animal Quiz: 12 Questions. Correction to post and pin (question 12: owls also have three eyelids)',
