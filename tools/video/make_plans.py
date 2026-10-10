@@ -40,10 +40,6 @@ ANIMAL_CREDITS = ['📷 Animal photos from Wikimedia Commons:',
   'Frogfish: Christian Gloor (CC BY 2.0) · Deer mouse: Seney Natural History Association (CC BY-SA 2.0)']
 
 BT = [
- bt_short(10, 'Oct 10 - Find the Odd Letter 🔤 #shorts.mp4', 'Find the Odd Letter 🔤 Level 2 Fools Everyone',
-   '3 levels, 6 seconds each 🔤 Did level 2 trick you? Comment below!',
-   'find the odd one out, odd letter, eye test, optical illusion, visual puzzle, brain teasers, spot the difference', '#oddoneout #eyetest #findtheodd #braintest',
-   ['Find the odd letter 🔤 Level 2 fools a lot of people 👀', 'Did it get you? 👇'], 'Puzzle Videos'),
  bt_short(11, 'Oct 11 - Find the Odd One Out 2 👀 #shorts.mp4', 'Find the Odd One Out 👀 Level 3 Is Almost Impossible',
    '3 levels, 6 seconds each 👀 How many did you find? Comment below!',
    'find the odd one out, odd one out, emoji puzzle, eye test, spot the difference, brain teasers, visual puzzle', '#oddoneout #findtheodd #eyetest #braintest',
@@ -93,7 +89,8 @@ BT = [
 ]
 BT_DONE = [('Wed Oct 7, 6:00 pm Short (live): Find the Odd One Out', BT_PIN_SHORT),
            ('Fri Oct 9, 12:00 pm long (scheduled): Guess 20 Animals by Emoji', ['How many animals did you get out of 20? 🐾👇', 'Curious Cub (0–7) · Animal Fan (8–14) · Wild Expert (15–19) · Zoo Genius (20)', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc']),
-           ('Fri Oct 9, 6:00 pm Short (scheduled): Guess the Saying by Emoji', BT_PIN_SHORT)]
+           ('Fri Oct 9, 6:00 pm Short (scheduled): Guess the Saying by Emoji', BT_PIN_SHORT),
+           ('Sat Oct 10, 6:00 pm Short (scheduled): Find the Odd Letter', BT_PIN_SHORT)]
 BT_DONE_OLD = [('Mon Oct 5, 6:00 pm Short (already scheduled): Guess the Movie by Emoji', ['How many movies did you get? 🎬👇', 'Want the long version? 20 movies, easy to hard, is on the channel now.', '🧠 Play 1,200+ more free puzzles: brainteasersclub.app/btc'])]
 
 # ---------------- Wild Facts ----------------
@@ -115,15 +112,6 @@ def wf_long(d, file, thumb, title, hook, chapters, tags, hashtags, pin):
                 endscreen='Element 1: Subscribe. Element 2: Video → "Best for viewer". Start at ' + chapters[-1].split()[0] + ', run to the end.')
 CH = lambda times: ['0:00 Intro'] + [f'{t} Question {i+1}' for i, t in enumerate(times[:-1])] + [times[-1] + ' Your score']
 WF = [
- wf_short(10, 'Oct 10 - Bug Quiz 🐜 #shorts.mp4', 'Bug Quiz: Can You Get 3/3? 🐜',
-   '3 bug questions, 5 seconds each 🐜 How many did you get? Comment your score!',
-   'bug quiz, insect quiz, animal quiz, bug facts, insect facts, quiz shorts, trivia, ants, cockroach, dragonfly', '#bugquiz #insects #animalquiz #quiz',
-   ['Bug quiz 🐜 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇']),
- wf_short(11, 'Oct 11 - Space Quiz 🌙 #shorts.mp4', 'Space Quiz: Can You Get 3/3? 🌙',
-   '3 space questions, 5 seconds each 🌙 How many did you get? Comment your score!',
-   'space quiz, space facts, planets, astronomy quiz, quiz shorts, trivia, venus, moon, sun', '#spacequiz #space #quiz #trivia',
-   ['Space quiz 🌙 3 questions, 5 seconds each. Can you get 3/3?', 'Comment your score 👇'], related='Animal Quiz: 12 Questions Most Adults Get Wrong (long video)',
-   extra=['Replaces the scheduled "3 Space Facts Your Teacher Never Told You" Short: set that one to Private (or delete it) first.']),
  wf_long(11, 'Oct 11 - Ocean Quiz 12 Questions (long).mp4', 'Oct 11 - Ocean Quiz 12 Questions - thumbnail.png',
    'Ocean Quiz: 12 Questions About the Sea 🌊 How Many Can You Get?',
    '12 ocean questions 🌊 Read along, answer before the timer ends, and keep score. Comment how many you got!',
@@ -187,6 +175,8 @@ WF_DONE = [
  ('Wed Oct 7, 12:00 pm long (scheduled): General Knowledge Quiz: 12 Questions', ['How many did you get out of 12? 🧠👇', '🐙 New quiz every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Wed Oct 7, 6:00 pm Short (scheduled): What Is a Group of Crows Called?', ['Did you know it? 🐦‍⬛ Comment below 👇', '🐙 A wild fact every day. More free quizzes: brainteasersclub.app/wildfacts']),
  ('Fri Oct 9, 6:00 pm Short (scheduled): Bird Quiz: 3 Seconds Each', WF_PIN_Q_SHORT),
+ ('Sat Oct 10, 6:00 pm Short (scheduled): Bug Quiz', WF_PIN_Q_SHORT),
+ ('Sun Oct 11, 6:00 pm Short (scheduled): Space Quiz (the old "3 Space Facts" Short is Private; delete it whenever you like)', WF_PIN_Q_SHORT),
  ('Sat Oct 3 long (posted): Animal Quiz: 12 Questions. Correction to post and pin (question 12: owls also have three eyelids)',
   ['Correction on question 12 🦉 Camels have three eyelids, but so do owls (and many other birds and reptiles). If you picked Owl, give yourself the point!', 'How many did you get out of 12? 👇']),
  ('Posted Shorts with made-up statistics in the title. Optional rename (Studio → Content → title):',
