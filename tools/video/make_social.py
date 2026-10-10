@@ -20,7 +20,7 @@ WORDS = {'emojiquiz': 'emoji quiz', 'foodquiz': 'food quiz', 'guessthefood': 'gu
          'dinosaurquiz': 'dinosaur quiz', 'oceanfacts': 'ocean facts', 'sciencequiz': 'science quiz', 'babyanimals': 'baby animals', 'catfacts': 'cat facts', 'bugquiz': 'bug quiz', 'spacequiz': 'space quiz', 'catquiz': 'cat quiz'}
 def fb_tags(tags, puzzle):
     t = [WORDS.get(x.lstrip('#'), x.lstrip('#')) for x in tags.split()]
-    t += ['brain teasers', 'puzzle', 'quiz', 'trivia'] if puzzle else ['animal facts', 'quiz', 'trivia', 'fun facts']
+    t += ['brain teasers', 'puzzle', 'quiz', 'trivia'] if puzzle else (['animal facts'] if topics(tags, puzzle).startswith('Animals') else []) + ['quiz', 'trivia', 'fun facts']
     seen = []; [seen.append(x) for x in t if x not in seen]
     return ', '.join(seen)
 def topics(tags, puzzle):
