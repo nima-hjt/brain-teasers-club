@@ -3,7 +3,8 @@ import sys, json, os, re, numpy as np, soundfile as sf
 from kokoro_onnx import Kokoro
 HERE = os.path.dirname(os.path.abspath(__file__))
 MODELS = os.path.join(HERE, '..', '..', '.new', 'tts')
-src, name = sys.argv[1], sys.argv[2]; voice = sys.argv[3] if len(sys.argv) > 3 else 'af_bella'
+from voices import pick_voice, lang_of, clean_letter
+src, name = sys.argv[1], sys.argv[2]; voice = sys.argv[3] if len(sys.argv) > 3 else pick_voice('wf_' + name)
 c = json.load(open(os.path.join(HERE, src), encoding='utf-8'))[name]
 L = {'intro': c['intro']}
 if c.get('kind') == 'facts':
@@ -22,13 +23,13 @@ L['plug'] = 'Want more? Play over twelve hundred free brain teasers, at brain te
 k = Kokoro(os.path.join(MODELS, 'kokoro-v1.0.onnx'), os.path.join(MODELS, 'voices-v1.0.bin'))
 out = os.path.join(HERE, 'voice_wf_' + name); os.makedirs(out, exist_ok=True); dur = {}
 GAP = 0.5  # seconds between the option letter and its text (Nima: "A" ... "Hummingbird")
-lang = 'en-gb' if voice.startswith('b') else 'en-us'
+lang = lang_of(voice)
 for key, text in L.items():
     if isinstance(text, tuple):
-        a, sr = k.create(text[0], voice=voice, speed=1.08, lang=lang); b, sr = k.create(text[1], voice=voice, speed=1.08, lang=lang)
+        a, sr = clean_letter(k, text[0].rstrip('.'), voice); b, sr = k.create(text[1], voice=voice, speed=1.08, lang=lang)
         s = np.concatenate([a, np.zeros(int(sr * GAP), dtype=a.dtype), b])
     else:
         s, sr = k.create(text, voice=voice, speed=1.08, lang=lang)
     sf.write(os.path.join(out, key + '.wav'), s, sr); dur[key] = round(len(s) / sr, 2)
 json.dump(dur, open(os.path.join(out, 'durations.json'), 'w'))
-print(name, len(dur), 'lines', round(sum(dur.values()), 1), 's')
+print(name, voice, len(dur), 'lines', round(sum(dur.values()), 1), 's')
